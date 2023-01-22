@@ -1,0 +1,7 @@
+ZM_U_itemToggle,Item toggle menu,Trunaur68
+ZM_U_addElevators1,Add elevators (keep cutscenes),biospark
+ZM_U_addElevators2,Add elevators (remove cutscenes),biospark
+ZM_U_addMinimapTiles,Add minimap tiles,biospark
+ZM_U_noMinimap,No minimap,biospark
+ZM_U_disableChozoHints,Disable Chozo statue hints,biospark
+ZM_U_removeCloseup,Remove Samus closeup,biospark

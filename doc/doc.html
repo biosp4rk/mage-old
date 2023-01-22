@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MAGE Documentation</title>
+	<meta charset="UTF-8"> 
+	<style>
+		body {
+			color: #f0f0f0;
+			background-color:#202020;
+			display:block;
+			border:0;
+			margin:16px;
+			padding:0px;
+			font-family:verdana, sans-serif;
+		}
+		.content {
+			background-color:#181818;
+			padding:10px;
+			padding-top:16px;
+			width:94%;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		a {
+			color: #A0A0F0
+		}
+		h1 {
+			font-size:36px;
+		}
+		h2 {
+			background-color:#102030;
+			border-top:3px solid #306090;
+			margin-top:40px;
+			padding:8px;
+		}
+		h3 {
+			background-color:#201030;
+			border-top:1px solid #603090;
+			margin-top:40px;
+			margin-left:0px;
+			padding:4px;
+		}
+		span.smallLink {
+			font-size:75%;
+		}
+		ul {
+			margin-bottom:30px;
+		}
+		li.toc1 {
+			font-size:85%;
+			list-style-type:none;
+		}
+		li.toc2 {
+			font-size:85%;
+			list-style-type:none;
+			text-indent:20px;
+		}
+		table {
+			border-collapse:collapse;
+		}
+		table, th, td {
+			background-color: #202020;
+			border:1px solid #c0c0c0;
+			padding:0.2em;
+		}
+		td {
+			padding-right:1em;
+		}
+		th {
+			background-color:#181818;
+			padding-left:1em;
+			padding-right:1em;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="content">
+<h1>MAGE Documentation</h1>
+
+<h2>Table of Contents</h2>
+	<ul>
+	<li class="toc1"><a href="#introduction">Introduction</a></li>
+	<li class="toc1"><a href="#getting-started">Getting Started</a></li>
+		<li class="toc2"><a href="#general-advice">General Advice</a></li>
+		<li class="toc2"><a href="#program-structure">Program Structure</a></li>
+	<li class="toc1"><a href="#main-window">Main Window</a></li>
+		<li class="toc2"><a href="#backgrounds">Backgrounds</a></li>
+		<li class="toc2"><a href="#sprites">Sprites</a></li>
+		<li class="toc2"><a href="#doors">Doors</a></li>
+		<li class="toc2"><a href="#scrolls">Scrolls</a></li>
+	<li class="toc1"><a href="#header-editor">Header Editor</a></li>
+	<li class="toc1"><a href="#tileset-editor">Tileset Editor</a></li>
+	<li class="toc1"><a href="#graphics-editor">Graphics Editor</a></li>
+	<li class="toc1"><a href="#palette-editor">Palette Editor</a></li>
+	<li class="toc1"><a href="#tile-table-editor">Tile Table Editor</a></li>
+	<li class="toc1"><a href="#animation-editor">Animation Editor</a></li>
+	<li class="toc1"><a href="#sprite-editor">Sprite Editor</a></li>
+	<li class="toc1"><a href="#spriteset-editor">Spriteset Editor</a></li>
+	<li class="toc1"><a href="#connection-editor">Connection Editor</a></li>
+		<li class="toc2"><a href="#area-connections">Area Connections</a></li>
+		<li class="toc2"><a href="#event-based-connections">Event Based Connections</a></li>
+		<li class="toc2"><a href="#location-names">Location Names</a></li>
+		<li class="toc2"><a href="#hatch-lock-events">Hatch Lock Events</a></li>
+	<li class="toc1"><a href="#minimap-editor">Minimap Editor</a></li>
+	<li class="toc1"><a href="#text-editor">Text Editor</a></li>
+	<li class="toc1"><a href="#demo-editor">Demo Editor</a></li>
+	<li class="toc1"><a href="#physics-editor">Physics Editor</a></li>
+	<li class="toc1"><a href="#weapon-editor">Weapon Editor</a></li>
+	<li class="toc1"><a href="#room-options">Room Options</a></li>
+	<li class="toc1"><a href="#test-room">Test Room</a></li>
+	<li class="toc1"><a href="#import">Import</a></li>
+		<li class="toc2"><a href="#import-tileset">Tileset</a></li>
+		<li class="toc2"><a href="#import-background">Background</a></li>
+		<li class="toc2"><a href="#import-room">Room</a></li>
+		<li class="toc2"><a href="#import-tileset-image">Tileset from Image</a></li>
+		<li class="toc2"><a href="#import-lz77-bg-image">LZ77 BG from Image</a></li>
+		<li class="toc2"><a href="#import-ending">Ending from Image</a></li>
+	<li class="toc1"><a href="#export">Export</a></li>
+		<li class="toc2"><a href="#export-tileset">Tileset</a></li>
+		<li class="toc2"><a href="#export-background">Background</a></li>
+		<li class="toc2"><a href="#export-room">Room</a></li>
+		<li class="toc2"><a href="#export-image">Image</a></li>
+	<li class="toc1"><a href="#compression">Compression</a></li>
+	<li class="toc1"><a href="#minimap-tile-builder">Minimap Tile Builder</a></li>
+	<li class="toc1"><a href="#add">Add</a></li>
+	<li class="toc1"><a href="#patches">Patches</a></li>
+		<li class="toc2"><a href="#fusion-patches">Fusion Patches</a></li>
+		<li class="toc2"><a href="#zero-mission-patches">Zero Mission Patches</a></li>
+	<li class="toc1"><a href="#credits">Credits</a></li>
+	<li class="toc1"><a href="#version-history">Version History</a></li>
+	</ul>
+
+	
+<h2 id="introduction">Introduction</h2>
+
+	<p>
+	Metroid Advance Game Editor (MAGE) is a comprehensive hacking utility for Metroid Fusion and Metroid Zero Mission created by biospark. It is a .NET 3.0 application written in C#. Currently it is only compatible with the North American (U) version of each game.</p>
+	<p>
+	Bug reports and questions should be directed to the MAGE thread on the Metroid Construction forums: <a href="http://forum.metroidconstruction.com/index.php/topic,3969.0.html">http://forum.metroidconstruction.com/index.php/topic,3969.0.html</a>. You can also find the latest updates and releases there.</p>
+	<p>
+	Source code: <a href="https://github.com/biosp4rk/mage-old">https://github.com/biosp4rk/mage-old</a>
+	</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="getting-started">Getting Started</h2>
+
+	<h3 id="general-advice">General Advice</h3>
+		<ul>
+		<li>Create backups often! You never know when something may go wrong.</li>
+		<li>All numbers are presented in hexadecimal. You should familiarize yourself with hexadecimal if you are not already.
+		<li>If you have a question about what something means or how to use a particular feature, it is most likely answered within this documentation. If not, ask for help! A good place to ask is on the Metroid Construction forum.</li>
+		</ul>
+		
+	<h3 id="program-structure">Program Structure</h3>
+		<p>
+		ROMs can be opened and saved through the file menu. It is recommended that you use the "Create Backup" feature frequently in case you make a mistake or something goes wrong.</p>
+		<p>
+		The user interface for MAGE consists of the main window, along with various editors and tools. Editing a specific room is mostly done through the main window, while more general editing is done using the options in the menu strip or tool bar.</p>
+		<p>
+		Many changes are made by hitting the "Apply" button. This saves the changes to an internal copy of the ROM. No changes are saved to the actual ROM until you choose one of the save options from the file menu. MAGE will warn you if you try to close the ROM with unsaved changes.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+		
+<h2 id="main-window">Main Window</h2>
+
+	<p>
+	The main window is used for editing backgrounds, sprites, doors, and scrolls within a room. Choose a room by selecting the area in the location box and finding the room you want to edit. Changes made to the room are automatically kept track of, so you don't have to worry if you switch to another room (however, you must still save the ROM).</p>
+	<p>
+	Viewing and editing controls are above the tileset. There are two editing modes: background editing and object editing. These are explained further below. The room and tileset expand with the window, so take advantage of full screen mode. The room view also has a zoom function (between 100% and 800%).</p>
+	<p>
+	You can quickly test a room with an emulator by right-clicking anywhere (in object editing mode) and selecting "Test room here", or by hovering over the location and pressing 'T'.</p>
+		
+	<h3 id="backgrounds">Backgrounds</h3>
+		<p>
+		GBA games use four layers for displaying graphics. These layers consist of the foreground (BG 0), the level or interaction layer (BG 1), the back layer (BG 2), and the background (BG 3). For consistency and conciseness, I only refer to these as "BG".</p>
+		<p>
+		You can view any combination of BGs that you like. It may be convenient to hide BGs that you are not editing. BG 0 through 2 and clipdata can be edited by first making sure the background editing mode is selected. You can switch between modes quickly by middle-clicking on the map. Background editing works by using a clipboard that holds BG0, BG1, BG2, and clipdata values. You can copy blocks from the tileset by clicking and dragging with any mouse button. When copying from the tileset, each block in the clipboard will have the same value for all three BGs (clipdata is excluded). You can copy blocks from the room by right-clicking and dragging. This creates an exact copy of each block and its four values. Under the "View" menu is a clipboard viewer, which opens in a separate window and updates as you copy blocks.</p>
+		<p>
+		To paste blocks, simply left-click where you want the blocks to be on the map. Before pasting, you must select which BG values you want to be pasted by choosing a BG from the "Edit" box. You can also paste clipdata values alone or simultaneously with another BG. If your last selection was made from the tileset, the clipdata pasted will be the clipdata value that is currently selected from the drop-down list. If you only want to use the selected clipdata value, regardless of where the previous selection was made, then check the "Use Selected Clipdata" option under the "Edit" menu. Sprites, doors, and scrolls cannot be moved while editing BGs.</p>
+		<p>
+		Clipdata determines how Samus interacts with the blocks in a room. It is completely independent of the graphics of the blocks. For example, the most common types of blocks are solid blocks and air blocks, but there are many others, including missile expansions, ladders, slopes, dusty ground, bomb blocks, etc. Clipdata should still reasonably match the appearance of the blocks to avoid confusing players. Because the clipdata list is fairly long, there is a shortcut option under "Tools" that brings up a graphical list of various clipdata values. There are three ways to view clipdata. The first one outlines clipdata grouped by type. The second one shows breakable blocks. The third one shows the actual clipdata value of each block. These visualizations are useful for making sure your clipdata values were assigned correctly, especially for air blocks, solid blocks, and slopes.</p>
+		
+		<h4>RLE and LZ77</h4>
+		<p>
+		RLE and LZ77 are used to refer to backgrounds and graphics throughout MAGE. They refer to different types of compression. You don't need to know how the compression works; they're only used as names. RLE is used for backgrounds that you can edit in the main window, while LZ77 is used for backgrounds that consist of a repeated image (and can be edited with the <a href="#tile-table-editor">Tile Table Editor</a>). BG1 and BG2 always use RLE, and BG3 always uses LZ77. BG0 can use both. The graphics for each tileset are split into RLE graphics and LZ77 graphics. RLE graphics are used to make the blocks you can place in rooms, while LZ77 graphics are used for the backgrounds with a repeated image.</p>
+		
+	<h3 id="sprites">Sprites</h3>
+		<p>
+		Sprites have two viewing options. You can view a preview of the sprite, along with a green outline that marks its actual coordinates within the room. The sprite preview may not be accurate to how it appears in game. Some sprites may be rotated if they're next to a wall when they spawn. Sprites can be moved by first making sure the object editing mode is selected, then by clicking and dragging the outline of the sprite you want to move. You should avoid overlapping sprites.</p>
+		<p>
+		Sprites can be edited by right-clicking their outline on the map. Here, you can change which sprite from the spriteset it is, as well as the property of the sprite. You can quickly change between sprites by hovering your mouse over the sprite outline and hitting left bracket '[' or right bracket ']'. If you want to change it to a sprite that is not one of the options, you'll have to edit the spriteset. Check the <a href="#spriteset-editor">Spriteset Editor</a> section for more info.</p>
+		<p>
+		The property of a sprite determines how it interacts with X parasites (so it is only relevant for Fusion). When a sprite has a property of 0xA, it only forms when a free floating X is available. Sprites with this property are shown semi-transparent on the map view. When a sprite has a property of 0, its sprite ID becomes its slot number. Sprites 0-2 are X targets. This is what X fly toward when an enemy is killed. It is important to have an X target in any room with enemies. Otherwise, the X will simply fly off the screen right away. Sprite 0xE is used to determine where an ability X will form. More info on <a href="technical.html#room-sprites">property values</a> can be found in the technical document, though it is not fully understood. Looking at existing sprites may help.</p>
+		<p>
+		Sprites can also be added or removed using the right-click menu. You can quickly remove a sprite by hovering your mouse over the sprite outline and hitting delete. A sprite can be added anywhere within the room, and it will default to the first sprite in the spriteset. The game can only support  a maximum of 24 sprites, so this is the limit for each room. However, many sprites generate other sprites (projectiles, etc.) so it is recommended that you keep the number of sprites below 24.</p>
+			<h4>Sprites FAQ</h4>
+				<p>
+				<b>Why is my sprite not showing in game?</b><br>
+				Certain sprites will only spawn under certain conditions. For example, some sprites will only spawn if placed next to a solid block. Make sure your sprite is in a location that makes sense.</p>
+				<p>
+				<b>[Fusion] What are the green dot sprites?</b><br>
+				The green dot is a place-holder graphic for sprites with special functions. For example, they may trigger a room to shake or continuously spawn X.</p>
+				<p>
+				<b>[Fusion] Why is the SA-X placed in the middle of some rooms?</b><br>
+				The SA-X's AI routine determines where it will appear within a room (ex: the last door Samus went through). The SA-X has to be a part of the room for it to appear at all, but its placement does not matter.</p>
+				<b>[Zero Mission] What are the sprites that look like health drops?</b><br>
+				The health drop is a place-holder graphic for sprites with special functions. Usually they are used for triggering certain events.</p>
+			
+	<h3 id="doors">Doors</h3>
+		<p>
+		Doors are marked with a blue outline. The viewing, moving, and editing options are very similar to sprites. Doors can only be moved while object editing mode is selected, again by clicking and dragging. In order for doors to work, they must have the appropriate clipdata under them. This value is 20 for horizontal doors, 27 for vertical up, and 28 for vertical down. The clipdata will not be automatically set for you. If you move a door, make sure to edit the original location and the new location as necessary. If you want to create a one-way door, simply don't use any of the above clipdata values under the destination door.</p>
+		<p>
+		Doors can be edited in a number of ways by right-clicking a door and selecting "Edit door". Information about the door you're editing as well as the connected door is shown at the bottom. Door numbers work on a per area basis. If you want to connect a door to another area, use the <a href="#connection-editor">Connection Editor</a>. You can edit the type, width, height, and exit distance of the door. More info on <a href="technical.html#doors-format">door types</a> can be found in the technical document. Exit distance determines how far Samus appears from the door. Dividing this number by 16 will get the number of blocks. If you change the owner room, the door will be removed from the current room and put in the upper-left corner of the new room. Change the connected door by inputting the appropriate door number. If you have "Auto connect door" checked, the new connected door will automatically be edited for you.</p>
+		<p>
+		You can quickly change the size of a door by hovering your mouse over it and pressing 'W', 'A', 'S', or 'D'. Also, pressing 'G' while hovering over a door will load the room it connects to.</p>
+		
+	<h3 id="scrolls">Scrolls</h3>
+		<p>
+		Scrolls are marked with yellow outlines and numbered corners. Scrolls determine the boundaries of where the camera can move. Each one must be at least the size of the screen (15 x 10 blocks). Rooms without any scrolls will follow the default scrolling scheme. This means that the camera will center on Samus and will not move beyond the two block border surrounding each room. When adding your own scrolls, it's important that all accessible areas are covered by a scroll. Otherwise, the player can run off-screen and not see where they are. Looking at the scrolls in existing rooms will give you a good idea of how they should be placed. You should only use scrolls if your room is an unusual shape, or you want to temporarily conceal part of the room.</p>
+		<p>
+		Scrolls can be moved and resized by clicking and dragging the corners. Make sure "Object Editing Mode" is selected first. Scrolls can be removed by right-clicking on any of the corners, or by hitting delete while hovering over a corner. Scrolls can be added by right-clicking anywhere in the room. You can also add scrolls to rooms that have none.</p>
+		<p>
+		Scrolls can optionally be extended in one direction, which is triggered by using an elevator or breaking a particular block. This can be set by right-clicking on one of the corners and selecting "Edit scroll". Elevator rooms should have extended bounds but should not have a breakable block. For scrolls with a breakable block, the scroll will have normal bounds while the block is intact and extended bounds while the block is destroyed. Generally, the breakable block should be one that never respawns. However, it may possible to create a unique puzzle or something similar by using a block that respawns. The best way to understand how this optional feature works is by looking at scrolls in other rooms.</p>
+		<span class="smallLink">(<a href="#top">top</a>)</span>
+		
+<h2 id="header-editor">Header Editor</h2>
+	<p>
+	Each room in the game has a header with a lot of important information for loading the room. The first section of this editor is for background-related data, which affects the appearance of the room. <a href="technical.html#transparency">Transparency</a>, <a href="technical.html#bg3-scrolling">BG3 scroll</a>, and <a href="technical.html#effects">effect</a> are explained in the technical document. For transparency, it's easiest to find an existing room with the type of transparency you want and simply use the same value.</p>
+	<p>
+	This section also contains pointers and property values for the backgrounds and clipdata. The <a href="technical.html#bg-properties">property values</a> are explained in the technical document. Editing the pointers manually is not recommended unless you are working with a hex editor. MAGE automatically repoints background data for you.</p>
+	<p>
+	The second section is for spriteset-related data. The pointers point to data which defines the position and properties of the enemies/sprites in the room. The set is which <a href="#spriteset-editor">spriteset</a> to use, and the event determines when to use the first or second extra set. For example, if the event for the first extra set is 0x47, then that set will be used if the event variable is 0x47 or higher. For Zero Mission, an event value of 2 is used for hard mode, and a value of 1 is used for easy mode. There should be no need to change the pointers, since MAGE handles this automatically.</p>
+	<p>
+	The last section is for miscellaneous values. Map X and Map Y are the minimap coordinates for the top-left corner of the room. Music is the default music track that plays for the room.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="tileset-editor">Tileset Editor</h2>
+	<p>
+	Each tileset is made up of several components: RLE graphics, palette, LZ77 graphics, tile table, animated tileset, and animated palette. This editor is used to select the data for each component. For the first four, you can change which data is pointed to, or you can edit the data currently pointed to. For animated tileset and palette, you can choose which one you'd like to use, or edit the current one with the <a href="#animation-editor">Animation Editor</a>. Keep in mind that several tilesets may use the same data, and also several rooms may use the same tileset. Making one change may affect multiple locations.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="graphics-editor">Graphics Editor</h2>
+	<p>
+	The graphics editor is used for viewing, importing, and exporting graphics. When opening, it will automatically provide graphics and palette offsets depending on where it was opened from. There are several options for viewing the graphics, including image width, height, and zoom level. There is also a compressed option, which will display LZ77 compressed graphics if they are present at the provided offset.</p>
+	<p>
+	The main function of this editor is importing and exporting graphics. There are two different file formats: image and raw. Image is simply a PNG image, while raw contains the same data stored in the ROM for the graphics. Use the image format if you plan to edit the graphics using an external graphics editor. Use the raw format if you're copying graphics from one ROM to another or want to use a program such as Tile Layer Pro. When importing graphics, make sure you select only the graphics you want to replace, adjusting the offset and height as necessary. If you import an image, it will match each pixel to the closest color in the currently selected palette. If you import raw, the palette is ignored. If the imported graphics are larger than the original, the editor will automatically allocate new space and fix pointers. Make sure you write down the new offset if you need it later.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>	
+	
+<h2 id="palette-editor">Palette Editor</h2>
+	<p>
+	The palette editor is used for modifying individual colors. You can also import or export palettes. After selecting a color, you can modify it by changing each of the three color components. The resulting color is shown along with its 15-bit value (the format used by GBA games) and its 24-bit value (the format used by most computers). Any changes made to the palette will only be kept if you hit "Apply". If you change the offset or number of rows, the changes will be discarded. You can also import and export palettes in a few different formats.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="tile-table-editor">Tile Table Editor</h2>
+	<p>
+	The tile table editor is used to edit images that require a tile table in addition to the normal graphics and palette. This type of image is made up of 8x8 tiles. A tile table contains a list of these tiles and their attributes, including the tile number, palette row, and whether it is flipped horizontally or vertically. You can edit tilesets, LZ77 compressed backgrounds, and other images used by the game if you know where their data is stored.</p>
+	<p>
+	After selecting an image, you can click on the 16x16 region you want to edit, which will appear in the square at the top. The buttons around this square are used to change the palette row and flip for each tile. Left-clicking one of the corner buttons will use the next palette row for that tile, while right-clicking will use the previous row. Clicking the other buttons will flip the tile horizontally or vertically. To change the graphics used for a tile, first click on the tile you want to use from the bottom-left, then click on the corner you want to change. If "Copy palette #" is selected, then that tile's palette will be changed to the currently selected one. If "Preserve existing data" is selected, then if the data is pointed to from elsewhere, it will not be overwritten, and the new data will be written somewhere else.</p>
+	<p>
+	You can also import and export tile tables. Keep in mind that graphics and palettes are separate from tile tables. If you're trying to copy an image, you'll need all three pieces of data.</p>
+	
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="animation-editor">Animation Editor</h2>
+	<p>
+	The animation editor is used for editing animated tilesets, animated graphics, and animated palettes.</p>
+	<p>
+	An animated tileset is a collection of animated graphics. Specifically, there are 16 slots, with each slot occupying 0x80 bytes of VRAM. All of the graphics in an animated tileset are accessible to RLE compressed backgrounds (BG1, BG2, sometimes BG0), while only the last 4 slots are accessible to LZ77 compressed backgrounds (BG3, sometimes BG0). To edit the tileset, simply select which animated graphics you want in each slot.</p>
+	<p>
+	Animated graphics are what make up an animated tileset. You can change three different parameters for each one. Direction determines what order each state will play in. Normal repeats from the beginning, while alternate plays backwards to the beginning. Delay is the number of frames between each state, and states is the total number of states. You can also edit the graphics for each state.</p>
+	<p>
+	An animated palette is a palette that can change colors. This palette is placed in the last row of the background palette during gameplay. Animated palettes have similar parameters to animated graphics. Direction determines what order each state will play in. Normal repeats from the beginning, while alternate plays backwards to the beginning. Delay is the number of frames between each state, and states is the total number of states. You can also edit the colors for each state.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="sprite-editor">Sprite Editor</h2>
+	<p>
+	The sprite editor is used for editing various aspects of sprites/enemies. There are two types of sprites: primary and secondary. Primary sprites are the sprites that are placed in rooms. Secondary sprites are sprites that can only be created by primary sprites. These include body parts for enemies with multiple parts, as well as any projectiles that an enemy may create. Secondary sprites do not drop anything in Fusion.</p>
+	<p>
+	In the "Stats" section, you can modify how much health the sprite has and how much damage it deals to Samus. You can ignore this section if the sprite isn't an enemy. "Suit reduction" only applies to Fusion. The percentages refer to how much damage Samus takes in the varia and gravity suits. For example, if an enemy does 10 damage and its suit reduction is "60% and 30%", then Samus will take 10 damage in the fusion suit, 6 damage in the varia suit, and 3 damage in the gravity suit. In Zero Mission, varia suit takes 80% of the original damage, gravity suit takes 70%, and both together take 50%.</p>
+	<p>
+	In the "Drop Probability" section, you can change the likelihood of getting certain drops. In Fusion, there are three different types of X drops, while in Zero Mission, there are five different types of drops (or no drop). All of the probabilities must add up to 0x400 (1024 in decimal). For example, if you want an enemy to drop nothing 25% of the time and drop a small health 75% of the time, then you would set "No drop" to 0x100,  "Small health" to 0x300, and the rest to 0. You can ignore this section for non-enemy sprites.</p>
+	<p>
+	In the "Vulnerability" section, you can change how weapons will affect the sprite. It should be self-explanatory, but there are a couple of things to point out. If an enemy is affected by beam and bombs, then it will also be affected by charge beam (you don't have to select that option). However, you must still select if the enemy is affected by power bombs, regardless of your decision for beam and bombs. If an enemy is affected by missiles, then it will also be affected by super missiles.</p>
+	<p>
+	In the "Graphics" section, you can edit the graphics offset and palette offset of a sprite. You can also click on one of the "Edit" buttons to bring you to the <a href="#graphics-editor">Graphics Editor</a> or the <a href="#palette-editor">Palette Editor</a>, which will automatically open with the proper offset. In general, you should not edit either of the offsets manually. In Fusion only, you can edit the number of graphics rows that a sprite uses. In Zero Mission, this is determined automatically by the length of the graphics data.</p>
+	<p>
+	Lastly, the sprite's AI routine offset is provided at the bottom, in case you'd like to look through the code using a debugger.</p>
+	<p>
+	Note: Sprites 0-F do not have any graphics. These sprites have special functions, so it is best not to modify them.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="spriteset-editor">Spriteset Editor</h2>
+	<p>
+	Because of the VRAM limitations of GBA games, there's a limited amount of space for sprite graphics. Therefore, Fusion and Zero Mission use spritesets in order to properly allocate space for each sprite within a room. Each sprite uses between 0-8 graphics rows. One row corresponds to 0x400 bytes of graphics data and one palette of 16 colors.</p>
+	<p>
+	Each spriteset can have up to 15 sprites and has room for 8 graphics rows. Selecting "Add slot" will place a new slot at the end of the list, and selecting "Remove slot" will delete the currently selected slot. After selecting a slot, you can change which sprite appears in that slot or which graphics row it occupies. Some sprites don't take up any graphics rows, since they use graphics that are always available in every room (see <a href="technical.html#generic-sprite-graphics">generic sprite graphics</a>). These sprites should be placed in graphics row 8.</p>
+	<p>
+	It is important that the graphics of any two sprites don't overlap (unless those two sprites actually share the same graphics). Otherwise, their graphics will be messed up in-game. Many bosses take up all 8 graphics rows, which is why they are the only sprite within their spritesets. You should also make sure that none of the sprite graphics extend past the bottom of the 8 rows. If either of these problems is detected, the editor will give you a warning.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="connection-editor">Connection Editor</h2>
+	<p>
+	The connection editor has four main purposes: editing area connections, event based connections, location names, and hatch lock events.</p>
+	
+	<h3 id="area-connections">Area Connections</h3>
+	<p>
+	In order to connect a door to a new area, the door's type must be "Area connection" (from the "Edit door" window) and it must be part of the area connections list. In order to add a new area connection, simply select the source area and door, along with the area you want to connect it to. The door it connects to can be changed from the "Edit door" window. Area connections have an instant transition (not the slower, panning transition). Hatches cannot be used for area connections.</p>
+	
+	<h3 id="event-based-connections">Event Based Connections</h3>
+	<p>
+	An event based connection means the door will connect to a different room after a given event has occurred. The door must have "Loads event based room" checked and it must be part of the event based connections list. Before the event has occurred, the door will connect to the original door found in the "Edit door" window. Once the event has occurred, the connected door will be replaced with the new door provided in the event based connections list.</p>
+	<p>
+	A door cannot both be an area connection and load an event based room. Only the area connection will take effect. In other words, event based connections only work between doors in the same area.</p>
+	
+	<h3 id="location-names">Location Names</h3>
+	<p>
+	A location name determines the text that appears when entering certain rooms. Location names are assigned to specific rooms rather than doors. However, the text will only be displayed upon entering doors that have "Displays location name" checked. It is important to note that displaying a location name actually takes up a graphics row in the spriteset. You can explicitly assign a graphics row for the display by using sprite 0x1D in Fusion and 0x74 in Zero Mission. If this sprite is not assigned, the display will use the bottom graphics row by default.</p>
+	
+	<h3 id="hatch-lock-events">Hatch Lock Events</h3>
+	<p>
+	Hatches can lock upon entering a room based on the events that have been triggered. For Fusion, since events are linear, the hatches you select will only lock while you're on the event you choose (not before or after). For Zero Mission, you can choose whether the hatches will lock before or after the event has been triggered. To get the hatch numbers for a particular room, go to that room in the main window, select object editing mode, and hover your mouse over each door. If the door is a valid hatch that can be locked, the number will be displayed on the last line of the tooltip. For Fusion, only doors of the type "Hatch (can lock)" will work. For Zero Mission, both "Open hatch" and "Closed hatch" will work.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>	
+
+<h2 id="minimap-editor">Minimap Editor</h2>
+	<p>
+	The minimap editor is used for editing the map shown on the pause screen and in the upper-right corner during gameplay. In Fusion, there are two types of map tiles: normal and hidden. Normal tiles will show up when the area map is downloaded. Hidden tiles will only show up once that tile has been explored. You can view the downloaded map and the explored map to see the difference. In Zero Mission, there are additional types of map tiles: start, heated, and hidden heated. Start tiles will be on the map when you first enter an area, without having to download map data. Heated tiles and hidden heated tiles are the same as normal tiles and hidden tiles, except they appear orange on the map. There's also an additional viewing option to see the start tiles.</p>
+	<p>
+	Before selecting a tile, you can select a palette to make choosing a tile easier. Once a tile is selected, you can change the type and flip it horizontally or vertically. You can also select an existing tile on the map by right-clicking on it.</p>
+	<p>
+	When modifying a map, there are a few things to keep in mind. Map coordinates for each room can be changed using the <a href="#header-editor">Header Editor</a>. The coordinates determine where the top-left corner of the room is on the map. Map tiles containing items come in pairs. The first tile is for when the item hasn't been obtained yet, and the second tile is for when the item has been obtained. Whenever an item is obtained, the current tile's number is incremented by one, so the second tile must immediately follow the first tile. This also means that you shouldn't place more than one item within the same map tile (unless you add the appropriate additional tiles after the first two). You can have multiple items in the same room, but they should be spaced out so that each one occupies its own map tile. You can view the map tile boundaries in a room by selecting "View > Screen Outlines" in the main window.</p>
+	<p>
+	You can add new minimap tiles if necessary. To do so, open the minimap editor, click "Edit GFX", and export as raw. Use a hex editor to make the file 16 KB (0x4000 bytes). Import the modified file, then apply the "Add minimap tiles" patch. When you open the minimap editor, it will show you the extra rows that were added.</p>
+	<p>
+	You can use the keyboard shortcut 'G' to load the room under the cursor. This only works if the cursor's coordinates match the coordinates in the room's header, which is generally the top-left corner of the room.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="text-editor">Text Editor</h2>
+	<p>
+	The text editor is used for editing the different types of text in each game. In Fusion, there are five different types. "Navigation" has all of the computer conversations. "Pause screen" has the objectives you can view from the pause screen. "Monologues" has all of Samus's monologues from the intro, the elevator rides, and the end of the game. "Locations" has all of the location names that can be displayed when entering a door. "Messages" has all of the messages that can be displayed in the middle of the screen. In Zero Mission, there are also five different types. "Story" has all of the story related text from the intro and during gameplay. "Descriptions" has all of the item descriptions displayed on the status screen. "Locations" and "Messages" are the same as Fusion. "File screen" has the text from the file select screen and options screen.</p>
+	<p>
+	There are several control characters that have different purposes. Fusion and Zero Mission have several of the same control characters, though each game has some that are unique.</p>
+	<table>
+		<tr>
+		<th>Shared</th>
+		<th>Fusion</th>
+		<th>Zero Mission</th>
+		</tr>
+		<tr>
+		<td>[NEWLINE]</td>
+		<td>[DELAY=X]</td>
+		<td>[Select_button_1]</td>
+		</tr>
+		<tr>
+		<td>[COLOR=X]</td>
+		<td>[MUSIC=X]</td>
+		<td>[Select_button_2]</td>
+		</tr>
+		<tr>
+		<td>[/COLOR]</td>
+		<td>[ARROW]</td>
+		<td>[Select_button_3]</td>
+		</tr>
+		<tr>
+		<td>[INDENT=X]</td>
+		<td>[NEXT]</td>
+		<td>[Select_button_4]</td>
+		</tr>
+		<tr>
+		<td>[YES]</td>
+		<td>[TARGET]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[NO]</td>
+		<td>[OBJECTIVE]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Up_button_left]</td>
+		<td>[ADAM]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Up_button_right]</td>
+		<td>[SAMUS]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Down_button_left]</td>
+		<td>[FEDERATION]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Down_button_right]</td>
+		<td>[SAMUS_FACE]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Left_button_left]</td>
+		<td>[SA-X_FACE]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Left_button_right]</td>
+		<td>[POPUP_OPEN]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Right_button_left]</td>
+		<td>[POPUP_CLOSE]</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[Right_button_right]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[A_button_left]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[A_button_right]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[B_button_left]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[B_button_right]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[L_button_left]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[L_button_right]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[R_button_left]</td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>[R_button_right]</td>
+		<td></td>
+		<td></td>
+		</tr>
+	</table>
+	<p>
+	The best way to learn these characters is to observe how they are used in the existing text. Some of the control characters only work with certain types of text. In particular, most of the characters unique to Fusion (as well as color) will only work with navigation or monologue text. It is best to test these characters in-game to make sure they work.</p>
+	<p>
+	There are two other special notations. To write a character using its hexadecimal value, type [\xHHHH] where HHHH is a hexadecimal number. Additionally, you can use a backslash '\' as an escape character. The only characters that require a backslash are brackets '\[', '\]' and backslash itself '\\'.</p>
+	<p>
+	The text editor supports other languages, including common European languages (with various accented characters) and Japanese (with Hiragana, Katakana, and about 900 Kanji). Editing languages other than English is pointless for now, since MAGE only supports the North American version (which only uses English). However, you could potentially force the game to use another language if you desired.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="demo-editor">Demo Editor</h2>
+	<p>
+	The demo editor lets you edit the demos that play after waiting on the title screen. Demos are comprised of two types of data: controller inputs and RAM values.</p>
+	<p>
+	The table on the left side of the demo editor shows the buttons pressed for each frame of the demo. To modify existing inputs, you can select any number of inputs and type the appropriate characters in the text box. The characters for each input are shown in the table below. Invalid characters are ignored. You can insert or delete any number of inputs using the right-click menu, or by using the appropriate shortcut key. Similarly, you can cut, copy, and paste inputs.</p>
+	<p>
+	The controller inputs are stored in the ROM as two separate lists: one contains all the unique controller inputs and the other contains the duration for each of those inputs. This is much more space efficient than storing the inputs directly, since most of them are held for multiple frames. Both games have a self-imposed limit of no more than 253 unique inputs, but this should be more than enough for making demos.</p>
+	<table>
+		<tr>
+		<th>Input</th>
+		<th>Character</th>
+		</tr>
+		<tr>
+		<td>A</td>
+		<td>A</td>
+		</tr>
+		<tr>
+		<td>B</td>
+		<td>B</td>
+		</tr>
+		<tr>
+		<td>Select</td>
+		<td>s</td>
+		</tr>
+		<tr>
+		<td>Start</td>
+		<td>S</td>
+		</tr>
+		<tr>
+		<td>Right</td>
+		<td>></td>
+		</tr>
+		<tr>
+		<td>Left</td>
+		<td><</td>
+		</tr>
+		<tr>
+		<td>Up</td>
+		<td>^</td>
+		</tr>
+		<tr>
+		<td>Down</td>
+		<td>v</td>
+		</tr>
+		<tr>
+		<td>R</td>
+		<td>R</td>
+		</tr>
+		<tr>
+		<td>L</td>
+		<td>L</td>
+		</tr>
+	</table>
+	<p>
+	The right side of the demo editor shows the RAM values for the demo. These values are used to initialize specific RAM values when the demo starts. The most important ones determine where Samus starts and what equipment she has. To determine the room Samus starts in, change "Current door" to one of the doors in the room you want.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="physics-editor">Physics Editor</h2>
+	<p>
+	The physics editor lets you change various values related to the movement of Samus. The X and Y velocities determine how fast Samus moves during different actions. The velocity caps determine Samus's top speed for actions that involve acceleration, such as running or falling. The thresholds determine when a particular action can take place. The speed boost stages determine how long Samus has to run before speeding up. Space jump fall determines how fast Samus has to be falling before she can space jump again. Morph ball bounce determines how fast Samus must be falling for her to bounce when hitting the ground. Acceleration determines how much Samus's speed will increase/decrease per frame.</p>
+	<p>
+	Several of the categories are different between Fusion and Zero Mission. For example, X and Y acceleration are combined in Fusion, but are separate in Zero Mission. Unfortunately, you will have to work with these limitations. The Physics Editor can't change how the movement code works; it only changes values that are already in place.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="weapon-editor">Weapon Editor</h2>
+	<p>
+	The weapon editor is used for editing the various aspects of each weapon. This editor has a tree-like structure, which goes from more general weapons to more specific weapons. For beams, you can edit their damage, cooldown (number of frames before you can fire again), limit (maximum number of projectiles on screen), spawn (how far from Samus it spawns), and speed. There are similar values for missiles, except that they have multiple values for speed. Bombs are also similar, but they have timer values as well.</p>
+	<p>
+	You can open the <a href="#graphics-editor">Graphics Editor</a> or <a href="#palette-editor">Palette Editor</a> for each weapon by clicking on one of the buttons. For Fusion, each weapon has its own graphics and palette. For Zero Mission, missiles and bombs are part of a large chunk of graphics.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="room-options">Room Options</h2>
+	<p>
+	The "Room Options" window provides a couple of simple functions. The first one lets you clear a background or clipdata. This gives every block a value of 0 for the backgrounds you selected.</p>
+	<p>
+	You can also resize a room by changing its width or height in blocks. Because of RAM limitations, the width multiplied by the height must be less than 0x1800. You can set width or height to any single byte value (besides 0), but ideally you should set it so that the number of screens is a whole number. This determines the size of the room on the map. Based on the RAM limitations, the maximum possible room sizes (in screens) are 1x25, 2x17, 3x12, 4x9, 5x7, 6x6, 7x5, 9x4, 11x3, and 16x2.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="test-room">Test Room</h2>
+	<p>
+	One of the most convenient features MAGE has is the ability test changes by loading directly into a room. When you test a room, MAGE will create a temporary ROM that is opened with the saved emulator. If no emulator path is set, MAGE will prompt you to select an emulator to use. If you use this feature from the menu strip or toolbar, you will have to input your starting position within the room. However, you can choose a position directly from the main window by right-clicking (in object editing mode) and selecting "Test room here", or by hovering over the location and pressing 'T'.</p>
+	<p>
+	By default, Samus starts with all her abilities. In Fusion, the debug menu is enabled, and in Zero Mission, the item toggle menu is enabled. Unfortunately, the debug menu was removed from Zero Mission. This feature allows for very fast and convenient testing, so put it to good use.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="import">Import</h2>
+	<p>
+	Various importing options for data and images can be found under "Tools > Import".</p>
+	<p>
+	When importing data, you may have the option to preserve existing data. This means that if the data is pointed to from elsewhere, it will not be overwritten, and the new data will be written somewhere else. For example, in Fusion, room 0 in each of the sectors share the same RLE graphics. If you import a tileset while leaving this option unchecked, it will replace the graphics in each of those rooms. If checked, it will only replace the graphics for the tileset you chose (and leave the others unchanged).</p>
+	<h3 id="import-tileset">Tileset</h3>
+		<p>
+		Use this option to import a tileset that was exported with MAGE. You can replace the original tileset or choose a different one. If you're importing a tileset from a different game, you have the option to use the current game's generic tiles. This is recommended, otherwise the hatches and breakable blocks will be messed up.</p>
+	<h3 id="import-background">Background</h3>
+		<p>
+		Use this option to import a background that was exported with MAGE. You can import both RLE compressed and LZ77 compressed backgrounds. Once you have chosen a file, you can chose which background you want to replace, even if the background does not exist or has different compression (BG0 only). If the imported background is a different size than the current room, it will automatically be resized to fit.</p>
+	<h3 id="import-room">Room</h3>
+		<p>
+		Use this option to import a room that was exported with MAGE. You can choose which data you want to import. If you're importing a room from a different game, you shouldn't import sprites or doors. This is because the sprites will obviously be different, and the doors may conflict with doors that already exist within the area. You should also use the option to convert clipdata. This will convert each clipdata value from the original game to an equivalent value in the current game. However, keep in mind that each game has unique clipdata values, so some of them do not have a direct equivalent.</p>
+		<p>
+		Note: Importing rooms is somewhat experimental and may be buggy. Use with caution.</p>
+	<h3 id="import-tileset-image">Tileset from Image</h3>
+		<p>
+		The ability to import a tileset from an image is a powerful feature, but there are several requirements that must be observed. The image must be 32 bits per pixel, meaning it includes transparency. The image must also have a width of 256 and a height divisible by 16 (max height of 1024). Every 8x8 tile in the image must have 15 or fewer unique colors. The image cannot contain more unique palettes (15 colors each) than the maximum number of rows. You can select the rows yourself, or you can let MAGE automatically detect which rows to use. Lastly, the image cannot contain too many unique 8x8 tiles due to limited space in VRAM. If any of these requirements are not met, the editor will give an error with the problem that caused it.</p>
+		<p>
+		With all these requirements in mind, here are some tips for creating your own tileset. Use an existing tileset image as your base. This will ensure that the image is 32 bbp. Also, make sure you leave in the top five rows (hatches and breakable blocks). Determine your palettes beforehand. Ensure that each 8x8 tile only uses one palette. Try to reuse as many 8x8 tiles as possible. An 8x8 tile can be reused if it is flipped horizontally, flipped vertically, or assigned a different palette.</p>
+	<h3 id="import-lz77-bg-image">LZ77 BG from Image</h3>
+		<p>
+		You can create a new LZ77 BG (BG0 or BG3) by importing an image, but there are a few requirements that must be observed. The image must have dimensions 256x256, 512x256, or 256x512.  Every 8x8 tile in the image must have 15 or fewer unique colors. The image cannot contain more unique palettes (15 colors each) than the maximum number of rows. You can select the rows yourself, or you can let MAGE automatically detect which rows to use. Lastly, the image cannot contain too many unique 8x8 tiles due to limited space in VRAM. If any of these requirements are not met, the editor will give an error with the problem that caused it.</p>
+		<p>
+		Checking the option "Add to existing graphics" means that the existing LZ77 graphics for that tileset will be preserved, and the graphics for the new background will be added to it. If the room only has one LZ77 background, you can leave this option unchecked.</p>
+		<p>
+		This feature does not allow you to import any photo that you'd like. Even if you reduced the number of colors in the photo, there will most likely be too many unique 8x8 tiles. If you can ensure that some of the 8x8 tiles are repeated, then a 256x256 photo reduced to 15 colors might work. However, this feature is mainly intended for images that are created manually, or background images taken from other GBA games.</p>
+	<h3 id="import-ending">Ending from Image</h3>
+		<p>
+		This feature lets you replace the images used at the end of the game, when your results are shown. The image must be 240x416. After selecting an ending and opening an image, it must be converted so that it can be stored in the game. The conversion involves a process called color quantization, which reduces the number of colors in the image while attempting to maintain quality. Therefore, images with many colors or gradients may turn out worse. This process involves some randomness, so you should repeat the conversion to find the result that looks best.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="export">Export</h2>
+	<p>
+	Various exporting options for data and images can be found under "Tools > Export".</p>
+	<h3 id="export-tileset">Tileset</h3>
+		<p>
+		This option will export all of the data associated with the tileset you choose. This includes the RLE graphics, palette, LZ77 graphics, and tile table. The animated tileset number and animated palette number are included as well, but not the actual data. This outputs a file in a custom format that only MAGE can use. You can later import the tileset into Fusion or Zero Mission.</p>
+	<h3 id="export-background">Background</h3>
+		<p>
+		This option will export the raw data of the background you choose. The data does not include any graphical information. Therefore, you should work with the same tileset when importing and exporting backgrounds.
+		</p>
+	<h3 id="export-room">Room</h3>
+		<p>
+		This option will export all of the data associated with the current room. This includes backgrounds, sprites, doors, and scrolls. This outputs a file in a custom format that only MAGE can use. You can later import the room into Fusion or Zero Mission.</p>
+	<h3 id="export-image">Image</h3>
+		<p>
+		There are four different kinds of images you can export: tileset, BG0, BG3, and room. Selecting tileset will export the tileset image on the left side of the main window. The image will include transparency. Selecting BG0 or BG3 will export the image which is repeated to create the background. Selecting room will export an image of the current room, including any of the viewing options you have selected. Set these beforehand to include what you want in the image.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="compression">Compression</h2>
+	<p>
+	Under "Tools > Compression", there are options to compress or decompress binary files using LZ77 compression. This may not be useful if you do all of your editing within MAGE, but it may be helpful if you are manually inserting data with a hex editor.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="minimap-tile-builder">Minimap Tile Builder</h2>
+	<p>
+	The Minimap Tile Builder is a convenient way to design new minimap tiles. This is preferred over using a graphics editor, since the minimap palettes have duplicate colors in them. In other words, the tile builder will assign the correct colors, ensuring that tiles appear correctly when unexplored and explored. However, you should check if the tile you want already exists. Remember that you can flip tiles horizontally and vertically.</p>
+	<p>
+	You can choose what appears on each of the four sides of the tile, such as walls and hatches. You can also choose what appears in the middle, such as (un)obtained tanks and save rooms. When you hit apply, it will overwrite the graphics of the currently selected tile.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="add">Add</h2>
+	<p>
+	This tool lets you add new data, including backgrounds, room sprites, rooms, tilesets, spritesets, and animated tilesets/graphics/palettes. For each one, you can choose whether you want the data to be blank or be a copy of some existing data. The copy will not share pointers with the original, so you can safely edit the new one without worrying about messing up the original.</p>
+	<p>
+	You should use/modify all of the existing data before using this tool. You can only add one new thing each time. This should encourage you to only add new data as you need it.</p>
+	<p>
+	For some types of added data, MAGE needs some way to keep track of how many there are (rooms, tilesets, etc.). Therefore, when you add this type of data and save your ROM, MAGE will create a project file with the same name as your ROM in order to keep track of added data. This file will automatically be opened with your ROM as long as they have the same name, so you should not modify the project file name or its contents.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="patches">Patches</h2>
+	<p>
+	You can find a list of patches under the "Tools" menu. It will also show you which patches have been applied. If you would like to submit a patch, make a post in the MAGE thread.</p>
+	<h3 id="fusion-patches">Fusion Patches</h3>
+		<p>
+		<b>Debug menu</b> - Replaces the status screen while paused with a debug menu. Allows you to modify Samus's items, maps downloaded, doors unlocked, and the current event. Very useful for testing.</p>
+		<p>
+		<b>Skip intro cutscene</b> - Skips the long intro when starting a new game and goes straight to the first dialogue in the ship.</p>
+		<p>
+		<b>Obtain missiles from expansion</b> - Gives you the ability to use missiles upon picking up your first missile expansion, rather than needing to download them.</p>
+		<p>
+		<b>Obtain power bombs from expansion</b> - Gives you the ability to use power bombs upon picking up your first power bomb expansion, rather than needing to download them.</p>
+		<p>
+		<b>Single wall jump</b> - Allows you to wall jump along a single wall, ZM-style. This removes the extra horizontal velocity from normal wall jumps.</p>
+		<p>
+		<b>Mid-air bomb jump</b> - Allows you to bomb jump in mid-air, ZM-style. For infinite bomb jumping, change the bomb timer found in the <a href="#weapon-editor">Weapon Editor</a>.</p>
+		<p>
+		<b>Add minimap tiles</b> - Increases the amount of graphics available for minimap tiles. See <a href="#minimap-editor">Minimap Editor</a> for more info.</p>
+		<p>
+		<b>No minimap</b> - Removes the minimap from the top-right corner of the screen.</p>
+	<h3 id="zero-mission-patches">Zero Mission Patches</h3>
+		<p>
+		<b>Item toggle menu</b> - Enables a debug feature which allows you to toggle items on and off from the equipment screen.</p>
+		<p>
+		<b>Add elevators (keep cutscenes)</b> - Allows you to add new elevators to the game while preserving the existing elevator cutscenes.</p>
+		<p>
+		<b>Add elevators (remove cutscenes)</b> - Allows you to add new elevators to the game and removes existing elevator cutscenes.</p>
+		<p>
+		<b>Add minimap tiles</b> - Increases the amount of graphics available for minimap tiles. See <a href="#minimap-editor">Minimap Editor</a> for more info.</p>
+		<p>
+		<b>No minimap</b> - Removes the minimap from the top-right corner of the screen.</p>
+		<p>
+		<b>Disable Chozo statue hints</b> - Modifies Chozo statues so that they are always sitting and don't display hints.</p>
+		<p>
+		<b>Remove Samus closeup</b> - Skips the Samus closeup during the intro fanfare.</p>
+		
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="credits">Credits</h2>
+	<p>
+	<b>P.JBoy</b> for compiling a ton of useful information related to these games.</p>
+	<p>
+	<b>Martin Korth</b> for his indispensable debugger no$gba: <a href="http://problemkaputt.de/gba.htm">http://problemkaputt.de/gba.htm</a></p>
+	<p>
+	<b>Maël Hörz</b> for his very useful hex editor HxD: <a href="https://mh-nexus.de/en/hxd/">https://mh-nexus.de/en/hxd/</a></p>
+	<p>
+	<b>Mark James</b> for his Silk icon set: <a href="http://www.famfamfam.com/lab/icons/silk/">http://www.famfamfam.com/lab/icons/silk/</a></p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+<h2 id="version-history">Version History</h2>
+
+	<p><b>1.4.0 - 2023-01-22</b></p>
+	<ul>
+		<li>Added file screen text for Fusion</li>
+		<li>Fixed bug when saving shifted tile tables</li>
+		<li>Fixed Zero Mission beam damages</li>
+		<li>Fixed palette importing/exporting to not rely on filename</li>
+		<li>Testing a ROM uses a manually set emulator path instead of using the system default</li>
+		<li>ROMs can be opened directly with MAGE (via command line or drag and drop)</li>
+	</ul>
+	<p><b>1.3.2 - 2018-03-31</b></p>
+	<ul>
+		<li>Fixed graphical issues when viewing a room's first or second spriteset</li>
+		<li>Fixed bug where the list of scrolls in an area could be saved incorrectly</li>
+	</ul>
+	<p><b>1.3.1 - 2018-03-16</b></p>
+	<ul>
+		<li>Fixed graphical issues with Spriteset Editor</li>
+		<li>Fixed Room Options bug where room couldn't be cleared or resized more than once</li>
+		<li>Changed name of ceiling slope clipdata to have "(air)" at the end</li>
+	</ul>
+	<p><b>1.3.0 - 2018-01-27</b></p>
+	<ul>
+		<li>Fixed Connection Editor bug where a blank row could be removed</li>
+		<li>Added Hatch Lock Events to Connection Editor</li>
+		<li>Fixed incorrect palette offset for normal beam in Zero Mission</li>
+		<li>Fixed minor project file bug where the version created wasn't saved</li>
+		<li>Changed Connection Editor to verify entries before adding them</li>
+		<li>Added hatch number to tooltip for doors</li>
+		<li>Fixed Connection Editor bug where adding an area connection would display the wrong destination room (and sometimes fail)</li>
+		<li>Fixed bug where loading a room from the Minimap Editor didn't update displayed location</li>
+		<li>Added import/export for tile tables</li>
+		<li>Fixed bug where the new version prompt would appear with HTML text</li>
+		<li>Sprites are drawn using shared VRAM</li>
+		<li>Renamed "Hatch (can lock)" to "Closed hatch" (Zero Mission only)</li>
+		<li>Changed Graphics Editor and Tile Table Editor to display a warning when data is repointed</li>
+	</ul>
+	<p><b>1.2.0 - 2017-10-29</b></p>
+	<ul>
+		<li>Added Demo Editor</li>
+		<li>Added option to view breakable blocks</li>
+		<li>Fixed bug where BG3 could be interpreted as RLE</li>
+		<li>Added option to view clipdata values</li>
+		<li>Fixed Tile Table Editor bug where saving a tile table from an offset could corrupt the ROM</li>
+		<li>Fixed Tile Table Editor bug where the tile table offset wouldn't update</li>
+		<li>Added option to select individual palette rows when importing from image</li>
+	</ul>
+	<p><b>1.1.1 - 2017-07-31</b></p>
+	<ul>
+		<li>Added "Heated (hidden)" palette to Minimap Tile Builder</li>
+		<li>Added option to view mother ship hatches (Zero Mission only)</li>
+		<li>Fixed bug where backgrounds, rooms, spritesets, and minimaps couldn't be exported</li>
+		<li>Combined duplicate values in Physics Editor</li>
+		<li>Sprites are drawn under BG0 when possible</li>
+	</ul>
+	<p><b>1.1.0 - 2017-07-23</b></p>
+	<ul>
+		<li>Fixed data management bug involving current room's data when saving ROM</li>
+		<li>Fixed bug where tileset copies had incorrect tile table length</li>
+		<li>Added Physics Editor</li>
+		<li>Added Minimap Tile Builder</li>
+		<li>Added secondary sprite previews to Sprite Editor</li>
+		<li>Added Zero Mission patch that skips Samus closeup during intro</li>
+		<li>Fixed Sprite Editor bug where "Can be frozen" was always checked</li>
+		<li>Changed door editing to prevent setting width or height to 0</li>
+		<li>Changed Palette Editor to only overwrite modified colors</li>
+		<li>Fixed bug where room sprite data could be corrupted</li>
+		<li>Added more automatic updates between editors when changes are applied</li>
+	</ul>
+	<p><b>1.0.0 - 2017-06-21</b></p>
+	<ul>
+		<li>Fixed bug where LZ77 BG0s weren't redrawn</li>
+		<li>Changed Room Options to prevent resizing width or height to 0</li>
+		<li>Added tool to add new data (rooms, tilesets, spritesets, etc.)</li>
+		<li>Added projects (to keep track of added data)</li>
+		<li>Added ability to drag and drop ROM files to load them</li>
+		<li>Fixed bug where sprites weren't completely drawn when switching slots</li>
+		<li>Fixed bug where scrolls could be moved offscreen and disappear</li>
+		<li>Added keyboard shortcut 'G' to Minimap Editor to load room under cursor</li>
+		<li>Fixed Tile Table Editor bug where cursor movement was limited on 512x256 backgrounds</li>
+		<li>Fixed bug where the text in drop down lists could be edited</li>
+		<li>Fixed Spriteset Editor bug where adding a slot didn't update graphics</li>
+		<li>Fixed Spriteset Editor bug when removing the last slot of a spriteset</li>
+		<li>Renamed "Level GFX" to "RLE GFX"</li>
+		<li>Renamed "BG3 GFX" to "LZ77 GFX"</li>
+		<li>Added ability to import BG0 from image</li>
+		<li>Renamed "Import BG3 from Image" to "Import LZ77 BG from Image"</li>
+		<li>Fixed Connection Editor bug where some invalid area/event connections weren't removed</li>
+		<li>Added option to export BG0 image (under "Tools")</li>
+		<li>Fixed Text Editor bug where the delay command wouldn't parse</li>
+		<li>Added option to shift tiles in Tile Table Editor ("Offset" tab)</li>
+		<li>Fixed bug where a corrupt room 0 would prevent loading other rooms</li>
+		<li>Added ability to edit sprite graphics rows in Sprite Editor (Fusion only)</li>
+		<li>Added status messages when editing room objects</li>
+	</ul>
+	<p><b>0.9.0 - 2017-04-09</b></p>
+	<ul>
+		<li>Reimplemented ROM data management to be more robust</li>
+		<li>Fixed Graphics Editor bug where importing from image didn't work properly</li>
+		<li>Fixed Graphics Editor bug where updating palette didn't update graphics</li>
+		<li>Added automatic check for newer version of MAGE</li>
+		<li>Added option to LZ77 (de)compress binary files (under "Tools")</li>
+		<li>Fixed animated tilesets not saving</li>
+		<li>Added more pixel formats when importing/exporting images</li>
+		<li>Changed Spriteset Editor to not allow adding sprites 0-F</li>
+		<li>Improved LZ77 compression speed</li>
+		<li>Added tile numbers to Tile Table Editor</li>
+		<li>Added Zero Mission charge beam damage amounts to Weapon Editor</li>
+		<li>Added import/export for backgrounds, spritesets, minimaps</li>
+		<li>Added status messages to all editors</li>
+		<li>Added option to clear recent files</li>
+		<li>Changed Connection Editor to remove invalid connections</li>
+		<li>Fixed bug when importing tileset by image</li>
+		<li>Added option to automatically choose palette rows when importing from image</li>
+		<li>Added data management option to Tile Table Editor and when importing tilesets/backgrounds</li>
+		<li>Fixed description of two Zero Mission endings</li>
+		<li>Modified Animation Editor layout (animated graphics)</li>
+		<li>Added drawing for all LZ77 BG0s</li>
+		<li>Reimplemented tileset/room importing (incompatible with previous versions)</li>
+	</ul>
+	<p><b>0.8.1 - 2016-11-03</b></p>
+	<ul>
+		<li>Fixed bug where palettes were incorrectly imported/exported</li>
+		<li>Added two palette import/export formats (YY-CHR and raw)</li>
+		<li>Added option to toggle room's animated palette (under "View")</li>
+		<li>Added option to disable tooltips</li>
+		<li>Fixed bug where manually toggling edit mode behaved differently than middle-clicking</li>
+		<li>Fixed bug where selecting "Test Room Here" didn't work</li>
+	</ul>
+	<p><b>0.8.0 - 2016-10-10</b></p>
+	<ul>
+		<li>Reimplemented main window GUI</li>
+		<li>Renamed "Map" to "Room"</li>
+		<li>Moved Clipdata Shortcuts to "Tools"</li>
+		<li>Added clipboard viewer to "View"</li>
+		<li>Added tooltip to tileset viewer (displays block number)</li>
+		<li>Added zoom function for room viewer</li>
+		<li>Added option to always use selected clipdata (under "Edit")</li>
+		<li>Fixed bug when undoing a selected clipdata change</li>
+		<li>Fixed bug when undoing a paste over empty blocks</li>
+		<li>Reimplemented Minimap Editor and modified layout</li>
+		<li>Added button to Minimap Editor to change tile selector's background color</li>
+		<li>Added patches for each game to allow more minimap tiles</li>
+		<li>Removed limit on number of event based connections (incompatible with previous versions)</li>
+		<li>BG3 is always drawn</li>
+		<li>Reimplemented import ending and removed "Reduce blockiness" option</li>
+		<li>Added keyboard shortcuts 'W', 'A', 'S', 'D' to resize doors</li>
+		<li>Fixed bug when redoing a room object removal</li>
+		<li>Added Zero Mission patch that disables Chozo statue hints</li>
+		<li>Added view option for screen outlines</li>
+		<li>Added Tile Table Editor</li>
+	</ul>
+	<p><b>0.7.0 - 2016-08-11</b></p>
+	<ul>
+		<li>Added keyboard shortcut 'G' to load the room a door connects to</li>
+		<li>Added two Zero Mission patches that allow adding new elevators</li>
+		<li>Added automatic checker for sprite drop probabilities</li>
+		<li>Added additional text types for Zero Mission</li>
+		<li>Renamed text types to be less confusing</li>
+		<li>Added Location Names to Connection Editor</li>
+		<li>Changed Text Editor font to Courier New (for better compatibility)</li>
+		<li>Fixed bug when resizing rooms</li>
+	</ul>
+	<p><b>0.6.1 - 2016-06-29</b></p>
+	<ul>
+		<li>Added viewing for LZ77 compressed water and lava</li>
+		<li>Fixed new event based connections not working</li>
+		<li>Increased maximum number of event based connections from 64 to 256</li>
+	</ul>
+	<p><b>0.6.0 - 2016-06-24</b></p>
+	<ul>
+		<li>Added Animation Editor</li>
+		<li>Fixed Spriteset Editor crashing when loading spriteset 0</li>
+		<li>Fixed bug when saving area connections</li>
+		<li>Fixed bug when saving event based connections</li>
+		<li>Fixed clipdata viewer not updating when clipdata is cleared</li>
+	</ul>
+	<p><b>0.5.0 - 2016-06-21</b></p>
+	<ul>
+		<li>Initial release</li>
+	</ul>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+</div>
+</body>
+
+</html> 

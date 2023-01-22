@@ -1,0 +1,23 @@
+0,1,Area ID
+1,1,Current door
+2,1,Security level status
+Downloaded maps
+	3.0,Main Deck
+	3.1,Sector 1
+	3.2,Sector 2
+	3.3,Sector 3
+	3.4,Sector 4
+	3.5,Sector 5
+	3.6,Sector 6
+4,1,Event counter
+6,2,Sub-event
+8,1,Most recent item
+A,2,Max energy
+C,2,Current energy
+E,2,Max missiles
+10,2,Current missiles
+12,1,Max power bombs
+13,1,Current power bombs
+14,2,Samus direction
+16,2,Samus X position
+18,2,Samus Y position

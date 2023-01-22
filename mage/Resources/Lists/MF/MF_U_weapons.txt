@@ -1,0 +1,488 @@
+[
+	Name=Beams
+	Width=14
+	Height=2
+	[
+		Name=Normal
+		Graphics=58B524
+		Palette=58B464
+		[
+			Name=Damage
+			Value=83C14
+		]
+		[
+			Name=Charged damage
+			Value=83CD8
+		]
+		[
+			Name=Cooldown
+			Value=8159A
+		]
+		[
+			Name=Limit
+			Value=8157A
+		]
+		[
+			Name=Spawn
+			Value=84F82
+		]
+		[
+			Name=Charged spawn
+			Value=84E6A
+		]
+		[
+			Name=Speed
+			Value=84F70
+		]
+		[
+			Name=Charged speed
+			Value=84E50
+		]
+	]
+	[
+		Name=Charge
+		Graphics=58BA24
+		Palette=58B484
+		[
+			Name=Damage
+			Value=83D9C
+		]
+		[
+			Name=Charged damage
+			Value=83E7C
+		]
+		[
+			Name=Flare
+			Value=845BC
+		]
+		[
+			Name=Pseudo screw attack
+			Value=83744
+		]
+		[
+			Name=Limit
+			Value=814F8
+		]
+		[
+			Name=Spawn
+			Value=85DFE
+		]
+		[
+			Name=Charged spawn
+			Value=85BDA
+		]
+		[
+			Name=Speed
+			Value=85E0E
+		]
+		[
+			Name=Charged speed
+			Value=85BEA
+		]
+	]
+	[
+		Name=Wide
+		Graphics=58BF24
+		Palette=58B4A4
+		[
+			Name=Damage
+			Value=83F5C
+		]
+		[
+			Name=Charged damage
+			Value=84020
+		]
+		[
+			Name=Flare
+			Value=845C2
+		]
+		[
+			Name=Pseudo screw attack
+			Value=83738
+		]
+		[
+			Name=Limit
+			Value=814AE
+		]
+		[
+			Name=Spawn
+			Value=8609E
+		]
+		[
+			Name=Charged spawn
+			Value=85F5E
+		]
+		[
+			Name=Speed
+			Value=860AC
+		]
+		[
+			Name=Charged speed
+			Value=85F6C
+		]
+	]
+	[
+		Name=Plasma
+		Graphics=58C424
+		Palette=58B4C4
+		[
+			Name=Damage
+			Value=84118
+		]
+		[
+			Name=Charged damage
+			Value=841F8
+		]
+		[
+			Name=Flare
+			Value=845B4
+		]
+		[
+			Name=Pseudo screw attack
+			Value=8372C
+		]
+		[
+			Name=Limit
+			Value=81462
+		]
+		[
+			Name=Spawn
+			Value=8632A
+		]
+		[
+			Name=Charged spawn
+			Value=861E2
+		]
+		[
+			Name=Speed
+			Value=86338
+		]
+		[
+			Name=Charged speed
+			Value=861F0
+		]
+	]
+	[
+		Name=Wave
+		Graphics=58C924
+		Palette=58B4E4
+		[
+			Name=Damage
+			Value=8435A
+		]
+		[
+			Name=Charged damage
+			Value=844C2
+		]
+	]
+	[
+		Name=Ice
+		Graphics=58CE24
+		Palette=58B504
+		[
+			Name=Damage
+			Value=8431A
+		]
+		[
+			Name=Charged damage
+			Value=84482
+		]
+	]
+	[
+		Name=Wave/Ice
+		[
+			Name=Flare
+			Value=845A2
+		]
+		[
+			Name=Pseudo screw attack
+			Value=83712
+		]
+		[
+			Name=Limit
+			Value=81412
+		]
+		[
+			Name=Spawn
+			Value=8662E
+		]
+		[
+			Name=Charged spawn
+			Value=864AA
+		]
+		[
+			Name=Speed
+			Value=865FE
+		]
+		[
+			Name=Charged speed
+			Value=8647A
+		]
+	]
+	[
+		Name=Cooldown
+		Value=81558
+	]
+	[
+		Name=Charged cooldown
+		Value=81890
+	]
+]
+[
+	Name=Missiles
+	Palette=3E40FC
+	Width=4
+	Height=2
+	[
+		Name=Normal
+		Graphics=58D324
+		[
+			Name=Damage
+			Value=84732
+		]
+		[
+			Name=Cooldown
+			Value=816CE
+		]
+		[
+			Name=Limit
+			Value=816AE
+		]
+		[
+			Name=Spawn
+			Value=85178
+		]
+		[
+			Name=Speed 1
+			Value=58B40C
+		]
+		[
+			Name=Speed 2
+			Value=58B40E
+		]
+		[
+			Name=Speed 3
+			Value=58B410
+		]
+		[
+			Name=Speed 4
+			Value=58B412
+		]
+		[
+			Name=Speed 5
+			Value=58B414
+		]
+		[
+			Name=Speed 6
+			Value=58B416
+		]
+		[
+			Name=Speed 7
+			Value=58B418
+		]
+	]
+	[
+		Name=Super
+		Graphics=58D424
+		[
+			Name=Damage
+			Value=84806
+		]
+		[
+			Name=Cooldown
+			Value=8169A
+		]
+		[
+			Name=Limit
+			Value=8167A
+		]
+		[
+			Name=Spawn
+			Value=85228
+		]
+		[
+			Name=Speed 1
+			Value=58B41A
+		]
+		[
+			Name=Speed 2
+			Value=58B41C
+		]
+		[
+			Name=Speed 3
+			Value=58B41E
+		]
+		[
+			Name=Speed 4
+			Value=58B420
+		]
+		[
+			Name=Speed 5
+			Value=58B422
+		]
+		[
+			Name=Speed 6
+			Value=58B424
+		]
+		[
+			Name=Speed 7
+			Value=58B426
+		]
+	]
+	[
+		Name=Ice
+		Graphics=58D524
+		[
+			Name=Damage
+			Value=8491C
+		]
+		[
+			Name=Cooldown
+			Value=8165E
+		]
+		[
+			Name=Limit
+			Value=8163E
+		]
+		[
+			Name=Spawn
+			Value=852E0
+		]
+		[
+			Name=Speed 1
+			Value=58B428
+		]
+		[
+			Name=Speed 2
+			Value=58B42A
+		]
+		[
+			Name=Speed 3
+			Value=58B42C
+		]
+		[
+			Name=Speed 4
+			Value=58B42E
+		]
+		[
+			Name=Speed 5
+			Value=58B430
+		]
+		[
+			Name=Speed 6
+			Value=58B432
+		]
+		[
+			Name=Speed 7
+			Value=58B434
+		]
+	]
+	[
+		Name=Diffusion
+		Graphics=58D624
+		[
+			Name=Damage
+			Value=84A64
+		]
+		[
+			Name=Cooldown
+			Value=81618
+		]
+		[
+			Name=Limit
+			Value=815C6
+		]
+		[
+			Name=Spawn
+			Value=85448
+		]
+		[
+			Name=Speed 1
+			Value=58B436
+		]
+		[
+			Name=Speed 2
+			Value=58B438
+		]
+		[
+			Name=Speed 3
+			Value=58B43A
+		]
+		[
+			Name=Speed 4
+			Value=58B43C
+		]
+		[
+			Name=Speed 5
+			Value=58B43E
+		]
+		[
+			Name=Speed 6
+			Value=58B440
+		]
+		[
+			Name=Speed 7
+			Value=58B442
+		]
+	]
+]
+[
+	Name=Bombs
+	Palette=3E40FC
+	[
+		Name=Normal
+		Graphics=3E635C
+		Width=4
+		Height=1
+		[
+			Name=Damage
+			Value=84C7C
+		]
+		[
+			Name=Cooldown
+			Value=816FE
+		]
+		[
+			Name=Limit
+			Value=816E2
+		]
+		[
+			Name=Timer 1
+			Value=85740
+		]
+		[
+			Name=Timer 2
+			Value=8579C
+		]
+	]
+	[
+		Name=Power
+		Graphics=3E62FC
+		Width=3
+		Height=1
+		[
+			Name=Damage 1
+			Value=833C4
+		]
+		[
+			Name=Damage 2
+			Value=833C8
+		]
+		[
+			Name=Cooldown
+			Value=81730
+		]
+		[
+			Name=Limit
+			Value=8170A
+		]
+		[
+			Name=Timer 1
+			Value=85928
+		]
+		[
+			Name=Timer 2
+			Value=859CA
+		]
+	]
+]

@@ -1,0 +1,164 @@
+1.4.0 - 2023-01-21
+  - Added file screen text for Fusion
+  - Fixed bug when saving shifted tile tables
+  - Fixed Zero Mission beam damages
+  - Fixed palette importing/exporting to not rely on filename
+  - Testing a ROM uses a manually set emulator path instead of using the system default
+  - ROMs can be opened directly with MAGE (via command line or drag and drop)
+
+1.3.2 - 2018-03-31
+  - Fixed graphical issues when viewing a room's first or second spriteset
+  - Fixed bug where the list of scrolls in an area could be saved incorrectly
+
+1.3.1 - 2018-03-16
+  - Fixed graphical issues with Spriteset Editor
+  - Fixed Room Options bug where room couldn't be cleared or resized more than once
+  - Changed name of ceiling slope clipdata to have "(air)" at the end
+
+1.3.0 - 2018-01-27
+  - Fixed Connection Editor bug where a blank row could be removed
+  - Added Hatch Lock Events to Connection Editor
+  - Fixed incorrect palette offset for normal beam in Zero Mission
+  - Fixed minor project file bug where the version created wasn't saved
+  - Changed Connection Editor to verify entries before adding them
+  - Added hatch number to tooltip for doors
+  - Fixed Connection Editor bug where adding an area connection would display the wrong destination room (and sometimes fail)
+  - Fixed bug where loading a room from the Minimap Editor didn't update displayed location
+  - Added import/export for tile tables
+  - Fixed bug where the new version prompt would appear with HTML text
+  - Sprites are drawn using shared VRAM
+  - Renamed "Hatch (can lock)" to "Closed hatch" (Zero Mission only)
+  - Changed Graphics Editor and Tile Table Editor to display a warning when data is repointed
+
+1.2.0 - 2017-10-29
+  - Added Demo Editor
+  - Added option to view breakable blocks
+  - Fixed bug where BG3 could be interpreted as RLE
+  - Added option to view clipdata values
+  - Fixed Tile Table Editor bug where saving a tile table from an offset could corrupt the ROM
+  - Fixed Tile Table Editor bug where the tile table offset wouldn't update
+  - Added option to select individual palette rows when importing from image
+
+1.1.1 - 2017-07-31
+  - Added "Heated (hidden)" palette to Minimap Tile Builder
+  - Added option to view mother ship hatches (Zero Mission only)
+  - Fixed bug where backgrounds, rooms, spritesets, and minimaps couldn't be exported
+  - Combined duplicate values in Physics Editor
+  - Sprites are drawn under BG0 when possible
+
+1.1.0 - 2017-07-23
+  - Fixed data management bug involving current room's data when saving ROM
+  - Fixed bug where tileset copies had incorrect tile table length
+  - Added Physics Editor
+  - Added Minimap Tile Builder
+  - Added secondary sprite previews to Sprite Editor
+  - Added Zero Mission patch that skips Samus closeup during intro
+  - Fixed Sprite Editor bug where "Can be frozen" was always checked
+  - Changed door editing to prevent setting width or height to 0
+  - Changed Palette Editor to only overwrite modified colors
+  - Fixed bug where room sprite data could be corrupted
+  - Added more automatic updates between editors when changes are applied
+
+1.0.0 - 2017-06-21
+  - Fixed bug where LZ77 BG0s weren't redrawn
+  - Changed Room Options to prevent resizing width or height to 0
+  - Added tool to add new data (rooms, tilesets, spritesets, etc.)
+  - Added projects (to keep track of added data)
+  - Added ability to drag and drop ROM files to load them
+  - Fixed bug where sprites weren't completely drawn when switching slots
+  - Fixed bug where scrolls could be moved offscreen and disappear
+  - Added keyboard shortcut 'G' to Minimap Editor to load room under cursor
+  - Fixed Tile Table Editor bug where cursor movement was limited on 512x256 backgrounds
+  - Fixed bug where the text in drop down lists could be edited
+  - Fixed Spriteset Editor bug where adding a slot didn't update graphics
+  - Fixed Spriteset Editor bug when removing the last slot of a spriteset
+  - Renamed "Level GFX" to "RLE GFX"
+  - Renamed "BG3 GFX" to "LZ77 GFX"
+  - Added ability to import BG0 from image
+  - Renamed "Import BG3 from Image" to "Import LZ77 BG from Image"
+  - Fixed Connection Editor bug where some invalid area/event connections weren't removed
+  - Added option to export BG0 image (under "Tools")
+  - Fixed Text Editor bug where the delay command wouldn't parse
+  - Added option to shift tiles in Tile Table Editor ("Offset" tab)
+  - Fixed bug where a corrupt room 0 would prevent loading other rooms
+  - Added ability to edit sprite graphics rows in Sprite Editor (Fusion only)
+  - Added status messages when editing room objects
+
+0.9.0 - 2017-04-09
+  - Reimplemented ROM data management to be more robust
+  - Fixed Graphics Editor bug where importing from image didn't work properly
+  - Fixed Graphics Editor bug where updating palette didn't update graphics
+  - Added automatic check for newer version of MAGE
+  - Added option to LZ77 (de)compress binary files (under "Tools")
+  - Fixed animated tilesets not saving
+  - Added more pixel formats when importing/exporting images
+  - Changed Spriteset Editor to not allow adding sprites 0-F
+  - Improved LZ77 compression speed
+  - Added tile numbers to Tile Table Editor
+  - Added Zero Mission charge beam damage amounts to Weapon Editor
+  - Added import/export for backgrounds, spritesets, minimaps
+  - Added status messages to all editors
+  - Added option to clear recent files
+  - Changed Connection Editor to remove invalid connections
+  - Fixed bug when importing tileset by image
+  - Added option to automatically choose palette rows when importing from image
+  - Added data management option to Tile Table Editor and when importing tilesets/backgrounds
+  - Fixed description of two Zero Mission endings
+  - Modified Animation Editor layout (animated graphics)
+  - Added drawing for all LZ77 BG0s
+  - Reimplemented tileset/room importing (incompatible with previous versions)
+
+0.8.1 - 2016-11-03
+  - Fixed bug where palettes were incorrectly imported/exported
+  - Added two palette import/export formats (YY-CHR and raw)
+  - Added option to toggle room's animated palette (under "View")
+  - Added option to disable tooltips
+  - Fixed bug where manually toggling edit mode behaved differently than middle-clicking
+  - Fixed bug where selecting "Test Room Here" didn't work
+
+0.8.0 - 2016-10-10
+  - Reimplemented main window GUI
+  - Renamed "Map" to "Room"
+  - Moved Clipdata Shortcuts to "Tools"
+  - Added clipboard viewer to "View"
+  - Added tooltip to tileset viewer (displays block number)
+  - Added zoom function for room viewer
+  - Added option to always use selected clipdata (under "Edit")
+  - Fixed bug when undoing a selected clipdata change
+  - Fixed bug when undoing a paste over empty blocks
+  - Reimplemented Minimap Editor and modified layout
+  - Added button to Minimap Editor to change tile selector's background color
+  - Added patches for each game to allow more minimap tiles
+  - Removed limit on number of event based connections (incompatible with previous versions)
+  - BG3 is always drawn
+  - Reimplemented import ending and removed "Reduce blockiness" option
+  - Added keyboard shortcuts 'W', 'A', 'S', 'D' to resize doors
+  - Fixed bug when redoing a room object removal
+  - Added Zero Mission patch that disables Chozo statue hints
+  - Added view option for screen outlines
+  - Added Tile Table Editor
+
+0.7.0 - 2016-08-11
+  - Added keyboard shortcut 'G' to load the room a door connects to
+  - Added two Zero Mission patches that allow adding new elevators
+  - Added automatic checker for sprite drop probabilities
+  - Added additional text types for Zero Mission
+  - Renamed text types to be less confusing
+  - Added Location Names to Connection Editor
+  - Changed Text Editor font to Courier New (for better compatibility)
+  - Fixed bug when resizing rooms
+
+0.6.1 - 2016-06-29
+  - Added viewing for LZ77 compressed water and lava
+  - Fixed new event based connections not working
+  - Increased maximum number of event based connections from 64 to 256
+
+0.6.0 - 2016-06-24
+  - Added Animation Aditor
+  - Fixed Spriteset Editor crashing when loading spriteset 0
+  - Fixed bug when saving area connections
+  - Fixed bug when saving event based connections
+  - Fixed clipdata viewer not updating when clipdata is cleared
+
+0.5.0 - 2016-06-21
+  - Initial release

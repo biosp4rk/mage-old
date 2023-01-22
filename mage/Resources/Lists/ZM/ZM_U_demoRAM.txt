@@ -1,0 +1,93 @@
+0,1,Area ID
+1,1,Current door
+Samus data
+	4,1,Current pose
+	5,1,Midair flag
+	6,1,Arm cannon direction
+	7,1,Turning flag
+	8,1,Bouncing flag / shinespark angle
+	9,1,Speed boosting/shinesparking flag
+	A,1,Invincibility timer
+	B,1,Wall-jump timer
+	C,1,Shinespark timer
+	D,1,Unmorph palette timer
+	E,1,Speedboost timer
+	10,1,Last wall touched midair
+	12,1,Direction
+	16,2,X position
+	18,2,Y position
+	1A,2,X velocity
+	1C,2,Y velocity
+	1E,1,Current slope type
+	20,1,Animation counter
+	21,1,Current animation
+Weapon info
+	24,1,Diagonal aiming flag
+	26,1,Missile type highlighted
+	27,1,Missile type selected
+	28,1,Cooldown timer
+	29,1,Charge counter
+	2A,1,Beam release palette timer
+Samus echo
+	2C,1,Samus echo flag
+	2D,1,Samus echo timer
+	2E,1,Samus echo position
+	2F,1,Samus echo distance
+Screw attack animation
+	138,1,Screw attacking flag
+	139,1,Screw attack animation counter
+	13A,1,Screw attack current animation
+Equipment
+	140,2,Max energy
+	142,2,Max missiles
+	144,1,Max super missiles
+	145,1,Max power bombs
+	146,2,Current energy
+	148,2,Current missiles
+	14A,1,Current super missiles
+	14B,1,Current power bombs
+	Beam/bombs
+		14C.0,Long beam
+		14C.1,Ice beam
+		14C.2,Wave beam
+		14C.3,Plasma beam
+		14C.4,Charge beam
+		14C.7,Bombs
+	Beam/bombs activation
+		14D.0,Long beam
+		14D.1,Ice beam
+		14D.2,Wave beam
+		14D.3,Plasma beam
+		14D.4,Charge beam
+		14D.7,Bombs
+	Suit/misc
+		14E.0,Hi-jump
+		14E.1,Speed booster
+		14E.2,Space jump
+		14E.3,Screw attack
+		14E.4,Varia suit
+		14E.5,Gravity suit
+		14E.6,Morph ball
+		14E.7,Power grip
+	Suit/misc activation
+		14F.0,Hi-jump
+		14F.1,Speed booster
+		14F.2,Space jump
+		14F.3,Screw attack
+		14F.4,Varia suit
+		14F.5,Gravity suit
+		14F.6,Morph ball
+		14F.7,Power grip
+Downloaded maps
+	150.0,Brinstar
+	150.1,Kraid
+	150.2,Norfair
+	150.3,Ridley
+	150.4,Tourian
+	150.5,Crateria
+	150.6,Chozodia
+151,1,Low health flag
+152,1,Fully powered suit flag
+153,1,Grabbed by Metroid flag
+154,1,Lava damage timer
+240,1,Mothership doors flag

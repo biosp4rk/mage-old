@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Technical Info</title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			color: #f0f0f0;
+			background-color:#202020;
+			display:block;
+			border:0;
+			margin:16px;
+			padding:0px;
+			font-family:verdana, sans-serif;
+		}
+		.content {
+			background-color:#181818;
+			padding:10px;
+			padding-top:16px;
+			width:94%;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		a {
+			color: #A0A0F0
+		}
+		h1 {
+			font-size:36px;
+		}
+		h2 {
+			background-color:#102030;
+			border-top:3px solid #306090;
+			margin-top:40px;
+			padding:8px;
+		}
+		h3 {
+			background-color:#201030;
+			border-top:1px solid #603090;
+			margin-top:40px;
+			margin-left:0px;
+			padding:4px;
+		}
+		span.smallLink {
+			font-size:75%;
+		}
+		ul {
+			list-style:none;
+			padding-left:0;
+		}
+		li.toc1 {
+			font-size:85%;
+			list-style-type:none;
+		}
+		li.toc2 {
+			font-size:85%;
+			list-style-type:none;
+			text-indent:20px;
+		}
+		table {
+			border-collapse:collapse;
+			margin-bottom:1em;
+		}
+		table, th, td {
+			background-color: #202020;
+			border:1px solid #c0c0c0;
+			padding:0.2em;
+		}
+		td {
+			padding-right:1em;
+		}
+		th {
+			background-color:#181818;
+			padding-left:0.5em;
+			padding-right:0.5em;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="content">
+<h1>Technical Info</h1>
+
+<h2>Table of Contents</h2>
+	<ul>
+	<li class="toc1"><a href="#room-data">Room Data</a></li>
+		<li class="toc2"><a href="#room-header">Header</a></li>
+		<li class="toc2"><a href="#bg-properties">BG Properties</a></li>
+		<li class="toc2"><a href="#rle-bg">RLE BG Data</a></li>
+		<li class="toc2"><a href="#lz77-bg">LZ77 BG Data</a></li>
+		<li class="toc2"><a href="#bg3-scrolling">BG3 Scrolling</a></li>
+		<li class="toc2"><a href="#transparency">Transparency</a></li>
+		<li class="toc2"><a href="#room-sprites">Sprite Data</a></li>
+		<li class="toc2"><a href="#effects">Effects</a></li>
+	<li class="toc1"><a href="#tileset-data">Tileset Data</a></li>
+		<li class="toc2"><a href="#tileset-header">Header</a></li>
+		<li class="toc2"><a href="#level-graphics">Level Graphics</a></li>
+		<li class="toc2"><a href="#tileset-palette">Palette</a></li>
+		<li class="toc2"><a href="#bg3-graphics">BG3 Graphics</a></li>
+		<li class="toc2"><a href="#tile-table">Tile Table</a></li>
+		<li class="toc2"><a href="#animated-tileset">Animated Tileset</a></li>
+		<li class="toc2"><a href="#animated-graphics">Animated Graphics</a></li>
+		<li class="toc2"><a href="#animated-palette">Animated Palette</a></li>
+	<li class="toc1"><a href="#graphics">Graphics</a></li>
+		<li class="toc2"><a href="#graphics-format">Graphics Format</a></li>
+		<li class="toc2"><a href="#palette-format">Palette Format</a></li>
+		<li class="toc2"><a href="#generic-bg-graphics">Generic BG Graphics</a></li>
+		<li class="toc2"><a href="#generic-bg-palette">Generic BG Palette</a></li>
+		<li class="toc2"><a href="#generic-sprite-graphics">Generic Sprite Graphics</a></li>
+		<li class="toc2"><a href="#generic-sprite-palette">Generic Sprite Palette</a></li>
+	<li class="toc1"><a href="#sprites">Sprites</a></li>
+		<li class="toc2"><a href="#sprite-stats">Sprite Stats</a></li>
+		<li class="toc2"><a href="#sprite-graphics">Sprite Graphics</a></li>
+		<li class="toc2"><a href="#sprite-ai">Sprite AI</a></li>
+		<li class="toc2"><a href="#spritesets">Spritesets</a></li>
+	<li class="toc1"><a href="#connections">Connections</a></li>
+		<li class="toc2"><a href="#area-door-lists">Area Door Lists</a></li>
+		<li class="toc2"><a href="#doors-format">Doors Format</a></li>
+		<li class="toc2"><a href="#area-connections">Area Connections</a></li>
+		<li class="toc2"><a href="#event-based-connections">Event Based Connections</a></li>
+	<li class="toc1"><a href="#scrolls">Scrolls</a></li>
+		<li class="toc2"><a href="#area-scroll-lists">Area Scroll Lists</a></li>
+		<li class="toc2"><a href="#scrolls-format">Scrolls Format</a></li>
+	<li class="toc1"><a href="#minimaps">Minimaps</a></li>
+	<li class="toc1"><a href="#text">Text</a></li>
+	</ul>
+
+	
+<h2 id="room-data">Room Data</h2>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x79B8BC</li>
+		<li>[ZM] 0x75FAC4</li>
+	</ul>
+
+	<h3 id="room-header">Header</h3>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Tileset</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>BG0 Properties</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>BG1 Properties</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>BG2 Properties</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>BG3 Properties</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>4</td>
+	<td>Pointer to BG0 Data</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>4</td>
+	<td>Pointer to BG1 Data</td>
+	</tr>
+	<tr>
+	<td>0x10</td>
+	<td>4</td>
+	<td>Pointer to BG2 Data</td>
+	</tr>
+	<tr>
+	<td>0x14</td>
+	<td>4</td>
+	<td>Pointer to Clipdata</td>
+	</tr>
+	<tr>
+	<td>0x18</td>
+	<td>4</td>
+	<td>Pointer to BG3 Data</td>
+	</tr>
+	<tr>
+	<td>0x1C</td>
+	<td>1</td>
+	<td>BG3 scrolling</td>
+	</tr>
+	<tr>
+	<td>0x1D</td>
+	<td>1</td>
+	<td>Transparency</td>
+	</tr>
+	<tr>
+	<td>0x20</td>
+	<td>4</td>
+	<td>Pointer to default sprite data</td>
+	</tr>
+	<tr>
+	<td>0x24</td>
+	<td>1</td>
+	<td>Default spriteset</td>
+	</tr>
+	<tr>
+	<td>0x25</td>
+	<td>1</td>
+	<td>First spriteset event</td>
+	</tr>
+	<tr>
+	<td>0x28</td>
+	<td>4</td>
+	<td>Pointer to first sprite data</td>
+	</tr>
+	<tr>
+	<td>0x2C</td>
+	<td>1</td>
+	<td>First spriteset</td>
+	</tr>
+	<tr>
+	<td>0x2D</td>
+	<td>1</td>
+	<td>Second spriteset event</td>
+	</tr>
+	<tr>
+	<td>0x30</td>
+	<td>4</td>
+	<td>Pointer to second sprite data</td>
+	</tr>
+	<tr>
+	<td>0x34</td>
+	<td>1</td>
+	<td>Second spriteset</td>
+	</tr>
+	<tr>
+	<td>0x35</td>
+	<td>1</td>
+	<td>Map X coordinate</td>
+	</tr>
+	<tr>
+	<td>0x36</td>
+	<td>1</td>
+	<td>Map Y coordinate</td>
+	</tr>
+	<tr>
+	<td>0x37</td>
+	<td>1</td>
+	<td>Effect</td>
+	</tr>
+	<tr>
+	<td>0x38</td>
+	<td>1</td>
+	<td>Effect Y position</td>
+	</tr>
+	<tr>
+	<td>0x3A</td>
+	<td>2</td>
+	<td>Music track number</td>
+	</tr>
+	</table>
+	
+	<h3 id="bg-properties">BG Properties</h3>
+	
+	<p>If the property value has 0x10, it is RLE compressed. If the value has 0x40, it is LZ77 compressed. Other special values are shown below.</p>
+	
+	<h4>Fusion</h4>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x12</td>
+	<td>Dark when power is out</td>
+	</tr>
+	<tr>
+	<td>0x14</td>
+	<td>Unknown</td>
+	</tr>
+	<tr>
+	<td>0x40</td>
+	<td>Normal BG3, water, snow, etc.</td>
+	</tr>
+	<tr>
+	<td>0x41</td>
+	<td>Nightmare's room</td>
+	</tr>
+	<tr>
+	<td>0x43</td>
+	<td>Always dark</td>
+	</tr>
+	<tr>
+	<td>0x44</td>
+	<td>SA-X room</td>
+	</tr>
+	<tr>
+	<td>0x45</td>
+	<td>Dark at beginning of game</td>
+	</tr>
+	<tr>
+	<td>0x46</td>
+	<td>Water drain room</td>
+	</tr>
+	<tr>
+	<td>0x47</td>
+	<td>Fog</td>
+	</tr>
+	<tr>
+	<td>0x48</td>
+	<td>Meltdown</td>
+	</tr>
+	<tr>
+	<td>0x49</td>
+	<td>Nightmare shadow</td>
+	</tr>
+	<tr>
+	<td>0x4A</td>
+	<td>SR388 (Omega fight)</td>
+	</tr>
+	</table>
+	
+	<h4>Zero Mission</h4>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x31</td>
+	<td>Moving BG2 (Kraid, Chozo pillar)</td>
+	</tr>
+	<tr>
+	<td>0x40</td>
+	<td>Normal BG3, water, rain, etc.</td>
+	</tr>
+	<tr>
+	<td>0x45</td>
+	<td>Dark around Samus</td>
+	</tr>
+	<tr>
+	<td>0x46</td>
+	<td>BG starts from bottom</td>
+	</tr>
+	</table>
+	
+	<h3 id="rle-bg">RLE BG Data</h3>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Room width (in blocks)</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Room height (in blocks)</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td></td>
+	<td>RLE compressed block data</td>
+	</tr>
+	</table>
+	
+	<h3 id="lz77-bg">LZ77 BG Data</h3>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>BG size; 0 = 256x256, 1 = 512x256, 2 = 256x512</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>3</td>
+	<td>Decompressed length</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td></td>
+	<td>LZ77 compressed tile table</td>
+	</tr>
+	</table>
+	
+	<h3 id="bg3-scrolling">BG3 Scrolling</h3>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>X Scroll</th>
+	<th>Y Scroll</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>None</td>
+	<td>None</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>Relative to screen/2</td>
+	<td>None</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>None</td>
+	<td>Relative to screen/2</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>Relative to screen/2</td>
+	<td>Relative to screen/2</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>Relative to screen</td>
+	<td>Relative to screen/2</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>Relative to screen/2</td>
+	<td>Relative to screen</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>Relative to screen</td>
+	<td>Relative to screen</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>Relative to screen - 8px/frame</td>
+	<td>None</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>Relative to screen - 8px/frame</td>
+	<td>None</td>
+	</tr>
+	<tr>
+	<td>0x9</td>
+	<td>Relative to screen/4</td>
+	<td>None</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>Relative to screen - 8px/frame</td>
+	<td>Relative to screen</td>
+	</tr>
+	</table>
+	
+	<h3 id="transparency">Transparency</h3>
+	<h4>Position</h4>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0-0x3</td>
+	<td>Over BG1, over Samus</td>
+	</tr>
+	<tr>
+	<td>0x4 + 4n</td>
+	<td>Over BG1, over Samus</td>
+	</tr>
+	<tr>
+	<td>0x5 + 4n</td>
+	<td>Over BG2, over Samus</td>
+	</tr>
+	<tr>
+	<td>0x6 + 4n</td>
+	<td>Over BG2, under Samus</td>
+	</tr>
+	<tr>
+	<td>0x7 + 4n</td>
+	<td>Over BG3, under Samus</td>
+	</tr>
+	<tr>
+	<td>0x34+</td>
+	<td>Over BG1, over Samus</td>
+	</tr>
+	</table>
+	
+	
+	<h4>BLDALPHA</h4>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>EVA Coefficient</th>
+	<th>EVB Coefficient</th>
+	</tr>
+	<tr>
+	<td>0x0-0x7</td>
+	<td>16</td>
+	<td>0</td>
+	</tr>
+	<tr>
+	<td>0x8-0xB</td>
+	<td>16</td>
+	<td>7</td>
+	</tr>
+	<tr>
+	<td>0xC-0xF</td>
+	<td>16</td>
+	<td>10</td>
+	</tr>
+	<tr>
+	<td>0x10-0x13</td>
+	<td>16</td>
+	<td>13</td>
+	</tr>
+	<tr>
+	<td>0x14-0x17</td>
+	<td>16</td>
+	<td>16</td>
+	</tr>
+	<tr>
+	<td>0x18-0x1B</td>
+	<td>0</td>
+	<td>16</td>
+	</tr>
+	<tr>
+	<td>0x1C-0x1F</td>
+	<td>3</td>
+	<td>13</td>
+	</tr>
+	<tr>
+	<td>0x20-0x23</td>
+	<td>6</td>
+	<td>10</td>
+	</tr>
+	<tr>
+	<td>0x24-0x27</td>
+	<td>9</td>
+	<td>7</td>
+	</tr>
+	<tr>
+	<td>0x28-0x2B</td>
+	<td>11</td>
+	<td>5</td>
+	</tr>
+	<tr>
+	<td>0x2C-0x2F</td>
+	<td>13</td>
+	<td>3</td>
+	</tr>
+	<tr>
+	<td>0x30-0x33</td>
+	<td>16</td>
+	<td>0</td>
+	</tr>
+	<tr>
+	<td>0x34+</td>
+	<td>16</td>
+	<td>0</td>
+	</tr>
+	</table>
+	
+	<h3 id="room-sprites">Sprite Data</h3>
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Y position</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>X position</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>Bits 0-3 = Sprite set number + 1<br>Bits 4-7 = Property</td>
+	</tr>
+	</table>
+	
+	<h4>Property</h4>
+	
+	<p> In Fusion, sprite properties are mostly used to determine how a sprite interacts with X parasites. The effects of each value are not fully understood, and some values behave differently for different sprites. The chart below is for normal enemies. Most non-enemies have a property value of 1. In Zero Mission, it seems all sprites have a property value of 1, since there are no X parasites in the game.</p>
+	
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>Sprite ID = Sprite slot number</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>Spawns from X (if able)</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>Spawns</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>Spawns, X moves immediately</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>Spawns, X absorb ineffective</td>
+	</tr>
+	<tr>
+	<td>0x5-0x7</td>
+	<td>Doesn't die</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>Sprite ID = Sprite slot number</td>
+	</tr>
+	<tr>
+	<td>0x9-0xA</td>
+	<td>Spawns from X</td>
+	</tr>
+	<tr>
+	<td>0xB</td>
+	<td>Spawns from X, X moves immediately</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>Spawns from X, X absorb ineffective</td>
+	</tr>
+	<tr>
+	<td>0xD-0xF</td>
+	<td>Spawns from X, doesn't die</td>
+	</tr>
+	</table>
+	
+	<h3 id="effects">Effects</h3>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>Fusion</th>
+	<th>Zero Mission</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>None</td>
+	<td>None</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>Water</td>
+	<td>Water</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>Lava</td>
+	<td>Strong lava</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>Lava, heat damage, BG3 haze</td>
+	<td>Weak lava</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>Acid</td>
+	<td>Strong lava, heat damage, BG3 haze</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>Snowflakes, cold damage + knockback</td>
+	<td>Acid</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>Snowflakes, cold damage</td>
+	<td>Snowflakes, cold damage + knockback</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>Heat haze (BG3)</td>
+	<td>Snowflakes, cold damage</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>Heat haze (BG2+3)</td>
+	<td>Heat haze (BG3)</td>
+	</tr>
+	<tr>
+	<td>0x9</td>
+	<td>Gradient (BG3)</td>
+	<td>Heat haze (BG2+3)</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>Gradient (BG2)</td>
+	<td>Gradient (BG3)</td>
+	</tr>
+	<tr>
+	<td>0xB</td>
+	<td>Nightmare's room</td>
+	<td>Gradient (BG2)</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="tileset-data">Tileset Data</h2>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3BF888</li>
+		<li>[ZM] 0x33DFDC</li>
+	</ul>
+	
+	<h3 id="tileset-header">Header</h3>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>4</td>
+	<td>Pointer to level graphics</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>4</td>
+	<td>Pointer to palette</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>4</td>
+	<td>Pointer to BG3 graphics</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>4</td>
+	<td>Pointer to tile table</td>
+	</tr>
+	<tr>
+	<td>0x10</td>
+	<td>1</td>
+	<td>Animated tileset number</td>
+	</tr>
+	<tr>
+	<td>0x11</td>
+	<td>1</td>
+	<td>Animated palette number</td>
+	</tr>
+	</table>
+	
+	<h3 id="level-graphics">Level Graphics</h3>
+	<p>See <a href="#graphics-format">Graphics Format</a></p>
+	
+	<h3 id="tileset-palette">Palette</h3>
+	<p>See <a href="#palette-format">Palette Format</a></p>
+	
+	<h3 id="bg3-graphics">BG3 Graphics</h3>
+	<p>See <a href="#graphics-format">Graphics Format</a></p>
+	
+	<h3 id="tile-table">Tile Table</h3>
+	<table>
+	<tr>
+	<th>Bits</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0-9</td>
+	<td>Tile number (0-1023)</td>
+	</tr>
+	<tr>
+	<td>10</td>
+	<td>Horizontal flip</td>
+	</tr>
+	<tr>
+	<td>11</td>
+	<td>Vertical flip</td>
+	</tr>
+	<tr>
+	<td>12-15</td>
+	<td>Palette number (0-15)</td>
+	</tr>
+	</table>
+	
+	<h3 id="animated-tileset">Animated Tileset</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3C8F90</li>
+		<li>[ZM] 0x35FA78</li>
+	</ul>
+	
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Animated graphics number</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>2</td>
+	<td>Unused; always 0</td>
+	</tr>
+	</table>
+	
+	<h3 id="animated-graphics">Animated Graphics</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3C8D58</li>
+		<li>[ZM] 0x35F948</li>
+	</ul>
+	
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Animation type</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Frames per state</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>Number of states</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>4</td>
+	<td>Pointer to graphics data</td>
+	</tr>
+	</table>
+
+	<h4>Animation type</h4>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>Not animated</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>Normal</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>Alternate</td>
+	</tr>
+	</table>
+
+	<h3 id="animated-palette">Animated Palette</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3E3764</li>
+		<li>[ZM] 0x35FBFC</li>
+	</ul>
+	
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Animation type</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Frames per state</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>Number of states</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>4</td>
+	<td>Pointer to palette data</td>
+	</tr>
+	</table>
+
+	<h4>Animation type</h4>
+	<table>
+	<tr>
+	<th>Value</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>Not animated</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>Normal</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>Alternate</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="graphics">Graphics</h2>
+
+	<h3 id="graphics-format">Graphics Format</h3>
+	<p>Each byte of graphics data represents two pixels. Bits 0-3 are used for the first pixel, and bits 4-7 are used for the second pixel. These each give a value from 0-15, which is used as a palette index (since palettes contain 16 colors). Graphics are arranged into 8x8 tiles, so there are 32 bytes per tile. Tiles are filled in from left-to-right and top-to-bottom, unless they are flipped horizontally or vertically.</p>
+	
+	<h3 id="palette-format">Palette Format</h3>
+	<p>There are 16 colors in a palette. During gameplay, there are 16 palettes for sprites and 16 palettes for backgrounds. Each color is represented by two bytes. There are 5 bits for each color component, so there are 32 possible values for each and 32,768 possible combinations. Bits 0-4 are the red component, bits 5-9 are the green component, bits 10-14 are the blue component, and bit 15 is unused. This gives the following binary format: 0BBBBBGGGGGRRRRR</p>
+	
+	<h3 id="generic-bg-graphics">Generic BG Graphics</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3F28C8</li>
+		<li>[ZM] 0x5D940C</li>
+	</ul>
+	<p>0x1000 bytes of graphics data that is always loaded. It includes hatches, breakable blocks, and placeholder tank graphics.</p>
+	
+	<h3 id="generic-bg-palette">Generic BG Palette</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x40805C</li>
+		<li>[ZM] 0x5DFE20</li>
+	</ul>
+	<p>Three rows of 16 colors each that are always loaded. It provides the colors for hatches, breakable blocks, and tanks.</p>
+	
+	<h3 id="generic-sprite-graphics">Generic Sprite Graphics</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3E419C</li>
+		<li>[ZM] 0x32BAC8</li>
+	</ul>
+	<p>0x3800 bytes of graphics data that is always loaded. It includes the HUD, beam graphics, enemy drops, and various graphical effects.</p>
+	
+	<h3 id="generic-sprite-palette">Generic Sprite Palette</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3E40DC</li>
+		<li>[ZM] 0x32BA08</li>
+	</ul>
+	<p>Six rows of 16 colors each that are always loaded. It provides the colors for the HUD, beam graphics, enemy drops, and various graphical effects.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="sprites">Sprites</h2>
+	
+	<h3 id="sprite-stats">Sprite Stats</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x2E4D4C</li>
+		<li>[ZM] 0x2B0D68</li>
+	</ul>
+	
+	<h4>Fusion</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>2</td>
+	<td>Health</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>2</td>
+	<td>Damage</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>Suit damage reduction</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>1</td>
+	<td>Weaknesses</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>2</td>
+	<td>Health X probability</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>2</td>
+	<td>Missile X probability</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>2</td>
+	<td>Red X probability</td>
+	</tr>
+	</table>
+	
+	<h4>Zero Mission</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>2</td>
+	<td>Health</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>2</td>
+	<td>Damage</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>Weaknesses</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>2</td>
+	<td>No drop probability</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>2</td>
+	<td>Small health probability</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>2</td>
+	<td>Large health probability</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>2</td>
+	<td>Missile probability</td>
+	</tr>
+	<tr>
+	<td>0xE</td>
+	<td>2</td>
+	<td>Super missile probability</td>
+	</tr>
+	<tr>
+	<td>0x10</td>
+	<td>2</td>
+	<td>Power bomb probability</td>
+	</tr>
+	</table>
+	
+	<h4>Weaknesses</h4>
+	<table>
+	<tr>
+	<th>Bits</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0</td>
+	<td>Charge beam/pistol</td>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>Beam and bombs</td>
+	</tr>
+	<tr>
+	<td>2</td>
+	<td>Super missiles</td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td>Missiles</td>
+	</tr>
+	<tr>
+	<td>4</td>
+	<td>Power bombs</td>
+	</tr>
+	<tr>
+	<td>5</td>
+	<td>Speed booster and screw attack</td>
+	</tr>
+	<tr>
+	<td>6</td>
+	<td>Can be frozen</td>
+	</tr>
+	<tr>
+	<td>7</td>
+	<td>Unused</td>
+	</tr>
+	</table>
+	
+	<h3 id="sprite-graphics">Sprite Graphics</h3>
+	<ul>
+		<li><b>Graphics Offsets</b></li>
+		<li>[MF] 0x79A5D8</li>
+		<li>[ZM] 0x75EBF8</li>
+	</ul>
+	<ul>
+		<li><b>Palette Offsets</b></li>
+		<li>[MF] 0x79A8D4</li>
+		<li>[ZM] 0x75EEF0</li>
+	</ul>
+	<p>Sprite graphics are uncompressed in Fusion, but are LZ77 compressed in Zero Mission</p>
+	
+	<h3 id="sprite-ai">Sprite AI</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x79A29C</li>
+		<li>[ZM] 0x75E8C0</li>
+	</ul>
+	
+	<h3 id="spritesets">Spritesets</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x79ADD8</li>
+		<li>[ZM] 0x75F31C</li>
+	</ul>
+	
+	<p>Spritesets consist of a list of sprites. Each sprite has two bytes of data. The end of the list is marked with two 0 bytes.</p>
+	
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Sprite ID</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Graphics row</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="connections">Connections</h2>
+
+	<h3 id="area-door-lists">Area Door Lists</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x79B894</li>
+		<li>[ZM] 0x75FAA8</li>
+	</ul>
+	
+	<p>Each area has its own list of doors. When a room is loaded, it searches through the list to find all doors that belong to the room.</p>
+	
+	<h3 id="doors-format">Doors Format</h3>
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Door properties</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Owner room</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>X position start</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>X position end</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>Y position start</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>1</td>
+	<td>Y position end</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>1</td>
+	<td>Connected door number</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>1</td>
+	<td>X exit distance</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>1</td>
+	<td>Y exit distance</td>
+	</tr>
+	</table>
+	
+	<h4>Door Properties</h4>
+	<table>
+	<tr>
+	<th>Bits</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0-2</td>
+	<td>1 = Area connection<br>2 = No hatch<br>3 = Open hatch<br>4 = Hatch (can lock)<br>5 = Remove mother ship [ZM only]<br>6 = Set mother ship [ZM only]</td>
+	</tr>
+	<tr>
+	<td>4-5</td>
+	<td>1 = Always loads same room<br>2 = Loads event based room</td>
+	</tr>
+	<tr>
+	<td>6</td>
+	<td>Displays pop-up</td>
+	</tr>
+	</table>
+	
+	<ul>
+		<li>Area connection - connects a door from one area to another</li>
+		<li>No hatch - has an instant transition</li>
+		<li>Open hatch - a hatch with no cover</li>
+		<li>Hatch (can lock) - a hatch that always closes; can lock during certain events</li>
+		<li>Remove mother ship - switches hatch graphics to normal graphics</li>
+		<li>Set mother ship - switches hatch graphics to mother ship graphics</li>
+	</ul>
+	
+	<h3 id="area-connections">Area Connections</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3C8B90</li>
+		<li>[ZM] 0x360274</li>
+	</ul>
+	
+	<p>When a door's type is set to area connection, it looks through a list of area connections to see if it finds a match, based on the area and the door's number. The end of the list is marked with three 0xFF bytes.</p>
+	
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Source area number</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Source door number</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>Destination area number</td>
+	</tr>
+	</table>
+	
+	<h3 id="event-based-connections">Event Based Connections</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x3C8C68</li>
+		<li>[ZM] 0x3601D0</li>
+	</ul>
+	
+	<p>When a door can load an event based room, it looks through a list of event based connections to see if it finds a match, based on the area and the door's number.</p>
+	
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Source area number</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Source door number</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>Event value</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>Destination door number</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="scrolls">Scrolls</h2>
+
+	<h3 id="area-scroll-lists">Area Scroll Lists</h3>
+	<ul>
+		<li><b>Offsets</b></li>
+		<li>[MF] 0x79BB08</li>
+		<li>[ZM] 0x75FD28</li>
+	</ul>
+	
+	<p>Each area has its own list of scrolls. When a room is loaded, it searches through the list to find if the room is part of the list.</p>
+	
+	<h3 id="scrolls-format">Scrolls Format</h3>
+	<h4>Format</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Room ID</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>Number of scrolls (NS)</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>4 × NS</td>
+	<td>Scroll data</td>
+	</tr>
+	</table>
+	
+	<h4>Scroll Data</h4>
+	<table>
+	<tr>
+	<th>Offset</th>
+	<th>Size</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>X position start</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>X position end</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>Y position start</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>Y position end</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>Breakable block X position (0xFF if none)</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>1</td>
+	<td>Breakable block Y position (0xFF if none)</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>1</td>
+	<td>Extended bounds direction<br>0 = Left<br>1 = Right<br>2 = Up<br>3 = Down<br>0xFF = None</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>1</td>
+	<td>Extended bounds new value (0xFF if none)</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="minimaps">Minimaps</h2>
+	<ul>
+		<li><b>Data Offsets</b></li>
+		<li>[MF] 0x79BE5C</li>
+		<li>[ZM] 0x7601EC</li>
+	</ul>
+	<ul>
+		<li><b>Graphics Offsets</b></li>
+		<li>[MF] 0x561FA8</li>
+		<li>[ZM] 0x40E0C4</li>
+	</ul>
+	<ul>
+		<li><b>Palette Offsets</b></li>
+		<li>[MF] 0x5657A8</li>
+		<li>[ZM] 0x411360</li>
+	</ul>
+	
+	<p>Minimap data is essentially stored as an LZ77 compressed tile table. The palette of each tile is used to determine its type.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+	
+<h2 id="text">Text</h2>
+	<ul>
+		<li><b>Graphics Offsets</b></li>
+		<li>[MF] 0x682FAC</li>
+		<li>[ZM] 0x415460</li>
+	</ul>
+	<ul>
+		<li><b>Palette Offsets</b></li>
+		<li>[MF] 0x565B28</li>
+		<li>[ZM] 0x3FD030</li>
+	</ul>
+	<ul>
+		<li><b>Character Widths Offsets</b></li>
+		<li>[MF] 0x576234</li>
+		<li>[ZM] 0x40D7B0</li>
+	</ul>
+	
+	<p>Text data is stored in several different lists, depending on its category. The character widths table is used to determine how wide each character is when drawn to the screen.</p>
+	<span class="smallLink">(<a href="#top">top</a>)</span>
+
+</div>
+</body>
+
+</html> 

@@ -1,0 +1,8 @@
+MF_U_debugMenu,Debug menu,interdpth
+MF_U_skipIntro,Skip intro cutscene,P.JBoy
+MF_U_getMissiles,Obtain missiles from expansion,P.JBoy
+MF_U_getPowerBombs,Obtain power bombs from expansion,P.JBoy
+MF_U_singleWallJump,Single wall jump,biospark
+MF_U_infiniteBombJump,Mid-air bomb jump,biospark
+MF_U_addMinimapTiles,Add minimap tiles,biospark
+MF_U_noMinimap,No minimap,biospark

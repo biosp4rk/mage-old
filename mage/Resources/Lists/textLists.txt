@@ -1,0 +1,21 @@
+[AMTE]
+79C0F0,72,Navigation
+79C10C,6F,Pause screen
+79C5A4,13,Monologues
+79CDD8,1A,Locations
+79CDF4,30,Messages
+79EC68,B,File screen
+
+[BMXE]
+75FEE0,06,Story
+7602D4,13,Descriptions
+760764,1A,Locations
+760780,27,Messages
+76079C,25,File screen
+
+[BMXP]
+773D80,06,Story
+77417C,13,Descriptions
+774A1C,1A,Locations
+774A38,27,Messages
+774A54,25,File screen
