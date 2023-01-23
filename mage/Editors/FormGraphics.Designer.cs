@@ -418,6 +418,7 @@
             this.toolStrip_zoom200,
             this.toolStrip_zoom100});
             this.statusStrip_zoom.Image = global::mage.Properties.Resources.toolbar_zoom;
+            this.statusStrip_zoom.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.statusStrip_zoom.Name = "statusStrip_zoom";
             this.statusStrip_zoom.Size = new System.Drawing.Size(66, 49);
             this.statusStrip_zoom.Text = "Zoom";
