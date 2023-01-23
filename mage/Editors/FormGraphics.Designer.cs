@@ -76,10 +76,10 @@
             this.menuItem_32bitARGB = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_palette = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palImport = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItem_palExport = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palImport_raw = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palImport_tlp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palImport_yychr = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem_palExport = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palExport_raw = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palExport_tlp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palExport_yychr = new System.Windows.Forms.ToolStripMenuItem();
@@ -398,7 +398,7 @@
             // statusStrip_spring
             // 
             this.statusStrip_spring.Name = "statusStrip_spring";
-            this.statusStrip_spring.Size = new System.Drawing.Size(1139, 41);
+            this.statusStrip_spring.Size = new System.Drawing.Size(1193, 41);
             this.statusStrip_spring.Spring = true;
             // 
             // statusLabel_zoomLevel
@@ -418,43 +418,42 @@
             this.toolStrip_zoom200,
             this.toolStrip_zoom100});
             this.statusStrip_zoom.Image = global::mage.Properties.Resources.toolbar_zoom;
-            this.statusStrip_zoom.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.statusStrip_zoom.Name = "statusStrip_zoom";
-            this.statusStrip_zoom.Size = new System.Drawing.Size(42, 49);
+            this.statusStrip_zoom.Size = new System.Drawing.Size(66, 49);
             this.statusStrip_zoom.Text = "Zoom";
             // 
             // toolStrip_zoom1600
             // 
             this.toolStrip_zoom1600.Name = "toolStrip_zoom1600";
-            this.toolStrip_zoom1600.Size = new System.Drawing.Size(448, 54);
+            this.toolStrip_zoom1600.Size = new System.Drawing.Size(273, 54);
             this.toolStrip_zoom1600.Text = "1600%";
             this.toolStrip_zoom1600.Click += new System.EventHandler(this.toolStrip_zoom1600_Click);
             // 
             // toolStrip_zoom800
             // 
             this.toolStrip_zoom800.Name = "toolStrip_zoom800";
-            this.toolStrip_zoom800.Size = new System.Drawing.Size(448, 54);
+            this.toolStrip_zoom800.Size = new System.Drawing.Size(273, 54);
             this.toolStrip_zoom800.Text = "800%";
             this.toolStrip_zoom800.Click += new System.EventHandler(this.toolStrip_zoom800_Click);
             // 
             // toolStrip_zoom400
             // 
             this.toolStrip_zoom400.Name = "toolStrip_zoom400";
-            this.toolStrip_zoom400.Size = new System.Drawing.Size(448, 54);
+            this.toolStrip_zoom400.Size = new System.Drawing.Size(273, 54);
             this.toolStrip_zoom400.Text = "400%";
             this.toolStrip_zoom400.Click += new System.EventHandler(this.toolStrip_zoom400_Click);
             // 
             // toolStrip_zoom200
             // 
             this.toolStrip_zoom200.Name = "toolStrip_zoom200";
-            this.toolStrip_zoom200.Size = new System.Drawing.Size(448, 54);
+            this.toolStrip_zoom200.Size = new System.Drawing.Size(273, 54);
             this.toolStrip_zoom200.Text = "200%";
             this.toolStrip_zoom200.Click += new System.EventHandler(this.toolStrip_zoom200_Click);
             // 
             // toolStrip_zoom100
             // 
             this.toolStrip_zoom100.Name = "toolStrip_zoom100";
-            this.toolStrip_zoom100.Size = new System.Drawing.Size(448, 54);
+            this.toolStrip_zoom100.Size = new System.Drawing.Size(273, 54);
             this.toolStrip_zoom100.Text = "100%";
             this.toolStrip_zoom100.Click += new System.EventHandler(this.toolStrip_zoom100_Click);
             // 
@@ -469,7 +468,7 @@
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(16, 5, 0, 5);
             this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip.Size = new System.Drawing.Size(1560, 60);
+            this.menuStrip.Size = new System.Drawing.Size(1560, 58);
             this.menuStrip.TabIndex = 0;
             // 
             // menuStrip_gfx
@@ -478,7 +477,7 @@
             this.importToolStripMenuItem,
             this.menuItem_gfxExport});
             this.menuStrip_gfx.Name = "menuStrip_gfx";
-            this.menuStrip_gfx.Size = new System.Drawing.Size(157, 50);
+            this.menuStrip_gfx.Size = new System.Drawing.Size(157, 48);
             this.menuStrip_gfx.Text = "Graphics";
             // 
             // importToolStripMenuItem
@@ -573,7 +572,7 @@
             this.menuItem_palImport,
             this.menuItem_palExport});
             this.menuStrip_palette.Name = "menuStrip_palette";
-            this.menuStrip_palette.Size = new System.Drawing.Size(132, 50);
+            this.menuStrip_palette.Size = new System.Drawing.Size(132, 48);
             this.menuStrip_palette.Text = "Palette";
             // 
             // menuItem_palImport
@@ -583,29 +582,8 @@
             this.menuItem_palImport_tlp,
             this.menuItem_palImport_yychr});
             this.menuItem_palImport.Name = "menuItem_palImport";
-            this.menuItem_palImport.Size = new System.Drawing.Size(274, 54);
+            this.menuItem_palImport.Size = new System.Drawing.Size(448, 54);
             this.menuItem_palImport.Text = "Import";
-            // 
-            // menuItem_palImport_raw
-            // 
-            this.menuItem_palImport_raw.Name = "menuItem_palImport_raw";
-            this.menuItem_palImport_raw.Size = new System.Drawing.Size(382, 54);
-            this.menuItem_palImport_raw.Text = "Raw...";
-            this.menuItem_palImport_raw.Click += new System.EventHandler(this.menuItem_palImport_raw_Click);
-            // 
-            // menuItem_palImport_tlp
-            // 
-            this.menuItem_palImport_tlp.Name = "menuItem_palImport_tlp";
-            this.menuItem_palImport_tlp.Size = new System.Drawing.Size(382, 54);
-            this.menuItem_palImport_tlp.Text = "Tile Layer Pro...";
-            this.menuItem_palImport_tlp.Click += new System.EventHandler(this.menuItem_palImport_tlp_Click);
-            // 
-            // menuItem_palImport_yychr
-            // 
-            this.menuItem_palImport_yychr.Name = "menuItem_palImport_yychr";
-            this.menuItem_palImport_yychr.Size = new System.Drawing.Size(382, 54);
-            this.menuItem_palImport_yychr.Text = "YY-CHR...";
-            this.menuItem_palImport_yychr.Click += new System.EventHandler(this.menuItem_palImport_yychr_Click);
             // 
             // menuItem_palExport
             // 
@@ -614,27 +592,48 @@
             this.menuItem_palExport_tlp,
             this.menuItem_palExport_yychr});
             this.menuItem_palExport.Name = "menuItem_palExport";
-            this.menuItem_palExport.Size = new System.Drawing.Size(274, 54);
+            this.menuItem_palExport.Size = new System.Drawing.Size(448, 54);
             this.menuItem_palExport.Text = "Export";
+            // 
+            // menuItem_palImport_raw
+            // 
+            this.menuItem_palImport_raw.Name = "menuItem_palImport_raw";
+            this.menuItem_palImport_raw.Size = new System.Drawing.Size(448, 54);
+            this.menuItem_palImport_raw.Text = "Raw...";
+            this.menuItem_palImport_raw.Click += new System.EventHandler(this.menuItem_palImport_raw_Click);
+            // 
+            // menuItem_palImport_tlp
+            // 
+            this.menuItem_palImport_tlp.Name = "menuItem_palImport_tlp";
+            this.menuItem_palImport_tlp.Size = new System.Drawing.Size(448, 54);
+            this.menuItem_palImport_tlp.Text = "Tile Layer Pro...";
+            this.menuItem_palImport_tlp.Click += new System.EventHandler(this.menuItem_palImport_tlp_Click);
+            // 
+            // menuItem_palImport_yychr
+            // 
+            this.menuItem_palImport_yychr.Name = "menuItem_palImport_yychr";
+            this.menuItem_palImport_yychr.Size = new System.Drawing.Size(448, 54);
+            this.menuItem_palImport_yychr.Text = "YY-CHR...";
+            this.menuItem_palImport_yychr.Click += new System.EventHandler(this.menuItem_palImport_yychr_Click);
             // 
             // menuItem_palExport_raw
             // 
             this.menuItem_palExport_raw.Name = "menuItem_palExport_raw";
-            this.menuItem_palExport_raw.Size = new System.Drawing.Size(382, 54);
+            this.menuItem_palExport_raw.Size = new System.Drawing.Size(448, 54);
             this.menuItem_palExport_raw.Text = "Raw...";
             this.menuItem_palExport_raw.Click += new System.EventHandler(this.menuItem_palExport_raw_Click);
             // 
             // menuItem_palExport_tlp
             // 
             this.menuItem_palExport_tlp.Name = "menuItem_palExport_tlp";
-            this.menuItem_palExport_tlp.Size = new System.Drawing.Size(382, 54);
+            this.menuItem_palExport_tlp.Size = new System.Drawing.Size(448, 54);
             this.menuItem_palExport_tlp.Text = "Tile Layer Pro...";
             this.menuItem_palExport_tlp.Click += new System.EventHandler(this.menuItem_palExport_tlp_Click);
             // 
             // menuItem_palExport_yychr
             // 
             this.menuItem_palExport_yychr.Name = "menuItem_palExport_yychr";
-            this.menuItem_palExport_yychr.Size = new System.Drawing.Size(382, 54);
+            this.menuItem_palExport_yychr.Size = new System.Drawing.Size(448, 54);
             this.menuItem_palExport_yychr.Text = "YY-CHR...";
             this.menuItem_palExport_yychr.Click += new System.EventHandler(this.menuItem_palExport_yychr_Click);
             // 
