@@ -115,12 +115,6 @@
     <Compile Include="FormClipboard.Designer.cs">
       <DependentUpon>FormClipboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Editors\FormCredits.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormCredits.Designer.cs">
-      <DependentUpon>FormCredits.cs</DependentUpon>
-    </Compile>
     <Compile Include="Editors\FormDemo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,9 +366,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClipboard.resx">
       <DependentUpon>FormClipboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormCredits.resx">
-      <DependentUpon>FormCredits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Editors\FormDemo.resx">
       <DependentUpon>FormDemo.cs</DependentUpon>
