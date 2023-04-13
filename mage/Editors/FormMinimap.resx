@@ -112,21 +112,476 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip_bgColor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>156, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>55</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>841, 512</value>
+  </data>
+  <data name="statusLabel_coor.Text" xml:space="preserve">
+    <value>(0, 0)</value>
+  </data>
+  <data name="statusStrip.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox_map.Text" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
+    <value>button_apply</value>
+  </data>
+  <data name="&gt;&gt;checkBox_yflip.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="statusStrip_export.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="&gt;&gt;button_editGFX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_yflip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_coor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_view.Items" xml:space="preserve">
+    <value>Explored</value>
+  </data>
+  <data name="&gt;&gt;groupBox_tiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_area.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="&gt;&gt;label_selSquare.Parent" xml:space="preserve">
+    <value>groupBox_selection</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_type.Parent" xml:space="preserve">
+    <value>groupBox_selection</value>
+  </data>
+  <data name="panel_squares.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Parent" xml:space="preserve">
+    <value>groupBox_map</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gfxView_map.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="groupBox_selection.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel_squares.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_type.Text" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="&gt;&gt;panel_black.Name" xml:space="preserve">
+    <value>panel_black</value>
+  </data>
+  <data name="panel_squares.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Name" xml:space="preserve">
+    <value>statusStrip_spring</value>
+  </data>
+  <data name="comboBox_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="checkBox_xflip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 16</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="gfxView_squares.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="statusLabel_tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 19</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Name" xml:space="preserve">
+    <value>statusStrip_export</value>
+  </data>
+  <data name="groupBox_tiles.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="comboBox_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_map.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gfxView_squares.Parent" xml:space="preserve">
+    <value>panel_squares</value>
+  </data>
+  <data name="groupBox_selection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 82</value>
+  </data>
+  <data name="&gt;&gt;gfxView_map.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="button_bgColor.ToolTip" xml:space="preserve">
+    <value>Change background color</value>
+  </data>
+  <data name="&gt;&gt;comboBox_view.Parent" xml:space="preserve">
+    <value>groupBox_map</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_palette.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel_black.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="statusLabel_tile.Text" xml:space="preserve">
+    <value>Tile:</value>
+  </data>
+  <data name="gfxView_squares.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 262</value>
+  </data>
+  <data name="&gt;&gt;button_bgColor.Name" xml:space="preserve">
+    <value>button_bgColor</value>
+  </data>
+  <data name="&gt;&gt;gfxView_squares.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="groupBox_tiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>530, 99</value>
+  </data>
+  <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="statusLabel_tile.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="gfxView_squares.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMinimap</value>
+  </data>
+  <data name="statusLabel_coor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 19</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.Name" xml:space="preserve">
+    <value>comboBox_type</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Name" xml:space="preserve">
+    <value>comboBox_palette</value>
+  </data>
+  <data name="&gt;&gt;toolTip_bgColor.Name" xml:space="preserve">
+    <value>toolTip_bgColor</value>
+  </data>
+  <data name="label_view.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="gfxView_sel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportImage.Name" xml:space="preserve">
+    <value>statusStrip_exportImage</value>
+  </data>
+  <data name="groupBox_map.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 82</value>
+  </data>
+  <data name="checkBox_yflip.Text" xml:space="preserve">
+    <value>Y flip</value>
+  </data>
+  <data name="&gt;&gt;label_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_bgColor.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_coor.Name" xml:space="preserve">
+    <value>statusLabel_coor</value>
+  </data>
+  <data name="comboBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importRaw.Name" xml:space="preserve">
+    <value>statusStrip_importRaw</value>
+  </data>
+  <data name="groupBox_selection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 11</value>
+  </data>
+  <data name="label_view.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;toolTip_bgColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_squares.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="gfxView_squares.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="statusStrip_importRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
+  </data>
+  <data name="gfxView_map.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="gfxView_sel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;statusLabel_tile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_selSquare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="button_editGFX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 17</value>
+  </data>
+  <data name="statusLabel_tile.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="statusStrip_exportRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="checkBox_yflip.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gfxView_map.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label_palette.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox_yflip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 35</value>
+  </data>
+  <data name="&gt;&gt;checkBox_yflip.Name" xml:space="preserve">
+    <value>checkBox_yflip</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="label_type.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="statusLabel_coor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="checkBox_xflip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.Parent" xml:space="preserve">
+    <value>groupBox_selection</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_apply.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Minimap Editor</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_type.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;gfxView_sel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox_tiles.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;groupBox_tiles.Name" xml:space="preserve">
+    <value>groupBox_tiles</value>
+  </data>
+  <data name="label_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="panel_squares.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panel_squares.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;groupBox_map.Name" xml:space="preserve">
+    <value>groupBox_map</value>
+  </data>
+  <data name="&gt;&gt;label_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_area.Parent" xml:space="preserve">
+    <value>groupBox_map</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_black.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_palette.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label_view.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_view.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;comboBox_view.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>857, 551</value>
+  </data>
+  <data name="comboBox_palette.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_palette.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox_selection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;comboBox_area.Name" xml:space="preserve">
+    <value>comboBox_area</value>
+  </data>
+  <data name="checkBox_yflip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gfxView_map.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel_black.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label_view.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 50</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_view.Name" xml:space="preserve">
+    <value>label_view</value>
+  </data>
+  <data name="&gt;&gt;groupBox_selection.Name" xml:space="preserve">
+    <value>groupBox_selection</value>
+  </data>
+  <data name="&gt;&gt;label_view.Parent" xml:space="preserve">
+    <value>groupBox_map</value>
+  </data>
+  <data name="&gt;&gt;comboBox_view.Name" xml:space="preserve">
+    <value>comboBox_view</value>
+  </data>
+  <data name="gfxView_sel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="panel_squares.Location" type="System.Drawing.Point, System.Drawing">
+    <value>530, 152</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_view.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox_tiles.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBox_yflip.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_view.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="comboBox_view.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox_map.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_editGFX.Name" xml:space="preserve">
+    <value>button_editGFX</value>
+  </data>
+  <data name="label_selSquare.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gfxView_sel.Parent" xml:space="preserve">
+    <value>panel_black</value>
+  </data>
+  <data name="&gt;&gt;groupBox_selection.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -201,4 +656,373 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;statusStrip_exportImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_view.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBox_xflip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_area.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>755, 126</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_xflip.Name" xml:space="preserve">
+    <value>checkBox_xflip</value>
+  </data>
+  <data name="gfxView_sel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 30</value>
+  </data>
+  <data name="button_editGFX.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label_selSquare.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_close.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label_area.Text" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="button_apply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_squares.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_view.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_area.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_type.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox_map.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox_xflip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_editGFX.Text" xml:space="preserve">
+    <value>Edit GFX</value>
+  </data>
+  <data name="checkBox_xflip.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label_selSquare.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="label_selSquare.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkBox_xflip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="&gt;&gt;button_editGFX.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gfxView_sel.Name" xml:space="preserve">
+    <value>gfxView_sel</value>
+  </data>
+  <data name="label_selSquare.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statusStrip_exportImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="&gt;&gt;groupBox_selection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_map.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="statusStrip_spring.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 19</value>
+  </data>
+  <data name="comboBox_area.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_bgColor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statusStrip_export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 22</value>
+  </data>
+  <data name="&gt;&gt;label_selSquare.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gfxView_sel.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="statusStrip_importRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="label_type.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox_tiles.Text" xml:space="preserve">
+    <value>Tiles</value>
+  </data>
+  <data name="&gt;&gt;checkBox_yflip.Parent" xml:space="preserve">
+    <value>groupBox_selection</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Name" xml:space="preserve">
+    <value>statusStrip_import</value>
+  </data>
+  <data name="&gt;&gt;groupBox_map.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_xflip.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_view.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 47</value>
+  </data>
+  <data name="label_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 59</value>
+  </data>
+  <data name="&gt;&gt;gfxView_squares.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Parent" xml:space="preserve">
+    <value>groupBox_tiles</value>
+  </data>
+  <data name="gfxView_squares.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_tile.Name" xml:space="preserve">
+    <value>statusLabel_tile</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportRaw.Name" xml:space="preserve">
+    <value>statusStrip_exportRaw</value>
+  </data>
+  <data name="&gt;&gt;button_bgColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_bgColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 17</value>
+  </data>
+  <data name="comboBox_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="&gt;&gt;label_selSquare.Name" xml:space="preserve">
+    <value>label_selSquare</value>
+  </data>
+  <data name="comboBox_palette.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox_map.Location" type="System.Drawing.Point, System.Drawing">
+    <value>530, 11</value>
+  </data>
+  <data name="&gt;&gt;panel_black.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_black.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="&gt;&gt;button_editGFX.Parent" xml:space="preserve">
+    <value>groupBox_tiles</value>
+  </data>
+  <data name="&gt;&gt;groupBox_tiles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_yflip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 24</value>
+  </data>
+  <data name="label_selSquare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 26</value>
+  </data>
+  <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 56</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_exportImage.Text" xml:space="preserve">
+    <value>Image...</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="button_editGFX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="&gt;&gt;button_bgColor.Parent" xml:space="preserve">
+    <value>groupBox_tiles</value>
+  </data>
+  <data name="label_palette.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gfxView_squares.Name" xml:space="preserve">
+    <value>gfxView_squares</value>
+  </data>
+  <data name="button_editGFX.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gfxView_map.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 473</value>
+  </data>
+  <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_squares.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 278</value>
+  </data>
+  <data name="&gt;&gt;label_type.Name" xml:space="preserve">
+    <value>label_type</value>
+  </data>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>755, 99</value>
+  </data>
+  <data name="statusLabel_coor.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;gfxView_map.Name" xml:space="preserve">
+    <value>gfxView_map</value>
+  </data>
+  <data name="label_view.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_type.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button_bgColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 21</value>
+  </data>
+  <data name="statusStrip_exportRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="panel_black.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 31</value>
+  </data>
+  <data name="&gt;&gt;gfxView_map.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label_area.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gfxView_map.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_black.Parent" xml:space="preserve">
+    <value>groupBox_selection</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_type.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox_tiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 47</value>
+  </data>
+  <data name="comboBox_view.Items1" xml:space="preserve">
+    <value>Downloaded</value>
+  </data>
+  <data name="&gt;&gt;checkBox_xflip.Parent" xml:space="preserve">
+    <value>groupBox_selection</value>
+  </data>
+  <data name="groupBox_selection.Text" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="checkBox_xflip.Text" xml:space="preserve">
+    <value>X flip</value>
+  </data>
+  <data name="label_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="statusStrip_import.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="gfxView_sel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBox_view.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_import.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="&gt;&gt;panel_squares.Name" xml:space="preserve">
+    <value>panel_squares</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Name" xml:space="preserve">
+    <value>label_palette</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 19</value>
+  </data>
+  <data name="label_palette.Text" xml:space="preserve">
+    <value>Palette:</value>
+  </data>
+  <data name="label_area.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Parent" xml:space="preserve">
+    <value>groupBox_tiles</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 488</value>
+  </data>
+  <data name="&gt;&gt;groupBox_selection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_area.Name" xml:space="preserve">
+    <value>label_area</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+  <metadata name="toolTip_bgColor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>156, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>55</value>
+  </metadata>
 </root>

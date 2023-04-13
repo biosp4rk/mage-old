@@ -112,18 +112,1029 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>45</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;textBox_pal.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tabPage_offset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_tileTL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;label_tileTL.Name" xml:space="preserve">
+    <value>label_tileTL</value>
+  </data>
+  <data name="&gt;&gt;label_tileBR.Name" xml:space="preserve">
+    <value>label_tileBR</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTL.Name" xml:space="preserve">
+    <value>button_hflipTL</value>
+  </data>
+  <data name="label_palette.Text" xml:space="preserve">
+    <value>Palette:</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_hflipTR.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;label_shift.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_copyPalette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 111</value>
+  </data>
+  <data name="&gt;&gt;label_tileBL.Name" xml:space="preserve">
+    <value>label_tileBL</value>
+  </data>
+  <data name="&gt;&gt;gfxView_result.Parent" xml:space="preserve">
+    <value>panel_result</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button_palTR.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="statusStrip_import.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPage_background.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="label_tileBL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 50</value>
+  </data>
+  <data name="tabPage_background.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="statusStrip_exportTileTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="label_size.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_hflipBR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 18</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.Name" xml:space="preserve">
+    <value>numericUpDown_height</value>
+  </data>
+  <data name="&gt;&gt;label_palette.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_palBR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 103</value>
+  </data>
+  <data name="label_pal.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="statusLabel_tile.Text" xml:space="preserve">
+    <value>Tile:</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_tileTable.Name" xml:space="preserve">
+    <value>label_tileTable</value>
+  </data>
+  <data name="label_area.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_palTL.Name" xml:space="preserve">
+    <value>button_palTL</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTL.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="button_hflipTL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 18</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;label_shift.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="tabPage_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBox_pal.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="textBox_ttb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 21</value>
+  </data>
+  <data name="label_bg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 12</value>
+  </data>
+  <data name="button_vflipTR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button_vflipTR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 37</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTR.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label_bg.Name" xml:space="preserve">
+    <value>label_bg</value>
+  </data>
+  <data name="textBox_pal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 21</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_pal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileTL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 13</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
+  </data>
+  <data name="&gt;&gt;button_palTL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBox_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBR.Name" xml:space="preserve">
+    <value>button_hflipBR</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTL.Name" xml:space="preserve">
+    <value>button_vflipTL</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_size.Items2" xml:space="preserve">
+    <value>256 x 512</value>
+  </data>
+  <data name="tabPage_background.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="label_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="comboBox_palette.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="comboBox_bg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_shift.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="numericUpDown_height.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_go.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 42</value>
+  </data>
+  <data name="button_vflipBR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 66</value>
+  </data>
+  <data name="&gt;&gt;button_go.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_pal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_go.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_bg.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="&gt;&gt;textBox_ttb.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportTileTable.Name" xml:space="preserve">
+    <value>statusStrip_exportTileTable</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="label_shift.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="button_vflipBR.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="button_hflipTR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 11</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="label_tileBR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 79</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.Name" xml:space="preserve">
+    <value>comboBox_bg</value>
+  </data>
+  <data name="label_shift.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_hflipBL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 18</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportTileTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_hflipBL.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importTileTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_area.Text" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTR.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label_pal.Name" xml:space="preserve">
+    <value>label_pal</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="&gt;&gt;label_bg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 30</value>
+  </data>
+  <data name="panel_text.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 55</value>
+  </data>
+  <data name="button_vflipBR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 37</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="comboBox_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 18</value>
+  </data>
+  <data name="&gt;&gt;button_palTR.Name" xml:space="preserve">
+    <value>button_palTR</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>832, 409</value>
+  </data>
+  <data name="button_hflipBL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label_tileBL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 12</value>
+  </data>
+  <data name="checkBox_preserveData.Text" xml:space="preserve">
+    <value>Preserve
+existing data</value>
+  </data>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_shift.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="button_hflipBL.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="label_tileTL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 12</value>
+  </data>
+  <data name="&gt;&gt;label_tileBR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panel_result.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="tabPage_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 66</value>
+  </data>
+  <data name="&gt;&gt;label_shift.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="numericUpDown_shift.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="gfxView_gfx.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBR.Name" xml:space="preserve">
+    <value>button_vflipBR</value>
+  </data>
+  <data name="label_bg.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;checkBox_copyPalette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfx.Name" xml:space="preserve">
+    <value>textBox_gfx</value>
+  </data>
+  <data name="label_shift.Text" xml:space="preserve">
+    <value>Shift:</value>
+  </data>
+  <data name="comboBox_bg.Items" xml:space="preserve">
+    <value>BG0</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="label_tileTR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 42</value>
+  </data>
+  <data name="label_tileTR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label_height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Name" xml:space="preserve">
+    <value>gfxView_gfx</value>
+  </data>
+  <data name="button_hflipTL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 11</value>
+  </data>
+  <data name="tabPage_background.Text" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="&gt;&gt;panel_result.Name" xml:space="preserve">
+    <value>panel_result</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_tileTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_offset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_room.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_palBR.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="statusLabel_tile.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label_height.Text" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label_tileTR.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBox_ttb.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Name" xml:space="preserve">
+    <value>statusStrip_export</value>
+  </data>
+  <data name="button_vflipBL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 37</value>
+  </data>
+  <data name="&gt;&gt;button_go.Name" xml:space="preserve">
+    <value>button_go</value>
+  </data>
+  <data name="&gt;&gt;label_size.Name" xml:space="preserve">
+    <value>label_size</value>
+  </data>
+  <data name="textBox_gfx.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tabPage_offset.Name" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="&gt;&gt;label_room.Name" xml:space="preserve">
+    <value>label_room</value>
+  </data>
+  <data name="label_bg.Text" xml:space="preserve">
+    <value>BG:</value>
+  </data>
+  <data name="panel_gfx.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label_tileTL.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="panel_result.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;label_room.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_ttb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_area.Name" xml:space="preserve">
+    <value>label_area</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Name" xml:space="preserve">
+    <value>comboBox_tileset</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Name" xml:space="preserve">
+    <value>comboBox_area</value>
+  </data>
+  <data name="&gt;&gt;label_room.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_vflipTR.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;button_go.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_area.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="&gt;&gt;button_palTR.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="button_vflipBR.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="button_hflipTL.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="statusStrip_import.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_result.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;panel_text.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_tileBL.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="label_height.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label_height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_palBR.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;tabPage_offset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_bg.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gfxView_gfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 3</value>
+  </data>
+  <data name="label_size.Text" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="button_go.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_shift.Name" xml:space="preserve">
+    <value>numericUpDown_shift</value>
+  </data>
+  <data name="&gt;&gt;label_graphics.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_tileBR.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="label_area.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="checkBox_preserveData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gfxView_tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 74</value>
+  </data>
+  <data name="label_tileTable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_hflipBR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 103</value>
+  </data>
+  <data name="&gt;&gt;checkBox_copyPalette.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_bg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 3</value>
+  </data>
+  <data name="comboBox_size.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="gfxView_tile.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="tabPage_tileset.Text" xml:space="preserve">
+    <value>Tileset</value>
+  </data>
+  <data name="gfxView_tile.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="textBox_pal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 18</value>
+  </data>
+  <data name="&gt;&gt;textBox_ttb.Name" xml:space="preserve">
+    <value>textBox_ttb</value>
+  </data>
+  <data name="&gt;&gt;label_tileTL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="comboBox_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="button_hflipTL.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="comboBox_size.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;button_palBL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormTileTable</value>
+  </data>
+  <data name="button_palTL.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="comboBox_size.Items" xml:space="preserve">
+    <value>256 x 256</value>
+  </data>
+  <data name="label_tileTable.Text" xml:space="preserve">
+    <value>Tile table:</value>
+  </data>
+  <data name="label_tileBL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;tabPage_background.Name" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="label_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="button_apply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="label_height.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="panel_result.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 375</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_graphics.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="label_tileTR.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfx.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage_offset.Text" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBL.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="button_vflipBL.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="comboBox_area.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_hflipBR.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="checkBox_copyPalette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 16</value>
+  </data>
+  <data name="button_palBR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_shift.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileBR.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="button_hflipTL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_pal.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTR.Name" xml:space="preserve">
+    <value>button_hflipTR</value>
+  </data>
+  <data name="button_palBL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 103</value>
+  </data>
+  <data name="gfxView_result.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="checkBox_preserveData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 22</value>
+  </data>
+  <data name="&gt;&gt;panel_result.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_tileTable.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="statusLabel_tile.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_vflipTR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 30</value>
+  </data>
+  <data name="button_palBL.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;button_palTL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_size.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Name" xml:space="preserve">
+    <value>label_tileset</value>
+  </data>
+  <data name="button_palTL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_palBL.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="button_palTL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileBL.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label_tileTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;label_size.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button_palBR.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="panel_gfx.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_room.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label_graphics.Text" xml:space="preserve">
+    <value>Graphics:</value>
+  </data>
+  <data name="&gt;&gt;comboBox_size.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="checkBox_preserveData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 28</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Name" xml:space="preserve">
+    <value>comboBox_palette</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.Name" xml:space="preserve">
+    <value>gfxView_tile</value>
+  </data>
+  <data name="label_pal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
+    <value>button_apply</value>
+  </data>
+  <data name="label_tileBL.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Name" xml:space="preserve">
+    <value>label_palette</value>
+  </data>
+  <data name="&gt;&gt;button_palBR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="button_palTR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tabPage_background.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBL.Name" xml:space="preserve">
+    <value>button_hflipBL</value>
+  </data>
+  <data name="label_graphics.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Name" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="statusStrip_importTileTable.Text" xml:space="preserve">
+    <value>Tile Table...</value>
+  </data>
+  <data name="checkBox_copyPalette.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBR.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label_graphics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 3</value>
+  </data>
+  <data name="tabPage_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="panel_gfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 134</value>
+  </data>
+  <data name="&gt;&gt;label_tileTable.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_offset.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_pal.Text" xml:space="preserve">
+    <value>Palette:</value>
+  </data>
+  <data name="statusStrip_importTileTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="&gt;&gt;label_tileTL.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 19</value>
+  </data>
+  <data name="&gt;&gt;button_palBR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_text.Name" xml:space="preserve">
+    <value>panel_text</value>
+  </data>
+  <data name="panel_result.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_vflipTL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 30</value>
+  </data>
+  <data name="label_tileTL.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="&gt;&gt;panel_text.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_result.Location" type="System.Drawing.Point, System.Drawing">
+    <value>547, 11</value>
+  </data>
+  <data name="label_size.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="comboBox_room.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_size.Items1" xml:space="preserve">
+    <value>512 x 256</value>
+  </data>
+  <data name="button_vflipTR.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="gfxView_tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 30</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTR.Name" xml:space="preserve">
+    <value>button_vflipTR</value>
+  </data>
+  <data name="label_room.Text" xml:space="preserve">
+    <value>Room:</value>
+  </data>
+  <data name="button_vflipBL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button_palBL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="&gt;&gt;label_height.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_tileBR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="tabPage_offset.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="label_tileTR.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="label_size.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="statusStrip_export.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 82</value>
+  </data>
+  <data name="label_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 3</value>
+  </data>
+  <data name="&gt;&gt;button_palTR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_offset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 66</value>
+  </data>
+  <data name="&gt;&gt;button_palBL.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="button_hflipBR.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="comboBox_bg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -198,4 +1209,499 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;textBox_pal.Name" xml:space="preserve">
+    <value>textBox_pal</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gfxView_result.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_vflipTL.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;checkBox_copyPalette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_palBL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_palTR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 21</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 92</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importTileTable.Name" xml:space="preserve">
+    <value>statusStrip_importTileTable</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBL.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;textBox_ttb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_vflipBL.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="label_size.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_palTR.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="tabPage_background.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 66</value>
+  </data>
+  <data name="checkBox_copyPalette.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_tileTL.Parent" xml:space="preserve">
+    <value>panel_text</value>
+  </data>
+  <data name="label_pal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gfxView_result.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 385</value>
+  </data>
+  <data name="comboBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 10</value>
+  </data>
+  <data name="label_graphics.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="panel_gfx.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;button_vflipTL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.Name" xml:space="preserve">
+    <value>panel_gfx</value>
+  </data>
+  <data name="numericUpDown_shift.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_tile.Name" xml:space="preserve">
+    <value>statusLabel_tile</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_palTL.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label_size.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_shift.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_hflipBR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;label_bg.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;label_height.Name" xml:space="preserve">
+    <value>label_height</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 22</value>
+  </data>
+  <data name="&gt;&gt;label_size.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="button_vflipTL.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;label_tileBR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_hflipTR.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;label_graphics.Name" xml:space="preserve">
+    <value>label_graphics</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;comboBox_size.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_background.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tile Table Editor</value>
+  </data>
+  <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_area.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox_pal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gfxView_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 236</value>
+  </data>
+  <data name="button_palBL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button_vflipBR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="button_palTL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 11</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panel_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>529, 252</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_palBR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="comboBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 109</value>
+  </data>
+  <data name="numericUpDown_height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 37</value>
+  </data>
+  <data name="panel_text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 74</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_height.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Parent" xml:space="preserve">
+    <value>panel_gfx</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_tileBR.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_graphics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_palBL.Name" xml:space="preserve">
+    <value>button_palBL</value>
+  </data>
+  <data name="&gt;&gt;button_vflipBL.Name" xml:space="preserve">
+    <value>button_vflipBL</value>
+  </data>
+  <data name="button_hflipBL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 103</value>
+  </data>
+  <data name="comboBox_size.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="checkBox_copyPalette.Text" xml:space="preserve">
+    <value>Copy palette #</value>
+  </data>
+  <data name="label_graphics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="tabPage_tileset.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;tabPage_offset.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="button_palTL.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;button_hflipTL.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="button_hflipTR.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.Name" xml:space="preserve">
+    <value>comboBox_room</value>
+  </data>
+  <data name="statusStrip_exportTileTable.Text" xml:space="preserve">
+    <value>Tile Table...</value>
+  </data>
+  <data name="label_pal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 112</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_tile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileTR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_ttb.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="&gt;&gt;label_shift.Name" xml:space="preserve">
+    <value>label_shift</value>
+  </data>
+  <data name="&gt;&gt;label_tileBL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;gfxView_result.Name" xml:space="preserve">
+    <value>gfxView_result</value>
+  </data>
+  <data name="button_vflipBL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 66</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_vflipTL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 37</value>
+  </data>
+  <data name="gfxView_gfx.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>848, 448</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 24</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_bg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Name" xml:space="preserve">
+    <value>statusStrip_spring</value>
+  </data>
+  <data name="&gt;&gt;button_palBR.Name" xml:space="preserve">
+    <value>button_palBR</value>
+  </data>
+  <data name="textBox_gfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 18</value>
+  </data>
+  <data name="button_palTR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button_hflipTR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 18</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileTL.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;label_tileTR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_background.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Name" xml:space="preserve">
+    <value>checkBox_preserveData</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Name" xml:space="preserve">
+    <value>statusStrip_import</value>
+  </data>
+  <data name="numericUpDown_height.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="numericUpDown_shift.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 42</value>
+  </data>
+  <data name="&gt;&gt;label_tileBL.Parent" xml:space="preserve">
+    <value>panel_text</value>
+  </data>
+  <data name="&gt;&gt;comboBox_size.Name" xml:space="preserve">
+    <value>comboBox_size</value>
+  </data>
+  <data name="statusLabel_tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 19</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfx.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_result.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_preserveData.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;label_tileBL.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_hflipTR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_vflipTL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label_tileTable.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gfxView_result.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 3</value>
+  </data>
+  <data name="label_tileBR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gfxView_result.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;checkBox_copyPalette.Name" xml:space="preserve">
+    <value>checkBox_copyPalette</value>
+  </data>
+  <data name="comboBox_size.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="&gt;&gt;panel_text.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_tileTR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label_shift.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 44</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_go.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="label_palette.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_go.Parent" xml:space="preserve">
+    <value>tabPage_offset</value>
+  </data>
+  <data name="comboBox_bg.Items1" xml:space="preserve">
+    <value>BG3</value>
+  </data>
+  <data name="statusStrip_spring.Size" type="System.Drawing.Size, System.Drawing">
+    <value>604, 19</value>
+  </data>
+  <data name="&gt;&gt;button_hflipBR.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="numericUpDown_height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="&gt;&gt;label_room.Parent" xml:space="preserve">
+    <value>tabPage_background</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button_palTR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 11</value>
+  </data>
+  <data name="label_tileset.Text" xml:space="preserve">
+    <value>Tileset:</value>
+  </data>
+  <data name="&gt;&gt;textBox_pal.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_tileTR.Name" xml:space="preserve">
+    <value>label_tileTR</value>
+  </data>
+  <data name="gfxView_result.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 359</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>45</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

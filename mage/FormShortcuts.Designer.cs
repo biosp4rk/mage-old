@@ -153,285 +153,199 @@
             // 
             // button_air
             // 
+            resources.ApplyResources(this.button_air, "button_air");
             this.button_air.Image = global::mage.Properties.Resources.shortcut_air;
-            this.button_air.Location = new System.Drawing.Point(6, 19);
             this.button_air.Name = "button_air";
-            this.button_air.Size = new System.Drawing.Size(24, 24);
-            this.button_air.TabIndex = 0;
             this.button_air.UseVisualStyleBackColor = true;
             this.button_air.Click += new System.EventHandler(this.button_air_Click);
             // 
             // button_solid
             // 
+            resources.ApplyResources(this.button_solid, "button_solid");
             this.button_solid.Image = global::mage.Properties.Resources.shortcut_solid;
-            this.button_solid.Location = new System.Drawing.Point(6, 47);
             this.button_solid.Name = "button_solid";
-            this.button_solid.Size = new System.Drawing.Size(24, 24);
-            this.button_solid.TabIndex = 1;
             this.button_solid.UseVisualStyleBackColor = true;
             this.button_solid.Click += new System.EventHandler(this.button_solid_Click);
             // 
             // label_air
             // 
-            this.label_air.AutoSize = true;
-            this.label_air.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_air, "label_air");
             this.label_air.Name = "label_air";
-            this.label_air.Size = new System.Drawing.Size(19, 13);
-            this.label_air.TabIndex = 0;
-            this.label_air.Text = "Air";
             // 
             // label_solid
             // 
-            this.label_solid.AutoSize = true;
-            this.label_solid.Location = new System.Drawing.Point(36, 51);
+            resources.ApplyResources(this.label_solid, "label_solid");
             this.label_solid.Name = "label_solid";
-            this.label_solid.Size = new System.Drawing.Size(59, 13);
-            this.label_solid.TabIndex = 0;
-            this.label_solid.Text = "Solid block";
             // 
             // label_missile
             // 
-            this.label_missile.AutoSize = true;
-            this.label_missile.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_missile, "label_missile");
             this.label_missile.Name = "label_missile";
-            this.label_missile.Size = new System.Drawing.Size(40, 13);
-            this.label_missile.TabIndex = 0;
-            this.label_missile.Text = "Normal";
             // 
             // button_missile
             // 
+            resources.ApplyResources(this.button_missile, "button_missile");
             this.button_missile.Image = global::mage.Properties.Resources.shortcut_missile;
-            this.button_missile.Location = new System.Drawing.Point(6, 19);
             this.button_missile.Name = "button_missile";
-            this.button_missile.Size = new System.Drawing.Size(24, 24);
-            this.button_missile.TabIndex = 0;
             this.button_missile.UseVisualStyleBackColor = true;
             this.button_missile.Click += new System.EventHandler(this.button_missile_Click);
             // 
             // label_energy
             // 
-            this.label_energy.AutoSize = true;
-            this.label_energy.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_energy, "label_energy");
             this.label_energy.Name = "label_energy";
-            this.label_energy.Size = new System.Drawing.Size(40, 13);
-            this.label_energy.TabIndex = 0;
-            this.label_energy.Text = "Normal";
             // 
             // button_energy
             // 
+            resources.ApplyResources(this.button_energy, "button_energy");
             this.button_energy.Image = global::mage.Properties.Resources.shortcut_energy;
-            this.button_energy.Location = new System.Drawing.Point(6, 19);
             this.button_energy.Name = "button_energy";
-            this.button_energy.Size = new System.Drawing.Size(24, 24);
-            this.button_energy.TabIndex = 0;
             this.button_energy.UseVisualStyleBackColor = true;
             this.button_energy.Click += new System.EventHandler(this.button_energy_Click);
             // 
             // label_crumble
             // 
-            this.label_crumble.AutoSize = true;
-            this.label_crumble.Location = new System.Drawing.Point(36, 165);
+            resources.ApplyResources(this.label_crumble, "label_crumble");
             this.label_crumble.Name = "label_crumble";
-            this.label_crumble.Size = new System.Drawing.Size(74, 13);
-            this.label_crumble.TabIndex = 0;
-            this.label_crumble.Text = "Crumble block";
             // 
             // button_crumble
             // 
+            resources.ApplyResources(this.button_crumble, "button_crumble");
             this.button_crumble.Image = global::mage.Properties.Resources.shortcut_crumble;
-            this.button_crumble.Location = new System.Drawing.Point(6, 159);
             this.button_crumble.Name = "button_crumble";
-            this.button_crumble.Size = new System.Drawing.Size(24, 24);
-            this.button_crumble.TabIndex = 5;
             this.button_crumble.UseVisualStyleBackColor = true;
             this.button_crumble.Click += new System.EventHandler(this.button_crumble_Click);
             // 
             // label_power
             // 
-            this.label_power.AutoSize = true;
-            this.label_power.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_power, "label_power");
             this.label_power.Name = "label_power";
-            this.label_power.Size = new System.Drawing.Size(40, 13);
-            this.label_power.TabIndex = 0;
-            this.label_power.Text = "Normal";
             // 
             // button_power
             // 
+            resources.ApplyResources(this.button_power, "button_power");
             this.button_power.Image = global::mage.Properties.Resources.shortcut_power;
-            this.button_power.Location = new System.Drawing.Point(6, 19);
             this.button_power.Name = "button_power";
-            this.button_power.Size = new System.Drawing.Size(24, 24);
-            this.button_power.TabIndex = 0;
             this.button_power.UseVisualStyleBackColor = true;
             this.button_power.Click += new System.EventHandler(this.button_power_Click);
             // 
             // label_super
             // 
-            this.label_super.AutoSize = true;
-            this.label_super.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_super, "label_super");
             this.label_super.Name = "label_super";
-            this.label_super.Size = new System.Drawing.Size(40, 13);
-            this.label_super.TabIndex = 0;
-            this.label_super.Text = "Normal";
             // 
             // button_super
             // 
+            resources.ApplyResources(this.button_super, "button_super");
             this.button_super.Image = global::mage.Properties.Resources.shortcut_super;
-            this.button_super.Location = new System.Drawing.Point(6, 19);
             this.button_super.Name = "button_super";
-            this.button_super.Size = new System.Drawing.Size(24, 24);
-            this.button_super.TabIndex = 0;
             this.button_super.UseVisualStyleBackColor = true;
             this.button_super.Click += new System.EventHandler(this.button_super_Click);
             // 
             // label_shot
             // 
-            this.label_shot.AutoSize = true;
-            this.label_shot.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_shot, "label_shot");
             this.label_shot.Name = "label_shot";
-            this.label_shot.Size = new System.Drawing.Size(72, 13);
-            this.label_shot.TabIndex = 0;
-            this.label_shot.Text = "Block (reform)";
             // 
             // button_shot
             // 
+            resources.ApplyResources(this.button_shot, "button_shot");
             this.button_shot.Image = global::mage.Properties.Resources.shortcut_shot;
-            this.button_shot.Location = new System.Drawing.Point(6, 19);
             this.button_shot.Name = "button_shot";
-            this.button_shot.Size = new System.Drawing.Size(24, 24);
-            this.button_shot.TabIndex = 0;
             this.button_shot.UseVisualStyleBackColor = true;
             this.button_shot.Click += new System.EventHandler(this.button_shot_Click);
             // 
             // label_missile_block_no
             // 
-            this.label_missile_block_no.AutoSize = true;
-            this.label_missile_block_no.Location = new System.Drawing.Point(36, 109);
+            resources.ApplyResources(this.label_missile_block_no, "label_missile_block_no");
             this.label_missile_block_no.Name = "label_missile_block_no";
-            this.label_missile_block_no.Size = new System.Drawing.Size(87, 13);
-            this.label_missile_block_no.TabIndex = 0;
-            this.label_missile_block_no.Text = "Block (no reform)";
             // 
             // button_missile_block_no
             // 
+            resources.ApplyResources(this.button_missile_block_no, "button_missile_block_no");
             this.button_missile_block_no.Image = global::mage.Properties.Resources.shortcut_missile_block;
-            this.button_missile_block_no.Location = new System.Drawing.Point(6, 103);
             this.button_missile_block_no.Name = "button_missile_block_no";
-            this.button_missile_block_no.Size = new System.Drawing.Size(24, 24);
-            this.button_missile_block_no.TabIndex = 3;
             this.button_missile_block_no.UseVisualStyleBackColor = true;
             this.button_missile_block_no.Click += new System.EventHandler(this.button_missile_block_no_Click);
             // 
             // label_bomb
             // 
-            this.label_bomb.AutoSize = true;
-            this.label_bomb.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_bomb, "label_bomb");
             this.label_bomb.Name = "label_bomb";
-            this.label_bomb.Size = new System.Drawing.Size(101, 13);
-            this.label_bomb.TabIndex = 0;
-            this.label_bomb.Text = "Bomb block (reform)";
             // 
             // button_bomb
             // 
+            resources.ApplyResources(this.button_bomb, "button_bomb");
             this.button_bomb.Image = global::mage.Properties.Resources.shortcut_bomb;
-            this.button_bomb.Location = new System.Drawing.Point(6, 19);
             this.button_bomb.Name = "button_bomb";
-            this.button_bomb.Size = new System.Drawing.Size(24, 24);
-            this.button_bomb.TabIndex = 0;
             this.button_bomb.UseVisualStyleBackColor = true;
             this.button_bomb.Click += new System.EventHandler(this.button_bomb_Click);
             // 
             // label_speed
             // 
-            this.label_speed.AutoSize = true;
-            this.label_speed.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_speed, "label_speed");
             this.label_speed.Name = "label_speed";
-            this.label_speed.Size = new System.Drawing.Size(134, 13);
-            this.label_speed.TabIndex = 0;
-            this.label_speed.Text = "Speed boost block (reform)";
             // 
             // button_speed
             // 
+            resources.ApplyResources(this.button_speed, "button_speed");
             this.button_speed.Image = global::mage.Properties.Resources.shortcut_speed;
-            this.button_speed.Location = new System.Drawing.Point(6, 75);
             this.button_speed.Name = "button_speed";
-            this.button_speed.Size = new System.Drawing.Size(24, 24);
-            this.button_speed.TabIndex = 2;
             this.button_speed.UseVisualStyleBackColor = true;
             this.button_speed.Click += new System.EventHandler(this.button_speed_Click);
             // 
             // label_power_block_never
             // 
-            this.label_power_block_never.AutoSize = true;
-            this.label_power_block_never.Location = new System.Drawing.Point(36, 109);
+            resources.ApplyResources(this.label_power_block_never, "label_power_block_never");
             this.label_power_block_never.Name = "label_power_block_never";
-            this.label_power_block_never.Size = new System.Drawing.Size(102, 13);
-            this.label_power_block_never.TabIndex = 0;
-            this.label_power_block_never.Text = "Block (never reform)";
             // 
             // button_power_block_never
             // 
+            resources.ApplyResources(this.button_power_block_never, "button_power_block_never");
             this.button_power_block_never.Image = global::mage.Properties.Resources.shortcut_power_block;
-            this.button_power_block_never.Location = new System.Drawing.Point(6, 103);
             this.button_power_block_never.Name = "button_power_block_never";
-            this.button_power_block_never.Size = new System.Drawing.Size(24, 24);
-            this.button_power_block_never.TabIndex = 3;
             this.button_power_block_never.UseVisualStyleBackColor = true;
             this.button_power_block_never.Click += new System.EventHandler(this.button_power_block_never_Click);
             // 
             // button_screw_no
             // 
+            resources.ApplyResources(this.button_screw_no, "button_screw_no");
             this.button_screw_no.Image = global::mage.Properties.Resources.shortcut_screw;
-            this.button_screw_no.Location = new System.Drawing.Point(6, 131);
             this.button_screw_no.Name = "button_screw_no";
-            this.button_screw_no.Size = new System.Drawing.Size(24, 24);
-            this.button_screw_no.TabIndex = 4;
             this.button_screw_no.UseVisualStyleBackColor = true;
             this.button_screw_no.Click += new System.EventHandler(this.button_screw_no_Click);
             // 
             // label_screw_no
             // 
-            this.label_screw_no.AutoSize = true;
-            this.label_screw_no.Location = new System.Drawing.Point(36, 137);
+            resources.ApplyResources(this.label_screw_no, "label_screw_no");
             this.label_screw_no.Name = "label_screw_no";
-            this.label_screw_no.Size = new System.Drawing.Size(152, 13);
-            this.label_screw_no.TabIndex = 0;
-            this.label_screw_no.Text = "Screw attack block (no reform)";
             // 
             // label_super_block_no
             // 
-            this.label_super_block_no.AutoSize = true;
-            this.label_super_block_no.Location = new System.Drawing.Point(36, 109);
+            resources.ApplyResources(this.label_super_block_no, "label_super_block_no");
             this.label_super_block_no.Name = "label_super_block_no";
-            this.label_super_block_no.Size = new System.Drawing.Size(87, 13);
-            this.label_super_block_no.TabIndex = 0;
-            this.label_super_block_no.Text = "Block (no reform)";
             // 
             // button_super_block_no
             // 
+            resources.ApplyResources(this.button_super_block_no, "button_super_block_no");
             this.button_super_block_no.Image = global::mage.Properties.Resources.shortcut_super_block;
-            this.button_super_block_no.Location = new System.Drawing.Point(6, 103);
             this.button_super_block_no.Name = "button_super_block_no";
-            this.button_super_block_no.Size = new System.Drawing.Size(24, 24);
-            this.button_super_block_no.TabIndex = 3;
             this.button_super_block_no.UseVisualStyleBackColor = true;
             this.button_super_block_no.Click += new System.EventHandler(this.button_super_block_no_Click);
             // 
             // groupBox_basic
             // 
+            resources.ApplyResources(this.groupBox_basic, "groupBox_basic");
             this.groupBox_basic.Controls.Add(this.button_air);
             this.groupBox_basic.Controls.Add(this.button_solid);
             this.groupBox_basic.Controls.Add(this.label_air);
             this.groupBox_basic.Controls.Add(this.label_solid);
-            this.groupBox_basic.Location = new System.Drawing.Point(12, 12);
             this.groupBox_basic.Name = "groupBox_basic";
-            this.groupBox_basic.Size = new System.Drawing.Size(103, 77);
-            this.groupBox_basic.TabIndex = 0;
             this.groupBox_basic.TabStop = false;
-            this.groupBox_basic.Text = "Basic";
             // 
             // groupBox_ground
             // 
+            resources.ApplyResources(this.groupBox_ground, "groupBox_ground");
             this.groupBox_ground.Controls.Add(this.button_bubbly);
             this.groupBox_ground.Controls.Add(this.label_bubbly);
             this.groupBox_ground.Controls.Add(this.button_wet);
@@ -440,91 +354,64 @@
             this.groupBox_ground.Controls.Add(this.label_dusty_very);
             this.groupBox_ground.Controls.Add(this.button_dusty);
             this.groupBox_ground.Controls.Add(this.label_dusty);
-            this.groupBox_ground.Location = new System.Drawing.Point(12, 234);
             this.groupBox_ground.Name = "groupBox_ground";
-            this.groupBox_ground.Size = new System.Drawing.Size(103, 135);
-            this.groupBox_ground.TabIndex = 2;
             this.groupBox_ground.TabStop = false;
-            this.groupBox_ground.Text = "Ground";
             // 
             // button_bubbly
             // 
+            resources.ApplyResources(this.button_bubbly, "button_bubbly");
             this.button_bubbly.Image = global::mage.Properties.Resources.shortcut_bubbly;
-            this.button_bubbly.Location = new System.Drawing.Point(6, 103);
             this.button_bubbly.Name = "button_bubbly";
-            this.button_bubbly.Size = new System.Drawing.Size(24, 24);
-            this.button_bubbly.TabIndex = 3;
             this.button_bubbly.UseVisualStyleBackColor = true;
             this.button_bubbly.Click += new System.EventHandler(this.button_bubbly_Click);
             // 
             // label_bubbly
             // 
-            this.label_bubbly.AutoSize = true;
-            this.label_bubbly.Location = new System.Drawing.Point(36, 109);
+            resources.ApplyResources(this.label_bubbly, "label_bubbly");
             this.label_bubbly.Name = "label_bubbly";
-            this.label_bubbly.Size = new System.Drawing.Size(39, 13);
-            this.label_bubbly.TabIndex = 0;
-            this.label_bubbly.Text = "Bubbly";
             // 
             // button_wet
             // 
+            resources.ApplyResources(this.button_wet, "button_wet");
             this.button_wet.Image = global::mage.Properties.Resources.shortcut_wet;
-            this.button_wet.Location = new System.Drawing.Point(6, 75);
             this.button_wet.Name = "button_wet";
-            this.button_wet.Size = new System.Drawing.Size(24, 24);
-            this.button_wet.TabIndex = 2;
             this.button_wet.UseVisualStyleBackColor = true;
             this.button_wet.Click += new System.EventHandler(this.button_wet_Click);
             // 
             // label_wet
             // 
-            this.label_wet.AutoSize = true;
-            this.label_wet.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_wet, "label_wet");
             this.label_wet.Name = "label_wet";
-            this.label_wet.Size = new System.Drawing.Size(27, 13);
-            this.label_wet.TabIndex = 0;
-            this.label_wet.Text = "Wet";
             // 
             // button_dusty_very
             // 
+            resources.ApplyResources(this.button_dusty_very, "button_dusty_very");
             this.button_dusty_very.Image = global::mage.Properties.Resources.shortcut_dusty_very;
-            this.button_dusty_very.Location = new System.Drawing.Point(6, 47);
             this.button_dusty_very.Name = "button_dusty_very";
-            this.button_dusty_very.Size = new System.Drawing.Size(24, 24);
-            this.button_dusty_very.TabIndex = 1;
             this.button_dusty_very.UseVisualStyleBackColor = true;
             this.button_dusty_very.Click += new System.EventHandler(this.button_dusty_very_Click);
             // 
             // label_dusty_very
             // 
-            this.label_dusty_very.AutoSize = true;
-            this.label_dusty_very.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_dusty_very, "label_dusty_very");
             this.label_dusty_very.Name = "label_dusty_very";
-            this.label_dusty_very.Size = new System.Drawing.Size(56, 13);
-            this.label_dusty_very.TabIndex = 0;
-            this.label_dusty_very.Text = "Very dusty";
             // 
             // button_dusty
             // 
+            resources.ApplyResources(this.button_dusty, "button_dusty");
             this.button_dusty.Image = global::mage.Properties.Resources.shortcut_dusty;
-            this.button_dusty.Location = new System.Drawing.Point(6, 19);
             this.button_dusty.Name = "button_dusty";
-            this.button_dusty.Size = new System.Drawing.Size(24, 24);
-            this.button_dusty.TabIndex = 0;
             this.button_dusty.UseVisualStyleBackColor = true;
             this.button_dusty.Click += new System.EventHandler(this.button_dusty_Click);
             // 
             // label_dusty
             // 
-            this.label_dusty.AutoSize = true;
-            this.label_dusty.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_dusty, "label_dusty");
             this.label_dusty.Name = "label_dusty";
-            this.label_dusty.Size = new System.Drawing.Size(34, 13);
-            this.label_dusty.TabIndex = 0;
-            this.label_dusty.Text = "Dusty";
             // 
             // groupBox_slopes
             // 
+            resources.ApplyResources(this.groupBox_slopes, "groupBox_slopes");
             this.groupBox_slopes.Controls.Add(this.label_slope_slight);
             this.groupBox_slopes.Controls.Add(this.label_slope_steep);
             this.groupBox_slopes.Controls.Add(this.button_slope27_Upos);
@@ -533,93 +420,70 @@
             this.groupBox_slopes.Controls.Add(this.button_slope27_Lneg);
             this.groupBox_slopes.Controls.Add(this.button_slope45_neg);
             this.groupBox_slopes.Controls.Add(this.button_slope45_pos);
-            this.groupBox_slopes.Location = new System.Drawing.Point(121, 234);
             this.groupBox_slopes.Name = "groupBox_slopes";
-            this.groupBox_slopes.Size = new System.Drawing.Size(104, 135);
-            this.groupBox_slopes.TabIndex = 5;
             this.groupBox_slopes.TabStop = false;
-            this.groupBox_slopes.Text = "Slopes";
             // 
             // label_slope_slight
             // 
-            this.label_slope_slight.AutoSize = true;
-            this.label_slope_slight.Location = new System.Drawing.Point(6, 61);
+            resources.ApplyResources(this.label_slope_slight, "label_slope_slight");
             this.label_slope_slight.Name = "label_slope_slight";
-            this.label_slope_slight.Size = new System.Drawing.Size(66, 13);
-            this.label_slope_slight.TabIndex = 0;
-            this.label_slope_slight.Text = "Slight slopes";
             // 
             // label_slope_steep
             // 
-            this.label_slope_steep.AutoSize = true;
-            this.label_slope_steep.Location = new System.Drawing.Point(6, 16);
+            resources.ApplyResources(this.label_slope_steep, "label_slope_steep");
             this.label_slope_steep.Name = "label_slope_steep";
-            this.label_slope_steep.Size = new System.Drawing.Size(68, 13);
-            this.label_slope_steep.TabIndex = 0;
-            this.label_slope_steep.Text = "Steep slopes";
             // 
             // button_slope27_Upos
             // 
+            resources.ApplyResources(this.button_slope27_Upos, "button_slope27_Upos");
             this.button_slope27_Upos.Image = global::mage.Properties.Resources.shortcut_slope27_Upos;
-            this.button_slope27_Upos.Location = new System.Drawing.Point(34, 77);
             this.button_slope27_Upos.Name = "button_slope27_Upos";
-            this.button_slope27_Upos.Size = new System.Drawing.Size(24, 24);
-            this.button_slope27_Upos.TabIndex = 3;
             this.button_slope27_Upos.UseVisualStyleBackColor = true;
             this.button_slope27_Upos.Click += new System.EventHandler(this.button_slope27_Upos_Click);
             // 
             // button_slope27_Uneg
             // 
+            resources.ApplyResources(this.button_slope27_Uneg, "button_slope27_Uneg");
             this.button_slope27_Uneg.Image = global::mage.Properties.Resources.shortcut_slope27_Uneg;
-            this.button_slope27_Uneg.Location = new System.Drawing.Point(6, 105);
             this.button_slope27_Uneg.Name = "button_slope27_Uneg";
-            this.button_slope27_Uneg.Size = new System.Drawing.Size(24, 24);
-            this.button_slope27_Uneg.TabIndex = 4;
             this.button_slope27_Uneg.UseVisualStyleBackColor = true;
             this.button_slope27_Uneg.Click += new System.EventHandler(this.button_slope27_Uneg_Click);
             // 
             // button_slope27_Lpos
             // 
+            resources.ApplyResources(this.button_slope27_Lpos, "button_slope27_Lpos");
             this.button_slope27_Lpos.Image = global::mage.Properties.Resources.shortcut_slope27_Lpos;
-            this.button_slope27_Lpos.Location = new System.Drawing.Point(6, 77);
             this.button_slope27_Lpos.Name = "button_slope27_Lpos";
-            this.button_slope27_Lpos.Size = new System.Drawing.Size(24, 24);
-            this.button_slope27_Lpos.TabIndex = 2;
             this.button_slope27_Lpos.UseVisualStyleBackColor = true;
             this.button_slope27_Lpos.Click += new System.EventHandler(this.button_slope27_Lpos_Click);
             // 
             // button_slope27_Lneg
             // 
+            resources.ApplyResources(this.button_slope27_Lneg, "button_slope27_Lneg");
             this.button_slope27_Lneg.Image = global::mage.Properties.Resources.shortcut_slope27_Lneg;
-            this.button_slope27_Lneg.Location = new System.Drawing.Point(34, 105);
             this.button_slope27_Lneg.Name = "button_slope27_Lneg";
-            this.button_slope27_Lneg.Size = new System.Drawing.Size(24, 24);
-            this.button_slope27_Lneg.TabIndex = 5;
             this.button_slope27_Lneg.UseVisualStyleBackColor = true;
             this.button_slope27_Lneg.Click += new System.EventHandler(this.button_slope27_Lneg_Click);
             // 
             // button_slope45_neg
             // 
+            resources.ApplyResources(this.button_slope45_neg, "button_slope45_neg");
             this.button_slope45_neg.Image = global::mage.Properties.Resources.shortcut_slope45_neg;
-            this.button_slope45_neg.Location = new System.Drawing.Point(34, 32);
             this.button_slope45_neg.Name = "button_slope45_neg";
-            this.button_slope45_neg.Size = new System.Drawing.Size(24, 24);
-            this.button_slope45_neg.TabIndex = 1;
             this.button_slope45_neg.UseVisualStyleBackColor = true;
             this.button_slope45_neg.Click += new System.EventHandler(this.button_slope45_neg_Click);
             // 
             // button_slope45_pos
             // 
+            resources.ApplyResources(this.button_slope45_pos, "button_slope45_pos");
             this.button_slope45_pos.Image = global::mage.Properties.Resources.shortcut_slope45_pos;
-            this.button_slope45_pos.Location = new System.Drawing.Point(6, 32);
             this.button_slope45_pos.Name = "button_slope45_pos";
-            this.button_slope45_pos.Size = new System.Drawing.Size(24, 24);
-            this.button_slope45_pos.TabIndex = 0;
             this.button_slope45_pos.UseVisualStyleBackColor = true;
             this.button_slope45_pos.Click += new System.EventHandler(this.button_slope45_pos_Click);
             // 
             // groupBox_breakable
             // 
+            resources.ApplyResources(this.groupBox_breakable, "groupBox_breakable");
             this.groupBox_breakable.Controls.Add(this.button_crumble_slow);
             this.groupBox_breakable.Controls.Add(this.label_crumble_slow);
             this.groupBox_breakable.Controls.Add(this.button_speed_no);
@@ -634,72 +498,51 @@
             this.groupBox_breakable.Controls.Add(this.label_screw_no);
             this.groupBox_breakable.Controls.Add(this.button_crumble);
             this.groupBox_breakable.Controls.Add(this.label_crumble);
-            this.groupBox_breakable.Location = new System.Drawing.Point(231, 179);
             this.groupBox_breakable.Name = "groupBox_breakable";
-            this.groupBox_breakable.Size = new System.Drawing.Size(204, 217);
-            this.groupBox_breakable.TabIndex = 9;
             this.groupBox_breakable.TabStop = false;
-            this.groupBox_breakable.Text = "Breakable";
             // 
             // button_crumble_slow
             // 
+            resources.ApplyResources(this.button_crumble_slow, "button_crumble_slow");
             this.button_crumble_slow.Image = global::mage.Properties.Resources.shortcut_crumble_slow;
-            this.button_crumble_slow.Location = new System.Drawing.Point(6, 187);
             this.button_crumble_slow.Name = "button_crumble_slow";
-            this.button_crumble_slow.Size = new System.Drawing.Size(24, 24);
-            this.button_crumble_slow.TabIndex = 6;
             this.button_crumble_slow.UseVisualStyleBackColor = true;
             this.button_crumble_slow.Click += new System.EventHandler(this.button_crumble_slow_Click);
             // 
             // label_crumble_slow
             // 
-            this.label_crumble_slow.AutoSize = true;
-            this.label_crumble_slow.Location = new System.Drawing.Point(36, 193);
+            resources.ApplyResources(this.label_crumble_slow, "label_crumble_slow");
             this.label_crumble_slow.Name = "label_crumble_slow";
-            this.label_crumble_slow.Size = new System.Drawing.Size(99, 13);
-            this.label_crumble_slow.TabIndex = 0;
-            this.label_crumble_slow.Text = "Slow crumble block";
             // 
             // button_speed_no
             // 
+            resources.ApplyResources(this.button_speed_no, "button_speed_no");
             this.button_speed_no.Image = global::mage.Properties.Resources.shortcut_speed;
-            this.button_speed_no.Location = new System.Drawing.Point(6, 103);
             this.button_speed_no.Name = "button_speed_no";
-            this.button_speed_no.Size = new System.Drawing.Size(24, 24);
-            this.button_speed_no.TabIndex = 3;
             this.button_speed_no.UseVisualStyleBackColor = true;
             this.button_speed_no.Click += new System.EventHandler(this.button_speed_no_Click);
             // 
             // label_speed_no
             // 
-            this.label_speed_no.AutoSize = true;
-            this.label_speed_no.Location = new System.Drawing.Point(36, 109);
+            resources.ApplyResources(this.label_speed_no, "label_speed_no");
             this.label_speed_no.Name = "label_speed_no";
-            this.label_speed_no.Size = new System.Drawing.Size(149, 13);
-            this.label_speed_no.TabIndex = 0;
-            this.label_speed_no.Text = "Speed boost block (no reform)";
             // 
             // button_bomb_never
             // 
+            resources.ApplyResources(this.button_bomb_never, "button_bomb_never");
             this.button_bomb_never.Image = global::mage.Properties.Resources.shortcut_bomb;
-            this.button_bomb_never.Location = new System.Drawing.Point(6, 47);
             this.button_bomb_never.Name = "button_bomb_never";
-            this.button_bomb_never.Size = new System.Drawing.Size(24, 24);
-            this.button_bomb_never.TabIndex = 1;
             this.button_bomb_never.UseVisualStyleBackColor = true;
             this.button_bomb_never.Click += new System.EventHandler(this.button_bomb_never_Click);
             // 
             // label_bomb_never
             // 
-            this.label_bomb_never.AutoSize = true;
-            this.label_bomb_never.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_bomb_never, "label_bomb_never");
             this.label_bomb_never.Name = "label_bomb_never";
-            this.label_bomb_never.Size = new System.Drawing.Size(131, 13);
-            this.label_bomb_never.TabIndex = 0;
-            this.label_bomb_never.Text = "Bomb block (never reform)";
             // 
             // groupBox_missile
             // 
+            resources.ApplyResources(this.groupBox_missile, "groupBox_missile");
             this.groupBox_missile.Controls.Add(this.button_missile_block_never);
             this.groupBox_missile.Controls.Add(this.label_missile_block_never);
             this.groupBox_missile.Controls.Add(this.button_missile_water);
@@ -710,125 +553,89 @@
             this.groupBox_missile.Controls.Add(this.label_missile);
             this.groupBox_missile.Controls.Add(this.button_missile_block_no);
             this.groupBox_missile.Controls.Add(this.label_missile_block_no);
-            this.groupBox_missile.Location = new System.Drawing.Point(231, 12);
             this.groupBox_missile.Name = "groupBox_missile";
-            this.groupBox_missile.Size = new System.Drawing.Size(144, 161);
-            this.groupBox_missile.TabIndex = 6;
             this.groupBox_missile.TabStop = false;
-            this.groupBox_missile.Text = "Missiles";
             // 
             // button_missile_block_never
             // 
+            resources.ApplyResources(this.button_missile_block_never, "button_missile_block_never");
             this.button_missile_block_never.Image = global::mage.Properties.Resources.shortcut_missile_block;
-            this.button_missile_block_never.Location = new System.Drawing.Point(6, 131);
             this.button_missile_block_never.Name = "button_missile_block_never";
-            this.button_missile_block_never.Size = new System.Drawing.Size(24, 24);
-            this.button_missile_block_never.TabIndex = 4;
             this.button_missile_block_never.UseVisualStyleBackColor = true;
             this.button_missile_block_never.Click += new System.EventHandler(this.button_missile_block_never_Click);
             // 
             // label_missile_block_never
             // 
-            this.label_missile_block_never.AutoSize = true;
-            this.label_missile_block_never.Location = new System.Drawing.Point(36, 137);
+            resources.ApplyResources(this.label_missile_block_never, "label_missile_block_never");
             this.label_missile_block_never.Name = "label_missile_block_never";
-            this.label_missile_block_never.Size = new System.Drawing.Size(102, 13);
-            this.label_missile_block_never.TabIndex = 0;
-            this.label_missile_block_never.Text = "Block (never reform)";
             // 
             // button_missile_water
             // 
+            resources.ApplyResources(this.button_missile_water, "button_missile_water");
             this.button_missile_water.Image = global::mage.Properties.Resources.shortcut_missile_water;
-            this.button_missile_water.Location = new System.Drawing.Point(6, 75);
             this.button_missile_water.Name = "button_missile_water";
-            this.button_missile_water.Size = new System.Drawing.Size(24, 24);
-            this.button_missile_water.TabIndex = 2;
             this.button_missile_water.UseVisualStyleBackColor = true;
             this.button_missile_water.Click += new System.EventHandler(this.button_missile_water_Click);
             // 
             // label_missile_water
             // 
-            this.label_missile_water.AutoSize = true;
-            this.label_missile_water.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_missile_water, "label_missile_water");
             this.label_missile_water.Name = "label_missile_water";
-            this.label_missile_water.Size = new System.Drawing.Size(62, 13);
-            this.label_missile_water.TabIndex = 0;
-            this.label_missile_water.Text = "Underwater";
             // 
             // button_missile_hidden
             // 
+            resources.ApplyResources(this.button_missile_hidden, "button_missile_hidden");
             this.button_missile_hidden.Image = global::mage.Properties.Resources.shortcut_missile_hidden;
-            this.button_missile_hidden.Location = new System.Drawing.Point(6, 47);
             this.button_missile_hidden.Name = "button_missile_hidden";
-            this.button_missile_hidden.Size = new System.Drawing.Size(24, 24);
-            this.button_missile_hidden.TabIndex = 1;
             this.button_missile_hidden.UseVisualStyleBackColor = true;
             this.button_missile_hidden.Click += new System.EventHandler(this.button_missile_hidden_Click);
             // 
             // label_missile_hidden
             // 
-            this.label_missile_hidden.AutoSize = true;
-            this.label_missile_hidden.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_missile_hidden, "label_missile_hidden");
             this.label_missile_hidden.Name = "label_missile_hidden";
-            this.label_missile_hidden.Size = new System.Drawing.Size(41, 13);
-            this.label_missile_hidden.TabIndex = 0;
-            this.label_missile_hidden.Text = "Hidden";
             // 
             // groupBox_energy
             // 
+            resources.ApplyResources(this.groupBox_energy, "groupBox_energy");
             this.groupBox_energy.Controls.Add(this.button_energy_water);
             this.groupBox_energy.Controls.Add(this.label_energy_water);
             this.groupBox_energy.Controls.Add(this.button_energy_hidden);
             this.groupBox_energy.Controls.Add(this.label_energy_hidden);
             this.groupBox_energy.Controls.Add(this.button_energy);
             this.groupBox_energy.Controls.Add(this.label_energy);
-            this.groupBox_energy.Location = new System.Drawing.Point(121, 12);
             this.groupBox_energy.Name = "groupBox_energy";
-            this.groupBox_energy.Size = new System.Drawing.Size(104, 105);
-            this.groupBox_energy.TabIndex = 3;
             this.groupBox_energy.TabStop = false;
-            this.groupBox_energy.Text = "Energy tanks";
             // 
             // button_energy_water
             // 
+            resources.ApplyResources(this.button_energy_water, "button_energy_water");
             this.button_energy_water.Image = global::mage.Properties.Resources.shortcut_energy_water;
-            this.button_energy_water.Location = new System.Drawing.Point(6, 75);
             this.button_energy_water.Name = "button_energy_water";
-            this.button_energy_water.Size = new System.Drawing.Size(24, 24);
-            this.button_energy_water.TabIndex = 2;
             this.button_energy_water.UseVisualStyleBackColor = true;
             this.button_energy_water.Click += new System.EventHandler(this.button_energy_water_Click);
             // 
             // label_energy_water
             // 
-            this.label_energy_water.AutoSize = true;
-            this.label_energy_water.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_energy_water, "label_energy_water");
             this.label_energy_water.Name = "label_energy_water";
-            this.label_energy_water.Size = new System.Drawing.Size(62, 13);
-            this.label_energy_water.TabIndex = 0;
-            this.label_energy_water.Text = "Underwater";
             // 
             // button_energy_hidden
             // 
+            resources.ApplyResources(this.button_energy_hidden, "button_energy_hidden");
             this.button_energy_hidden.Image = global::mage.Properties.Resources.shortcut_energy_hidden;
-            this.button_energy_hidden.Location = new System.Drawing.Point(6, 47);
             this.button_energy_hidden.Name = "button_energy_hidden";
-            this.button_energy_hidden.Size = new System.Drawing.Size(24, 24);
-            this.button_energy_hidden.TabIndex = 1;
             this.button_energy_hidden.UseVisualStyleBackColor = true;
             this.button_energy_hidden.Click += new System.EventHandler(this.button_energy_hidden_Click);
             // 
             // label_energy_hidden
             // 
-            this.label_energy_hidden.AutoSize = true;
-            this.label_energy_hidden.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_energy_hidden, "label_energy_hidden");
             this.label_energy_hidden.Name = "label_energy_hidden";
-            this.label_energy_hidden.Size = new System.Drawing.Size(41, 13);
-            this.label_energy_hidden.TabIndex = 0;
-            this.label_energy_hidden.Text = "Hidden";
             // 
             // groupBox_super
             // 
+            resources.ApplyResources(this.groupBox_super, "groupBox_super");
             this.groupBox_super.Controls.Add(this.button_super_water);
             this.groupBox_super.Controls.Add(this.label_super_water);
             this.groupBox_super.Controls.Add(this.button_super_hidden);
@@ -839,72 +646,51 @@
             this.groupBox_super.Controls.Add(this.label_super);
             this.groupBox_super.Controls.Add(this.button_super_block_no);
             this.groupBox_super.Controls.Add(this.label_super_block_no);
-            this.groupBox_super.Location = new System.Drawing.Point(381, 12);
             this.groupBox_super.Name = "groupBox_super";
-            this.groupBox_super.Size = new System.Drawing.Size(144, 161);
-            this.groupBox_super.TabIndex = 7;
             this.groupBox_super.TabStop = false;
-            this.groupBox_super.Text = "Super missiles";
             // 
             // button_super_water
             // 
+            resources.ApplyResources(this.button_super_water, "button_super_water");
             this.button_super_water.Image = global::mage.Properties.Resources.shortcut_super_water;
-            this.button_super_water.Location = new System.Drawing.Point(6, 75);
             this.button_super_water.Name = "button_super_water";
-            this.button_super_water.Size = new System.Drawing.Size(24, 24);
-            this.button_super_water.TabIndex = 2;
             this.button_super_water.UseVisualStyleBackColor = true;
             this.button_super_water.Click += new System.EventHandler(this.button_super_water_Click);
             // 
             // label_super_water
             // 
-            this.label_super_water.AutoSize = true;
-            this.label_super_water.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_super_water, "label_super_water");
             this.label_super_water.Name = "label_super_water";
-            this.label_super_water.Size = new System.Drawing.Size(62, 13);
-            this.label_super_water.TabIndex = 0;
-            this.label_super_water.Text = "Underwater";
             // 
             // button_super_hidden
             // 
+            resources.ApplyResources(this.button_super_hidden, "button_super_hidden");
             this.button_super_hidden.Image = global::mage.Properties.Resources.shortcut_super_hidden;
-            this.button_super_hidden.Location = new System.Drawing.Point(6, 47);
             this.button_super_hidden.Name = "button_super_hidden";
-            this.button_super_hidden.Size = new System.Drawing.Size(24, 24);
-            this.button_super_hidden.TabIndex = 1;
             this.button_super_hidden.UseVisualStyleBackColor = true;
             this.button_super_hidden.Click += new System.EventHandler(this.button_super_hidden_Click);
             // 
             // label_super_hidden
             // 
-            this.label_super_hidden.AutoSize = true;
-            this.label_super_hidden.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_super_hidden, "label_super_hidden");
             this.label_super_hidden.Name = "label_super_hidden";
-            this.label_super_hidden.Size = new System.Drawing.Size(41, 13);
-            this.label_super_hidden.TabIndex = 0;
-            this.label_super_hidden.Text = "Hidden";
             // 
             // button_super_block_never
             // 
+            resources.ApplyResources(this.button_super_block_never, "button_super_block_never");
             this.button_super_block_never.Image = global::mage.Properties.Resources.shortcut_super_block;
-            this.button_super_block_never.Location = new System.Drawing.Point(6, 131);
             this.button_super_block_never.Name = "button_super_block_never";
-            this.button_super_block_never.Size = new System.Drawing.Size(24, 24);
-            this.button_super_block_never.TabIndex = 4;
             this.button_super_block_never.UseVisualStyleBackColor = true;
             this.button_super_block_never.Click += new System.EventHandler(this.button_super_block_never_Click);
             // 
             // label_super_block_never
             // 
-            this.label_super_block_never.AutoSize = true;
-            this.label_super_block_never.Location = new System.Drawing.Point(36, 137);
+            resources.ApplyResources(this.label_super_block_never, "label_super_block_never");
             this.label_super_block_never.Name = "label_super_block_never";
-            this.label_super_block_never.Size = new System.Drawing.Size(102, 13);
-            this.label_super_block_never.TabIndex = 0;
-            this.label_super_block_never.Text = "Block (never reform)";
             // 
             // groupBox_power
             // 
+            resources.ApplyResources(this.groupBox_power, "groupBox_power");
             this.groupBox_power.Controls.Add(this.button_power_water);
             this.groupBox_power.Controls.Add(this.label_power_water);
             this.groupBox_power.Controls.Add(this.button_power_hidden);
@@ -913,125 +699,89 @@
             this.groupBox_power.Controls.Add(this.label_power);
             this.groupBox_power.Controls.Add(this.button_power_block_never);
             this.groupBox_power.Controls.Add(this.label_power_block_never);
-            this.groupBox_power.Location = new System.Drawing.Point(531, 12);
             this.groupBox_power.Name = "groupBox_power";
-            this.groupBox_power.Size = new System.Drawing.Size(144, 133);
-            this.groupBox_power.TabIndex = 8;
             this.groupBox_power.TabStop = false;
-            this.groupBox_power.Text = "Power bombs";
             // 
             // button_power_water
             // 
+            resources.ApplyResources(this.button_power_water, "button_power_water");
             this.button_power_water.Image = global::mage.Properties.Resources.shortcut_power_water;
-            this.button_power_water.Location = new System.Drawing.Point(6, 75);
             this.button_power_water.Name = "button_power_water";
-            this.button_power_water.Size = new System.Drawing.Size(24, 24);
-            this.button_power_water.TabIndex = 2;
             this.button_power_water.UseVisualStyleBackColor = true;
             this.button_power_water.Click += new System.EventHandler(this.button_power_water_Click);
             // 
             // label_power_water
             // 
-            this.label_power_water.AutoSize = true;
-            this.label_power_water.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_power_water, "label_power_water");
             this.label_power_water.Name = "label_power_water";
-            this.label_power_water.Size = new System.Drawing.Size(62, 13);
-            this.label_power_water.TabIndex = 0;
-            this.label_power_water.Text = "Underwater";
             // 
             // button_power_hidden
             // 
+            resources.ApplyResources(this.button_power_hidden, "button_power_hidden");
             this.button_power_hidden.Image = global::mage.Properties.Resources.shortcut_power_hidden;
-            this.button_power_hidden.Location = new System.Drawing.Point(6, 47);
             this.button_power_hidden.Name = "button_power_hidden";
-            this.button_power_hidden.Size = new System.Drawing.Size(24, 24);
-            this.button_power_hidden.TabIndex = 1;
             this.button_power_hidden.UseVisualStyleBackColor = true;
             this.button_power_hidden.Click += new System.EventHandler(this.button_power_hidden_Click);
             // 
             // label_power_hidden
             // 
-            this.label_power_hidden.AutoSize = true;
-            this.label_power_hidden.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_power_hidden, "label_power_hidden");
             this.label_power_hidden.Name = "label_power_hidden";
-            this.label_power_hidden.Size = new System.Drawing.Size(41, 13);
-            this.label_power_hidden.TabIndex = 0;
-            this.label_power_hidden.Text = "Hidden";
             // 
             // groupBox_transitions
             // 
+            resources.ApplyResources(this.groupBox_transitions, "groupBox_transitions");
             this.groupBox_transitions.Controls.Add(this.button_trans_down);
             this.groupBox_transitions.Controls.Add(this.label_trans_down);
             this.groupBox_transitions.Controls.Add(this.button_trans_up);
             this.groupBox_transitions.Controls.Add(this.label_trans_up);
             this.groupBox_transitions.Controls.Add(this.button_trans_door);
             this.groupBox_transitions.Controls.Add(this.label_trans_door);
-            this.groupBox_transitions.Location = new System.Drawing.Point(121, 123);
             this.groupBox_transitions.Name = "groupBox_transitions";
-            this.groupBox_transitions.Size = new System.Drawing.Size(104, 105);
-            this.groupBox_transitions.TabIndex = 4;
             this.groupBox_transitions.TabStop = false;
-            this.groupBox_transitions.Text = "Transitions";
             // 
             // button_trans_down
             // 
+            resources.ApplyResources(this.button_trans_down, "button_trans_down");
             this.button_trans_down.Image = global::mage.Properties.Resources.shortcut_trans_down;
-            this.button_trans_down.Location = new System.Drawing.Point(6, 75);
             this.button_trans_down.Name = "button_trans_down";
-            this.button_trans_down.Size = new System.Drawing.Size(24, 24);
-            this.button_trans_down.TabIndex = 2;
             this.button_trans_down.UseVisualStyleBackColor = true;
             this.button_trans_down.Click += new System.EventHandler(this.button_trans_down_Click);
             // 
             // label_trans_down
             // 
-            this.label_trans_down.AutoSize = true;
-            this.label_trans_down.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_trans_down, "label_trans_down");
             this.label_trans_down.Name = "label_trans_down";
-            this.label_trans_down.Size = new System.Drawing.Size(35, 13);
-            this.label_trans_down.TabIndex = 0;
-            this.label_trans_down.Text = "Down";
             // 
             // button_trans_up
             // 
+            resources.ApplyResources(this.button_trans_up, "button_trans_up");
             this.button_trans_up.Image = global::mage.Properties.Resources.shortcut_trans_up;
-            this.button_trans_up.Location = new System.Drawing.Point(6, 47);
             this.button_trans_up.Name = "button_trans_up";
-            this.button_trans_up.Size = new System.Drawing.Size(24, 24);
-            this.button_trans_up.TabIndex = 1;
             this.button_trans_up.UseVisualStyleBackColor = true;
             this.button_trans_up.Click += new System.EventHandler(this.button_trans_up_Click);
             // 
             // label_trans_up
             // 
-            this.label_trans_up.AutoSize = true;
-            this.label_trans_up.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_trans_up, "label_trans_up");
             this.label_trans_up.Name = "label_trans_up";
-            this.label_trans_up.Size = new System.Drawing.Size(21, 13);
-            this.label_trans_up.TabIndex = 0;
-            this.label_trans_up.Text = "Up";
             // 
             // button_trans_door
             // 
+            resources.ApplyResources(this.button_trans_door, "button_trans_door");
             this.button_trans_door.Image = global::mage.Properties.Resources.shortcut_trans_door;
-            this.button_trans_door.Location = new System.Drawing.Point(6, 19);
             this.button_trans_door.Name = "button_trans_door";
-            this.button_trans_door.Size = new System.Drawing.Size(24, 24);
-            this.button_trans_door.TabIndex = 0;
             this.button_trans_door.UseVisualStyleBackColor = true;
             this.button_trans_door.Click += new System.EventHandler(this.button_trans_door_Click);
             // 
             // label_trans_door
             // 
-            this.label_trans_door.AutoSize = true;
-            this.label_trans_door.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_trans_door, "label_trans_door");
             this.label_trans_door.Name = "label_trans_door";
-            this.label_trans_door.Size = new System.Drawing.Size(30, 13);
-            this.label_trans_door.TabIndex = 0;
-            this.label_trans_door.Text = "Door";
             // 
             // groupBox_liquids
             // 
+            resources.ApplyResources(this.groupBox_liquids, "groupBox_liquids");
             this.groupBox_liquids.Controls.Add(this.button_acid);
             this.groupBox_liquids.Controls.Add(this.label_acid);
             this.groupBox_liquids.Controls.Add(this.button_lava_strong);
@@ -1040,91 +790,64 @@
             this.groupBox_liquids.Controls.Add(this.label_lava_weak);
             this.groupBox_liquids.Controls.Add(this.button_water);
             this.groupBox_liquids.Controls.Add(this.label_water);
-            this.groupBox_liquids.Location = new System.Drawing.Point(12, 95);
             this.groupBox_liquids.Name = "groupBox_liquids";
-            this.groupBox_liquids.Size = new System.Drawing.Size(103, 133);
-            this.groupBox_liquids.TabIndex = 1;
             this.groupBox_liquids.TabStop = false;
-            this.groupBox_liquids.Text = "Liquids";
             // 
             // button_acid
             // 
+            resources.ApplyResources(this.button_acid, "button_acid");
             this.button_acid.Image = global::mage.Properties.Resources.shortcut_acid;
-            this.button_acid.Location = new System.Drawing.Point(6, 103);
             this.button_acid.Name = "button_acid";
-            this.button_acid.Size = new System.Drawing.Size(24, 24);
-            this.button_acid.TabIndex = 3;
             this.button_acid.UseVisualStyleBackColor = true;
             this.button_acid.Click += new System.EventHandler(this.button_acid_Click);
             // 
             // label_acid
             // 
-            this.label_acid.AutoSize = true;
-            this.label_acid.Location = new System.Drawing.Point(36, 109);
+            resources.ApplyResources(this.label_acid, "label_acid");
             this.label_acid.Name = "label_acid";
-            this.label_acid.Size = new System.Drawing.Size(28, 13);
-            this.label_acid.TabIndex = 0;
-            this.label_acid.Text = "Acid";
             // 
             // button_lava_strong
             // 
+            resources.ApplyResources(this.button_lava_strong, "button_lava_strong");
             this.button_lava_strong.Image = global::mage.Properties.Resources.shortcut_lava_strong;
-            this.button_lava_strong.Location = new System.Drawing.Point(6, 75);
             this.button_lava_strong.Name = "button_lava_strong";
-            this.button_lava_strong.Size = new System.Drawing.Size(24, 24);
-            this.button_lava_strong.TabIndex = 2;
             this.button_lava_strong.UseVisualStyleBackColor = true;
             this.button_lava_strong.Click += new System.EventHandler(this.button_lava_strong_Click);
             // 
             // label_lava_strong
             // 
-            this.label_lava_strong.AutoSize = true;
-            this.label_lava_strong.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_lava_strong, "label_lava_strong");
             this.label_lava_strong.Name = "label_lava_strong";
-            this.label_lava_strong.Size = new System.Drawing.Size(61, 13);
-            this.label_lava_strong.TabIndex = 0;
-            this.label_lava_strong.Text = "Strong lava";
             // 
             // button_lava_weak
             // 
+            resources.ApplyResources(this.button_lava_weak, "button_lava_weak");
             this.button_lava_weak.Image = global::mage.Properties.Resources.shortcut_lava_weak;
-            this.button_lava_weak.Location = new System.Drawing.Point(6, 47);
             this.button_lava_weak.Name = "button_lava_weak";
-            this.button_lava_weak.Size = new System.Drawing.Size(24, 24);
-            this.button_lava_weak.TabIndex = 1;
             this.button_lava_weak.UseVisualStyleBackColor = true;
             this.button_lava_weak.Click += new System.EventHandler(this.button_lava_weak_Click);
             // 
             // label_lava_weak
             // 
-            this.label_lava_weak.AutoSize = true;
-            this.label_lava_weak.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_lava_weak, "label_lava_weak");
             this.label_lava_weak.Name = "label_lava_weak";
-            this.label_lava_weak.Size = new System.Drawing.Size(59, 13);
-            this.label_lava_weak.TabIndex = 0;
-            this.label_lava_weak.Text = "Weak lava";
             // 
             // button_water
             // 
+            resources.ApplyResources(this.button_water, "button_water");
             this.button_water.Image = global::mage.Properties.Resources.shortcut_water;
-            this.button_water.Location = new System.Drawing.Point(6, 19);
             this.button_water.Name = "button_water";
-            this.button_water.Size = new System.Drawing.Size(24, 24);
-            this.button_water.TabIndex = 0;
             this.button_water.UseVisualStyleBackColor = true;
             this.button_water.Click += new System.EventHandler(this.button_water_Click);
             // 
             // label_water
             // 
-            this.label_water.AutoSize = true;
-            this.label_water.Location = new System.Drawing.Point(36, 25);
+            resources.ApplyResources(this.label_water, "label_water");
             this.label_water.Name = "label_water";
-            this.label_water.Size = new System.Drawing.Size(36, 13);
-            this.label_water.TabIndex = 0;
-            this.label_water.Text = "Water";
             // 
             // groupBox_shot
             // 
+            resources.ApplyResources(this.groupBox_shot, "groupBox_shot");
             this.groupBox_shot.Controls.Add(this.label_2x2_never);
             this.groupBox_shot.Controls.Add(this.button_shot_BR_never);
             this.groupBox_shot.Controls.Add(this.button_shot_BL_never);
@@ -1141,154 +864,113 @@
             this.groupBox_shot.Controls.Add(this.label_shot_no);
             this.groupBox_shot.Controls.Add(this.button_shot);
             this.groupBox_shot.Controls.Add(this.label_shot);
-            this.groupBox_shot.Location = new System.Drawing.Point(441, 179);
             this.groupBox_shot.Name = "groupBox_shot";
-            this.groupBox_shot.Size = new System.Drawing.Size(174, 217);
-            this.groupBox_shot.TabIndex = 10;
             this.groupBox_shot.TabStop = false;
-            this.groupBox_shot.Text = "Shot";
             // 
             // label_2x2_never
             // 
-            this.label_2x2_never.AutoSize = true;
-            this.label_2x2_never.Location = new System.Drawing.Point(66, 178);
+            resources.ApplyResources(this.label_2x2_never, "label_2x2_never");
             this.label_2x2_never.Name = "label_2x2_never";
-            this.label_2x2_never.Size = new System.Drawing.Size(92, 13);
-            this.label_2x2_never.TabIndex = 0;
-            this.label_2x2_never.Text = "2x2 (never reform)";
             // 
             // button_shot_BR_never
             // 
+            resources.ApplyResources(this.button_shot_BR_never, "button_shot_BR_never");
             this.button_shot_BR_never.Image = global::mage.Properties.Resources.shortcut_shot_BR;
-            this.button_shot_BR_never.Location = new System.Drawing.Point(34, 187);
             this.button_shot_BR_never.Name = "button_shot_BR_never";
-            this.button_shot_BR_never.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_BR_never.TabIndex = 10;
             this.button_shot_BR_never.UseVisualStyleBackColor = true;
             this.button_shot_BR_never.Click += new System.EventHandler(this.button_shot_BR_never_Click);
             // 
             // button_shot_BL_never
             // 
+            resources.ApplyResources(this.button_shot_BL_never, "button_shot_BL_never");
             this.button_shot_BL_never.Image = global::mage.Properties.Resources.shortcut_shot_BL;
-            this.button_shot_BL_never.Location = new System.Drawing.Point(6, 187);
             this.button_shot_BL_never.Name = "button_shot_BL_never";
-            this.button_shot_BL_never.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_BL_never.TabIndex = 9;
             this.button_shot_BL_never.UseVisualStyleBackColor = true;
             this.button_shot_BL_never.Click += new System.EventHandler(this.button_shot_BL_never_Click);
             // 
             // button_shot_TR_never
             // 
+            resources.ApplyResources(this.button_shot_TR_never, "button_shot_TR_never");
             this.button_shot_TR_never.Image = global::mage.Properties.Resources.shortcut_shot_TR;
-            this.button_shot_TR_never.Location = new System.Drawing.Point(34, 159);
             this.button_shot_TR_never.Name = "button_shot_TR_never";
-            this.button_shot_TR_never.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_TR_never.TabIndex = 8;
             this.button_shot_TR_never.UseVisualStyleBackColor = true;
             this.button_shot_TR_never.Click += new System.EventHandler(this.button_shot_TR_never_Click);
             // 
             // button_shot_TL_never
             // 
+            resources.ApplyResources(this.button_shot_TL_never, "button_shot_TL_never");
             this.button_shot_TL_never.Image = global::mage.Properties.Resources.shortcut_shot_TL;
-            this.button_shot_TL_never.Location = new System.Drawing.Point(6, 159);
             this.button_shot_TL_never.Name = "button_shot_TL_never";
-            this.button_shot_TL_never.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_TL_never.TabIndex = 7;
             this.button_shot_TL_never.UseVisualStyleBackColor = true;
             this.button_shot_TL_never.Click += new System.EventHandler(this.button_shot_TL_never_Click);
             // 
             // label_2x2_no
             // 
-            this.label_2x2_no.AutoSize = true;
-            this.label_2x2_no.Location = new System.Drawing.Point(66, 122);
+            resources.ApplyResources(this.label_2x2_no, "label_2x2_no");
             this.label_2x2_no.Name = "label_2x2_no";
-            this.label_2x2_no.Size = new System.Drawing.Size(77, 13);
-            this.label_2x2_no.TabIndex = 0;
-            this.label_2x2_no.Text = "2x2 (no reform)";
             // 
             // button_shot_BR_no
             // 
+            resources.ApplyResources(this.button_shot_BR_no, "button_shot_BR_no");
             this.button_shot_BR_no.Image = global::mage.Properties.Resources.shortcut_shot_BR;
-            this.button_shot_BR_no.Location = new System.Drawing.Point(34, 131);
             this.button_shot_BR_no.Name = "button_shot_BR_no";
-            this.button_shot_BR_no.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_BR_no.TabIndex = 6;
             this.button_shot_BR_no.UseVisualStyleBackColor = true;
             this.button_shot_BR_no.Click += new System.EventHandler(this.button_shot_BR_no_Click);
             // 
             // button_shot_BL_no
             // 
+            resources.ApplyResources(this.button_shot_BL_no, "button_shot_BL_no");
             this.button_shot_BL_no.Image = global::mage.Properties.Resources.shortcut_shot_BL;
-            this.button_shot_BL_no.Location = new System.Drawing.Point(6, 131);
             this.button_shot_BL_no.Name = "button_shot_BL_no";
-            this.button_shot_BL_no.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_BL_no.TabIndex = 5;
             this.button_shot_BL_no.UseVisualStyleBackColor = true;
             this.button_shot_BL_no.Click += new System.EventHandler(this.button_shot_BL_no_Click);
             // 
             // button_shot_TR_no
             // 
+            resources.ApplyResources(this.button_shot_TR_no, "button_shot_TR_no");
             this.button_shot_TR_no.Image = global::mage.Properties.Resources.shortcut_shot_TR;
-            this.button_shot_TR_no.Location = new System.Drawing.Point(34, 103);
             this.button_shot_TR_no.Name = "button_shot_TR_no";
-            this.button_shot_TR_no.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_TR_no.TabIndex = 4;
             this.button_shot_TR_no.UseVisualStyleBackColor = true;
             this.button_shot_TR_no.Click += new System.EventHandler(this.button_shot_TR_no_Click);
             // 
             // button_shot_TL_no
             // 
+            resources.ApplyResources(this.button_shot_TL_no, "button_shot_TL_no");
             this.button_shot_TL_no.Image = global::mage.Properties.Resources.shortcut_shot_TL;
-            this.button_shot_TL_no.Location = new System.Drawing.Point(6, 103);
             this.button_shot_TL_no.Name = "button_shot_TL_no";
-            this.button_shot_TL_no.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_TL_no.TabIndex = 3;
             this.button_shot_TL_no.UseVisualStyleBackColor = true;
             this.button_shot_TL_no.Click += new System.EventHandler(this.button_shot_TL_no_Click);
             // 
             // button_shot_never
             // 
+            resources.ApplyResources(this.button_shot_never, "button_shot_never");
             this.button_shot_never.Image = global::mage.Properties.Resources.shortcut_shot;
-            this.button_shot_never.Location = new System.Drawing.Point(6, 75);
             this.button_shot_never.Name = "button_shot_never";
-            this.button_shot_never.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_never.TabIndex = 2;
             this.button_shot_never.UseVisualStyleBackColor = true;
             this.button_shot_never.Click += new System.EventHandler(this.button_shot_never_Click);
             // 
             // label_shot_never
             // 
-            this.label_shot_never.AutoSize = true;
-            this.label_shot_never.Location = new System.Drawing.Point(36, 81);
+            resources.ApplyResources(this.label_shot_never, "label_shot_never");
             this.label_shot_never.Name = "label_shot_never";
-            this.label_shot_never.Size = new System.Drawing.Size(102, 13);
-            this.label_shot_never.TabIndex = 0;
-            this.label_shot_never.Text = "Block (never reform)";
             // 
             // button_shot_no
             // 
+            resources.ApplyResources(this.button_shot_no, "button_shot_no");
             this.button_shot_no.Image = global::mage.Properties.Resources.shortcut_shot;
-            this.button_shot_no.Location = new System.Drawing.Point(6, 47);
             this.button_shot_no.Name = "button_shot_no";
-            this.button_shot_no.Size = new System.Drawing.Size(24, 24);
-            this.button_shot_no.TabIndex = 1;
             this.button_shot_no.UseVisualStyleBackColor = true;
             this.button_shot_no.Click += new System.EventHandler(this.button_shot_no_Click);
             // 
             // label_shot_no
             // 
-            this.label_shot_no.AutoSize = true;
-            this.label_shot_no.Location = new System.Drawing.Point(36, 53);
+            resources.ApplyResources(this.label_shot_no, "label_shot_no");
             this.label_shot_no.Name = "label_shot_no";
-            this.label_shot_no.Size = new System.Drawing.Size(87, 13);
-            this.label_shot_no.TabIndex = 0;
-            this.label_shot_no.Text = "Block (no reform)";
             // 
             // FormShortcuts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 408);
             this.Controls.Add(this.groupBox_energy);
             this.Controls.Add(this.groupBox_breakable);
             this.Controls.Add(this.groupBox_shot);
@@ -1301,9 +983,7 @@
             this.Controls.Add(this.groupBox_ground);
             this.Controls.Add(this.groupBox_basic);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormShortcuts";
-            this.Text = "Clipdata Shortcuts";
             this.groupBox_basic.ResumeLayout(false);
             this.groupBox_basic.PerformLayout();
             this.groupBox_ground.ResumeLayout(false);

@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="columnHeader_src.Text" xml:space="preserve">
+    <value>始源地</value>
+  </data>
+  <data name="columnHeader_dst.Text" xml:space="preserve">
+    <value>目的地</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listView_areaConnections.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 163</value>
+  </data>
+  <data name="button_areaAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 188</value>
+  </data>
+  <data name="button_areaAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_areaAdd.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="button_areaRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 218</value>
+  </data>
+  <data name="button_areaRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_areaRemove.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="label_areaSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 194</value>
+  </data>
+  <data name="label_areaSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_areaSource.Text" xml:space="preserve">
+    <value>始源地：</value>
+  </data>
+  <data name="label_areaDestination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 221</value>
+  </data>
+  <data name="label_areaDestination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_areaDestination.Text" xml:space="preserve">
+    <value>目的地：</value>
+  </data>
+  <data name="comboBox_areaDstArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 218</value>
+  </data>
+  <data name="comboBox_areaDstArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="comboBox_areaSrcArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 191</value>
+  </data>
+  <data name="comboBox_areaSrcArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="textBox_areaSrcDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 191</value>
+  </data>
+  <data name="textBox_areaSrcDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="label_areaDstRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 221</value>
+  </data>
+  <data name="label_areaDstRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="label_areaSrcRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 194</value>
+  </data>
+  <data name="label_areaSrcRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="label_areaDstDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 221</value>
+  </data>
+  <data name="label_areaDstDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="button_areaClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 218</value>
+  </data>
+  <data name="button_areaClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_areaClose.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="button_areaApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 188</value>
+  </data>
+  <data name="button_areaApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_areaApply.Text" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="label_areaArea.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_areaArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 176</value>
+  </data>
+  <data name="label_areaArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_areaArea.Text" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="label_areaRoom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_areaRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 176</value>
+  </data>
+  <data name="label_areaRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_areaRoom.Text" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="label_areaDoor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_areaDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 176</value>
+  </data>
+  <data name="label_areaDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label_areaDoor.Text" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="tabPage_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 271</value>
+  </data>
+  <data name="tabPage_area.Text" xml:space="preserve">
+    <value>区域连接</value>
+  </data>
+  <data name="textBox_event.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 245</value>
+  </data>
+  <data name="textBox_event.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="label_event.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 248</value>
+  </data>
+  <data name="label_event.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label_event.Text" xml:space="preserve">
+    <value>事件：</value>
+  </data>
+  <data name="textBox_eventDstDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 218</value>
+  </data>
+  <data name="textBox_eventDstDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="label_eventDstArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 221</value>
+  </data>
+  <data name="label_eventDstArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>始源地</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>目的地</value>
+  </data>
+  <data name="listView_doorEvents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 163</value>
+  </data>
+  <data name="label_eventDoor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_eventDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 176</value>
+  </data>
+  <data name="label_eventDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label_eventDoor.Text" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="button_eventAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 188</value>
+  </data>
+  <data name="button_eventAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_eventAdd.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="label_eventRoom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_eventRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 176</value>
+  </data>
+  <data name="label_eventRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_eventRoom.Text" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="button_eventRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 218</value>
+  </data>
+  <data name="button_eventRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_eventRemove.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="label_eventArea.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_eventArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 176</value>
+  </data>
+  <data name="label_eventArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_eventArea.Text" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="label_eventSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 194</value>
+  </data>
+  <data name="label_eventSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_eventSource.Text" xml:space="preserve">
+    <value>始源地：</value>
+  </data>
+  <data name="button_eventClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 218</value>
+  </data>
+  <data name="button_eventClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_eventClose.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="label_eventDestination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 221</value>
+  </data>
+  <data name="label_eventDestination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_eventDestination.Text" xml:space="preserve">
+    <value>目的地：</value>
+  </data>
+  <data name="button_eventApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 188</value>
+  </data>
+  <data name="button_eventApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_eventApply.Text" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="comboBox_eventSrcArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 191</value>
+  </data>
+  <data name="comboBox_eventSrcArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="label_eventSrcRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 194</value>
+  </data>
+  <data name="label_eventSrcRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="textBox_eventSrcDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 191</value>
+  </data>
+  <data name="textBox_eventSrcDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="label_eventDstRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 221</value>
+  </data>
+  <data name="label_eventDstRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="tabPage_event.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 271</value>
+  </data>
+  <data name="tabPage_event.Text" xml:space="preserve">
+    <value>基于事件的连接</value>
+  </data>
+  <data name="comboBox_locLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 245</value>
+  </data>
+  <data name="comboBox_locLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 248</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>语言：</value>
+  </data>
+  <data name="textBox_locDstRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 191</value>
+  </data>
+  <data name="textBox_locDstRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>目的地</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>文本号</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="listView_locNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 163</value>
+  </data>
+  <data name="button_locAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 188</value>
+  </data>
+  <data name="button_locAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_locAdd.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="label_locRoom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_locRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 176</value>
+  </data>
+  <data name="label_locRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_locRoom.Text" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="button_locRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 218</value>
+  </data>
+  <data name="button_locRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_locRemove.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="label_locArea.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_locArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 176</value>
+  </data>
+  <data name="label_locArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_locArea.Text" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="label_locDestination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 194</value>
+  </data>
+  <data name="label_locDestination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_locDestination.Text" xml:space="preserve">
+    <value>目的地：</value>
+  </data>
+  <data name="button_locClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 218</value>
+  </data>
+  <data name="button_locClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_locClose.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="label_locText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 221</value>
+  </data>
+  <data name="label_locText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label_locText.Text" xml:space="preserve">
+    <value>文本：</value>
+  </data>
+  <data name="button_locApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 188</value>
+  </data>
+  <data name="button_locApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_locApply.Text" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="comboBox_locDstArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 191</value>
+  </data>
+  <data name="comboBox_locDstArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="textBox_locText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 218</value>
+  </data>
+  <data name="textBox_locText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="label_locName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 221</value>
+  </data>
+  <data name="label_locName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="tabPage_locNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 271</value>
+  </data>
+  <data name="tabPage_locNames.Text" xml:space="preserve">
+    <value>地点名称</value>
+  </data>
+  <data name="radioButton_lockAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 247</value>
+  </data>
+  <data name="radioButton_lockAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="radioButton_lockAfter.Text" xml:space="preserve">
+    <value>之后</value>
+  </data>
+  <data name="radioButton_lockBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 228</value>
+  </data>
+  <data name="radioButton_lockBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="radioButton_lockBefore.Text" xml:space="preserve">
+    <value>之前</value>
+  </data>
+  <data name="listBox_lockHatches.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="listBox_lockHatches.Items" xml:space="preserve">
+    <value>舱门 0</value>
+  </data>
+  <data name="listBox_lockHatches.Items1" xml:space="preserve">
+    <value>舱门 1</value>
+  </data>
+  <data name="listBox_lockHatches.Items2" xml:space="preserve">
+    <value>舱门 2</value>
+  </data>
+  <data name="listBox_lockHatches.Items3" xml:space="preserve">
+    <value>舱门 3</value>
+  </data>
+  <data name="listBox_lockHatches.Items4" xml:space="preserve">
+    <value>舱门 4</value>
+  </data>
+  <data name="listBox_lockHatches.Items5" xml:space="preserve">
+    <value>舱门 5</value>
+  </data>
+  <data name="listBox_lockHatches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 181</value>
+  </data>
+  <data name="listBox_lockHatches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 82</value>
+  </data>
+  <data name="textBox_lockEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 235</value>
+  </data>
+  <data name="textBox_lockEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="label_lockEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 238</value>
+  </data>
+  <data name="label_lockEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label_lockEvent.Text" xml:space="preserve">
+    <value>事件：</value>
+  </data>
+  <data name="textBox_lockRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 208</value>
+  </data>
+  <data name="textBox_lockRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="label_lockRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 211</value>
+  </data>
+  <data name="label_lockRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label_lockRoom.Text" xml:space="preserve">
+    <value>房间：</value>
+  </data>
+  <data name="columnHeader_lockDst.Text" xml:space="preserve">
+    <value>目的地</value>
+  </data>
+  <data name="columnHeader_lockEvent.Text" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="columnHeader_lockWhen.Text" xml:space="preserve">
+    <value>何时</value>
+  </data>
+  <data name="columnHeader_lockHatches.Text" xml:space="preserve">
+    <value>舱门</value>
+  </data>
+  <data name="listView_lockHatches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 163</value>
+  </data>
+  <data name="button_lockAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 188</value>
+  </data>
+  <data name="button_lockAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_lockAdd.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="button_lockRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 218</value>
+  </data>
+  <data name="button_lockRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_lockRemove.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="button_lockClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 218</value>
+  </data>
+  <data name="button_lockClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_lockClose.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="button_lockApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 188</value>
+  </data>
+  <data name="button_lockApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_lockApply.Text" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="comboBox_lockArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 181</value>
+  </data>
+  <data name="comboBox_lockArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="label_lockArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 184</value>
+  </data>
+  <data name="label_lockArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label_lockArea.Text" xml:space="preserve">
+    <value>区域：</value>
+  </data>
+  <data name="tabPage_hatchLock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 271</value>
+  </data>
+  <data name="tabPage_hatchLock.Text" xml:space="preserve">
+    <value>舱门锁定事件</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 297</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 312</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>465, 334</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgwUCgwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAUCgwUCgwACjoACCwABhwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgw
+        YHhAACjoUCgwACjosMiQsMiQYHhAUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAUCgwsMiQABhwsMiQACjo
+        ACjosMiQ+Pj4sMiQsMiQACCwUCgwUCgwAAAAAAAAAAAAYHhAABhwcPgAcPgAcPgAYHhAACjoACCwsMiQ
+        sMiQACCwACCwICBAICBAAAAAAAAAABhwYHhAcPgA+Pj4cPgAcPgAUCgwACjoABhwACjoICBAICBAAMD4
+        ICBAAAAAAAAAABhwcPgA+Pj4+Pj4cPgAcPgAUCgwACjoICBAICBAAMD4AMD4AJDoICBAAAAAAAAAUCgw
+        cPgA+Pj4+Pj4cPgAcPgAYHhAICBAAMD4AMD4AJDoAJDoICBAAAAAAAAAAAAAUCgwYHhAcPgAYHhAcPgA
+        ICBAICBAMPj4AJDoAJDoAJDoICBAAAAAAAAAAAAAAAAAUCgwABhwYHhAICBAICBAAMD4MPj4AJDoAJDo
+        ACAwACAwICBAAAAAAAAAAAAAAAAAAAAAICBAICBAAMD4AMD4MPj4MPj4ACAwACAwACAwGGC4ICBAAAAA
+        AAAAAAAAAAAAICBAAMD4MPj4MPj4MPj4MPj4GGC4ACAwGGC4AJDoGGC4GGC4ICBAAAAAAAAAICBAAMD4
+        MPj4MPj4MPj4AJDoGGC4GGC4AMD4MPj4AMD4GGC4GGC4GGC4ICBAAAAAAAAAICBAICBAICBAICBAICBA
+        GGC4AMD4MPj4MPj4AJDoAJDoAMD4AMD4AJDoICBAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAMPj4MPj4
+        MPj4AMD4AJDoGGC4ICBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAICBAICBAICBAICBA
+        AAAAAAAA8P8AAMB/AACAHwAAgAMAAIABAACAAQAAgAEAAIADAACABwAAgAcAAMAHAACAAwAAAAEAAIAA
+        AAD8AQAA/wMAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCw
+        yJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCwyJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgA
+        KOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCwyJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgAKOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCw
+        yJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw
+        +ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgAKOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAg
+        IEAgIEAgIEAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw+ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgA
+        KOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAGHAA
+        GHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw
+        +ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPggIEAgIEAAAAAA
+        AAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4
+        +Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOggIEAgIEAAAAAAAAAAAAAAAABQKDBQKDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBg
+        eEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBgeEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw
+        +AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgAkOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw+AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgA
+        kOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBg
+        eEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw+PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBgeEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw
+        +PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgA
+        wPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgY
+        YLgAkOgAkOgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw
+        +Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgYYLgAkOgAkOgYYLgYYLgYYLgYYLggIEAg
+        IEAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgY
+        YLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgYYLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAgIEAgIEAAwPgA
+        wPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgYYLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgY
+        YLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw+PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAg
+        IEAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw
+        +PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAg
+        IEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAA
+        AAD/AP///wD///AAP//wAD//wAAD/8AAA//AAAAPwAAAD8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AA/AAAAPwAAAP8AAAD/AAAA/wAAAP/AAAD/wAAA/wAAAD8AAAA8AAAADAAAAA8AAAADAAAAA//AAA//w
+        AAP//wAP//8ADw==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>连接编辑器</value>
+  </data>
+</root>

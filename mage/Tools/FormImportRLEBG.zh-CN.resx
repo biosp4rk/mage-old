@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button_open.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="button_open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_open.Text" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="button_ok.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 164</value>
+  </data>
+  <data name="button_ok.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_ok.Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="button_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 164</value>
+  </data>
+  <data name="button_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_cancel.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="radioButton_choose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 44</value>
+  </data>
+  <data name="radioButton_choose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="radioButton_choose.Text" xml:space="preserve">
+    <value>贴图集：</value>
+  </data>
+  <data name="radioButton_current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="radioButton_current.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 17</value>
+  </data>
+  <data name="radioButton_current.Text" xml:space="preserve">
+    <value>当前房间的贴图集</value>
+  </data>
+  <data name="label_image.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 9</value>
+  </data>
+  <data name="label_image.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 26</value>
+  </data>
+  <data name="label_image.Text" xml:space="preserve">
+    <value>图片必须为 32 bpp（像素深度）且
+宽度必须为 256、高度可被 16 整除。</value>
+  </data>
+  <data name="checkBox_autoRows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="checkBox_autoRows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 17</value>
+  </data>
+  <data name="checkBox_autoRows.Text" xml:space="preserve">
+    <value>自动选择行</value>
+  </data>
+  <data name="checkBox_preserveData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 141</value>
+  </data>
+  <data name="checkBox_preserveData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 17</value>
+  </data>
+  <data name="checkBox_preserveData.Text" xml:space="preserve">
+    <value>保留现有数据（如果被其他贴图集使用）</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listBox_rows.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="listBox_rows.Items" xml:space="preserve">
+    <value>行 1</value>
+  </data>
+  <data name="listBox_rows.Items1" xml:space="preserve">
+    <value>行 2</value>
+  </data>
+  <data name="listBox_rows.Items2" xml:space="preserve">
+    <value>行 3</value>
+  </data>
+  <data name="listBox_rows.Items3" xml:space="preserve">
+    <value>行 4</value>
+  </data>
+  <data name="listBox_rows.Items4" xml:space="preserve">
+    <value>行 5</value>
+  </data>
+  <data name="listBox_rows.Items5" xml:space="preserve">
+    <value>行 6</value>
+  </data>
+  <data name="listBox_rows.Items6" xml:space="preserve">
+    <value>行 7</value>
+  </data>
+  <data name="listBox_rows.Items7" xml:space="preserve">
+    <value>行 8</value>
+  </data>
+  <data name="listBox_rows.Items8" xml:space="preserve">
+    <value>行 9</value>
+  </data>
+  <data name="listBox_rows.Items9" xml:space="preserve">
+    <value>行 A</value>
+  </data>
+  <data name="listBox_rows.Items10" xml:space="preserve">
+    <value>行 B</value>
+  </data>
+  <data name="listBox_rows.Items11" xml:space="preserve">
+    <value>行 C</value>
+  </data>
+  <data name="listBox_rows.Items12" xml:space="preserve">
+    <value>行 D</value>
+  </data>
+  <data name="listBox_rows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="listBox_rows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 43</value>
+  </data>
+  <data name="groupBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 41</value>
+  </data>
+  <data name="groupBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 94</value>
+  </data>
+  <data name="groupBox_palette.Text" xml:space="preserve">
+    <value>调色板</value>
+  </data>
+  <data name="comboBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 43</value>
+  </data>
+  <data name="comboBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 21</value>
+  </data>
+  <data name="groupBox_select.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 41</value>
+  </data>
+  <data name="groupBox_select.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 94</value>
+  </data>
+  <data name="groupBox_select.Text" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>320, 199</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgwUCgwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAUCgwUCgwACjoACCwABhwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgw
+        YHhAACjoUCgwACjosMiQsMiQYHhAUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAUCgwsMiQABhwsMiQACjo
+        ACjosMiQ+Pj4sMiQsMiQACCwUCgwUCgwAAAAAAAAAAAAYHhAABhwcPgAcPgAcPgAYHhAACjoACCwsMiQ
+        sMiQACCwACCwICBAICBAAAAAAAAAABhwYHhAcPgA+Pj4cPgAcPgAUCgwACjoABhwACjoICBAICBAAMD4
+        ICBAAAAAAAAAABhwcPgA+Pj4+Pj4cPgAcPgAUCgwACjoICBAICBAAMD4AMD4AJDoICBAAAAAAAAAUCgw
+        cPgA+Pj4+Pj4cPgAcPgAYHhAICBAAMD4AMD4AJDoAJDoICBAAAAAAAAAAAAAUCgwYHhAcPgAYHhAcPgA
+        ICBAICBAMPj4AJDoAJDoAJDoICBAAAAAAAAAAAAAAAAAUCgwABhwYHhAICBAICBAAMD4MPj4AJDoAJDo
+        ACAwACAwICBAAAAAAAAAAAAAAAAAAAAAICBAICBAAMD4AMD4MPj4MPj4ACAwACAwACAwGGC4ICBAAAAA
+        AAAAAAAAAAAAICBAAMD4MPj4MPj4MPj4MPj4GGC4ACAwGGC4AJDoGGC4GGC4ICBAAAAAAAAAICBAAMD4
+        MPj4MPj4MPj4AJDoGGC4GGC4AMD4MPj4AMD4GGC4GGC4GGC4ICBAAAAAAAAAICBAICBAICBAICBAICBA
+        GGC4AMD4MPj4MPj4AJDoAJDoAMD4AMD4AJDoICBAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAMPj4MPj4
+        MPj4AMD4AJDoGGC4ICBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAICBAICBAICBAICBA
+        AAAAAAAA8P8AAMB/AACAHwAAgAMAAIABAACAAQAAgAEAAIADAACABwAAgAcAAMAHAACAAwAAAAEAAIAA
+        AAD8AQAA/wMAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCw
+        yJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCwyJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgA
+        KOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCwyJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgAKOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCw
+        yJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw
+        +ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgAKOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAg
+        IEAgIEAgIEAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw+ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgA
+        KOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAGHAA
+        GHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw
+        +ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPggIEAgIEAAAAAA
+        AAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4
+        +Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOggIEAgIEAAAAAAAAAAAAAAAABQKDBQKDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBg
+        eEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBgeEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw
+        +AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgAkOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw+AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgA
+        kOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBg
+        eEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw+PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBgeEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw
+        +PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgA
+        wPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgY
+        YLgAkOgAkOgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw
+        +Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgYYLgAkOgAkOgYYLgYYLgYYLgYYLggIEAg
+        IEAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgY
+        YLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgYYLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAgIEAgIEAAwPgA
+        wPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgYYLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgY
+        YLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw+PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAg
+        IEAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw
+        +PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAg
+        IEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAA
+        AAD/AP///wD///AAP//wAD//wAAD/8AAA//AAAAPwAAAD8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AA/AAAAPwAAAP8AAAD/AAAA/wAAAP/AAAD/wAAA/wAAAD8AAAA8AAAADAAAAA8AAAADAAAAA//AAA//w
+        AAP//wAP//8ADw==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>导入贴图集</value>
+  </data>
+</root>

@@ -117,7 +117,59 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label_yPos.Text" xml:space="preserve">
+    <value>Y position:</value>
+  </data>
+  <data name="&gt;&gt;textBox_xPos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_go.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_xPos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_debug.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox_yPos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 35</value>
+  </data>
+  <data name="button_go.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="button_go.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 18</value>
+  </data>
+  <data name="label_yPos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="&gt;&gt;textBox_yPos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textBox_yPos.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_debug.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_yPos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBox_debug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_xPos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -192,4 +244,151 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;button_cancel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_go.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label_xPos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_go.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_debug.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_xPos.Text" xml:space="preserve">
+    <value>X position:</value>
+  </data>
+  <data name="&gt;&gt;checkBox_debug.Name" xml:space="preserve">
+    <value>checkBox_debug</value>
+  </data>
+  <data name="&gt;&gt;button_go.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_xPos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_yPos.Name" xml:space="preserve">
+    <value>textBox_yPos</value>
+  </data>
+  <data name="&gt;&gt;label_xPos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_debug.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 59</value>
+  </data>
+  <data name="checkBox_debug.Text" xml:space="preserve">
+    <value>Debug menu</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Test Room</value>
+  </data>
+  <data name="label_xPos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_yPos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_yPos.Name" xml:space="preserve">
+    <value>label_yPos</value>
+  </data>
+  <data name="&gt;&gt;label_yPos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="&gt;&gt;textBox_yPos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_go.Name" xml:space="preserve">
+    <value>button_go</value>
+  </data>
+  <data name="textBox_yPos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>223, 86</value>
+  </data>
+  <data name="label_xPos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 15</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_go.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_xPos.Name" xml:space="preserve">
+    <value>textBox_xPos</value>
+  </data>
+  <data name="checkBox_debug.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_yPos.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Name" xml:space="preserve">
+    <value>button_cancel</value>
+  </data>
+  <data name="checkBox_debug.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 16</value>
+  </data>
+  <data name="textBox_xPos.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormTestRoom</value>
+  </data>
+  <data name="&gt;&gt;label_xPos.Name" xml:space="preserve">
+    <value>label_xPos</value>
+  </data>
+  <data name="&gt;&gt;label_yPos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_xPos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_xPos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 11</value>
+  </data>
+  <data name="&gt;&gt;textBox_xPos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_yPos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
+  </data>
+  <data name="&gt;&gt;label_xPos.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBox_xPos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="label_yPos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_yPos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

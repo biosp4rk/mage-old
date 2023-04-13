@@ -112,12 +112,254 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;checkBox_genericTiles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="comboBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 59</value>
+  </data>
+  <data name="button_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="comboBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="radioButton_original.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 16</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="groupBox_select.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Name" xml:space="preserve">
+    <value>comboBox_tileset</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.Name" xml:space="preserve">
+    <value>radioButton_original</value>
+  </data>
+  <data name="&gt;&gt;radioButton_choose.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkBox_preserveData.Text" xml:space="preserve">
+    <value>Preserve existing data
+(if used by other tilesets)</value>
+  </data>
+  <data name="groupBox_select.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Name" xml:space="preserve">
+    <value>checkBox_preserveData</value>
+  </data>
+  <data name="&gt;&gt;checkBox_genericTiles.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.Name" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="radioButton_choose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 60</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_ok.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="checkBox_preserveData.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="checkBox_genericTiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 102</value>
+  </data>
+  <data name="button_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="radioButton_original.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButton_choose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_original.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="checkBox_preserveData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 124</value>
+  </data>
+  <data name="&gt;&gt;radioButton_choose.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Import Tileset</value>
+  </data>
+  <data name="&gt;&gt;checkBox_genericTiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 77</value>
+  </data>
+  <data name="groupBox_select.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 86</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="radioButton_current.Text" xml:space="preserve">
+    <value>Current room's tileset</value>
+  </data>
+  <data name="button_ok.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_choose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_choose.Name" xml:space="preserve">
+    <value>radioButton_choose</value>
+  </data>
+  <data name="radioButton_choose.Text" xml:space="preserve">
+    <value>Tileset:</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Name" xml:space="preserve">
+    <value>button_ok</value>
+  </data>
+  <data name="radioButton_current.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_choose.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="radioButton_current.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Name" xml:space="preserve">
+    <value>button_cancel</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.Name" xml:space="preserve">
+    <value>radioButton_current</value>
+  </data>
+  <data name="radioButton_original.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="checkBox_preserveData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_genericTiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 16</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_genericTiles.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox_select.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;checkBox_genericTiles.Name" xml:space="preserve">
+    <value>checkBox_genericTiles</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="button_ok.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 50</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormImportTileset</value>
+  </data>
+  <data name="radioButton_original.Text" xml:space="preserve">
+    <value>Original tileset</value>
+  </data>
+  <data name="radioButton_current.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button_ok.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>239, 162</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButton_choose.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_genericTiles.Text" xml:space="preserve">
+    <value>Use current game's generic tiles</value>
+  </data>
+  <data name="checkBox_genericTiles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButton_current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="comboBox_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="checkBox_preserveData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 28</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -192,4 +434,13 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;button_ok.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

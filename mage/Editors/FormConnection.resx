@@ -112,18 +112,1289 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>58</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_eventDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 162</value>
+  </data>
+  <data name="label_eventDstArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 204</value>
+  </data>
+  <data name="label_eventDoor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="&gt;&gt;label_eventRoom.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;label_locName.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label_locRoom.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="columnHeader_lockHatches.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="listBox_lockHatches.Items2" xml:space="preserve">
+    <value>Hatch 2</value>
+  </data>
+  <data name="&gt;&gt;button_locApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_areaSrcRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstRoom.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="button_lockClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;tabPage_event.Name" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="button_locApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockAfter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_eventRemove.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label_areaSrcRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_areaSrcDoor.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="button_lockRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="tabPage_event.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 248</value>
+  </data>
+  <data name="&gt;&gt;label_locName.Name" xml:space="preserve">
+    <value>label_locName</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventDstDoor.Name" xml:space="preserve">
+    <value>textBox_eventDstDoor</value>
+  </data>
+  <data name="&gt;&gt;listBox_lockHatches.Name" xml:space="preserve">
+    <value>listBox_lockHatches</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
+    <value>columnHeader4</value>
+  </data>
+  <data name="label_eventDoor.Text" xml:space="preserve">
+    <value>Door</value>
+  </data>
+  <data name="&gt;&gt;label_event.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;textBox_locDstRoom.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="&gt;&gt;label_eventSrcRoom.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;listView_doorEvents.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_eventRemove.Name" xml:space="preserve">
+    <value>button_eventRemove</value>
+  </data>
+  <data name="&gt;&gt;button_eventClose.Name" xml:space="preserve">
+    <value>button_eventClose</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_eventDstDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="button_areaApply.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_eventDestination.Name" xml:space="preserve">
+    <value>label_eventDestination</value>
+  </data>
+  <data name="&gt;&gt;button_eventApply.Name" xml:space="preserve">
+    <value>button_eventApply</value>
+  </data>
+  <data name="&gt;&gt;button_lockClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_lockRemove.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button_lockAdd.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="label_areaSrcRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="tabPage_area.Text" xml:space="preserve">
+    <value>Area Connections</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaDstArea.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label_eventDestination.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="label_locName.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockHatches.Name" xml:space="preserve">
+    <value>columnHeader_lockHatches</value>
+  </data>
+  <data name="&gt;&gt;button_lockRemove.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;label_lockArea.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstRoom.Name" xml:space="preserve">
+    <value>label_eventDstRoom</value>
+  </data>
+  <data name="button_areaAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;button_locAdd.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="label_eventDstArea.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_eventDestination.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_eventClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 201</value>
+  </data>
+  <data name="button_lockAdd.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label_eventArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_eventSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockDst.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_eventRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_lockRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="button_locAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;label_locName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox_lockHatches.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_eventDstRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_areaRemove.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="comboBox_locLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockAfter.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;label_lockArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_areaRoom.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="&gt;&gt;button_eventAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaSrcArea.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="&gt;&gt;label_lockEvent.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;listView_lockHatches.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_locDestination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 179</value>
+  </data>
+  <data name="textBox_locText.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label_eventRoom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="button_lockApply.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label_lockArea.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_areaAdd.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button_lockRemove.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button_areaAdd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_eventApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hatchLock.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_areaClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="textBox_lockRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locLanguage.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="label_eventRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_eventAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 174</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
+    <value>columnHeader2</value>
+  </data>
+  <data name="label_areaDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 162</value>
+  </data>
+  <data name="label_eventRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_lockRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockBefore.Name" xml:space="preserve">
+    <value>radioButton_lockBefore</value>
+  </data>
+  <data name="label_areaDestination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="button_areaApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;label_event.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_eventAdd.Name" xml:space="preserve">
+    <value>button_eventAdd</value>
+  </data>
+  <data name="radioButton_lockAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="listView_doorEvents.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;label_eventSrcRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_areaDstRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 204</value>
+  </data>
+  <data name="label_event.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="label_areaRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstArea.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="label_locText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 204</value>
+  </data>
+  <data name="&gt;&gt;listView_lockHatches.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventSrcDoor.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label_locText.Text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
+    <value>columnHeader3</value>
+  </data>
+  <data name="&gt;&gt;button_locAdd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>465, 308</value>
+  </data>
+  <data name="label_areaDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="listView_areaConnections.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 151</value>
+  </data>
+  <data name="&gt;&gt;label_eventDestination.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_locLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 226</value>
+  </data>
+  <data name="label_areaArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 162</value>
+  </data>
+  <data name="label_eventSrcRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_lockEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 220</value>
+  </data>
+  <data name="&gt;&gt;listView_locNames.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="radioButton_lockAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hatchLock.Name" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="label_locName.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="listBox_lockHatches.Items1" xml:space="preserve">
+    <value>Hatch 1</value>
+  </data>
+  <data name="&gt;&gt;label_areaArea.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button_locAdd.Name" xml:space="preserve">
+    <value>button_locAdd</value>
+  </data>
+  <data name="&gt;&gt;label_eventSrcRoom.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="radioButton_lockAfter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_eventSrcDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label_lockEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_eventSrcRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 179</value>
+  </data>
+  <data name="button_lockClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="button_locRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="&gt;&gt;label_areaDestination.Name" xml:space="preserve">
+    <value>label_areaDestination</value>
+  </data>
+  <data name="&gt;&gt;tabPage_area.Name" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="&gt;&gt;label_eventSource.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tabPage_locNames.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_areaDestination.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_areaApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_eventRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;label_eventRoom.Name" xml:space="preserve">
+    <value>label_eventRoom</value>
+  </data>
+  <data name="&gt;&gt;label_areaSource.Name" xml:space="preserve">
+    <value>label_areaSource</value>
+  </data>
+  <data name="label_areaArea.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage_area.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView_doorEvents.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="label_locRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockWhen.Name" xml:space="preserve">
+    <value>columnHeader_lockWhen</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_locDestination.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_areaSrcArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 229</value>
+  </data>
+  <data name="comboBox_areaSrcArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 176</value>
+  </data>
+  <data name="tabPage_event.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="&gt;&gt;label_areaDestination.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="&gt;&gt;label_areaArea.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="button_areaRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button_areaClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="radioButton_lockBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 210</value>
+  </data>
+  <data name="&gt;&gt;button_lockRemove.Name" xml:space="preserve">
+    <value>button_lockRemove</value>
+  </data>
+  <data name="&gt;&gt;button_lockClose.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;columnHeader5.Name" xml:space="preserve">
+    <value>columnHeader5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_lockArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_eventClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="label_areaRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_lockArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 167</value>
+  </data>
+  <data name="label_lockEvent.Text" xml:space="preserve">
+    <value>Event:</value>
+  </data>
+  <data name="button_areaRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 201</value>
+  </data>
+  <data name="listBox_lockHatches.Items5" xml:space="preserve">
+    <value>Hatch 5</value>
+  </data>
+  <data name="columnHeader_dst.Text" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaDstArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_locArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="&gt;&gt;label_lockRoom.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="listView_doorEvents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 151</value>
+  </data>
+  <data name="&gt;&gt;tabPage_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_locText.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="label_areaRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 162</value>
+  </data>
+  <data name="tabPage_locNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_hatchLock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;button_lockClose.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;button_eventRemove.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="button_areaClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 201</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_dst.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockBefore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_lockArea.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="comboBox_areaSrcArea.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="listView_areaConnections.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="columnHeader_lockDst.Text" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="&gt;&gt;label_areaRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_locClose.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button_locApply.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="label_eventRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 162</value>
+  </data>
+  <data name="&gt;&gt;label_areaRoom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="listView_lockHatches.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_areaClose.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockAfter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_areaAdd.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="&gt;&gt;label_areaSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaSrcArea.Name" xml:space="preserve">
+    <value>comboBox_areaSrcArea</value>
+  </data>
+  <data name="&gt;&gt;label_locRoom.Name" xml:space="preserve">
+    <value>label_locRoom</value>
+  </data>
+  <data name="&gt;&gt;label_locText.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button_locAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="comboBox_eventSrcArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="label_eventSrcRoom.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="button_eventClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_areaSrcRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 179</value>
+  </data>
+  <data name="label_areaRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_eventDstDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 201</value>
+  </data>
+  <data name="&gt;&gt;label_locArea.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="button_eventAdd.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button_areaClose.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage_event.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Connection Editor</value>
+  </data>
+  <data name="label_eventDoor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_areaDstArea.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_eventDestination.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_eventClose.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="textBox_locDstRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 176</value>
+  </data>
+  <data name="listBox_lockHatches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 167</value>
+  </data>
+  <data name="&gt;&gt;label_lockEvent.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBox_locText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 201</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventSrcDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_areaApply.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label_eventSource.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_eventDoor.Name" xml:space="preserve">
+    <value>label_eventDoor</value>
+  </data>
+  <data name="&gt;&gt;label_event.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_locText.Name" xml:space="preserve">
+    <value>textBox_locText</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstDoor.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
+    <value>190</value>
+  </data>
+  <data name="&gt;&gt;textBox_locText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_areaDoor.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="&gt;&gt;button_areaClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_locText.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label_locText.Name" xml:space="preserve">
+    <value>label_locText</value>
+  </data>
+  <data name="label_eventSource.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_locRemove.Name" xml:space="preserve">
+    <value>button_locRemove</value>
+  </data>
+  <data name="&gt;&gt;comboBox_lockArea.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="label_areaDstRoom.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="button_areaApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_locRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 201</value>
+  </data>
+  <data name="tabPage_area.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventSrcDoor.Name" xml:space="preserve">
+    <value>textBox_eventSrcDoor</value>
+  </data>
+  <data name="label_event.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_eventArea.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="label_lockRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="button_eventApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="&gt;&gt;tabPage_locNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_eventDstArea.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="columnHeader_lockWhen.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="button_lockApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox_lockHatches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 76</value>
+  </data>
+  <data name="&gt;&gt;label_eventDoor.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="button_lockAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="comboBox_areaDstArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 201</value>
+  </data>
+  <data name="button_eventClose.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button_lockClose.Name" xml:space="preserve">
+    <value>button_lockClose</value>
+  </data>
+  <data name="label_eventDestination.Text" xml:space="preserve">
+    <value>Destination:</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventDstDoor.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="button_locAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;listView_lockHatches.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstDoor.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tabPage_locNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 248</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_locDstRoom.Name" xml:space="preserve">
+    <value>textBox_locDstRoom</value>
+  </data>
+  <data name="&gt;&gt;label_lockRoom.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;button_locApply.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="columnHeader_dst.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="columnHeader_lockWhen.Text" xml:space="preserve">
+    <value>When</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="label_areaDstRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="label_areaDstDoor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockDst.Name" xml:space="preserve">
+    <value>columnHeader_lockDst</value>
+  </data>
+  <data name="label_areaDstDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 204</value>
+  </data>
+  <data name="&gt;&gt;button_lockApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_locRoom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="&gt;&gt;button_locRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_event.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 229</value>
+  </data>
+  <data name="radioButton_lockBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label_eventSource.Text" xml:space="preserve">
+    <value>Source:</value>
+  </data>
+  <data name="columnHeader_lockEvent.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label_locDestination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="label_eventDstArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="label_eventSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="label_areaSource.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_event.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox_lockHatches.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;tabPage_event.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_event.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockEvent.Name" xml:space="preserve">
+    <value>textBox_lockEvent</value>
+  </data>
+  <data name="&gt;&gt;label_locText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_locAdd.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label_event.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_areaRemove.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_areaAdd.Name" xml:space="preserve">
+    <value>button_areaAdd</value>
+  </data>
+  <data name="textBox_lockEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="button_lockRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 201</value>
+  </data>
+  <data name="&gt;&gt;button_locAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventDstDoor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_eventDstArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_lockRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 195</value>
+  </data>
+  <data name="&gt;&gt;listView_areaConnections.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_locClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 201</value>
+  </data>
+  <data name="radioButton_lockBefore.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_eventSrcDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 176</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hatchLock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_locApply.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label_eventDestination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 204</value>
+  </data>
+  <data name="button_locApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="button_lockApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 174</value>
+  </data>
+  <data name="label_areaDoor.Text" xml:space="preserve">
+    <value>Door</value>
+  </data>
+  <data name="label_locArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 162</value>
+  </data>
+  <data name="label_locText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaDstArea.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="&gt;&gt;textBox_locText.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label_eventArea.Text" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="label_areaDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="&gt;&gt;button_areaAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_eventRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label_areaSource.Text" xml:space="preserve">
+    <value>Source:</value>
+  </data>
+  <data name="comboBox_locDstArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 176</value>
+  </data>
+  <data name="button_lockRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_lockAdd.Name" xml:space="preserve">
+    <value>button_lockAdd</value>
+  </data>
+  <data name="button_eventApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_areaDestination.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockRoom.Name" xml:space="preserve">
+    <value>textBox_lockRoom</value>
+  </data>
+  <data name="label_lockArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_lockAfter.Text" xml:space="preserve">
+    <value>After</value>
+  </data>
+  <data name="&gt;&gt;tabPage_locNames.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_eventAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockWhen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locDstArea.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label_areaDstRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_locRemove.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label_eventArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 162</value>
+  </data>
+  <data name="&gt;&gt;label_lockRoom.Name" xml:space="preserve">
+    <value>label_lockRoom</value>
+  </data>
+  <data name="label_areaArea.Text" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="listView_locNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 151</value>
+  </data>
+  <data name="label_lockRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_lockArea.Name" xml:space="preserve">
+    <value>label_lockArea</value>
+  </data>
+  <data name="label_lockEvent.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locDstArea.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="listBox_lockHatches.Items4" xml:space="preserve">
+    <value>Hatch 4</value>
+  </data>
+  <data name="&gt;&gt;button_areaApply.Name" xml:space="preserve">
+    <value>button_areaApply</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstRoom.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tabPage_event.Text" xml:space="preserve">
+    <value>Event Based Connections</value>
+  </data>
+  <data name="button_areaApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 174</value>
+  </data>
+  <data name="button_areaAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 174</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_src.Name" xml:space="preserve">
+    <value>columnHeader_src</value>
+  </data>
+  <data name="label_areaDoor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_eventDstRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 204</value>
+  </data>
+  <data name="textBox_locDstRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="label_areaSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;label_locRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_lockEvent.Name" xml:space="preserve">
+    <value>label_lockEvent</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_lockApply.Name" xml:space="preserve">
+    <value>button_lockApply</value>
+  </data>
+  <data name="&gt;&gt;label_eventArea.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="listView_lockHatches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="tabPage_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="label_eventSrcRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockEvent.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locLanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="listView_areaConnections.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;tabPage_locNames.Name" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="radioButton_lockBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 16</value>
+  </data>
+  <data name="&gt;&gt;label_eventSource.Name" xml:space="preserve">
+    <value>label_eventSource</value>
+  </data>
+  <data name="&gt;&gt;button_lockApply.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="listBox_lockHatches.Items3" xml:space="preserve">
+    <value>Hatch 3</value>
+  </data>
+  <data name="&gt;&gt;label_areaSrcRoom.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="button_lockRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="listView_locNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="textBox_lockEvent.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_src.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 17</value>
+  </data>
+  <data name="button_areaClose.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_areaDstDoor.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="label_areaSrcRoom.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormConnection</value>
+  </data>
+  <data name="&gt;&gt;label_areaDestination.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_areaSrcDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 176</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstRoom.Name" xml:space="preserve">
+    <value>label_areaDstRoom</value>
+  </data>
+  <data name="&gt;&gt;comboBox_eventSrcArea.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="label_areaDestination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 204</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockRoom.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockBefore.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_dst.Name" xml:space="preserve">
+    <value>columnHeader_dst</value>
+  </data>
+  <data name="label_locDestination.Text" xml:space="preserve">
+    <value>Destination:</value>
+  </data>
+  <data name="textBox_areaSrcDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="label_locRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label_eventSource.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;label_locArea.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button_lockRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_lockRoom.Text" xml:space="preserve">
+    <value>Room:</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventDstDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_locRoom.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="&gt;&gt;label_eventSrcRoom.Name" xml:space="preserve">
+    <value>label_eventSrcRoom</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaSrcArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_areaDstArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="label_eventSrcRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_lockArea.Text" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstRoom.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;button_eventAdd.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_eventArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_eventApply.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;listView_areaConnections.Name" xml:space="preserve">
+    <value>listView_areaConnections</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -198,4 +1469,676 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;button_lockAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_locRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_locDestination.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_eventSrcArea.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label_eventArea.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="button_lockApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="label_eventSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 179</value>
+  </data>
+  <data name="label_event.Text" xml:space="preserve">
+    <value>Event:</value>
+  </data>
+  <data name="columnHeader_lockDst.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="label_areaArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 274</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockHatches.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;label_eventArea.Name" xml:space="preserve">
+    <value>label_eventArea</value>
+  </data>
+  <data name="textBox_event.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 226</value>
+  </data>
+  <data name="label_locRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 162</value>
+  </data>
+  <data name="listView_doorEvents.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockBefore.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_eventRemove.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="button_lockApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_eventDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstArea.Name" xml:space="preserve">
+    <value>label_eventDstArea</value>
+  </data>
+  <data name="textBox_event.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="button_eventAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label_locArea.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaSrcArea.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locDstArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 286</value>
+  </data>
+  <data name="listBox_lockHatches.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label_eventDstRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="&gt;&gt;listView_locNames.Name" xml:space="preserve">
+    <value>listView_locNames</value>
+  </data>
+  <data name="&gt;&gt;label_locText.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="&gt;&gt;label_areaSrcRoom.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="label_eventDestination.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_eventSrcDoor.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="button_locRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_eventRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_eventDstDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;listView_areaConnections.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="label_locArea.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;button_lockAdd.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_areaRemove.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="radioButton_lockBefore.Text" xml:space="preserve">
+    <value>Before</value>
+  </data>
+  <data name="&gt;&gt;label_event.Name" xml:space="preserve">
+    <value>label_event</value>
+  </data>
+  <data name="&gt;&gt;label_locDestination.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_locName.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="button_areaRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_areaDoor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_locArea.Text" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="label_areaRoom.Text" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="&gt;&gt;label_areaDoor.Name" xml:space="preserve">
+    <value>label_areaDoor</value>
+  </data>
+  <data name="button_locClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;label_lockRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_locClose.Name" xml:space="preserve">
+    <value>button_locClose</value>
+  </data>
+  <data name="textBox_locText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;label_areaSource.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="listView_lockHatches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 151</value>
+  </data>
+  <data name="&gt;&gt;label_areaArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_areaSrcDoor.Name" xml:space="preserve">
+    <value>textBox_areaSrcDoor</value>
+  </data>
+  <data name="tabPage_hatchLock.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label_eventArea.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 248</value>
+  </data>
+  <data name="columnHeader_lockEvent.Text" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="button_locClose.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label_eventRoom.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label_eventDestination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="&gt;&gt;label_eventDoor.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_lockArea.Name" xml:space="preserve">
+    <value>comboBox_lockArea</value>
+  </data>
+  <data name="&gt;&gt;textBox_areaSrcDoor.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;button_lockApply.Parent" xml:space="preserve">
+    <value>tabPage_hatchLock</value>
+  </data>
+  <data name="label_locArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_locClose.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="button_eventRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="label_areaSource.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_event.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstRoom.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_lockAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 228</value>
+  </data>
+  <data name="&gt;&gt;textBox_locDstRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_eventRoom.Text" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="&gt;&gt;label_areaSrcRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_locClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="button_lockClose.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;listView_areaConnections.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_eventAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_locDestination.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="tabPage_locNames.Text" xml:space="preserve">
+    <value>Location Names</value>
+  </data>
+  <data name="label_lockEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="textBox_areaSrcDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
+    <value>columnHeader1</value>
+  </data>
+  <data name="&gt;&gt;button_areaRemove.Name" xml:space="preserve">
+    <value>button_areaRemove</value>
+  </data>
+  <data name="button_lockAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBox_locDstRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;listView_locNames.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="&gt;&gt;label_areaDestination.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="textBox_lockEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 217</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locDstArea.Name" xml:space="preserve">
+    <value>comboBox_locDstArea</value>
+  </data>
+  <data name="&gt;&gt;comboBox_eventSrcArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_areaDoor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_areaDestination.Text" xml:space="preserve">
+    <value>Destination:</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView_doorEvents.Name" xml:space="preserve">
+    <value>listView_doorEvents</value>
+  </data>
+  <data name="&gt;&gt;button_eventClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Text #</value>
+  </data>
+  <data name="&gt;&gt;label_areaDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_locDestination.Name" xml:space="preserve">
+    <value>label_locDestination</value>
+  </data>
+  <data name="&gt;&gt;label_locArea.Name" xml:space="preserve">
+    <value>label_locArea</value>
+  </data>
+  <data name="button_areaAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;button_eventApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_event.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_locArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_eventSrcArea.Name" xml:space="preserve">
+    <value>comboBox_eventSrcArea</value>
+  </data>
+  <data name="tabPage_area.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_eventApply.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label_eventArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="&gt;&gt;tabPage_area.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="label_locName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="label_areaArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_eventSrcDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockRoom.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_areaDstDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_eventClose.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="comboBox_eventSrcArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 176</value>
+  </data>
+  <data name="listView_locNames.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="comboBox_locDstArea.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;button_locApply.Name" xml:space="preserve">
+    <value>button_locApply</value>
+  </data>
+  <data name="&gt;&gt;tabPage_locNames.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;textBox_lockEvent.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_eventDstRoom.Text" xml:space="preserve">
+    <value>–</value>
+  </data>
+  <data name="&gt;&gt;label_areaSrcRoom.Name" xml:space="preserve">
+    <value>label_areaSrcRoom</value>
+  </data>
+  <data name="label_locName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 204</value>
+  </data>
+  <data name="button_lockAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;listView_locNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_locDstRoom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_areaDstArea.Name" xml:space="preserve">
+    <value>comboBox_areaDstArea</value>
+  </data>
+  <data name="button_areaRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="label_areaRoom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_locRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_eventAdd.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;listBox_lockHatches.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPage_hatchLock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 248</value>
+  </data>
+  <data name="label_eventDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="textBox_event.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tabPage_hatchLock.Text" xml:space="preserve">
+    <value>Hatch Lock Events</value>
+  </data>
+  <data name="&gt;&gt;tabPage_event.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_eventRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 201</value>
+  </data>
+  <data name="button_locAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 174</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 22</value>
+  </data>
+  <data name="&gt;&gt;label_areaSource.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hatchLock.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;button_locRemove.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="label_lockArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;label_areaArea.Name" xml:space="preserve">
+    <value>label_areaArea</value>
+  </data>
+  <data name="&gt;&gt;textBox_areaSrcDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader_lockEvent.Name" xml:space="preserve">
+    <value>columnHeader_lockEvent</value>
+  </data>
+  <data name="&gt;&gt;label_lockArea.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tabPage_event.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="columnHeader_src.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="comboBox_locLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="&gt;&gt;columnHeader5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_lockArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 170</value>
+  </data>
+  <data name="&gt;&gt;button_areaApply.Parent" xml:space="preserve">
+    <value>tabPage_area</value>
+  </data>
+  <data name="&gt;&gt;radioButton_lockAfter.Name" xml:space="preserve">
+    <value>radioButton_lockAfter</value>
+  </data>
+  <data name="comboBox_locDstArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="&gt;&gt;button_locRemove.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button_areaAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;button_locClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_lockEvent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_areaArea.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="&gt;&gt;button_areaRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_lockArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="textBox_lockRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 192</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_lockArea.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Name" xml:space="preserve">
+    <value>columnHeader6</value>
+  </data>
+  <data name="label_locText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_eventApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 174</value>
+  </data>
+  <data name="button_areaApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;button_eventApply.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="&gt;&gt;label_eventDstArea.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_eventDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_lockClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 201</value>
+  </data>
+  <data name="label_areaDstRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_locRoom.Text" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="&gt;&gt;comboBox_locLanguage.Name" xml:space="preserve">
+    <value>comboBox_locLanguage</value>
+  </data>
+  <data name="label_eventDstRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_locApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_eventRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="listBox_lockHatches.Items" xml:space="preserve">
+    <value>Hatch 0</value>
+  </data>
+  <data name="label_locDestination.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="button_lockAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 174</value>
+  </data>
+  <data name="&gt;&gt;label_areaDstDoor.Name" xml:space="preserve">
+    <value>label_areaDstDoor</value>
+  </data>
+  <data name="&gt;&gt;label_areaRoom.Name" xml:space="preserve">
+    <value>label_areaRoom</value>
+  </data>
+  <data name="&gt;&gt;listView_doorEvents.Parent" xml:space="preserve">
+    <value>tabPage_event</value>
+  </data>
+  <data name="columnHeader_src.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="&gt;&gt;listView_lockHatches.Name" xml:space="preserve">
+    <value>listView_lockHatches</value>
+  </data>
+  <data name="&gt;&gt;comboBox_eventSrcArea.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;button_areaClose.Name" xml:space="preserve">
+    <value>button_areaClose</value>
+  </data>
+  <data name="label_areaDstDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabPage_locNames</value>
+  </data>
+  <data name="label_locName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_locApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 174</value>
+  </data>
+  <data name="columnHeader_lockHatches.Text" xml:space="preserve">
+    <value>Hatches</value>
+  </data>
+  <data name="&gt;&gt;textBox_event.Name" xml:space="preserve">
+    <value>textBox_event</value>
+  </data>
+  <data name="label_areaSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 179</value>
+  </data>
+  <data name="listBox_lockHatches.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>58</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>mage</RootNamespace>
     <AssemblyName>mage</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
@@ -53,6 +53,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\Icons\mage.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -343,16 +346,55 @@
     <Compile Include="Version.cs" />
     <Compile Include="VramBG.cs" />
     <Compile Include="VramObj.cs" />
+    <EmbeddedResource Include="Editors\FormAnimation.zh-CN.resx">
+      <DependentUpon>FormAnimation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editors\FormConnection.resx">
       <DependentUpon>FormConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormConnection.zh-CN.resx">
+      <DependentUpon>FormConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormDemo.zh-CN.resx">
+      <DependentUpon>FormDemo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Editors\FormGraphics.resx">
       <DependentUpon>FormGraphics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormGraphics.zh-CN.resx">
+      <DependentUpon>FormGraphics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormHeader.zh-CN.resx">
+      <DependentUpon>FormHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormMinimap.zh-CN.resx">
+      <DependentUpon>FormMinimap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormPalette.zh-CN.resx">
+      <DependentUpon>FormPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormPhysics.zh-CN.resx">
+      <DependentUpon>FormPhysics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormSprite.zh-CN.resx">
+      <DependentUpon>FormSprite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormSpriteset.zh-CN.resx">
+      <DependentUpon>FormSpriteset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editors\FormText.resx">
       <DependentUpon>FormText.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormText.zh-CN.resx">
+      <DependentUpon>FormText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormTileset.zh-CN.resx">
+      <DependentUpon>FormTileset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editors\FormTileTable.resx">
+      <DependentUpon>FormTileTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormTileTable.zh-CN.resx">
       <DependentUpon>FormTileTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Editors\FormWeapon.resx">
@@ -364,8 +406,32 @@
     <EmbeddedResource Include="Editors\FormAnimation.resx">
       <DependentUpon>FormAnimation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormWeapon.zh-CN.resx">
+      <DependentUpon>FormWeapon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.zh-CN.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClipboard.zh-CN.resx">
+      <DependentUpon>FormClipboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDoor.zh-CN.resx">
+      <DependentUpon>FormEditDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditEnemy.zh-CN.resx">
+      <DependentUpon>FormEditEnemy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditScroll.zh-CN.resx">
+      <DependentUpon>FormEditScroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-CN.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShortcuts.zh-Hans.resx">
+      <DependentUpon>FormShortcuts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\FormAdd.resx">
       <DependentUpon>FormAdd.cs</DependentUpon>
@@ -385,17 +451,50 @@
     <EmbeddedResource Include="Editors\FormPhysics.resx">
       <DependentUpon>FormPhysics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormAdd.zh-CN.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormExportTileset.zh-CN.resx">
+      <DependentUpon>FormExportTileset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormImportEnding.zh-CN.resx">
+      <DependentUpon>FormImportEnding.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tools\FormImportLZ77BG.resx">
       <DependentUpon>FormImportLZ77BG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\FormImportEnding.resx">
       <DependentUpon>FormImportEnding.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormImportLZ77BG.zh-CN.resx">
+      <DependentUpon>FormImportLZ77BG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tools\FormImportRLEBG.resx">
       <DependentUpon>FormImportRLEBG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormImportRLEBG.zh-CN.resx">
+      <DependentUpon>FormImportRLEBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormImportRoom.zh-CN.resx">
+      <DependentUpon>FormImportRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormImportTileset.zh-CN.resx">
+      <DependentUpon>FormImportTileset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormPatches.zh-CN.resx">
+      <DependentUpon>FormPatches.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tools\FormPortBG.resx">
       <DependentUpon>FormPortBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormPortBG.zh-CN.resx">
+      <DependentUpon>FormPortBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormRoomOptions.zh-CN.resx">
+      <DependentUpon>FormRoomOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormTestRoom.zh-CN.resx">
+      <DependentUpon>FormTestRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\FormTileBuilder.resx">
       <DependentUpon>FormTileBuilder.cs</DependentUpon>
@@ -453,6 +552,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormTileBuilder.zh-CN.resx">
+      <DependentUpon>FormTileBuilder.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

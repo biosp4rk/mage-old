@@ -112,12 +112,77 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radioButton_BG0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox_options.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_options.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG3.Name" xml:space="preserve">
+    <value>radioButton_BG3</value>
+  </data>
+  <data name="radioButton_BG3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_ok.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button_open.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_image.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 8</value>
+  </data>
+  <data name="checkBox_addToGraphics.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="checkBox_autoRows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 16</value>
+  </data>
+  <data name="&gt;&gt;groupBox_options.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Name" xml:space="preserve">
+    <value>button_cancel</value>
+  </data>
+  <data name="checkBox_preserveData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 28</value>
+  </data>
+  <data name="&gt;&gt;groupBox_options.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox_preserveData.Text" xml:space="preserve">
+    <value>Preserve existing data
+(if used by other BGs)</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Name" xml:space="preserve">
+    <value>checkBox_preserveData</value>
+  </data>
+  <data name="listBox_rows.Items11" xml:space="preserve">
+    <value>Row C</value>
+  </data>
+  <data name="button_open.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_open.Name" xml:space="preserve">
+    <value>button_open</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -192,4 +257,320 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;button_cancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="radioButton_BG0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBox_autoRows.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="listBox_rows.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG0.Parent" xml:space="preserve">
+    <value>groupBox_options</value>
+  </data>
+  <data name="listBox_rows.Items9" xml:space="preserve">
+    <value>Row A</value>
+  </data>
+  <data name="listBox_rows.Items8" xml:space="preserve">
+    <value>Row 9</value>
+  </data>
+  <data name="checkBox_addToGraphics.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="listBox_rows.Items5" xml:space="preserve">
+    <value>Row 6</value>
+  </data>
+  <data name="listBox_rows.Items4" xml:space="preserve">
+    <value>Row 5</value>
+  </data>
+  <data name="listBox_rows.Items7" xml:space="preserve">
+    <value>Row 8</value>
+  </data>
+  <data name="listBox_rows.Items6" xml:space="preserve">
+    <value>Row 7</value>
+  </data>
+  <data name="label_image.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_ok.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="listBox_rows.Items3" xml:space="preserve">
+    <value>Row 4</value>
+  </data>
+  <data name="listBox_rows.Items2" xml:space="preserve">
+    <value>Row 3</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_palette.Name" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="&gt;&gt;button_open.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 87</value>
+  </data>
+  <data name="&gt;&gt;checkBox_addToGraphics.Name" xml:space="preserve">
+    <value>checkBox_addToGraphics</value>
+  </data>
+  <data name="checkBox_addToGraphics.Text" xml:space="preserve">
+    <value>Add to existing graphics</value>
+  </data>
+  <data name="button_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_addToGraphics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_BG0.Text" xml:space="preserve">
+    <value>BG 0</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG0.Name" xml:space="preserve">
+    <value>radioButton_BG0</value>
+  </data>
+  <data name="groupBox_palette.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="checkBox_preserveData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 81</value>
+  </data>
+  <data name="listBox_rows.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Import BG3</value>
+  </data>
+  <data name="radioButton_BG3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_image.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 24</value>
+  </data>
+  <data name="radioButton_BG3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 130</value>
+  </data>
+  <data name="groupBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_open.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="radioButton_BG0.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="button_ok.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;label_image.Name" xml:space="preserve">
+    <value>label_image</value>
+  </data>
+  <data name="&gt;&gt;label_image.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_image.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBox_autoRows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>340, 163</value>
+  </data>
+  <data name="button_open.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="checkBox_autoRows.Text" xml:space="preserve">
+    <value>Automatically select rows</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Name" xml:space="preserve">
+    <value>button_ok</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_options.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 114</value>
+  </data>
+  <data name="radioButton_BG0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="groupBox_options.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG3.Parent" xml:space="preserve">
+    <value>groupBox_options</value>
+  </data>
+  <data name="checkBox_autoRows.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_preserveData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;listBox_rows.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listBox_rows.Name" xml:space="preserve">
+    <value>listBox_rows</value>
+  </data>
+  <data name="listBox_rows.Items10" xml:space="preserve">
+    <value>Row B</value>
+  </data>
+  <data name="&gt;&gt;label_image.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="listBox_rows.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="radioButton_BG3.Text" xml:space="preserve">
+    <value>BG 3</value>
+  </data>
+  <data name="button_open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="listBox_rows.Items" xml:space="preserve">
+    <value>Row 1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_palette.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBox_autoRows.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 38</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormImportLZ77BG</value>
+  </data>
+  <data name="listBox_rows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="groupBox_options.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;groupBox_options.Name" xml:space="preserve">
+    <value>groupBox_options</value>
+  </data>
+  <data name="&gt;&gt;checkBox_autoRows.Name" xml:space="preserve">
+    <value>checkBox_autoRows</value>
+  </data>
+  <data name="&gt;&gt;groupBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_ok.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;label_image.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_addToGraphics.Parent" xml:space="preserve">
+    <value>groupBox_options</value>
+  </data>
+  <data name="&gt;&gt;groupBox_options.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox_rows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_BG3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="listBox_rows.Items12" xml:space="preserve">
+    <value>Row D</value>
+  </data>
+  <data name="groupBox_palette.Text" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="button_ok.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 130</value>
+  </data>
+  <data name="checkBox_addToGraphics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 16</value>
+  </data>
+  <data name="&gt;&gt;checkBox_addToGraphics.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_image.Text" xml:space="preserve">
+    <value>Image must have dimensions
+256 x 256, 512 x 256, or 256 x 512.</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_addToGraphics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 60</value>
+  </data>
+  <data name="&gt;&gt;radioButton_BG0.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="listBox_rows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 40</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Parent" xml:space="preserve">
+    <value>groupBox_options</value>
+  </data>
+  <data name="&gt;&gt;groupBox_palette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="listBox_rows.Items1" xml:space="preserve">
+    <value>Row 2</value>
+  </data>
+  <data name="checkBox_preserveData.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;checkBox_autoRows.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;listBox_rows.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="button_open.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="checkBox_autoRows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;button_ok.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

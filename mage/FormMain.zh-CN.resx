@@ -1,0 +1,1161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuItem_openROM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="menuItem_openROM.Text" xml:space="preserve">
+    <value>打开 ROM...</value>
+  </data>
+  <data name="menuItem_saveROM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="menuItem_saveROM.Text" xml:space="preserve">
+    <value>保存 ROM</value>
+  </data>
+  <data name="menuItem_saveROMas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="menuItem_saveROMas.Text" xml:space="preserve">
+    <value>ROM 另存为...</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 6</value>
+  </data>
+  <data name="menuItem_createBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="menuItem_createBackup.Text" xml:space="preserve">
+    <value>创建备份</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 6</value>
+  </data>
+  <data name="menuItem_clearRecentFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="menuItem_clearRecentFiles.Text" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="toolStripSeparator22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 6</value>
+  </data>
+  <data name="menuItem_recentFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="menuItem_recentFiles.Text" xml:space="preserve">
+    <value>最近使用的文件</value>
+  </data>
+  <data name="menuStrip_file.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="menuStrip_file.Text" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="menuItem_editBGs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_editBGs.Text" xml:space="preserve">
+    <value>背景编辑模式</value>
+  </data>
+  <data name="menuItem_editObjects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_editObjects.Text" xml:space="preserve">
+    <value>对象编辑模式</value>
+  </data>
+  <data name="toolStripSeparator17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 6</value>
+  </data>
+  <data name="menuItem_forceClipdata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_forceClipdata.Text" xml:space="preserve">
+    <value>使用选定的砖块属性</value>
+  </data>
+  <data name="toolStripSeparator19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 6</value>
+  </data>
+  <data name="menuItem_undo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_undo.Text" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="menuItem_redo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_redo.Text" xml:space="preserve">
+    <value>重做</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 6</value>
+  </data>
+  <data name="menuItem_editBG0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_editBG1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_editBG2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_editCLP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="menuItem_editCLP.Text" xml:space="preserve">
+    <value>砖块属性</value>
+  </data>
+  <data name="menuStrip_edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="menuStrip_edit.Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="menuItem_viewBG0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_viewBG1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_viewBG2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_viewBG3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_viewClipCollision.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 22</value>
+  </data>
+  <data name="menuItem_viewClipCollision.Text" xml:space="preserve">
+    <value>碰撞</value>
+  </data>
+  <data name="menuItem_viewClipBreakable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 22</value>
+  </data>
+  <data name="menuItem_viewClipBreakable.Text" xml:space="preserve">
+    <value>可破坏</value>
+  </data>
+  <data name="menuItem_viewClipValues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 22</value>
+  </data>
+  <data name="menuItem_viewClipValues.Text" xml:space="preserve">
+    <value>数值</value>
+  </data>
+  <data name="menuItem_viewCLP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_viewCLP.Text" xml:space="preserve">
+    <value>砖块属性</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 6</value>
+  </data>
+  <data name="menuItem_viewSprites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_viewSprites.Text" xml:space="preserve">
+    <value>精灵</value>
+  </data>
+  <data name="menuItem_outlineSprites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_outlineSprites.Text" xml:space="preserve">
+    <value>精灵边线</value>
+  </data>
+  <data name="menuItem_outlineDoors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_outlineDoors.Text" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="menuItem_outlineScrolls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_outlineScrolls.Text" xml:space="preserve">
+    <value>滚动</value>
+  </data>
+  <data name="toolStripSeparator27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 6</value>
+  </data>
+  <data name="menuItem_outlineScreens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_outlineScreens.Text" xml:space="preserve">
+    <value>屏幕边线</value>
+  </data>
+  <data name="menuItem_viewAnimPal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_viewAnimPal.Text" xml:space="preserve">
+    <value>动画调色板</value>
+  </data>
+  <data name="menuItem_motherShipHatches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_motherShipHatches.Text" xml:space="preserve">
+    <value>母舰舱门</value>
+  </data>
+  <data name="toolStripSeparator18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 6</value>
+  </data>
+  <data name="menuItem_clipboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_clipboard.Text" xml:space="preserve">
+    <value>剪贴板</value>
+  </data>
+  <data name="menuItem_zoom100.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="menuItem_zoom200.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="menuItem_zoom400.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="menuItem_zoom800.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="toolStripSeparator20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 6</value>
+  </data>
+  <data name="menuItem_zoomIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="menuItem_zoomIn.Text" xml:space="preserve">
+    <value>放大</value>
+  </data>
+  <data name="menuItem_zoomOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="menuItem_zoomOut.Text" xml:space="preserve">
+    <value>缩小</value>
+  </data>
+  <data name="menuItem_zoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="menuItem_zoom.Text" xml:space="preserve">
+    <value>缩放</value>
+  </data>
+  <data name="menuStrip_view.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="menuStrip_view.Text" xml:space="preserve">
+    <value>视图</value>
+  </data>
+  <data name="menuItem_headerEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_headerEditor.Text" xml:space="preserve">
+    <value>头编辑器</value>
+  </data>
+  <data name="menuItem_tilesetEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_tilesetEditor.Text" xml:space="preserve">
+    <value>贴图集编辑器</value>
+  </data>
+  <data name="toolStripSeparator24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 6</value>
+  </data>
+  <data name="menuItem_graphicsEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_graphicsEditor.Text" xml:space="preserve">
+    <value>图形编辑器</value>
+  </data>
+  <data name="menuItem_paletteEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_paletteEditor.Text" xml:space="preserve">
+    <value>调色板编辑器</value>
+  </data>
+  <data name="menuItem_tileTableEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_tileTableEditor.Text" xml:space="preserve">
+    <value>贴图集编辑器</value>
+  </data>
+  <data name="menuItem_animationEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_animationEditor.Text" xml:space="preserve">
+    <value>动画编辑器</value>
+  </data>
+  <data name="toolStripSeparator25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 6</value>
+  </data>
+  <data name="menuItem_spriteEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_spriteEditor.Text" xml:space="preserve">
+    <value>精灵编辑器</value>
+  </data>
+  <data name="menuItem_spritesetEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_spritesetEditor.Text" xml:space="preserve">
+    <value>精灵集编辑器</value>
+  </data>
+  <data name="menuItem_minimapEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_minimapEditor.Text" xml:space="preserve">
+    <value>地图编辑器</value>
+  </data>
+  <data name="menuItem_connectionEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_connectionEditor.Text" xml:space="preserve">
+    <value>连接编辑器</value>
+  </data>
+  <data name="toolStripSeparator26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 6</value>
+  </data>
+  <data name="menuItem_textEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_textEditor.Text" xml:space="preserve">
+    <value>文本编辑器</value>
+  </data>
+  <data name="menuItem_demoEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_demoEditor.Text" xml:space="preserve">
+    <value>演示编辑器</value>
+  </data>
+  <data name="menuItem_physicsEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_physicsEditor.Text" xml:space="preserve">
+    <value>物理编辑器</value>
+  </data>
+  <data name="menuItem_weaponEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_weaponEditor.Text" xml:space="preserve">
+    <value>武器编辑器</value>
+  </data>
+  <data name="menuStrip_editors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 21</value>
+  </data>
+  <data name="menuStrip_editors.Text" xml:space="preserve">
+    <value>编辑器</value>
+  </data>
+  <data name="menuItem_roomOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_roomOptions.Text" xml:space="preserve">
+    <value>房间选项...</value>
+  </data>
+  <data name="menuItem_testRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_testRoom.Text" xml:space="preserve">
+    <value>测试房间...</value>
+  </data>
+  <data name="menuItem_clipShortcuts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_clipShortcuts.Text" xml:space="preserve">
+    <value>砖块属性快捷面板</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 6</value>
+  </data>
+  <data name="menuItem_importTileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_importTileset.Text" xml:space="preserve">
+    <value>贴图集...</value>
+  </data>
+  <data name="menuItem_importRLE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_importRLE.Text" xml:space="preserve">
+    <value>RLE 背景...</value>
+  </data>
+  <data name="menuItem_importLZ77.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_importLZ77.Text" xml:space="preserve">
+    <value>LZ77 背景...</value>
+  </data>
+  <data name="menuItem_importRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_importRoom.Text" xml:space="preserve">
+    <value>房间...</value>
+  </data>
+  <data name="toolStripSeparator8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 6</value>
+  </data>
+  <data name="menuItem_importTilesetImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_importTilesetImage.Text" xml:space="preserve">
+    <value>贴图集从图片...</value>
+  </data>
+  <data name="menuItem_importLZ77BGimage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_importLZ77BGimage.Text" xml:space="preserve">
+    <value>LZ77 背景从图片...</value>
+  </data>
+  <data name="menuItem_importEnding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_importEnding.Text" xml:space="preserve">
+    <value>结局图从图片</value>
+  </data>
+  <data name="menuItem_import.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_import.Text" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="menuItem_exportTileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="menuItem_exportTileset.Text" xml:space="preserve">
+    <value>贴图集...</value>
+  </data>
+  <data name="menuItem_exportBG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="menuItem_exportBG.Text" xml:space="preserve">
+    <value>背景...</value>
+  </data>
+  <data name="menuItem_exportRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="menuItem_exportRoom.Text" xml:space="preserve">
+    <value>房间...</value>
+  </data>
+  <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 6</value>
+  </data>
+  <data name="menuItem_exportTilesetImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="menuItem_exportTilesetImage.Text" xml:space="preserve">
+    <value>贴图集图片...</value>
+  </data>
+  <data name="menuItem_exportBG0image.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="menuItem_exportBG0image.Text" xml:space="preserve">
+    <value>BG0 图片...</value>
+  </data>
+  <data name="menuItem_exportBG3image.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="menuItem_exportBG3image.Text" xml:space="preserve">
+    <value>BG3 图片...</value>
+  </data>
+  <data name="menuItem_exportRoomImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="menuItem_exportRoomImage.Text" xml:space="preserve">
+    <value>房间图片...</value>
+  </data>
+  <data name="menuItem_export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_export.Text" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="menuItem_LZ77comp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_LZ77comp.Text" xml:space="preserve">
+    <value>LZ77 压缩文件...</value>
+  </data>
+  <data name="menuItem_LZ77decomp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="menuItem_LZ77decomp.Text" xml:space="preserve">
+    <value>LZ77 解压缩文件...</value>
+  </data>
+  <data name="menuItem_compression.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_compression.Text" xml:space="preserve">
+    <value>压缩</value>
+  </data>
+  <data name="toolStripSeparator23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 6</value>
+  </data>
+  <data name="menuItem_tileBuilder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_tileBuilder.Text" xml:space="preserve">
+    <value>地图块生成器</value>
+  </data>
+  <data name="menuItem_addBG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_addBG.Text" xml:space="preserve">
+    <value>背景</value>
+  </data>
+  <data name="menuItem_addEnemyset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_addEnemyset.Text" xml:space="preserve">
+    <value>房间精灵</value>
+  </data>
+  <data name="menuItem_addRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_addRoom.Text" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="menuItem_addTileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_addTileset.Text" xml:space="preserve">
+    <value>贴图集</value>
+  </data>
+  <data name="menuItem_addSpriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_addSpriteset.Text" xml:space="preserve">
+    <value>精灵集</value>
+  </data>
+  <data name="menuItem_addAnim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_addAnim.Text" xml:space="preserve">
+    <value>动画</value>
+  </data>
+  <data name="menuItem_add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_add.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="menuItem_patches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="menuItem_patches.Text" xml:space="preserve">
+    <value>补丁</value>
+  </data>
+  <data name="menuStrip_tools.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="menuStrip_tools.Text" xml:space="preserve">
+    <value>工具</value>
+  </data>
+  <data name="menuItem_defaultBG0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultBG1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultBG2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultBG3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultClipCollision.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="menuItem_defaultClipCollision.Text" xml:space="preserve">
+    <value>碰撞</value>
+  </data>
+  <data name="menuItem_defaultClipBreakable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="menuItem_defaultClipBreakable.Text" xml:space="preserve">
+    <value>可破坏</value>
+  </data>
+  <data name="menuItem_defaultClipValues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="menuItem_defaultClipValues.Text" xml:space="preserve">
+    <value>数值</value>
+  </data>
+  <data name="menuItem_defaultClipdata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultClipdata.Text" xml:space="preserve">
+    <value>砖块属性</value>
+  </data>
+  <data name="toolStripSeparator13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 6</value>
+  </data>
+  <data name="menuItem_defaultSprites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultSprites.Text" xml:space="preserve">
+    <value>精灵</value>
+  </data>
+  <data name="menuItem_defaultSpriteOutlines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultSpriteOutlines.Text" xml:space="preserve">
+    <value>精灵边线</value>
+  </data>
+  <data name="menuItem_defaultDoors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultDoors.Text" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="menuItem_defaultScrolls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultScrolls.Text" xml:space="preserve">
+    <value>滚动</value>
+  </data>
+  <data name="menuItem_defaultScreens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_defaultScreens.Text" xml:space="preserve">
+    <value>屏幕边线</value>
+  </data>
+  <data name="menuItem_defaultView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_defaultView.Text" xml:space="preserve">
+    <value>默认视图</value>
+  </data>
+  <data name="menuItem_hexadecimal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_hexadecimal.Text" xml:space="preserve">
+    <value>十六进制</value>
+  </data>
+  <data name="menuItem_decimal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="menuItem_decimal.Text" xml:space="preserve">
+    <value>十进制</value>
+  </data>
+  <data name="menuItem_numberBase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_numberBase.Text" xml:space="preserve">
+    <value>进制</value>
+  </data>
+  <data name="toolStripSeparator21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 6</value>
+  </data>
+  <data name="menuItem_tooltips.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="menuItem_tooltips.Text" xml:space="preserve">
+    <value>禁用工具提示</value>
+  </data>
+  <data name="menuStrip_options.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="menuStrip_options.Text" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="menuItem_viewHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="menuItem_viewHelp.Text" xml:space="preserve">
+    <value>查看帮助</value>
+  </data>
+  <data name="menuItem_about.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="menuItem_about.Text" xml:space="preserve">
+    <value>关于 MAGE</value>
+  </data>
+  <data name="menuStrip_help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="menuStrip_help.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="label_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="label_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_room.Text" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="label_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="label_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_area.Text" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="comboBox_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="comboBox_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 21</value>
+  </data>
+  <data name="comboBox_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 18</value>
+  </data>
+  <data name="comboBox_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 21</value>
+  </data>
+  <data name="groupBox_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
+  </data>
+  <data name="groupBox_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 75</value>
+  </data>
+  <data name="groupBox_location.Text" xml:space="preserve">
+    <value>定位</value>
+  </data>
+  <data name="comboBox_clipdata.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="comboBox_clipdata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 21</value>
+  </data>
+  <data name="label_clipdata.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 23</value>
+  </data>
+  <data name="label_clipdata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label_clipdata.Text" xml:space="preserve">
+    <value>砖块属性：</value>
+  </data>
+  <data name="tileView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 256</value>
+  </data>
+  <data name="panel_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 48</value>
+  </data>
+  <data name="panel_tileset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>273, 256</value>
+  </data>
+  <data name="panel_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 256</value>
+  </data>
+  <data name="groupBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 160</value>
+  </data>
+  <data name="groupBox_tileset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>287, 310</value>
+  </data>
+  <data name="groupBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 310</value>
+  </data>
+  <data name="groupBox_tileset.Text" xml:space="preserve">
+    <value>贴图集</value>
+  </data>
+  <data name="roomView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 376</value>
+  </data>
+  <data name="panel_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="panel_room.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>465, 393</value>
+  </data>
+  <data name="panel_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 393</value>
+  </data>
+  <data name="groupBox_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 52</value>
+  </data>
+  <data name="groupBox_room.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>479, 418</value>
+  </data>
+  <data name="groupBox_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 418</value>
+  </data>
+  <data name="groupBox_room.Text" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="checkBox_viewBG3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 77</value>
+  </data>
+  <data name="checkBox_viewBG3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="checkBox_viewBG2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 57</value>
+  </data>
+  <data name="checkBox_viewBG2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="checkBox_viewBG1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 37</value>
+  </data>
+  <data name="checkBox_viewBG1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="checkBox_viewBG0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 17</value>
+  </data>
+  <data name="checkBox_viewBG0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="groupBox_viewBG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 52</value>
+  </data>
+  <data name="groupBox_viewBG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 102</value>
+  </data>
+  <data name="groupBox_viewBG.Text" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="checkBox_editBG2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 57</value>
+  </data>
+  <data name="checkBox_editBG2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="checkBox_editBG1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 37</value>
+  </data>
+  <data name="checkBox_editBG1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="checkBox_editBG0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 17</value>
+  </data>
+  <data name="checkBox_editBG0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="checkBox_editCLP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 77</value>
+  </data>
+  <data name="checkBox_editCLP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="checkBox_editCLP.Text" xml:space="preserve">
+    <value>砖属性</value>
+  </data>
+  <data name="groupBox_editBG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 52</value>
+  </data>
+  <data name="groupBox_editBG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 102</value>
+  </data>
+  <data name="groupBox_editBG.Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="statusLabel_coor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="statusLabel_sel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="statusLabel_clip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 21</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 471</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>796, 26</value>
+  </data>
+  <data name="label_spriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 135</value>
+  </data>
+  <data name="label_spriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_spriteset.Text" xml:space="preserve">
+    <value>精灵集：</value>
+  </data>
+  <data name="comboBox_spriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 133</value>
+  </data>
+  <data name="comboBox_spriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="toolStrip_open.Text" xml:space="preserve">
+    <value>打开 ROM</value>
+  </data>
+  <data name="toolStrip_save.Text" xml:space="preserve">
+    <value>保存 ROM</value>
+  </data>
+  <data name="toolStrip_editBGs.Text" xml:space="preserve">
+    <value>背景编辑模式</value>
+  </data>
+  <data name="toolStrip_editObjects.Text" xml:space="preserve">
+    <value>对象编辑模式</value>
+  </data>
+  <data name="toolStrip_viewSprites.Text" xml:space="preserve">
+    <value>精灵视图</value>
+  </data>
+  <data name="toolStrip_outlineSprites.Text" xml:space="preserve">
+    <value>精灵边线</value>
+  </data>
+  <data name="toolStrip_outlineDoors.Text" xml:space="preserve">
+    <value>门边线</value>
+  </data>
+  <data name="toolStrip_outlineScrolls.Text" xml:space="preserve">
+    <value>滚动边线</value>
+  </data>
+  <data name="toolStrip_header.Text" xml:space="preserve">
+    <value>头编辑器</value>
+  </data>
+  <data name="toolStrip_tileset.Text" xml:space="preserve">
+    <value>贴图集编辑器</value>
+  </data>
+  <data name="toolStrip_graphics.Text" xml:space="preserve">
+    <value>图形编辑器</value>
+  </data>
+  <data name="toolStrip_palette.Text" xml:space="preserve">
+    <value>调色板编辑器</value>
+  </data>
+  <data name="toolStrip_tileTable.Text" xml:space="preserve">
+    <value>贴图块表编辑器</value>
+  </data>
+  <data name="toolStrip_animation.Text" xml:space="preserve">
+    <value>动画编辑器</value>
+  </data>
+  <data name="toolStrip_sprite.Text" xml:space="preserve">
+    <value>精灵编辑器</value>
+  </data>
+  <data name="toolStrip_spriteset.Text" xml:space="preserve">
+    <value>精灵集编辑器</value>
+  </data>
+  <data name="toolStrip_connection.Text" xml:space="preserve">
+    <value>连接编辑器</value>
+  </data>
+  <data name="toolStrip_minimap.Text" xml:space="preserve">
+    <value>地图编辑器</value>
+  </data>
+  <data name="toolStrip_text.Text" xml:space="preserve">
+    <value>文本编辑器</value>
+  </data>
+  <data name="toolStrip_demoEditor.Text" xml:space="preserve">
+    <value>演示编辑器</value>
+  </data>
+  <data name="toolStrip_physics.Text" xml:space="preserve">
+    <value>物理编辑器</value>
+  </data>
+  <data name="toolStrip_weapon.Text" xml:space="preserve">
+    <value>武器编辑器</value>
+  </data>
+  <data name="toolStrip_options.Text" xml:space="preserve">
+    <value>房间选项</value>
+  </data>
+  <data name="toolStrip_test.Text" xml:space="preserve">
+    <value>房间测试</value>
+  </data>
+  <data name="toolStrip_tileBuilder.Text" xml:space="preserve">
+    <value>地图块生成器</value>
+  </data>
+  <data name="toolStrip_add.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="toolStrip_patches.Text" xml:space="preserve">
+    <value>补丁</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>796, 497</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgwUCgwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAUCgwUCgwACjoACCwABhwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgw
+        YHhAACjoUCgwACjosMiQsMiQYHhAUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAUCgwsMiQABhwsMiQACjo
+        ACjosMiQ+Pj4sMiQsMiQACCwUCgwUCgwAAAAAAAAAAAAYHhAABhwcPgAcPgAcPgAYHhAACjoACCwsMiQ
+        sMiQACCwACCwICBAICBAAAAAAAAAABhwYHhAcPgA+Pj4cPgAcPgAUCgwACjoABhwACjoICBAICBAAMD4
+        ICBAAAAAAAAAABhwcPgA+Pj4+Pj4cPgAcPgAUCgwACjoICBAICBAAMD4AMD4AJDoICBAAAAAAAAAUCgw
+        cPgA+Pj4+Pj4cPgAcPgAYHhAICBAAMD4AMD4AJDoAJDoICBAAAAAAAAAAAAAUCgwYHhAcPgAYHhAcPgA
+        ICBAICBAMPj4AJDoAJDoAJDoICBAAAAAAAAAAAAAAAAAUCgwABhwYHhAICBAICBAAMD4MPj4AJDoAJDo
+        ACAwACAwICBAAAAAAAAAAAAAAAAAAAAAICBAICBAAMD4AMD4MPj4MPj4ACAwACAwACAwGGC4ICBAAAAA
+        AAAAAAAAAAAAICBAAMD4MPj4MPj4MPj4MPj4GGC4ACAwGGC4AJDoGGC4GGC4ICBAAAAAAAAAICBAAMD4
+        MPj4MPj4MPj4AJDoGGC4GGC4AMD4MPj4AMD4GGC4GGC4GGC4ICBAAAAAAAAAICBAICBAICBAICBAICBA
+        GGC4AMD4MPj4MPj4AJDoAJDoAMD4AMD4AJDoICBAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAMPj4MPj4
+        MPj4AMD4AJDoGGC4ICBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAICBAICBAICBAICBA
+        AAAAAAAA8P8AAMB/AACAHwAAgAMAAIABAACAAQAAgAEAAIADAACABwAAgAcAAMAHAACAAwAAAAEAAIAA
+        AAD8AQAA/wMAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCw
+        yJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCwyJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgA
+        KOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCwyJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgAKOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCw
+        yJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw
+        +ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgAKOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAg
+        IEAgIEAgIEAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw+ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgA
+        KOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAGHAA
+        GHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw
+        +ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPggIEAgIEAAAAAA
+        AAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4
+        +Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOggIEAgIEAAAAAAAAAAAAAAAABQKDBQKDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBg
+        eEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBgeEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw
+        +AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgAkOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw+AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgA
+        kOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBg
+        eEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw+PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBgeEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw
+        +PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgA
+        wPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgY
+        YLgAkOgAkOgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw
+        +Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgYYLgAkOgAkOgYYLgYYLgYYLgYYLggIEAg
+        IEAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgY
+        YLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgYYLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAgIEAgIEAAwPgA
+        wPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgYYLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgY
+        YLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw+PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAg
+        IEAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw
+        +PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAg
+        IEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAA
+        AAD/AP///wD///AAP//wAD//wAAD/8AAA//AAAAPwAAAD8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AA/AAAAPwAAAP8AAAD/AAAA/wAAAP/AAAD/wAAA/wAAAD8AAAA8AAAADAAAAA8AAAADAAAAA//AAA//w
+        AAP//wAP//8ADw==
+</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>812, 536</value>
+  </data>
+</root>

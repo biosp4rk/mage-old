@@ -112,12 +112,563 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;groupBox_bgOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radioButton_animGfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_roomHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetCopy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radioButton_animGfx.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPage_roomSprites.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage_roomSprites.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="radioButton_bgCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage_bg.Text" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="radioButton_animTileset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButton_tilesetBlank.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_enemySpriteset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_roomCopyArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 54</value>
+  </data>
+  <data name="radioButton_animCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage_roomSprites.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="radioButton_enemyCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="comboBox_spriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="radioButton_animBlank.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animGfx.Name" xml:space="preserve">
+    <value>radioButton_animGfx</value>
+  </data>
+  <data name="textBox_enemyOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="label_roomHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button_add.Name" xml:space="preserve">
+    <value>button_add</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgBlank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_roomWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 30</value>
+  </data>
+  <data name="&gt;&gt;textBox_enemyOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_enemySet.Items2" xml:space="preserve">
+    <value>Second</value>
+  </data>
+  <data name="&gt;&gt;tabPage_spriteset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_enemySet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 6</value>
+  </data>
+  <data name="label_enemySpriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyBlank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_anim.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="radioButton_tilesetCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="radioButton_tilesetBlank.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animCopy.Parent" xml:space="preserve">
+    <value>groupBox_animOptions</value>
+  </data>
+  <data name="radioButton_enemyBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="&gt;&gt;label_enemySpriteset.Name" xml:space="preserve">
+    <value>label_enemySpriteset</value>
+  </data>
+  <data name="comboBox_enemySet.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBox_animNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 40</value>
+  </data>
+  <data name="groupBox_animOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 6</value>
+  </data>
+  <data name="radioButton_roomBlank.Text" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="radioButton_animBlank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="radioButton_animBlank.Text" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animOptions.Parent" xml:space="preserve">
+    <value>tabPage_anim</value>
+  </data>
+  <data name="&gt;&gt;label_roomHeight.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="radioButton_animCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="radioButton_roomBlank.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="comboBox_bg.Items3" xml:space="preserve">
+    <value>BG 3</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomBlank.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="radioButton_bgBlank.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="radioButton_spritesetBlank.Text" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="radioButton_animPalette.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgLZ77.Parent" xml:space="preserve">
+    <value>groupBox_bgSelect</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomWidth.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="comboBox_bg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="radioButton_bgRLE.Text" xml:space="preserve">
+    <value>RLE</value>
+  </data>
+  <data name="tabPage_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 93</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="comboBox_roomArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 6</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetBlank.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton_animPalette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 16</value>
+  </data>
+  <data name="tabPage_spriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 93</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyBlank.Name" xml:space="preserve">
+    <value>radioButton_enemyBlank</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animTileset.Name" xml:space="preserve">
+    <value>radioButton_animTileset</value>
+  </data>
+  <data name="radioButton_roomCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="textBox_bgOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enemySet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_bgSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 85</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animBlank.Name" xml:space="preserve">
+    <value>radioButton_animBlank</value>
+  </data>
+  <data name="radioButton_roomCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_animNum.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animCopy.Name" xml:space="preserve">
+    <value>radioButton_animCopy</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.Name" xml:space="preserve">
+    <value>comboBox_bg</value>
+  </data>
+  <data name="radioButton_roomBlank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="radioButton_bgCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetCopy.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;groupBox_bgSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_bgOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_tilesetBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="radioButton_enemyCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyRoom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox_enemyOffset.Parent" xml:space="preserve">
+    <value>tabPage_roomSprites</value>
+  </data>
+  <data name="tabPage_roomSprites.Text" xml:space="preserve">
+    <value>Room Sprites</value>
+  </data>
+  <data name="&gt;&gt;textBox_enemyOffset.Name" xml:space="preserve">
+    <value>textBox_enemyOffset</value>
+  </data>
+  <data name="&gt;&gt;comboBox_animNum.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>269, 186</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomHeight.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetBlank.Parent" xml:space="preserve">
+    <value>tabPage_spriteset</value>
+  </data>
+  <data name="&gt;&gt;tabPage_anim.Name" xml:space="preserve">
+    <value>tabPage_anim</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.Parent" xml:space="preserve">
+    <value>groupBox_bgSelect</value>
+  </data>
+  <data name="radioButton_bgRLE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
+  </data>
+  <data name="groupBox_animOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tabPage_roomSprites.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="radioButton_spritesetBlank.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetBlank.Name" xml:space="preserve">
+    <value>radioButton_tilesetBlank</value>
+  </data>
+  <data name="label_roomArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 93</value>
+  </data>
+  <data name="groupBox_animSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 85</value>
+  </data>
+  <data name="comboBox_roomCopyRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 54</value>
+  </data>
+  <data name="radioButton_enemyCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 55</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomArea.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="radioButton_animPalette.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_bg.Items4" xml:space="preserve">
+    <value>Clipdata</value>
+  </data>
+  <data name="radioButton_tilesetBlank.Text" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetBlank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animTileset.Parent" xml:space="preserve">
+    <value>groupBox_animSelect</value>
+  </data>
+  <data name="label_roomWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 33</value>
+  </data>
+  <data name="radioButton_bgBlank.Text" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animOptions.Name" xml:space="preserve">
+    <value>groupBox_animOptions</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_animSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="radioButton_enemyBlank.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyBlank.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgCopy.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_enemySet.Items" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="button_add.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetBlank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animCopy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animBlank.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_bgSelect.Parent" xml:space="preserve">
+    <value>tabPage_bg</value>
+  </data>
+  <data name="radioButton_spritesetBlank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetCopy.Name" xml:space="preserve">
+    <value>radioButton_tilesetCopy</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyArea.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_animNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetBlank.Name" xml:space="preserve">
+    <value>radioButton_spritesetBlank</value>
+  </data>
+  <data name="tabPage_bg.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_bgOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animBlank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgCopy.Name" xml:space="preserve">
+    <value>radioButton_bgCopy</value>
+  </data>
+  <data name="radioButton_bgLZ77.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="radioButton_animPalette.Text" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="tabPage_bg.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="radioButton_animTileset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage_anim.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animBlank.Parent" xml:space="preserve">
+    <value>groupBox_animOptions</value>
+  </data>
+  <data name="radioButton_tilesetCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_enemySpriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 8</value>
+  </data>
+  <data name="radioButton_spritesetBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animTileset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetBlank.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgBlank.Parent" xml:space="preserve">
+    <value>groupBox_bgOptions</value>
+  </data>
+  <data name="tabPage_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="radioButton_bgLZ77.Text" xml:space="preserve">
+    <value>LZ77</value>
+  </data>
+  <data name="radioButton_animCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomCopy.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_bg.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomArea.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="&gt;&gt;label_enemySpriteset.Parent" xml:space="preserve">
+    <value>tabPage_roomSprites</value>
+  </data>
+  <data name="&gt;&gt;textBox_bgOffset.Parent" xml:space="preserve">
+    <value>groupBox_bgOptions</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyCopy.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_spritesetBlank.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_bgLZ77.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_roomHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 30</value>
+  </data>
+  <data name="&gt;&gt;tabPage_bg.Name" xml:space="preserve">
+    <value>tabPage_bg</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enemySet.Name" xml:space="preserve">
+    <value>comboBox_enemySet</value>
+  </data>
+  <data name="radioButton_bgRLE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="&gt;&gt;label_roomWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_tileset.Text" xml:space="preserve">
+    <value>Tileset</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomCopy.Name" xml:space="preserve">
+    <value>radioButton_roomCopy</value>
+  </data>
+  <data name="label_roomWidth.Text" xml:space="preserve">
+    <value>Width:</value>
+  </data>
+  <data name="label_roomWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="radioButton_tilesetBlank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="tabPage_anim.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="comboBox_roomArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="&gt;&gt;tabPage_bg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_anim.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="radioButton_bgLZ77.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="groupBox_bgSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="comboBox_roomCopyRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="radioButton_spritesetCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -192,4 +743,649 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;tabPage_tileset.Name" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;groupBox_bgSelect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_bgOptions.Name" xml:space="preserve">
+    <value>groupBox_bgOptions</value>
+  </data>
+  <data name="&gt;&gt;label_roomHeight.Name" xml:space="preserve">
+    <value>label_roomHeight</value>
+  </data>
+  <data name="radioButton_enemyBlank.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage_anim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="&gt;&gt;tabPage_roomSprites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_bgOptions.Parent" xml:space="preserve">
+    <value>tabPage_bg</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgBlank.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_enemySpriteset.Text" xml:space="preserve">
+    <value>Spriteset:</value>
+  </data>
+  <data name="&gt;&gt;label_roomHeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButton_animCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 41</value>
+  </data>
+  <data name="radioButton_bgBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgRLE.Parent" xml:space="preserve">
+    <value>groupBox_bgSelect</value>
+  </data>
+  <data name="groupBox_animSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="tabPage_roomSprites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyCopy.Name" xml:space="preserve">
+    <value>radioButton_enemyCopy</value>
+  </data>
+  <data name="radioButton_spritesetCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="radioButton_spritesetCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="radioButton_animTileset.Text" xml:space="preserve">
+    <value>Tileset</value>
+  </data>
+  <data name="label_enemySpriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="radioButton_animTileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 16</value>
+  </data>
+  <data name="comboBox_roomCopyRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label_enemySpriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_tilesetCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="tabPage_spriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="comboBox_spriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 27</value>
+  </data>
+  <data name="textBox_enemyOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyRoom.Name" xml:space="preserve">
+    <value>comboBox_roomCopyRoom</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_spriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyRoom.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="label_roomWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="label_roomArea.Text" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animSelect.Name" xml:space="preserve">
+    <value>groupBox_animSelect</value>
+  </data>
+  <data name="tabPage_room.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_roomCopyArea.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label_roomWidth.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_bgOffset.Name" xml:space="preserve">
+    <value>textBox_bgOffset</value>
+  </data>
+  <data name="&gt;&gt;label_roomArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="&gt;&gt;label_roomArea.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="comboBox_enemySet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="tabPage_room.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_bgBlank.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_roomHeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_bgCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 41</value>
+  </data>
+  <data name="comboBox_roomCopyArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="groupBox_animOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;tabPage_room.Name" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAdd</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgRLE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_bgOffset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_animGfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="groupBox_bgSelect.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="groupBox_bgOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 6</value>
+  </data>
+  <data name="&gt;&gt;groupBox_bgOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_add.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBox_enemyOffset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_bg.Items2" xml:space="preserve">
+    <value>BG 2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomBlank.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 153</value>
+  </data>
+  <data name="&gt;&gt;tabPage_roomSprites.Name" xml:space="preserve">
+    <value>tabPage_roomSprites</value>
+  </data>
+  <data name="groupBox_bgSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="radioButton_animBlank.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPage_spriteset.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;comboBox_animNum.Parent" xml:space="preserve">
+    <value>groupBox_animOptions</value>
+  </data>
+  <data name="comboBox_bg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="radioButton_roomCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="tabPage_anim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 93</value>
+  </data>
+  <data name="radioButton_tilesetCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyCopy.Parent" xml:space="preserve">
+    <value>tabPage_roomSprites</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyArea.Name" xml:space="preserve">
+    <value>comboBox_roomCopyArea</value>
+  </data>
+  <data name="&gt;&gt;label_roomWidth.Name" xml:space="preserve">
+    <value>label_roomWidth</value>
+  </data>
+  <data name="&gt;&gt;tabPage_bg.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 137</value>
+  </data>
+  <data name="&gt;&gt;tabPage_bg.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="label_roomHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="groupBox_bgOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 85</value>
+  </data>
+  <data name="&gt;&gt;label_roomWidth.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton_enemyBlank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_roomHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="radioButton_roomBlank.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomWidth.Name" xml:space="preserve">
+    <value>textBox_roomWidth</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animGfx.Parent" xml:space="preserve">
+    <value>groupBox_animSelect</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetBlank.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="radioButton_animCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label_roomArea.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgLZ77.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 27</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_roomWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="tabPage_spriteset.Text" xml:space="preserve">
+    <value>Spriteset</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgCopy.Parent" xml:space="preserve">
+    <value>groupBox_bgOptions</value>
+  </data>
+  <data name="&gt;&gt;label_roomArea.Name" xml:space="preserve">
+    <value>label_roomArea</value>
+  </data>
+  <data name="radioButton_spritesetCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.Name" xml:space="preserve">
+    <value>comboBox_spriteset</value>
+  </data>
+  <data name="radioButton_spritesetCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="&gt;&gt;tabPage_room.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPage_bg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 93</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animPalette.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox_roomWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="radioButton_bgCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyRoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_roomCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 55</value>
+  </data>
+  <data name="&gt;&gt;label_roomHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_animGfx.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_animTileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomArea.Name" xml:space="preserve">
+    <value>comboBox_roomArea</value>
+  </data>
+  <data name="groupBox_animOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 85</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgLZ77.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox_animSelect.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animPalette.Parent" xml:space="preserve">
+    <value>groupBox_animSelect</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;radioButton_tilesetCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_roomArea.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label_roomArea.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgRLE.Name" xml:space="preserve">
+    <value>radioButton_bgRLE</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animSelect.Parent" xml:space="preserve">
+    <value>tabPage_anim</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="comboBox_enemySet.Items1" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomWidth.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBox_bg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_add.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="radioButton_roomCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="label_roomArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 8</value>
+  </data>
+  <data name="&gt;&gt;groupBox_animSelect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_roomHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 33</value>
+  </data>
+  <data name="&gt;&gt;tabPage_room.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animPalette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgLZ77.Name" xml:space="preserve">
+    <value>radioButton_bgLZ77</value>
+  </data>
+  <data name="textBox_enemyOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 54</value>
+  </data>
+  <data name="comboBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="radioButton_bgLZ77.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 64</value>
+  </data>
+  <data name="&gt;&gt;label_enemySpriteset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPage_room.Text" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="radioButton_bgCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animPalette.Name" xml:space="preserve">
+    <value>radioButton_animPalette</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enemySet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage_tileset.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="button_add.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 153</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animGfx.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton_enemyCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_animNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="radioButton_bgRLE.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomBlank.Name" xml:space="preserve">
+    <value>radioButton_roomBlank</value>
+  </data>
+  <data name="label_roomHeight.Text" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="label_roomArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label_roomWidth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomHeight.Name" xml:space="preserve">
+    <value>textBox_roomHeight</value>
+  </data>
+  <data name="&gt;&gt;comboBox_roomCopyArea.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.Parent" xml:space="preserve">
+    <value>tabPage_spriteset</value>
+  </data>
+  <data name="&gt;&gt;groupBox_bgSelect.Name" xml:space="preserve">
+    <value>groupBox_bgSelect</value>
+  </data>
+  <data name="groupBox_bgOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="radioButton_roomBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetCopy.Name" xml:space="preserve">
+    <value>radioButton_spritesetCopy</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgBlank.Name" xml:space="preserve">
+    <value>radioButton_bgBlank</value>
+  </data>
+  <data name="radioButton_enemyBlank.Text" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animGfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetCopy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox_bgOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enemySet.Parent" xml:space="preserve">
+    <value>tabPage_roomSprites</value>
+  </data>
+  <data name="radioButton_animBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgRLE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButton_bgRLE.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage_roomSprites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 93</value>
+  </data>
+  <data name="comboBox_spriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="&gt;&gt;radioButton_spritesetCopy.Parent" xml:space="preserve">
+    <value>tabPage_spriteset</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_room.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomCopy.Parent" xml:space="preserve">
+    <value>tabPage_room</value>
+  </data>
+  <data name="tabPage_spriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="&gt;&gt;radioButton_bgCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_bgOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 40</value>
+  </data>
+  <data name="tabPage_bg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="&gt;&gt;textBox_roomHeight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBox_animNum.Name" xml:space="preserve">
+    <value>comboBox_animNum</value>
+  </data>
+  <data name="comboBox_bg.Items" xml:space="preserve">
+    <value>BG 0</value>
+  </data>
+  <data name="&gt;&gt;radioButton_roomBlank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_tilesetCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="radioButton_animGfx.Text" xml:space="preserve">
+    <value>Graphics</value>
+  </data>
+  <data name="radioButton_bgBlank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButton_animTileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_spriteset.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="radioButton_enemyCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="radioButton_animPalette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 60</value>
+  </data>
+  <data name="&gt;&gt;tabPage_anim.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_bg.Items1" xml:space="preserve">
+    <value>BG 1</value>
+  </data>
+  <data name="tabPage_anim.Text" xml:space="preserve">
+    <value>Animation</value>
+  </data>
+  <data name="&gt;&gt;radioButton_enemyBlank.Parent" xml:space="preserve">
+    <value>tabPage_roomSprites</value>
+  </data>
+  <data name="button_add.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;button_add.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Name" xml:space="preserve">
+    <value>comboBox_tileset</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPage_spriteset.Name" xml:space="preserve">
+    <value>tabPage_spriteset</value>
+  </data>
+  <data name="&gt;&gt;button_add.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

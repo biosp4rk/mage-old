@@ -41,81 +41,59 @@
             // 
             // label_direction
             // 
-            this.label_direction.AutoSize = true;
-            this.label_direction.Location = new System.Drawing.Point(12, 15);
+            resources.ApplyResources(this.label_direction, "label_direction");
             this.label_direction.Name = "label_direction";
-            this.label_direction.Size = new System.Drawing.Size(93, 13);
-            this.label_direction.TabIndex = 0;
-            this.label_direction.Text = "Extended bounds:";
             // 
             // comboBox_direction
             // 
+            resources.ApplyResources(this.comboBox_direction, "comboBox_direction");
             this.comboBox_direction.FormattingEnabled = true;
             this.comboBox_direction.Items.AddRange(new object[] {
-            "None",
-            "Left",
-            "Right",
-            "Top",
-            "Bottom"});
-            this.comboBox_direction.Location = new System.Drawing.Point(111, 12);
+            resources.GetString("comboBox_direction.Items"),
+            resources.GetString("comboBox_direction.Items1"),
+            resources.GetString("comboBox_direction.Items2"),
+            resources.GetString("comboBox_direction.Items3"),
+            resources.GetString("comboBox_direction.Items4")});
             this.comboBox_direction.Name = "comboBox_direction";
-            this.comboBox_direction.Size = new System.Drawing.Size(70, 21);
-            this.comboBox_direction.TabIndex = 1;
             this.comboBox_direction.SelectedIndexChanged += new System.EventHandler(this.comboBox_direction_SelectedIndexChanged);
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(106, 71);
+            resources.ApplyResources(this.button_close, "button_close");
             this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(75, 23);
-            this.button_close.TabIndex = 3;
-            this.button_close.Text = "Close";
             this.button_close.UseVisualStyleBackColor = true;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
             // button_apply
             // 
-            this.button_apply.Enabled = false;
-            this.button_apply.Location = new System.Drawing.Point(25, 71);
+            resources.ApplyResources(this.button_apply, "button_apply");
             this.button_apply.Name = "button_apply";
-            this.button_apply.Size = new System.Drawing.Size(75, 23);
-            this.button_apply.TabIndex = 2;
-            this.button_apply.Text = "Apply";
             this.button_apply.UseVisualStyleBackColor = true;
             this.button_apply.Click += new System.EventHandler(this.button_apply_Click);
             // 
             // checkBox_breakable
             // 
-            this.checkBox_breakable.AutoSize = true;
-            this.checkBox_breakable.Location = new System.Drawing.Point(15, 41);
+            resources.ApplyResources(this.checkBox_breakable, "checkBox_breakable");
             this.checkBox_breakable.Name = "checkBox_breakable";
-            this.checkBox_breakable.Size = new System.Drawing.Size(164, 17);
-            this.checkBox_breakable.TabIndex = 4;
-            this.checkBox_breakable.Text = "Triggered by breakable block";
             this.checkBox_breakable.UseVisualStyleBackColor = true;
             this.checkBox_breakable.CheckedChanged += new System.EventHandler(this.checkBox_breakable_CheckedChanged);
             // 
             // statusStrip
             // 
+            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel_changes});
-            this.statusStrip.Location = new System.Drawing.Point(0, 97);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(193, 22);
-            this.statusStrip.TabIndex = 5;
-            this.statusStrip.Text = "statusStrip1";
             // 
             // statusLabel_changes
             // 
+            resources.ApplyResources(this.statusLabel_changes, "statusLabel_changes");
             this.statusLabel_changes.Name = "statusLabel_changes";
-            this.statusLabel_changes.Size = new System.Drawing.Size(12, 17);
-            this.statusLabel_changes.Text = "-";
             // 
             // FormEditScroll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(193, 119);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.checkBox_breakable);
             this.Controls.Add(this.button_close);
@@ -123,11 +101,9 @@
             this.Controls.Add(this.comboBox_direction);
             this.Controls.Add(this.label_direction);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormEditScroll";
-            this.Text = "Edit Scroll";
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.ResumeLayout(false);

@@ -112,15 +112,268 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>413, 162</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_prop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_prop.Items9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
+    <value>button_apply</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_IDval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 20</value>
+  </data>
+  <data name="comboBox_slot.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>groupBox_preview</value>
+  </data>
+  <data name="label_IDval.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_prop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="groupBox_edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 71</value>
+  </data>
+  <data name="label_slot.Text" xml:space="preserve">
+    <value>Slot:</value>
+  </data>
+  <data name="comboBox_slot.Items7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_IDval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="label_prop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="label_IDval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_slot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="button_editSprite.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_ID.Text" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormEditEnemy</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;label_slot.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 22</value>
+  </data>
+  <data name="&gt;&gt;label_ID.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label_prop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_slot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="groupBox_edit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_IDval.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox_preview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="comboBox_prop.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.Name" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="comboBox_prop.Items5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_slot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 20</value>
+  </data>
+  <data name="&gt;&gt;label_prop.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IDval.Name" xml:space="preserve">
+    <value>label_IDval</value>
+  </data>
+  <data name="comboBox_slot.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 140</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;label_prop.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_prop.Items7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label_ID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="pictureBox_preview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 89</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit Sprite</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_prop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 20</value>
+  </data>
+  <data name="groupBox_edit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 11</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_editSprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="comboBox_slot.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="label_prop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="groupBox_preview.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_prop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 42</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_prop.Items10" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="&gt;&gt;label_slot.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_IDval.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_slot.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="groupBox_preview.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="comboBox_prop.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_IDval.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_ID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 12</value>
+  </data>
+  <data name="pictureBox_preview.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -195,4 +448,220 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="comboBox_prop.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 104</value>
+  </data>
+  <data name="&gt;&gt;label_slot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 117</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBox_prop.Items4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_apply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_editSprite.Text" xml:space="preserve">
+    <value>Edit sprite</value>
+  </data>
+  <data name="&gt;&gt;label_prop.Name" xml:space="preserve">
+    <value>label_prop</value>
+  </data>
+  <data name="&gt;&gt;label_slot.Name" xml:space="preserve">
+    <value>label_slot</value>
+  </data>
+  <data name="label_ID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;label_ID.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.Name" xml:space="preserve">
+    <value>button_editSprite</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_editSprite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 42</value>
+  </data>
+  <data name="groupBox_preview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 127</value>
+  </data>
+  <data name="comboBox_slot.Items6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_prop.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot.Items5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_ID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_prop.Name" xml:space="preserve">
+    <value>comboBox_prop</value>
+  </data>
+  <data name="groupBox_edit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="comboBox_prop.Items11" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="comboBox_slot.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.Name" xml:space="preserve">
+    <value>pictureBox_preview</value>
+  </data>
+  <data name="&gt;&gt;comboBox_prop.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="comboBox_prop.Items3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_slot.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_slot.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox_slot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 18</value>
+  </data>
+  <data name="label_prop.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBox_prop.Items6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_slot.Items9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBox_prop.Items14" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="comboBox_prop.Items15" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="comboBox_prop.Items12" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="comboBox_prop.Items13" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.Name" xml:space="preserve">
+    <value>groupBox_preview</value>
+  </data>
+  <data name="comboBox_slot.Items3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_ID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 117</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_slot.Items4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 17</value>
+  </data>
+  <data name="groupBox_preview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;label_IDval.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.Name" xml:space="preserve">
+    <value>comboBox_slot</value>
+  </data>
+  <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_ID.Name" xml:space="preserve">
+    <value>label_ID</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="comboBox_slot.Items14" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="&gt;&gt;comboBox_prop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox_slot.Items10" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="comboBox_slot.Items11" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="comboBox_slot.Items12" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="comboBox_slot.Items13" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="label_prop.Text" xml:space="preserve">
+    <value>Property:</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_prop.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

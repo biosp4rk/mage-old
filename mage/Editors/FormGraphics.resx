@@ -112,21 +112,653 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>126, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>47</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;textBox_imageOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_minus.Parent" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuItem_palExport_raw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="&gt;&gt;button_imageGo.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="statusStrip_zoom.Text" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_paletteOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_imageOffset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="statusStrip_zoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 20</value>
+  </data>
+  <data name="statusLabel_size.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport_yychr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusLabel_zoomLevel.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom200.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_compressed.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="menuItem_gfxExportRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="statusStrip_zoom.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxImportImg.Name" xml:space="preserve">
+    <value>menuItem_gfxImportImg</value>
+  </data>
+  <data name="groupBox_image.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom400.Name" xml:space="preserve">
+    <value>toolStrip_zoom400</value>
+  </data>
+  <data name="menuItem_palImport_yychr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="menuItem_palExport_tlp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="label_width.Text" xml:space="preserve">
+    <value>Width:</value>
+  </data>
+  <data name="&gt;&gt;menuItem_32bitARGB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport_raw.Name" xml:space="preserve">
+    <value>menuItem_palImport_raw</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_minus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 20</value>
+  </data>
+  <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_plus.Name" xml:space="preserve">
+    <value>button_plus</value>
+  </data>
+  <data name="importToolStripMenuItem.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="toolStrip_zoom400.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="textBox_imageOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="button_paletteGo.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;button_editPal.Parent" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <data name="toolStrip_zoom800.Text" xml:space="preserve">
+    <value>800%</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_width.Name" xml:space="preserve">
+    <value>numericUpDown_width</value>
+  </data>
+  <data name="statusStrip_spring.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 17</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_imageOffset.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="menuItem_gfxExport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="checkBox_compressed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 19</value>
+  </data>
+  <data name="&gt;&gt;button_paletteGo.Parent" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <data name="&gt;&gt;button_editPal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_paletteOffset.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="menuStrip_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 21</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_zoomLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuItem_palExport_raw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport_yychr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStrip_zoom400.Text" xml:space="preserve">
+    <value>400%</value>
+  </data>
+  <data name="label_height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 43</value>
+  </data>
+  <data name="&gt;&gt;button_minus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_zoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_editPal.Name" xml:space="preserve">
+    <value>button_editPal</value>
+  </data>
+  <data name="button_imageGo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button_minus.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="groupBox_imageControl.Text" xml:space="preserve">
+    <value>Image Control</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxExport.Name" xml:space="preserve">
+    <value>menuItem_gfxExport</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="menuStrip_palette.Text" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="label_paletteOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_imageGo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport.Name" xml:space="preserve">
+    <value>menuItem_palExport</value>
+  </data>
+  <data name="textBox_palOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label_width.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 43</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxExportImg.Name" xml:space="preserve">
+    <value>menuItem_gfxExportImg</value>
+  </data>
+  <data name="&gt;&gt;groupBox_paletteControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom100.Name" xml:space="preserve">
+    <value>toolStrip_zoom100</value>
+  </data>
+  <data name="&gt;&gt;label_width.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport_tlp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_palOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom1600.Name" xml:space="preserve">
+    <value>toolStrip_zoom1600</value>
+  </data>
+  <data name="&gt;&gt;groupBox_image.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox_image.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_minus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_zoom.Name" xml:space="preserve">
+    <value>statusStrip_zoom</value>
+  </data>
+  <data name="groupBox_paletteControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 25</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom100.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>586, 307</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 6</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxImportRaw.Name" xml:space="preserve">
+    <value>menuItem_gfxImportRaw</value>
+  </data>
+  <data name="&gt;&gt;textBox_imageOffset.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_imageOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_width.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxExportRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_imageOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 18</value>
+  </data>
+  <data name="menuItem_palExport_tlp.Text" xml:space="preserve">
+    <value>Tile Layer Pro...</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_size.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_gfx.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="gfxView_gfx.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_height.Name" xml:space="preserve">
+    <value>label_height</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom800.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem_pixelFormat.Name" xml:space="preserve">
+    <value>menuItem_pixelFormat</value>
+  </data>
+  <data name="&gt;&gt;groupBox_paletteControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="button_editPal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 17</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="menuItem_palImport.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="menuItem_gfxExport.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="&gt;&gt;textBox_palOffset.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_minus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="menuItem_pixelFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="menuItem_4bitIndexed.Text" xml:space="preserve">
+    <value>4-bit Indexed</value>
+  </data>
+  <data name="&gt;&gt;textBox_palOffset.Name" xml:space="preserve">
+    <value>textBox_palOffset</value>
+  </data>
+  <data name="&gt;&gt;groupBox_paletteControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_height.Text" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport_tlp.Name" xml:space="preserve">
+    <value>menuItem_palImport_tlp</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statusLabel_coor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStrip_zoom200.Text" xml:space="preserve">
+    <value>200%</value>
+  </data>
+  <data name="&gt;&gt;label_paletteOffset.Parent" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <data name="panel_gfx.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuItem_gfxExportRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="button_plus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 25</value>
+  </data>
+  <data name="textBox_palOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 18</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.Name" xml:space="preserve">
+    <value>numericUpDown_height</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_plus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 20</value>
+  </data>
+  <data name="button_paletteGo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 17</value>
+  </data>
+  <data name="toolStrip_zoom100.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="label_height.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport_tlp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_imageControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="gfxView_gfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="button_paletteGo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="statusLabel_coor.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="statusLabel_zoomLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 17</value>
+  </data>
+  <data name="menuItem_palExport.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="label_paletteOffset.Text" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxImportRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_plus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 17</value>
+  </data>
+  <data name="numericUpDown_width.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imageControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_zoomLevel.Name" xml:space="preserve">
+    <value>statusLabel_zoomLevel</value>
+  </data>
+  <data name="&gt;&gt;menuStrip_gfx.Name" xml:space="preserve">
+    <value>menuStrip_gfx</value>
+  </data>
+  <data name="&gt;&gt;checkBox_compressed.Name" xml:space="preserve">
+    <value>checkBox_compressed</value>
+  </data>
+  <data name="menuItem_palImport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_width.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport_yychr.Name" xml:space="preserve">
+    <value>menuItem_palImport_yychr</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="groupBox_paletteControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_minus.Name" xml:space="preserve">
+    <value>button_minus</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxExportImg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuItem_32bitARGB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="&gt;&gt;button_plus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_height.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;menuItem_4bitIndexed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_imageGo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 17</value>
+  </data>
+  <data name="&gt;&gt;button_paletteGo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_imageOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_paletteOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_imageGo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_compressed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 16</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuItem_palImport_yychr.Text" xml:space="preserve">
+    <value>YY-CHR...</value>
+  </data>
+  <data name="label_paletteOffset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="menuItem_palImport_tlp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="statusLabel_coor.Text" xml:space="preserve">
+    <value>(0, 0)</value>
+  </data>
+  <data name="&gt;&gt;label_width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_image.Name" xml:space="preserve">
+    <value>groupBox_image</value>
+  </data>
+  <data name="&gt;&gt;importToolStripMenuItem.Name" xml:space="preserve">
+    <value>importToolStripMenuItem</value>
+  </data>
+  <data name="checkBox_compressed.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Name" xml:space="preserve">
+    <value>gfxView_gfx</value>
+  </data>
+  <data name="label_width.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel_gfx.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imageControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_minus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 17</value>
+  </data>
+  <data name="&gt;&gt;label_paletteOffset.Name" xml:space="preserve">
+    <value>label_paletteOffset</value>
+  </data>
+  <data name="&gt;&gt;label_width.Name" xml:space="preserve">
+    <value>label_width</value>
+  </data>
+  <data name="label_imageOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="menuItem_palImport_raw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="checkBox_compressed.Text" xml:space="preserve">
+    <value>Compressed</value>
+  </data>
+  <data name="menuItem_4bitIndexed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="gfxView_gfx.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="menuItem_palImport_tlp.Text" xml:space="preserve">
+    <value>Tile Layer Pro...</value>
+  </data>
+  <data name="label_height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxImportImg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuItem_24bitRGB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="&gt;&gt;button_imageGo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="menuItem_palExport_yychr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="textBox_palOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_coor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem_32bitARGB.Name" xml:space="preserve">
+    <value>menuItem_32bitARGB</value>
+  </data>
+  <data name="groupBox_image.Text" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="&gt;&gt;menuItem_4bitIndexed.Name" xml:space="preserve">
+    <value>menuItem_4bitIndexed</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport.Name" xml:space="preserve">
+    <value>menuItem_palImport</value>
+  </data>
+  <data name="panel_gfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;menuStrip_gfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom800.Name" xml:space="preserve">
+    <value>toolStrip_zoom800</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 17</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormGraphics</value>
+  </data>
+  <data name="toolStrip_zoom100.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="&gt;&gt;textBox_imageOffset.Name" xml:space="preserve">
+    <value>textBox_imageOffset</value>
+  </data>
+  <data name="menuItem_palImport_raw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="button_editPal.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="numericUpDown_width.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="&gt;&gt;menuStrip_palette.Name" xml:space="preserve">
+    <value>menuStrip_palette</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_height.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;menuItem_gfxExportRaw.Name" xml:space="preserve">
+    <value>menuItem_gfxExportRaw</value>
+  </data>
+  <data name="toolStrip_zoom1600.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="&gt;&gt;label_width.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -201,4 +833,328 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="importToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="button_imageGo.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="&gt;&gt;checkBox_compressed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_imageOffset.Text" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="label_width.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom200.Name" xml:space="preserve">
+    <value>toolStrip_zoom200</value>
+  </data>
+  <data name="toolStrip_zoom200.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="button_editPal.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_paletteGo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox_image.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem_pixelFormat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 21</value>
+  </data>
+  <data name="gfxView_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 148</value>
+  </data>
+  <data name="menuItem_gfxImportRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="label_imageOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 285</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport_raw.Name" xml:space="preserve">
+    <value>menuItem_palExport_raw</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport_yychr.Name" xml:space="preserve">
+    <value>menuItem_palExport_yychr</value>
+  </data>
+  <data name="&gt;&gt;checkBox_compressed.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.Name" xml:space="preserve">
+    <value>panel_gfx</value>
+  </data>
+  <data name="numericUpDown_height.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="menuItem_gfxImportImg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="toolStrip_zoom1600.Text" xml:space="preserve">
+    <value>1600%</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDown_width.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 42</value>
+  </data>
+  <data name="&gt;&gt;button_plus.Parent" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <data name="button_paletteGo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="menuItem_gfxImportImg.Text" xml:space="preserve">
+    <value>Image...</value>
+  </data>
+  <data name="checkBox_compressed.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox_image.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="menuItem_gfxImportRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="statusLabel_size.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Name" xml:space="preserve">
+    <value>pictureBox_palette</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imageControl.Name" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Graphics Editor</value>
+  </data>
+  <data name="&gt;&gt;groupBox_paletteControl.Name" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <data name="groupBox_imageControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 67</value>
+  </data>
+  <data name="menuItem_32bitARGB.Text" xml:space="preserve">
+    <value>32-bit ARGB</value>
+  </data>
+  <data name="menuStrip_gfx.Text" xml:space="preserve">
+    <value>Graphics</value>
+  </data>
+  <data name="statusLabel_coor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="menuItem_pixelFormat.Text" xml:space="preserve">
+    <value>Pixel Format</value>
+  </data>
+  <data name="groupBox_image.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 186</value>
+  </data>
+  <data name="panel_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>549, 163</value>
+  </data>
+  <data name="&gt;&gt;label_imageOffset.Name" xml:space="preserve">
+    <value>label_imageOffset</value>
+  </data>
+  <data name="menuItem_gfxExportImg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palImport_raw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDown_height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 42</value>
+  </data>
+  <data name="&gt;&gt;label_height.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Parent" xml:space="preserve">
+    <value>panel_gfx</value>
+  </data>
+  <data name="&gt;&gt;importToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_imageOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_palOffset.Parent" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imageControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_minus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="menuItem_24bitRGB.Text" xml:space="preserve">
+    <value>24-bit RGB</value>
+  </data>
+  <data name="statusLabel_size.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="&gt;&gt;button_paletteGo.Name" xml:space="preserve">
+    <value>button_paletteGo</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport_tlp.Name" xml:space="preserve">
+    <value>menuItem_palExport_tlp</value>
+  </data>
+  <data name="groupBox_imageControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom400.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_width.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menuItem_24bitRGB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_image.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 98</value>
+  </data>
+  <data name="groupBox_paletteControl.Text" xml:space="preserve">
+    <value>Palette Control</value>
+  </data>
+  <data name="menuItem_palExport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="button_plus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="button_editPal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="&gt;&gt;button_imageGo.Name" xml:space="preserve">
+    <value>button_imageGo</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.Parent" xml:space="preserve">
+    <value>groupBox_image</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_coor.Name" xml:space="preserve">
+    <value>statusLabel_coor</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>528, 320</value>
+  </data>
+  <data name="toolStrip_zoom800.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 22</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Name" xml:space="preserve">
+    <value>statusStrip_spring</value>
+  </data>
+  <data name="&gt;&gt;menuItem_24bitRGB.Name" xml:space="preserve">
+    <value>menuItem_24bitRGB</value>
+  </data>
+  <data name="&gt;&gt;menuItem_palExport_raw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
+    <value>menuStrip</value>
+  </data>
+  <data name="menuItem_palExport_yychr.Text" xml:space="preserve">
+    <value>YY-CHR...</value>
+  </data>
+  <data name="pictureBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 43</value>
+  </data>
+  <data name="&gt;&gt;label_imageOffset.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;toolStrip_zoom1600.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_editPal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_imageOffset.Parent" xml:space="preserve">
+    <value>groupBox_imageControl</value>
+  </data>
+  <data name="button_plus.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="groupBox_paletteControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 67</value>
+  </data>
+  <data name="&gt;&gt;panel_gfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusLabel_size.Text" xml:space="preserve">
+    <value>0 x 0</value>
+  </data>
+  <data name="pictureBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 17</value>
+  </data>
+  <data name="menuItem_gfxExportImg.Text" xml:space="preserve">
+    <value>Image...</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_size.Name" xml:space="preserve">
+    <value>statusLabel_size</value>
+  </data>
+  <data name="&gt;&gt;menuStrip_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDown_height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_height.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_plus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_paletteOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Parent" xml:space="preserve">
+    <value>groupBox_paletteControl</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>126, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>47</value>
+  </metadata>
 </root>

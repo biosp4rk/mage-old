@@ -112,18 +112,511 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>54</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>570, 286</value>
+  </data>
+  <data name="pictureBox_blue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 71</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_red.Name" xml:space="preserve">
+    <value>pictureBox_red</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_24bit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="statusStrip_import.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 21</value>
+  </data>
+  <data name="&gt;&gt;button_go.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numericUpDown_green.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
+    <value>button_apply</value>
+  </data>
+  <data name="label_red.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="statusStrip_export.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_red.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.Name" xml:space="preserve">
+    <value>comboBox_sprite</value>
+  </data>
+  <data name="&gt;&gt;textBox_offset.Name" xml:space="preserve">
+    <value>textBox_offset</value>
+  </data>
+  <data name="&gt;&gt;groupBox_shortcuts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox_chosenColor.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="statusStrip_importTLP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importYY.Name" xml:space="preserve">
+    <value>statusStrip_importYY</value>
+  </data>
+  <data name="label_numOfRows.Text" xml:space="preserve">
+    <value>Rows:</value>
+  </data>
+  <data name="button_minus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label_blue.Text" xml:space="preserve">
+    <value>Blue:</value>
+  </data>
+  <data name="label_blue.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_green.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_red.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="label_15bit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 17</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_red.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="groupBox_color.Text" xml:space="preserve">
+    <value>Color Selector</value>
+  </data>
+  <data name="&gt;&gt;label_numOfRows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_green.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_numOfRows.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="label_24bit.Text" xml:space="preserve">
+    <value>24-bit:</value>
+  </data>
+  <data name="groupBox_offset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox_blue.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;button_minus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Name" xml:space="preserve">
+    <value>statusStrip_export</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_blue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="groupBox_offset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 11</value>
+  </data>
+  <data name="label_blue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 73</value>
+  </data>
+  <data name="label_red.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_offset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;label_15bitVal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="label_24bitVal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_rows.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button_go.Parent" xml:space="preserve">
+    <value>groupBox_offset</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDown_green.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 44</value>
+  </data>
+  <data name="&gt;&gt;button_plus.Name" xml:space="preserve">
+    <value>button_plus</value>
+  </data>
+  <data name="groupBox_color.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 101</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_blue.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="label_24bit.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_rows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_shortcuts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 11</value>
+  </data>
+  <data name="label_numOfRows.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importTLP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>570, 23</value>
+  </data>
+  <data name="label_sprite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_green.Name" xml:space="preserve">
+    <value>numericUpDown_green</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_green.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="button_plus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 40</value>
+  </data>
+  <data name="&gt;&gt;label_numOfRows.Parent" xml:space="preserve">
+    <value>groupBox_offset</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Parent" xml:space="preserve">
+    <value>groupBox_shortcuts</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_blue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_green.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_minus.Name" xml:space="preserve">
+    <value>button_minus</value>
+  </data>
+  <data name="&gt;&gt;label_15bit.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
+  </data>
+  <data name="button_minus.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;label_blue.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="button_go.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importRaw.Name" xml:space="preserve">
+    <value>statusStrip_importRaw</value>
+  </data>
+  <data name="&gt;&gt;textBox_offset.Parent" xml:space="preserve">
+    <value>groupBox_offset</value>
+  </data>
+  <data name="pictureBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 252</value>
+  </data>
+  <data name="statusStrip_exportRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="pictureBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="groupBox_offset.Text" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="label_24bitVal.Text" xml:space="preserve">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_red.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="&gt;&gt;label_red.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_minus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 20</value>
+  </data>
+  <data name="&gt;&gt;groupBox_offset.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.Name" xml:space="preserve">
+    <value>label_sprite</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_green.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pictureBox_green.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 18</value>
+  </data>
+  <data name="statusStrip_importTLP.Text" xml:space="preserve">
+    <value>Tile Layer Pro...</value>
+  </data>
+  <data name="textBox_offset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_chosenColor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_15bitVal.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="pictureBox_green.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.Parent" xml:space="preserve">
+    <value>groupBox_shortcuts</value>
+  </data>
+  <data name="&gt;&gt;label_blue.Name" xml:space="preserve">
+    <value>label_blue</value>
+  </data>
+  <data name="label_sprite.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_red.Text" xml:space="preserve">
+    <value>Red:</value>
+  </data>
+  <data name="statusStrip_exportYY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="&gt;&gt;label_15bit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label_15bitVal.Text" xml:space="preserve">
+    <value>0x0000</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="&gt;&gt;button_go.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="numericUpDown_red.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 18</value>
+  </data>
+  <data name="label_blue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_15bitVal.Name" xml:space="preserve">
+    <value>label_15bitVal</value>
+  </data>
+  <data name="label_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_color.Name" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="groupBox_offset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 67</value>
+  </data>
+  <data name="button_plus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_15bit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;button_minus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_green.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_sprite.Text" xml:space="preserve">
+    <value>Sprite:</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_blue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_go.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_go.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Palette Editor</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_chosenColor.Name" xml:space="preserve">
+    <value>pictureBox_chosenColor</value>
+  </data>
+  <data name="label_tileset.Text" xml:space="preserve">
+    <value>Tileset:</value>
+  </data>
+  <data name="statusStrip_spring.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 18</value>
+  </data>
+  <data name="button_minus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 40</value>
+  </data>
+  <data name="&gt;&gt;label_red.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_24bit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;groupBox_shortcuts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numericUpDown_blue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="statusStrip_importYY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="&gt;&gt;label_15bitVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_red.Name" xml:space="preserve">
+    <value>label_red</value>
+  </data>
+  <data name="label_15bit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="numericUpDown_red.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBox_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_green.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_sprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="&gt;&gt;label_blue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBox_color.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Name" xml:space="preserve">
+    <value>pictureBox_palette</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_sprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="label_tileset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 18</value>
+  </data>
+  <data name="statusStrip_exportTLP.Text" xml:space="preserve">
+    <value>Tile Layer Pro...</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_red.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;groupBox_info.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_15bitVal.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
+  </data>
+  <data name="button_go.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 17</value>
+  </data>
+  <data name="&gt;&gt;label_green.Name" xml:space="preserve">
+    <value>label_green</value>
+  </data>
+  <data name="&gt;&gt;groupBox_info.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -198,4 +691,424 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="pictureBox_chosenColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 28</value>
+  </data>
+  <data name="&gt;&gt;label_24bitVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_color.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pictureBox_chosenColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 221</value>
+  </data>
+  <data name="groupBox_color.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 84</value>
+  </data>
+  <data name="&gt;&gt;label_blue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_24bit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_importRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="groupBox_shortcuts.Text" xml:space="preserve">
+    <value>Shortcuts</value>
+  </data>
+  <data name="&gt;&gt;label_numOfRows.Name" xml:space="preserve">
+    <value>label_numOfRows</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_red.Name" xml:space="preserve">
+    <value>numericUpDown_red</value>
+  </data>
+  <data name="comboBox_sprite.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button_apply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;groupBox_offset.Name" xml:space="preserve">
+    <value>groupBox_offset</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_import.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_red.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox_shortcuts.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numericUpDown_blue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 71</value>
+  </data>
+  <data name="pictureBox_blue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 18</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Name" xml:space="preserve">
+    <value>label_tileset</value>
+  </data>
+  <data name="label_numOfRows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_blue.Name" xml:space="preserve">
+    <value>numericUpDown_blue</value>
+  </data>
+  <data name="label_numOfRows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 43</value>
+  </data>
+  <data name="label_15bit.Text" xml:space="preserve">
+    <value>15-bit:</value>
+  </data>
+  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pictureBox_red.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 18</value>
+  </data>
+  <data name="numericUpDown_rows.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox_info.Text" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="label_15bitVal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="&gt;&gt;button_plus.Parent" xml:space="preserve">
+    <value>groupBox_offset</value>
+  </data>
+  <data name="&gt;&gt;label_24bitVal.Name" xml:space="preserve">
+    <value>label_24bitVal</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_green.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="numericUpDown_blue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_24bitVal.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Name" xml:space="preserve">
+    <value>comboBox_tileset</value>
+  </data>
+  <data name="statusStrip_export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 21</value>
+  </data>
+  <data name="textBox_offset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="statusStrip_exportYY.Text" xml:space="preserve">
+    <value>YY-CHR...</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importTLP.Name" xml:space="preserve">
+    <value>statusStrip_importTLP</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportTLP.Name" xml:space="preserve">
+    <value>statusStrip_exportTLP</value>
+  </data>
+  <data name="&gt;&gt;groupBox_offset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDown_red.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="&gt;&gt;label_green.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.Parent" xml:space="preserve">
+    <value>groupBox_shortcuts</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Name" xml:space="preserve">
+    <value>statusStrip_import</value>
+  </data>
+  <data name="label_green.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_color.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label_24bit.Name" xml:space="preserve">
+    <value>label_24bit</value>
+  </data>
+  <data name="statusStrip_importYY.Text" xml:space="preserve">
+    <value>YY-CHR...</value>
+  </data>
+  <data name="groupBox_color.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_chosenColor.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
+  </data>
+  <data name="pictureBox_green.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 44</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="statusStrip_importRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_blue.Name" xml:space="preserve">
+    <value>pictureBox_blue</value>
+  </data>
+  <data name="label_red.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_blue.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="&gt;&gt;label_24bit.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
+  </data>
+  <data name="&gt;&gt;button_plus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_24bit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 30</value>
+  </data>
+  <data name="&gt;&gt;label_numOfRows.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportRaw.Name" xml:space="preserve">
+    <value>statusStrip_exportRaw</value>
+  </data>
+  <data name="&gt;&gt;label_24bit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="numericUpDown_rows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 42</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importYY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_red.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;groupBox_color.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_24bitVal.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox_shortcuts.Name" xml:space="preserve">
+    <value>groupBox_shortcuts</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_chosenColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_shortcuts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tileset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_15bitVal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_plus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_exportTLP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="label_15bit.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;groupBox_info.Name" xml:space="preserve">
+    <value>groupBox_info</value>
+  </data>
+  <data name="&gt;&gt;button_go.Name" xml:space="preserve">
+    <value>button_go</value>
+  </data>
+  <data name="label_blue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;groupBox_offset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Name" xml:space="preserve">
+    <value>statusStrip_spring</value>
+  </data>
+  <data name="label_24bitVal.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportTLP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_15bit.Name" xml:space="preserve">
+    <value>label_15bit</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="label_24bitVal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_green.Text" xml:space="preserve">
+    <value>Green:</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_green.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 195</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_blue.Parent" xml:space="preserve">
+    <value>groupBox_color</value>
+  </data>
+  <data name="&gt;&gt;textBox_offset.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textBox_offset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="groupBox_info.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_red.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_15bitVal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="&gt;&gt;label_15bit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_exportRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <data name="label_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="&gt;&gt;label_green.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 18</value>
+  </data>
+  <data name="&gt;&gt;groupBox_info.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_green.Name" xml:space="preserve">
+    <value>pictureBox_green</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_info.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 190</value>
+  </data>
+  <data name="pictureBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_green.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_rows.Parent" xml:space="preserve">
+    <value>groupBox_offset</value>
+  </data>
+  <data name="&gt;&gt;button_minus.Parent" xml:space="preserve">
+    <value>groupBox_offset</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportYY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.Parent" xml:space="preserve">
+    <value>groupBox_shortcuts</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportYY.Name" xml:space="preserve">
+    <value>statusStrip_exportYY</value>
+  </data>
+  <data name="numericUpDown_green.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_rows.Name" xml:space="preserve">
+    <value>numericUpDown_rows</value>
+  </data>
+  <data name="pictureBox_red.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 18</value>
+  </data>
+  <data name="groupBox_shortcuts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 67</value>
+  </data>
+  <data name="button_minus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label_sprite.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_plus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 20</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_24bitVal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 30</value>
+  </data>
+  <data name="numericUpDown_rows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 21</value>
+  </data>
+  <data name="&gt;&gt;button_plus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_info.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 51</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 263</value>
+  </data>
+  <data name="button_plus.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormPalette</value>
+  </data>
+  <data name="pictureBox_red.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="comboBox_sprite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 42</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>54</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

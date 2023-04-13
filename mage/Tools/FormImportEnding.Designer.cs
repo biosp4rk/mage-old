@@ -54,166 +54,115 @@
             // 
             // pictureBox_ending
             // 
-            this.pictureBox_ending.Location = new System.Drawing.Point(6, 19);
+            resources.ApplyResources(this.pictureBox_ending, "pictureBox_ending");
             this.pictureBox_ending.Name = "pictureBox_ending";
-            this.pictureBox_ending.Size = new System.Drawing.Size(240, 416);
-            this.pictureBox_ending.TabIndex = 0;
             this.pictureBox_ending.TabStop = false;
             // 
             // groupBox_image
             // 
+            resources.ApplyResources(this.groupBox_image, "groupBox_image");
             this.groupBox_image.Controls.Add(this.pictureBox_ending);
-            this.groupBox_image.Location = new System.Drawing.Point(143, 12);
             this.groupBox_image.Name = "groupBox_image";
-            this.groupBox_image.Size = new System.Drawing.Size(252, 441);
-            this.groupBox_image.TabIndex = 0;
             this.groupBox_image.TabStop = false;
-            this.groupBox_image.Text = "Image";
             // 
             // comboBox_number
             // 
+            resources.ApplyResources(this.comboBox_number, "comboBox_number");
             this.comboBox_number.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_number.FormattingEnabled = true;
-            this.comboBox_number.Location = new System.Drawing.Point(54, 13);
             this.comboBox_number.Name = "comboBox_number";
-            this.comboBox_number.Size = new System.Drawing.Size(40, 21);
-            this.comboBox_number.TabIndex = 0;
             this.comboBox_number.SelectedIndexChanged += new System.EventHandler(this.comboBox_number_SelectedIndexChanged);
             // 
             // label_ending
             // 
-            this.label_ending.AutoSize = true;
-            this.label_ending.Location = new System.Drawing.Point(8, 16);
+            resources.ApplyResources(this.label_ending, "label_ending");
             this.label_ending.Name = "label_ending";
-            this.label_ending.Size = new System.Drawing.Size(40, 13);
-            this.label_ending.TabIndex = 0;
-            this.label_ending.Text = "Ending";
             // 
             // label_requirements
             // 
-            this.label_requirements.AutoSize = true;
-            this.label_requirements.Location = new System.Drawing.Point(8, 41);
+            resources.ApplyResources(this.label_requirements, "label_requirements");
             this.label_requirements.Name = "label_requirements";
-            this.label_requirements.Size = new System.Drawing.Size(75, 13);
-            this.label_requirements.TabIndex = 0;
-            this.label_requirements.Text = "Requirements:";
             // 
             // label_stats
             // 
-            this.label_stats.AutoSize = true;
-            this.label_stats.Location = new System.Drawing.Point(8, 61);
+            resources.ApplyResources(this.label_stats, "label_stats");
             this.label_stats.Name = "label_stats";
-            this.label_stats.Size = new System.Drawing.Size(10, 13);
-            this.label_stats.TabIndex = 0;
-            this.label_stats.Text = "-";
             // 
             // button_open
             // 
-            this.button_open.Location = new System.Drawing.Point(8, 121);
+            resources.ApplyResources(this.button_open, "button_open");
             this.button_open.Name = "button_open";
-            this.button_open.Size = new System.Drawing.Size(75, 23);
-            this.button_open.TabIndex = 1;
-            this.button_open.Text = "Open";
             this.button_open.UseVisualStyleBackColor = true;
             this.button_open.Click += new System.EventHandler(this.button_open_Click);
             // 
             // button_go
             // 
-            this.button_go.Location = new System.Drawing.Point(6, 49);
+            resources.ApplyResources(this.button_go, "button_go");
             this.button_go.Name = "button_go";
-            this.button_go.Size = new System.Drawing.Size(75, 23);
-            this.button_go.TabIndex = 0;
-            this.button_go.Text = "Go";
             this.button_go.UseVisualStyleBackColor = true;
             this.button_go.Click += new System.EventHandler(this.button_go_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Repeat until image\r\nis acceptable";
             // 
             // button_apply
             // 
-            this.button_apply.Enabled = false;
-            this.button_apply.Location = new System.Drawing.Point(62, 287);
+            resources.ApplyResources(this.button_apply, "button_apply");
             this.button_apply.Name = "button_apply";
-            this.button_apply.Size = new System.Drawing.Size(75, 23);
-            this.button_apply.TabIndex = 2;
-            this.button_apply.Text = "Apply";
             this.button_apply.UseVisualStyleBackColor = true;
             this.button_apply.Click += new System.EventHandler(this.button_apply_Click);
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(62, 316);
+            resources.ApplyResources(this.button_close, "button_close");
             this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(75, 23);
-            this.button_close.TabIndex = 3;
-            this.button_close.Text = "Close";
             this.button_close.UseVisualStyleBackColor = true;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
             // groupBox_select
             // 
+            resources.ApplyResources(this.groupBox_select, "groupBox_select");
             this.groupBox_select.Controls.Add(this.label_image);
             this.groupBox_select.Controls.Add(this.label_ending);
             this.groupBox_select.Controls.Add(this.comboBox_number);
             this.groupBox_select.Controls.Add(this.label_requirements);
             this.groupBox_select.Controls.Add(this.label_stats);
             this.groupBox_select.Controls.Add(this.button_open);
-            this.groupBox_select.Location = new System.Drawing.Point(12, 12);
             this.groupBox_select.Name = "groupBox_select";
-            this.groupBox_select.Size = new System.Drawing.Size(125, 183);
-            this.groupBox_select.TabIndex = 0;
             this.groupBox_select.TabStop = false;
-            this.groupBox_select.Text = "Select";
             // 
             // label_image
             // 
-            this.label_image.AutoSize = true;
-            this.label_image.Location = new System.Drawing.Point(8, 147);
+            resources.ApplyResources(this.label_image, "label_image");
             this.label_image.Name = "label_image";
-            this.label_image.Size = new System.Drawing.Size(69, 26);
-            this.label_image.TabIndex = 0;
-            this.label_image.Text = "Image must\r\nbe 240 x 416";
             // 
             // groupBox_convert
             // 
+            resources.ApplyResources(this.groupBox_convert, "groupBox_convert");
             this.groupBox_convert.Controls.Add(this.label1);
             this.groupBox_convert.Controls.Add(this.button_go);
-            this.groupBox_convert.Enabled = false;
-            this.groupBox_convert.Location = new System.Drawing.Point(12, 201);
             this.groupBox_convert.Name = "groupBox_convert";
-            this.groupBox_convert.Size = new System.Drawing.Size(125, 80);
-            this.groupBox_convert.TabIndex = 1;
             this.groupBox_convert.TabStop = false;
-            this.groupBox_convert.Text = "Convert";
             // 
             // statusStrip
             // 
+            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 456);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(407, 22);
             this.statusStrip.SizingGrip = false;
-            this.statusStrip.TabIndex = 14;
             // 
             // statusLabel
             // 
+            resources.ApplyResources(this.statusLabel, "statusLabel");
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(102, 17);
-            this.statusLabel.Text = "No image opened";
             // 
             // FormImportEnding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 478);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox_convert);
             this.Controls.Add(this.groupBox_select);
@@ -221,9 +170,7 @@
             this.Controls.Add(this.button_apply);
             this.Controls.Add(this.groupBox_image);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormImportEnding";
-            this.Text = "Import Ending";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ending)).EndInit();
             this.groupBox_image.ResumeLayout(false);
             this.groupBox_select.ResumeLayout(false);

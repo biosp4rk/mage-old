@@ -112,18 +112,979 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>58</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;label_default.Name" xml:space="preserve">
+    <value>label_default</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="comboBox_area.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="textBox_defaultSpriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;label_BG0.Name" xml:space="preserve">
+    <value>label_BG0</value>
+  </data>
+  <data name="&gt;&gt;label_offset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_BG1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="label_CLP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3prop.Name" xml:space="preserve">
+    <value>textBox_BG3prop</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3pointer.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="label_BG3.Text" xml:space="preserve">
+    <value>BG 3:</value>
+  </data>
+  <data name="label_effect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="textBox_secondSpriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;groupBox_spritesetData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_offsetVal.Name" xml:space="preserve">
+    <value>textBox_offsetVal</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0pointer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_mapY.Text" xml:space="preserve">
+    <value>Map Y:</value>
+  </data>
+  <data name="textBox_music.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 80</value>
+  </data>
+  <data name="&gt;&gt;groupBox_spritesetData.Name" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label_mapX.Name" xml:space="preserve">
+    <value>label_mapX</value>
+  </data>
+  <data name="groupBox_spritesetData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_BG0.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="textBox_effectYpos.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label_event.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label_offset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_prop.Text" xml:space="preserve">
+    <value>Prop</value>
+  </data>
+  <data name="&gt;&gt;label_prop.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="textBox_offsetVal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_BGpointer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstSpriteset.Name" xml:space="preserve">
+    <value>textBox_firstSpriteset</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondSpriteset.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label_BG1.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondEvent.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label_area.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_BG3pointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapY.Name" xml:space="preserve">
+    <value>textBox_mapY</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3scroll.Name" xml:space="preserve">
+    <value>textBox_BG3scroll</value>
+  </data>
+  <data name="label_spritesetPointer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="label_prop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 15</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2prop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_BG3scroll.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondPointer.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label_BG3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label_spritesetPointer.Text" xml:space="preserve">
+    <value>Pointer</value>
+  </data>
+  <data name="label_mapX.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 35</value>
+  </data>
+  <data name="&gt;&gt;label_default.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_BG0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="textBox_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_spritesetData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_mapY.Name" xml:space="preserve">
+    <value>label_mapY</value>
+  </data>
+  <data name="label_BG0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 35</value>
+  </data>
+  <data name="textBox_BG0pointer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox_effectYpos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_tileset.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;label_BGpointer.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstEvent.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="textBox_BG3pointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 104</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstSpriteset.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapX.Parent" xml:space="preserve">
+    <value>groupBox_misc</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondEvent.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="textBox_defaultSpriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox_BGdata.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox_BGdata.Text" xml:space="preserve">
+    <value>Background Data</value>
+  </data>
+  <data name="label_music.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 83</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_firstEvent.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_CLPpointer.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="label_default.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1pointer.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="textBox_mapX.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondSpriteset.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label_BG0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_BG0pointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 32</value>
+  </data>
+  <data name="label_CLP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 290</value>
+  </data>
+  <data name="&gt;&gt;textBox_CLPpointer.Name" xml:space="preserve">
+    <value>textBox_CLPpointer</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_event.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_second.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_mapY.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;label_BG2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label_CLP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondSpriteset.Name" xml:space="preserve">
+    <value>textBox_secondSpriteset</value>
+  </data>
+  <data name="label_prop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="textBox_secondEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 80</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultSpriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_effectYpos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 128</value>
+  </data>
+  <data name="&gt;&gt;groupBox_misc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_BG3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 286</value>
+  </data>
+  <data name="textBox_CLPpointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 128</value>
+  </data>
+  <data name="textBox_transparency.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_offsetVal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 287</value>
+  </data>
+  <data name="label_mapY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>327, 354</value>
+  </data>
+  <data name="textBox_defaultPointer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_effect.Name" xml:space="preserve">
+    <value>label_effect</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultSpriteset.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2pointer.Name" xml:space="preserve">
+    <value>textBox_BG2pointer</value>
+  </data>
+  <data name="label_second.Text" xml:space="preserve">
+    <value>Second:</value>
+  </data>
+  <data name="&gt;&gt;label_mapY.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_offset.Name" xml:space="preserve">
+    <value>label_offset</value>
+  </data>
+  <data name="label_effect.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_transparency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 56</value>
+  </data>
+  <data name="&gt;&gt;textBox_transparency.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="label_BG1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 59</value>
+  </data>
+  <data name="label_room.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Effect Y pos:</value>
+  </data>
+  <data name="&gt;&gt;label_BG3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_secondSpriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="label_effect.Text" xml:space="preserve">
+    <value>Effect:</value>
+  </data>
+  <data name="label_offset.Text" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="&gt;&gt;label_prop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapY.Parent" xml:space="preserve">
+    <value>groupBox_misc</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 131</value>
+  </data>
+  <data name="&gt;&gt;label_BG3.Name" xml:space="preserve">
+    <value>label_BG3</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="label_transparency.Text" xml:space="preserve">
+    <value>Transparency:</value>
+  </data>
+  <data name="textBox_BG1prop.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_BG3scroll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_firstSpriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 56</value>
+  </data>
+  <data name="&gt;&gt;label_BG3.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="textBox_mapY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="textBox_offsetVal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 313</value>
+  </data>
+  <data name="textBox_BG0prop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="label_room.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2pointer.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="textBox_effect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 104</value>
+  </data>
+  <data name="label_transparency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
+  </data>
+  <data name="&gt;&gt;label_mapX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_spriteset.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="textBox_CLPpointer.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3scroll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label_BG3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3prop.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="groupBox_spritesetData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 109</value>
+  </data>
+  <data name="&gt;&gt;label_music.Name" xml:space="preserve">
+    <value>label_music</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstPointer.Name" xml:space="preserve">
+    <value>textBox_firstPointer</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondSpriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_BG1.Text" xml:space="preserve">
+    <value>BG 1:</value>
+  </data>
+  <data name="label_music.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="textBox_firstPointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="textBox_firstPointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 56</value>
+  </data>
+  <data name="&gt;&gt;groupBox_misc.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textBox_effect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;label_second.Name" xml:space="preserve">
+    <value>label_second</value>
+  </data>
+  <data name="label_transparency.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapY.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1prop.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label_area.Text" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="label_effect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 107</value>
+  </data>
+  <data name="textBox_BG2pointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 80</value>
+  </data>
+  <data name="&gt;&gt;label_offset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_BG3scroll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_first.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_prop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_music.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_BGdata.Name" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;groupBox_misc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_tileset.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label_mapX.Text" xml:space="preserve">
+    <value>Map X:</value>
+  </data>
+  <data name="comboBox_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 310</value>
+  </data>
+  <data name="groupBox_misc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 172</value>
+  </data>
+  <data name="label_mapX.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_BG2pointer.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_area.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_BG3scroll.Name" xml:space="preserve">
+    <value>label_BG3scroll</value>
+  </data>
+  <data name="&gt;&gt;label_transparency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_mapY.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_first.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2prop.Name" xml:space="preserve">
+    <value>textBox_BG2prop</value>
+  </data>
+  <data name="label_first.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_prop.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_music.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_event.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_offset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_first.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 59</value>
+  </data>
+  <data name="&gt;&gt;label_BGpointer.Name" xml:space="preserve">
+    <value>label_BGpointer</value>
+  </data>
+  <data name="label_area.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapX.Name" xml:space="preserve">
+    <value>textBox_mapX</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1prop.Name" xml:space="preserve">
+    <value>textBox_BG1prop</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3scroll.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBox_BG2prop.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label_spritesetPointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 15</value>
+  </data>
+  <data name="label_event.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_BG3prop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_BGpointer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_CLPpointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstSpriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_BG3pointer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultPointer.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="label_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstSpriteset.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Name" xml:space="preserve">
+    <value>comboBox_area</value>
+  </data>
+  <data name="textBox_secondEvent.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3prop.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="comboBox_room.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="textBox_secondPointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 80</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstPointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormHeader</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3scroll.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="label_spritesetPointer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_default.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="groupBox_BGdata.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;textBox_effectYpos.Name" xml:space="preserve">
+    <value>textBox_effectYpos</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="button_apply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_transparency.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBox_effect.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBox_effect.Name" xml:space="preserve">
+    <value>textBox_effect</value>
+  </data>
+  <data name="&gt;&gt;label_BG1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_transparency.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_BG2.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;groupBox_misc.Name" xml:space="preserve">
+    <value>groupBox_misc</value>
+  </data>
+  <data name="label_BG3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 107</value>
+  </data>
+  <data name="label_room.Text" xml:space="preserve">
+    <value>Room:</value>
+  </data>
+  <data name="textBox_secondEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_transparency.Name" xml:space="preserve">
+    <value>textBox_transparency</value>
+  </data>
+  <data name="label_BGpointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="textBox_BG1pointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 56</value>
+  </data>
+  <data name="label_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_BG2pointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultSpriteset.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label_mapX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstPointer.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label_BG2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2pointer.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label_spriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 15</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2prop.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="label_BG3scroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
+  </data>
+  <data name="label_BG1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1prop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_BG2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_second.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 83</value>
+  </data>
+  <data name="textBox_effect.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox_CLPpointer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Name" xml:space="preserve">
+    <value>label_tileset</value>
+  </data>
+  <data name="textBox_firstSpriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;label_default.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox_BGdata.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
+    <value>button_apply</value>
+  </data>
+  <data name="&gt;&gt;label_first.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label_mapY.Parent" xml:space="preserve">
+    <value>groupBox_misc</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.Name" xml:space="preserve">
+    <value>label_spriteset</value>
+  </data>
+  <data name="&gt;&gt;textBox_music.Parent" xml:space="preserve">
+    <value>groupBox_misc</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;label_BG0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondPointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_effect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_transparency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_second.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_spritesetPointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="label_transparency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_offsetVal.Text" xml:space="preserve">
+    <value>000000</value>
+  </data>
+  <data name="label_BG1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_BG3scroll.Text" xml:space="preserve">
+    <value>BG3 scroll:</value>
+  </data>
+  <data name="label_BGpointer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="textBox_BG1prop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 56</value>
+  </data>
+  <data name="label_tileset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2pointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_mapY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_mapY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 54</value>
+  </data>
+  <data name="textBox_defaultPointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 32</value>
+  </data>
+  <data name="textBox_secondPointer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label_transparency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 59</value>
+  </data>
+  <data name="&gt;&gt;label_music.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox_firstPointer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBox_transparency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_effect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_BG2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_BG3scroll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 80</value>
+  </data>
+  <data name="&gt;&gt;textBox_offsetVal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0prop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 17</value>
+  </data>
+  <data name="textBox_BG0prop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 32</value>
+  </data>
+  <data name="textBox_secondSpriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 80</value>
+  </data>
+  <data name="&gt;&gt;label_first.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3pointer.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="textBox_BG0prop.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_BG1.Name" xml:space="preserve">
+    <value>label_BG1</value>
+  </data>
+  <data name="comboBox_room.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_spriteset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="&gt;&gt;label_BGpointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1pointer.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0pointer.Name" xml:space="preserve">
+    <value>textBox_BG0pointer</value>
+  </data>
+  <data name="&gt;&gt;label_CLP.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="textBox_firstEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 56</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondEvent.Name" xml:space="preserve">
+    <value>textBox_secondEvent</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_music.Text" xml:space="preserve">
+    <value>Music:</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_default.Text" xml:space="preserve">
+    <value>Default:</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 286</value>
+  </data>
+  <data name="textBox_music.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_mapX.Parent" xml:space="preserve">
+    <value>groupBox_misc</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1pointer.Name" xml:space="preserve">
+    <value>textBox_BG1pointer</value>
+  </data>
+  <data name="&gt;&gt;groupBox_BGdata.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox_BG2prop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_effectYpos.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -198,4 +1159,475 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;label_first.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_spritesetPointer.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="groupBox_spritesetData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 172</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondPointer.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_event.Text" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="&gt;&gt;label_BG3scroll.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_music.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_spritesetPointer.Name" xml:space="preserve">
+    <value>label_spritesetPointer</value>
+  </data>
+  <data name="label_CLP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="textBox_defaultSpriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 32</value>
+  </data>
+  <data name="label_BG2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 83</value>
+  </data>
+  <data name="&gt;&gt;label_second.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1prop.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="textBox_mapY.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_secondPointer.Name" xml:space="preserve">
+    <value>textBox_secondPointer</value>
+  </data>
+  <data name="label_BGpointer.Text" xml:space="preserve">
+    <value>Pointer</value>
+  </data>
+  <data name="textBox_mapX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="textBox_BG3prop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 104</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 332</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstEvent.Name" xml:space="preserve">
+    <value>textBox_firstEvent</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultSpriteset.Name" xml:space="preserve">
+    <value>textBox_defaultSpriteset</value>
+  </data>
+  <data name="label_spriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
+  </data>
+  <data name="&gt;&gt;label_music.Parent" xml:space="preserve">
+    <value>groupBox_misc</value>
+  </data>
+  <data name="label_offset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;label_transparency.Name" xml:space="preserve">
+    <value>label_transparency</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0prop.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label_CLP.Name" xml:space="preserve">
+    <value>label_CLP</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_BG3scroll.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_event.Name" xml:space="preserve">
+    <value>label_event</value>
+  </data>
+  <data name="&gt;&gt;textBox_music.Name" xml:space="preserve">
+    <value>textBox_music</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_BG0.Text" xml:space="preserve">
+    <value>BG 0:</value>
+  </data>
+  <data name="&gt;&gt;label_default.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label_first.Name" xml:space="preserve">
+    <value>label_first</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="textBox_BG2prop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 80</value>
+  </data>
+  <data name="label_music.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_secondPointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="label_BG3scroll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 83</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0pointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_room.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_offsetVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox_misc.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Header Editor</value>
+  </data>
+  <data name="&gt;&gt;groupBox_spritesetData.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label_default.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_BG1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label_prop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_CLPpointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_CLP.Text" xml:space="preserve">
+    <value>Clip:</value>
+  </data>
+  <data name="textBox_music.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="textBox_firstEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_BGpointer.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultPointer.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBox_music.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_BG2.Name" xml:space="preserve">
+    <value>label_BG2</value>
+  </data>
+  <data name="label_BG2.Text" xml:space="preserve">
+    <value>BG 2:</value>
+  </data>
+  <data name="label_BGpointer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 15</value>
+  </data>
+  <data name="groupBox_misc.Text" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="&gt;&gt;label_CLP.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_tileset.Name" xml:space="preserve">
+    <value>textBox_tileset</value>
+  </data>
+  <data name="textBox_offsetVal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 14</value>
+  </data>
+  <data name="label_second.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstPointer.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="label_event.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG2prop.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_area.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_spriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="label_BG3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_transparency.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="groupBox_spritesetData.Text" xml:space="preserve">
+    <value>Spriteset Data</value>
+  </data>
+  <data name="&gt;&gt;label_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_BG2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_room.Name" xml:space="preserve">
+    <value>comboBox_room</value>
+  </data>
+  <data name="textBox_BG3prop.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0prop.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;label_prop.Name" xml:space="preserve">
+    <value>label_prop</value>
+  </data>
+  <data name="label_default.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 35</value>
+  </data>
+  <data name="&gt;&gt;label_second.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="label_event.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="textBox_BG1pointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="&gt;&gt;label_spritesetPointer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox_firstEvent.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label_offset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 313</value>
+  </data>
+  <data name="&gt;&gt;label_BG0.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;groupBox_BGdata.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="label_BG0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_spritesetPointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_mapX.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultPointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_CLP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 131</value>
+  </data>
+  <data name="&gt;&gt;label_area.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textBox_mapX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="label_offset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_second.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 22</value>
+  </data>
+  <data name="&gt;&gt;label_room.Name" xml:space="preserve">
+    <value>label_room</value>
+  </data>
+  <data name="groupBox_BGdata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 155</value>
+  </data>
+  <data name="&gt;&gt;label_BG3scroll.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0prop.Name" xml:space="preserve">
+    <value>textBox_BG0prop</value>
+  </data>
+  <data name="label_first.Text" xml:space="preserve">
+    <value>First:</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3pointer.Name" xml:space="preserve">
+    <value>textBox_BG3pointer</value>
+  </data>
+  <data name="&gt;&gt;textBox_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 32</value>
+  </data>
+  <data name="&gt;&gt;label_room.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label_effect.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3pointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBox_effect.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="label_effect.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_spriteset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG0pointer.Parent" xml:space="preserve">
+    <value>groupBox_BGdata</value>
+  </data>
+  <data name="&gt;&gt;label_area.Name" xml:space="preserve">
+    <value>label_area</value>
+  </data>
+  <data name="label_room.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 313</value>
+  </data>
+  <data name="textBox_BG1prop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG1pointer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_event.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 15</value>
+  </data>
+  <data name="label_event.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_mapY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 51</value>
+  </data>
+  <data name="&gt;&gt;textBox_effectYpos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_mapX.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="&gt;&gt;label_prop.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;textBox_defaultPointer.Name" xml:space="preserve">
+    <value>textBox_defaultPointer</value>
+  </data>
+  <data name="textBox_BG1pointer.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="textBox_BG3scroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="textBox_BG0pointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="label_spritesetPointer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_effectYpos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="textBox_firstSpriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox_BG3prop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_area.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="label_mapX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="&gt;&gt;label_effect.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.Parent" xml:space="preserve">
+    <value>groupBox_spritesetData</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_room.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox_defaultPointer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="label_tileset.Text" xml:space="preserve">
+    <value>Tileset:</value>
+  </data>
+  <data name="groupBox_misc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 109</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>58</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

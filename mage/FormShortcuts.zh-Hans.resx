@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button_air.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_air.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_solid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_solid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_air.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_air.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_air.Text" xml:space="preserve">
+    <value>空气</value>
+  </data>
+  <data name="label_solid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="label_solid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_solid.Text" xml:space="preserve">
+    <value>实体砖块</value>
+  </data>
+  <data name="label_missile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_missile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_missile.Text" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="button_missile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_missile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_energy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_energy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_energy.Text" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="button_energy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_energy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_crumble.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 165</value>
+  </data>
+  <data name="label_crumble.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_crumble.Text" xml:space="preserve">
+    <value>豆腐砖块</value>
+  </data>
+  <data name="button_crumble.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 159</value>
+  </data>
+  <data name="button_crumble.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_power.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_power.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_power.Text" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="button_power.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_power.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_super.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_super.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_super.Text" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="button_super.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_super.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_shot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_shot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label_shot.Text" xml:space="preserve">
+    <value>光束砖块（恢复）</value>
+  </data>
+  <data name="button_shot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_shot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_missile_block_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 109</value>
+  </data>
+  <data name="label_missile_block_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="label_missile_block_no.Text" xml:space="preserve">
+    <value>砖块（不恢复）</value>
+  </data>
+  <data name="button_missile_block_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="button_missile_block_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_bomb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_bomb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label_bomb.Text" xml:space="preserve">
+    <value>炸弹砖块（恢复）</value>
+  </data>
+  <data name="button_bomb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_bomb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_speed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_speed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 13</value>
+  </data>
+  <data name="label_speed.Text" xml:space="preserve">
+    <value>加速器砖块（恢复）</value>
+  </data>
+  <data name="button_speed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_speed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_power_block_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 109</value>
+  </data>
+  <data name="label_power_block_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label_power_block_never.Text" xml:space="preserve">
+    <value>砖块（永不恢复）</value>
+  </data>
+  <data name="button_power_block_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="button_power_block_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_screw_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 131</value>
+  </data>
+  <data name="button_screw_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_screw_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 136</value>
+  </data>
+  <data name="label_screw_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 13</value>
+  </data>
+  <data name="label_screw_no.Text" xml:space="preserve">
+    <value>团身旋击砖块（不恢复）</value>
+  </data>
+  <data name="label_super_block_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 109</value>
+  </data>
+  <data name="label_super_block_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="label_super_block_no.Text" xml:space="preserve">
+    <value>砖块（不恢复）</value>
+  </data>
+  <data name="button_super_block_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="button_super_block_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="groupBox_basic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="groupBox_basic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 77</value>
+  </data>
+  <data name="groupBox_basic.Text" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="button_bubbly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="button_bubbly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_bubbly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 109</value>
+  </data>
+  <data name="label_bubbly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_bubbly.Text" xml:space="preserve">
+    <value>冒泡</value>
+  </data>
+  <data name="button_wet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_wet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_wet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_wet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_wet.Text" xml:space="preserve">
+    <value>潮湿</value>
+  </data>
+  <data name="button_dusty_very.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_dusty_very.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_dusty_very.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_dusty_very.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_dusty_very.Text" xml:space="preserve">
+    <value>尘土飞扬</value>
+  </data>
+  <data name="button_dusty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_dusty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_dusty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_dusty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_dusty.Text" xml:space="preserve">
+    <value>灰尘</value>
+  </data>
+  <data name="groupBox_ground.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 234</value>
+  </data>
+  <data name="groupBox_ground.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 135</value>
+  </data>
+  <data name="groupBox_ground.Text" xml:space="preserve">
+    <value>地面</value>
+  </data>
+  <data name="label_slope_slight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 61</value>
+  </data>
+  <data name="label_slope_slight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_slope_slight.Text" xml:space="preserve">
+    <value>缓坡</value>
+  </data>
+  <data name="label_slope_steep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="label_slope_steep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_slope_steep.Text" xml:space="preserve">
+    <value>陡坡</value>
+  </data>
+  <data name="button_slope27_Upos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 77</value>
+  </data>
+  <data name="button_slope27_Upos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_slope27_Uneg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 105</value>
+  </data>
+  <data name="button_slope27_Uneg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_slope27_Lpos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 77</value>
+  </data>
+  <data name="button_slope27_Lpos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_slope27_Lneg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 105</value>
+  </data>
+  <data name="button_slope27_Lneg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_slope45_neg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 32</value>
+  </data>
+  <data name="button_slope45_neg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_slope45_pos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 32</value>
+  </data>
+  <data name="button_slope45_pos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="groupBox_slopes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 234</value>
+  </data>
+  <data name="groupBox_slopes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 135</value>
+  </data>
+  <data name="groupBox_slopes.Text" xml:space="preserve">
+    <value>斜坡</value>
+  </data>
+  <data name="button_crumble_slow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 187</value>
+  </data>
+  <data name="button_crumble_slow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_crumble_slow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 193</value>
+  </data>
+  <data name="label_crumble_slow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="label_crumble_slow.Text" xml:space="preserve">
+    <value>迟缓豆腐砖块</value>
+  </data>
+  <data name="button_speed_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="button_speed_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_speed_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 109</value>
+  </data>
+  <data name="label_speed_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 13</value>
+  </data>
+  <data name="label_speed_no.Text" xml:space="preserve">
+    <value>加速器砖块（不恢复）</value>
+  </data>
+  <data name="button_bomb_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_bomb_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_bomb_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_bomb_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 13</value>
+  </data>
+  <data name="label_bomb_never.Text" xml:space="preserve">
+    <value>炸弹砖块（永不恢复）</value>
+  </data>
+  <data name="groupBox_breakable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 179</value>
+  </data>
+  <data name="groupBox_breakable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 217</value>
+  </data>
+  <data name="groupBox_breakable.Text" xml:space="preserve">
+    <value>可破坏</value>
+  </data>
+  <data name="button_missile_block_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 131</value>
+  </data>
+  <data name="button_missile_block_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_missile_block_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 136</value>
+  </data>
+  <data name="label_missile_block_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label_missile_block_never.Text" xml:space="preserve">
+    <value>砖块（永不恢复）</value>
+  </data>
+  <data name="button_missile_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_missile_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_missile_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_missile_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_missile_water.Text" xml:space="preserve">
+    <value>水下</value>
+  </data>
+  <data name="button_missile_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_missile_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_missile_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_missile_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_missile_hidden.Text" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+  <data name="groupBox_missile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 12</value>
+  </data>
+  <data name="groupBox_missile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 161</value>
+  </data>
+  <data name="groupBox_missile.Text" xml:space="preserve">
+    <value>导弹</value>
+  </data>
+  <data name="button_energy_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_energy_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_energy_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_energy_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_energy_water.Text" xml:space="preserve">
+    <value>水下</value>
+  </data>
+  <data name="button_energy_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_energy_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_energy_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_energy_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_energy_hidden.Text" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+  <data name="groupBox_energy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 12</value>
+  </data>
+  <data name="groupBox_energy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 105</value>
+  </data>
+  <data name="groupBox_energy.Text" xml:space="preserve">
+    <value>能量包</value>
+  </data>
+  <data name="button_super_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_super_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_super_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_super_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_super_water.Text" xml:space="preserve">
+    <value>水下</value>
+  </data>
+  <data name="button_super_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_super_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_super_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_super_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_super_hidden.Text" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+  <data name="button_super_block_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 131</value>
+  </data>
+  <data name="button_super_block_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_super_block_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 136</value>
+  </data>
+  <data name="label_super_block_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label_super_block_never.Text" xml:space="preserve">
+    <value>砖块（永不恢复）</value>
+  </data>
+  <data name="groupBox_super.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 12</value>
+  </data>
+  <data name="groupBox_super.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 161</value>
+  </data>
+  <data name="groupBox_super.Text" xml:space="preserve">
+    <value>超级导弹</value>
+  </data>
+  <data name="button_power_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_power_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_power_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_power_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_power_water.Text" xml:space="preserve">
+    <value>水下</value>
+  </data>
+  <data name="button_power_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_power_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_power_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_power_hidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_power_hidden.Text" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+  <data name="groupBox_power.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 12</value>
+  </data>
+  <data name="groupBox_power.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 133</value>
+  </data>
+  <data name="groupBox_power.Text" xml:space="preserve">
+    <value>重磅炸弹</value>
+  </data>
+  <data name="button_trans_down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_trans_down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_trans_down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_trans_down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_trans_down.Text" xml:space="preserve">
+    <value>向下</value>
+  </data>
+  <data name="button_trans_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_trans_up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_trans_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_trans_up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_trans_up.Text" xml:space="preserve">
+    <value>向上</value>
+  </data>
+  <data name="button_trans_door.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_trans_door.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_trans_door.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_trans_door.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label_trans_door.Text" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="groupBox_transitions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 124</value>
+  </data>
+  <data name="groupBox_transitions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 105</value>
+  </data>
+  <data name="groupBox_transitions.Text" xml:space="preserve">
+    <value>转移</value>
+  </data>
+  <data name="button_acid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="button_acid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_acid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 109</value>
+  </data>
+  <data name="label_acid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label_acid.Text" xml:space="preserve">
+    <value>酸</value>
+  </data>
+  <data name="button_lava_strong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_lava_strong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_lava_strong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_lava_strong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_lava_strong.Text" xml:space="preserve">
+    <value>岩浆</value>
+  </data>
+  <data name="button_lava_weak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_lava_weak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_lava_weak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_lava_weak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label_lava_weak.Text" xml:space="preserve">
+    <value>弱酸</value>
+  </data>
+  <data name="button_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="button_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="label_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label_water.Text" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="groupBox_liquids.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="groupBox_liquids.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 133</value>
+  </data>
+  <data name="groupBox_liquids.Text" xml:space="preserve">
+    <value>液体</value>
+  </data>
+  <data name="label_2x2_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 178</value>
+  </data>
+  <data name="label_2x2_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="label_2x2_never.Text" xml:space="preserve">
+    <value>2x2 （永不恢复）</value>
+  </data>
+  <data name="button_shot_BR_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 187</value>
+  </data>
+  <data name="button_shot_BR_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_shot_BL_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 187</value>
+  </data>
+  <data name="button_shot_BL_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_shot_TR_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 159</value>
+  </data>
+  <data name="button_shot_TR_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_shot_TL_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 159</value>
+  </data>
+  <data name="button_shot_TL_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_2x2_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 122</value>
+  </data>
+  <data name="label_2x2_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="label_2x2_no.Text" xml:space="preserve">
+    <value>2x2 （不恢复）</value>
+  </data>
+  <data name="button_shot_BR_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 131</value>
+  </data>
+  <data name="button_shot_BR_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_shot_BL_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 131</value>
+  </data>
+  <data name="button_shot_BL_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_shot_TR_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 103</value>
+  </data>
+  <data name="button_shot_TR_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_shot_TL_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="button_shot_TL_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="button_shot_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 75</value>
+  </data>
+  <data name="button_shot_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_shot_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 81</value>
+  </data>
+  <data name="label_shot_never.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 13</value>
+  </data>
+  <data name="label_shot_never.Text" xml:space="preserve">
+    <value>光束砖块（永不恢复）</value>
+  </data>
+  <data name="button_shot_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_shot_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="label_shot_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="label_shot_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 13</value>
+  </data>
+  <data name="label_shot_no.Text" xml:space="preserve">
+    <value>光束砖块（不恢复）</value>
+  </data>
+  <data name="groupBox_shot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 179</value>
+  </data>
+  <data name="groupBox_shot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 217</value>
+  </data>
+  <data name="groupBox_shot.Text" xml:space="preserve">
+    <value>光束砖块</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>687, 408</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgwUCgwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAUCgwUCgwACjoACCwABhwUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUCgw
+        YHhAACjoUCgwACjosMiQsMiQYHhAUCgwUCgwAAAAAAAAAAAAAAAAAAAAAAAAUCgwsMiQABhwsMiQACjo
+        ACjosMiQ+Pj4sMiQsMiQACCwUCgwUCgwAAAAAAAAAAAAYHhAABhwcPgAcPgAcPgAYHhAACjoACCwsMiQ
+        sMiQACCwACCwICBAICBAAAAAAAAAABhwYHhAcPgA+Pj4cPgAcPgAUCgwACjoABhwACjoICBAICBAAMD4
+        ICBAAAAAAAAAABhwcPgA+Pj4+Pj4cPgAcPgAUCgwACjoICBAICBAAMD4AMD4AJDoICBAAAAAAAAAUCgw
+        cPgA+Pj4+Pj4cPgAcPgAYHhAICBAAMD4AMD4AJDoAJDoICBAAAAAAAAAAAAAUCgwYHhAcPgAYHhAcPgA
+        ICBAICBAMPj4AJDoAJDoAJDoICBAAAAAAAAAAAAAAAAAUCgwABhwYHhAICBAICBAAMD4MPj4AJDoAJDo
+        ACAwACAwICBAAAAAAAAAAAAAAAAAAAAAICBAICBAAMD4AMD4MPj4MPj4ACAwACAwACAwGGC4ICBAAAAA
+        AAAAAAAAAAAAICBAAMD4MPj4MPj4MPj4MPj4GGC4ACAwGGC4AJDoGGC4GGC4ICBAAAAAAAAAICBAAMD4
+        MPj4MPj4MPj4AJDoGGC4GGC4AMD4MPj4AMD4GGC4GGC4GGC4ICBAAAAAAAAAICBAICBAICBAICBAICBA
+        GGC4AMD4MPj4MPj4AJDoAJDoAMD4AMD4AJDoICBAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAMPj4MPj4
+        MPj4AMD4AJDoGGC4ICBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICBAICBAICBAICBAICBAICBA
+        AAAAAAAA8P8AAMB/AACAHwAAgAMAAIABAACAAQAAgAEAAIADAACABwAAgAcAAMAHAACAAwAAAAEAAIAA
+        AAD8AQAA/wMAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQKDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBQKDBQ
+        KDAaMsAaMsAAILAAILAAGHAAGHBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCw
+        yJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBgeEBgeEAaNdIaNdJQKDBQKDAAKOgAKOiwyJCwyJCwyJCwyJBgeEBgeEBQKDBQKDBQKDBQKDAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgA
+        KOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCwyJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDCwyJCwyJAAGHAAGHCwyJCwyJAAKOgAKOgAKOgAKOiwyJCwyJD4+Pj4+PiwyJCw
+        yJCwyJCwyJAAILAAILBQKDBQKDBQKDBQKDAAAAAAAAAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw
+        +ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgAKOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAg
+        IEAgIEAgIEAAAAAAAAAAAAAAAABPbkVPbkUAGHAAGHBw+ABw+ABw+ABw+ABw+ABw+ABgeEBgeEAAKOgA
+        KOgAILAAILCwyJCwyJCwyJCwyJAAILAAILAAILAAILAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAGHAA
+        GHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBjeVdjeVdw+ABw+AD4+Pj4+Phw+ABw
+        +ABw+ABw+ABQKDBQKDAAKOgAKOgAGHAAGHAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPggIEAgIEAAAAAA
+        AAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAg
+        IEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAGHAAGHBw+ABw+AD4+Pj4
+        +Pj4+Pj4+Phw+ABw+ABw+ABw+ABQKDBQKDAAKOgAKOggIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOggIEAgIEAAAAAAAAAAAAAAAABQKDBQKDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBg
+        eEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQ
+        KDBw+ABw+AD4+Pj4+Pj4+Pj4+Phw+ABw+ABw+ABw+ABgeEBgeEAgIEAgIEAAwPgAwPgAwPgAwPgAkOgA
+        kOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw
+        +AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgAkOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAABQKDBQKDBgeEBgeEBw+ABw+ABgeEBgeEBw+ABw+AAgIEAgIEAgIEAgIEAw+Pgw+PgAkOgA
+        kOgAkOgAkOgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBg
+        eEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw+PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAABQKDBQKDAAGHAAGHBgeEBgeEAgIEAgIEAgIEAgIEAAwPgAwPgw+Pgw
+        +PgAkOgAkOgAkOgAkOgAIDAAIDAAIDAAIDAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgAwPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAAwPgAwPgAwPgA
+        wPgw+Pgw+Pgw+Pgw+PgAIDAAIDAAIDAAIDAAIDAAIDAYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgY
+        YLgAkOgAkOgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw
+        +Pgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgYYLgYYLgAIDAAIDAYYLgYYLgAkOgAkOgYYLgYYLgYYLgYYLggIEAg
+        IEAAAAAAAAAAAAAAAAAgIEAgIEAAwPgAwPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgY
+        YLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgYYLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAgIEAgIEAAwPgA
+        wPgw+Pgw+Pgw+Pgw+Pgw+Pgw+PgAkOgAkOgYYLgYYLgYYLgYYLgAwPgAwPgw+Pgw+PgAwPgAwPgYYLgY
+        YLgYYLgYYLgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw+PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAg
+        IEAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAYYLgYYLgAwPgAwPgw+Pgw+Pgw+Pgw
+        +PgAkOgAkOgAkOgAkOgCreoCreoAwPgAwPgAkOgAkOggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgY
+        YLggIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAg
+        IEAw+Pgw+Pgw+Pgw+Pgw+Pgw+PgDru4Dru4AkOgAkOgYYLgYYLggIEAgIEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAg
+        IEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAgIEAAAAAAAAAAAAAA
+        AAD/AP///wD///AAP//wAD//wAAD/8AAA//AAAAPwAAAD8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AA/AAAAPwAAAP8AAAD/AAAA/wAAAP/AAAD/wAAA/wAAAD8AAAA8AAAADAAAAA8AAAADAAAAA//AAA//w
+        AAP//wAP//8ADw==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>砖块属性快捷面板</value>
+  </data>
+</root>

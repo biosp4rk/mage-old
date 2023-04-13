@@ -74,244 +74,196 @@
             // 
             // label_area
             // 
-            this.label_area.AutoSize = true;
-            this.label_area.Location = new System.Drawing.Point(6, 23);
+            resources.ApplyResources(this.label_area, "label_area");
             this.label_area.Name = "label_area";
-            this.label_area.Size = new System.Drawing.Size(32, 13);
-            this.label_area.TabIndex = 0;
-            this.label_area.Text = "Area:";
+            this.toolTip_bgColor.SetToolTip(this.label_area, resources.GetString("label_area.ToolTip"));
             // 
             // comboBox_area
             // 
+            resources.ApplyResources(this.comboBox_area, "comboBox_area");
             this.comboBox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_area.FormattingEnabled = true;
-            this.comboBox_area.Location = new System.Drawing.Point(45, 20);
             this.comboBox_area.Name = "comboBox_area";
-            this.comboBox_area.Size = new System.Drawing.Size(85, 21);
-            this.comboBox_area.TabIndex = 0;
+            this.toolTip_bgColor.SetToolTip(this.comboBox_area, resources.GetString("comboBox_area.ToolTip"));
             this.comboBox_area.SelectedIndexChanged += new System.EventHandler(this.comboBox_area_SelectedIndexChanged);
             // 
             // comboBox_view
             // 
+            resources.ApplyResources(this.comboBox_view, "comboBox_view");
             this.comboBox_view.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_view.FormattingEnabled = true;
             this.comboBox_view.Items.AddRange(new object[] {
-            "Explored",
-            "Downloaded"});
-            this.comboBox_view.Location = new System.Drawing.Point(45, 51);
+            resources.GetString("comboBox_view.Items"),
+            resources.GetString("comboBox_view.Items1")});
             this.comboBox_view.Name = "comboBox_view";
-            this.comboBox_view.Size = new System.Drawing.Size(85, 21);
-            this.comboBox_view.TabIndex = 1;
+            this.toolTip_bgColor.SetToolTip(this.comboBox_view, resources.GetString("comboBox_view.ToolTip"));
             this.comboBox_view.SelectedIndexChanged += new System.EventHandler(this.comboBox_view_SelectedIndexChanged);
             // 
             // label_view
             // 
-            this.label_view.AutoSize = true;
-            this.label_view.Location = new System.Drawing.Point(6, 54);
+            resources.ApplyResources(this.label_view, "label_view");
             this.label_view.Name = "label_view";
-            this.label_view.Size = new System.Drawing.Size(33, 13);
-            this.label_view.TabIndex = 0;
-            this.label_view.Text = "View:";
+            this.toolTip_bgColor.SetToolTip(this.label_view, resources.GetString("label_view.ToolTip"));
             // 
             // label_palette
             // 
-            this.label_palette.AutoSize = true;
-            this.label_palette.Location = new System.Drawing.Point(6, 22);
+            resources.ApplyResources(this.label_palette, "label_palette");
             this.label_palette.Name = "label_palette";
-            this.label_palette.Size = new System.Drawing.Size(43, 13);
-            this.label_palette.TabIndex = 0;
-            this.label_palette.Text = "Palette:";
+            this.toolTip_bgColor.SetToolTip(this.label_palette, resources.GetString("label_palette.ToolTip"));
             // 
             // comboBox_palette
             // 
+            resources.ApplyResources(this.comboBox_palette, "comboBox_palette");
             this.comboBox_palette.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_palette.FormattingEnabled = true;
             this.comboBox_palette.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2"});
-            this.comboBox_palette.Location = new System.Drawing.Point(55, 19);
+            resources.GetString("comboBox_palette.Items"),
+            resources.GetString("comboBox_palette.Items1"),
+            resources.GetString("comboBox_palette.Items2")});
             this.comboBox_palette.Name = "comboBox_palette";
-            this.comboBox_palette.Size = new System.Drawing.Size(40, 21);
-            this.comboBox_palette.TabIndex = 2;
+            this.toolTip_bgColor.SetToolTip(this.comboBox_palette, resources.GetString("comboBox_palette.ToolTip"));
             this.comboBox_palette.SelectedIndexChanged += new System.EventHandler(this.comboBox_palette_SelectedIndexChanged);
             // 
             // comboBox_type
             // 
+            resources.ApplyResources(this.comboBox_type, "comboBox_type");
             this.comboBox_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_type.FormattingEnabled = true;
-            this.comboBox_type.Location = new System.Drawing.Point(43, 61);
             this.comboBox_type.Name = "comboBox_type";
-            this.comboBox_type.Size = new System.Drawing.Size(106, 21);
-            this.comboBox_type.TabIndex = 2;
+            this.toolTip_bgColor.SetToolTip(this.comboBox_type, resources.GetString("comboBox_type.ToolTip"));
             this.comboBox_type.SelectedIndexChanged += new System.EventHandler(this.SelectedSquareChanged);
             // 
             // label_type
             // 
-            this.label_type.AutoSize = true;
-            this.label_type.Location = new System.Drawing.Point(3, 64);
+            resources.ApplyResources(this.label_type, "label_type");
             this.label_type.Name = "label_type";
-            this.label_type.Size = new System.Drawing.Size(34, 13);
-            this.label_type.TabIndex = 0;
-            this.label_type.Text = "Type:";
+            this.toolTip_bgColor.SetToolTip(this.label_type, resources.GetString("label_type.ToolTip"));
             // 
             // checkBox_xflip
             // 
-            this.checkBox_xflip.AutoSize = true;
-            this.checkBox_xflip.Location = new System.Drawing.Point(88, 17);
+            resources.ApplyResources(this.checkBox_xflip, "checkBox_xflip");
             this.checkBox_xflip.Name = "checkBox_xflip";
-            this.checkBox_xflip.Size = new System.Drawing.Size(49, 17);
-            this.checkBox_xflip.TabIndex = 0;
-            this.checkBox_xflip.Text = "X flip";
+            this.toolTip_bgColor.SetToolTip(this.checkBox_xflip, resources.GetString("checkBox_xflip.ToolTip"));
             this.checkBox_xflip.UseVisualStyleBackColor = true;
             this.checkBox_xflip.CheckedChanged += new System.EventHandler(this.SelectedSquareChanged);
             // 
             // checkBox_yflip
             // 
-            this.checkBox_yflip.AutoSize = true;
-            this.checkBox_yflip.Location = new System.Drawing.Point(88, 38);
+            resources.ApplyResources(this.checkBox_yflip, "checkBox_yflip");
             this.checkBox_yflip.Name = "checkBox_yflip";
-            this.checkBox_yflip.Size = new System.Drawing.Size(49, 17);
-            this.checkBox_yflip.TabIndex = 1;
-            this.checkBox_yflip.Text = "Y flip";
+            this.toolTip_bgColor.SetToolTip(this.checkBox_yflip, resources.GetString("checkBox_yflip.ToolTip"));
             this.checkBox_yflip.UseVisualStyleBackColor = true;
             this.checkBox_yflip.CheckedChanged += new System.EventHandler(this.SelectedSquareChanged);
             // 
             // button_apply
             // 
-            this.button_apply.Enabled = false;
-            this.button_apply.Location = new System.Drawing.Point(755, 107);
+            resources.ApplyResources(this.button_apply, "button_apply");
             this.button_apply.Name = "button_apply";
-            this.button_apply.Size = new System.Drawing.Size(75, 23);
-            this.button_apply.TabIndex = 4;
-            this.button_apply.Text = "Apply";
+            this.toolTip_bgColor.SetToolTip(this.button_apply, resources.GetString("button_apply.ToolTip"));
             this.button_apply.UseVisualStyleBackColor = true;
             this.button_apply.Click += new System.EventHandler(this.button_apply_Click);
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(755, 136);
+            resources.ApplyResources(this.button_close, "button_close");
             this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(75, 23);
-            this.button_close.TabIndex = 5;
-            this.button_close.Text = "Close";
+            this.toolTip_bgColor.SetToolTip(this.button_close, resources.GetString("button_close.ToolTip"));
             this.button_close.UseVisualStyleBackColor = true;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
             // label_selSquare
             // 
-            this.label_selSquare.AutoSize = true;
-            this.label_selSquare.Location = new System.Drawing.Point(46, 28);
+            resources.ApplyResources(this.label_selSquare, "label_selSquare");
             this.label_selSquare.Name = "label_selSquare";
-            this.label_selSquare.Size = new System.Drawing.Size(13, 13);
-            this.label_selSquare.TabIndex = 0;
-            this.label_selSquare.Text = "0";
+            this.toolTip_bgColor.SetToolTip(this.label_selSquare, resources.GetString("label_selSquare.ToolTip"));
             // 
             // groupBox_map
             // 
+            resources.ApplyResources(this.groupBox_map, "groupBox_map");
             this.groupBox_map.Controls.Add(this.comboBox_area);
             this.groupBox_map.Controls.Add(this.label_area);
-            this.groupBox_map.Controls.Add(this.label_view);
             this.groupBox_map.Controls.Add(this.comboBox_view);
-            this.groupBox_map.Location = new System.Drawing.Point(530, 12);
+            this.groupBox_map.Controls.Add(this.label_view);
             this.groupBox_map.Name = "groupBox_map";
-            this.groupBox_map.Size = new System.Drawing.Size(137, 89);
-            this.groupBox_map.TabIndex = 0;
             this.groupBox_map.TabStop = false;
-            this.groupBox_map.Text = "Map";
+            this.toolTip_bgColor.SetToolTip(this.groupBox_map, resources.GetString("groupBox_map.ToolTip"));
             // 
             // groupBox_selection
             // 
+            resources.ApplyResources(this.groupBox_selection, "groupBox_selection");
             this.groupBox_selection.Controls.Add(this.label_selSquare);
             this.groupBox_selection.Controls.Add(this.panel_black);
             this.groupBox_selection.Controls.Add(this.comboBox_type);
             this.groupBox_selection.Controls.Add(this.label_type);
             this.groupBox_selection.Controls.Add(this.checkBox_yflip);
             this.groupBox_selection.Controls.Add(this.checkBox_xflip);
-            this.groupBox_selection.Location = new System.Drawing.Point(673, 12);
             this.groupBox_selection.Name = "groupBox_selection";
-            this.groupBox_selection.Size = new System.Drawing.Size(156, 89);
-            this.groupBox_selection.TabIndex = 1;
             this.groupBox_selection.TabStop = false;
-            this.groupBox_selection.Text = "Selection";
+            this.toolTip_bgColor.SetToolTip(this.groupBox_selection, resources.GetString("groupBox_selection.ToolTip"));
             // 
             // panel_black
             // 
+            resources.ApplyResources(this.panel_black, "panel_black");
             this.panel_black.BackColor = System.Drawing.Color.Black;
             this.panel_black.Controls.Add(this.gfxView_sel);
-            this.panel_black.Location = new System.Drawing.Point(6, 18);
             this.panel_black.Name = "panel_black";
-            this.panel_black.Size = new System.Drawing.Size(34, 34);
-            this.panel_black.TabIndex = 4;
+            this.toolTip_bgColor.SetToolTip(this.panel_black, resources.GetString("panel_black.ToolTip"));
             // 
             // gfxView_sel
             // 
+            resources.ApplyResources(this.gfxView_sel, "gfxView_sel");
             this.gfxView_sel.BackColor = System.Drawing.SystemColors.Control;
-            this.gfxView_sel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gfxView_sel.Location = new System.Drawing.Point(1, 1);
             this.gfxView_sel.Name = "gfxView_sel";
-            this.gfxView_sel.Size = new System.Drawing.Size(32, 32);
-            this.gfxView_sel.TabIndex = 3;
             this.gfxView_sel.TabStop = false;
+            this.toolTip_bgColor.SetToolTip(this.gfxView_sel, resources.GetString("gfxView_sel.ToolTip"));
             // 
             // button_editGFX
             // 
-            this.button_editGFX.Location = new System.Drawing.Point(109, 18);
+            resources.ApplyResources(this.button_editGFX, "button_editGFX");
             this.button_editGFX.Name = "button_editGFX";
-            this.button_editGFX.Size = new System.Drawing.Size(70, 23);
-            this.button_editGFX.TabIndex = 3;
-            this.button_editGFX.Text = "Edit GFX";
+            this.toolTip_bgColor.SetToolTip(this.button_editGFX, resources.GetString("button_editGFX.ToolTip"));
             this.button_editGFX.UseVisualStyleBackColor = true;
             this.button_editGFX.Click += new System.EventHandler(this.button_editGFX_Click);
             // 
             // panel_squares
             // 
-            this.panel_squares.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_squares.AutoScroll = true;
+            resources.ApplyResources(this.panel_squares, "panel_squares");
             this.panel_squares.Controls.Add(this.gfxView_squares);
-            this.panel_squares.Location = new System.Drawing.Point(530, 165);
             this.panel_squares.Name = "panel_squares";
-            this.panel_squares.Size = new System.Drawing.Size(301, 301);
-            this.panel_squares.TabIndex = 8;
+            this.toolTip_bgColor.SetToolTip(this.panel_squares, resources.GetString("panel_squares.ToolTip"));
             // 
             // gfxView_squares
             // 
-            this.gfxView_squares.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gfxView_squares.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.gfxView_squares, "gfxView_squares");
             this.gfxView_squares.Name = "gfxView_squares";
-            this.gfxView_squares.Size = new System.Drawing.Size(284, 284);
-            this.gfxView_squares.TabIndex = 7;
             this.gfxView_squares.TabStop = false;
+            this.toolTip_bgColor.SetToolTip(this.gfxView_squares, resources.GetString("gfxView_squares.ToolTip"));
             this.gfxView_squares.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gfxView_squares_MouseDown);
             this.gfxView_squares.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gfxView_squares_MouseMove);
             // 
             // groupBox_tiles
             // 
+            resources.ApplyResources(this.groupBox_tiles, "groupBox_tiles");
             this.groupBox_tiles.Controls.Add(this.button_bgColor);
             this.groupBox_tiles.Controls.Add(this.button_editGFX);
             this.groupBox_tiles.Controls.Add(this.comboBox_palette);
             this.groupBox_tiles.Controls.Add(this.label_palette);
-            this.groupBox_tiles.Location = new System.Drawing.Point(530, 107);
             this.groupBox_tiles.Name = "groupBox_tiles";
-            this.groupBox_tiles.Size = new System.Drawing.Size(214, 51);
-            this.groupBox_tiles.TabIndex = 9;
             this.groupBox_tiles.TabStop = false;
-            this.groupBox_tiles.Text = "Tiles";
+            this.toolTip_bgColor.SetToolTip(this.groupBox_tiles, resources.GetString("groupBox_tiles.ToolTip"));
             // 
             // button_bgColor
             // 
+            resources.ApplyResources(this.button_bgColor, "button_bgColor");
             this.button_bgColor.Image = global::mage.Properties.Resources.button_bg_color;
-            this.button_bgColor.Location = new System.Drawing.Point(185, 18);
             this.button_bgColor.Name = "button_bgColor";
-            this.button_bgColor.Size = new System.Drawing.Size(23, 23);
-            this.button_bgColor.TabIndex = 4;
-            this.toolTip_bgColor.SetToolTip(this.button_bgColor, "Change background color");
+            this.toolTip_bgColor.SetToolTip(this.button_bgColor, resources.GetString("button_bgColor.ToolTip"));
             this.button_bgColor.UseVisualStyleBackColor = false;
             this.button_bgColor.Click += new System.EventHandler(this.button_bgColor_Click);
             // 
             // statusStrip
             // 
+            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel_coor,
             this.statusLabel_tile,
@@ -319,100 +271,82 @@
             this.statusStrip_spring,
             this.statusStrip_import,
             this.statusStrip_export});
-            this.statusStrip.Location = new System.Drawing.Point(0, 531);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(841, 24);
-            this.statusStrip.TabIndex = 11;
-            this.statusStrip.Text = "statusStrip1";
+            this.toolTip_bgColor.SetToolTip(this.statusStrip, resources.GetString("statusStrip.ToolTip"));
             // 
             // statusLabel_coor
             // 
-            this.statusLabel_coor.AutoSize = false;
+            resources.ApplyResources(this.statusLabel_coor, "statusLabel_coor");
             this.statusLabel_coor.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
             this.statusLabel_coor.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.statusLabel_coor.Name = "statusLabel_coor";
-            this.statusLabel_coor.Size = new System.Drawing.Size(70, 19);
-            this.statusLabel_coor.Text = "(0, 0)";
-            this.statusLabel_coor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // statusLabel_tile
             // 
-            this.statusLabel_tile.AutoSize = false;
+            resources.ApplyResources(this.statusLabel_tile, "statusLabel_tile");
             this.statusLabel_tile.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
             this.statusLabel_tile.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.statusLabel_tile.Name = "statusLabel_tile";
-            this.statusLabel_tile.Size = new System.Drawing.Size(70, 19);
-            this.statusLabel_tile.Text = "Tile:";
-            this.statusLabel_tile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // statusLabel_changes
             // 
+            resources.ApplyResources(this.statusLabel_changes, "statusLabel_changes");
             this.statusLabel_changes.Name = "statusLabel_changes";
-            this.statusLabel_changes.Size = new System.Drawing.Size(12, 19);
-            this.statusLabel_changes.Text = "-";
             // 
             // statusStrip_spring
             // 
+            resources.ApplyResources(this.statusStrip_spring, "statusStrip_spring");
             this.statusStrip_spring.Name = "statusStrip_spring";
-            this.statusStrip_spring.Size = new System.Drawing.Size(565, 19);
             this.statusStrip_spring.Spring = true;
             // 
             // statusStrip_import
             // 
+            resources.ApplyResources(this.statusStrip_import, "statusStrip_import");
             this.statusStrip_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.statusStrip_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusStrip_importRaw});
             this.statusStrip_import.Name = "statusStrip_import";
-            this.statusStrip_import.Size = new System.Drawing.Size(56, 22);
-            this.statusStrip_import.Text = "Import";
             // 
             // statusStrip_importRaw
             // 
+            resources.ApplyResources(this.statusStrip_importRaw, "statusStrip_importRaw");
             this.statusStrip_importRaw.Name = "statusStrip_importRaw";
-            this.statusStrip_importRaw.Size = new System.Drawing.Size(105, 22);
-            this.statusStrip_importRaw.Text = "Raw...";
             this.statusStrip_importRaw.Click += new System.EventHandler(this.statusStrip_importRaw_Click);
             // 
             // statusStrip_export
             // 
+            resources.ApplyResources(this.statusStrip_export, "statusStrip_export");
             this.statusStrip_export.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.statusStrip_export.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusStrip_exportRaw,
             this.statusStrip_exportImage});
             this.statusStrip_export.Name = "statusStrip_export";
-            this.statusStrip_export.Size = new System.Drawing.Size(53, 22);
-            this.statusStrip_export.Text = "Export";
             // 
             // statusStrip_exportRaw
             // 
+            resources.ApplyResources(this.statusStrip_exportRaw, "statusStrip_exportRaw");
             this.statusStrip_exportRaw.Name = "statusStrip_exportRaw";
-            this.statusStrip_exportRaw.Size = new System.Drawing.Size(116, 22);
-            this.statusStrip_exportRaw.Text = "Raw...";
             this.statusStrip_exportRaw.Click += new System.EventHandler(this.statusStrip_exportRaw_Click);
             // 
             // statusStrip_exportImage
             // 
+            resources.ApplyResources(this.statusStrip_exportImage, "statusStrip_exportImage");
             this.statusStrip_exportImage.Name = "statusStrip_exportImage";
-            this.statusStrip_exportImage.Size = new System.Drawing.Size(116, 22);
-            this.statusStrip_exportImage.Text = "Image...";
             this.statusStrip_exportImage.Click += new System.EventHandler(this.statusStrip_exportImage_Click);
             // 
             // gfxView_map
             // 
-            this.gfxView_map.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gfxView_map.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.gfxView_map, "gfxView_map");
             this.gfxView_map.Name = "gfxView_map";
-            this.gfxView_map.Size = new System.Drawing.Size(512, 512);
-            this.gfxView_map.TabIndex = 6;
             this.gfxView_map.TabStop = false;
+            this.toolTip_bgColor.SetToolTip(this.gfxView_map, resources.GetString("gfxView_map.ToolTip"));
             this.gfxView_map.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gfxView_map_MouseDown);
             this.gfxView_map.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gfxView_map_MouseMove);
             // 
             // FormMinimap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 555);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox_tiles);
             this.Controls.Add(this.panel_squares);
@@ -421,11 +355,9 @@
             this.Controls.Add(this.groupBox_map);
             this.Controls.Add(this.button_close);
             this.Controls.Add(this.button_apply);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.MinimumSize = new System.Drawing.Size(857, 594);
             this.Name = "FormMinimap";
-            this.Text = "Minimap Editor";
+            this.toolTip_bgColor.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormMinimap_KeyDown);
             this.groupBox_map.ResumeLayout(false);
             this.groupBox_map.PerformLayout();

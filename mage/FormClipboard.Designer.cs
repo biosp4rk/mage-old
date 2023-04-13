@@ -37,33 +37,22 @@
             // 
             // pictureBox_clipboard
             // 
-            this.pictureBox_clipboard.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.pictureBox_clipboard, "pictureBox_clipboard");
             this.pictureBox_clipboard.Name = "pictureBox_clipboard";
-            this.pictureBox_clipboard.Size = new System.Drawing.Size(256, 256);
-            this.pictureBox_clipboard.TabIndex = 0;
             this.pictureBox_clipboard.TabStop = false;
             // 
             // panel_clipboard
             // 
-            this.panel_clipboard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_clipboard.AutoScroll = true;
+            resources.ApplyResources(this.panel_clipboard, "panel_clipboard");
             this.panel_clipboard.Controls.Add(this.pictureBox_clipboard);
-            this.panel_clipboard.Location = new System.Drawing.Point(12, 12);
             this.panel_clipboard.Name = "panel_clipboard";
-            this.panel_clipboard.Size = new System.Drawing.Size(273, 273);
-            this.panel_clipboard.TabIndex = 1;
             // 
             // FormClipboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(297, 297);
             this.Controls.Add(this.panel_clipboard);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormClipboard";
-            this.Text = "Clipboard";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_clipboard)).EndInit();
             this.panel_clipboard.ResumeLayout(false);
             this.ResumeLayout(false);

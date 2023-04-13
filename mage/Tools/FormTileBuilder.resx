@@ -112,12 +112,359 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>306, 239</value>
+  </data>
+  <data name="panel_black.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 76</value>
+  </data>
+  <data name="label_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gfxView_curr.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
+    <value>button_apply</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TL.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="checkBox_BL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 129</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gfxView_curr.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="comboBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 179</value>
+  </data>
+  <data name="gfxView_curr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="comboBox_L.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="&gt;&gt;panel_black.Name" xml:space="preserve">
+    <value>panel_black</value>
+  </data>
+  <data name="&gt;&gt;comboBox_T.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;panel_black.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_R.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 78</value>
+  </data>
+  <data name="gfxView_tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 52</value>
+  </data>
+  <data name="&gt;&gt;comboBox_B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_TL.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_black2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_R.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_black.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="comboBox_B.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;comboBox_T.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_BL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_R.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="comboBox_R.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Name" xml:space="preserve">
+    <value>comboBox_palette</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_tile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_BL.Text" xml:space="preserve">
+    <value>Corner</value>
+  </data>
+  <data name="gfxView_tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 74</value>
+  </data>
+  <data name="&gt;&gt;comboBox_L.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="comboBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_L.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gfxView_curr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="label_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 164</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_B.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label_tile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel_black2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 24</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormTileBuilder</value>
+  </data>
+  <data name="checkBox_BR.Text" xml:space="preserve">
+    <value>Corner</value>
+  </data>
+  <data name="comboBox_B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 149</value>
+  </data>
+  <data name="comboBox_center.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="numericUpDown_tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 179</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="checkBox_BR.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Minimap Tile Builder</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_B.Name" xml:space="preserve">
+    <value>comboBox_B</value>
+  </data>
+  <data name="&gt;&gt;comboBox_L.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_L.Name" xml:space="preserve">
+    <value>comboBox_L</value>
+  </data>
+  <data name="&gt;&gt;comboBox_center.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BR.Name" xml:space="preserve">
+    <value>checkBox_BR</value>
+  </data>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 207</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_tile.Name" xml:space="preserve">
+    <value>numericUpDown_tile</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_tile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gfxView_curr.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox_TR.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_tile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_tile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_tile.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TL.Name" xml:space="preserve">
+    <value>checkBox_TL</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_tile.Name" xml:space="preserve">
+    <value>label_tile</value>
+  </data>
+  <data name="&gt;&gt;comboBox_T.Name" xml:space="preserve">
+    <value>comboBox_T</value>
+  </data>
+  <data name="panel_black2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 204</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TR.Name" xml:space="preserve">
+    <value>checkBox_TR</value>
+  </data>
+  <data name="checkBox_BL.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_TL.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="checkBox_TL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_TR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 34</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkBox_TR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="gfxView_tile.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="checkBox_TL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.Name" xml:space="preserve">
+    <value>gfxView_tile</value>
+  </data>
+  <data name="&gt;&gt;comboBox_center.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gfxView_tile.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="comboBox_T.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 11</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 207</value>
+  </data>
+  <data name="&gt;&gt;comboBox_T.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;gfxView_curr.Name" xml:space="preserve">
+    <value>gfxView_curr</value>
+  </data>
+  <data name="comboBox_B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BR.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="button_apply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="comboBox_L.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox_TL.Text" xml:space="preserve">
+    <value>Corner</value>
+  </data>
+  <data name="&gt;&gt;gfxView_curr.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="comboBox_T.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_tile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_center.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_tile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TR.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox_L.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 78</value>
+  </data>
+  <data name="label_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BL.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_R.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_center.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -192,4 +539,133 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="checkBox_TR.Text" xml:space="preserve">
+    <value>Corner</value>
+  </data>
+  <data name="comboBox_T.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_black2.Name" xml:space="preserve">
+    <value>panel_black2</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BL.Name" xml:space="preserve">
+    <value>checkBox_BL</value>
+  </data>
+  <data name="checkBox_TR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_BL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="checkBox_BR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 129</value>
+  </data>
+  <data name="label_tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 164</value>
+  </data>
+  <data name="&gt;&gt;gfxView_curr.Parent" xml:space="preserve">
+    <value>panel_black2</value>
+  </data>
+  <data name="&gt;&gt;panel_black2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel_black.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="checkBox_BR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;checkBox_TL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_TL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 34</value>
+  </data>
+  <data name="&gt;&gt;gfxView_tile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_palette.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="panel_black.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 51</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_center.Name" xml:space="preserve">
+    <value>comboBox_center</value>
+  </data>
+  <data name="label_tile.Text" xml:space="preserve">
+    <value>Tile:</value>
+  </data>
+  <data name="panel_black2.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="numericUpDown_tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_black.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBox_center.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 179</value>
+  </data>
+  <data name="checkBox_BR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_palette.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel_black2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_BL.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="numericUpDown_tile.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Name" xml:space="preserve">
+    <value>label_palette</value>
+  </data>
+  <data name="label_palette.Text" xml:space="preserve">
+    <value>Palette:</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_R.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_R.Name" xml:space="preserve">
+    <value>comboBox_R</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

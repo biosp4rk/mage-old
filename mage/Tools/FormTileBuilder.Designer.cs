@@ -46,206 +46,149 @@
             this.numericUpDown_tile = new System.Windows.Forms.NumericUpDown();
             this.label_tile = new System.Windows.Forms.Label();
             this.panel_black2 = new System.Windows.Forms.Panel();
-            this.gfxView_tile = new mage.GfxView();
             this.gfxView_curr = new mage.GfxView();
+            this.gfxView_tile = new mage.GfxView();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_tile)).BeginInit();
             this.panel_black2.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox_TL
             // 
-            this.checkBox_TL.AutoSize = true;
-            this.checkBox_TL.Location = new System.Drawing.Point(52, 37);
+            resources.ApplyResources(this.checkBox_TL, "checkBox_TL");
             this.checkBox_TL.Name = "checkBox_TL";
-            this.checkBox_TL.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox_TL.Size = new System.Drawing.Size(57, 17);
-            this.checkBox_TL.TabIndex = 0;
-            this.checkBox_TL.Text = "Corner";
             this.checkBox_TL.UseVisualStyleBackColor = true;
             this.checkBox_TL.CheckedChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // checkBox_TR
             // 
-            this.checkBox_TR.AutoSize = true;
-            this.checkBox_TR.Location = new System.Drawing.Point(198, 37);
+            resources.ApplyResources(this.checkBox_TR, "checkBox_TR");
             this.checkBox_TR.Name = "checkBox_TR";
-            this.checkBox_TR.Size = new System.Drawing.Size(57, 17);
-            this.checkBox_TR.TabIndex = 1;
-            this.checkBox_TR.Text = "Corner";
             this.checkBox_TR.UseVisualStyleBackColor = true;
             this.checkBox_TR.CheckedChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // checkBox_BL
             // 
-            this.checkBox_BL.AutoSize = true;
-            this.checkBox_BL.Location = new System.Drawing.Point(52, 140);
+            resources.ApplyResources(this.checkBox_BL, "checkBox_BL");
             this.checkBox_BL.Name = "checkBox_BL";
-            this.checkBox_BL.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox_BL.Size = new System.Drawing.Size(57, 17);
-            this.checkBox_BL.TabIndex = 2;
-            this.checkBox_BL.Text = "Corner";
             this.checkBox_BL.UseVisualStyleBackColor = true;
             this.checkBox_BL.CheckedChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // checkBox_BR
             // 
-            this.checkBox_BR.AutoSize = true;
-            this.checkBox_BR.Location = new System.Drawing.Point(198, 140);
+            resources.ApplyResources(this.checkBox_BR, "checkBox_BR");
             this.checkBox_BR.Name = "checkBox_BR";
-            this.checkBox_BR.Size = new System.Drawing.Size(57, 17);
-            this.checkBox_BR.TabIndex = 3;
-            this.checkBox_BR.Text = "Corner";
             this.checkBox_BR.UseVisualStyleBackColor = true;
             this.checkBox_BR.CheckedChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // comboBox_T
             // 
+            resources.ApplyResources(this.comboBox_T, "comboBox_T");
             this.comboBox_T.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_T.FormattingEnabled = true;
-            this.comboBox_T.Location = new System.Drawing.Point(112, 12);
             this.comboBox_T.Name = "comboBox_T";
-            this.comboBox_T.Size = new System.Drawing.Size(82, 21);
-            this.comboBox_T.TabIndex = 5;
             this.comboBox_T.SelectedIndexChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // comboBox_L
             // 
+            resources.ApplyResources(this.comboBox_L, "comboBox_L");
             this.comboBox_L.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_L.FormattingEnabled = true;
-            this.comboBox_L.Location = new System.Drawing.Point(12, 84);
             this.comboBox_L.Name = "comboBox_L";
-            this.comboBox_L.Size = new System.Drawing.Size(92, 21);
-            this.comboBox_L.TabIndex = 6;
             this.comboBox_L.SelectedIndexChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // comboBox_R
             // 
+            resources.ApplyResources(this.comboBox_R, "comboBox_R");
             this.comboBox_R.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_R.FormattingEnabled = true;
-            this.comboBox_R.Location = new System.Drawing.Point(202, 84);
             this.comboBox_R.Name = "comboBox_R";
-            this.comboBox_R.Size = new System.Drawing.Size(92, 21);
-            this.comboBox_R.TabIndex = 7;
             this.comboBox_R.SelectedIndexChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // comboBox_B
             // 
+            resources.ApplyResources(this.comboBox_B, "comboBox_B");
             this.comboBox_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_B.FormattingEnabled = true;
-            this.comboBox_B.Location = new System.Drawing.Point(112, 161);
             this.comboBox_B.Name = "comboBox_B";
-            this.comboBox_B.Size = new System.Drawing.Size(82, 21);
-            this.comboBox_B.TabIndex = 8;
             this.comboBox_B.SelectedIndexChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // comboBox_center
             // 
+            resources.ApplyResources(this.comboBox_center, "comboBox_center");
             this.comboBox_center.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_center.FormattingEnabled = true;
-            this.comboBox_center.Location = new System.Drawing.Point(100, 194);
             this.comboBox_center.Name = "comboBox_center";
-            this.comboBox_center.Size = new System.Drawing.Size(106, 21);
-            this.comboBox_center.TabIndex = 9;
             this.comboBox_center.SelectedIndexChanged += new System.EventHandler(this.control_ValueChanged);
             // 
             // panel_black
             // 
+            resources.ApplyResources(this.panel_black, "panel_black");
             this.panel_black.BackColor = System.Drawing.Color.Black;
-            this.panel_black.Location = new System.Drawing.Point(112, 55);
             this.panel_black.Name = "panel_black";
-            this.panel_black.Size = new System.Drawing.Size(82, 82);
-            this.panel_black.TabIndex = 11;
             // 
             // comboBox_palette
             // 
+            resources.ApplyResources(this.comboBox_palette, "comboBox_palette");
             this.comboBox_palette.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_palette.FormattingEnabled = true;
-            this.comboBox_palette.Location = new System.Drawing.Point(248, 194);
             this.comboBox_palette.Name = "comboBox_palette";
-            this.comboBox_palette.Size = new System.Drawing.Size(45, 21);
-            this.comboBox_palette.TabIndex = 12;
             this.comboBox_palette.SelectedIndexChanged += new System.EventHandler(this.comboBox_palette_SelectedIndexChanged);
             // 
             // label_palette
             // 
-            this.label_palette.AutoSize = true;
-            this.label_palette.Location = new System.Drawing.Point(245, 178);
+            resources.ApplyResources(this.label_palette, "label_palette");
             this.label_palette.Name = "label_palette";
-            this.label_palette.Size = new System.Drawing.Size(43, 13);
-            this.label_palette.TabIndex = 13;
-            this.label_palette.Text = "Palette:";
             // 
             // button_apply
             // 
-            this.button_apply.Location = new System.Drawing.Point(138, 224);
+            resources.ApplyResources(this.button_apply, "button_apply");
             this.button_apply.Name = "button_apply";
-            this.button_apply.Size = new System.Drawing.Size(75, 23);
-            this.button_apply.TabIndex = 14;
-            this.button_apply.Text = "Apply";
             this.button_apply.UseVisualStyleBackColor = true;
             this.button_apply.Click += new System.EventHandler(this.button_apply_Click);
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(219, 224);
+            resources.ApplyResources(this.button_close, "button_close");
             this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(75, 23);
-            this.button_close.TabIndex = 15;
-            this.button_close.Text = "Close";
             this.button_close.UseVisualStyleBackColor = true;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
             // numericUpDown_tile
             // 
+            resources.ApplyResources(this.numericUpDown_tile, "numericUpDown_tile");
             this.numericUpDown_tile.Hexadecimal = true;
-            this.numericUpDown_tile.Location = new System.Drawing.Point(12, 194);
             this.numericUpDown_tile.Name = "numericUpDown_tile";
-            this.numericUpDown_tile.Size = new System.Drawing.Size(45, 20);
-            this.numericUpDown_tile.TabIndex = 16;
             this.numericUpDown_tile.ValueChanged += new System.EventHandler(this.numericUpDown_tile_ValueChanged);
             // 
             // label_tile
             // 
-            this.label_tile.AutoSize = true;
-            this.label_tile.Location = new System.Drawing.Point(9, 178);
+            resources.ApplyResources(this.label_tile, "label_tile");
             this.label_tile.Name = "label_tile";
-            this.label_tile.Size = new System.Drawing.Size(27, 13);
-            this.label_tile.TabIndex = 17;
-            this.label_tile.Text = "Tile:";
             // 
             // panel_black2
             // 
+            resources.ApplyResources(this.panel_black2, "panel_black2");
             this.panel_black2.BackColor = System.Drawing.Color.Black;
             this.panel_black2.Controls.Add(this.gfxView_curr);
-            this.panel_black2.Location = new System.Drawing.Point(12, 221);
             this.panel_black2.Name = "panel_black2";
-            this.panel_black2.Size = new System.Drawing.Size(26, 26);
-            this.panel_black2.TabIndex = 20;
-            // 
-            // gfxView_tile
-            // 
-            this.gfxView_tile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gfxView_tile.Location = new System.Drawing.Point(113, 56);
-            this.gfxView_tile.Name = "gfxView_tile";
-            this.gfxView_tile.Size = new System.Drawing.Size(80, 80);
-            this.gfxView_tile.TabIndex = 10;
-            this.gfxView_tile.TabStop = false;
             // 
             // gfxView_curr
             // 
+            resources.ApplyResources(this.gfxView_curr, "gfxView_curr");
             this.gfxView_curr.BackColor = System.Drawing.SystemColors.Control;
-            this.gfxView_curr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gfxView_curr.Location = new System.Drawing.Point(1, 1);
             this.gfxView_curr.Name = "gfxView_curr";
-            this.gfxView_curr.Size = new System.Drawing.Size(24, 24);
-            this.gfxView_curr.TabIndex = 19;
             this.gfxView_curr.TabStop = false;
+            // 
+            // gfxView_tile
+            // 
+            resources.ApplyResources(this.gfxView_tile, "gfxView_tile");
+            this.gfxView_tile.Name = "gfxView_tile";
+            this.gfxView_tile.TabStop = false;
             // 
             // FormTileBuilder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 259);
             this.Controls.Add(this.label_tile);
             this.Controls.Add(this.numericUpDown_tile);
             this.Controls.Add(this.button_close);
@@ -265,9 +208,7 @@
             this.Controls.Add(this.panel_black);
             this.Controls.Add(this.panel_black2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTileBuilder";
-            this.Text = "Minimap Tile Builder";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_tile)).EndInit();
             this.panel_black2.ResumeLayout(false);
             this.ResumeLayout(false);

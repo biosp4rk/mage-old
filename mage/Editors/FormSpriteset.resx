@@ -112,18 +112,799 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>42</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;groupBox_palette.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_gfx0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_pal6.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="&gt;&gt;label_offset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_gfx4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_tiles.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="statusStrip_import.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 21</value>
+  </data>
+  <data name="label_offset.Text" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_gfx6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_gfx3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="button_removeSlot.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_offset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gfx3.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="comboBox_spriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_slot.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="&gt;&gt;label_pal1.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="comboBox_gfxRow.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_pal0.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="comboBox_slot.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_pal6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_slot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.Name" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="label_gfx3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox_gfx.Text" xml:space="preserve">
+    <value>Graphics</value>
+  </data>
+  <data name="&gt;&gt;button_removeSlot.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="&gt;&gt;label_gfx2.Name" xml:space="preserve">
+    <value>label_gfx2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.Name" xml:space="preserve">
+    <value>comboBox_slot</value>
+  </data>
+  <data name="&gt;&gt;label_pal0.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.Name" xml:space="preserve">
+    <value>comboBox_spriteset</value>
+  </data>
+  <data name="label_gfx7.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_gfx4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_importRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="statusStrip_spring.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_gfx7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 121</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_gfx0.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_gfx7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_gfxRow.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfx1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 32</value>
+  </data>
+  <data name="label_pal1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 33</value>
+  </data>
+  <data name="label_gfxRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="label_gfx6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_gfxRow.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_sprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="groupBox_edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 94</value>
+  </data>
+  <data name="label_pal6.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_gfx7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_sprite.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_gfx6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_gfx1.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportRaw.Name" xml:space="preserve">
+    <value>statusStrip_exportRaw</value>
+  </data>
+  <data name="&gt;&gt;label_pal1.Name" xml:space="preserve">
+    <value>label_pal1</value>
+  </data>
+  <data name="&gt;&gt;label_pal1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_gfx0.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_preview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 127</value>
+  </data>
+  <data name="label_pal7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;label_gfx4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_pal4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="groupBox_select.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 121</value>
+  </data>
+  <data name="groupBox_select.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 144</value>
+  </data>
+  <data name="label_pal7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 122</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_gfx6.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="label_pal7.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label_pal3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBox_gfx.Name" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="&gt;&gt;label_pal4.Name" xml:space="preserve">
+    <value>label_pal4</value>
+  </data>
+  <data name="label_pal5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="statusStrip_import.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 244</value>
+  </data>
+  <data name="label_gfx1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>560, 323</value>
+  </data>
+  <data name="label_gfxRow.Text" xml:space="preserve">
+    <value>GFX row:</value>
+  </data>
+  <data name="&gt;&gt;label_pal3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label_pal3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="comboBox_gfxRow.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_gfx2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox_palette.Text" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="&gt;&gt;label_offset.Name" xml:space="preserve">
+    <value>label_offset</value>
+  </data>
+  <data name="label_pal5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gfx7.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="&gt;&gt;button_addSlot.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="label_pal2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="&gt;&gt;groupBox_gfx.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label_pal4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 78</value>
+  </data>
+  <data name="&gt;&gt;groupBox_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_exportRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
+  </data>
+  <data name="&gt;&gt;label_pal4.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="&gt;&gt;label_gfx5.Name" xml:space="preserve">
+    <value>label_gfx5</value>
+  </data>
+  <data name="&gt;&gt;label_gfxRow.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="label_pal4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_gfxRow.Name" xml:space="preserve">
+    <value>label_gfxRow</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="&gt;&gt;label_pal0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfx4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_offset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 289</value>
+  </data>
+  <data name="&gt;&gt;label_gfx2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_pal0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="&gt;&gt;label_pal6.Name" xml:space="preserve">
+    <value>label_pal6</value>
+  </data>
+  <data name="label_gfx0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_addSlot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 67</value>
+  </data>
+  <data name="&gt;&gt;label_gfx0.Name" xml:space="preserve">
+    <value>label_gfx0</value>
+  </data>
+  <data name="&gt;&gt;label_pal1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_pal4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_gfx7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_gfx0.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button_editSprite.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="comboBox_gfxRow.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_gfx3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gfx7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_gfx3.Name" xml:space="preserve">
+    <value>label_gfx3</value>
+  </data>
+  <data name="comboBox_gfxRow.Items5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_gfx3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="button_editSprite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 67</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_pal4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox_preview.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Name" xml:space="preserve">
+    <value>statusStrip_export</value>
+  </data>
+  <data name="&gt;&gt;label_gfx1.Name" xml:space="preserve">
+    <value>label_gfx1</value>
+  </data>
+  <data name="&gt;&gt;label_gfx0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_tiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 21</value>
+  </data>
+  <data name="label_gfx5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_offset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_addSlot.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_pal0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_gfxRow.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBox_palette.Name" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="label_pal3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pictureBox_preview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 89</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="label_gfx1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;label_pal5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_pal3.Name" xml:space="preserve">
+    <value>label_pal3</value>
+  </data>
+  <data name="label_pal4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gfx5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importRaw.Name" xml:space="preserve">
+    <value>statusStrip_importRaw</value>
+  </data>
+  <data name="label_gfx2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="button_removeSlot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_pal2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_gfx5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 91</value>
+  </data>
+  <data name="label_gfx6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="groupBox_edit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="label_offset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_pal2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_spritesetOffsetVal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label_gfx4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="label_pal1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_pal2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="label_pal2.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_spriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="label_gfx7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_spriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="&gt;&gt;label_pal4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_gfxRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="label_gfx4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_pal3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 63</value>
+  </data>
+  <data name="groupBox_select.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="label_gfx3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_sprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormSpriteset</value>
+  </data>
+  <data name="label_gfx0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_gfx2.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_sprite.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_palette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_apply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="groupBox_preview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 11</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBox_edit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 144</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label_gfx0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_gfxRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfx1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_pal6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBox_gfxRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 42</value>
+  </data>
+  <data name="&gt;&gt;label_gfx5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxRow.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_gfx2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_addSlot.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_pal2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxRow.Name" xml:space="preserve">
+    <value>comboBox_gfxRow</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 104</value>
+  </data>
+  <data name="&gt;&gt;textBox_spritesetOffsetVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
+    <value>button_apply</value>
+  </data>
+  <data name="label_gfx4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.Name" xml:space="preserve">
+    <value>label_spriteset</value>
+  </data>
+  <data name="groupBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 158</value>
+  </data>
+  <data name="label_slot.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_editSprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Name" xml:space="preserve">
+    <value>pictureBox_palette</value>
+  </data>
+  <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox_tiles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_slot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_spriteset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="&gt;&gt;label_pal5.Name" xml:space="preserve">
+    <value>label_pal5</value>
+  </data>
+  <data name="&gt;&gt;label_pal5.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="&gt;&gt;button_addSlot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_preview.Name" xml:space="preserve">
+    <value>groupBox_preview</value>
+  </data>
+  <data name="comboBox_gfxRow.Items6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_importRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_pal3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfx2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;button_addSlot.Name" xml:space="preserve">
+    <value>button_addSlot</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_select.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_pal5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_pal2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;label_gfx5.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="textBox_spritesetOffsetVal.Text" xml:space="preserve">
+    <value>000000</value>
+  </data>
+  <data name="label_pal1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_pal1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="button_removeSlot.Text" xml:space="preserve">
+    <value>Remove slot</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 18</value>
+  </data>
+  <data name="label_pal5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_pal3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="label_pal0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;label_gfx7.Name" xml:space="preserve">
+    <value>label_gfx7</value>
+  </data>
+  <data name="&gt;&gt;groupBox_gfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_sprite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="&gt;&gt;label_gfx6.Name" xml:space="preserve">
+    <value>label_gfx6</value>
+  </data>
+  <data name="label_offset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="statusStrip_export.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 270</value>
+  </data>
+  <data name="pictureBox_tiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 18</value>
+  </data>
+  <data name="label_gfx5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 142</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -198,4 +979,418 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="pictureBox_preview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;label_pal2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_slot.Name" xml:space="preserve">
+    <value>label_slot</value>
+  </data>
+  <data name="label_gfx6.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_slot.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>groupBox_preview</value>
+  </data>
+  <data name="label_pal6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 107</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_removeSlot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_importRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
+  </data>
+  <data name="&gt;&gt;textBox_spritesetOffsetVal.Name" xml:space="preserve">
+    <value>textBox_spritesetOffsetVal</value>
+  </data>
+  <data name="&gt;&gt;label_pal3.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="&gt;&gt;button_editSprite.Name" xml:space="preserve">
+    <value>button_editSprite</value>
+  </data>
+  <data name="comboBox_gfxRow.Items7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_gfx2.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 300</value>
+  </data>
+  <data name="&gt;&gt;label_pal2.Name" xml:space="preserve">
+    <value>label_pal2</value>
+  </data>
+  <data name="comboBox_gfxRow.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 42</value>
+  </data>
+  <data name="label_offset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="label_gfx6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 106</value>
+  </data>
+  <data name="label_gfx7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="comboBox_gfxRow.Items4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_pal3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.Name" xml:space="preserve">
+    <value>comboBox_sprite</value>
+  </data>
+  <data name="label_gfx5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_spritesetOffsetVal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 14</value>
+  </data>
+  <data name="label_pal1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="button_removeSlot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 94</value>
+  </data>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_sprite.Text" xml:space="preserve">
+    <value>Sprite:</value>
+  </data>
+  <data name="label_gfx1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxRow.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
+  </data>
+  <data name="groupBox_preview.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_pal0.Name" xml:space="preserve">
+    <value>label_pal0</value>
+  </data>
+  <data name="label_pal1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_pal2.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="&gt;&gt;label_pal5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_pal7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Spriteset Editor</value>
+  </data>
+  <data name="&gt;&gt;label_pal7.Name" xml:space="preserve">
+    <value>label_pal7</value>
+  </data>
+  <data name="button_addSlot.Text" xml:space="preserve">
+    <value>Add slot</value>
+  </data>
+  <data name="&gt;&gt;label_gfx6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_edit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_pal6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_gfx3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 62</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_gfx1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label_pal0.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_slot.Text" xml:space="preserve">
+    <value>Slot:</value>
+  </data>
+  <data name="label_pal7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="&gt;&gt;button_removeSlot.Name" xml:space="preserve">
+    <value>button_removeSlot</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_exportRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_select.Name" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="label_gfxRow.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_export.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_pal5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 92</value>
+  </data>
+  <data name="label_gfx5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_pal6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="textBox_spritesetOffsetVal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 289</value>
+  </data>
+  <data name="pictureBox_tiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 118</value>
+  </data>
+  <data name="label_pal6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="&gt;&gt;label_pal7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfxRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="label_gfx5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="label_gfx2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_pal5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_spriteset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_gfx.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBox_gfxRow.Items3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_sprite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="&gt;&gt;label_pal6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_slot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="label_pal4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label_gfx3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_spriteset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox_edit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label_slot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="label_pal0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_gfx4.Name" xml:space="preserve">
+    <value>label_gfx4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_tiles.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBox_spritesetOffsetVal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_editSprite.Text" xml:space="preserve">
+    <value>Edit sprite</value>
+  </data>
+  <data name="label_slot.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_sprite.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.Name" xml:space="preserve">
+    <value>pictureBox_preview</value>
+  </data>
+  <data name="groupBox_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 141</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 23</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_spring.Name" xml:space="preserve">
+    <value>statusStrip_spring</value>
+  </data>
+  <data name="groupBox_gfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="comboBox_spriteset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="label_gfx0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfx3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_gfx1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;statusStrip_import.Name" xml:space="preserve">
+    <value>statusStrip_import</value>
+  </data>
+  <data name="&gt;&gt;button_removeSlot.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 18</value>
+  </data>
+  <data name="label_gfx1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label_pal0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="&gt;&gt;label_pal7.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <data name="label_gfx6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="button_addSlot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_tiles.Name" xml:space="preserve">
+    <value>pictureBox_tiles</value>
+  </data>
+  <data name="label_pal7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox_spritesetOffsetVal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_sprite.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_spriteset.Parent" xml:space="preserve">
+    <value>groupBox_select</value>
+  </data>
+  <data name="groupBox_gfx.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 119</value>
+  </data>
+  <data name="&gt;&gt;button_close.Name" xml:space="preserve">
+    <value>button_close</value>
+  </data>
+  <data name="&gt;&gt;comboBox_spriteset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip_exportRaw.Text" xml:space="preserve">
+    <value>Raw...</value>
+  </data>
+  <data name="&gt;&gt;label_gfx4.Parent" xml:space="preserve">
+    <value>groupBox_gfx</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pictureBox_preview.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.Name" xml:space="preserve">
+    <value>label_sprite</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfx4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 77</value>
+  </data>
+  <data name="&gt;&gt;label_pal7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_gfx2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.5pt</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="label_spriteset.Text" xml:space="preserve">
+    <value>Spriteset:</value>
+  </data>
+  <data name="&gt;&gt;label_sprite.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_palette.Parent" xml:space="preserve">
+    <value>groupBox_palette</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>42</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

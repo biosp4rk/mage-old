@@ -112,18 +112,734 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>61</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;label_gfxDirection.Name" xml:space="preserve">
+    <value>label_gfxDirection</value>
+  </data>
+  <data name="label_palDelay.Text" xml:space="preserve">
+    <value>Delay:</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_gfxView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 8</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxStates.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="&gt;&gt;button_palClose.Name" xml:space="preserve">
+    <value>button_palClose</value>
+  </data>
+  <data name="&gt;&gt;button_palEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_tilesetSlot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 60</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_pal.Name" xml:space="preserve">
+    <value>pictureBox_pal</value>
+  </data>
+  <data name="label_palDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="label_gfxDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="&gt;&gt;tabPage_graphics.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_gfxDelay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tilesetGfx.Text" xml:space="preserve">
+    <value>Graphics:</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage_graphics.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_gfxStates.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="label_tilesetNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="comboBox_tilesetSlot.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="button_tilesetClose.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxNum.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxView.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBox_gfxDelay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="comboBox_gfxView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="&gt;&gt;textBox_palDelay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_gfxClose.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_palApply.Name" xml:space="preserve">
+    <value>button_palApply</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetSlot.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="tabPage_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_tilesetApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabPage_graphics.Text" xml:space="preserve">
+    <value>Graphics</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_gfxApply.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="button_tilesetClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 83</value>
+  </data>
+  <data name="textBox_gfxStates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="&gt;&gt;label_palStates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_graphics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palNum.Name" xml:space="preserve">
+    <value>comboBox_palNum</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfxNum.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBox_palDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_graphics.Name" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="label_gfxPal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_gfxStates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 126</value>
+  </data>
+  <data name="&gt;&gt;label_palDelay.Name" xml:space="preserve">
+    <value>label_palDelay</value>
+  </data>
+  <data name="button_gfxClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="textBox_gfxPalOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label_gfxDirection.Text" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="label_gfxDirection.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_palDelay.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="label_tilesetNum.Text" xml:space="preserve">
+    <value>Tileset:</value>
+  </data>
+  <data name="label_palDelay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetGfx.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palDirection.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_palDirection.Items1" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="button_palClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="textBox_palStates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="button_palEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 36</value>
+  </data>
+  <data name="button_palApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_palDirection.Text" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="&gt;&gt;label_gfxNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxPalOffset.Name" xml:space="preserve">
+    <value>textBox_gfxPalOffset</value>
+  </data>
+  <data name="&gt;&gt;textBox_palStates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_palette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfxNum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_palClose.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="label_tilesetGfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 88</value>
+  </data>
+  <data name="label_gfxView.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_tilesetNum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_gfxApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_tileset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tilesetSlot.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_gfxDelay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 100</value>
+  </data>
+  <data name="label_tilesetSlot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 63</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>313, 210</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetClose.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button_palClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;label_gfxDirection.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label_palNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 39</value>
+  </data>
+  <data name="button_gfxEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label_palStates.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_palNum.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="button_gfxApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabPage_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 149</value>
+  </data>
+  <data name="gfxView_gfx.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label_gfxView.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;label_gfxStates.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_gfxDelay.Name" xml:space="preserve">
+    <value>label_gfxDelay</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetSlot.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="button_palApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_palClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 107</value>
+  </data>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palDirection.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxDirection.Name" xml:space="preserve">
+    <value>comboBox_gfxDirection</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_pal.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="button_gfxClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetClose.Name" xml:space="preserve">
+    <value>button_tilesetClose</value>
+  </data>
+  <data name="&gt;&gt;tabPage_palette.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetApply.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="label_palStates.Text" xml:space="preserve">
+    <value>States:</value>
+  </data>
+  <data name="comboBox_gfxNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 50</value>
+  </data>
+  <data name="label_gfxPal.Text" xml:space="preserve">
+    <value>Palette:</value>
+  </data>
+  <data name="pictureBox_pal.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetGfx.Name" xml:space="preserve">
+    <value>label_tilesetGfx</value>
+  </data>
+  <data name="label_gfxStates.Text" xml:space="preserve">
+    <value>States:</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxStates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_gfxClose.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="tabPage_graphics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 149</value>
+  </data>
+  <data name="label_gfxStates.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="comboBox_palNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 36</value>
+  </data>
+  <data name="comboBox_tilesetGfxNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="tabPage_palette.Text" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetSlot.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox_palStates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 110</value>
+  </data>
+  <data name="button_tilesetClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_palDelay.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label_gfxNum.Text" xml:space="preserve">
+    <value>Graphics:</value>
+  </data>
+  <data name="label_palNum.Text" xml:space="preserve">
+    <value>Palette:</value>
+  </data>
+  <data name="&gt;&gt;button_palEdit.Name" xml:space="preserve">
+    <value>button_palEdit</value>
+  </data>
+  <data name="label_gfxDelay.Text" xml:space="preserve">
+    <value>Delay:</value>
+  </data>
+  <data name="pictureBox_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;button_palApply.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="button_gfxApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 94</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetGfxNum.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_gfxView.Items" xml:space="preserve">
+    <value>2 x 2</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_gfxEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="label_palDelay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 89</value>
+  </data>
+  <data name="comboBox_gfxDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetGfx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_gfxNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 53</value>
+  </data>
+  <data name="gfxView_gfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_palette.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_gfxDelay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 102</value>
+  </data>
+  <data name="label_gfxView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;button_gfxEdit.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palNum.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxDelay.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxDirection.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_gfxDirection.Items2" xml:space="preserve">
+    <value>Alternate</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetSlot.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palNum.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label_gfxView.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="tabPage_tileset.Text" xml:space="preserve">
+    <value>Tileset</value>
+  </data>
+  <data name="label_tilesetSlot.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label_palDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxStates.Name" xml:space="preserve">
+    <value>textBox_gfxStates</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxPalOffset.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="statusLabel_changes.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxPalOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_palStates.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="tabPage_palette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 149</value>
+  </data>
+  <data name="pictureBox_pal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 16</value>
+  </data>
+  <data name="&gt;&gt;label_gfxDelay.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_gfxPal.Name" xml:space="preserve">
+    <value>label_gfxPal</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_gfxApply.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label_palStates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 113</value>
+  </data>
+  <data name="&gt;&gt;button_palEdit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_palNum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_gfxView.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="label_palStates.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;button_gfxEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetGfxNum.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_gfxEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 15</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetGfxNum.Name" xml:space="preserve">
+    <value>comboBox_tilesetGfxNum</value>
+  </data>
+  <data name="label_gfxDelay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_gfxStates.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetSlot.Name" xml:space="preserve">
+    <value>comboBox_tilesetSlot</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetSlot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_tilesetNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="&gt;&gt;label_palDirection.Name" xml:space="preserve">
+    <value>label_palDirection</value>
+  </data>
+  <data name="&gt;&gt;button_gfxClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_palDelay.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="textBox_gfxStates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 124</value>
+  </data>
+  <data name="&gt;&gt;button_palClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_gfxApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="button_palClose.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="button_tilesetClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxView.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="label_gfxDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 78</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gfxStates.Name" xml:space="preserve">
+    <value>label_gfxStates</value>
+  </data>
+  <data name="label_gfxDelay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Name" xml:space="preserve">
+    <value>gfxView_gfx</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage_graphics.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="comboBox_palDirection.Items2" xml:space="preserve">
+    <value>Alternate</value>
+  </data>
+  <data name="&gt;&gt;label_gfxPal.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetSlot.Name" xml:space="preserve">
+    <value>label_tilesetSlot</value>
+  </data>
+  <data name="&gt;&gt;label_palNum.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="&gt;&gt;label_palDirection.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="comboBox_gfxDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 75</value>
+  </data>
+  <data name="label_tilesetGfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="&gt;&gt;button_palApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_gfxPal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 33</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetNum.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palDirection.Name" xml:space="preserve">
+    <value>comboBox_palDirection</value>
+  </data>
+  <data name="&gt;&gt;textBox_palStates.Name" xml:space="preserve">
+    <value>textBox_palStates</value>
+  </data>
+  <data name="&gt;&gt;button_gfxEdit.Name" xml:space="preserve">
+    <value>button_gfxEdit</value>
+  </data>
+  <data name="button_palEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetGfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_palStates.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_tilesetApply.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tabPage_tileset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="label_palDirection.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_gfxPalOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 21</value>
+  </data>
+  <data name="&gt;&gt;label_palNum.Name" xml:space="preserve">
+    <value>label_palNum</value>
+  </data>
+  <data name="&gt;&gt;button_palApply.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxDelay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tilesetSlot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="&gt;&gt;label_gfxDelay.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 17</value>
+  </data>
+  <data name="&gt;&gt;label_gfxPal.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="comboBox_palNum.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tabPage_palette.Name" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAnimation</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetApply.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_palDirection.Items" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="button_gfxEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 67</value>
+  </data>
+  <data name="&gt;&gt;textBox_palStates.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="textBox_gfxStates.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="textBox_palDelay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 86</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetSlot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_gfxNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="textBox_palStates.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetClose.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;label_palDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -198,4 +914,361 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;pictureBox_tileset.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;textBox_palDelay.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_gfxStates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 175</value>
+  </data>
+  <data name="button_palEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label_gfxDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label_gfxNum.Name" xml:space="preserve">
+    <value>label_gfxNum</value>
+  </data>
+  <data name="gfxView_gfx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 30</value>
+  </data>
+  <data name="&gt;&gt;button_gfxApply.Name" xml:space="preserve">
+    <value>button_gfxApply</value>
+  </data>
+  <data name="&gt;&gt;label_palDirection.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_tilesetNum.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="comboBox_tilesetNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 35</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 188</value>
+  </data>
+  <data name="&gt;&gt;label_palStates.Name" xml:space="preserve">
+    <value>label_palStates</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_pal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_palStates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_palDelay.Name" xml:space="preserve">
+    <value>textBox_palDelay</value>
+  </data>
+  <data name="comboBox_tilesetGfxNum.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;button_palEdit.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="&gt;&gt;button_palClose.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxPalOffset.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxDirection.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="label_tilesetSlot.Text" xml:space="preserve">
+    <value>Slot:</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_tileset.Name" xml:space="preserve">
+    <value>pictureBox_tileset</value>
+  </data>
+  <data name="&gt;&gt;label_gfxNum.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetGfxNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gfxDirection.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="label_gfxPal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxNum.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="pictureBox_pal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="button_palApply.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="textBox_gfxPalOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 30</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetApply.Name" xml:space="preserve">
+    <value>button_tilesetApply</value>
+  </data>
+  <data name="&gt;&gt;button_tilesetApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_gfxApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="button_palApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 80</value>
+  </data>
+  <data name="&gt;&gt;tabPage_graphics.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="label_tilesetGfx.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label_gfxView.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_gfxStates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Animation Editor</value>
+  </data>
+  <data name="button_palEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;button_gfxApply.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxDelay.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="button_tilesetApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="comboBox_gfxView.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="button_gfxEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxView.Name" xml:space="preserve">
+    <value>comboBox_gfxView</value>
+  </data>
+  <data name="comboBox_tilesetSlot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_pal.Parent" xml:space="preserve">
+    <value>tabPage_palette</value>
+  </data>
+  <data name="label_palDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 64</value>
+  </data>
+  <data name="&gt;&gt;button_gfxClose.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="button_tilesetApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 56</value>
+  </data>
+  <data name="comboBox_gfxView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 6</value>
+  </data>
+  <data name="comboBox_palDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 61</value>
+  </data>
+  <data name="&gt;&gt;gfxView_gfx.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="&gt;&gt;button_gfxClose.Name" xml:space="preserve">
+    <value>button_gfxClose</value>
+  </data>
+  <data name="button_tilesetApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="comboBox_gfxDirection.Items1" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBox_gfxDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="&gt;&gt;label_palNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_tilesetNum.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label_gfxPal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetNum.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tabPage_tileset.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="comboBox_tilesetGfxNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 85</value>
+  </data>
+  <data name="&gt;&gt;label_palNum.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetNum.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="textBox_palDelay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="&gt;&gt;tabPage_palette.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gfxNum.Name" xml:space="preserve">
+    <value>comboBox_gfxNum</value>
+  </data>
+  <data name="comboBox_gfxView.Items1" xml:space="preserve">
+    <value>4 x 1</value>
+  </data>
+  <data name="&gt;&gt;label_gfxView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_palStates.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_tilesetGfx.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label_palDelay.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_palApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="gfxView_gfx.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox_palNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 22</value>
+  </data>
+  <data name="label_gfxNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="textBox_gfxDelay.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="comboBox_gfxDirection.Items" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="label_tilesetNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 38</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_palDelay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox_tileset.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label_gfxView.Name" xml:space="preserve">
+    <value>label_gfxView</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxStates.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_palNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="comboBox_gfxNum.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tabPage_graphics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_gfxDelay.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label_gfxDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_tileset.Name" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="&gt;&gt;label_tilesetNum.Name" xml:space="preserve">
+    <value>label_tilesetNum</value>
+  </data>
+  <data name="tabPage_palette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetNum.Name" xml:space="preserve">
+    <value>comboBox_tilesetNum</value>
+  </data>
+  <data name="button_gfxClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 121</value>
+  </data>
+  <data name="&gt;&gt;comboBox_palNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_palDelay.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_palDelay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_gfxPal.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;comboBox_tilesetNum.Parent" xml:space="preserve">
+    <value>tabPage_tileset</value>
+  </data>
+  <data name="comboBox_palDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label_gfxNum.Parent" xml:space="preserve">
+    <value>tabPage_graphics</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_gfxDelay.Name" xml:space="preserve">
+    <value>textBox_gfxDelay</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>61</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

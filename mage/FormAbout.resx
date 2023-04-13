@@ -112,12 +112,154 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_silk.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_version.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 60</value>
+  </data>
+  <data name="linkLabel_forum.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label_mage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 24</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>264, 173</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAbout</value>
+  </data>
+  <data name="linkLabel_silk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="linkLabel_silk.Text" xml:space="preserve">
+    <value>http://www.famfamfam.com/lab/icons/silk/</value>
+  </data>
+  <data name="label_mage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_bugs.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="linkLabel_forum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 36</value>
+  </data>
+  <data name="label_version.Text" xml:space="preserve">
+    <value>Version 1.4.0
+2023-01-22
+
+Created by biospark</value>
+  </data>
+  <data name="label_mage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="label_mage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 8</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_silk.Name" xml:space="preserve">
+    <value>linkLabel_silk</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_silk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_bugs.Text" xml:space="preserve">
+    <value>Report bugs and other problems here:</value>
+  </data>
+  <data name="label_version.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 32</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>About MAGE</value>
+  </data>
+  <data name="&gt;&gt;label_version.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_bugs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="linkLabel_silk.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label_silk.Text" xml:space="preserve">
+    <value>Silk icon set by Mark James</value>
+  </data>
+  <data name="&gt;&gt;label_silk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_silk.Name" xml:space="preserve">
+    <value>label_silk</value>
+  </data>
+  <data name="label_silk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 12</value>
+  </data>
+  <data name="label_version.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_silk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="linkLabel_forum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 104</value>
+  </data>
+  <data name="&gt;&gt;label_version.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label_silk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_mage.Text" xml:space="preserve">
+    <value>Metroid Advance Game Editor</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="linkLabel_forum.Text" xml:space="preserve">
+    <value>http://forum.metroidconstruction.com/index.php/topic,3969.0.html</value>
+  </data>
+  <data name="&gt;&gt;label_bugs.Name" xml:space="preserve">
+    <value>label_bugs</value>
+  </data>
+  <data name="linkLabel_forum.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="label_bugs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 92</value>
+  </data>
+  <data name="label_bugs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 12</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_forum.Name" xml:space="preserve">
+    <value>linkLabel_forum</value>
+  </data>
+  <data name="&gt;&gt;label_silk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_version.Name" xml:space="preserve">
+    <value>label_version</value>
+  </data>
+  <data name="&gt;&gt;label_mage.Name" xml:space="preserve">
+    <value>label_mage</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_forum.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_bugs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="label_mage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabel_silk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 12</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -192,4 +334,52 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;label_mage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_forum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_silk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_silk.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_mage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_mage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_silk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 140</value>
+  </data>
+  <data name="&gt;&gt;label_bugs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_version.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label_version.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="linkLabel_silk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 152</value>
+  </data>
+  <data name="&gt;&gt;label_bugs.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;linkLabel_forum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>

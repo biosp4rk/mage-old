@@ -112,12 +112,74 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;button_cancel.Name" xml:space="preserve">
+    <value>button_cancel</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBox_scrolls.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_original.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 16</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_BGs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="checkBox_doors.Text" xml:space="preserve">
+    <value>Doors</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BGs.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox_doors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.Name" xml:space="preserve">
+    <value>radioButton_original</value>
+  </data>
+  <data name="checkBox_preserveData.Text" xml:space="preserve">
+    <value>Preserve existing data
+(if used by other BGs)</value>
+  </data>
+  <data name="&gt;&gt;checkBox_convertClip.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_scrolls.Name" xml:space="preserve">
+    <value>checkBox_scrolls</value>
+  </data>
+  <data name="&gt;&gt;groupBox_replace.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormImportRoom</value>
+  </data>
+  <data name="checkBox_sprites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 16</value>
+  </data>
+  <data name="checkBox_scrolls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 16</value>
+  </data>
+  <data name="&gt;&gt;checkBox_doors.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_preserveData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAAAGABoAwAAJgAAACAgAAAAABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAAAD
@@ -192,4 +254,277 @@
         AAP//wAP//8ADw==
 </value>
   </data>
+  <data name="&gt;&gt;button_cancel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;checkBox_sprites.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_scrolls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_doors.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBox_doors.Name" xml:space="preserve">
+    <value>checkBox_doors</value>
+  </data>
+  <data name="&gt;&gt;checkBox_scrolls.Parent" xml:space="preserve">
+    <value>groupBox_import</value>
+  </data>
+  <data name="checkBox_BGs.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_convertClip.Name" xml:space="preserve">
+    <value>checkBox_convertClip</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_convertClip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_ok.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="checkBox_preserveData.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="checkBox_doors.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;checkBox_sprites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.Parent" xml:space="preserve">
+    <value>groupBox_replace</value>
+  </data>
+  <data name="button_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;groupBox_import.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBox_sprites.Text" xml:space="preserve">
+    <value>Sprites</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_replace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 60</value>
+  </data>
+  <data name="radioButton_original.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="checkBox_preserveData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 98</value>
+  </data>
+  <data name="&gt;&gt;groupBox_replace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_sprites.Name" xml:space="preserve">
+    <value>checkBox_sprites</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Import Room</value>
+  </data>
+  <data name="&gt;&gt;groupBox_import.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_scrolls.Text" xml:space="preserve">
+    <value>Scrolls</value>
+  </data>
+  <data name="radioButton_original.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="checkBox_convertClip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="checkBox_BGs.Text" xml:space="preserve">
+    <value>Backgrounds</value>
+  </data>
+  <data name="&gt;&gt;checkBox_scrolls.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_doors.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 103</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_import.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_replace.Name" xml:space="preserve">
+    <value>groupBox_replace</value>
+  </data>
+  <data name="radioButton_current.Text" xml:space="preserve">
+    <value>Current room</value>
+  </data>
+  <data name="button_ok.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="groupBox_import.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 11</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>292, 137</value>
+  </data>
+  <data name="&gt;&gt;checkBox_convertClip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Name" xml:space="preserve">
+    <value>button_ok</value>
+  </data>
+  <data name="radioButton_current.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_current.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="groupBox_import.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="&gt;&gt;radioButton_original.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_convertClip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 77</value>
+  </data>
+  <data name="&gt;&gt;groupBox_import.Name" xml:space="preserve">
+    <value>groupBox_import</value>
+  </data>
+  <data name="&gt;&gt;checkBox_sprites.Parent" xml:space="preserve">
+    <value>groupBox_import</value>
+  </data>
+  <data name="checkBox_convertClip.Text" xml:space="preserve">
+    <value>Convert clipdata</value>
+  </data>
+  <data name="groupBox_import.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 60</value>
+  </data>
+  <data name="checkBox_BGs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_original.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_current.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox_replace.Text" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.Parent" xml:space="preserve">
+    <value>groupBox_replace</value>
+  </data>
+  <data name="&gt;&gt;checkBox_convertClip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BGs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_scrolls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 18</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BGs.Name" xml:space="preserve">
+    <value>checkBox_BGs</value>
+  </data>
+  <data name="groupBox_replace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="&gt;&gt;radioButton_current.Name" xml:space="preserve">
+    <value>radioButton_current</value>
+  </data>
+  <data name="radioButton_original.Text" xml:space="preserve">
+    <value>Original room</value>
+  </data>
+  <data name="&gt;&gt;checkBox_doors.Parent" xml:space="preserve">
+    <value>groupBox_import</value>
+  </data>
+  <data name="checkBox_doors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 39</value>
+  </data>
+  <data name="button_ok.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox_sprites.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_ok.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 77</value>
+  </data>
+  <data name="checkBox_sprites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="checkBox_convertClip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBox_replace.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkBox_scrolls.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="radioButton_current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="checkBox_preserveData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 28</value>
+  </data>
+  <data name="&gt;&gt;button_ok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_preserveData.Name" xml:space="preserve">
+    <value>checkBox_preserveData</value>
+  </data>
+  <data name="checkBox_BGs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="groupBox_replace.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;checkBox_BGs.Parent" xml:space="preserve">
+    <value>groupBox_import</value>
+  </data>
+  <data name="groupBox_import.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="checkBox_sprites.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button_ok.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
 </root>
