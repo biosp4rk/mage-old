@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -57,9 +56,6 @@ namespace mage
 
         private Status[] statuses;
         private string[] statusLabels;
-
-        //for hardcode, getstring form *.resx rather than hardcode
-        private ComponentResourceManager resources = new ComponentResourceManager(typeof(FormConnection));
 
         // constructor
         public FormConnection(FormMain main, int tab)
@@ -122,8 +118,7 @@ namespace mage
                     }
                     else
                     {
-                        //listBox_lockHatches.Items.AddRange(new string[] { "Hatch 6", "Hatch 7" });
-                        listBox_lockHatches.Items.AddRange(new string[] { resources.GetString("listBox_lockHatches.Items6"), resources.GetString("listBox_lockHatches.Items7") });
+                        listBox_lockHatches.Items.AddRange(new string[] { "Hatch 6", "Hatch 7" });
                     }
                     GetHatchLockEvents();
                     FillHatchLockEvents();
@@ -177,22 +172,14 @@ namespace mage
             {
                 Door src = DoorData.GetDoor(ac.srcArea, ac.srcDoor);
                 string area = areaNames[ac.srcArea] + ", ";
-
-                //string room = "Room " + Hex.ToString(src.srcRoom) + ", ";
-                //string door = "Door " + Hex.ToString(ac.srcDoor);
-                string room = resources.GetString("StringRoom") + " " + Hex.ToString(src.srcRoom) + ", ";
-                string door = resources.GetString("StringDoor") + " " + Hex.ToString(ac.srcDoor);
-                
+                string room = "Room " + Hex.ToString(src.srcRoom) + ", ";
+                string door = "Door " + Hex.ToString(ac.srcDoor);
                 ListViewItem item = new ListViewItem(area + room + door);
 
                 Door dst = DoorData.GetDoor(ac.dstArea, src.dstDoor);
                 area = areaNames[ac.dstArea] + ", ";
-
-                //room = "Room " + Hex.ToString(dst.srcRoom) + ", ";
-                //door = "Door " + Hex.ToString(dst.doorNum);
-                room = resources.GetString("StringRoom") + " " + Hex.ToString(dst.srcRoom) + ", ";
-                door = resources.GetString("StringDoor") + " " + Hex.ToString(dst.doorNum);
-
+                room = "Room " + Hex.ToString(dst.srcRoom) + ", ";
+                door = "Door " + Hex.ToString(dst.doorNum);
                 item.SubItems.Add(area + room + door);
 
                 listView_areaConnections.Items.Add(item);
@@ -227,14 +214,14 @@ namespace mage
             // display
             Door src = DoorData.GetDoor(srcArea, srcDoor);
             string area = areaNames[srcArea] + ", ";
-            string room = resources.GetString("StringRoom") + " " + Hex.ToString(src.srcRoom) + ", ";
-            string door = resources.GetString("StringDoor") + " " + Hex.ToString(srcDoor);
+            string room = "Room " + Hex.ToString(src.srcRoom) + ", ";
+            string door = "Door " + Hex.ToString(srcDoor);
             ListViewItem item = new ListViewItem(area + room + door);
 
             Door dst = DoorData.GetDoor(dstArea, Hex.ToByte(dstDoor));
             area = areaNames[dstArea] + ", ";
-            room = resources.GetString("StringRoom") + " " + Hex.ToString(dst.srcRoom) + ", ";
-            door = resources.GetString("StringDoor") + " " + Hex.ToString(dst.doorNum);
+            room = "Room " + Hex.ToString(dst.srcRoom) + ", ";
+            door = "Door " + Hex.ToString(dst.doorNum);
             item.SubItems.Add(area + room + door);
 
             listView_areaConnections.Items.Add(item);
@@ -361,15 +348,15 @@ namespace mage
             {
                 Door src = DoorData.GetDoor(de.srcArea, de.srcDoor);
                 string area = areaNames[de.srcArea] + ", ";
-                string room = resources.GetString("StringRoom") + " " + Hex.ToString(src.srcRoom) + ", ";
-                string door = resources.GetString("StringDoor") + " " + Hex.ToString(de.srcDoor);
+                string room = "Room " + Hex.ToString(src.srcRoom) + ", ";
+                string door = "Door " + Hex.ToString(de.srcDoor);
                 ListViewItem item = new ListViewItem(area + room + door);
 
                 item.SubItems.Add(Hex.ToString(de.eventVal));
 
                 Door dst = DoorData.GetDoor(de.srcArea, de.dstDoor);
-                room = resources.GetString("StringRoom") + " " + Hex.ToString(dst.srcRoom) + ", ";
-                door = resources.GetString("StringDoor") + " " + Hex.ToString(de.dstDoor);
+                room = "Room " + Hex.ToString(dst.srcRoom) + ", ";
+                door = "Door " + Hex.ToString(de.dstDoor);
                 item.SubItems.Add(area + room + door);
 
                 listView_doorEvents.Items.Add(item);
@@ -406,15 +393,15 @@ namespace mage
             // display in list view
             Door src = DoorData.GetDoor(srcArea, srcDoor);
             string area = areaNames[srcArea] + ", ";
-            string room = resources.GetString("StringRoom") + " " + Hex.ToString(src.srcRoom) + ", ";
-            string door = resources.GetString("StringDoor") + " " + Hex.ToString(srcDoor);
+            string room = "Room " + Hex.ToString(src.srcRoom) + ", ";
+            string door = "Door " + Hex.ToString(srcDoor);
             ListViewItem item = new ListViewItem(area + room + door);
 
             item.SubItems.Add(Hex.ToString(eventVal));
 
             Door dst = DoorData.GetDoor(srcArea, dstDoor);
-            room = resources.GetString("StringRoom") + " " + Hex.ToString(dst.srcRoom) + ", ";
-            door = resources.GetString("StringDoor") + " " + Hex.ToString(dstDoor);
+            room = "Room " + Hex.ToString(dst.srcRoom) + ", ";
+            door = "Door " + Hex.ToString(dstDoor);
             item.SubItems.Add(area + room + door);
 
             listView_doorEvents.Items.Add(item);
@@ -553,7 +540,7 @@ namespace mage
             foreach (LocationName ln in locationNames)
             {
                 string area = areaNames[ln.dstArea] + ", ";
-                string room = resources.GetString("StringRoom") + " " + Hex.ToString(ln.dstRoom);
+                string room = "Room " + Hex.ToString(ln.dstRoom);
                 ListViewItem item = new ListViewItem(area + room);
 
                 item.SubItems.Add(Hex.ToString(ln.textVal));
@@ -634,7 +621,7 @@ namespace mage
 
             // display
             string area = areaNames[dstArea] + ", ";
-            string room = resources.GetString("StringRoom") + " " + Hex.ToString(dstRoom);
+            string room = "Room " + Hex.ToString(dstRoom);
             ListViewItem item = new ListViewItem(area + room);
 
             item.SubItems.Add(Hex.ToString(textVal));
@@ -848,15 +835,15 @@ namespace mage
             foreach (HatchLockEvent hle in hatchLockEvents)
             {
                 string area = areaNames[hle.dstArea] + ", ";
-                string room = resources.GetString("StringRoom") + " " + Hex.ToString(hle.dstRoom);
+                string room = "Room " + Hex.ToString(hle.dstRoom);
                 ListViewItem item = new ListViewItem(area + room);
 
                 item.SubItems.Add(Hex.ToString(hle.eventVal));
 
                 if (!Version.IsMF)
                 {
-                    if (hle.before) { item.SubItems.Add(resources.GetString("StringBefore") ); }
-                    else { item.SubItems.Add(resources.GetString("StringAfter") ); }
+                    if (hle.before) { item.SubItems.Add("Before"); }
+                    else { item.SubItems.Add("After"); }
                 }
 
                 string hatches = GetLockedHatchesText(hle.hatchesToLock);
@@ -919,15 +906,15 @@ namespace mage
 
             // display
             string area = areaNames[dstArea] + ", ";
-            string room = resources.GetString("StringRoom") + " " + Hex.ToString(dstRoom);
+            string room = "Room " + Hex.ToString(dstRoom);
             ListViewItem item = new ListViewItem(area + room);
 
             item.SubItems.Add(Hex.ToString(eventVal));
 
             if (!Version.IsMF)
             {
-                if (before) { item.SubItems.Add(resources.GetString("StringBefore") ); }
-                else { item.SubItems.Add(resources.GetString("StringAfter") ); }
+                if (before) { item.SubItems.Add("Before"); }
+                else { item.SubItems.Add("After"); }
             }
 
             string hatches = GetLockedHatchesText(hle.hatchesToLock);
