@@ -121,6 +121,24 @@
   <data name="endings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\endings.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="formConn_lockHatches.Items6" xml:space="preserve">
+    <value>舱门 6</value>
+  </data>
+  <data name="formConn_lockHatches.Items7" xml:space="preserve">
+    <value>舱门 7</value>
+  </data>
+  <data name="formConn_StringAfter" xml:space="preserve">
+    <value>之后</value>
+  </data>
+  <data name="formConn_StringBefore" xml:space="preserve">
+    <value>之前</value>
+  </data>
+  <data name="formConn_StringDoor" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="formConn_StringRoom" xml:space="preserve">
+    <value>房间</value>
+  </data>
   <data name="MF_clipdata" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\MF\MF_clipdata.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>

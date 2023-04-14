@@ -112,12 +112,12 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MF_U_patches" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lists\MF\MF_U_patches.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
@@ -510,5 +510,23 @@
   </data>
   <data name="clipNums" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Misc\clipNums.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formConn_lockHatches.Items6" xml:space="preserve">
+    <value>Hatch 6</value>
+  </data>
+  <data name="formConn_lockHatches.Items7" xml:space="preserve">
+    <value>Hatch 7</value>
+  </data>
+  <data name="formConn_StringAfter" xml:space="preserve">
+    <value>After</value>
+  </data>
+  <data name="formConn_StringBefore" xml:space="preserve">
+    <value>Before</value>
+  </data>
+  <data name="formConn_StringDoor" xml:space="preserve">
+    <value>Door</value>
+  </data>
+  <data name="formConn_StringRoom" xml:space="preserve">
+    <value>Room</value>
   </data>
 </root>

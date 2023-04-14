@@ -121,6 +121,60 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Hatch 6 的本地化字符串。
+        /// </summary>
+        internal static string formConn_lockHatches_Items6 {
+            get {
+                return ResourceManager.GetString("formConn_lockHatches.Items6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hatch 7 的本地化字符串。
+        /// </summary>
+        internal static string formConn_lockHatches_Items7 {
+            get {
+                return ResourceManager.GetString("formConn_lockHatches.Items7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 After 的本地化字符串。
+        /// </summary>
+        internal static string formConn_StringAfter {
+            get {
+                return ResourceManager.GetString("formConn_StringAfter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Before 的本地化字符串。
+        /// </summary>
+        internal static string formConn_StringBefore {
+            get {
+                return ResourceManager.GetString("formConn_StringBefore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Door 的本地化字符串。
+        /// </summary>
+        internal static string formConn_StringDoor {
+            get {
+                return ResourceManager.GetString("formConn_StringDoor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Room 的本地化字符串。
+        /// </summary>
+        internal static string formConn_StringRoom {
+            get {
+                return ResourceManager.GetString("formConn_StringRoom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Icon mage {
