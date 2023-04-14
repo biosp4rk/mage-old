@@ -799,4 +799,22 @@
   <data name="$this.Text" xml:space="preserve">
     <value>连接编辑器</value>
   </data>
+  <data name="listBox_lockHatches.Items6" xml:space="preserve">
+    <value>舱门 6</value>
+  </data>
+  <data name="listBox_lockHatches.Items7" xml:space="preserve">
+    <value>舱门 7</value>
+  </data>
+  <data name="StringAfter" xml:space="preserve">
+    <value>之后</value>
+  </data>
+  <data name="StringBefore" xml:space="preserve">
+    <value>之前</value>
+  </data>
+  <data name="StringDoor" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="StringRoom" xml:space="preserve">
+    <value>房间</value>
+  </data>
 </root>
