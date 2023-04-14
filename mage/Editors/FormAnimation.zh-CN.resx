@@ -449,18 +449,6 @@
   <data name="comboBox_palDirection.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="label_palNum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label_palNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 42</value>
-  </data>
-  <data name="label_palNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 13</value>
-  </data>
-  <data name="label_palNum.Text" xml:space="preserve">
-    <value>调色板：</value>
-  </data>
   <data name="button_palClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -499,6 +487,18 @@
   </data>
   <data name="pictureBox_pal.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 17</value>
+  </data>
+  <data name="label_palNum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_palNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 42</value>
+  </data>
+  <data name="label_palNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label_palNum.Text" xml:space="preserve">
+    <value>调色板：</value>
   </data>
   <data name="tabPage_palette.Size" type="System.Drawing.Size, System.Drawing">
     <value>281, 164</value>

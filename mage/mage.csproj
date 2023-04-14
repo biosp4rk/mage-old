@@ -433,6 +433,7 @@
     <EmbeddedResource Include="FormShortcuts.zh-Hans.resx">
       <DependentUpon>FormShortcuts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
     <EmbeddedResource Include="Tools\FormAdd.resx">
       <DependentUpon>FormAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -605,6 +606,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Icons\button_bg_color.png" />
+    <None Include="zh-CN\ZM\ZM_U_weapons.txt" />
+    <None Include="zh-CN\ZM\ZM_U_physics.txt" />
+    <None Include="zh-CN\ZM\ZM_U_patches.txt" />
+    <None Include="zh-CN\ZM\ZM_U_demoRAM.txt" />
+    <None Include="zh-CN\ZM\ZM_constants.txt" />
+    <None Include="zh-CN\ZM\ZM_clipdata.txt" />
+    <None Include="zh-CN\MF\MF_U_weapons.txt" />
+    <None Include="zh-CN\MF\MF_U_physics.txt" />
+    <None Include="zh-CN\MF\MF_U_patches.txt" />
+    <None Include="zh-CN\MF\MF_U_demoRAM.txt" />
+    <None Include="zh-CN\MF\MF_constants.txt" />
+    <None Include="zh-CN\MF\MF_clipdata.txt" />
+    <None Include="zh-CN\textLists.txt" />
+    <None Include="zh-CN\endings.txt" />
     <None Include="Resources\Icons\toolbar_add.png" />
     <Content Include="Resources\Icons\toolbar_animation.png" />
     <Content Include="Resources\Icons\toolbar_connection.png" />

@@ -143,10 +143,7 @@
   <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox_tileTable.Name" xml:space="preserve">
-    <value>textBox_tileTable</value>
-  </data>
-  <data name="&gt;&gt;label_tileTable.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_animPalette.Parent" xml:space="preserve">
     <value>groupBox_data</value>
   </data>
   <data name="&gt;&gt;button_editAnimPalette.Name" xml:space="preserve">
@@ -163,9 +160,6 @@
   </data>
   <data name="&gt;&gt;label_tileset.Name" xml:space="preserve">
     <value>label_tileset</value>
-  </data>
-  <data name="&gt;&gt;textBox_animTileset.Parent" xml:space="preserve">
-    <value>groupBox_data</value>
   </data>
   <data name="&gt;&gt;button_editRLE.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -195,10 +189,10 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;textBox_animTileset.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;label_animPalette.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="comboBox_tileset.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 20</value>
@@ -221,11 +215,11 @@
   <data name="button_editPalette.Location" type="System.Drawing.Point, System.Drawing">
     <value>141, 41</value>
   </data>
-  <data name="label_offset.Text" xml:space="preserve">
-    <value>Offset:</value>
-  </data>
   <data name="label_animPalette.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="label_rleGfx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
   </data>
   <data name="label_tileset.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -257,26 +251,26 @@
   <data name="button_editTileTable.Location" type="System.Drawing.Point, System.Drawing">
     <value>141, 89</value>
   </data>
-  <data name="button_editLZ77.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
   <data name="button_apply.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 21</value>
   </data>
   <data name="&gt;&gt;label_animPalette.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_offset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 210</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormTileset</value>
   </data>
   <data name="label_lz77gfx.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;label_rleGfx.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>17</value>
   </data>
   <data name="statusLabel_changes.Text" xml:space="preserve">
     <value>-</value>
@@ -290,17 +284,14 @@
   <data name="&gt;&gt;textBox_lz77gfx.Name" xml:space="preserve">
     <value>textBox_lz77gfx</value>
   </data>
-  <data name="&gt;&gt;textBox_rleGfx.Name" xml:space="preserve">
-    <value>textBox_rleGfx</value>
+  <data name="button_editRLE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
   </data>
   <data name="textBox_animPalette.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 21</value>
   </data>
   <data name="button_editPalette.Text" xml:space="preserve">
     <value>Edit</value>
-  </data>
-  <data name="button_editRLE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
   </data>
   <data name="&gt;&gt;label_tileset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -317,8 +308,8 @@
   <data name="&gt;&gt;button_editLZ77.Name" xml:space="preserve">
     <value>button_editLZ77</value>
   </data>
-  <data name="&gt;&gt;label_rleGfx.Parent" xml:space="preserve">
-    <value>groupBox_data</value>
+  <data name="textBox_tileTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 90</value>
   </data>
   <data name="&gt;&gt;button_editRLE.Parent" xml:space="preserve">
     <value>groupBox_data</value>
@@ -329,8 +320,14 @@
   <data name="&gt;&gt;textBox_offsetVal.Name" xml:space="preserve">
     <value>textBox_offsetVal</value>
   </data>
-  <data name="&gt;&gt;label_animPalette.Parent" xml:space="preserve">
-    <value>groupBox_data</value>
+  <data name="label_offset.Text" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button_editRLE.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="button_editAnimPalette.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -347,14 +344,14 @@
   <data name="&gt;&gt;button_editAnimPalette.Parent" xml:space="preserve">
     <value>groupBox_data</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormTileset</value>
-  </data>
   <data name="&gt;&gt;label_palette.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
-  <data name="label_offset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
+  <data name="&gt;&gt;comboBox_tileset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_tileTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox_offsetVal.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 14</value>
@@ -367,9 +364,6 @@
   </data>
   <data name="button_close.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="textBox_animPalette.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
   </data>
   <data name="&gt;&gt;comboBox_tileset.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -393,13 +387,13 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox_lz77gfx.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;button_editAnimTileset.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label_animTileset.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;textBox_rleGfx.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -413,17 +407,20 @@
   <data name="textBox_rleGfx.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;textBox_animTileset.Name" xml:space="preserve">
-    <value>textBox_animTileset</value>
+  <data name="button_editLZ77.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
   </data>
   <data name="label_tileset.Text" xml:space="preserve">
     <value>Tileset:</value>
   </data>
   <data name="&gt;&gt;label_tileTable.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
-  <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;button_editPalette.Name" xml:space="preserve">
+    <value>button_editPalette</value>
+  </data>
+  <data name="label_animTileset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="button_editPalette.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -443,8 +440,8 @@
   <data name="comboBox_tileset.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;label_rleGfx.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button_editRLE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox_lz77gfx.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -471,7 +468,7 @@
     <value>label_tileTable</value>
   </data>
   <data name="&gt;&gt;label_lz77gfx.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="button_editAnimTileset.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
@@ -479,8 +476,8 @@
   <data name="textBox_palette.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;groupBox_data.Name" xml:space="preserve">
-    <value>groupBox_data</value>
+  <data name="label_tileTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 92</value>
   </data>
   <data name="&gt;&gt;button_editTileTable.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -565,14 +562,14 @@
         AAP//wAP//8ADw==
 </value>
   </data>
-  <data name="&gt;&gt;button_editRLE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="textBox_animPalette.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 138</value>
   </data>
   <data name="&gt;&gt;button_editAnimTileset.Parent" xml:space="preserve">
     <value>groupBox_data</value>
+  </data>
+  <data name="&gt;&gt;textBox_animPalette.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 206</value>
@@ -583,11 +580,14 @@
   <data name="&gt;&gt;label_offset.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label_animTileset.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label_rleGfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox_rleGfx.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
+  </data>
+  <data name="label_offset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 210</value>
   </data>
   <data name="button_apply.Text" xml:space="preserve">
     <value>Apply</value>
@@ -626,10 +626,22 @@
     <value>7</value>
   </data>
   <data name="&gt;&gt;textBox_tileTable.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBox_animTileset.Name" xml:space="preserve">
+    <value>textBox_animTileset</value>
   </data>
   <data name="&gt;&gt;groupBox_data.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_editLZ77.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox_rleGfx.Name" xml:space="preserve">
+    <value>textBox_rleGfx</value>
+  </data>
+  <data name="&gt;&gt;label_lz77gfx.Name" xml:space="preserve">
+    <value>label_lz77gfx</value>
   </data>
   <data name="groupBox_data.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -640,26 +652,17 @@
   <data name="&gt;&gt;textBox_tileTable.Parent" xml:space="preserve">
     <value>groupBox_data</value>
   </data>
-  <data name="textBox_animTileset.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;textBox_palette.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;textBox_animTileset.Parent" xml:space="preserve">
+    <value>groupBox_data</value>
   </data>
   <data name="label_palette.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button_editPalette.Name" xml:space="preserve">
-    <value>button_editPalette</value>
+  <data name="&gt;&gt;groupBox_data.Name" xml:space="preserve">
+    <value>groupBox_data</value>
   </data>
   <data name="&gt;&gt;button_editTileTable.Parent" xml:space="preserve">
     <value>groupBox_data</value>
-  </data>
-  <data name="&gt;&gt;textBox_animTileset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_tileset.Name" xml:space="preserve">
-    <value>comboBox_tileset</value>
   </data>
   <data name="button_editAnimTileset.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -670,8 +673,8 @@
   <data name="button_close.Text" xml:space="preserve">
     <value>Close</value>
   </data>
-  <data name="&gt;&gt;label_lz77gfx.Name" xml:space="preserve">
-    <value>label_lz77gfx</value>
+  <data name="&gt;&gt;comboBox_tileset.Name" xml:space="preserve">
+    <value>comboBox_tileset</value>
   </data>
   <data name="label_tileset.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 183</value>
@@ -679,14 +682,11 @@
   <data name="label_offset.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;button_editAnimTileset.Name" xml:space="preserve">
-    <value>button_editAnimTileset</value>
+  <data name="&gt;&gt;textBox_palette.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="button_editRLE.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="label_rleGfx.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 20</value>
+  <data name="&gt;&gt;textBox_animTileset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label_tileTable.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -718,8 +718,8 @@
   <data name="groupBox_data.Size" type="System.Drawing.Size, System.Drawing">
     <value>212, 163</value>
   </data>
-  <data name="&gt;&gt;label_palette.Parent" xml:space="preserve">
-    <value>groupBox_data</value>
+  <data name="&gt;&gt;button_editAnimTileset.Name" xml:space="preserve">
+    <value>button_editAnimTileset</value>
   </data>
   <data name="label_lz77gfx.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 68</value>
@@ -742,9 +742,6 @@
   <data name="button_editPalette.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
   </data>
-  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
-    <value>statusLabel_changes</value>
-  </data>
   <data name="label_lz77gfx.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 12</value>
   </data>
@@ -757,17 +754,20 @@
   <data name="&gt;&gt;label_offset.Name" xml:space="preserve">
     <value>label_offset</value>
   </data>
-  <data name="label_tileTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 92</value>
+  <data name="textBox_animTileset.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="groupBox_data.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 10</value>
   </data>
-  <data name="&gt;&gt;button_editLZ77.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label_tileTable.Parent" xml:space="preserve">
+    <value>groupBox_data</value>
   </data>
   <data name="&gt;&gt;button_editAnimPalette.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_palette.Parent" xml:space="preserve">
+    <value>groupBox_data</value>
   </data>
   <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 17</value>
@@ -787,14 +787,14 @@
   <data name="&gt;&gt;button_editRLE.Name" xml:space="preserve">
     <value>button_editRLE</value>
   </data>
-  <data name="&gt;&gt;textBox_tileTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox_animPalette.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="textBox_lz77gfx.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 66</value>
   </data>
-  <data name="textBox_tileTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 90</value>
+  <data name="label_offset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
   </data>
   <data name="textBox_rleGfx.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 18</value>
@@ -802,11 +802,11 @@
   <data name="textBox_animTileset.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 21</value>
   </data>
-  <data name="&gt;&gt;comboBox_tileset.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label_rleGfx.Parent" xml:space="preserve">
+    <value>groupBox_data</value>
   </data>
-  <data name="&gt;&gt;textBox_animPalette.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
   </data>
   <data name="&gt;&gt;textBox_animPalette.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -844,8 +844,8 @@
   <data name="&gt;&gt;button_editPalette.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;textBox_tileTable.Name" xml:space="preserve">
+    <value>textBox_tileTable</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>56</value>

@@ -1,0 +1,7 @@
+ZM_U_itemToggle,能力开关,Trunaur68
+ZM_U_addElevators1,增加电梯（保留过场动画）,biospark
+ZM_U_addElevators2,增加电梯（移除过场动画）,biospark
+ZM_U_addMinimapTiles,增加小地图块,biospark
+ZM_U_noMinimap,无地图,biospark
+ZM_U_disableChozoHints,禁用鸟人像提示,biospark
+ZM_U_removeCloseup,移除萨姆斯特写镜头,biospark

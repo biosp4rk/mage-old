@@ -175,7 +175,6 @@
             this.groupBox_data.Controls.Add(this.button_editRLE);
             this.groupBox_data.Controls.Add(this.button_editPalette);
             this.groupBox_data.Controls.Add(this.button_editAnimPalette);
-            this.groupBox_data.Controls.Add(this.label_rleGfx);
             this.groupBox_data.Controls.Add(this.textBox_rleGfx);
             this.groupBox_data.Controls.Add(this.textBox_palette);
             this.groupBox_data.Controls.Add(this.label_animPalette);
@@ -187,6 +186,7 @@
             this.groupBox_data.Controls.Add(this.textBox_animTileset);
             this.groupBox_data.Controls.Add(this.label_lz77gfx);
             this.groupBox_data.Controls.Add(this.label_tileTable);
+            this.groupBox_data.Controls.Add(this.label_rleGfx);
             this.groupBox_data.Name = "groupBox_data";
             this.groupBox_data.TabStop = false;
             // 

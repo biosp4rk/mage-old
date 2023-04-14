@@ -167,13 +167,13 @@
     <value>230, 285</value>
   </data>
   <data name="textBox_ramVal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 330</value>
+    <value>213, 327</value>
   </data>
   <data name="textBox_ramVal.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 22</value>
   </data>
   <data name="button_set.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 329</value>
+    <value>279, 328</value>
   </data>
   <data name="button_set.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 22</value>
@@ -182,10 +182,10 @@
     <value>设置</value>
   </data>
   <data name="statusStrip_spring.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 18</value>
+    <value>337, 18</value>
   </data>
   <data name="statusStrip_importDemo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>109, 22</value>
   </data>
   <data name="statusStrip_importDemo.Text" xml:space="preserve">
     <value>演示...</value>
@@ -197,7 +197,7 @@
     <value>导入</value>
   </data>
   <data name="statusStrip_exportDemo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>109, 22</value>
   </data>
   <data name="statusStrip_exportDemo.Text" xml:space="preserve">
     <value>演示...</value>

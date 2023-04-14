@@ -303,11 +303,11 @@
             this.tabPage_palette.Controls.Add(this.label_palDelay);
             this.tabPage_palette.Controls.Add(this.label_palDirection);
             this.tabPage_palette.Controls.Add(this.comboBox_palDirection);
-            this.tabPage_palette.Controls.Add(this.label_palNum);
             this.tabPage_palette.Controls.Add(this.button_palClose);
             this.tabPage_palette.Controls.Add(this.button_palApply);
             this.tabPage_palette.Controls.Add(this.comboBox_palNum);
             this.tabPage_palette.Controls.Add(this.pictureBox_pal);
+            this.tabPage_palette.Controls.Add(this.label_palNum);
             this.tabPage_palette.Name = "tabPage_palette";
             // 
             // button_palEdit

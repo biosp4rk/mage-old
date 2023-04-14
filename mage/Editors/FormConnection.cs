@@ -574,7 +574,9 @@ namespace mage
             {
                 index++;
             }
-            index++;
+
+            //orignal code
+            /*index++;
 
             while (index < lines.Length)
             {
@@ -585,7 +587,15 @@ namespace mage
                     textCount = Convert.ToInt32(mc[1].Value, 16);
                     break;
                 }
-            }
+            }*/
+
+            //adjust for localization. fusion game code is AMT?, zero mission game code is BMX? (? is region code, E-USA J-Japan P-Europe C-China)
+            //make index point to Locations line
+            index += gameCode.StartsWith("AM") ? 4 : 3;
+            MatchCollection mc = Regex.Matches(lines[index], @"[^\t,]+");
+            textPtr = Convert.ToInt32(mc[0].Value, 16);
+            textCount = Convert.ToInt32(mc[1].Value, 16);
+
         }
 
         private void listView_locNames_SelectedIndexChanged(object sender, EventArgs e)
