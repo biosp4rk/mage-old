@@ -121,11 +121,40 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 All files (*.*)|*.* 的本地化字符串。
+        /// </summary>
+        internal static string form_AllFilterText {
+            get {
+                return ResourceManager.GetString("form_AllFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Error 的本地化字符串。
         /// </summary>
         internal static string form_ErrorMessageBoxTitle {
             get {
                 return ResourceManager.GetString("form_ErrorMessageBoxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PNG files (*.png)|*.png 的本地化字符串。
+        /// </summary>
+        internal static string form_PNGFilterText {
+            get {
+                return ResourceManager.GetString("form_PNGFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 One of the values entered was not valid.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string form_ValueNotValidErrorText {
+            get {
+                return ResourceManager.GetString("form_ValueNotValidErrorText", resourceCulture);
             }
         }
         
@@ -278,15 +307,6 @@ namespace mage.Properties {
         }
         
         /// <summary>
-        ///   查找类似 All files (*.*)|*.* 的本地化字符串。
-        /// </summary>
-        internal static string formMap_RawFilterText {
-            get {
-                return ResourceManager.GetString("formMap_RawFilterText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Tile: 的本地化字符串。
         /// </summary>
         internal static string formMap_StatusLabel_tile {
@@ -341,22 +361,20 @@ namespace mage.Properties {
         }
         
         /// <summary>
-        ///   查找类似 PNG files (*.png)|*.png 的本地化字符串。
+        ///   查找类似 Tile Layer Pro palette (*.tpl)|*.tpl 的本地化字符串。
         /// </summary>
-        internal static string formPNGFilterText {
+        internal static string formPalette_TLPFilterText {
             get {
-                return ResourceManager.GetString("formPNGFilterText", resourceCulture);
+                return ResourceManager.GetString("formPalette_TLPFilterText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查找类似 One of the values entered was not valid.
-        ///
-        /// 的本地化字符串。
+        ///   查找类似 YY-CHR palette (*.pal)|*.pal 的本地化字符串。
         /// </summary>
-        internal static string formValueNotValidErrorText {
+        internal static string formPalette_YYCHRFilterText {
             get {
-                return ResourceManager.GetString("formValueNotValidErrorText", resourceCulture);
+                return ResourceManager.GetString("formPalette_YYCHRFilterText", resourceCulture);
             }
         }
         

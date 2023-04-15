@@ -164,8 +164,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formGFX_OffsetNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -508,15 +510,18 @@ namespace mage
 
         public static string GetFileFilter(PalFileType type)
         {
-            string allFiles = "All files (*.*)|*.*";
+            //string allFiles = "All files (*.*)|*.*";
+            string allFiles = Properties.Resources.form_AllFilterText;
             switch (type)
             {
                 case PalFileType.Raw:
                     return allFiles;
                 case PalFileType.YYCHR:
-                    return $"YY-CHR palette (*.pal)|*.pal|{allFiles}";
+                    //return $"YY-CHR palette (*.pal)|*.pal|{allFiles}";
+                    return $"{Properties.Resources.formPalette_YYCHRFilterText}|{allFiles}";
                 case PalFileType.TLP:
-                    return $"Tile Layer Pro palette (*.tpl)|*.tpl|{allFiles}";
+                    //return $"Tile Layer Pro palette (*.tpl)|*.tpl|{allFiles}";
+                    return $"{Properties.Resources.formPalette_TLPFilterText}|{allFiles}";
             }
             throw new FormatException();
         }

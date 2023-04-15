@@ -563,9 +563,6 @@
 
 Would you like to try replacing it with blank data?</value>
   </data>
-  <data name="formMap_RawFilterText" xml:space="preserve">
-    <value>All files (*.*)|*.*</value>
-  </data>
   <data name="formMap_StatusLabel_tile" xml:space="preserve">
     <value>Tile:</value>
   </data>
@@ -584,16 +581,25 @@ Would you like to try replacing it with blank data?</value>
   <data name="formMap_typeItems4" xml:space="preserve">
     <value>Heated (hidden)</value>
   </data>
-  <data name="formPNGFilterText" xml:space="preserve">
-    <value>PNG files (*.png)|*.png</value>
+  <data name="formPalette_TLPFilterText" xml:space="preserve">
+    <value>Tile Layer Pro palette (*.tpl)|*.tpl</value>
   </data>
-  <data name="formValueNotValidErrorText" xml:space="preserve">
-    <value>One of the values entered was not valid.
-
-</value>
+  <data name="formPalette_YYCHRFilterText" xml:space="preserve">
+    <value>YY-CHR palette (*.pal)|*.pal</value>
+  </data>
+  <data name="form_AllFilterText" xml:space="preserve">
+    <value>All files (*.*)|*.*</value>
   </data>
   <data name="form_ErrorMessageBoxTitle" xml:space="preserve">
     <value>Error</value>
+  </data>
+  <data name="form_PNGFilterText" xml:space="preserve">
+    <value>PNG files (*.png)|*.png</value>
+  </data>
+  <data name="form_ValueNotValidErrorText" xml:space="preserve">
+    <value>One of the values entered was not valid.
+
+</value>
   </data>
   <data name="statusLabel_changesText" xml:space="preserve">
     <value>Changes saved</value>

@@ -401,7 +401,7 @@ namespace mage
         {
             OpenFileDialog openRaw = new OpenFileDialog();
             //openRaw.Filter = "All files (*.*)|*.*";
-            openRaw.Filter = Properties.Resources.formMap_RawFilterText;
+            openRaw.Filter = Properties.Resources.form_AllFilterText;
             if (openRaw.ShowDialog() == DialogResult.OK)
             {
                 byte[] temp = System.IO.File.ReadAllBytes(openRaw.FileName);
@@ -418,7 +418,7 @@ namespace mage
         {
             SaveFileDialog saveRaw = new SaveFileDialog();
             //saveRaw.Filter = "All files (*.*)|*.*";
-            saveRaw.Filter = Properties.Resources.formMap_RawFilterText;
+            saveRaw.Filter = Properties.Resources.form_AllFilterText;
             if (saveRaw.ShowDialog() == DialogResult.OK)
             {
                 ByteStream output = new ByteStream();
@@ -431,7 +431,7 @@ namespace mage
         {
             SaveFileDialog saveMap = new SaveFileDialog();
             //saveMap.Filter = "PNG files (*.png)|*.png";
-            saveMap.Filter = Properties.Resources.formPNGFilterText;
+            saveMap.Filter = Properties.Resources.form_PNGFilterText;
             if (saveMap.ShowDialog() == DialogResult.OK)
             {
                 mapImg.Save(saveMap.FileName);

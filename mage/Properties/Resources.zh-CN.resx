@@ -170,9 +170,6 @@
   <data name="formMap_MessageBox" xml:space="preserve">
     <value>地图数据已损坏，是否尝试用空白数据替换它？</value>
   </data>
-  <data name="formMap_RawFilterText" xml:space="preserve">
-    <value>所有文件 (*.*)|*.*</value>
-  </data>
   <data name="formMap_StatusLabel_tile" xml:space="preserve">
     <value>地图块：</value>
   </data>
@@ -191,12 +188,21 @@
   <data name="formMap_typeItems4" xml:space="preserve">
     <value>高温（隐藏）</value>
   </data>
+  <data name="formPalette_TLPFilterText" xml:space="preserve">
+    <value>Tile Layer Pro 调色板 (*.tpl)|*.tpl</value>
+  </data>
+  <data name="formPalette_YYCHRFilterText" xml:space="preserve">
+    <value>YY-CHR 调色板 (*.pal)|*.pal</value>
+  </data>
   <data name="formPNGFilterText" xml:space="preserve">
     <value>PNG 文件 (*.png)|*.png</value>
   </data>
   <data name="formValueNotValidErrorText" xml:space="preserve">
     <value>输入的值无效。
 </value>
+  </data>
+  <data name="form_AllFilterText" xml:space="preserve">
+    <value>所有文件 (*.*)|*.*</value>
   </data>
   <data name="form_ErrorMessageBoxTitle" xml:space="preserve">
     <value>错误</value>

@@ -276,7 +276,7 @@ namespace mage
         {
             SaveFileDialog saveImg = new SaveFileDialog();
             //saveImg.Filter = "PNG files (*.png)|*.png";
-            saveImg.Filter = Properties.Resources.formPNGFilterText;
+            saveImg.Filter = Properties.Resources.form_PNGFilterText;
             if (saveImg.ShowDialog() == DialogResult.OK)
             {
                 PixelFormat format = PixelFormat.Undefined;

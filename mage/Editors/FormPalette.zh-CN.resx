@@ -251,7 +251,7 @@
     <value>70, 23</value>
   </data>
   <data name="button_close.Text" xml:space="preserve">
-    <value>关闭</value>
+    <value>关闭 </value>
   </data>
   <data name="label_15bit.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 18</value>
