@@ -529,6 +529,9 @@
   <data name="formConn_StringRoom" xml:space="preserve">
     <value>Room</value>
   </data>
+  <data name="formDemo_FilterText" xml:space="preserve">
+    <value>MAGE demo (*.mgd)|*.mgd</value>
+  </data>
   <data name="formMap_areaItemsExtra" xml:space="preserve">
     <value>Extra</value>
   </data>
@@ -563,6 +566,7 @@ Would you like to try replacing it with blank data?</value>
   </data>
   <data name="formValueNotValidErrorText" xml:space="preserve">
     <value>One of the values entered was not valid.
+
 </value>
   </data>
   <data name="form_ErrorMessageBoxTitle" xml:space="preserve">

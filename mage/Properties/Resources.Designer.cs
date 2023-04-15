@@ -184,6 +184,15 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 MAGE demo (*.mgd)|*.mgd 的本地化字符串。
+        /// </summary>
+        internal static string formDemo_FilterText {
+            get {
+                return ResourceManager.GetString("formDemo_FilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Extra 的本地化字符串。
         /// </summary>
         internal static string formMap_areaItemsExtra {

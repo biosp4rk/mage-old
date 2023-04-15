@@ -139,6 +139,9 @@
   <data name="formConn_StringRoom" xml:space="preserve">
     <value>房间</value>
   </data>
+  <data name="formDemo_FilterText" xml:space="preserve">
+    <value>MAGE 演示 (*.mgd)|*.mgd</value>
+  </data>
   <data name="formMap_areaItemsExtra" xml:space="preserve">
     <value>额外</value>
   </data>

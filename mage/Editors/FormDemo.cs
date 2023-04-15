@@ -573,7 +573,8 @@ namespace mage
         private void statusStrip_importDemo_Click(object sender, EventArgs e)
         {
             OpenFileDialog openDemo = new OpenFileDialog();
-            openDemo.Filter = "MAGE demo (*.mgd)|*.mgd";
+            //openDemo.Filter = "MAGE demo (*.mgd)|*.mgd";
+            openDemo.Filter = Properties.Resources.formDemo_FilterText;
             if (openDemo.ShowDialog() == DialogResult.OK)
             {
                 byte[] temp = System.IO.File.ReadAllBytes(openDemo.FileName);
@@ -585,7 +586,8 @@ namespace mage
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -601,7 +603,8 @@ namespace mage
         private void statusStrip_exportDemo_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveDemo = new SaveFileDialog();
-            saveDemo.Filter = "MAGE demo (*.mgd)|*.mgd";
+            //saveDemo.Filter = "MAGE demo (*.mgd)|*.mgd";
+            saveDemo.Filter = Properties.Resources.formDemo_FilterText;
             if (saveDemo.ShowDialog() == DialogResult.OK)
             {
                 currDemo.Export(saveDemo.FileName);
