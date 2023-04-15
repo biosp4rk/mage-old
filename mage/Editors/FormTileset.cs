@@ -70,8 +70,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.form_ValueNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -92,8 +94,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.form_ValueNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -119,8 +123,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.form_ValueNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -140,8 +146,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The value entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.form_ValueNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -165,8 +173,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
+                //        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.form_OneValueNotValidErrorText + ex.Message,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

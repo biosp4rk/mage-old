@@ -139,6 +139,17 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 One of the values entered was not valid.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string form_OneValueNotValidErrorText {
+            get {
+                return ResourceManager.GetString("form_OneValueNotValidErrorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 PNG files (*.png)|*.png 的本地化字符串。
         /// </summary>
         internal static string form_PNGFilterText {
@@ -148,7 +159,7 @@ namespace mage.Properties {
         }
         
         /// <summary>
-        ///   查找类似 One of the values entered was not valid.
+        ///   查找类似 The value entered was not valid.
         ///
         /// 的本地化字符串。
         /// </summary>
@@ -375,6 +386,24 @@ namespace mage.Properties {
         internal static string formPalette_YYCHRFilterText {
             get {
                 return ResourceManager.GetString("formPalette_YYCHRFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似  (too high) 的本地化字符串。
+        /// </summary>
+        internal static string formSprite_label_totalProbHigh {
+            get {
+                return ResourceManager.GetString("formSprite_label_totalProbHigh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似  (too low) 的本地化字符串。
+        /// </summary>
+        internal static string formSprite_label_totalProbLow {
+            get {
+                return ResourceManager.GetString("formSprite_label_totalProbLow", resourceCulture);
             }
         }
         

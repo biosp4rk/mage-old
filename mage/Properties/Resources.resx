@@ -548,6 +548,7 @@
     <value>The offset entered was not valid.
 
 </value>
+    <comment>The offset entered was not valid.\n\n</comment>
   </data>
   <data name="formGFX_RepointGFXText" xml:space="preserve">
     <value>Graphics were repointed to</value>
@@ -587,19 +588,32 @@ Would you like to try replacing it with blank data?</value>
   <data name="formPalette_YYCHRFilterText" xml:space="preserve">
     <value>YY-CHR palette (*.pal)|*.pal</value>
   </data>
+  <data name="formSprite_label_totalProbHigh" xml:space="preserve">
+    <value> (too high)</value>
+  </data>
+  <data name="formSprite_label_totalProbLow" xml:space="preserve">
+    <value> (too low)</value>
+  </data>
   <data name="form_AllFilterText" xml:space="preserve">
     <value>All files (*.*)|*.*</value>
   </data>
   <data name="form_ErrorMessageBoxTitle" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="form_OneValueNotValidErrorText" xml:space="preserve">
+    <value>One of the values entered was not valid.
+
+</value>
+    <comment>One of the values entered was not valid.\n\n</comment>
+  </data>
   <data name="form_PNGFilterText" xml:space="preserve">
     <value>PNG files (*.png)|*.png</value>
   </data>
   <data name="form_ValueNotValidErrorText" xml:space="preserve">
-    <value>One of the values entered was not valid.
+    <value>The value entered was not valid.
 
 </value>
+    <comment>The value entered was not valid.\n\n</comment>
   </data>
   <data name="statusLabel_changesText" xml:space="preserve">
     <value>Changes saved</value>

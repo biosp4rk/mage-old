@@ -126,15 +126,18 @@
   <data name="&gt;&gt;label_totalProb.Parent" xml:space="preserve">
     <value>groupBox_dropProbability</value>
   </data>
-  <data name="&gt;&gt;label_largeHealth.Parent" xml:space="preserve">
-    <value>groupBox_dropProbability</value>
+  <data name="&gt;&gt;textBox_gfxOffsetVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gfxRows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label_noDrop.Text" xml:space="preserve">
     <value>No drop:</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="numericUpDown_gfxRows.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="label_damage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label_health.Location" type="System.Drawing.Point, System.Drawing">
@@ -143,11 +146,17 @@
   <data name="checkBox_speedScrew.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 28</value>
   </data>
-  <data name="textBox_palOffsetVal.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;label_largeHealth.Parent" xml:space="preserve">
+    <value>groupBox_dropProbability</value>
   </data>
   <data name="&gt;&gt;groupBox_graphics.Name" xml:space="preserve">
     <value>groupBox_graphics</value>
+  </data>
+  <data name="label_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>399, 15</value>
+  </data>
+  <data name="&gt;&gt;textBox_smallHealth.Parent" xml:space="preserve">
+    <value>groupBox_dropProbability</value>
   </data>
   <data name="label_missileX.Text" xml:space="preserve">
     <value>Missile X:</value>
@@ -157,6 +166,9 @@
   </data>
   <data name="comboBox_type.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 20</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_preview.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label_AI.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -179,8 +191,8 @@
   <data name="&gt;&gt;label_gfxRows.Name" xml:space="preserve">
     <value>label_gfxRows</value>
   </data>
-  <data name="label_largeHealth.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textBox_damage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;textBox_powerBomb.Parent" xml:space="preserve">
     <value>groupBox_dropProbability</value>
@@ -194,8 +206,8 @@
   <data name="&gt;&gt;label_powerBomb.Parent" xml:space="preserve">
     <value>groupBox_dropProbability</value>
   </data>
-  <data name="textBox_missile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+  <data name="label_superMissile.Text" xml:space="preserve">
+    <value>Super missile:</value>
   </data>
   <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
     <value>$this</value>
@@ -224,9 +236,6 @@
   <data name="&gt;&gt;label_palOffset.Parent" xml:space="preserve">
     <value>groupBox_graphics</value>
   </data>
-  <data name="groupBox_stats.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;checkBox_beamAndBombs.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -242,6 +251,9 @@
   <data name="label_gfxOffset.Text" xml:space="preserve">
     <value>GFX offset:</value>
   </data>
+  <data name="&gt;&gt;comboBox_sprite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;textBox_palOffsetVal.Parent" xml:space="preserve">
     <value>groupBox_graphics</value>
   </data>
@@ -252,9 +264,6 @@
     <value>groupBox_graphics</value>
   </data>
   <data name="&gt;&gt;label_type.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="groupBox_vulnerability.Location" type="System.Drawing.Point, System.Drawing">
@@ -299,6 +308,9 @@
   <data name="&gt;&gt;label_sprite.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="&gt;&gt;label_AI.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;textBox_superMissile.Parent" xml:space="preserve">
     <value>groupBox_dropProbability</value>
   </data>
@@ -326,9 +338,6 @@
   <data name="panel_preview.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 109</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="textBox_largeHealth.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 151</value>
   </data>
@@ -341,8 +350,8 @@
   <data name="&gt;&gt;groupBox_stats.Name" xml:space="preserve">
     <value>groupBox_stats</value>
   </data>
-  <data name="&gt;&gt;checkBox_superMissiles.Name" xml:space="preserve">
-    <value>checkBox_superMissiles</value>
+  <data name="textBox_powerBomb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
   </data>
   <data name="&gt;&gt;button_editGFX.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -371,14 +380,14 @@
   <data name="comboBox_reduction.Items" xml:space="preserve">
     <value>30% and 10%</value>
   </data>
-  <data name="label_reduction.Text" xml:space="preserve">
-    <value>Suit reduction:</value>
+  <data name="label_superMissile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 12</value>
   </data>
   <data name="&gt;&gt;groupBox_graphics.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
-    <value>statusStrip</value>
+  <data name="&gt;&gt;label_health.Name" xml:space="preserve">
+    <value>label_health</value>
   </data>
   <data name="&gt;&gt;checkBox_superMissiles.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -389,14 +398,11 @@
   <data name="checkBox_frozen.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label_healthX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 39</value>
+  <data name="numericUpDown_gfxRows.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;label_damage.Name" xml:space="preserve">
     <value>label_damage</value>
-  </data>
-  <data name="label_redX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
   </data>
   <data name="textBox_missile.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -413,11 +419,8 @@
   <data name="&gt;&gt;textBox_gfxOffsetVal.Parent" xml:space="preserve">
     <value>groupBox_graphics</value>
   </data>
-  <data name="&gt;&gt;textBox_smallHealth.Name" xml:space="preserve">
-    <value>textBox_smallHealth</value>
-  </data>
-  <data name="&gt;&gt;label_noDrop.Name" xml:space="preserve">
-    <value>label_noDrop</value>
+  <data name="&gt;&gt;textBox_healthX.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
   <data name="&gt;&gt;groupBox_stats.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -428,8 +431,11 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>528, 306</value>
   </data>
-  <data name="&gt;&gt;label_total.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="checkBox_chargeBeam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="textBox_AIoffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 269</value>
   </data>
   <data name="&gt;&gt;checkBox_frozen.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -437,8 +443,14 @@
   <data name="&gt;&gt;checkBox_beamAndBombs.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="checkBox_powerBombs.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;textBox_noDrop.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_missile.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="checkBox_chargeBeam.Text" xml:space="preserve">
     <value>Charge beam</value>
@@ -446,29 +458,23 @@
   <data name="label_redX.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;textBox_AIoffset.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel_preview.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label_total.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;textBox_powerBomb.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="label_palOffset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 12</value>
-  </data>
   <data name="&gt;&gt;textBox_health.Name" xml:space="preserve">
     <value>textBox_health</value>
-  </data>
-  <data name="&gt;&gt;groupBox_dropProbability.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox_noDrop.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
   <data name="textBox_noDrop.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="textBox_smallHealth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 128</value>
   </data>
   <data name="label_missile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -485,14 +491,14 @@
   <data name="label_health.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="checkBox_powerBombs.Text" xml:space="preserve">
-    <value>Power bombs</value>
+  <data name="&gt;&gt;label_noDrop.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="label_total.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
   </data>
-  <data name="button_editPalette.Text" xml:space="preserve">
-    <value>Edit</value>
+  <data name="label_reduction.Text" xml:space="preserve">
+    <value>Suit reduction:</value>
   </data>
   <data name="&gt;&gt;checkBox_missiles.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -502,9 +508,6 @@
   </data>
   <data name="&gt;&gt;textBox_damage.Parent" xml:space="preserve">
     <value>groupBox_stats</value>
-  </data>
-  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
-    <value>statusLabel_changes</value>
   </data>
   <data name="&gt;&gt;label_superMissile.Name" xml:space="preserve">
     <value>label_superMissile</value>
@@ -539,9 +542,6 @@
   <data name="textBox_gfxOffsetVal.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 31</value>
   </data>
-  <data name="label_sprite.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="textBox_health.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 21</value>
   </data>
@@ -563,9 +563,6 @@
   <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="label_superMissile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 12</value>
-  </data>
   <data name="&gt;&gt;textBox_healthX.Parent" xml:space="preserve">
     <value>groupBox_dropProbability</value>
   </data>
@@ -575,8 +572,8 @@
   <data name="&gt;&gt;textBox_noDrop.Parent" xml:space="preserve">
     <value>groupBox_dropProbability</value>
   </data>
-  <data name="panel_preview.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;label_noDrop.Name" xml:space="preserve">
+    <value>label_noDrop</value>
   </data>
   <data name="&gt;&gt;textBox_missileX.Name" xml:space="preserve">
     <value>textBox_missileX</value>
@@ -587,6 +584,12 @@
   <data name="&gt;&gt;label_type.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label_reduction.Parent" xml:space="preserve">
+    <value>groupBox_stats</value>
+  </data>
+  <data name="button_editPalette.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
   <data name="checkBox_missiles.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 60</value>
   </data>
@@ -596,8 +599,8 @@
   <data name="label_healthX.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="textBox_powerBomb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 221</value>
+  <data name="label_gfxRows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 58</value>
   </data>
   <data name="&gt;&gt;label_powerBomb.Name" xml:space="preserve">
     <value>label_powerBomb</value>
@@ -623,8 +626,8 @@
   <data name="&gt;&gt;label_smallHealth.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;textBox_healthX.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="checkBox_powerBombs.Text" xml:space="preserve">
+    <value>Power bombs</value>
   </data>
   <data name="&gt;&gt;checkBox_speedScrew.Name" xml:space="preserve">
     <value>checkBox_speedScrew</value>
@@ -656,26 +659,17 @@
   <data name="&gt;&gt;checkBox_beamAndBombs.Name" xml:space="preserve">
     <value>checkBox_beamAndBombs</value>
   </data>
-  <data name="textBox_largeHealth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
-  </data>
-  <data name="&gt;&gt;numericUpDown_gfxRows.Parent" xml:space="preserve">
-    <value>groupBox_graphics</value>
-  </data>
-  <data name="label_largeHealth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
-  </data>
   <data name="&gt;&gt;checkBox_frozen.Parent" xml:space="preserve">
     <value>groupBox_vulnerability</value>
   </data>
-  <data name="checkBox_speedScrew.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 43</value>
+  <data name="textBox_missile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
   </data>
   <data name="&gt;&gt;label_healthX.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="label_missile.Text" xml:space="preserve">
-    <value>Missile:</value>
+  <data name="&gt;&gt;checkBox_speedScrew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkBox_superMissiles.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 81</value>
@@ -686,8 +680,8 @@
   <data name="label_reduction.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 12</value>
   </data>
-  <data name="checkBox_chargeBeam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 16</value>
+  <data name="textBox_palOffsetVal.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label_redX.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -695,8 +689,8 @@
   <data name="&gt;&gt;checkBox_chargeBeam.Name" xml:space="preserve">
     <value>checkBox_chargeBeam</value>
   </data>
-  <data name="&gt;&gt;button_editGFX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button_editPalette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 95</value>
   </data>
   <data name="&gt;&gt;label_gfxOffset.Parent" xml:space="preserve">
     <value>groupBox_graphics</value>
@@ -710,14 +704,14 @@
   <data name="&gt;&gt;label_AI.Name" xml:space="preserve">
     <value>label_AI</value>
   </data>
-  <data name="&gt;&gt;label_smallHealth.Name" xml:space="preserve">
-    <value>label_smallHealth</value>
-  </data>
   <data name="&gt;&gt;groupBox_vulnerability.Name" xml:space="preserve">
     <value>groupBox_vulnerability</value>
   </data>
-  <data name="label_health.Text" xml:space="preserve">
-    <value>Health:</value>
+  <data name="textBox_AIoffset.Text" xml:space="preserve">
+    <value>000000</value>
+  </data>
+  <data name="label_total.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="&gt;&gt;checkBox_powerBombs.Parent" xml:space="preserve">
     <value>groupBox_vulnerability</value>
@@ -747,14 +741,11 @@ Screw attack</value>
   <data name="button_editGFX.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="checkBox_powerBombs.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="checkBox_speedScrew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 43</value>
   </data>
   <data name="label_AI.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
-  </data>
-  <data name="&gt;&gt;groupBox_dropProbability.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="statusLabel_changes.Text" xml:space="preserve">
     <value>-</value>
@@ -771,8 +762,8 @@ Screw attack</value>
   <data name="&gt;&gt;label_gfxOffset.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormSprite</value>
+  <data name="&gt;&gt;label_health.Parent" xml:space="preserve">
+    <value>groupBox_stats</value>
   </data>
   <data name="checkBox_frozen.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 81</value>
@@ -780,14 +771,8 @@ Screw attack</value>
   <data name="&gt;&gt;textBox_largeHealth.Parent" xml:space="preserve">
     <value>groupBox_dropProbability</value>
   </data>
-  <data name="&gt;&gt;checkBox_speedScrew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label_damage.Text" xml:space="preserve">
     <value>Damage:</value>
-  </data>
-  <data name="groupBox_vulnerability.Text" xml:space="preserve">
-    <value>Vulnerability</value>
   </data>
   <data name="&gt;&gt;label_missile.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -795,20 +780,26 @@ Screw attack</value>
   <data name="button_apply.Text" xml:space="preserve">
     <value>Apply</value>
   </data>
+  <data name="textBox_superMissile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="groupBox_preview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
   <data name="&gt;&gt;comboBox_reduction.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="groupBox_vulnerability.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;comboBox_sprite.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="label_missileX.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 62</value>
   </data>
   <data name="&gt;&gt;pictureBox_preview.Parent" xml:space="preserve">
     <value>panel_preview</value>
-  </data>
-  <data name="comboBox_reduction.Items3" xml:space="preserve">
-    <value>90% and 80%</value>
   </data>
   <data name="&gt;&gt;groupBox_vulnerability.Parent" xml:space="preserve">
     <value>$this</value>
@@ -825,8 +816,8 @@ Screw attack</value>
   <data name="textBox_health.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label_superMissile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 200</value>
+  <data name="label_powerBomb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label_type.Name" xml:space="preserve">
     <value>label_type</value>
@@ -834,8 +825,14 @@ Screw attack</value>
   <data name="&gt;&gt;label_missileX.Name" xml:space="preserve">
     <value>label_missileX</value>
   </data>
+  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;textBox_healthX.Name" xml:space="preserve">
     <value>textBox_healthX</value>
+  </data>
+  <data name="textBox_redX.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="label_noDrop.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 12</value>
@@ -855,8 +852,8 @@ Screw attack</value>
   <data name="groupBox_stats.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 37</value>
   </data>
-  <data name="&gt;&gt;label_noDrop.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="label_health.Text" xml:space="preserve">
+    <value>Health:</value>
   </data>
   <data name="&gt;&gt;label_superMissile.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -873,20 +870,20 @@ Screw attack</value>
   <data name="label_noDrop.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;textBox_gfxOffsetVal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
   </data>
   <data name="label_damage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox_powerBombs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 18</value>
+  </data>
   <data name="label_largeHealth.Text" xml:space="preserve">
     <value>Large health:</value>
   </data>
-  <data name="&gt;&gt;label_totalProb.Name" xml:space="preserve">
-    <value>label_totalProb</value>
-  </data>
-  <data name="label_smallHealth.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;numericUpDown_gfxRows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox_preview.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -897,20 +894,23 @@ Screw attack</value>
   <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
     <value>button_apply</value>
   </data>
+  <data name="textBox_redX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 82</value>
+  </data>
   <data name="checkBox_superMissiles.Text" xml:space="preserve">
     <value>Super missiles</value>
   </data>
   <data name="label_sprite.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 12</value>
   </data>
-  <data name="&gt;&gt;checkBox_powerBombs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;groupBox_dropProbability.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
   <data name="&gt;&gt;textBox_AIoffset.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="label_palOffset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label_type.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -945,8 +945,8 @@ Screw attack</value>
   <data name="label_health.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 12</value>
   </data>
-  <data name="label_type.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label_healthX.Name" xml:space="preserve">
+    <value>label_healthX</value>
   </data>
   <data name="comboBox_reduction.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 20</value>
@@ -954,11 +954,11 @@ Screw attack</value>
   <data name="button_editPalette.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
   </data>
-  <data name="label_healthX.Text" xml:space="preserve">
-    <value>Health X:</value>
+  <data name="label_missile.Text" xml:space="preserve">
+    <value>Missile:</value>
   </data>
-  <data name="&gt;&gt;pictureBox_preview.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label_healthX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
   </data>
   <data name="&gt;&gt;textBox_powerBomb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -969,14 +969,14 @@ Screw attack</value>
   <data name="textBox_noDrop.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 21</value>
   </data>
-  <data name="&gt;&gt;groupBox_graphics.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;label_totalProb.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label_palOffset.Text" xml:space="preserve">
     <value>Palette offset:</value>
+  </data>
+  <data name="&gt;&gt;comboBox_reduction.Parent" xml:space="preserve">
+    <value>groupBox_stats</value>
   </data>
   <data name="label_redX.Text" xml:space="preserve">
     <value>Red X:</value>
@@ -987,8 +987,8 @@ Screw attack</value>
   <data name="label_largeHealth.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label_healthX.Name" xml:space="preserve">
-    <value>label_healthX</value>
+  <data name="&gt;&gt;button_editGFX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_speedScrew.Parent" xml:space="preserve">
     <value>groupBox_vulnerability</value>
@@ -1020,11 +1020,14 @@ Screw attack</value>
   <data name="numericUpDown_gfxRows.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 21</value>
   </data>
-  <data name="label_AI.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormSprite</value>
   </data>
   <data name="label_healthX.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="comboBox_type.Items" xml:space="preserve">
+    <value>Primary</value>
   </data>
   <data name="label_largeHealth.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 154</value>
@@ -1035,9 +1038,6 @@ Screw attack</value>
   <data name="&gt;&gt;button_editGFX.Name" xml:space="preserve">
     <value>button_editGFX</value>
   </data>
-  <data name="label_AI.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 254</value>
-  </data>
   <data name="&gt;&gt;checkBox_powerBombs.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -1046,6 +1046,12 @@ Screw attack</value>
   </data>
   <data name="groupBox_vulnerability.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 102</value>
+  </data>
+  <data name="panel_preview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="label_powerBomb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 223</value>
   </data>
   <data name="&gt;&gt;label_AI.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1068,17 +1074,8 @@ Screw attack</value>
   <data name="label_gfxOffset.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 17</value>
   </data>
-  <data name="&gt;&gt;groupBox_preview.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;label_total.Name" xml:space="preserve">
     <value>label_total</value>
-  </data>
-  <data name="&gt;&gt;label_total.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_palOffset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox_damage.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1163,14 +1160,17 @@ Screw attack</value>
   <data name="pictureBox_preview.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="groupBox_dropProbability.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="checkBox_speedScrew.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_AIoffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 14</value>
   </data>
   <data name="&gt;&gt;checkBox_beamAndBombs.Parent" xml:space="preserve">
     <value>groupBox_vulnerability</value>
   </data>
-  <data name="label_palOffset.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="comboBox_reduction.Items3" xml:space="preserve">
+    <value>90% and 80%</value>
   </data>
   <data name="comboBox_reduction.Items2" xml:space="preserve">
     <value>80% and 10%</value>
@@ -1181,17 +1181,17 @@ Screw attack</value>
   <data name="&gt;&gt;textBox_redX.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="textBox_redX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 82</value>
+  <data name="&gt;&gt;textBox_AIoffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_powerBombs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_missiles.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_noDrop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_smallHealth.Parent" xml:space="preserve">
-    <value>groupBox_dropProbability</value>
+  <data name="textBox_largeHealth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
   </data>
   <data name="&gt;&gt;button_apply.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1208,14 +1208,11 @@ Screw attack</value>
   <data name="label_missile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;checkBox_superMissiles.Parent" xml:space="preserve">
-    <value>groupBox_vulnerability</value>
-  </data>
   <data name="&gt;&gt;textBox_palOffsetVal.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_gfxRows.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;panel_preview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel_preview.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1223,23 +1220,20 @@ Screw attack</value>
   <data name="pictureBox_preview.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="label_smallHealth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
+  <data name="&gt;&gt;groupBox_graphics.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;numericUpDown_gfxRows.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label_redX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
   </data>
   <data name="label_AI.Text" xml:space="preserve">
     <value>AI offset:</value>
   </data>
-  <data name="checkBox_speedScrew.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;button_editGFX.Parent" xml:space="preserve">
     <value>groupBox_graphics</value>
   </data>
-  <data name="comboBox_type.Items" xml:space="preserve">
-    <value>Primary</value>
+  <data name="&gt;&gt;label_noDrop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 284</value>
@@ -1256,8 +1250,8 @@ Screw attack</value>
   <data name="label_type.Text" xml:space="preserve">
     <value>Type:</value>
   </data>
-  <data name="textBox_palOffsetVal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 21</value>
+  <data name="textBox_powerBomb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 221</value>
   </data>
   <data name="label_noDrop.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 108</value>
@@ -1280,8 +1274,8 @@ Screw attack</value>
   <data name="comboBox_reduction.Items1" xml:space="preserve">
     <value>60% and 30%</value>
   </data>
-  <data name="panel_preview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 18</value>
+  <data name="textBox_palOffsetVal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 21</value>
   </data>
   <data name="&gt;&gt;comboBox_sprite.Name" xml:space="preserve">
     <value>comboBox_sprite</value>
@@ -1289,8 +1283,8 @@ Screw attack</value>
   <data name="numericUpDown_gfxRows.Location" type="System.Drawing.Point, System.Drawing">
     <value>68, 56</value>
   </data>
-  <data name="label_reduction.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label_largeHealth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
   </data>
   <data name="&gt;&gt;comboBox_reduction.Name" xml:space="preserve">
     <value>comboBox_reduction</value>
@@ -1298,20 +1292,17 @@ Screw attack</value>
   <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_editPalette.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 95</value>
+  <data name="&gt;&gt;button_apply.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="label_total.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
   </data>
-  <data name="&gt;&gt;pictureBox_preview.Name" xml:space="preserve">
-    <value>pictureBox_preview</value>
+  <data name="&gt;&gt;textBox_AIoffset.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;comboBox_sprite.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button_close.Text" xml:space="preserve">
-    <value>Close</value>
   </data>
   <data name="&gt;&gt;label_redX.ZOrder" xml:space="preserve">
     <value>18</value>
@@ -1319,8 +1310,8 @@ Screw attack</value>
   <data name="&gt;&gt;groupBox_stats.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="groupBox_preview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 11</value>
+  <data name="button_close.Text" xml:space="preserve">
+    <value>Close</value>
   </data>
   <data name="label_reduction.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 65</value>
@@ -1349,9 +1340,6 @@ Screw attack</value>
   <data name="groupBox_dropProbability.Location" type="System.Drawing.Point, System.Drawing">
     <value>381, 37</value>
   </data>
-  <data name="&gt;&gt;label_missile.Name" xml:space="preserve">
-    <value>label_missile</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Sprite Editor</value>
   </data>
@@ -1364,8 +1352,8 @@ Screw attack</value>
   <data name="comboBox_reduction.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 79</value>
   </data>
-  <data name="label_damage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label_smallHealth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
   </data>
   <data name="&gt;&gt;groupBox_dropProbability.Name" xml:space="preserve">
     <value>groupBox_dropProbability</value>
@@ -1373,23 +1361,26 @@ Screw attack</value>
   <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;label_health.Parent" xml:space="preserve">
-    <value>groupBox_stats</value>
+  <data name="label_palOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 12</value>
   </data>
   <data name="checkBox_chargeBeam.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 39</value>
   </data>
-  <data name="button_close.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="label_total.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="label_gfxRows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 58</value>
+  <data name="&gt;&gt;groupBox_dropProbability.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label_totalProb.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 13</value>
   </data>
   <data name="checkBox_beamAndBombs.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 16</value>
+  </data>
+  <data name="label_totalProb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 18</value>
   </data>
   <data name="&gt;&gt;textBox_missile.Name" xml:space="preserve">
     <value>textBox_missile</value>
@@ -1403,32 +1394,32 @@ Screw attack</value>
   <data name="checkBox_powerBombs.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 15</value>
+  <data name="&gt;&gt;label_smallHealth.Name" xml:space="preserve">
+    <value>label_smallHealth</value>
   </data>
   <data name="&gt;&gt;label_largeHealth.Name" xml:space="preserve">
     <value>label_largeHealth</value>
   </data>
-  <data name="label_powerBomb.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;groupBox_dropProbability.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="comboBox_type.Items1" xml:space="preserve">
     <value>Secondary</value>
   </data>
-  <data name="&gt;&gt;comboBox_reduction.Parent" xml:space="preserve">
-    <value>groupBox_stats</value>
+  <data name="label_AI.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;textBox_powerBomb.Name" xml:space="preserve">
     <value>textBox_powerBomb</value>
   </data>
-  <data name="&gt;&gt;label_health.Name" xml:space="preserve">
-    <value>label_health</value>
+  <data name="&gt;&gt;checkBox_superMissiles.Parent" xml:space="preserve">
+    <value>groupBox_vulnerability</value>
   </data>
-  <data name="&gt;&gt;label_AI.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label_type.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="textBox_AIoffset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 14</value>
+  <data name="&gt;&gt;checkBox_superMissiles.Name" xml:space="preserve">
+    <value>checkBox_superMissiles</value>
   </data>
   <data name="label_totalProb.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1457,8 +1448,8 @@ Screw attack</value>
   <data name="label_gfxRows.Text" xml:space="preserve">
     <value>GFX rows:</value>
   </data>
-  <data name="&gt;&gt;comboBox_sprite.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label_largeHealth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="textBox_gfxOffsetVal.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 21</value>
@@ -1469,17 +1460,20 @@ Screw attack</value>
   <data name="&gt;&gt;comboBox_type.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label_totalProb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 18</value>
-  </data>
-  <data name="label_gfxOffset.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label_reduction.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;textBox_missile.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="groupBox_dropProbability.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="label_totalProb.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="textBox_palOffsetVal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 96</value>
+  </data>
+  <data name="&gt;&gt;textBox_smallHealth.Name" xml:space="preserve">
+    <value>textBox_smallHealth</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_gfxRows.Parent" xml:space="preserve">
+    <value>groupBox_graphics</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
@@ -1493,8 +1487,8 @@ Screw attack</value>
   <data name="&gt;&gt;button_editPalette.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox_superMissile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+  <data name="label_sprite.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="textBox_gfxOffsetVal.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1502,11 +1496,11 @@ Screw attack</value>
   <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox_AIoffset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 269</value>
+  <data name="&gt;&gt;pictureBox_preview.Name" xml:space="preserve">
+    <value>pictureBox_preview</value>
   </data>
-  <data name="panel_preview.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label_palOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>528, 22</value>
@@ -1514,26 +1508,29 @@ Screw attack</value>
   <data name="&gt;&gt;textBox_noDrop.Name" xml:space="preserve">
     <value>textBox_noDrop</value>
   </data>
-  <data name="&gt;&gt;textBox_AIoffset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label_AI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 254</value>
   </data>
-  <data name="textBox_powerBomb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+  <data name="&gt;&gt;label_totalProb.Name" xml:space="preserve">
+    <value>label_totalProb</value>
   </data>
-  <data name="checkBox_powerBombs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 18</value>
+  <data name="label_healthX.Text" xml:space="preserve">
+    <value>Health X:</value>
   </data>
-  <data name="textBox_smallHealth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 128</value>
+  <data name="&gt;&gt;label_missile.Name" xml:space="preserve">
+    <value>label_missile</value>
   </data>
-  <data name="&gt;&gt;label_reduction.Parent" xml:space="preserve">
-    <value>groupBox_stats</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox_missileX.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 59</value>
   </data>
   <data name="checkBox_superMissiles.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 16</value>
+  </data>
+  <data name="&gt;&gt;textBox_AIoffset.Name" xml:space="preserve">
+    <value>textBox_AIoffset</value>
   </data>
   <data name="checkBox_beamAndBombs.Text" xml:space="preserve">
     <value>Beam and bombs</value>
@@ -1577,8 +1574,8 @@ Screw attack</value>
   <data name="groupBox_graphics.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 149</value>
   </data>
-  <data name="&gt;&gt;comboBox_sprite.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="groupBox_stats.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;textBox_largeHealth.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -1589,8 +1586,8 @@ Screw attack</value>
   <data name="&gt;&gt;numericUpDown_gfxRows.Name" xml:space="preserve">
     <value>numericUpDown_gfxRows</value>
   </data>
-  <data name="textBox_redX.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="label_smallHealth.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -1607,29 +1604,32 @@ Screw attack</value>
   <data name="&gt;&gt;label_sprite.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_powerBomb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 223</value>
+  <data name="panel_preview.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="textBox_damage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label_totalProb.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="label_type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 12</value>
+  <data name="&gt;&gt;label_total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
     <value>219, 257</value>
   </data>
-  <data name="label_superMissile.Text" xml:space="preserve">
-    <value>Super missile:</value>
+  <data name="groupBox_vulnerability.Text" xml:space="preserve">
+    <value>Vulnerability</value>
   </data>
-  <data name="&gt;&gt;textBox_AIoffset.Name" xml:space="preserve">
-    <value>textBox_AIoffset</value>
+  <data name="panel_preview.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_gfxOffset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;textBox_redX.Name" xml:space="preserve">
     <value>textBox_redX</value>
   </data>
-  <data name="textBox_palOffsetVal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 96</value>
+  <data name="&gt;&gt;groupBox_preview.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label_gfxRows.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 12</value>
@@ -1637,8 +1637,8 @@ Screw attack</value>
   <data name="&gt;&gt;label_health.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox_AIoffset.Text" xml:space="preserve">
-    <value>000000</value>
+  <data name="label_superMissile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 200</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>43</value>

@@ -439,7 +439,7 @@ namespace mage
             {
                 //MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
                 //        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show(Properties.Resources.form_ValueNotValidErrorText + ex.Message,
+                MessageBox.Show(Properties.Resources.form_OneValueNotValidErrorText + ex.Message,
                         Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -527,7 +527,7 @@ namespace mage
             {
                 //MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
                 //        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show(Properties.Resources.form_ValueNotValidErrorText + ex.Message,
+                MessageBox.Show(Properties.Resources.form_OneValueNotValidErrorText + ex.Message,
                         Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

@@ -291,11 +291,13 @@ namespace mage
                 label_totalProb.ForeColor = Color.DarkRed;
                 if (total < 0x400)
                 {
-                    label_totalProb.Text += " (too low)";
+                    //label_totalProb.Text += " (too low)";
+                    label_totalProb.Text += Properties.Resources.formSprite_label_totalProbLow;
                 }
                 else
                 {
-                    label_totalProb.Text += " (too high)";
+                    //label_totalProb.Text += " (too high)";
+                    label_totalProb.Text += Properties.Resources.formSprite_label_totalProbHigh;
                 }
             }
         }
@@ -392,8 +394,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message, 
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message, 
+                //    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.form_OneValueNotValidErrorText + ex.Message,
+                    Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

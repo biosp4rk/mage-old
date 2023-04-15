@@ -197,15 +197,26 @@
   <data name="formPNGFilterText" xml:space="preserve">
     <value>PNG 文件 (*.png)|*.png</value>
   </data>
-  <data name="formValueNotValidErrorText" xml:space="preserve">
-    <value>输入的值无效。
-</value>
+  <data name="formSprite_label_totalProbHigh" xml:space="preserve">
+    <value>（太高）</value>
+  </data>
+  <data name="formSprite_label_totalProbLow" xml:space="preserve">
+    <value>（太低）</value>
   </data>
   <data name="form_AllFilterText" xml:space="preserve">
     <value>所有文件 (*.*)|*.*</value>
   </data>
   <data name="form_ErrorMessageBoxTitle" xml:space="preserve">
     <value>错误</value>
+  </data>
+  <data name="form_OneValueNotValidErrorText" xml:space="preserve">
+    <value>存在无效的输入值。
+</value>
+  </data>
+  <data name="form_ValueNotValidErrorText" xml:space="preserve">
+    <value>输入的值无效。
+
+</value>
   </data>
   <data name="MF_clipdata" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\MF\MF_clipdata.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>

@@ -191,14 +191,8 @@
   <data name="groupBox_vulnerability.Text" xml:space="preserve">
     <value>弱点</value>
   </data>
-  <data name="groupBox_dropProbability.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 40</value>
-  </data>
-  <data name="groupBox_dropProbability.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 266</value>
-  </data>
-  <data name="groupBox_dropProbability.Text" xml:space="preserve">
-    <value>掉落率</value>
+  <data name="label_totalProb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="label_totalProb.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 20</value>
@@ -293,11 +287,14 @@
   <data name="textBox_noDrop.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 22</value>
   </data>
+  <data name="label_total.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
   <data name="label_total.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 20</value>
   </data>
   <data name="label_total.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+    <value>46, 13</value>
   </data>
   <data name="label_total.Text" xml:space="preserve">
     <value>合计：</value>
@@ -347,14 +344,14 @@
   <data name="textBox_healthX.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 22</value>
   </data>
-  <data name="groupBox_stats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 40</value>
+  <data name="groupBox_dropProbability.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 40</value>
   </data>
-  <data name="groupBox_stats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 115</value>
+  <data name="groupBox_dropProbability.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 266</value>
   </data>
-  <data name="groupBox_stats.Text" xml:space="preserve">
-    <value>数据</value>
+  <data name="groupBox_dropProbability.Text" xml:space="preserve">
+    <value>掉落率</value>
   </data>
   <data name="label_health.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 18</value>
@@ -412,6 +409,15 @@
   </data>
   <data name="label_damage.Text" xml:space="preserve">
     <value>伤害：</value>
+  </data>
+  <data name="groupBox_stats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 40</value>
+  </data>
+  <data name="groupBox_stats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 115</value>
+  </data>
+  <data name="groupBox_stats.Text" xml:space="preserve">
+    <value>数据</value>
   </data>
   <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
     <value>219, 278</value>
@@ -479,6 +485,12 @@
   <data name="pictureBox_preview.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 101</value>
   </data>
+  <data name="panel_preview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="panel_preview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 118</value>
+  </data>
   <data name="groupBox_preview.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
@@ -487,12 +499,6 @@
   </data>
   <data name="groupBox_preview.Text" xml:space="preserve">
     <value>预览</value>
-  </data>
-  <data name="panel_preview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 20</value>
-  </data>
-  <data name="panel_preview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 118</value>
   </data>
   <data name="textBox_gfxOffsetVal.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 34</value>
@@ -533,15 +539,6 @@
   <data name="textBox_palOffsetVal.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 22</value>
   </data>
-  <data name="groupBox_graphics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 161</value>
-  </data>
-  <data name="groupBox_graphics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 131</value>
-  </data>
-  <data name="groupBox_graphics.Text" xml:space="preserve">
-    <value>图形</value>
-  </data>
   <data name="numericUpDown_gfxRows.Location" type="System.Drawing.Point, System.Drawing">
     <value>68, 61</value>
   </data>
@@ -556,6 +553,15 @@
   </data>
   <data name="label_gfxRows.Text" xml:space="preserve">
     <value>图形行：</value>
+  </data>
+  <data name="groupBox_graphics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 161</value>
+  </data>
+  <data name="groupBox_graphics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 131</value>
+  </data>
+  <data name="groupBox_graphics.Text" xml:space="preserve">
+    <value>图形</value>
   </data>
   <data name="label_AI.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 275</value>
