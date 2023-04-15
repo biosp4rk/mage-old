@@ -142,14 +142,33 @@
   <data name="formDemo_FilterText" xml:space="preserve">
     <value>MAGE 演示 (*.mgd)|*.mgd</value>
   </data>
+  <data name="formGFX_BitmapFilterText" xml:space="preserve">
+    <value>位图 (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff</value>
+  </data>
+  <data name="formGFX_GFXFilterText" xml:space="preserve">
+    <value>GFX 文件 (*.gfx)|*.gfx|All files (*.*)|*.*</value>
+  </data>
+  <data name="formGFX_NoGFXErrorText" xml:space="preserve">
+    <value>给定偏移量位置没有压缩图形。</value>
+  </data>
+  <data name="formGFX_NoGFXErrorTitle" xml:space="preserve">
+    <value>压缩图形错误</value>
+  </data>
+  <data name="formGFX_OffsetNotValidErrorText" xml:space="preserve">
+    <value>输入的偏移量无效。
+</value>
+  </data>
+  <data name="formGFX_RepointGFXText" xml:space="preserve">
+    <value>图形已被重定向到 </value>
+  </data>
+  <data name="formGFX_RepointGFXTitle" xml:space="preserve">
+    <value>图形重定向</value>
+  </data>
   <data name="formMap_areaItemsExtra" xml:space="preserve">
     <value>额外</value>
   </data>
   <data name="formMap_MessageBox" xml:space="preserve">
     <value>地图数据已损坏，是否尝试用空白数据替换它？</value>
-  </data>
-  <data name="formMap_PNGFilterText" xml:space="preserve">
-    <value>PNG 文件 (*.png)|*.png</value>
   </data>
   <data name="formMap_RawFilterText" xml:space="preserve">
     <value>所有文件 (*.*)|*.*</value>
@@ -171,6 +190,9 @@
   </data>
   <data name="formMap_typeItems4" xml:space="preserve">
     <value>高温（隐藏）</value>
+  </data>
+  <data name="formPNGFilterText" xml:space="preserve">
+    <value>PNG 文件 (*.png)|*.png</value>
   </data>
   <data name="formValueNotValidErrorText" xml:space="preserve">
     <value>输入的值无效。
@@ -196,6 +218,9 @@
   </data>
   <data name="MF_U_weapons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\MF\MF_U_weapons.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="statusLabel_changesText" xml:space="preserve">
+    <value>修改已保存</value>
   </data>
   <data name="textLists" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\textLists.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>

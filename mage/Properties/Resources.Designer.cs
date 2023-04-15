@@ -193,6 +193,71 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff 的本地化字符串。
+        /// </summary>
+        internal static string formGFX_BitmapFilterText {
+            get {
+                return ResourceManager.GetString("formGFX_BitmapFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 GFX files (*.gfx)|*.gfx|All files (*.*)|*.* 的本地化字符串。
+        /// </summary>
+        internal static string formGFX_GFXFilterText {
+            get {
+                return ResourceManager.GetString("formGFX_GFXFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 There are no compressed graphics at the given offset. 的本地化字符串。
+        /// </summary>
+        internal static string formGFX_NoGFXErrorText {
+            get {
+                return ResourceManager.GetString("formGFX_NoGFXErrorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Compressed graphics error 的本地化字符串。
+        /// </summary>
+        internal static string formGFX_NoGFXErrorTitle {
+            get {
+                return ResourceManager.GetString("formGFX_NoGFXErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The offset entered was not valid.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string formGFX_OffsetNotValidErrorText {
+            get {
+                return ResourceManager.GetString("formGFX_OffsetNotValidErrorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Graphics were repointed to 的本地化字符串。
+        /// </summary>
+        internal static string formGFX_RepointGFXText {
+            get {
+                return ResourceManager.GetString("formGFX_RepointGFXText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Repointed Graphics 的本地化字符串。
+        /// </summary>
+        internal static string formGFX_RepointGFXTitle {
+            get {
+                return ResourceManager.GetString("formGFX_RepointGFXTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Extra 的本地化字符串。
         /// </summary>
         internal static string formMap_areaItemsExtra {
@@ -209,15 +274,6 @@ namespace mage.Properties {
         internal static string formMap_MessageBox {
             get {
                 return ResourceManager.GetString("formMap_MessageBox", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 PNG files (*.png)|*.png 的本地化字符串。
-        /// </summary>
-        internal static string formMap_PNGFilterText {
-            get {
-                return ResourceManager.GetString("formMap_PNGFilterText", resourceCulture);
             }
         }
         
@@ -281,6 +337,15 @@ namespace mage.Properties {
         internal static string formMap_typeItems4 {
             get {
                 return ResourceManager.GetString("formMap_typeItems4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PNG files (*.png)|*.png 的本地化字符串。
+        /// </summary>
+        internal static string formPNGFilterText {
+            get {
+                return ResourceManager.GetString("formPNGFilterText", resourceCulture);
             }
         }
         
@@ -1450,6 +1515,15 @@ namespace mage.Properties {
             get {
                 object obj = ResourceManager.GetObject("shortcut_wet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Changes saved 的本地化字符串。
+        /// </summary>
+        internal static string statusLabel_changesText {
+            get {
+                return ResourceManager.GetString("statusLabel_changesText", resourceCulture);
             }
         }
         

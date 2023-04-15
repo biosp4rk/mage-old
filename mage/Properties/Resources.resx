@@ -532,6 +532,29 @@
   <data name="formDemo_FilterText" xml:space="preserve">
     <value>MAGE demo (*.mgd)|*.mgd</value>
   </data>
+  <data name="formGFX_BitmapFilterText" xml:space="preserve">
+    <value>Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff</value>
+  </data>
+  <data name="formGFX_GFXFilterText" xml:space="preserve">
+    <value>GFX files (*.gfx)|*.gfx|All files (*.*)|*.*</value>
+  </data>
+  <data name="formGFX_NoGFXErrorText" xml:space="preserve">
+    <value>There are no compressed graphics at the given offset.</value>
+  </data>
+  <data name="formGFX_NoGFXErrorTitle" xml:space="preserve">
+    <value>Compressed graphics error</value>
+  </data>
+  <data name="formGFX_OffsetNotValidErrorText" xml:space="preserve">
+    <value>The offset entered was not valid.
+
+</value>
+  </data>
+  <data name="formGFX_RepointGFXText" xml:space="preserve">
+    <value>Graphics were repointed to</value>
+  </data>
+  <data name="formGFX_RepointGFXTitle" xml:space="preserve">
+    <value>Repointed Graphics</value>
+  </data>
   <data name="formMap_areaItemsExtra" xml:space="preserve">
     <value>Extra</value>
   </data>
@@ -539,9 +562,6 @@
     <value>Minimap data was corrupt.
 
 Would you like to try replacing it with blank data?</value>
-  </data>
-  <data name="formMap_PNGFilterText" xml:space="preserve">
-    <value>PNG files (*.png)|*.png</value>
   </data>
   <data name="formMap_RawFilterText" xml:space="preserve">
     <value>All files (*.*)|*.*</value>
@@ -564,6 +584,9 @@ Would you like to try replacing it with blank data?</value>
   <data name="formMap_typeItems4" xml:space="preserve">
     <value>Heated (hidden)</value>
   </data>
+  <data name="formPNGFilterText" xml:space="preserve">
+    <value>PNG files (*.png)|*.png</value>
+  </data>
   <data name="formValueNotValidErrorText" xml:space="preserve">
     <value>One of the values entered was not valid.
 
@@ -571,5 +594,8 @@ Would you like to try replacing it with blank data?</value>
   </data>
   <data name="form_ErrorMessageBoxTitle" xml:space="preserve">
     <value>Error</value>
+  </data>
+  <data name="statusLabel_changesText" xml:space="preserve">
+    <value>Changes saved</value>
   </data>
 </root>

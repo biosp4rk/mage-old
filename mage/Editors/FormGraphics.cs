@@ -54,8 +54,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formGFX_OffsetNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             int width = (int)numericUpDown_width.Value;
@@ -77,8 +79,10 @@ namespace mage
                 }
                 catch
                 {
-                    MessageBox.Show("There are no compressed graphics at the given offset.", 
-                        "Compressed graphics error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("There are no compressed graphics at the given offset.", 
+                    //    "Compressed graphics error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.formGFX_NoGFXErrorText,
+                        Properties.Resources.formGFX_NoGFXErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -149,8 +153,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formGFX_OffsetNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -180,8 +186,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
-                        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("The offset entered was not valid.\n\n" + ex.GetType().ToString() + '\n'
+                //        + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formGFX_OffsetNotValidErrorText + ex.GetType().ToString() + '\n'
+                        + ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -202,20 +210,24 @@ namespace mage
             numericUpDown_height.Value = Math.Min(gfxObject.height, 32);
 
             FormMain.UpdateEditors();
-            statusLabel_changes.Text = "Changes saved";
+            //statusLabel_changes.Text = "Changes saved";
+            statusLabel_changes.Text = Properties.Resources.statusLabel_changesText;
             loading = false;
 
             if (prevOffset != gfxObject.Offset)
             {
-                string message = "Graphics were repointed to " + Hex.ToString(gfxObject.Offset);
-                MessageBox.Show(message, "Repointed Graphics", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //string message = "Graphics were repointed to " + Hex.ToString(gfxObject.Offset);
+                //MessageBox.Show(message, "Repointed Graphics", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string message = Properties.Resources.formGFX_RepointGFXText + Hex.ToString(gfxObject.Offset);
+                MessageBox.Show(message, Properties.Resources.formGFX_RepointGFXTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void menuItem_gfxImportRaw_Click(object sender, EventArgs e)
         {
             OpenFileDialog openRaw = new OpenFileDialog();
-            openRaw.Filter = "GFX files (*.gfx)|*.gfx|All files (*.*)|*.*";
+            //openRaw.Filter = "GFX files (*.gfx)|*.gfx|All files (*.*)|*.*";
+            openRaw.Filter = Properties.Resources.formGFX_GFXFilterText;
             if (openRaw.ShowDialog() == DialogResult.OK)
             {
                 byte[] data = File.ReadAllBytes(openRaw.FileName);
@@ -228,7 +240,8 @@ namespace mage
         private void menuItem_gfxImportImg_Click(object sender, EventArgs e)
         {
             OpenFileDialog openImg = new OpenFileDialog();
-            openImg.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            //openImg.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            openImg.Filter = Properties.Resources.formGFX_BitmapFilterText;
             if (openImg.ShowDialog() == DialogResult.OK)
             {
                 Bitmap inputImg = new Bitmap(openImg.FileName);
@@ -242,7 +255,8 @@ namespace mage
                 }
                 catch (FormatException ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -250,7 +264,8 @@ namespace mage
         private void menuItem_gfxExportRaw_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveRaw = new SaveFileDialog();
-            saveRaw.Filter = "GFX files (*.gfx)|*.gfx|All files (*.*)|*.*";
+            //saveRaw.Filter = "GFX files (*.gfx)|*.gfx|All files (*.*)|*.*";
+            saveRaw.Filter = Properties.Resources.formGFX_GFXFilterText;
             if (saveRaw.ShowDialog() == DialogResult.OK)
             {
                 File.WriteAllBytes(saveRaw.FileName, gfxObject.data);
@@ -260,7 +275,8 @@ namespace mage
         private void menuItem_gfxExportImg_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveImg = new SaveFileDialog();
-            saveImg.Filter = "PNG files (*.png)|*.png";
+            //saveImg.Filter = "PNG files (*.png)|*.png";
+            saveImg.Filter = Properties.Resources.formPNGFilterText;
             if (saveImg.ShowDialog() == DialogResult.OK)
             {
                 PixelFormat format = PixelFormat.Undefined;

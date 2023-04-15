@@ -431,7 +431,7 @@ namespace mage
         {
             SaveFileDialog saveMap = new SaveFileDialog();
             //saveMap.Filter = "PNG files (*.png)|*.png";
-            saveMap.Filter = Properties.Resources.formMap_PNGFilterText;
+            saveMap.Filter = Properties.Resources.formPNGFilterText;
             if (saveMap.ShowDialog() == DialogResult.OK)
             {
                 mapImg.Save(saveMap.FileName);
