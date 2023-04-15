@@ -533,10 +533,9 @@
     <value>Extra</value>
   </data>
   <data name="formMap_MessageBox" xml:space="preserve">
-    <value>Minimap data was corrupt.\n\nWould you like to try replacing it with blank data?</value>
-  </data>
-  <data name="formMap_MessageBoxTitle" xml:space="preserve">
-    <value>Error</value>
+    <value>Minimap data was corrupt.
+
+Would you like to try replacing it with blank data?</value>
   </data>
   <data name="formMap_PNGFilterText" xml:space="preserve">
     <value>PNG files (*.png)|*.png</value>
@@ -561,5 +560,12 @@
   </data>
   <data name="formMap_typeItems4" xml:space="preserve">
     <value>Heated (hidden)</value>
+  </data>
+  <data name="formValueNotValidErrorText" xml:space="preserve">
+    <value>One of the values entered was not valid.
+</value>
+  </data>
+  <data name="form_ErrorMessageBoxTitle" xml:space="preserve">
+    <value>Error</value>
   </data>
 </root>

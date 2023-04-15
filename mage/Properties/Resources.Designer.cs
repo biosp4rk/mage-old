@@ -121,6 +121,15 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Error 的本地化字符串。
+        /// </summary>
+        internal static string form_ErrorMessageBoxTitle {
+            get {
+                return ResourceManager.GetString("form_ErrorMessageBoxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Hatch 6 的本地化字符串。
         /// </summary>
         internal static string formConn_lockHatchesItems6 {
@@ -184,20 +193,13 @@ namespace mage.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Minimap data was corrupt.\n\nWould you like to try replacing it with blank data? 的本地化字符串。
+        ///   查找类似 Minimap data was corrupt.
+        ///
+        ///Would you like to try replacing it with blank data? 的本地化字符串。
         /// </summary>
         internal static string formMap_MessageBox {
             get {
                 return ResourceManager.GetString("formMap_MessageBox", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Error 的本地化字符串。
-        /// </summary>
-        internal static string formMap_MessageBoxTitle {
-            get {
-                return ResourceManager.GetString("formMap_MessageBoxTitle", resourceCulture);
             }
         }
         
@@ -270,6 +272,17 @@ namespace mage.Properties {
         internal static string formMap_typeItems4 {
             get {
                 return ResourceManager.GetString("formMap_typeItems4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 One of the values entered was not valid.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string formValueNotValidErrorText {
+            get {
+                return ResourceManager.GetString("formValueNotValidErrorText", resourceCulture);
             }
         }
         

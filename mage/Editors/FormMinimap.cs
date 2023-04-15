@@ -171,7 +171,7 @@ namespace mage
             {
                 //var result = MessageBox.Show("Minimap data was corrupt.\n\n"
                 //    + "Would you like to try replacing it with blank data?", "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-                var result = MessageBox.Show(Properties.Resources.formMap_MessageBox, Properties.Resources.formMap_MessageBoxTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                var result = MessageBox.Show(Properties.Resources.formMap_MessageBox, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 if (result == DialogResult.Yes)
                 {
                     int pointer = Version.MinimapDataOffset + areaID * 4;
