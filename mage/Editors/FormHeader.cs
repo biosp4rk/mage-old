@@ -215,8 +215,10 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
+                //        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formValueNotValidErrorText + ex.Message,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
