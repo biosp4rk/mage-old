@@ -511,10 +511,10 @@
   <data name="clipNums" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Misc\clipNums.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="formConn_lockHatches.Items6" xml:space="preserve">
+  <data name="formConn_lockHatchesItems6" xml:space="preserve">
     <value>Hatch 6</value>
   </data>
-  <data name="formConn_lockHatches.Items7" xml:space="preserve">
+  <data name="formConn_lockHatchesItems7" xml:space="preserve">
     <value>Hatch 7</value>
   </data>
   <data name="formConn_StringAfter" xml:space="preserve">
@@ -528,5 +528,38 @@
   </data>
   <data name="formConn_StringRoom" xml:space="preserve">
     <value>Room</value>
+  </data>
+  <data name="formMap_areaItemsExtra" xml:space="preserve">
+    <value>Extra</value>
+  </data>
+  <data name="formMap_MessageBox" xml:space="preserve">
+    <value>Minimap data was corrupt.\n\nWould you like to try replacing it with blank data?</value>
+  </data>
+  <data name="formMap_MessageBoxTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="formMap_PNGFilterText" xml:space="preserve">
+    <value>PNG files (*.png)|*.png</value>
+  </data>
+  <data name="formMap_RawFilterText" xml:space="preserve">
+    <value>All files (*.*)|*.*</value>
+  </data>
+  <data name="formMap_StatusLabel_tile" xml:space="preserve">
+    <value>Tile:</value>
+  </data>
+  <data name="formMap_typeItems0" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="formMap_typeItems1" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="formMap_typeItems2" xml:space="preserve">
+    <value>Heated</value>
+  </data>
+  <data name="formMap_typeItems3" xml:space="preserve">
+    <value>Hidden</value>
+  </data>
+  <data name="formMap_typeItems4" xml:space="preserve">
+    <value>Heated (hidden)</value>
   </data>
 </root>

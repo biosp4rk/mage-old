@@ -65,15 +65,21 @@ namespace mage
                 numPalettes = 3;
                 Patch p = new Patch(Properties.Resources.MF_U_addMinimapTiles);
                 if (!p.IsApplied()) { numTiles = 0x1C0; }
-                comboBox_type.Items.AddRange(new string[] { "Normal", "Hidden" });
+
+                //comboBox_type.Items.AddRange(new string[] { "Normal", "Hidden" });
+                comboBox_type.Items.AddRange(new string[] { Properties.Resources.formMap_typeItems1, Properties.Resources.formMap_typeItems3 });
             }
             else
             {
                 numPalettes = 5;
                 Patch p = new Patch(Properties.Resources.ZM_U_addMinimapTiles);
                 if (!p.IsApplied()) { numTiles = 0x180; }
-                comboBox_view.Items.Add("Start");
-                comboBox_type.Items.AddRange(new string[] { "Start", "Normal", "Heated", "Hidden", "Heated (hidden)" });
+
+                //comboBox_view.Items.Add("Start");
+                //comboBox_type.Items.AddRange(new string[] { "Start", "Normal", "Heated", "Hidden", "Heated (hidden)" });
+                comboBox_view.Items.Add(Properties.Resources.formMap_typeItems0);
+                comboBox_type.Items.AddRange(new string[] { Properties.Resources.formMap_typeItems0, Properties.Resources.formMap_typeItems1,
+                    Properties.Resources.formMap_typeItems2, Properties.Resources.formMap_typeItems3, Properties.Resources.formMap_typeItems4 });
                 comboBox_palette.Items.Add("3");
                 comboBox_palette.Items.Add("4");
             }
@@ -93,7 +99,8 @@ namespace mage
             int currNum = comboBox_area.Items.Count;
             for (int i = currNum; i < numOfMinimaps; i++)
             {
-                comboBox_area.Items.Add("Extra " + Hex.ToString(i - currNum + 1));
+                //comboBox_area.Items.Add("Extra " + Hex.ToString(i - currNum + 1));
+                comboBox_area.Items.Add(Properties.Resources.formMap_areaItemsExtra + " " + Hex.ToString(i - currNum + 1));
             }
             comboBox_area.SelectedIndex = areaID;
 
@@ -162,8 +169,9 @@ namespace mage
             }
             catch (CorruptDataException)
             {
-                var result = MessageBox.Show("Minimap data was corrupt.\n\n"
-                    + "Would you like to try replacing it with blank data?", "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                //var result = MessageBox.Show("Minimap data was corrupt.\n\n"
+                //    + "Would you like to try replacing it with blank data?", "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                var result = MessageBox.Show(Properties.Resources.formMap_MessageBox, Properties.Resources.formMap_MessageBoxTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 if (result == DialogResult.Yes)
                 {
                     int pointer = Version.MinimapDataOffset + areaID * 4;
@@ -288,7 +296,8 @@ namespace mage
 
             // update info
             ushort val = currMap.GetSquare(mPos);
-            statusLabel_tile.Text = "Tile: " + Hex.ToString(val & 0x3FF);
+            //statusLabel_tile.Text = "Tile: " + Hex.ToString(val & 0x3FF);
+            statusLabel_tile.Text = Properties.Resources.formMap_StatusLabel_tile + " " + Hex.ToString(val & 0x3FF);
             statusLabel_coor.Text = "(" + Hex.ToString(mPos.X) + ", " + Hex.ToString(mPos.Y) + ")";
         }
 
@@ -391,7 +400,8 @@ namespace mage
         private void statusStrip_importRaw_Click(object sender, EventArgs e)
         {
             OpenFileDialog openRaw = new OpenFileDialog();
-            openRaw.Filter = "All files (*.*)|*.*";
+            //openRaw.Filter = "All files (*.*)|*.*";
+            openRaw.Filter = Properties.Resources.formMap_RawFilterText;
             if (openRaw.ShowDialog() == DialogResult.OK)
             {
                 byte[] temp = System.IO.File.ReadAllBytes(openRaw.FileName);
@@ -407,7 +417,8 @@ namespace mage
         private void statusStrip_exportRaw_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveRaw = new SaveFileDialog();
-            saveRaw.Filter = "All files (*.*)|*.*";
+            //saveRaw.Filter = "All files (*.*)|*.*";
+            saveRaw.Filter = Properties.Resources.formMap_RawFilterText;
             if (saveRaw.ShowDialog() == DialogResult.OK)
             {
                 ByteStream output = new ByteStream();
@@ -419,7 +430,8 @@ namespace mage
         private void statusStrip_exportImage_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveMap = new SaveFileDialog();
-            saveMap.Filter = "PNG files (*.png)|*.png";
+            //saveMap.Filter = "PNG files (*.png)|*.png";
+            saveMap.Filter = Properties.Resources.formMap_PNGFilterText;
             if (saveMap.ShowDialog() == DialogResult.OK)
             {
                 mapImg.Save(saveMap.FileName);

@@ -127,9 +127,8 @@
   <data name="statusStrip.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="panel_black.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 31</value>
   </data>
   <data name="label_palette.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 12</value>
@@ -161,8 +160,8 @@
   <data name="comboBox_view.Items" xml:space="preserve">
     <value>Explored</value>
   </data>
-  <data name="&gt;&gt;groupBox_tiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label_view.Parent" xml:space="preserve">
+    <value>groupBox_map</value>
   </data>
   <data name="comboBox_area.ToolTip" xml:space="preserve">
     <value />
@@ -173,12 +172,10 @@
   <data name="&gt;&gt;label_selSquare.Parent" xml:space="preserve">
     <value>groupBox_selection</value>
   </data>
-  <data name="&gt;&gt;statusStrip_export.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label_type.Parent" xml:space="preserve">
     <value>groupBox_selection</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel_squares.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -194,6 +191,9 @@
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="gfxView_map.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
   </data>
   <data name="groupBox_selection.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -239,9 +239,6 @@
   </data>
   <data name="button_close.Text" xml:space="preserve">
     <value>Close</value>
-  </data>
-  <data name="comboBox_area.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 18</value>
   </data>
   <data name="&gt;&gt;comboBox_palette.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -324,9 +321,6 @@
   <data name="label_view.Text" xml:space="preserve">
     <value>View:</value>
   </data>
-  <data name="gfxView_sel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 1</value>
-  </data>
   <data name="&gt;&gt;comboBox_palette.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -408,9 +402,6 @@
   <data name="&gt;&gt;label_palette.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="checkBox_yflip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 35</value>
-  </data>
   <data name="&gt;&gt;checkBox_yflip.Name" xml:space="preserve">
     <value>checkBox_yflip</value>
   </data>
@@ -459,8 +450,8 @@
   <data name="&gt;&gt;groupBox_tiles.Name" xml:space="preserve">
     <value>groupBox_tiles</value>
   </data>
-  <data name="label_type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 12</value>
+  <data name="&gt;&gt;statusStrip_export.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="panel_squares.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -471,14 +462,11 @@
   <data name="&gt;&gt;groupBox_map.Name" xml:space="preserve">
     <value>groupBox_map</value>
   </data>
-  <data name="&gt;&gt;label_area.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 19</value>
   </data>
   <data name="&gt;&gt;label_area.Parent" xml:space="preserve">
     <value>groupBox_map</value>
-  </data>
-  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_black.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -504,6 +492,9 @@
   <data name="comboBox_palette.Items2" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;groupBox_tiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="groupBox_selection.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -512,9 +503,6 @@
   </data>
   <data name="checkBox_yflip.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 16</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;gfxView_map.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -534,9 +522,6 @@
   <data name="&gt;&gt;groupBox_selection.Name" xml:space="preserve">
     <value>groupBox_selection</value>
   </data>
-  <data name="&gt;&gt;label_view.Parent" xml:space="preserve">
-    <value>groupBox_map</value>
-  </data>
   <data name="&gt;&gt;comboBox_view.Name" xml:space="preserve">
     <value>comboBox_view</value>
   </data>
@@ -548,6 +533,9 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_type.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label_view.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -570,8 +558,8 @@
   <data name="&gt;&gt;comboBox_area.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_editGFX.Name" xml:space="preserve">
-    <value>button_editGFX</value>
+  <data name="checkBox_yflip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 35</value>
   </data>
   <data name="label_selSquare.ToolTip" xml:space="preserve">
     <value />
@@ -707,6 +695,9 @@
   <data name="&gt;&gt;label_area.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;gfxView_map.Type" xml:space="preserve">
+    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="label_type.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -725,8 +716,8 @@
   <data name="&gt;&gt;label_selSquare.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
-    <value>statusStrip</value>
+  <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label_selSquare.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -742,6 +733,12 @@
   </data>
   <data name="&gt;&gt;gfxView_sel.Name" xml:space="preserve">
     <value>gfxView_sel</value>
+  </data>
+  <data name="gfxView_squares.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gfxView_map.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="label_selSquare.Text" xml:space="preserve">
     <value>0</value>
@@ -764,6 +761,9 @@
   <data name="&gt;&gt;button_bgColor.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;label_selSquare.Name" xml:space="preserve">
+    <value>label_selSquare</value>
+  </data>
   <data name="statusStrip_export.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 22</value>
   </data>
@@ -776,7 +776,7 @@
   <data name="statusStrip_importRaw.Text" xml:space="preserve">
     <value>Raw...</value>
   </data>
-  <data name="label_type.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_palette.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="groupBox_tiles.Text" xml:space="preserve">
@@ -803,11 +803,11 @@
   <data name="&gt;&gt;gfxView_squares.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label_palette.Parent" xml:space="preserve">
-    <value>groupBox_tiles</value>
+  <data name="gfxView_sel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
   </data>
-  <data name="gfxView_squares.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;button_close.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;statusLabel_tile.Name" xml:space="preserve">
     <value>statusLabel_tile</value>
@@ -824,8 +824,8 @@
   <data name="comboBox_type.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 20</value>
   </data>
-  <data name="&gt;&gt;label_selSquare.Name" xml:space="preserve">
-    <value>label_selSquare</value>
+  <data name="comboBox_area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 18</value>
   </data>
   <data name="comboBox_palette.Items" xml:space="preserve">
     <value>0</value>
@@ -854,8 +854,8 @@
   <data name="label_selSquare.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 26</value>
   </data>
-  <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 56</value>
+  <data name="&gt;&gt;button_editGFX.Name" xml:space="preserve">
+    <value>button_editGFX</value>
   </data>
   <data name="&gt;&gt;statusStrip_spring.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -920,17 +920,17 @@
   <data name="statusStrip_exportRaw.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 22</value>
   </data>
-  <data name="panel_black.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 31</value>
+  <data name="label_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
   </data>
-  <data name="&gt;&gt;gfxView_map.Type" xml:space="preserve">
-    <value>mage.GfxView, mage, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;label_palette.Parent" xml:space="preserve">
+    <value>groupBox_tiles</value>
   </data>
   <data name="label_area.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="gfxView_map.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;label_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel_black.Parent" xml:space="preserve">
     <value>groupBox_selection</value>
@@ -980,11 +980,11 @@
   <data name="&gt;&gt;statusStrip_exportRaw.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 56</value>
+  </data>
   <data name="&gt;&gt;label_palette.Name" xml:space="preserve">
     <value>label_palette</value>
-  </data>
-  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 19</value>
   </data>
   <data name="label_palette.Text" xml:space="preserve">
     <value>Palette:</value>
@@ -1004,8 +1004,8 @@
   <data name="&gt;&gt;groupBox_selection.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_palette.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label_area.Name" xml:space="preserve">
     <value>label_area</value>

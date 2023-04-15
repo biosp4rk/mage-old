@@ -311,6 +311,9 @@
   <data name="button_bgColor.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
   </data>
+  <data name="button_bgColor.ToolTip" xml:space="preserve">
+    <value>改变背景颜色</value>
+  </data>
   <data name="groupBox_tiles.Location" type="System.Drawing.Point, System.Drawing">
     <value>530, 107</value>
   </data>
@@ -324,16 +327,16 @@
     <value>70, 21</value>
   </data>
   <data name="statusLabel_tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>80, 21</value>
   </data>
   <data name="statusLabel_tile.Text" xml:space="preserve">
-    <value>图块：</value>
+    <value>地图块：</value>
   </data>
   <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 21</value>
   </data>
   <data name="statusStrip_spring.Size" type="System.Drawing.Size, System.Drawing">
-    <value>583, 21</value>
+    <value>542, 21</value>
   </data>
   <data name="statusStrip_importRaw.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 22</value>
@@ -459,6 +462,9 @@
         AA/AAAAPwAAAP8AAAD/AAAA/wAAAP/AAAD/wAAA/wAAAD8AAAA8AAAADAAAAA8AAAADAAAAA//AAA//w
         AAP//wAP//8ADw==
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>857, 594</value>

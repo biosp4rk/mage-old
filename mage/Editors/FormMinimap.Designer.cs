@@ -46,10 +46,8 @@
             this.groupBox_map = new System.Windows.Forms.GroupBox();
             this.groupBox_selection = new System.Windows.Forms.GroupBox();
             this.panel_black = new System.Windows.Forms.Panel();
-            this.gfxView_sel = new mage.GfxView();
             this.button_editGFX = new System.Windows.Forms.Button();
             this.panel_squares = new System.Windows.Forms.Panel();
-            this.gfxView_squares = new mage.GfxView();
             this.groupBox_tiles = new System.Windows.Forms.GroupBox();
             this.button_bgColor = new System.Windows.Forms.Button();
             this.toolTip_bgColor = new System.Windows.Forms.ToolTip(this.components);
@@ -63,6 +61,8 @@
             this.statusStrip_export = new System.Windows.Forms.ToolStripDropDownButton();
             this.statusStrip_exportRaw = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip_exportImage = new System.Windows.Forms.ToolStripMenuItem();
+            this.gfxView_sel = new mage.GfxView();
+            this.gfxView_squares = new mage.GfxView();
             this.gfxView_map = new mage.GfxView();
             this.groupBox_map.SuspendLayout();
             this.groupBox_selection.SuspendLayout();
@@ -209,14 +209,6 @@
             this.panel_black.Name = "panel_black";
             this.toolTip_bgColor.SetToolTip(this.panel_black, resources.GetString("panel_black.ToolTip"));
             // 
-            // gfxView_sel
-            // 
-            resources.ApplyResources(this.gfxView_sel, "gfxView_sel");
-            this.gfxView_sel.BackColor = System.Drawing.SystemColors.Control;
-            this.gfxView_sel.Name = "gfxView_sel";
-            this.gfxView_sel.TabStop = false;
-            this.toolTip_bgColor.SetToolTip(this.gfxView_sel, resources.GetString("gfxView_sel.ToolTip"));
-            // 
             // button_editGFX
             // 
             resources.ApplyResources(this.button_editGFX, "button_editGFX");
@@ -231,15 +223,6 @@
             this.panel_squares.Controls.Add(this.gfxView_squares);
             this.panel_squares.Name = "panel_squares";
             this.toolTip_bgColor.SetToolTip(this.panel_squares, resources.GetString("panel_squares.ToolTip"));
-            // 
-            // gfxView_squares
-            // 
-            resources.ApplyResources(this.gfxView_squares, "gfxView_squares");
-            this.gfxView_squares.Name = "gfxView_squares";
-            this.gfxView_squares.TabStop = false;
-            this.toolTip_bgColor.SetToolTip(this.gfxView_squares, resources.GetString("gfxView_squares.ToolTip"));
-            this.gfxView_squares.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gfxView_squares_MouseDown);
-            this.gfxView_squares.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gfxView_squares_MouseMove);
             // 
             // groupBox_tiles
             // 
@@ -333,6 +316,23 @@
             resources.ApplyResources(this.statusStrip_exportImage, "statusStrip_exportImage");
             this.statusStrip_exportImage.Name = "statusStrip_exportImage";
             this.statusStrip_exportImage.Click += new System.EventHandler(this.statusStrip_exportImage_Click);
+            // 
+            // gfxView_sel
+            // 
+            resources.ApplyResources(this.gfxView_sel, "gfxView_sel");
+            this.gfxView_sel.BackColor = System.Drawing.SystemColors.Control;
+            this.gfxView_sel.Name = "gfxView_sel";
+            this.gfxView_sel.TabStop = false;
+            this.toolTip_bgColor.SetToolTip(this.gfxView_sel, resources.GetString("gfxView_sel.ToolTip"));
+            // 
+            // gfxView_squares
+            // 
+            resources.ApplyResources(this.gfxView_squares, "gfxView_squares");
+            this.gfxView_squares.Name = "gfxView_squares";
+            this.gfxView_squares.TabStop = false;
+            this.toolTip_bgColor.SetToolTip(this.gfxView_squares, resources.GetString("gfxView_squares.ToolTip"));
+            this.gfxView_squares.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gfxView_squares_MouseDown);
+            this.gfxView_squares.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gfxView_squares_MouseMove);
             // 
             // gfxView_map
             // 

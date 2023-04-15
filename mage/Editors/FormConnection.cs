@@ -120,7 +120,7 @@ namespace mage
                     else
                     {
                         //listBox_lockHatches.Items.AddRange(new string[] { "Hatch 6", "Hatch 7" });
-                        listBox_lockHatches.Items.AddRange(new string[] { Resources.formConn_lockHatches_Items6, Resources.formConn_lockHatches_Items7 });
+                        listBox_lockHatches.Items.AddRange(new string[] { Resources.formConn_lockHatchesItems6, Resources.formConn_lockHatchesItems7 });
                     }
                     GetHatchLockEvents();
                     FillHatchLockEvents();

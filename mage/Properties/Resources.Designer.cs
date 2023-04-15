@@ -123,18 +123,18 @@ namespace mage.Properties {
         /// <summary>
         ///   查找类似 Hatch 6 的本地化字符串。
         /// </summary>
-        internal static string formConn_lockHatches_Items6 {
+        internal static string formConn_lockHatchesItems6 {
             get {
-                return ResourceManager.GetString("formConn_lockHatches.Items6", resourceCulture);
+                return ResourceManager.GetString("formConn_lockHatchesItems6", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查找类似 Hatch 7 的本地化字符串。
         /// </summary>
-        internal static string formConn_lockHatches_Items7 {
+        internal static string formConn_lockHatchesItems7 {
             get {
-                return ResourceManager.GetString("formConn_lockHatches.Items7", resourceCulture);
+                return ResourceManager.GetString("formConn_lockHatchesItems7", resourceCulture);
             }
         }
         
@@ -171,6 +171,105 @@ namespace mage.Properties {
         internal static string formConn_StringRoom {
             get {
                 return ResourceManager.GetString("formConn_StringRoom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Extra 的本地化字符串。
+        /// </summary>
+        internal static string formMap_areaItemsExtra {
+            get {
+                return ResourceManager.GetString("formMap_areaItemsExtra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Minimap data was corrupt.\n\nWould you like to try replacing it with blank data? 的本地化字符串。
+        /// </summary>
+        internal static string formMap_MessageBox {
+            get {
+                return ResourceManager.GetString("formMap_MessageBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Error 的本地化字符串。
+        /// </summary>
+        internal static string formMap_MessageBoxTitle {
+            get {
+                return ResourceManager.GetString("formMap_MessageBoxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PNG files (*.png)|*.png 的本地化字符串。
+        /// </summary>
+        internal static string formMap_PNGFilterText {
+            get {
+                return ResourceManager.GetString("formMap_PNGFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 All files (*.*)|*.* 的本地化字符串。
+        /// </summary>
+        internal static string formMap_RawFilterText {
+            get {
+                return ResourceManager.GetString("formMap_RawFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tile: 的本地化字符串。
+        /// </summary>
+        internal static string formMap_StatusLabel_tile {
+            get {
+                return ResourceManager.GetString("formMap_StatusLabel_tile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Start 的本地化字符串。
+        /// </summary>
+        internal static string formMap_typeItems0 {
+            get {
+                return ResourceManager.GetString("formMap_typeItems0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Normal 的本地化字符串。
+        /// </summary>
+        internal static string formMap_typeItems1 {
+            get {
+                return ResourceManager.GetString("formMap_typeItems1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Heated 的本地化字符串。
+        /// </summary>
+        internal static string formMap_typeItems2 {
+            get {
+                return ResourceManager.GetString("formMap_typeItems2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hidden 的本地化字符串。
+        /// </summary>
+        internal static string formMap_typeItems3 {
+            get {
+                return ResourceManager.GetString("formMap_typeItems3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Heated (hidden) 的本地化字符串。
+        /// </summary>
+        internal static string formMap_typeItems4 {
+            get {
+                return ResourceManager.GetString("formMap_typeItems4", resourceCulture);
             }
         }
         
