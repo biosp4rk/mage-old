@@ -197,6 +197,15 @@
   <data name="formPNGFilterText" xml:space="preserve">
     <value>PNG 文件 (*.png)|*.png</value>
   </data>
+  <data name="formSpriteset_NoEnoughRows" xml:space="preserve">
+    <value>槽位 {0} 中的精灵所需图形行数不够，它可能无法在游戏中正确显示。</value>
+  </data>
+  <data name="formSpriteset_SpriteOverlap" xml:space="preserve">
+    <value>槽位 {0} 中的精灵的图形与槽位 {1} 中的精灵的图形重叠，其中一个可能无法在游戏中正确显示。</value>
+  </data>
+  <data name="formSpriteset_WarningMessageBoxTitle" xml:space="preserve">
+    <value>警告</value>
+  </data>
   <data name="formSprite_label_totalProbHigh" xml:space="preserve">
     <value>（太高）</value>
   </data>

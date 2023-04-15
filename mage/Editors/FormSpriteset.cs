@@ -336,8 +336,10 @@ namespace mage
                 int end = gfxSlot + spriteGfx[slot].NumGfxRows;
                 if (end > 8)
                 {
-                    MessageBox.Show("There are not enough graphics rows for the sprite in slot " + slot +
-                        ". It may not appear correctly in-game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //MessageBox.Show("There are not enough graphics rows for the sprite in slot " + slot +
+                    //    ". It may not appear correctly in-game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(string.Format(Properties.Resources.formSpriteset_NoEnoughRows, slot),
+                        Properties.Resources.formSpriteset_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
                 // check for overlapping graphics
@@ -353,8 +355,10 @@ namespace mage
                         {
                             if (spriteGfx[slot].GfxOffset == spriteGfx[s].GfxOffset) { continue; }
                             overlapping.Add(slot);
-                            MessageBox.Show("The graphics of the sprite in slot " + slot + " overlap the graphics of the sprite in slot " + s
-                                + ". One of them may not appear correctly in-game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            //MessageBox.Show("The graphics of the sprite in slot " + slot + " overlap the graphics of the sprite in slot " + s
+                            //    + ". One of them may not appear correctly in-game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(string.Format(Properties.Resources.formSpriteset_SpriteOverlap, slot, s),
+                                Properties.Resources.formSpriteset_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             break;
                         }
                     }
@@ -372,7 +376,8 @@ namespace mage
         private void statusStrip_importRaw_Click(object sender, EventArgs e)
         {
             OpenFileDialog openRaw = new OpenFileDialog();
-            openRaw.Filter = "All files (*.*)|*.*";
+            //openRaw.Filter = "All files (*.*)|*.*";
+            openRaw.Filter = Properties.Resources.form_AllFilterText;
             if (openRaw.ShowDialog() == DialogResult.OK)
             {
                 byte[] temp = System.IO.File.ReadAllBytes(openRaw.FileName);
@@ -388,7 +393,8 @@ namespace mage
         private void statusStrip_exportRaw_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveRaw = new SaveFileDialog();
-            saveRaw.Filter = "All files (*.*)|*.*";
+            //saveRaw.Filter = "All files (*.*)|*.*";
+            saveRaw.Filter = Properties.Resources.form_AllFilterText;
             if (saveRaw.ShowDialog() == DialogResult.OK)
             {
                 ByteStream output = new ByteStream();

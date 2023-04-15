@@ -408,6 +408,33 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 There are not enough graphics rows for the sprite in slot {0}. It may not appear correctly in-game. 的本地化字符串。
+        /// </summary>
+        internal static string formSpriteset_NoEnoughRows {
+            get {
+                return ResourceManager.GetString("formSpriteset_NoEnoughRows", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The graphics of the sprite in slot {0} overlap the graphics of the sprite in slot {1}. One of them may not appear correctly in-game. 的本地化字符串。
+        /// </summary>
+        internal static string formSpriteset_SpriteOverlap {
+            get {
+                return ResourceManager.GetString("formSpriteset_SpriteOverlap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Warning 的本地化字符串。
+        /// </summary>
+        internal static string formSpriteset_WarningMessageBoxTitle {
+            get {
+                return ResourceManager.GetString("formSpriteset_WarningMessageBoxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Icon mage {

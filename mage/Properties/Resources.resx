@@ -588,6 +588,15 @@ Would you like to try replacing it with blank data?</value>
   <data name="formPalette_YYCHRFilterText" xml:space="preserve">
     <value>YY-CHR palette (*.pal)|*.pal</value>
   </data>
+  <data name="formSpriteset_NoEnoughRows" xml:space="preserve">
+    <value>There are not enough graphics rows for the sprite in slot {0}. It may not appear correctly in-game.</value>
+  </data>
+  <data name="formSpriteset_SpriteOverlap" xml:space="preserve">
+    <value>The graphics of the sprite in slot {0} overlap the graphics of the sprite in slot {1}. One of them may not appear correctly in-game.</value>
+  </data>
+  <data name="formSpriteset_WarningMessageBoxTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
   <data name="formSprite_label_totalProbHigh" xml:space="preserve">
     <value> (too high)</value>
   </data>
