@@ -451,6 +451,64 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Room could not be imported. Data may be corrupt.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string formImportRoom_DataCorruptText {
+            get {
+                return ResourceManager.GetString("formImportRoom_DataCorruptText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Original room does not exist. 的本地化字符串。
+        /// </summary>
+        internal static string formImportRoom_RoomNotExistText {
+            get {
+                return ResourceManager.GetString("formImportRoom_RoomNotExistText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wrong file type. File is not a MAGE room. 的本地化字符串。
+        /// </summary>
+        internal static string formImportRoom_WrongFileText {
+            get {
+                return ResourceManager.GetString("formImportRoom_WrongFileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tileset could not be imported. Data may be corrupt.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string formImportTileset_DataCorruptText {
+            get {
+                return ResourceManager.GetString("formImportTileset_DataCorruptText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Original tileset does not exist. 的本地化字符串。
+        /// </summary>
+        internal static string formImportTileset_TilesetNotExistText {
+            get {
+                return ResourceManager.GetString("formImportTileset_TilesetNotExistText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wrong file type. File is not a MAGE tileset. 的本地化字符串。
+        /// </summary>
+        internal static string formImportTileset_WrongFileText {
+            get {
+                return ResourceManager.GetString("formImportTileset_WrongFileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Extra 的本地化字符串。
         /// </summary>
         internal static string formMap_areaItemsExtra {

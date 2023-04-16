@@ -209,6 +209,28 @@
   <data name="formImportRLEBG_InvalidPixelFormatText" xml:space="preserve">
     <value>像素格式无效，图片必须为 32bpp。</value>
   </data>
+  <data name="formImportRoom_DataCorruptText" xml:space="preserve">
+    <value>无法导入房间，数据可能已损坏。
+
+</value>
+  </data>
+  <data name="formImportRoom_RoomNotExistText" xml:space="preserve">
+    <value>原始房间不存在。</value>
+  </data>
+  <data name="formImportRoom_WrongFileText" xml:space="preserve">
+    <value>错误的文件类型，文件不是一个 MAGE 房间。</value>
+  </data>
+  <data name="formImportTileset_DataCorruptText" xml:space="preserve">
+    <value>无法导入贴图集，数据可能已经损坏。
+
+</value>
+  </data>
+  <data name="formImportTileset_TilesetNotExistText" xml:space="preserve">
+    <value>原始贴图集不存在。</value>
+  </data>
+  <data name="formImportTileset_WrongFileText" xml:space="preserve">
+    <value>错误的文件类型，文件不是一个 MAGE 贴图集。</value>
+  </data>
   <data name="formMap_areaItemsExtra" xml:space="preserve">
     <value>额外</value>
   </data>

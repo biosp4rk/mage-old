@@ -38,7 +38,9 @@ namespace mage
             string header = Encoding.ASCII.GetString(headerArr, 0, 0x10);
             if (!header.Contains("MAGE") || !header.Contains("ROOM"))
             {
-                MessageBox.Show("Wrong file type. File is not a MAGE room.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Wrong file type. File is not a MAGE room.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formImportRoom_WrongFileText,
+                    Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Close();
                 return;
             }
@@ -75,8 +77,10 @@ namespace mage
             {
                 if (areaID >= Version.AreaNames.Length || roomID >= Version.RoomsPerArea[areaID])
                 {
-                    MessageBox.Show("Original room does not exist.",
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Original room does not exist.",
+                        //"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.formImportRoom_RoomNotExistText,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -98,8 +102,10 @@ namespace mage
             }
             catch
             {
-                MessageBox.Show("Room could not be imported. Data may be corrupt.\n\n",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Room could not be imported. Data may be corrupt.\n\n",
+                //    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formImportRoom_DataCorruptText,
+                    Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Close();
                 return;
             }

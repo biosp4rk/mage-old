@@ -36,7 +36,9 @@ namespace mage
             string header = Encoding.ASCII.GetString(headerArr, 0, 0x10);
             if (!header.Contains("MAGE") || !header.Contains("TILE"))
             {
-                MessageBox.Show("Wrong file type. File is not a MAGE tileset.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Wrong file type. File is not a MAGE tileset.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formImportTileset_WrongFileText,
+                    Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Close();
                 return;
             }
@@ -74,8 +76,10 @@ namespace mage
             {
                 if (origNumber >= Version.NumOfTilesets)
                 {
-                    MessageBox.Show("Original tileset does not exist.",
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Original tileset does not exist.",
+                    //    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.formImportTileset_TilesetNotExistText,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 tsNum = origNumber;
@@ -100,8 +104,10 @@ namespace mage
             }
             catch
             {
-                MessageBox.Show("Tileset could not be imported. Data may be corrupt.\n\n",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Tileset could not be imported. Data may be corrupt.\n\n",
+                //    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formImportTileset_DataCorruptText,
+                    Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Close();
                 return;
             }

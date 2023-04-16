@@ -704,6 +704,30 @@ Invalid newline at character {0}.</value>
   <data name="formImportRLEBG_InvalidPixelFormatText" xml:space="preserve">
     <value>Invalid pixel format. Image must be 32bpp.</value>
   </data>
+  <data name="formImportRoom_DataCorruptText" xml:space="preserve">
+    <value>Room could not be imported. Data may be corrupt.
+
+</value>
+    <comment>Room could not be imported. Data may be corrupt.\n\n</comment>
+  </data>
+  <data name="formImportRoom_RoomNotExistText" xml:space="preserve">
+    <value>Original room does not exist.</value>
+  </data>
+  <data name="formImportRoom_WrongFileText" xml:space="preserve">
+    <value>Wrong file type. File is not a MAGE room.</value>
+  </data>
+  <data name="formImportTileset_DataCorruptText" xml:space="preserve">
+    <value>Tileset could not be imported. Data may be corrupt.
+
+</value>
+  </data>
+  <data name="formImportTileset_TilesetNotExistText" xml:space="preserve">
+    <value>Original tileset does not exist.</value>
+    <comment>Tileset could not be imported. Data may be corrupt.\n\n</comment>
+  </data>
+  <data name="formImportTileset_WrongFileText" xml:space="preserve">
+    <value>Wrong file type. File is not a MAGE tileset.</value>
+  </data>
   <data name="form_TilesetFilterText" xml:space="preserve">
     <value>MAGE tileset (*.mgt)|*.mgt</value>
   </data>
