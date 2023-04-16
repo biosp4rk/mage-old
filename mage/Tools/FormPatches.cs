@@ -64,8 +64,10 @@ namespace mage
                 catch { continue; }
 
                 Patch p = new Patch(data);
-                if (p.IsApplied()) { item.SubItems.Add("Yes"); }
-                else { item.SubItems.Add("No"); }
+                //if (p.IsApplied()) { item.SubItems.Add("Yes"); }
+                //else { item.SubItems.Add("No"); }
+                if (p.IsApplied()) { item.SubItems.Add("✔️"); }
+                else { item.SubItems.Add("✖️"); }
                 j++;
             }
         }
@@ -87,7 +89,8 @@ namespace mage
             Patch p = new Patch(data);
             p.Apply();
 
-            listView_patches.Items[index].SubItems[2].Text = "Yes";
+            //listView_patches.Items[index].SubItems[2].Text = "Yes";
+            listView_patches.Items[index].SubItems[2].Text = "✔️";
             button_apply.Enabled = false;
         }
 
