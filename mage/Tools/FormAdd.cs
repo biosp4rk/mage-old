@@ -212,7 +212,8 @@ namespace mage
             byte numRooms = Version.RoomsPerArea[area];
             if (numRooms >= 0xFF)
             {
-                DisplayLimitError(Version.AreaNames[area] + " room");
+                //DisplayLimitError(Version.AreaNames[area] + " room");
+                DisplayLimitError(Version.AreaNames[area] + Properties.Resources.formAdd_LimitErrorRoom);
                 return;
             }
 
@@ -252,7 +253,8 @@ namespace mage
             byte numTilesets = Version.NumOfTilesets;
             if (numTilesets >= 0xFF)
             {
-                DisplayLimitError("Tileset");
+                //DisplayLimitError("Tileset");
+                DisplayLimitError(Properties.Resources.formAdd_LimitErrorTileset);
                 return;
             }
 
@@ -277,7 +279,8 @@ namespace mage
             byte numSpritesets = Version.NumOfSpritesets;
             if (numSpritesets >= 0xFF)
             {
-                DisplayLimitError("Spriteset");
+                //DisplayLimitError("Spriteset");
+                DisplayLimitError(Properties.Resources.formAdd_LimitErrorSpriteset);
                 return;
             }
 
@@ -325,7 +328,8 @@ namespace mage
                 number = Version.NumOfAnimTilesets;
                 if (number >= 0xFF)
                 {
-                    DisplayLimitError("Animated tileset");
+                    //DisplayLimitError("Animated tileset");
+                    DisplayLimitError(Properties.Resources.formAdd_LimitErrorAnimatedTileset);
                     return;
                 }
 
@@ -344,7 +348,8 @@ namespace mage
                 number = Version.NumOfAnimGfx;
                 if (number >= 0xFF)
                 {
-                    DisplayLimitError("Animated graphics");
+                    //DisplayLimitError("Animated graphics");
+                    DisplayLimitError(Properties.Resources.formAdd_LimitErrorAnimatedGFX);
                     return;
                 }
 
@@ -363,7 +368,8 @@ namespace mage
                 number = Version.NumOfAnimPalettes;
                 if (number >= 0xFF)
                 {
-                    DisplayLimitError("Animated palette");
+                    //DisplayLimitError("Animated palette");
+                    DisplayLimitError(Properties.Resources.formAdd_LimitErrorAnimatedPalette);
                     return;
                 }
 
@@ -411,14 +417,18 @@ namespace mage
 
         private void DisplayError(string message)
         {
-            MessageBox.Show("One of the values entered was not valid.\n\n" + message,
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //MessageBox.Show("One of the values entered was not valid.\n\n" + message,
+            //            "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(Properties.Resources.form_OneValueNotValidErrorText + message,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void DisplayLimitError(string dataType)
         {
-            string text = dataType + " limit reached. No more can be added.";
-            MessageBox.Show(text, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //string text = dataType + " limit reached. No more can be added.";
+            //MessageBox.Show(text, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            string text = dataType + Properties.Resources.formAdd_LimitErrorText;
+            MessageBox.Show(text, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button_add_Click(object sender, EventArgs e)

@@ -121,6 +121,27 @@
   <data name="endings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\endings.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="formAdd_LimitErrorAnimatedGFX" xml:space="preserve">
+    <value>动画图形</value>
+  </data>
+  <data name="formAdd_LimitErrorAnimatedPalette" xml:space="preserve">
+    <value>动画调色板</value>
+  </data>
+  <data name="formAdd_LimitErrorAnimatedTileset" xml:space="preserve">
+    <value>动画贴图集</value>
+  </data>
+  <data name="formAdd_LimitErrorRoom" xml:space="preserve">
+    <value>房间</value>
+  </data>
+  <data name="formAdd_LimitErrorSpriteset" xml:space="preserve">
+    <value>精灵集</value>
+  </data>
+  <data name="formAdd_LimitErrorText" xml:space="preserve">
+    <value>数量已达上限，不能再添加了。</value>
+  </data>
+  <data name="formAdd_LimitErrorTileset" xml:space="preserve">
+    <value>贴图集</value>
+  </data>
   <data name="formConn_lockHatchesItems6" xml:space="preserve">
     <value>舱门 6</value>
   </data>

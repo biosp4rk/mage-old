@@ -170,6 +170,69 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Animated graphics 的本地化字符串。
+        /// </summary>
+        internal static string formAdd_LimitErrorAnimatedGFX {
+            get {
+                return ResourceManager.GetString("formAdd_LimitErrorAnimatedGFX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Animated palette 的本地化字符串。
+        /// </summary>
+        internal static string formAdd_LimitErrorAnimatedPalette {
+            get {
+                return ResourceManager.GetString("formAdd_LimitErrorAnimatedPalette", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Animated tileset 的本地化字符串。
+        /// </summary>
+        internal static string formAdd_LimitErrorAnimatedTileset {
+            get {
+                return ResourceManager.GetString("formAdd_LimitErrorAnimatedTileset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似  room 的本地化字符串。
+        /// </summary>
+        internal static string formAdd_LimitErrorRoom {
+            get {
+                return ResourceManager.GetString("formAdd_LimitErrorRoom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Spriteset 的本地化字符串。
+        /// </summary>
+        internal static string formAdd_LimitErrorSpriteset {
+            get {
+                return ResourceManager.GetString("formAdd_LimitErrorSpriteset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 limit reached. No more can be added. 的本地化字符串。
+        /// </summary>
+        internal static string formAdd_LimitErrorText {
+            get {
+                return ResourceManager.GetString("formAdd_LimitErrorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tileset 的本地化字符串。
+        /// </summary>
+        internal static string formAdd_LimitErrorTileset {
+            get {
+                return ResourceManager.GetString("formAdd_LimitErrorTileset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Hatch 6 的本地化字符串。
         /// </summary>
         internal static string formConn_lockHatchesItems6 {

@@ -529,6 +529,27 @@
   <data name="formConn_StringRoom" xml:space="preserve">
     <value>Room</value>
   </data>
+  <data name="formAdd_LimitErrorAnimatedGFX" xml:space="preserve">
+    <value>Animated graphics</value>
+  </data>
+  <data name="formAdd_LimitErrorAnimatedPalette" xml:space="preserve">
+    <value>Animated palette</value>
+  </data>
+  <data name="formAdd_LimitErrorAnimatedTileset" xml:space="preserve">
+    <value>Animated tileset</value>
+  </data>
+  <data name="formAdd_LimitErrorRoom" xml:space="preserve">
+    <value> room</value>
+  </data>
+  <data name="formAdd_LimitErrorSpriteset" xml:space="preserve">
+    <value>Spriteset</value>
+  </data>
+  <data name="formAdd_LimitErrorText" xml:space="preserve">
+    <value>limit reached. No more can be added.</value>
+  </data>
+  <data name="formAdd_LimitErrorTileset" xml:space="preserve">
+    <value>Tileset</value>
+  </data>
   <data name="formDemo_FilterText" xml:space="preserve">
     <value>MAGE demo (*.mgd)|*.mgd</value>
   </data>
