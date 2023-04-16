@@ -920,8 +920,10 @@ namespace mage
 
                 if (prevOffset != ttbOffset)
                 {
-                    string message = "Tile table was repointed to " + Hex.ToString(ttbOffset);
-                    MessageBox.Show(message, "Repointed Tile Table", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //string message = "Tile table was repointed to " + Hex.ToString(ttbOffset);
+                    //MessageBox.Show(message, "Repointed Tile Table", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string message = Properties.Resources.formTileTable_RepointMessage + Hex.ToString(ttbOffset);
+                    MessageBox.Show(message, Properties.Resources.formTileTable_RepointTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 
@@ -944,7 +946,8 @@ namespace mage
             if (blank) { return; }
 
             OpenFileDialog openRaw = new OpenFileDialog();
-            openRaw.Filter = "All files (*.*)|*.*";
+            //openRaw.Filter = "All files (*.*)|*.*";
+            openRaw.Filter = Properties.Resources.form_AllFilterText;
             if (openRaw.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -957,7 +960,8 @@ namespace mage
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -971,7 +975,8 @@ namespace mage
             if (blank) { return; }
 
             SaveFileDialog saveRaw = new SaveFileDialog();
-            saveRaw.Filter = "All files (*.*)|*.*";
+            //saveRaw.Filter = "All files (*.*)|*.*";
+            saveRaw.Filter = Properties.Resources.form_AllFilterText;
             if (saveRaw.ShowDialog() == DialogResult.OK)
             {
                 ByteStream output = new ByteStream();

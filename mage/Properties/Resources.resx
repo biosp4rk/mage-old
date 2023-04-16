@@ -603,6 +603,35 @@ Would you like to try replacing it with blank data?</value>
   <data name="formSprite_label_totalProbLow" xml:space="preserve">
     <value> (too low)</value>
   </data>
+  <data name="formText_BracketNotClose" xml:space="preserve">
+    <value>Text could not be parsed.
+Make sure brackets are closed.</value>
+  </data>
+  <data name="formText_BracketNotValid" xml:space="preserve">
+    <value>Text could not be parsed.
+The contents of the brackets at character {0} are not valid.</value>
+  </data>
+  <data name="formText_CharNotRecognize" xml:space="preserve">
+    <value>Text could not be parsed.
+Character {0} was not recognized.</value>
+  </data>
+  <data name="formText_CharNotValid" xml:space="preserve">
+    <value>Text could not be parsed.
+The value starting at character {0} is not valid.</value>
+  </data>
+  <data name="formText_InvalidNewLine" xml:space="preserve">
+    <value>Text could not be parsed.
+Invalid newline at character {0}.</value>
+  </data>
+  <data name="formText_ParsingErrorTitle" xml:space="preserve">
+    <value>Parsing Error</value>
+  </data>
+  <data name="formTileTable_RepointMessage" xml:space="preserve">
+    <value>Tile table was repointed to</value>
+  </data>
+  <data name="formTileTable_RepointTitle" xml:space="preserve">
+    <value>Repointed Tile Table</value>
+  </data>
   <data name="form_AllFilterText" xml:space="preserve">
     <value>All files (*.*)|*.*</value>
   </data>

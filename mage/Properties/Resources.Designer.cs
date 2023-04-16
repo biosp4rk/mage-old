@@ -435,6 +435,83 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Text could not be parsed.
+        ///Make sure brackets are closed. 的本地化字符串。
+        /// </summary>
+        internal static string formText_BracketNotClose {
+            get {
+                return ResourceManager.GetString("formText_BracketNotClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Text could not be parsed.
+        ///The contents of the brackets at character {0} are not valid. 的本地化字符串。
+        /// </summary>
+        internal static string formText_BracketNotValid {
+            get {
+                return ResourceManager.GetString("formText_BracketNotValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Text could not be parsed.
+        ///Character {0} was not recognized. 的本地化字符串。
+        /// </summary>
+        internal static string formText_CharNotRecognize {
+            get {
+                return ResourceManager.GetString("formText_CharNotRecognize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Text could not be parsed.
+        ///The value starting at character {0} is not valid. 的本地化字符串。
+        /// </summary>
+        internal static string formText_CharNotValid {
+            get {
+                return ResourceManager.GetString("formText_CharNotValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Text could not be parsed.
+        ///Invalid newline at character {0}. 的本地化字符串。
+        /// </summary>
+        internal static string formText_InvalidNewLine {
+            get {
+                return ResourceManager.GetString("formText_InvalidNewLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Parsing Error 的本地化字符串。
+        /// </summary>
+        internal static string formText_ParsingErrorTitle {
+            get {
+                return ResourceManager.GetString("formText_ParsingErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tile table was repointed to 的本地化字符串。
+        /// </summary>
+        internal static string formTileTable_RepointMessage {
+            get {
+                return ResourceManager.GetString("formTileTable_RepointMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Repointed Tile Table 的本地化字符串。
+        /// </summary>
+        internal static string formTileTable_RepointTitle {
+            get {
+                return ResourceManager.GetString("formTileTable_RepointTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Icon mage {

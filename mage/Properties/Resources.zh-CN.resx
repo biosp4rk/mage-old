@@ -212,6 +212,32 @@
   <data name="formSprite_label_totalProbLow" xml:space="preserve">
     <value>（太低）</value>
   </data>
+  <data name="formText_BracketNotClose" xml:space="preserve">
+    <value>文本无法解析。
+确保方括号均已闭合。</value>
+  </data>
+  <data name="formText_BracketNotValid" xml:space="preserve">
+    <value>文本无法解析。
+字符 {0} 处方括号中的内容无效。</value>
+  </data>
+  <data name="formText_CharNotRecognize" xml:space="preserve">
+    <value>文本无法解析。
+字符 {0} 无法识别。</value>
+  </data>
+  <data name="formText_CharNotValid" xml:space="preserve">
+    <value>文本无法解析。
+从字符 {0} 开始的值无效。</value>
+  </data>
+  <data name="formText_InvalidNewLine" xml:space="preserve">
+    <value>文本无法解析。
+字符 {0} 处的换行符无效。</value>
+  </data>
+  <data name="formTileTable_RepointMessage" xml:space="preserve">
+    <value>贴图块表已被重定向到 </value>
+  </data>
+  <data name="formTileTable_RepointTitle" xml:space="preserve">
+    <value>贴图块表重定向</value>
+  </data>
   <data name="form_AllFilterText" xml:space="preserve">
     <value>所有文件 (*.*)|*.*</value>
   </data>

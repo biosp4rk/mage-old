@@ -308,8 +308,10 @@ namespace mage
                             else if (strs[0] == "DELAY") { textVals.Add((ushort)(0xE100 + Hex.ToUshort(strs[1]))); }
                             else
                             {
-                                MessageBox.Show("Text could not be parsed.\r\nThe contents of the brackets at character " 
-                                    + Hex.ToString(i) + " are not valid.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                //MessageBox.Show("Text could not be parsed.\r\nThe contents of the brackets at character " 
+                                //    + Hex.ToString(i) + " are not valid.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(string.Format(Properties.Resources.formText_BracketNotValid, Hex.ToString(i)),
+                                    Properties.Resources.formText_ParsingErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return false;
                             }
                         }
@@ -320,8 +322,10 @@ namespace mage
                         if (text[++i] == '\n') { textVals.Add(0xFE00); }
                         else
                         {
-                            MessageBox.Show("Text could not be parsed.\r\nInvalid newline at character " 
-                                + Hex.ToString(i) + ".", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            //MessageBox.Show("Text could not be parsed.\r\nInvalid newline at character " 
+                            //    + Hex.ToString(i) + ".", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(string.Format(Properties.Resources.formText_InvalidNewLine, Hex.ToString(i)),
+                                Properties.Resources.formText_ParsingErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return false;
                         }
                     }
@@ -335,20 +339,26 @@ namespace mage
             }
             catch (IndexOutOfRangeException)
             {
-                MessageBox.Show("Text could not be parsed.\r\nMake sure brackets are closed.", 
-                    "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Text could not be parsed.\r\nMake sure brackets are closed.", 
+                //    "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.formText_BracketNotClose,
+                    Properties.Resources.formText_ParsingErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             catch (KeyNotFoundException)
             {
-                MessageBox.Show("Text could not be parsed.\r\nCharacter " 
-                    + Hex.ToString(i) + " was not recognized.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Text could not be parsed.\r\nCharacter " 
+                //    + Hex.ToString(i) + " was not recognized.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(string.Format(Properties.Resources.formText_CharNotRecognize, Hex.ToString(i)),
+                    Properties.Resources.formText_ParsingErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             catch (FormatException)
             {
-                MessageBox.Show("Text could not be parsed.\r\nThe value starting at character " 
-                    + Hex.ToString(i) + " is not valid.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Text could not be parsed.\r\nThe value starting at character " 
+                //    + Hex.ToString(i) + " is not valid.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(string.Format(Properties.Resources.formText_CharNotValid, Hex.ToString(i)),
+                    Properties.Resources.formText_ParsingErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
