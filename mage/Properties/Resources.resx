@@ -728,6 +728,21 @@ Invalid newline at character {0}.</value>
   <data name="formImportTileset_WrongFileText" xml:space="preserve">
     <value>Wrong file type. File is not a MAGE tileset.</value>
   </data>
+  <data name="formPortBG_CheckboxItemClip" xml:space="preserve">
+    <value>Clipdata</value>
+  </data>
+  <data name="formPortBG_LZ77Filter" xml:space="preserve">
+    <value>LZ77 compressed backgrounds (*.lzbg)|*.lzbg|</value>
+  </data>
+  <data name="formPortBG_RLEFilter" xml:space="preserve">
+    <value>RLE compressed backgrounds (*.rlebg)|*.rlebg|</value>
+  </data>
+  <data name="formPortBG_TitleExport" xml:space="preserve">
+    <value>Export Background</value>
+  </data>
+  <data name="formPortBG_TitleImport" xml:space="preserve">
+    <value>Import Background</value>
+  </data>
   <data name="form_TilesetFilterText" xml:space="preserve">
     <value>MAGE tileset (*.mgt)|*.mgt</value>
   </data>

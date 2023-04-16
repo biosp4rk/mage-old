@@ -264,6 +264,21 @@
   <data name="formPNGFilterText" xml:space="preserve">
     <value>PNG 文件 (*.png)|*.png</value>
   </data>
+  <data name="formPortBG_CheckboxItemClip" xml:space="preserve">
+    <value>砖块属性</value>
+  </data>
+  <data name="formPortBG_LZ77Filter" xml:space="preserve">
+    <value>LZ77 压缩背景 (*.lzbg)|*.lzbg|</value>
+  </data>
+  <data name="formPortBG_RLEFilter" xml:space="preserve">
+    <value>RLE 压缩背景 (*.rlebg)|*.rlebg|</value>
+  </data>
+  <data name="formPortBG_TitleExport" xml:space="preserve">
+    <value>导出背景</value>
+  </data>
+  <data name="formPortBG_TitleImport" xml:space="preserve">
+    <value>导入背景</value>
+  </data>
   <data name="formSpriteset_NoEnoughRows" xml:space="preserve">
     <value>槽位 {0} 中的精灵所需图形行数不够，它可能无法在游戏中正确显示。</value>
   </data>

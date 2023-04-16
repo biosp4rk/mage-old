@@ -601,6 +601,51 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Clipdata 的本地化字符串。
+        /// </summary>
+        internal static string formPortBG_CheckboxItemClip {
+            get {
+                return ResourceManager.GetString("formPortBG_CheckboxItemClip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 LZ77 compressed backgrounds (*.lzbg)|*.lzbg| 的本地化字符串。
+        /// </summary>
+        internal static string formPortBG_LZ77Filter {
+            get {
+                return ResourceManager.GetString("formPortBG_LZ77Filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 RLE compressed backgrounds (*.rlebg)|*.rlebg| 的本地化字符串。
+        /// </summary>
+        internal static string formPortBG_RLEFilter {
+            get {
+                return ResourceManager.GetString("formPortBG_RLEFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Export Background 的本地化字符串。
+        /// </summary>
+        internal static string formPortBG_TitleExport {
+            get {
+                return ResourceManager.GetString("formPortBG_TitleExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Import Background 的本地化字符串。
+        /// </summary>
+        internal static string formPortBG_TitleImport {
+            get {
+                return ResourceManager.GetString("formPortBG_TitleImport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似  (too high) 的本地化字符串。
         /// </summary>
         internal static string formSprite_label_totalProbHigh {
