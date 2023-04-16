@@ -553,7 +553,7 @@
   <data name="formDemo_FilterText" xml:space="preserve">
     <value>MAGE demo (*.mgd)|*.mgd</value>
   </data>
-  <data name="formGFX_BitmapFilterText" xml:space="preserve">
+  <data name="form_BitmapFilterText" xml:space="preserve">
     <value>Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff</value>
   </data>
   <data name="formGFX_GFXFilterText" xml:space="preserve">
@@ -676,5 +676,35 @@ Invalid newline at character {0}.</value>
   </data>
   <data name="statusLabel_changesText" xml:space="preserve">
     <value>Changes saved</value>
+  </data>
+  <data name="formImportEnding_InvalidSizeText" xml:space="preserve">
+    <value>Invalid dimensions. Image must be 240 x 416</value>
+  </data>
+  <data name="formImportEnding_statusLabel" xml:space="preserve">
+    <value>Image opened (awaiting conversion)</value>
+  </data>
+  <data name="formImportEnding_statusLabel1" xml:space="preserve">
+    <value>Converting...</value>
+  </data>
+  <data name="formImportEnding_statusLabel2" xml:space="preserve">
+    <value>Image converted (unsaved)</value>
+  </data>
+  <data name="formImportEnding_statusLabel3" xml:space="preserve">
+    <value>Saving...</value>
+  </data>
+  <data name="formImportEnding_statusLabel4" xml:space="preserve">
+    <value>Image saved</value>
+  </data>
+  <data name="formImportLZ77BG_InvalidSizeText" xml:space="preserve">
+    <value>Invalid dimensions. Image must be 256 x 256, 512 x 256, or 256 x 512.</value>
+  </data>
+  <data name="formImportRELBG_InvalidSizeText" xml:space="preserve">
+    <value>Invalid dimensions. Image must have a width of 256 and a height divisible by 16.</value>
+  </data>
+  <data name="formImportRLEBG_InvalidPixelFormatText" xml:space="preserve">
+    <value>Invalid pixel format. Image must be 32bpp.</value>
+  </data>
+  <data name="form_TilesetFilterText" xml:space="preserve">
+    <value>MAGE tileset (*.mgt)|*.mgt</value>
   </data>
 </root>

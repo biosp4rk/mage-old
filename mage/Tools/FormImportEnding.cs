@@ -44,7 +44,8 @@ namespace mage
         {
             // load image
             OpenFileDialog fd = new OpenFileDialog();
-            fd.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            //fd.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            fd.Filter = Properties.Resources.form_BitmapFilterText;
             if (fd.ShowDialog() == DialogResult.OK)
             {
                 Bitmap image = new Bitmap(fd.FileName);
@@ -52,7 +53,9 @@ namespace mage
                 // check dimensions
                 if (image.Width != 240 || image.Height != 416)
                 {
-                    MessageBox.Show("Invalid dimensions. Image must be 240 x 416", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid dimensions. Image must be 240 x 416", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.formImportEnding_InvalidSizeText,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     image.Dispose();
                     return;
                 }
@@ -63,32 +66,36 @@ namespace mage
                 }
                 catch (FormatException ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 
                 groupBox_convert.Enabled = true;
-                statusLabel.Text = "Image opened (awaiting conversion)";
+                statusLabel.Text = Properties.Resources.statusLabel_changesText;
             }
         }
 
         private void button_go_Click(object sender, EventArgs e)
         {
-            statusLabel.Text = "Converting...";
+            //statusLabel.Text = "Converting...";
+            statusLabel.Text = Properties.Resources.formImportEnding_statusLabel1;
             Refresh();
             quantize.Kmeans();
             pictureBox_ending.Image = quantize.DrawImage();
 
             button_apply.Enabled = true;
-            statusLabel.Text = "Image converted (unsaved)";
+            //statusLabel.Text = "Image converted (unsaved)";
+            statusLabel.Text = Properties.Resources.formImportEnding_statusLabel2;
         }
 
         private void button_apply_Click(object sender, EventArgs e)
         {
-            statusLabel.Text = "Saving...";
+            //statusLabel.Text = "Saving...";
+            statusLabel.Text = Properties.Resources.formImportEnding_statusLabel3;
             Refresh();
             ending.SaveEnding(quantize);
-            statusLabel.Text = "Image saved";
+            //statusLabel.Text = "Image saved";
+            statusLabel.Text = Properties.Resources.formImportEnding_statusLabel4;
         }
 
         private void button_close_Click(object sender, EventArgs e)

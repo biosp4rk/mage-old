@@ -163,9 +163,6 @@
   <data name="formDemo_FilterText" xml:space="preserve">
     <value>MAGE 演示 (*.mgd)|*.mgd</value>
   </data>
-  <data name="formGFX_BitmapFilterText" xml:space="preserve">
-    <value>位图 (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff</value>
-  </data>
   <data name="formGFX_GFXFilterText" xml:space="preserve">
     <value>GFX 文件 (*.gfx)|*.gfx|All files (*.*)|*.*</value>
   </data>
@@ -184,6 +181,33 @@
   </data>
   <data name="formGFX_RepointGFXTitle" xml:space="preserve">
     <value>图形重定向</value>
+  </data>
+  <data name="formImportEnding_InvalidSizeText" xml:space="preserve">
+    <value>尺寸无效，图片必须为 240 x 416。</value>
+  </data>
+  <data name="formImportEnding_statusLabel" xml:space="preserve">
+    <value>图片已打开（等待转换）</value>
+  </data>
+  <data name="formImportEnding_statusLabel1" xml:space="preserve">
+    <value>转换中……</value>
+  </data>
+  <data name="formImportEnding_statusLabel2" xml:space="preserve">
+    <value>图片已转换（未保存）</value>
+  </data>
+  <data name="formImportEnding_statusLabel3" xml:space="preserve">
+    <value>保存中……</value>
+  </data>
+  <data name="formImportEnding_statusLabel4" xml:space="preserve">
+    <value>图片已保存</value>
+  </data>
+  <data name="formImportLZ77BG_InvalidSizeText" xml:space="preserve">
+    <value>尺寸无效，图片必须为 256 x 256、512 x 256、256 x 512。</value>
+  </data>
+  <data name="formImportRELBG_InvalidSizeText" xml:space="preserve">
+    <value>尺寸无效，图片的宽度必须为 256 且高度必须能被 16 整除。</value>
+  </data>
+  <data name="formImportRLEBG_InvalidPixelFormatText" xml:space="preserve">
+    <value>像素格式无效，图片必须为 32bpp。</value>
   </data>
   <data name="formMap_areaItemsExtra" xml:space="preserve">
     <value>额外</value>
@@ -262,12 +286,18 @@
   <data name="form_AllFilterText" xml:space="preserve">
     <value>所有文件 (*.*)|*.*</value>
   </data>
+  <data name="form_BitmapFilterText" xml:space="preserve">
+    <value>位图 (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff</value>
+  </data>
   <data name="form_ErrorMessageBoxTitle" xml:space="preserve">
     <value>错误</value>
   </data>
   <data name="form_OneValueNotValidErrorText" xml:space="preserve">
     <value>存在无效的输入值。
 </value>
+  </data>
+  <data name="form_TilesetFilterText" xml:space="preserve">
+    <value>MAGE 贴图集 (*.mgt)|*.mgt</value>
   </data>
   <data name="form_ValueNotValidErrorText" xml:space="preserve">
     <value>输入的值无效。

@@ -26,7 +26,8 @@ namespace mage
         private void button_open_Click(object sender, EventArgs e)
         {
             OpenFileDialog bg3File = new OpenFileDialog();
-            bg3File.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            //bg3File.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            bg3File.Filter = Properties.Resources.form_BitmapFilterText;
             if (bg3File.ShowDialog() == DialogResult.OK)
             {
                 Bitmap image = new Bitmap(bg3File.FileName);
@@ -38,7 +39,9 @@ namespace mage
                 else if (image.Width == 256 && image.Height == 512) { valid = true; }
                 if (!valid)
                 {
-                    MessageBox.Show("Invalid dimensions. Image must be 256 x 256, 512 x 256, or 256 x 512.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid dimensions. Image must be 256 x 256, 512 x 256, or 256 x 512.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.formImportLZ77BG_InvalidSizeText,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     image.Dispose();
                     return;
                 }
@@ -49,7 +52,8 @@ namespace mage
                 }
                 catch (FormatException ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -134,7 +138,8 @@ namespace mage
             }
             catch (FormatException ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

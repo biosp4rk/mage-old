@@ -33,22 +33,27 @@ namespace mage
         private void button_open_Click(object sender, EventArgs e)
         {
             OpenFileDialog tilesetFile = new OpenFileDialog();
-            tilesetFile.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            //tilesetFile.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
+            tilesetFile.Filter = Properties.Resources.form_BitmapFilterText;
             if (tilesetFile.ShowDialog() == DialogResult.OK)
             {
                 // check image
                 Bitmap image = new Bitmap(tilesetFile.FileName);
                 if (image.PixelFormat != System.Drawing.Imaging.PixelFormat.Format32bppArgb)
                 {
-                    MessageBox.Show("Invalid pixel format. Image must be 32bpp.", 
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid pixel format. Image must be 32bpp.", 
+                    //    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.formImportRLEBG_InvalidPixelFormatText,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     image.Dispose();
                     return;
                 }
                 if (image.Width != 256 || image.Height % 16 != 0 || image.Height > 1024)
                 {
-                    MessageBox.Show("Invalid dimensions. Image must have a width of 256 and a height divisible by 16.", 
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid dimensions. Image must have a width of 256 and a height divisible by 16.", 
+                    //    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.formImportRELBG_InvalidSizeText,
+                        Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     image.Dispose();
                     return;
                 }
@@ -59,7 +64,8 @@ namespace mage
                 }
                 catch (FormatException ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -156,7 +162,8 @@ namespace mage
             }
             catch (FormatException ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

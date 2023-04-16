@@ -130,6 +130,15 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff 的本地化字符串。
+        /// </summary>
+        internal static string form_BitmapFilterText {
+            get {
+                return ResourceManager.GetString("form_BitmapFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Error 的本地化字符串。
         /// </summary>
         internal static string form_ErrorMessageBoxTitle {
@@ -155,6 +164,15 @@ namespace mage.Properties {
         internal static string form_PNGFilterText {
             get {
                 return ResourceManager.GetString("form_PNGFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 MAGE tileset (*.mgt)|*.mgt 的本地化字符串。
+        /// </summary>
+        internal static string form_TilesetFilterText {
+            get {
+                return ResourceManager.GetString("form_TilesetFilterText", resourceCulture);
             }
         }
         
@@ -296,15 +314,6 @@ namespace mage.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff 的本地化字符串。
-        /// </summary>
-        internal static string formGFX_BitmapFilterText {
-            get {
-                return ResourceManager.GetString("formGFX_BitmapFilterText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 GFX files (*.gfx)|*.gfx|All files (*.*)|*.* 的本地化字符串。
         /// </summary>
         internal static string formGFX_GFXFilterText {
@@ -357,6 +366,87 @@ namespace mage.Properties {
         internal static string formGFX_RepointGFXTitle {
             get {
                 return ResourceManager.GetString("formGFX_RepointGFXTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Invalid dimensions. Image must be 240 x 416 的本地化字符串。
+        /// </summary>
+        internal static string formImportEnding_InvalidSizeText {
+            get {
+                return ResourceManager.GetString("formImportEnding_InvalidSizeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Image opened (awaiting conversion) 的本地化字符串。
+        /// </summary>
+        internal static string formImportEnding_statusLabel {
+            get {
+                return ResourceManager.GetString("formImportEnding_statusLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Converting... 的本地化字符串。
+        /// </summary>
+        internal static string formImportEnding_statusLabel1 {
+            get {
+                return ResourceManager.GetString("formImportEnding_statusLabel1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Image converted (unsaved) 的本地化字符串。
+        /// </summary>
+        internal static string formImportEnding_statusLabel2 {
+            get {
+                return ResourceManager.GetString("formImportEnding_statusLabel2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Saving... 的本地化字符串。
+        /// </summary>
+        internal static string formImportEnding_statusLabel3 {
+            get {
+                return ResourceManager.GetString("formImportEnding_statusLabel3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Image saved 的本地化字符串。
+        /// </summary>
+        internal static string formImportEnding_statusLabel4 {
+            get {
+                return ResourceManager.GetString("formImportEnding_statusLabel4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Invalid dimensions. Image must be 256 x 256, 512 x 256, or 256 x 512. 的本地化字符串。
+        /// </summary>
+        internal static string formImportLZ77BG_InvalidSizeText {
+            get {
+                return ResourceManager.GetString("formImportLZ77BG_InvalidSizeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Invalid dimensions. Image must have a width of 256 and a height divisible by 16. 的本地化字符串。
+        /// </summary>
+        internal static string formImportRELBG_InvalidSizeText {
+            get {
+                return ResourceManager.GetString("formImportRELBG_InvalidSizeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Invalid pixel format. Image must be 32bpp. 的本地化字符串。
+        /// </summary>
+        internal static string formImportRLEBG_InvalidPixelFormatText {
+            get {
+                return ResourceManager.GetString("formImportRLEBG_InvalidPixelFormatText", resourceCulture);
             }
         }
         

@@ -241,7 +241,7 @@ namespace mage
         {
             OpenFileDialog openImg = new OpenFileDialog();
             //openImg.Filter = "Bitmaps (*.png, *.bmp, *.gif, *.jpeg, *.jpg, *.tif, *.tiff)|*.png;*.bmp;*.gif;*.jpeg;*.jpg;*.tif;*.tiff";
-            openImg.Filter = Properties.Resources.formGFX_BitmapFilterText;
+            openImg.Filter = Properties.Resources.form_BitmapFilterText;
             if (openImg.ShowDialog() == DialogResult.OK)
             {
                 Bitmap inputImg = new Bitmap(openImg.FileName);

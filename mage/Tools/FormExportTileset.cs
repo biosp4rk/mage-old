@@ -25,7 +25,8 @@ namespace mage
         {
             // get filename
             SaveFileDialog tilesetFile = new SaveFileDialog();
-            tilesetFile.Filter = "MAGE tileset (*.mgt)|*.mgt";
+            //tilesetFile.Filter = "MAGE tileset (*.mgt)|*.mgt";
+            tilesetFile.Filter = Properties.Resources.form_TilesetFilterText;
             if (tilesetFile.ShowDialog() == DialogResult.OK)
             {
                 // get tileset
