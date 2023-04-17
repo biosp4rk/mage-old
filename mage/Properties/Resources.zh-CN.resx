@@ -314,6 +314,66 @@
     <value>文本无法解析。
 字符 {0} 处的换行符无效。</value>
   </data>
+  <data name="formTileBuilder_ComboBoxCenterChozo" xml:space="preserve">
+    <value>鸟人像</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterData" xml:space="preserve">
+    <value>数据室</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterItem" xml:space="preserve">
+    <value>能力室</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterMap" xml:space="preserve">
+    <value>地图室</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterNav" xml:space="preserve">
+    <value>指挥室</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterObtain" xml:space="preserve">
+    <value>物品已获得</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterRe" xml:space="preserve">
+    <value>补给室</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterSave" xml:space="preserve">
+    <value>记录室</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterUn" xml:space="preserve">
+    <value>物品未获得</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxItem0" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideBlue" xml:space="preserve">
+    <value>蓝门</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideConn" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideGreen" xml:space="preserve">
+    <value>绿门</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideMissile" xml:space="preserve">
+    <value>导弹舱门</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideNormal" xml:space="preserve">
+    <value>普通舱门</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSidePower" xml:space="preserve">
+    <value>重磅炸弹舱门</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideRed" xml:space="preserve">
+    <value>红门</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideSuper" xml:space="preserve">
+    <value>超级导弹舱门</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideWall" xml:space="preserve">
+    <value>墙</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideYellow" xml:space="preserve">
+    <value>黄门</value>
+  </data>
   <data name="formTileTable_RepointMessage" xml:space="preserve">
     <value>贴图块表已被重定向到 </value>
   </data>

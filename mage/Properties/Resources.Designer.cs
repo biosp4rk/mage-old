@@ -750,6 +750,186 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Chozo statue 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterChozo {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterChozo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Data room 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterData {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Item room 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterItem {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Map room 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterMap {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Navigation room 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterNav {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterNav", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Obtained tank 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterObtain {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterObtain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Recharge room 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterRe {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterRe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Save room 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterSave {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Unobtained tank 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxCenterUn {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxCenterUn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Nothing 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxItem0 {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxItem0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blue hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideBlue {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideBlue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Connection 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideConn {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideConn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Green hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideGreen {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideGreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Missile hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideMissile {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideMissile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Normal hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideNormal {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Power bomb hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSidePower {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSidePower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Red hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideRed {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideRed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Super missile hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideSuper {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideSuper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wall 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideWall {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideWall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Yellow hatch 的本地化字符串。
+        /// </summary>
+        internal static string formTileBuilder_ComboBoxSideYellow {
+            get {
+                return ResourceManager.GetString("formTileBuilder_ComboBoxSideYellow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Tile table was repointed to 的本地化字符串。
         /// </summary>
         internal static string formTileTable_RepointMessage {

@@ -32,13 +32,15 @@ namespace mage
             sides = new ComboBox[] { comboBox_T, comboBox_B, comboBox_L, comboBox_R };
 
             // fill in comboboxes
-            string[] allSides = new string[] { "Nothing", "Wall", "Connection" };
+            //string[] allSides = new string[] { "Nothing", "Wall", "Connection" };
+            string[] allSides = new string[] { Resources.formTileBuilder_ComboBoxItem0, Resources.formTileBuilder_ComboBoxSideWall, Resources.formTileBuilder_ComboBoxSideConn };
             comboBox_T.Items.AddRange(allSides);
             comboBox_B.Items.AddRange(allSides);
             comboBox_L.Items.AddRange(allSides);
             comboBox_R.Items.AddRange(allSides);
 
-            string[] allCenter = new string[] { "Nothing", "Unobtained tank", "Obtained tank" };
+            //string[] allCenter = new string[] { "Nothing", "Unobtained tank", "Obtained tank" };
+            string[] allCenter = new string[] { Resources.formTileBuilder_ComboBoxItem0, Resources.formTileBuilder_ComboBoxCenterUn, Resources.formTileBuilder_ComboBoxCenterObtain };
             comboBox_center.Items.AddRange(allCenter);
 
             comboBox_palette.Items.AddRange(new object[] { 0, 1, 2 });
@@ -47,11 +49,15 @@ namespace mage
 
             if (Version.IsMF)
             {
-                string[] hatches = new string[] { "Blue hatch", "Green hatch", "Yellow hatch", "Red hatch" };
+                //string[] hatches = new string[] { "Blue hatch", "Green hatch", "Yellow hatch", "Red hatch" };
+                string[] hatches = new string[] { Resources.formTileBuilder_ComboBoxSideBlue, Resources.formTileBuilder_ComboBoxSideGreen,
+                    Resources.formTileBuilder_ComboBoxSideYellow, Resources.formTileBuilder_ComboBoxSideRed };
                 comboBox_L.Items.AddRange(hatches);
                 comboBox_R.Items.AddRange(hatches);
 
-                string[] center = new string[] { "Navigation room", "Save room", "Recharge room", "Data room" };
+                //string[] center = new string[] { "Navigation room", "Save room", "Recharge room", "Data room" };
+                string[] center = new string[] { Resources.formTileBuilder_ComboBoxCenterSave, Resources.formTileBuilder_ComboBoxCenterNav,
+                    Resources.formTileBuilder_ComboBoxCenterRe, Resources.formTileBuilder_ComboBoxCenterData };
                 comboBox_center.Items.AddRange(center);
 
                 Patch p = new Patch(Properties.Resources.MF_U_addMinimapTiles);
@@ -59,11 +65,15 @@ namespace mage
             }
             else
             {
-                string[] hatches = new string[] { "Normal hatch", "Missile hatch", "Super missile hatch", "Power bomb hatch" };
+                //string[] hatches = new string[] { "Normal hatch", "Missile hatch", "Super missile hatch", "Power bomb hatch" };
+                string[] hatches = new string[] { Resources.formTileBuilder_ComboBoxSideNormal, Resources.formTileBuilder_ComboBoxSideMissile,
+                    Resources.formTileBuilder_ComboBoxSideSuper, Resources.formTileBuilder_ComboBoxSidePower };
                 comboBox_L.Items.AddRange(hatches);
                 comboBox_R.Items.AddRange(hatches);
 
-                string[] center = new string[] { "Save room", "Map room", "Item room", "Chozo statue" };
+                //string[] center = new string[] { "Save room", "Map room", "Item room", "Chozo statue" };
+                string[] center = new string[] { Resources.formTileBuilder_ComboBoxCenterSave, Resources.formTileBuilder_ComboBoxCenterMap,
+                    Resources.formTileBuilder_ComboBoxCenterItem, Resources.formTileBuilder_ComboBoxCenterChozo };
                 comboBox_center.Items.AddRange(center);
 
                 comboBox_palette.Items.AddRange(new object[] { 3, 4 });
@@ -110,7 +120,7 @@ namespace mage
             // sides
             for (byte w = 0; w < 4; w++)
             {
-                switch (sides[w].Text)
+                /*switch (sides[w].Text)
                 {
                     case "Wall":
                         DrawWall(w);
@@ -142,11 +152,38 @@ namespace mage
                     case "Power bomb hatch":
                         DrawHatchZM(0xB, w);
                         break;
+                }*/
+
+                // use SelectIndex avoid hard code 
+                switch (sides[w].SelectedIndex)
+                {
+                    case 1:
+                        DrawWall(w);
+                        break;
+                    case 2:
+                        DrawConnection(w);
+                        break;
+                    case 3: //MF -> blue hatch, ZM -> normal hatch
+                        if (Version.IsMF) DrawHatchMF(8, w);
+                        else DrawHatchZM(8, w);
+                        break;
+                    case 4: //MF -> green hatch, ZM -> missile hatch
+                        if (Version.IsMF) DrawHatchMF(9, w);
+                        else DrawHatchZM(0xA, w);
+                        break;
+                    case 5: //MF -> yellow hatch, ZM -> super missile hatch
+                        if (Version.IsMF) DrawHatchMF(0xB, w);
+                        else DrawHatchZM(0x9, w);
+                        break;
+                    case 6: //MF -> red hatch, ZM -> power bomb hatch
+                        if (Version.IsMF) DrawHatchMF(0xA, w);
+                        else DrawHatchZM(0xB, w);
+                        break;
                 }
             }
 
             // center
-            switch (comboBox_center.Text)
+            /*switch (comboBox_center.Text)
             {
                 case "Unobtained tank":
                     DrawUnobtainedTank();
@@ -174,6 +211,32 @@ namespace mage
                     break;
                 case "Chozo statue":
                     DrawChozoStatue();
+                    break;
+            }*/
+
+            // use SelectIndex avoid hard code 
+            switch (comboBox_center.SelectedIndex)
+            {
+                case 1:
+                    DrawUnobtainedTank();
+                    break;
+                case 2:
+                    DrawObtainedTank();
+                    break;
+                case 3:
+                    DrawSaveRoom();
+                    break;
+                case 4:
+                    if(Version.IsMF) DrawNavRoom();
+                    else DrawMapRoom();
+                    break;
+                case 5:
+                    if(Version.IsMF) DrawRechargeRoom();
+                    else DrawItemRoom();
+                    break;
+                case 6:
+                    if(Version.IsMF) DrawDataRoom();
+                    else DrawChozoStatue();
                     break;
             }
 

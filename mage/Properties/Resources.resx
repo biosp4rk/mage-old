@@ -743,6 +743,66 @@ Invalid newline at character {0}.</value>
   <data name="formPortBG_TitleImport" xml:space="preserve">
     <value>Import Background</value>
   </data>
+  <data name="formTileBuilder_ComboBoxCenterChozo" xml:space="preserve">
+    <value>Chozo statue</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterData" xml:space="preserve">
+    <value>Data room</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterItem" xml:space="preserve">
+    <value>Item room</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterMap" xml:space="preserve">
+    <value>Map room</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterNav" xml:space="preserve">
+    <value>Navigation room</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterObtain" xml:space="preserve">
+    <value>Obtained tank</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterRe" xml:space="preserve">
+    <value>Recharge room</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterSave" xml:space="preserve">
+    <value>Save room</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxCenterUn" xml:space="preserve">
+    <value>Unobtained tank</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxItem0" xml:space="preserve">
+    <value>Nothing</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideBlue" xml:space="preserve">
+    <value>Blue hatch</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideConn" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideGreen" xml:space="preserve">
+    <value>Green hatch</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideMissile" xml:space="preserve">
+    <value>Missile hatch</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideNormal" xml:space="preserve">
+    <value>Normal hatch</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSidePower" xml:space="preserve">
+    <value>Power bomb hatch</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideRed" xml:space="preserve">
+    <value>Red hatch</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideSuper" xml:space="preserve">
+    <value>Super missile hatch</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideWall" xml:space="preserve">
+    <value>Wall</value>
+  </data>
+  <data name="formTileBuilder_ComboBoxSideYellow" xml:space="preserve">
+    <value>Yellow hatch</value>
+  </data>
   <data name="form_TilesetFilterText" xml:space="preserve">
     <value>MAGE tileset (*.mgt)|*.mgt</value>
   </data>
