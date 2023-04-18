@@ -163,6 +163,48 @@
   <data name="formDemo_FilterText" xml:space="preserve">
     <value>MAGE 演示 (*.mgd)|*.mgd</value>
   </data>
+  <data name="formEditDoor_AddOneConnMessage" xml:space="preserve">
+    <value>
+
+你现在想添加一个吗？</value>
+    <comment>\n\nWould you like to add one now?</comment>
+  </data>
+  <data name="formEditDoor_AreaEventText" xml:space="preserve">
+    <value>一个门不能同时作为区域连接和事件连接， 只有区域连接会生效。</value>
+  </data>
+  <data name="formEditDoor_AreaNotExistText" xml:space="preserve">
+    <value>找不到此门的区域连接。</value>
+  </data>
+  <data name="formEditDoor_CannotAutoConnText" xml:space="preserve">
+    <value>
+
+门无法自动连接。</value>
+    <comment>\n\nDoor could not be automatically connected.</comment>
+  </data>
+  <data name="formEditDoor_ConnNotExistText" xml:space="preserve">
+    <value>连接的门不存在。</value>
+  </data>
+  <data name="formEditDoor_EventNotExistText" xml:space="preserve">
+    <value>找不到此门的基于事件的连接。</value>
+  </data>
+  <data name="formEditDoor_HatchTypeClose" xml:space="preserve">
+    <value>闭合的舱门</value>
+  </data>
+  <data name="formEditDoor_HatchTypeLcok" xml:space="preserve">
+    <value>舱门（能锁定）</value>
+  </data>
+  <data name="formEditDoor_HatchTypeRemove" xml:space="preserve">
+    <value>移除母舰舱门</value>
+  </data>
+  <data name="formEditDoor_HatchTypeSet" xml:space="preserve">
+    <value>设置母舰舱门</value>
+  </data>
+  <data name="formEditDoor_LocationNotExistText" xml:space="preserve">
+    <value>找不到此房间的位置名称。</value>
+  </data>
+  <data name="formEditDoor_WidthHeightError" xml:space="preserve">
+    <value>宽度和高度必须大于 0。</value>
+  </data>
   <data name="formGFX_GFXFilterText" xml:space="preserve">
     <value>GFX 文件 (*.gfx)|*.gfx|All files (*.*)|*.*</value>
   </data>
@@ -285,9 +327,6 @@
   <data name="formSpriteset_SpriteOverlap" xml:space="preserve">
     <value>槽位 {0} 中的精灵的图形与槽位 {1} 中的精灵的图形重叠，其中一个可能无法在游戏中正确显示。</value>
   </data>
-  <data name="formSpriteset_WarningMessageBoxTitle" xml:space="preserve">
-    <value>警告</value>
-  </data>
   <data name="formSprite_label_totalProbHigh" xml:space="preserve">
     <value>（太高）</value>
   </data>
@@ -400,6 +439,9 @@
     <value>输入的值无效。
 
 </value>
+  </data>
+  <data name="form_WarningMessageBoxTitle" xml:space="preserve">
+    <value>警告</value>
   </data>
   <data name="MF_clipdata" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\MF\MF_clipdata.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>

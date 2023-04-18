@@ -188,6 +188,15 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Warning 的本地化字符串。
+        /// </summary>
+        internal static string form_WarningMessageBoxTitle {
+            get {
+                return ResourceManager.GetString("form_WarningMessageBoxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Animated graphics 的本地化字符串。
         /// </summary>
         internal static string formAdd_LimitErrorAnimatedGFX {
@@ -310,6 +319,118 @@ namespace mage.Properties {
         internal static string formDemo_FilterText {
             get {
                 return ResourceManager.GetString("formDemo_FilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 
+        ///
+        ///Would you like to add one now? 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_AddOneConnMessage {
+            get {
+                return ResourceManager.GetString("formEditDoor_AddOneConnMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 A door cannot be an area connection and an event connection. Only the area connection will apply. 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_AreaEventText {
+            get {
+                return ResourceManager.GetString("formEditDoor_AreaEventText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An area connection could not be found for this door. 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_AreaNotExistText {
+            get {
+                return ResourceManager.GetString("formEditDoor_AreaNotExistText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 
+        ///
+        ///Door could not be automatically connected. 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_CannotAutoConnText {
+            get {
+                return ResourceManager.GetString("formEditDoor_CannotAutoConnText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The connected door does not exist. 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_ConnNotExistText {
+            get {
+                return ResourceManager.GetString("formEditDoor_ConnNotExistText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An event based connection could not be found for this door. 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_EventNotExistText {
+            get {
+                return ResourceManager.GetString("formEditDoor_EventNotExistText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Closed hatch 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_HatchTypeClose {
+            get {
+                return ResourceManager.GetString("formEditDoor_HatchTypeClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hatch (can lock) 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_HatchTypeLcok {
+            get {
+                return ResourceManager.GetString("formEditDoor_HatchTypeLcok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Remove mother ship 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_HatchTypeRemove {
+            get {
+                return ResourceManager.GetString("formEditDoor_HatchTypeRemove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Set mother ship 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_HatchTypeSet {
+            get {
+                return ResourceManager.GetString("formEditDoor_HatchTypeSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 A location name could not be found for this room. 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_LocationNotExistText {
+            get {
+                return ResourceManager.GetString("formEditDoor_LocationNotExistText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Width and height must be greater than 0. 的本地化字符串。
+        /// </summary>
+        internal static string formEditDoor_WidthHeightError {
+            get {
+                return ResourceManager.GetString("formEditDoor_WidthHeightError", resourceCulture);
             }
         }
         
@@ -678,15 +799,6 @@ namespace mage.Properties {
         internal static string formSpriteset_SpriteOverlap {
             get {
                 return ResourceManager.GetString("formSpriteset_SpriteOverlap", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Warning 的本地化字符串。
-        /// </summary>
-        internal static string formSpriteset_WarningMessageBoxTitle {
-            get {
-                return ResourceManager.GetString("formSpriteset_WarningMessageBoxTitle", resourceCulture);
             }
         }
         

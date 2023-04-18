@@ -339,7 +339,7 @@ namespace mage
                     //MessageBox.Show("There are not enough graphics rows for the sprite in slot " + slot +
                     //    ". It may not appear correctly in-game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     MessageBox.Show(string.Format(Properties.Resources.formSpriteset_NoEnoughRows, slot),
-                        Properties.Resources.formSpriteset_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        Properties.Resources.form_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
                 // check for overlapping graphics
@@ -358,7 +358,7 @@ namespace mage
                             //MessageBox.Show("The graphics of the sprite in slot " + slot + " overlap the graphics of the sprite in slot " + s
                             //    + ". One of them may not appear correctly in-game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             MessageBox.Show(string.Format(Properties.Resources.formSpriteset_SpriteOverlap, slot, s),
-                                Properties.Resources.formSpriteset_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                Properties.Resources.form_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             break;
                         }
                     }

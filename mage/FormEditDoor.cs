@@ -41,13 +41,17 @@ namespace mage
             // type
             if (Version.IsMF)
             {
-                comboBox_type.Items.Add("Hatch (can lock)");
+                //comboBox_type.Items.Add("Hatch (can lock)");
+                comboBox_type.Items.Add(Properties.Resources.formEditDoor_HatchTypeLcok);
             }
             else
             {
-                comboBox_type.Items.Add("Closed hatch");
-                comboBox_type.Items.Add("Remove mother ship");
-                comboBox_type.Items.Add("Set mother ship");
+                //comboBox_type.Items.Add("Closed hatch");
+                //comboBox_type.Items.Add("Remove mother ship");
+                //comboBox_type.Items.Add("Set mother ship");
+                comboBox_type.Items.Add(Properties.Resources.formEditDoor_HatchTypeClose);
+                comboBox_type.Items.Add(Properties.Resources.formEditDoor_HatchTypeRemove);
+                comboBox_type.Items.Add(Properties.Resources.formEditDoor_HatchTypeSet);
             }
             comboBox_type.SelectedIndex = (door.type & 0xF) - 1;
             checkBox_event.Checked = ((door.type & 0x20) != 0);
@@ -131,7 +135,8 @@ namespace mage
                     byte height = Hex.ToByte(textBox_height.Text);
                     if (width == 0 || height == 0)
                     {
-                        throw new FormatException("Width and height must be greater than 0.");
+                        //throw new FormatException("Width and height must be greater than 0.");
+                        throw new FormatException(Properties.Resources.formEditDoor_WidthHeightError);
                     }
                     d.xEnd = (byte)(d.xStart + width - 1);
                     d.yEnd = (byte)(d.yStart + height - 1);
@@ -151,9 +156,10 @@ namespace mage
                     // check not also event connection
                     if (checkBox_event.Checked)
                     {
-                        string message = "A door cannot be an area connection and an event connection.";
-                        message += " Only the area connection will apply.";
-                        MessageBox.Show(message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //string message = "A door cannot be an area connection and an event connection.";
+                        //message += " Only the area connection will apply.";
+                        string message = Properties.Resources.formEditDoor_AreaEventText;
+                        MessageBox.Show(message, Properties.Resources.form_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
 
@@ -249,30 +255,45 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
+                    //"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.form_OneValueNotValidErrorText + ex.Message,
+                    Properties.Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             // check for problems
             if (badDst)
             {
-                string message = "The connected door does not exist.";
+                //string message = "The connected door does not exist.";
+                //if (checkBox_autoConnect.Checked)
+                //{
+                //    message += "\n\nDoor could not be automatically connected.";
+                //}
+                //MessageBox.Show(message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                string message = Properties.Resources.formEditDoor_ConnNotExistText;
                 if (checkBox_autoConnect.Checked)
                 {
-                    message += "\n\nDoor could not be automatically connected.";
+                    message += Properties.Resources.formEditDoor_CannotAutoConnText;
                 }
-                MessageBox.Show(message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(message, Properties.Resources.form_WarningMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (badArea)
             {
-                string message = "An area connection could not be found for this door.";
+                //string message = "An area connection could not be found for this door.";
+                //if (checkBox_autoConnect.Checked)
+                //{
+                //    message += "\n\nDoor could not be automatically connected.";
+                //}
+                //message += "\n\nWould you like to add one now?";
+                //var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                string message = Properties.Resources.formEditDoor_AreaNotExistText;
                 if (checkBox_autoConnect.Checked)
                 {
-                    message += "\n\nDoor could not be automatically connected.";
+                    message += Properties.Resources.formEditDoor_CannotAutoConnText;
                 }
-                message += "\n\nWould you like to add one now?";
-                var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                message += Properties.Resources.formEditDoor_AddOneConnMessage;
+                var result = MessageBox.Show(message, Properties.Resources.form_WarningMessageBoxTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
                     FormConnection form = new FormConnection(main, 0);
@@ -281,9 +302,12 @@ namespace mage
             }
             else if (badEvent)
             {
-                string message = "An event based connection could not be found for this door.";
-                message += "\n\nWould you like to add one now?";
-                var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                //string message = "An event based connection could not be found for this door.";
+                //message += "\n\nWould you like to add one now?";
+                //var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                string message = Properties.Resources.formEditDoor_EventNotExistText;
+                message += Properties.Resources.formEditDoor_AddOneConnMessage;
+                var result = MessageBox.Show(message, Properties.Resources.form_WarningMessageBoxTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
                     FormConnection form = new FormConnection(main, 1);
@@ -292,9 +316,12 @@ namespace mage
             }
             else if (badLocation)
             {
-                string message = "A location name could not be found for this room.";
-                message += "\n\nWould you like to add one now?";
-                var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                //string message = "A location name could not be found for this room.";
+                //message += "\n\nWould you like to add one now?";
+                //var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                string message = Properties.Resources.formEditDoor_LocationNotExistText;
+                message += Properties.Resources.formEditDoor_AddOneConnMessage;
+                var result = MessageBox.Show(message, Properties.Resources.form_WarningMessageBoxTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
                     FormConnection form = new FormConnection(main, 2);

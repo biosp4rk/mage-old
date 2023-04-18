@@ -615,7 +615,7 @@ Would you like to try replacing it with blank data?</value>
   <data name="formSpriteset_SpriteOverlap" xml:space="preserve">
     <value>The graphics of the sprite in slot {0} overlap the graphics of the sprite in slot {1}. One of them may not appear correctly in-game.</value>
   </data>
-  <data name="formSpriteset_WarningMessageBoxTitle" xml:space="preserve">
+  <data name="form_WarningMessageBoxTitle" xml:space="preserve">
     <value>Warning</value>
   </data>
   <data name="formSprite_label_totalProbHigh" xml:space="preserve">
@@ -805,5 +805,47 @@ Invalid newline at character {0}.</value>
   </data>
   <data name="form_TilesetFilterText" xml:space="preserve">
     <value>MAGE tileset (*.mgt)|*.mgt</value>
+  </data>
+  <data name="formEditDoor_AddOneConnMessage" xml:space="preserve">
+    <value>
+
+Would you like to add one now?</value>
+    <comment>\n\nWould you like to add one now?</comment>
+  </data>
+  <data name="formEditDoor_AreaEventText" xml:space="preserve">
+    <value>A door cannot be an area connection and an event connection. Only the area connection will apply.</value>
+  </data>
+  <data name="formEditDoor_AreaNotExistText" xml:space="preserve">
+    <value>An area connection could not be found for this door.</value>
+  </data>
+  <data name="formEditDoor_CannotAutoConnText" xml:space="preserve">
+    <value>
+
+Door could not be automatically connected.</value>
+    <comment>\n\nDoor could not be automatically connected.</comment>
+  </data>
+  <data name="formEditDoor_ConnNotExistText" xml:space="preserve">
+    <value>The connected door does not exist.</value>
+  </data>
+  <data name="formEditDoor_EventNotExistText" xml:space="preserve">
+    <value>An event based connection could not be found for this door.</value>
+  </data>
+  <data name="formEditDoor_HatchTypeClose" xml:space="preserve">
+    <value>Closed hatch</value>
+  </data>
+  <data name="formEditDoor_HatchTypeLcok" xml:space="preserve">
+    <value>Hatch (can lock)</value>
+  </data>
+  <data name="formEditDoor_HatchTypeRemove" xml:space="preserve">
+    <value>Remove mother ship</value>
+  </data>
+  <data name="formEditDoor_HatchTypeSet" xml:space="preserve">
+    <value>Set mother ship</value>
+  </data>
+  <data name="formEditDoor_LocationNotExistText" xml:space="preserve">
+    <value>A location name could not be found for this room.</value>
+  </data>
+  <data name="formEditDoor_WidthHeightError" xml:space="preserve">
+    <value>Width and height must be greater than 0.</value>
   </data>
 </root>
