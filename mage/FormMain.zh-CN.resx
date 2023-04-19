@@ -230,16 +230,16 @@
     <value>编辑</value>
   </data>
   <data name="menuItem_viewBG0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_viewBG1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_viewBG2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_viewBG3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_viewClipCollision.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 22</value>
@@ -260,64 +260,64 @@
     <value>数值</value>
   </data>
   <data name="menuItem_viewCLP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_viewCLP.Text" xml:space="preserve">
     <value>砖块属性</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="menuItem_viewSprites.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_viewSprites.Text" xml:space="preserve">
     <value>精灵</value>
   </data>
   <data name="menuItem_outlineSprites.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_outlineSprites.Text" xml:space="preserve">
     <value>精灵边线</value>
   </data>
   <data name="menuItem_outlineDoors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_outlineDoors.Text" xml:space="preserve">
     <value>门</value>
   </data>
   <data name="menuItem_outlineScrolls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_outlineScrolls.Text" xml:space="preserve">
     <value>滚动</value>
   </data>
   <data name="toolStripSeparator27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="menuItem_outlineScreens.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_outlineScreens.Text" xml:space="preserve">
     <value>屏幕边线</value>
   </data>
   <data name="menuItem_viewAnimPal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_viewAnimPal.Text" xml:space="preserve">
     <value>动画调色板</value>
   </data>
   <data name="menuItem_motherShipHatches.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_motherShipHatches.Text" xml:space="preserve">
     <value>母舰舱门</value>
   </data>
   <data name="toolStripSeparator18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="menuItem_clipboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_clipboard.Text" xml:space="preserve">
     <value>剪贴板</value>
@@ -350,7 +350,7 @@
     <value>缩小</value>
   </data>
   <data name="menuItem_zoom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="menuItem_zoom.Text" xml:space="preserve">
     <value>缩放</value>
@@ -361,95 +361,44 @@
   <data name="menuStrip_view.Text" xml:space="preserve">
     <value>视图</value>
   </data>
-  <data name="menuItem_headerEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
   <data name="menuItem_headerEditor.Text" xml:space="preserve">
     <value>头编辑器</value>
-  </data>
-  <data name="menuItem_tilesetEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
   </data>
   <data name="menuItem_tilesetEditor.Text" xml:space="preserve">
     <value>贴图集编辑器</value>
   </data>
-  <data name="toolStripSeparator24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 6</value>
-  </data>
-  <data name="menuItem_graphicsEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
   <data name="menuItem_graphicsEditor.Text" xml:space="preserve">
     <value>图形编辑器</value>
-  </data>
-  <data name="menuItem_paletteEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
   </data>
   <data name="menuItem_paletteEditor.Text" xml:space="preserve">
     <value>调色板编辑器</value>
   </data>
-  <data name="menuItem_tileTableEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
   <data name="menuItem_tileTableEditor.Text" xml:space="preserve">
-    <value>贴图集编辑器</value>
-  </data>
-  <data name="menuItem_animationEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>贴图块表编辑器</value>
   </data>
   <data name="menuItem_animationEditor.Text" xml:space="preserve">
     <value>动画编辑器</value>
   </data>
-  <data name="toolStripSeparator25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 6</value>
-  </data>
-  <data name="menuItem_spriteEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
   <data name="menuItem_spriteEditor.Text" xml:space="preserve">
     <value>精灵编辑器</value>
-  </data>
-  <data name="menuItem_spritesetEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
   </data>
   <data name="menuItem_spritesetEditor.Text" xml:space="preserve">
     <value>精灵集编辑器</value>
   </data>
-  <data name="menuItem_minimapEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
   <data name="menuItem_minimapEditor.Text" xml:space="preserve">
     <value>地图编辑器</value>
-  </data>
-  <data name="menuItem_connectionEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
   </data>
   <data name="menuItem_connectionEditor.Text" xml:space="preserve">
     <value>连接编辑器</value>
   </data>
-  <data name="toolStripSeparator26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 6</value>
-  </data>
-  <data name="menuItem_textEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
   <data name="menuItem_textEditor.Text" xml:space="preserve">
     <value>文本编辑器</value>
-  </data>
-  <data name="menuItem_demoEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
   </data>
   <data name="menuItem_demoEditor.Text" xml:space="preserve">
     <value>演示编辑器</value>
   </data>
-  <data name="menuItem_physicsEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
   <data name="menuItem_physicsEditor.Text" xml:space="preserve">
     <value>物理编辑器</value>
-  </data>
-  <data name="menuItem_weaponEditor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
   </data>
   <data name="menuItem_weaponEditor.Text" xml:space="preserve">
     <value>武器编辑器</value>
@@ -867,6 +816,78 @@
   </data>
   <data name="groupBox_tileset.Text" xml:space="preserve">
     <value>贴图集</value>
+  </data>
+  <data name="contextItem_addSprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_addSprite.Text" xml:space="preserve">
+    <value>添加精灵</value>
+  </data>
+  <data name="contextItem_editSprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_editSprite.Text" xml:space="preserve">
+    <value>编辑精灵</value>
+  </data>
+  <data name="contextItem_removeSprite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_removeSprite.Text" xml:space="preserve">
+    <value>移除精灵</value>
+  </data>
+  <data name="toolStripSeparator6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 6</value>
+  </data>
+  <data name="contextItem_addDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_addDoor.Text" xml:space="preserve">
+    <value>添加门</value>
+  </data>
+  <data name="contextItem_editDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_editDoor.Text" xml:space="preserve">
+    <value>编辑门</value>
+  </data>
+  <data name="contextItem_removeDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_removeDoor.Text" xml:space="preserve">
+    <value>移除门</value>
+  </data>
+  <data name="toolStripSeparator12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 6</value>
+  </data>
+  <data name="contextItem_addScroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_addScroll.Text" xml:space="preserve">
+    <value>添加滚动</value>
+  </data>
+  <data name="contextItem_editScroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_editScroll.Text" xml:space="preserve">
+    <value>编辑滚动</value>
+  </data>
+  <data name="contextItem_removeScroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_removeScroll.Text" xml:space="preserve">
+    <value>移除滚动</value>
+  </data>
+  <data name="toolStripSeparator14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 6</value>
+  </data>
+  <data name="contextItem_testRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="contextItem_testRoom.Text" xml:space="preserve">
+    <value>在此测试房间</value>
+  </data>
+  <data name="contextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 264</value>
   </data>
   <data name="roomView.Size" type="System.Drawing.Size, System.Drawing">
     <value>448, 376</value>

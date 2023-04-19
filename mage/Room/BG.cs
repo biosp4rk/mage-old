@@ -53,7 +53,8 @@ namespace mage
             string s0 = "BG0: " + (BG0 != 0xFFFF ? Hex.ToString(BG0) : "–") + '\n';
             string s1 = "BG1: " + (BG1 != 0xFFFF ? Hex.ToString(BG1) : "–") + '\n';
             string s2 = "BG2: " + (BG2 != 0xFFFF ? Hex.ToString(BG2) : "–") + '\n';
-            string s3 = "Clip: " + (CLP != 0xFFFF ? Hex.ToString(CLP) : "–");
+            //string s3 = "Clip: " + (CLP != 0xFFFF ? Hex.ToString(CLP) : "–");
+            string s3 = Properties.Resources.RoomBG_BlockToStringText + (CLP != 0xFFFF ? Hex.ToString(CLP) : "–");
             return s0 + s1 + s2 + s3;
         }
     }

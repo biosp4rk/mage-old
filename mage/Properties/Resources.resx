@@ -806,6 +806,30 @@ Invalid newline at character {0}.</value>
   <data name="form_TilesetFilterText" xml:space="preserve">
     <value>MAGE tileset (*.mgt)|*.mgt</value>
   </data>
+  <data name="Action_AddText" xml:space="preserve">
+    <value>Add </value>
+  </data>
+  <data name="Action_DoorText" xml:space="preserve">
+    <value>door</value>
+  </data>
+  <data name="Action_EditBlocksText" xml:space="preserve">
+    <value>Edit blocks</value>
+  </data>
+  <data name="Action_EditText" xml:space="preserve">
+    <value>Edit </value>
+  </data>
+  <data name="Action_MoveText" xml:space="preserve">
+    <value>Move </value>
+  </data>
+  <data name="Action_RemoveText" xml:space="preserve">
+    <value>Remove </value>
+  </data>
+  <data name="Action_ScrollText" xml:space="preserve">
+    <value>scroll</value>
+  </data>
+  <data name="Action_SpriteText" xml:space="preserve">
+    <value>sprite</value>
+  </data>
   <data name="formEditDoor_AddOneConnMessage" xml:space="preserve">
     <value>
 
@@ -847,5 +871,94 @@ Door could not be automatically connected.</value>
   </data>
   <data name="formEditDoor_WidthHeightError" xml:space="preserve">
     <value>Width and height must be greater than 0.</value>
+  </data>
+  <data name="formMain_BlockInfoText" xml:space="preserve">
+    <value>Block: </value>
+  </data>
+  <data name="formMain_DocNotExistText" xml:space="preserve">
+    <value>Documentation file could not be found.</value>
+  </data>
+  <data name="formMain_DoorInfoCurentText" xml:space="preserve">
+    <value>Current door: </value>
+  </data>
+  <data name="formMain_DoorInfoDestDText" xml:space="preserve">
+    <value>Destination door: </value>
+  </data>
+  <data name="formMain_DoorInfoDestRText" xml:space="preserve">
+    <value>Destination room: </value>
+  </data>
+  <data name="formMain_DoorInfoHatchText" xml:space="preserve">
+    <value>Hatch number: </value>
+  </data>
+  <data name="formMain_EnemyInfoIDText" xml:space="preserve">
+    <value>Sprite ID: </value>
+  </data>
+  <data name="formMain_EnemyInfoPropText" xml:space="preserve">
+    <value>Property: </value>
+  </data>
+  <data name="formMain_EnemyInfoSlotText" xml:space="preserve">
+    <value>Slot: </value>
+  </data>
+  <data name="formMain_GBAFilterText" xml:space="preserve">
+    <value>GBA ROM files (*.gba)|*.gba</value>
+  </data>
+  <data name="formMain_LoadFailText" xml:space="preserve">
+    <value>Error loading file.
+
+</value>
+  </data>
+  <data name="formMain_LoadRoomFailText" xml:space="preserve">
+    <value>Room could not be loaded.</value>
+  </data>
+  <data name="formMain_LoadRoomFixBG" xml:space="preserve">
+    <value>Would you like to try disabling this background?</value>
+  </data>
+  <data name="formMain_LoadRoomFixDefault" xml:space="preserve">
+    <value>Would you like to try replacing it with blank data?</value>
+  </data>
+  <data name="formMain_OperationFailText" xml:space="preserve">
+    <value>Operation could not be completed.
+
+</value>
+    <comment>Operation could not be completed.\n\n</comment>
+  </data>
+  <data name="formMain_ProjSaveText" xml:space="preserve">
+    <value>Project saved to</value>
+  </data>
+  <data name="formMain_ProjSaveText1" xml:space="preserve">
+    <value>
+
+Do not modify or erase this file. It is necessary for tracking added data.</value>
+    <comment>\n\nDo not modify or erase this file. It is necessary for tracking added data.</comment>
+  </data>
+  <data name="formMain_ProjSaveTitle" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="formMain_RedoToolTipText" xml:space="preserve">
+    <value>Redo </value>
+  </data>
+  <data name="formMain_RoomFilterText" xml:space="preserve">
+    <value>MAGE room (*.mgr)|*.mgr|All files (*.*)|*.*</value>
+  </data>
+  <data name="formMain_SpritesetItem" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="formMain_SpritesetItem1" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="formMain_SpritesetItem2" xml:space="preserve">
+    <value>Second</value>
+  </data>
+  <data name="formMain_UndoToolTipText" xml:space="preserve">
+    <value>Undo </value>
+  </data>
+  <data name="formMain_UnsaveChangeText" xml:space="preserve">
+    <value>Do you want to save changes to the ROM?</value>
+  </data>
+  <data name="formMain_UnsaveChangeTitle" xml:space="preserve">
+    <value>Unsaved Changes</value>
+  </data>
+  <data name="RoomBG_BlockToStringText" xml:space="preserve">
+    <value>Clip: </value>
   </data>
 </root>

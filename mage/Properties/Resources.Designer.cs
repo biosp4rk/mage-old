@@ -61,6 +61,78 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Add  的本地化字符串。
+        /// </summary>
+        internal static string Action_AddText {
+            get {
+                return ResourceManager.GetString("Action_AddText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 door 的本地化字符串。
+        /// </summary>
+        internal static string Action_DoorText {
+            get {
+                return ResourceManager.GetString("Action_DoorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Edit blocks 的本地化字符串。
+        /// </summary>
+        internal static string Action_EditBlocksText {
+            get {
+                return ResourceManager.GetString("Action_EditBlocksText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Edit  的本地化字符串。
+        /// </summary>
+        internal static string Action_EditText {
+            get {
+                return ResourceManager.GetString("Action_EditText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Move  的本地化字符串。
+        /// </summary>
+        internal static string Action_MoveText {
+            get {
+                return ResourceManager.GetString("Action_MoveText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Remove  的本地化字符串。
+        /// </summary>
+        internal static string Action_RemoveText {
+            get {
+                return ResourceManager.GetString("Action_RemoveText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 scroll 的本地化字符串。
+        /// </summary>
+        internal static string Action_ScrollText {
+            get {
+                return ResourceManager.GetString("Action_ScrollText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 sprite 的本地化字符串。
+        /// </summary>
+        internal static string Action_SpriteText {
+            get {
+                return ResourceManager.GetString("Action_SpriteText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap button_bg_color {
@@ -626,6 +698,246 @@ namespace mage.Properties {
         internal static string formImportTileset_WrongFileText {
             get {
                 return ResourceManager.GetString("formImportTileset_WrongFileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Block:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_BlockInfoText {
+            get {
+                return ResourceManager.GetString("formMain_BlockInfoText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Documentation file could not be found. 的本地化字符串。
+        /// </summary>
+        internal static string formMain_DocNotExistText {
+            get {
+                return ResourceManager.GetString("formMain_DocNotExistText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Current door:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_DoorInfoCurentText {
+            get {
+                return ResourceManager.GetString("formMain_DoorInfoCurentText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Destination door:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_DoorInfoDestDText {
+            get {
+                return ResourceManager.GetString("formMain_DoorInfoDestDText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Destination room:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_DoorInfoDestRText {
+            get {
+                return ResourceManager.GetString("formMain_DoorInfoDestRText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hatch number:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_DoorInfoHatchText {
+            get {
+                return ResourceManager.GetString("formMain_DoorInfoHatchText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Sprite ID:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_EnemyInfoIDText {
+            get {
+                return ResourceManager.GetString("formMain_EnemyInfoIDText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Property:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_EnemyInfoPropText {
+            get {
+                return ResourceManager.GetString("formMain_EnemyInfoPropText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Slot:  的本地化字符串。
+        /// </summary>
+        internal static string formMain_EnemyInfoSlotText {
+            get {
+                return ResourceManager.GetString("formMain_EnemyInfoSlotText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 GBA ROM files (*.gba)|*.gba 的本地化字符串。
+        /// </summary>
+        internal static string formMain_GBAFilterText {
+            get {
+                return ResourceManager.GetString("formMain_GBAFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Error loading file.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string formMain_LoadFailText {
+            get {
+                return ResourceManager.GetString("formMain_LoadFailText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Room could not be loaded. 的本地化字符串。
+        /// </summary>
+        internal static string formMain_LoadRoomFailText {
+            get {
+                return ResourceManager.GetString("formMain_LoadRoomFailText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Would you like to try disabling this background? 的本地化字符串。
+        /// </summary>
+        internal static string formMain_LoadRoomFixBG {
+            get {
+                return ResourceManager.GetString("formMain_LoadRoomFixBG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Would you like to try replacing it with blank data? 的本地化字符串。
+        /// </summary>
+        internal static string formMain_LoadRoomFixDefault {
+            get {
+                return ResourceManager.GetString("formMain_LoadRoomFixDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Operation could not be completed.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string formMain_OperationFailText {
+            get {
+                return ResourceManager.GetString("formMain_OperationFailText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Project saved to 的本地化字符串。
+        /// </summary>
+        internal static string formMain_ProjSaveText {
+            get {
+                return ResourceManager.GetString("formMain_ProjSaveText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 
+        ///
+        ///Do not modify or erase this file. It is necessary for tracking added data. 的本地化字符串。
+        /// </summary>
+        internal static string formMain_ProjSaveText1 {
+            get {
+                return ResourceManager.GetString("formMain_ProjSaveText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 New Project 的本地化字符串。
+        /// </summary>
+        internal static string formMain_ProjSaveTitle {
+            get {
+                return ResourceManager.GetString("formMain_ProjSaveTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Redo  的本地化字符串。
+        /// </summary>
+        internal static string formMain_RedoToolTipText {
+            get {
+                return ResourceManager.GetString("formMain_RedoToolTipText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 MAGE room (*.mgr)|*.mgr|All files (*.*)|*.* 的本地化字符串。
+        /// </summary>
+        internal static string formMain_RoomFilterText {
+            get {
+                return ResourceManager.GetString("formMain_RoomFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Default 的本地化字符串。
+        /// </summary>
+        internal static string formMain_SpritesetItem {
+            get {
+                return ResourceManager.GetString("formMain_SpritesetItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 First 的本地化字符串。
+        /// </summary>
+        internal static string formMain_SpritesetItem1 {
+            get {
+                return ResourceManager.GetString("formMain_SpritesetItem1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Second 的本地化字符串。
+        /// </summary>
+        internal static string formMain_SpritesetItem2 {
+            get {
+                return ResourceManager.GetString("formMain_SpritesetItem2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Undo  的本地化字符串。
+        /// </summary>
+        internal static string formMain_UndoToolTipText {
+            get {
+                return ResourceManager.GetString("formMain_UndoToolTipText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Do you want to save changes to the ROM? 的本地化字符串。
+        /// </summary>
+        internal static string formMain_UnsaveChangeText {
+            get {
+                return ResourceManager.GetString("formMain_UnsaveChangeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Unsaved Changes 的本地化字符串。
+        /// </summary>
+        internal static string formMain_UnsaveChangeTitle {
+            get {
+                return ResourceManager.GetString("formMain_UnsaveChangeTitle", resourceCulture);
             }
         }
         
@@ -1764,6 +2076,15 @@ namespace mage.Properties {
         internal static string MF_U_weapons {
             get {
                 return ResourceManager.GetString("MF_U_weapons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Clip:  的本地化字符串。
+        /// </summary>
+        internal static string RoomBG_BlockToStringText {
+            get {
+                return ResourceManager.GetString("RoomBG_BlockToStringText", resourceCulture);
             }
         }
         

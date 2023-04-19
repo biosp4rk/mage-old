@@ -82,7 +82,8 @@ namespace mage
 
         public override string ActionText
         {
-            get { return "Edit blocks"; }
+            //get { return "Edit blocks"; }
+            get { return Properties.Resources.Action_EditBlocksText; }
         }
 
         public override bool TryCombine(Action a)

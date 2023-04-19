@@ -235,7 +235,8 @@ namespace mage
         private void menuItem_saveROMAs_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFile = new SaveFileDialog();
-            saveFile.Filter = "GBA ROM files (*.gba)|*.gba";
+            //saveFile.Filter = "GBA ROM files (*.gba)|*.gba";
+            saveFile.Filter = Resources.formMain_GBAFilterText;
             if (saveFile.ShowDialog() == DialogResult.OK)
             {
                 filename = saveFile.FileName;
@@ -587,7 +588,8 @@ namespace mage
         private void menuItem_importTileset_Click(object sender, EventArgs e)
         {
             OpenFileDialog tilesetFile = new OpenFileDialog();
-            tilesetFile.Filter = "MAGE tileset (*.mgt)|*.mgt|All files (*.*)|*.*";
+            //tilesetFile.Filter = "MAGE tileset (*.mgt)|*.mgt|All files (*.*)|*.*";
+            tilesetFile.Filter = Resources.form_TilesetFilterText;
             if (tilesetFile.ShowDialog() == DialogResult.OK)
             {
                 FormImportTileset form = new FormImportTileset(this, tilesetFile.FileName);
@@ -613,7 +615,8 @@ namespace mage
         private void menuItem_importRoom_Click(object sender, EventArgs e)
         {
             OpenFileDialog roomFile = new OpenFileDialog();
-            roomFile.Filter = "MAGE room (*.mgr)|*.mgr|All files (*.*)|*.*";
+            //roomFile.Filter = "MAGE room (*.mgr)|*.mgr|All files (*.*)|*.*";
+            roomFile.Filter = Resources.formMain_RoomFilterText;
             if (roomFile.ShowDialog() == DialogResult.OK)
             {
                 FormImportRoom form = new FormImportRoom(this, roomFile.FileName);
@@ -660,7 +663,8 @@ namespace mage
         private void menuItem_exportRoom_Click(object sender, EventArgs e)
         {
             SaveFileDialog roomFile = new SaveFileDialog();
-            roomFile.Filter = "MAGE room (*.mgr)|*.mgr";
+            //roomFile.Filter = "MAGE room (*.mgr)|*.mgr";
+            roomFile.Filter = Resources.formMain_RoomFilterText;
             if (roomFile.ShowDialog() == DialogResult.OK)
             {
                 room.Export(roomFile.FileName);
@@ -670,7 +674,8 @@ namespace mage
         private void menuItem_exportTilesetImage_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveTileset = new SaveFileDialog();
-            saveTileset.Filter = "PNG files (*.png)|*.png";
+            //saveTileset.Filter = "PNG files (*.png)|*.png";
+            saveTileset.Filter = Resources.form_PNGFilterText;
             if (saveTileset.ShowDialog() == DialogResult.OK)
             {
                 room.vram.Image.Save(saveTileset.FileName);
@@ -680,7 +685,8 @@ namespace mage
         private void menuItem_exportBG0image_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveBG0 = new SaveFileDialog();
-            saveBG0.Filter = "PNG files (*.png)|*.png";
+            //saveBG0.Filter = "PNG files (*.png)|*.png";
+            saveBG0.Filter = Resources.form_PNGFilterText;
             if (saveBG0.ShowDialog() == DialogResult.OK)
             {
                 room.backgrounds.BG0img.Save(saveBG0.FileName);
@@ -690,7 +696,8 @@ namespace mage
         private void menuItem_exportBG3image_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveBG3 = new SaveFileDialog();
-            saveBG3.Filter = "PNG files (*.png)|*.png";
+            //saveBG3.Filter = "PNG files (*.png)|*.png";
+            saveBG3.Filter = Resources.form_PNGFilterText;
             if (saveBG3.ShowDialog() == DialogResult.OK)
             {
                 room.backgrounds.BG3img.Save(saveBG3.FileName);
@@ -700,7 +707,8 @@ namespace mage
         private void menuItem_exportRoomImage_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveRoom = new SaveFileDialog();
-            saveRoom.Filter = "PNG files (*.png)|*.png";
+            //saveRoom.Filter = "PNG files (*.png)|*.png";
+            saveRoom.Filter = Resources.form_PNGFilterText;
             if (saveRoom.ShowDialog() == DialogResult.OK)
             {
                 roomView.BackgroundImage.Save(saveRoom.FileName);
@@ -808,8 +816,10 @@ namespace mage
             }
             else
             {
-                MessageBox.Show("Documentation file could not be found.",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Documentation file could not be found.",
+                    //"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.formMain_DocNotExistText,
+                    Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -826,7 +836,8 @@ namespace mage
         private void CompressFile(bool compress)
         {
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "All files (*.*)|*.*";
+            //openFile.Filter = "All files (*.*)|*.*";
+            openFile.Filter = Resources.form_AllFilterText;
             if (openFile.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -834,7 +845,8 @@ namespace mage
                     byte[] inputData = File.ReadAllBytes(openFile.FileName);
 
                     SaveFileDialog saveFile = new SaveFileDialog();
-                    saveFile.Filter = "All files (*.*)|*.*";
+                    //saveFile.Filter = "All files (*.*)|*.*";
+                    saveFile.Filter = Resources.form_AllFilterText;
                     if (saveFile.ShowDialog() == DialogResult.OK)
                     {
                         ByteStream inputStream = new ByteStream(inputData);
@@ -854,8 +866,10 @@ namespace mage
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Operation could not be completed.\n\n" + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Operation could not be completed.\n\n" + ex.Message,
+                    //"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Resources.formMain_OperationFailText + ex.Message,
+                        Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -910,7 +924,8 @@ namespace mage
             if (!CheckUnsaved()) { return; }
 
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "GBA ROM files (*.gba)|*.gba";
+            //openFile.Filter = "GBA ROM files (*.gba)|*.gba";
+            openFile.Filter = Resources.formMain_GBAFilterText;
             if (openFile.ShowDialog() == DialogResult.OK)
             {
                 OpenROM(openFile.FileName);
@@ -926,7 +941,8 @@ namespace mage
                 string result;
                 if (!ROM.CheckROM(file, out result))
                 {
-                    MessageBox.Show(result, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(result, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(result, Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -936,8 +952,10 @@ namespace mage
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error loading file.\n\n" + e.GetType().ToString() + '\n'
-                    + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Error loading file.\n\n" + e.GetType().ToString() + '\n'
+                    //+ e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.formMain_LoadFailText + e.GetType().ToString() + '\n'
+                    + e.Message, Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -954,9 +972,12 @@ namespace mage
             bool newProject = Version.SaveProject(filename);
             if (newProject)
             {
-                string message = "Project saved to " + Path.ChangeExtension(filename, ".proj");
-                message += "\n\nDo not modify or erase this file. It is necessary for tracking added data.";
-                MessageBox.Show(message, "New Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //string message = "Project saved to " + Path.ChangeExtension(filename, ".proj");
+                //message += "\n\nDo not modify or erase this file. It is necessary for tracking added data.";
+                //MessageBox.Show(message, "New Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string message = Resources.formMain_ProjSaveText + Path.ChangeExtension(filename, ".proj");
+                message += Resources.formMain_ProjSaveText1;
+                MessageBox.Show(message, Resources.formMain_ProjSaveTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             // rewrite file name
@@ -969,8 +990,10 @@ namespace mage
             {
                 if (room.IsEdited() || ROM.IsEdited())
                 {
-                    var result = MessageBox.Show("Do you want to save changes to the ROM?",
-                        "Unsaved Changes", MessageBoxButtons.YesNoCancel);
+                    //var result = MessageBox.Show("Do you want to save changes to the ROM?",
+                        //"Unsaved Changes", MessageBoxButtons.YesNoCancel);
+                    var result = MessageBox.Show(Resources.formMain_UnsaveChangeText,
+                        Resources.formMain_UnsaveChangeTitle, MessageBoxButtons.YesNoCancel);
                     if (result == System.Windows.Forms.DialogResult.Cancel) { return false; }
                     if (result == System.Windows.Forms.DialogResult.Yes) { SaveROM(); }
                 }
@@ -1160,14 +1183,18 @@ namespace mage
                     case Corrupt.BG0:
                     case Corrupt.BG1:
                     case Corrupt.BG2:
-                        fix = "Would you like to try disabling this background?";
+                        //fix = "Would you like to try disabling this background?";
+                        fix = Resources.formMain_LoadRoomFixBG;
                         break;
                     default:
-                        fix = "Would you like to try replacing it with blank data?";
+                        //fix = "Would you like to try replacing it with blank data?";
+                        fix = Resources.formMain_LoadRoomFixDefault;
                         break;
                 }
-                var result = MessageBox.Show("Room could not be loaded. " + ex.Message
-                    + "\n\n" + fix, "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                //var result = MessageBox.Show("Room could not be loaded. " + ex.Message
+                    //+ "\n\n" + fix, "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                var result = MessageBox.Show(Resources.formMain_LoadRoomFailText + ex.Message
+                    + "\n\n" + fix, Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 if (result == DialogResult.Yes)
                 {
                     ex.TryHandle(a, r);
@@ -1318,9 +1345,12 @@ namespace mage
             // enemy sets
             int index = comboBox_spriteset.SelectedIndex;
             comboBox_spriteset.Items.Clear();
-            comboBox_spriteset.Items.Add("Default");
-            if (room.header.spriteset1event > 0) { comboBox_spriteset.Items.Add("First"); }
-            if (room.header.spriteset2event > 0) { comboBox_spriteset.Items.Add("Second"); }
+            //comboBox_spriteset.Items.Add("Default");
+            //if (room.header.spriteset1event > 0) { comboBox_spriteset.Items.Add("First"); }
+            //if (room.header.spriteset2event > 0) { comboBox_spriteset.Items.Add("Second"); }
+            comboBox_spriteset.Items.Add(Resources.formMain_SpritesetItem);
+            if (room.header.spriteset1event > 0) { comboBox_spriteset.Items.Add(Resources.formMain_SpritesetItem1); }
+            if (room.header.spriteset2event > 0) { comboBox_spriteset.Items.Add(Resources.formMain_SpritesetItem2); }
 
             if (index < comboBox_spriteset.Items.Count)
             {
@@ -1337,9 +1367,12 @@ namespace mage
         public void SetSpritesetOptions()
         {
             comboBox_spriteset.Items.Clear();
-            comboBox_spriteset.Items.Add("Default");
-            if (room.header.spriteset1event > 0) { comboBox_spriteset.Items.Add("First"); }
-            if (room.header.spriteset2event > 0) { comboBox_spriteset.Items.Add("Second"); }
+            //comboBox_spriteset.Items.Add("Default");
+            //if (room.header.spriteset1event > 0) { comboBox_spriteset.Items.Add("First"); }
+            //if (room.header.spriteset2event > 0) { comboBox_spriteset.Items.Add("Second"); }
+            comboBox_spriteset.Items.Add(Resources.formMain_SpritesetItem);
+            if (room.header.spriteset1event > 0) { comboBox_spriteset.Items.Add(Resources.formMain_SpritesetItem1); }
+            if (room.header.spriteset2event > 0) { comboBox_spriteset.Items.Add(Resources.formMain_SpritesetItem2); }
             comboBox_spriteset.SelectedIndex = 0;
         }
 
@@ -1584,14 +1617,16 @@ namespace mage
         {
             if (a is AddRemoveRoomObject)
             {
-                if (a.ActionText.Contains("sprite"))
-                {
+                //if (a.ActionText.Contains("sprite"))
+                if (a.ActionText.Contains(Resources.Action_SpriteText))
+                    {
                     menuItem_outlineSprites.Enabled = menuItem_viewSprites.Enabled = 
                         toolStrip_outlineSprites.Enabled = toolStrip_viewSprites.Enabled = room.enemyList.Count > 0;
                     menuItem_viewSprites.Checked = toolStrip_viewSprites.Checked = toolStrip_viewSprites.Enabled;
                     menuItem_outlineSprites.Checked = toolStrip_outlineSprites.Checked = toolStrip_outlineSprites.Enabled;
                 }
-                else if (a.ActionText.Contains("door"))
+                //else if (a.ActionText.Contains("door"))
+                else if (a.ActionText.Contains(Resources.Action_DoorText))
                 {
                     menuItem_outlineDoors.Enabled = toolStrip_outlineDoors.Enabled = room.doorList.Count > 0;
                     menuItem_outlineDoors.Checked = toolStrip_outlineDoors.Checked = toolStrip_outlineDoors.Enabled;
@@ -1612,7 +1647,8 @@ namespace mage
             if (toolStrip_undo.Enabled)
             {
                 Action a = undoRedo.UndoStack.Peek();
-                toolStrip_undo.ToolTipText = "Undo \"" + a.ActionText + "\"";
+                //toolStrip_undo.ToolTipText = "Undo \"" + a.ActionText + "\"";
+                toolStrip_undo.ToolTipText = Resources.formMain_UndoToolTipText + "\"" + a.ActionText + "\"";
             }
             else
             {
@@ -1623,7 +1659,8 @@ namespace mage
             if (toolStrip_redo.Enabled)
             {
                 Action a = undoRedo.RedoStack.Peek();
-                toolStrip_redo.ToolTipText = "Redo \"" + a.ActionText + "\"";
+                //toolStrip_redo.ToolTipText = "Redo \"" + a.ActionText + "\"";
+                toolStrip_redo.ToolTipText = Resources.formMain_RedoToolTipText + "\"" + a.ActionText + "\"";
             }
             else
             {
@@ -1966,31 +2003,38 @@ namespace mage
                 if (obj is Enemy)
                 {
                     Enemy en = (Enemy)obj;
-                    caption = "Slot: " + Hex.ToString(en.SlotNum);
-                    caption += "\nProperty: " + Hex.ToString(en.Property);
+                    //caption = "Slot: " + Hex.ToString(en.SlotNum);
+                    //caption += "\nProperty: " + Hex.ToString(en.Property);
+                    caption = Resources.formMain_EnemyInfoSlotText + Hex.ToString(en.SlotNum);
+                    caption += "\n" + Resources.formMain_EnemyInfoPropText + Hex.ToString(en.Property);
                     byte spriteID;
                     if (en.Property == 0) { spriteID = en.SlotNum; }
                     else
                     {
                         spriteID = room.spritesets[enemySet].GetSpriteID(en.SlotNum);
                     }
-                    caption += "\nSprite ID: " + Hex.ToString(spriteID);
+                    //caption += "\nSprite ID: " + Hex.ToString(spriteID);
+                    caption += "\n" + Resources.formMain_EnemyInfoIDText + Hex.ToString(spriteID);
                     roomTip.Show(caption, roomView, x, y);
                 }
                 else if (obj is Door)
                 {
                     Door src = (Door)obj;
-                    caption = "Current door: " + Hex.ToString(src.doorNum);
-                    caption += "\nDestination door: " + Hex.ToString(src.dstDoor);
+                    //caption = "Current door: " + Hex.ToString(src.doorNum);
+                    //caption += "\nDestination door: " + Hex.ToString(src.dstDoor);
+                    caption = Resources.formMain_DoorInfoCurentText + Hex.ToString(src.doorNum);
+                    caption += "\n" + Resources.formMain_DoorInfoDestDText + Hex.ToString(src.dstDoor);
                     Door dst = DoorData.GetDestinationDoor(src);
                     if (dst != null)
                     {
-                        caption += "\nDestination room: " + Hex.ToString(dst.srcRoom);
+                        //caption += "\nDestination room: " + Hex.ToString(dst.srcRoom);
+                        caption += "\n" + Resources.formMain_DoorInfoDestRText + Hex.ToString(dst.srcRoom);
                     }
                     int hatchNum = room.GetHatchNumber(src.doorNum);
                     if (hatchNum >= 0)
                     {
-                        caption += "\nHatch number: " + hatchNum;
+                        //caption += "\nHatch number: " + hatchNum;
+                        caption += "\n" + Resources.formMain_DoorInfoHatchText + hatchNum;
                     }
                     roomTip.Show(caption, roomView, x, y);
                 }
@@ -2002,7 +2046,8 @@ namespace mage
             tileTimer.Stop();
             if (tileCursor.X == -1) { return; }
 
-            string caption = "Block: " + Hex.ToString(tileCursor.Y * 16 + tileCursor.X);
+            //string caption = "Block: " + Hex.ToString(tileCursor.Y * 16 + tileCursor.X);
+            string caption = Resources.formMain_BlockInfoText + Hex.ToString(tileCursor.Y * 16 + tileCursor.X);
             tileTip.Show(caption, tileView, tileCursor.X * 16, tileCursor.Y * 16 + 24);
         }
 

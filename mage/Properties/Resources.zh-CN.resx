@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Action_AddText" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Action_DoorText" xml:space="preserve">
+    <value>门</value>
+  </data>
+  <data name="Action_EditBlocksText" xml:space="preserve">
+    <value>编辑砖块</value>
+  </data>
+  <data name="Action_EditText" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="Action_MoveText" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="Action_RemoveText" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="Action_ScrollText" xml:space="preserve">
+    <value>滚动</value>
+  </data>
+  <data name="Action_SpriteText" xml:space="preserve">
+    <value>精灵</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="endings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\endings.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
@@ -166,7 +190,7 @@
   <data name="formEditDoor_AddOneConnMessage" xml:space="preserve">
     <value>
 
-你现在想添加一个吗？</value>
+你想下现在添加一个吗？</value>
     <comment>\n\nWould you like to add one now?</comment>
   </data>
   <data name="formEditDoor_AreaEventText" xml:space="preserve">
@@ -272,6 +296,92 @@
   </data>
   <data name="formImportTileset_WrongFileText" xml:space="preserve">
     <value>错误的文件类型，文件不是一个 MAGE 贴图集。</value>
+  </data>
+  <data name="formMain_BlockInfoText" xml:space="preserve">
+    <value>贴图块：</value>
+  </data>
+  <data name="formMain_DocNotExistText" xml:space="preserve">
+    <value>找不到文档文件。</value>
+  </data>
+  <data name="formMain_DoorInfoCurentText" xml:space="preserve">
+    <value>当前门： </value>
+  </data>
+  <data name="formMain_DoorInfoDestDText" xml:space="preserve">
+    <value>目标门：</value>
+  </data>
+  <data name="formMain_DoorInfoDestRText" xml:space="preserve">
+    <value>目标房间：</value>
+  </data>
+  <data name="formMain_DoorInfoHatchText" xml:space="preserve">
+    <value>舱门号：</value>
+  </data>
+  <data name="formMain_EnemyInfoIDText" xml:space="preserve">
+    <value>精灵 ID： </value>
+  </data>
+  <data name="formMain_EnemyInfoPropText" xml:space="preserve">
+    <value>属性：</value>
+  </data>
+  <data name="formMain_EnemyInfoSlotText" xml:space="preserve">
+    <value>槽位：</value>
+  </data>
+  <data name="formMain_GBAFilterText" xml:space="preserve">
+    <value>GBA ROM 文件 (*.gba)|*.gba</value>
+  </data>
+  <data name="formMain_LoadFailText" xml:space="preserve">
+    <value>载入文件时出错。
+
+</value>
+  </data>
+  <data name="formMain_LoadRoomFailText" xml:space="preserve">
+    <value>无法载入房间。</value>
+  </data>
+  <data name="formMain_LoadRoomFixBG" xml:space="preserve">
+    <value>是否尝试禁用此背景？</value>
+  </data>
+  <data name="formMain_LoadRoomFixDefault" xml:space="preserve">
+    <value>是否尝试用空白数据替换？</value>
+  </data>
+  <data name="formMain_OperationFailText" xml:space="preserve">
+    <value>操作无法完成。
+
+</value>
+    <comment>Operation could not be completed.\n\n</comment>
+  </data>
+  <data name="formMain_ProjSaveText" xml:space="preserve">
+    <value>项目文件已保存到</value>
+  </data>
+  <data name="formMain_ProjSaveText1" xml:space="preserve">
+    <value>
+
+请勿修改或删除此文件，它对于跟踪添加的数据是必不可少的。</value>
+    <comment>\n\nDo not modify or erase this file. It is necessary for tracking added data.</comment>
+  </data>
+  <data name="formMain_ProjSaveTitle" xml:space="preserve">
+    <value>新项目</value>
+  </data>
+  <data name="formMain_RedoToolTipText" xml:space="preserve">
+    <value>重做</value>
+  </data>
+  <data name="formMain_RoomFilterText" xml:space="preserve">
+    <value>MAGE 房间 (*.mgr)|*.mgr|所有文件 (*.*)|*.*</value>
+  </data>
+  <data name="formMain_SpritesetItem" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="formMain_SpritesetItem1" xml:space="preserve">
+    <value>第一</value>
+  </data>
+  <data name="formMain_SpritesetItem2" xml:space="preserve">
+    <value>第二</value>
+  </data>
+  <data name="formMain_UndoToolTipText" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="formMain_UnsaveChangeText" xml:space="preserve">
+    <value>是否将所做的修改保存到ROM ？</value>
+  </data>
+  <data name="formMain_UnsaveChangeTitle" xml:space="preserve">
+    <value>修改未保存</value>
   </data>
   <data name="formMap_areaItemsExtra" xml:space="preserve">
     <value>额外</value>
@@ -460,6 +570,9 @@
   </data>
   <data name="MF_U_weapons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\zh-CN\MF\MF_U_weapons.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RoomBG_BlockToStringText" xml:space="preserve">
+    <value>砖属性：</value>
   </data>
   <data name="statusLabel_changesText" xml:space="preserve">
     <value>修改已保存</value>

@@ -106,12 +106,18 @@ namespace mage
             get
             {
                 string text;
-                if (actionType == ActionType.Add) { text = "Add "; }
-                else { text = "Remove "; }
+                //if (actionType == ActionType.Add) { text = "Add "; }
+                //else { text = "Remove "; }
+                
+                //if (obj is Enemy) { return text + "sprite"; }
+                //if (obj is Door) { return text + "door"; }
+                //if (obj is Scroll) { return text + "scroll"; }
+                if (actionType == ActionType.Add) { text = Properties.Resources.Action_AddText; }
+                else { text = Properties.Resources.Action_RemoveText; }
 
-                if (obj is Enemy) { return text + "sprite"; }
-                if (obj is Door) { return text + "door"; }
-                if (obj is Scroll) { return text + "scroll"; }
+                if (obj is Enemy) { return text + Properties.Resources.Action_SpriteText; }
+                if (obj is Door) { return text + Properties.Resources.Action_DoorText; }
+                if (obj is Scroll) { return text + Properties.Resources.Action_ScrollText; }
                 return text;
             }
         }
