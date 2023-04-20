@@ -30,7 +30,8 @@ namespace mage
 
             if (width % 8 != 0 || height % 8 != 0)
             {
-                throw new FormatException("Invalid dimensions.");
+                //throw new FormatException("Invalid dimensions.");
+                throw new FormatException(Properties.Resources.Utility_PortImage_InvalidDimText);
             }
 
             // check for valid pixel format
@@ -40,7 +41,8 @@ namespace mage
             }
             catch
             {
-                throw new FormatException("Invalid pixel format.");
+                //throw new FormatException("Invalid pixel format.");
+                throw new FormatException(Properties.Resources.Utility_PortImage_InvalidPixelText);
             }
 
             GetImageData(img);
@@ -243,7 +245,8 @@ namespace mage
 
                 if (gfxOffset < 0x4000)
                 {
-                    throw new FormatException("No more space remaining for new graphics.");
+                    //throw new FormatException("No more space remaining for new graphics.");
+                    throw new FormatException(Properties.Resources.Utility_PortImage_NoSpaceText);
                 }
 
                 Array.Copy(gfx, gfxOffset, gfxData, gfxOffset - 0x4000, 0xC000 - gfxOffset);
@@ -297,7 +300,8 @@ namespace mage
                         // check for too many colors
                         if (colors == 15)
                         {
-                            throw new FormatException("Tile " + Hex.ToString(tile) + " has more than 15 colors");
+                            //throw new FormatException("Tile " + Hex.ToString(tile) + " has more than 15 colors");
+                            throw new FormatException(string.Format(Properties.Resources.Utility_PortImage_TooMangyColorText, Hex.ToString(tile)));
                         }
 
                         tilePalette[colors++] = val;
@@ -361,7 +365,8 @@ namespace mage
             // if no match was found
             if (rows.Count == 0)
             {
-                throw new FormatException("Image has too many palettes");
+                //throw new FormatException("Image has too many palettes");
+                throw new FormatException(Properties.Resources.Utility_PortImage_TooMangyPalText);
             }
 
             // add new palette, leave tile gfx data untouched
@@ -448,7 +453,8 @@ namespace mage
                 // check number of tiles and if tile isn't blank
                 if ((!isTileset && tileNum < 0) || (isTileset && tileNum == 0x400) || (gfxData[t] != 0))
                 {
-                    throw new FormatException("Image has too many unique tiles.");
+                    //throw new FormatException("Image has too many unique tiles.");
+                    throw new FormatException(Properties.Resources.Utility_PortImage_TooMangyTileText);
                 }
                 // add new gfx data
                 Array.Copy(tileGfx, 0, gfxData, gfxOffset, 0x20);

@@ -153,6 +153,123 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 BG0 data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_BG0Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_BG0Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 BG1 data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_BG1Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_BG1Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 BG2 data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_BG2Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_BG2Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 BG3 data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_BG3Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_BG3Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Clipdata was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_ClipText {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_ClipText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 LZ77 graphics were corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_LZ77Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_LZ77Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Minimap data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_MinimapText {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_MinimapText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 RLE graphics were corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_RLEText {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_RLEText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Room scrolls data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_ScrollText {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_ScrollText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Room sprites (default) data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_Sprite0Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_Sprite0Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Room sprites (first) data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_Sprite1Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_Sprite1Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Room sprites (second) data was corrupt. 的本地化字符串。
+        /// </summary>
+        internal static string CorruptDataExceprion_Sprite2Text {
+            get {
+                return ResourceManager.GetString("CorruptDataExceprion_Sprite2Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Demo must be from the same game. 的本地化字符串。
+        /// </summary>
+        internal static string Data_Demo_ExceptionText {
+            get {
+                return ResourceManager.GetString("Data_Demo_ExceptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 [AMTE]
         ///A2DE0,A2DE4,A2DEC,A2DF4,A2E00,Over 4 hours;0-99%
         ///A2E2C,A2E30,A2E38,A2E40,A2E4C,2-4 hours;0-99%
@@ -2080,6 +2197,42 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 File is not a valid ROM. 的本地化字符串。
+        /// </summary>
+        internal static string ROM_CheckROM_NotValidText {
+            get {
+                return ResourceManager.GetString("ROM_CheckROM_NotValidText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 ROM is larger than 32 MB. 的本地化字符串。
+        /// </summary>
+        internal static string ROM_CheckROM_TooLargeText {
+            get {
+                return ResourceManager.GetString("ROM_CheckROM_TooLargeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Room is too large. Width times height must be less than 0x1800. 的本地化字符串。
+        /// </summary>
+        internal static string Room_Room_LargeExceptionText {
+            get {
+                return ResourceManager.GetString("Room_Room_LargeExceptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Width and height must be greater than 0. 的本地化字符串。
+        /// </summary>
+        internal static string Room_Room_ZeroExceptionText {
+            get {
+                return ResourceManager.GetString("Room_Room_ZeroExceptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Clip:  的本地化字符串。
         /// </summary>
         internal static string RoomBG_BlockToStringText {
@@ -2853,6 +3006,138 @@ namespace mage.Properties {
             get {
                 object obj = ResourceManager.GetObject("toolbar_zoom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Invalid dimensions. 的本地化字符串。
+        /// </summary>
+        internal static string Utility_PortImage_InvalidDimText {
+            get {
+                return ResourceManager.GetString("Utility_PortImage_InvalidDimText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Invalid pixel format. 的本地化字符串。
+        /// </summary>
+        internal static string Utility_PortImage_InvalidPixelText {
+            get {
+                return ResourceManager.GetString("Utility_PortImage_InvalidPixelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 No more space remaining for new graphics. 的本地化字符串。
+        /// </summary>
+        internal static string Utility_PortImage_NoSpaceText {
+            get {
+                return ResourceManager.GetString("Utility_PortImage_NoSpaceText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tile {0} has more than 15 colors 的本地化字符串。
+        /// </summary>
+        internal static string Utility_PortImage_TooMangyColorText {
+            get {
+                return ResourceManager.GetString("Utility_PortImage_TooMangyColorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Image has too many palettes 的本地化字符串。
+        /// </summary>
+        internal static string Utility_PortImage_TooMangyPalText {
+            get {
+                return ResourceManager.GetString("Utility_PortImage_TooMangyPalText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Image has too many unique tiles. 的本地化字符串。
+        /// </summary>
+        internal static string Utility_PortImage_TooMangyTileText {
+            get {
+                return ResourceManager.GetString("Utility_PortImage_TooMangyTileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Changes discarded 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Status_statusLabelDiscardText {
+            get {
+                return ResourceManager.GetString("Utility_Status_statusLabelDiscardText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 No changes to save 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Status_statusLabelNoChangeText {
+            get {
+                return ResourceManager.GetString("Utility_Status_statusLabelNoChangeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Changes saved 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Status_statusLabelSaveText {
+            get {
+                return ResourceManager.GetString("Utility_Status_statusLabelSaveText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Unsaved changes 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Status_statusLabelUnsaveText {
+            get {
+                return ResourceManager.GetString("Utility_Status_statusLabelUnsaveText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 GBA emulator (*.exe)|*.exe|All files (*.*)|*.* 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Test_EmuFilterText {
+            get {
+                return ResourceManager.GetString("Utility_Test_EmuFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 GBA emulator path has not been set. Would you like to set it now? 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Test_EmuPathNotSetText {
+            get {
+                return ResourceManager.GetString("Utility_Test_EmuPathNotSetText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Could not find GBA emulator at path:
+        ///
+        ///{0}
+        ///
+        ///Would you like to update it now? 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Test_EmuPathNotValidText {
+            get {
+                return ResourceManager.GetString("Utility_Test_EmuPathNotValidText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Test ROM could not be launched.
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string Utility_Test_LaunchFailExceptionText {
+            get {
+                return ResourceManager.GetString("Utility_Test_LaunchFailExceptionText", resourceCulture);
             }
         }
         

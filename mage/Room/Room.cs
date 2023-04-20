@@ -469,11 +469,13 @@ namespace mage
         {
             if (width == 0 || height == 0)
             {
-                throw new ArgumentOutOfRangeException(null, "Width and height must be greater than 0.");
+                //throw new ArgumentOutOfRangeException(null, "Width and height must be greater than 0.");
+                throw new ArgumentOutOfRangeException(null, Properties.Resources.Room_Room_ZeroExceptionText);
             }
             if (width * height > 0x1800)
             {
-                throw new ArgumentOutOfRangeException(null, "Room is too large. Width times height must be less than 0x1800.");
+                //throw new ArgumentOutOfRangeException(null, "Room is too large. Width times height must be less than 0x1800.");
+                throw new ArgumentOutOfRangeException(null, Properties.Resources.Room_Room_LargeExceptionText);
             }
         }
 

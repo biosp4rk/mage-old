@@ -17,7 +17,7 @@ namespace mage
             {
                 switch (DataType)
                 {
-                    case Corrupt.BG0:
+                    /*case Corrupt.BG0:
                         return "BG0 data was corrupt.";
                     case Corrupt.BG1:
                         return "BG1 data was corrupt.";
@@ -41,6 +41,32 @@ namespace mage
                         return "LZ77 graphics were corrupt.";
                     case Corrupt.Minimap:
                         return "Minimap data was corrupt.";
+                    default:
+                        return "";*/
+                    case Corrupt.BG0:
+                        return Properties.Resources.CorruptDataExceprion_BG0Text;
+                    case Corrupt.BG1:
+                        return Properties.Resources.CorruptDataExceprion_BG1Text;
+                    case Corrupt.BG2:
+                        return Properties.Resources.CorruptDataExceprion_BG2Text;
+                    case Corrupt.BG3:
+                        return Properties.Resources.CorruptDataExceprion_BG3Text;
+                    case Corrupt.Clip:
+                        return Properties.Resources.CorruptDataExceprion_ClipText;
+                    case Corrupt.Enemy0:
+                        return Properties.Resources.CorruptDataExceprion_Sprite0Text;
+                    case Corrupt.Enemy1:
+                        return Properties.Resources.CorruptDataExceprion_Sprite1Text;
+                    case Corrupt.Enemy2:
+                        return Properties.Resources.CorruptDataExceprion_Sprite2Text;
+                    case Corrupt.Scrolls:
+                        return Properties.Resources.CorruptDataExceprion_ScrollText;
+                    case Corrupt.RLEgfx:
+                        return Properties.Resources.CorruptDataExceprion_RLEText;
+                    case Corrupt.LZ77gfx:
+                        return Properties.Resources.CorruptDataExceprion_LZ77Text;
+                    case Corrupt.Minimap:
+                        return Properties.Resources.CorruptDataExceprion_MinimapText;
                     default:
                         return "";
                 }

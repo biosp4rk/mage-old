@@ -159,7 +159,8 @@ namespace mage
             byte game = src.Read8(0x10);
             if (game != Convert.ToByte(!Version.IsMF))
             {
-                throw new FormatException("Demo must be from the same game.");
+                //throw new FormatException("Demo must be from the same game.");
+                throw new FormatException(Properties.Resources.Data_Demo_ExceptionText);
             }
 
             // get offsets

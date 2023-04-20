@@ -21,7 +21,8 @@ namespace mage
             if (!UnsavedChanges)
             {
                 UnsavedChanges = true;
-                statusLabel.Text = "Unsaved changes";
+                //statusLabel.Text = "Unsaved changes";
+                statusLabel.Text = Properties.Resources.Utility_Status_statusLabelUnsaveText;
                 ToggleApplyButton(true);
             }
         }
@@ -31,7 +32,8 @@ namespace mage
             if (UnsavedChanges)
             {
                 UnsavedChanges = false;
-                statusLabel.Text = "Changes discarded";
+                //statusLabel.Text = "Changes discarded";
+                statusLabel.Text = Properties.Resources.Utility_Status_statusLabelDiscardText;
                 ToggleApplyButton(false);
             }
             else
@@ -45,19 +47,22 @@ namespace mage
             if (UnsavedChanges)
             {
                 UnsavedChanges = false;
-                statusLabel.Text = "Changes saved";
+                //statusLabel.Text = "Changes saved";
+                statusLabel.Text = Properties.Resources.Utility_Status_statusLabelSaveText;
                 ToggleApplyButton(false);
             }
             else
             {
-                statusLabel.Text = "No changes to save";
+                //statusLabel.Text = "No changes to save";
+                statusLabel.Text = Properties.Resources.Utility_Status_statusLabelNoChangeText;
             }
         }
 
         public void Import()
         {
             UnsavedChanges = false;
-            statusLabel.Text = "Changes saved";
+            //statusLabel.Text = "Changes saved";
+            statusLabel.Text = Properties.Resources.Utility_Status_statusLabelSaveText;
             ToggleApplyButton(false);
         }
 

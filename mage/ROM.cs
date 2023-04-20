@@ -232,7 +232,8 @@ namespace mage
             // check rom length
             if (file.Length > size32mb)
             {
-                result = "ROM is larger than 32 MB.";
+                //result = "ROM is larger than 32 MB.";
+                result = Properties.Resources.ROM_CheckROM_TooLargeText;
                 return false;
             }
 
@@ -242,7 +243,8 @@ namespace mage
             result = Encoding.ASCII.GetString(array);
             if (!Version.IsValid(result))
             {
-                result = "File is not a valid ROM.";
+                //result = "File is not a valid ROM.";
+                result = Properties.Resources.ROM_CheckROM_NotValidText;
                 return false;
             }
 

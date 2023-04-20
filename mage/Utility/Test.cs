@@ -115,8 +115,10 @@ namespace mage
             }
             catch (Exception e)
             {
-                MessageBox.Show("Test ROM could not be launched.\n\n" + e.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Test ROM could not be launched.\n\n" + e.Message,
+                    //"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.Utility_Test_LaunchFailExceptionText + e.Message,
+                    Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             // restore data
@@ -153,8 +155,10 @@ namespace mage
             }
             catch (Exception e)
             {
-                MessageBox.Show("Test ROM could not be launched.\n\n" + e.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Test ROM could not be launched.\n\n" + e.Message,
+                //    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.Utility_Test_LaunchFailExceptionText + e.Message,
+                    Resources.form_ErrorMessageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             // restore data
@@ -168,12 +172,15 @@ namespace mage
             string error = null;
             if (string.IsNullOrEmpty(emuPath))
             {
-                error = "GBA emulator path has not been set. Would you like to set it now?";
+                //error = "GBA emulator path has not been set. Would you like to set it now?";
+                error = Resources.Utility_Test_EmuPathNotSetText;
             }
             else if (!File.Exists(emuPath))
             {
-                error = $"Could not find GBA emulator at path:\n\n{emuPath}" + 
-                    "\n\nWould you like to update it now?";
+                //error = $"Could not find GBA emulator at path:\n\n{emuPath}" + 
+                //    "\n\nWould you like to update it now?";
+                //error = string.Format("Could not find GBA emulator at path:\n\n{0}\n\nWould you like to update it now?", emuPath);
+                error = string.Format(Resources.Utility_Test_EmuPathNotValidText, emuPath);
             }
             if (error != null)
             {
@@ -193,7 +200,8 @@ namespace mage
             
             // get emulator path
             var ofd = new OpenFileDialog();
-            ofd.Filter = "GBA emulator (*.exe)|*.exe|All files (*.*)|*.*";
+            //ofd.Filter = "GBA emulator (*.exe)|*.exe|All files (*.*)|*.*";
+            ofd.Filter = Resources.Utility_Test_EmuFilterText;
             if (ofd.ShowDialog() != DialogResult.OK)
                 return null;
             
