@@ -828,6 +828,15 @@ namespace mage.Properties {
         }
         
         /// <summary>
+        ///   查找类似 doc.html 的本地化字符串。
+        /// </summary>
+        internal static string formMain_DocFileText {
+            get {
+                return ResourceManager.GetString("formMain_DocFileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Documentation file could not be found. 的本地化字符串。
         /// </summary>
         internal static string formMain_DocNotExistText {

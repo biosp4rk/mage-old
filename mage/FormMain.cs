@@ -809,7 +809,7 @@ namespace mage
         private void menuItem_viewHelp_Click(object sender, EventArgs e)
         {
             string path = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
-            path = Path.Combine(path, "doc.html");
+            path = Path.Combine(path, Resources.formMain_DocFileText);
             if (File.Exists(path))
             {
                 System.Diagnostics.Process.Start(path);

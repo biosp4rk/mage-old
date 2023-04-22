@@ -1062,4 +1062,7 @@ Would you like to update it now?</value>
 </value>
     <comment>Test ROM could not be launched.\n\n</comment>
   </data>
+  <data name="formMain_DocFileText" xml:space="preserve">
+    <value>doc.html</value>
+  </data>
 </root>

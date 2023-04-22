@@ -254,7 +254,7 @@
     <value>无舱门</value>
   </data>
   <data name="comboBox_type.Items2" xml:space="preserve">
-    <value>打开的舱门</value>
+    <value>开放的舱门</value>
   </data>
   <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 20</value>

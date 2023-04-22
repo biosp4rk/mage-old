@@ -339,6 +339,9 @@
   <data name="formMain_BlockInfoText" xml:space="preserve">
     <value>贴图块：</value>
   </data>
+  <data name="formMain_DocFileText" xml:space="preserve">
+    <value>doc_zh-CN.html</value>
+  </data>
   <data name="formMain_DocNotExistText" xml:space="preserve">
     <value>找不到文档文件。</value>
   </data>

@@ -124,11 +124,8 @@
   <data name="label_height.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 113</value>
   </data>
-  <data name="label_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 20</value>
-  </data>
-  <data name="checkBox_autoConnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 114</value>
+  <data name="&gt;&gt;label_srcArea.Name" xml:space="preserve">
+    <value>label_srcArea</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button_apply.Enabled" type="System.Boolean, mscorlib">
@@ -137,23 +134,14 @@
   <data name="&gt;&gt;textBox_ownerRoom.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox_height.Parent" xml:space="preserve">
-    <value>groupBox_edit</value>
-  </data>
-  <data name="label_xExitDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 12</value>
-  </data>
-  <data name="label_dstArea.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="label_dstRoom.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;groupBox_edit.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_area.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox_height.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;button_apply.Name" xml:space="preserve">
     <value>button_apply</value>
@@ -164,8 +152,8 @@
   <data name="&gt;&gt;checkBox_event.Parent" xml:space="preserve">
     <value>groupBox_edit</value>
   </data>
-  <data name="label_dstArea.Text" xml:space="preserve">
-    <value>Area</value>
+  <data name="label_area.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label_room.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -188,8 +176,8 @@
   <data name="&gt;&gt;label_door.Name" xml:space="preserve">
     <value>label_door</value>
   </data>
-  <data name="&gt;&gt;label_dstRoom.Parent" xml:space="preserve">
-    <value>groupBox_info</value>
+  <data name="label_dstArea.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label_type.Parent" xml:space="preserve">
     <value>groupBox_edit</value>
@@ -203,11 +191,14 @@
   <data name="&gt;&gt;textBox_height.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_height.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label_srcArea.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;textBox_yExitDistance.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="textBox_yExitDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 90</value>
   </data>
   <data name="label_room.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -221,6 +212,9 @@
   <data name="label_type.Text" xml:space="preserve">
     <value>Type:</value>
   </data>
+  <data name="&gt;&gt;groupBox_edit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;textBox_width.Parent" xml:space="preserve">
     <value>groupBox_edit</value>
   </data>
@@ -233,8 +227,11 @@
   <data name="label_room.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
   </data>
-  <data name="&gt;&gt;label_height.Name" xml:space="preserve">
-    <value>label_height</value>
+  <data name="&gt;&gt;label_dstArea.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_dstArea.Name" xml:space="preserve">
+    <value>label_dstArea</value>
   </data>
   <data name="checkBox_autoConnect.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -244,9 +241,6 @@
   </data>
   <data name="button_close.Text" xml:space="preserve">
     <value>Close</value>
-  </data>
-  <data name="comboBox_type.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;textBox_ownerRoom.Parent" xml:space="preserve">
     <value>groupBox_edit</value>
@@ -263,14 +257,17 @@
   <data name="&gt;&gt;label_width.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="textBox_connectedDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
   <data name="&gt;&gt;label_height.Parent" xml:space="preserve">
     <value>groupBox_edit</value>
   </data>
   <data name="&gt;&gt;button_close.Name" xml:space="preserve">
     <value>button_close</value>
   </data>
-  <data name="groupBox_info.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 151</value>
+  <data name="label_door.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
   </data>
   <data name="textBox_connectedDoor.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -290,6 +287,9 @@
   <data name="label_dstRoom.Size" type="System.Drawing.Size, System.Drawing">
     <value>11, 12</value>
   </data>
+  <data name="checkBox_event.Text" xml:space="preserve">
+    <value>Loads event based room</value>
+  </data>
   <data name="&gt;&gt;label_dstArea.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -299,6 +299,9 @@
   <data name="label_yExitDistance.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 12</value>
   </data>
+  <data name="groupBox_edit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
   <data name="&gt;&gt;statusLabel_changes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -307,6 +310,9 @@
   </data>
   <data name="&gt;&gt;label_room.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_ownerRoom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="statusLabel_changes.Text" xml:space="preserve">
     <value>-</value>
@@ -329,17 +335,14 @@
   <data name="textBox_width.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 86</value>
   </data>
-  <data name="&gt;&gt;label_destination.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="&gt;&gt;label_yExitDistance.Parent" xml:space="preserve">
     <value>groupBox_edit</value>
   </data>
   <data name="&gt;&gt;textBox_height.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;label_type.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label_destination.Name" xml:space="preserve">
+    <value>label_destination</value>
   </data>
   <data name="groupBox_edit.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -368,12 +371,6 @@
   <data name="textBox_yExitDistance.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;label_area.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label_dstArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
-  </data>
   <data name="&gt;&gt;textBox_width.Name" xml:space="preserve">
     <value>textBox_width</value>
   </data>
@@ -389,15 +386,6 @@
   <data name="label_connectedDoor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;checkBox_autoConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBox_edit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 11</value>
-  </data>
-  <data name="label_dstDoor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label_ownerRoom.Text" xml:space="preserve">
     <value>Owner room:</value>
   </data>
@@ -407,8 +395,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>322, 248</value>
   </data>
-  <data name="label_destination.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;checkBox_location.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
   </data>
   <data name="checkBox_event.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -416,17 +404,11 @@
   <data name="label_ownerRoom.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;checkBox_autoConnect.Name" xml:space="preserve">
-    <value>checkBox_autoConnect</value>
+  <data name="checkBox_location.Text" xml:space="preserve">
+    <value>Displays location name</value>
   </data>
   <data name="&gt;&gt;label_source.Parent" xml:space="preserve">
     <value>groupBox_info</value>
-  </data>
-  <data name="&gt;&gt;label_dstDoor.Name" xml:space="preserve">
-    <value>label_dstDoor</value>
-  </data>
-  <data name="&gt;&gt;textBox_height.Name" xml:space="preserve">
-    <value>textBox_height</value>
   </data>
   <data name="label_width.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 89</value>
@@ -440,8 +422,14 @@
   <data name="statusStrip.Text" xml:space="preserve">
     <value>statusStrip1</value>
   </data>
+  <data name="&gt;&gt;label_door.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label_type.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 22</value>
   </data>
   <data name="&gt;&gt;label_srcDoor.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -464,8 +452,8 @@
   <data name="&gt;&gt;label_dstDoor.Parent" xml:space="preserve">
     <value>groupBox_info</value>
   </data>
-  <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 18</value>
+  <data name="&gt;&gt;label_area.Name" xml:space="preserve">
+    <value>label_area</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Edit Door</value>
@@ -476,8 +464,8 @@
   <data name="&gt;&gt;label_type.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="textBox_connectedDoor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 21</value>
+  <data name="groupBox_edit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
   </data>
   <data name="&gt;&gt;textBox_connectedDoor.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -491,20 +479,17 @@
   <data name="label_yExitDistance.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox_yExitDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 90</value>
+  <data name="label_dstDoor.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_height.Name" xml:space="preserve">
+    <value>label_height</value>
   </data>
   <data name="&gt;&gt;label_area.Parent" xml:space="preserve">
     <value>groupBox_info</value>
   </data>
   <data name="label_srcDoor.Text" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label_room.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
-  </data>
-  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 177</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
@@ -515,15 +500,6 @@
   <data name="&gt;&gt;textBox_yExitDistance.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox_height.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 110</value>
-  </data>
-  <data name="&gt;&gt;label_yExitDistance.Name" xml:space="preserve">
-    <value>label_yExitDistance</value>
-  </data>
-  <data name="comboBox_type.Items2" xml:space="preserve">
-    <value>Open hatch</value>
-  </data>
   <data name="checkBox_event.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 42</value>
   </data>
@@ -532,9 +508,6 @@
   </data>
   <data name="&gt;&gt;label_connectedDoor.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_xExitDistance.ZOrder" xml:space="preserve">
-    <value>13</value>
   </data>
   <data name="label_srcDoor.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -557,17 +530,17 @@
   <data name="&gt;&gt;button_close.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 17</value>
+  </data>
   <data name="&gt;&gt;checkBox_location.Name" xml:space="preserve">
     <value>checkBox_location</value>
   </data>
-  <data name="&gt;&gt;label_dstArea.Parent" xml:space="preserve">
-    <value>groupBox_info</value>
+  <data name="label_height.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label_srcDoor.Name" xml:space="preserve">
     <value>label_srcDoor</value>
-  </data>
-  <data name="label_door.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 15</value>
   </data>
   <data name="&gt;&gt;label_door.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -575,17 +548,26 @@
   <data name="label_room.Text" xml:space="preserve">
     <value>Room</value>
   </data>
-  <data name="label_dstRoom.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;label_dstDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_area.Text" xml:space="preserve">
-    <value>Area</value>
+  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="&gt;&gt;label_dstDoor.Name" xml:space="preserve">
+    <value>label_dstDoor</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_ownerRoom.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;groupBox_info.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBox_type.Items2" xml:space="preserve">
+    <value>Open hatch</value>
   </data>
   <data name="textBox_xExitDistance.Location" type="System.Drawing.Point, System.Drawing">
     <value>255, 66</value>
@@ -593,8 +575,11 @@
   <data name="&gt;&gt;button_close.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_srcDoor.Parent" xml:space="preserve">
-    <value>groupBox_info</value>
+  <data name="&gt;&gt;label_yExitDistance.Name" xml:space="preserve">
+    <value>label_yExitDistance</value>
+  </data>
+  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 204</value>
   </data>
   <data name="&gt;&gt;label_dstRoom.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -610,6 +595,9 @@
   </data>
   <data name="label_srcDoor.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 34</value>
+  </data>
+  <data name="textBox_width.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
   </data>
   <data name="&gt;&gt;groupBox_info.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -706,23 +694,23 @@
   <data name="label_connectedDoor.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 44</value>
   </data>
+  <data name="&gt;&gt;label_dstDoor.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="&gt;&gt;label_source.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label_area.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label_xExitDistance.Text" xml:space="preserve">
-    <value>X exit distance:</value>
+  <data name="label_dstArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
   </data>
   <data name="&gt;&gt;comboBox_type.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox_edit.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="textBox_yExitDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 21</value>
   </data>
   <data name="label_srcRoom.Text" xml:space="preserve">
     <value>0</value>
@@ -733,11 +721,14 @@
   <data name="checkBox_location.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox_width.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 21</value>
+  <data name="checkBox_autoConnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 114</value>
   </data>
   <data name="label_width.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
+  </data>
+  <data name="label_srcArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
   </data>
   <data name="label_srcRoom.Size" type="System.Drawing.Size, System.Drawing">
     <value>11, 12</value>
@@ -754,17 +745,20 @@
   <data name="&gt;&gt;label_srcDoor.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBox_connectedDoor.Name" xml:space="preserve">
+    <value>textBox_connectedDoor</value>
+  </data>
+  <data name="&gt;&gt;label_area.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;label_connectedDoor.Name" xml:space="preserve">
     <value>label_connectedDoor</value>
   </data>
-  <data name="&gt;&gt;checkBox_location.Parent" xml:space="preserve">
-    <value>groupBox_edit</value>
+  <data name="&gt;&gt;textBox_xExitDistance.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="textBox_ownerRoom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 18</value>
+  <data name="label_dstRoom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="textBox_ownerRoom.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -781,8 +775,8 @@
   <data name="button_apply.Text" xml:space="preserve">
     <value>Apply</value>
   </data>
-  <data name="&gt;&gt;button_apply.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;label_height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox_ownerRoom.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -793,14 +787,23 @@
   <data name="comboBox_type.Items" xml:space="preserve">
     <value>Area connection</value>
   </data>
+  <data name="label_destination.Text" xml:space="preserve">
+    <value>Destination:</value>
+  </data>
   <data name="checkBox_autoConnect.Text" xml:space="preserve">
     <value>Auto connect destination door</value>
   </data>
-  <data name="&gt;&gt;label_yExitDistance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label_srcArea.Text" xml:space="preserve">
+    <value>Area</value>
   </data>
-  <data name="&gt;&gt;label_srcArea.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;checkBox_autoConnect.Name" xml:space="preserve">
+    <value>checkBox_autoConnect</value>
+  </data>
+  <data name="label_height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="label_room.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
   </data>
   <data name="label_srcRoom.Location" type="System.Drawing.Point, System.Drawing">
     <value>140, 34</value>
@@ -808,11 +811,11 @@
   <data name="&gt;&gt;label_width.Name" xml:space="preserve">
     <value>label_width</value>
   </data>
-  <data name="label_srcArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
+  <data name="textBox_yExitDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
   </data>
-  <data name="label_height.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
+  <data name="label_area.Text" xml:space="preserve">
+    <value>Area</value>
   </data>
   <data name="label_width.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -829,20 +832,14 @@
   <data name="&gt;&gt;label_door.Parent" xml:space="preserve">
     <value>groupBox_info</value>
   </data>
-  <data name="groupBox_edit.Text" xml:space="preserve">
-    <value>Edit</value>
+  <data name="textBox_ownerRoom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 18</value>
   </data>
-  <data name="&gt;&gt;label_dstDoor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="checkBox_location.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;label_dstRoom.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
   </data>
   <data name="label_height.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="textBox_xExitDistance.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
   </data>
   <data name="textBox_width.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -859,8 +856,8 @@
   <data name="checkBox_event.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;groupBox_edit.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="label_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
   </data>
   <data name="label_room.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -880,8 +877,11 @@
   <data name="label_dstDoor.Size" type="System.Drawing.Size, System.Drawing">
     <value>11, 12</value>
   </data>
-  <data name="&gt;&gt;groupBox_info.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label_door.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 15</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="comboBox_type.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 20</value>
@@ -907,17 +907,14 @@
   <data name="button_close.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 21</value>
   </data>
-  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 22</value>
+  <data name="label_dstDoor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label_ownerRoom.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 20</value>
   </data>
   <data name="&gt;&gt;label_room.Name" xml:space="preserve">
     <value>label_room</value>
-  </data>
-  <data name="label_ownerRoom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 12</value>
   </data>
   <data name="groupBox_info.Text" xml:space="preserve">
     <value>Info</value>
@@ -943,8 +940,8 @@
   <data name="button_apply.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label_destination.Text" xml:space="preserve">
-    <value>Destination:</value>
+  <data name="&gt;&gt;label_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_event.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -952,29 +949,29 @@
   <data name="&gt;&gt;textBox_xExitDistance.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_dstRoom.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
+    <value>statusLabel_changes</value>
   </data>
   <data name="&gt;&gt;label_type.Name" xml:space="preserve">
     <value>label_type</value>
   </data>
-  <data name="&gt;&gt;label_dstArea.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="button_apply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 177</value>
   </data>
-  <data name="&gt;&gt;textBox_connectedDoor.Name" xml:space="preserve">
-    <value>textBox_connectedDoor</value>
+  <data name="textBox_height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 110</value>
   </data>
-  <data name="checkBox_event.Text" xml:space="preserve">
-    <value>Loads event based room</value>
+  <data name="textBox_xExitDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;label_destination.Name" xml:space="preserve">
-    <value>label_destination</value>
+  <data name="label_ownerRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
   </data>
-  <data name="label_dstDoor.Text" xml:space="preserve">
+  <data name="label_dstRoom.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox_height.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="comboBox_type.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label_width.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -982,29 +979,26 @@
   <data name="&gt;&gt;label_xExitDistance.Name" xml:space="preserve">
     <value>label_xExitDistance</value>
   </data>
-  <data name="textBox_height.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 21</value>
-  </data>
-  <data name="&gt;&gt;label_door.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="checkBox_location.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="label_width.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label_area.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label_dstArea.Text" xml:space="preserve">
+    <value>Area</value>
   </data>
-  <data name="label_height.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label_yExitDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_srcArea.Name" xml:space="preserve">
-    <value>label_srcArea</value>
+  <data name="label_xExitDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
   </data>
   <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
     <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox_location.Text" xml:space="preserve">
-    <value>Displays location name</value>
+  <data name="groupBox_info.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 151</value>
   </data>
   <data name="label_width.Text" xml:space="preserve">
     <value>Width:</value>
@@ -1012,14 +1006,14 @@
   <data name="checkBox_autoConnect.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 16</value>
   </data>
-  <data name="label_yExitDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 92</value>
+  <data name="&gt;&gt;label_destination.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label_xExitDistance.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="label_door.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  <data name="textBox_height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
   </data>
   <data name="label_dstArea.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1036,11 +1030,11 @@
   <data name="label_door.Text" xml:space="preserve">
     <value>Door</value>
   </data>
-  <data name="&gt;&gt;statusLabel_changes.Name" xml:space="preserve">
-    <value>statusLabel_changes</value>
+  <data name="&gt;&gt;label_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_srcArea.Text" xml:space="preserve">
-    <value>Area</value>
+  <data name="&gt;&gt;textBox_height.Name" xml:space="preserve">
+    <value>textBox_height</value>
   </data>
   <data name="label_yExitDistance.Text" xml:space="preserve">
     <value>Y exit distance:</value>
@@ -1054,17 +1048,20 @@
   <data name="label_area.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
   </data>
-  <data name="statusLabel_changes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 17</value>
+  <data name="&gt;&gt;label_dstArea.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
   </data>
-  <data name="button_close.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 204</value>
+  <data name="&gt;&gt;checkBox_autoConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_dstDoor.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;textBox_height.Parent" xml:space="preserve">
+    <value>groupBox_edit</value>
   </data>
-  <data name="&gt;&gt;label_dstArea.Name" xml:space="preserve">
-    <value>label_dstArea</value>
+  <data name="label_yExitDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 92</value>
+  </data>
+  <data name="&gt;&gt;label_srcDoor.Parent" xml:space="preserve">
+    <value>groupBox_info</value>
   </data>
   <data name="groupBox_info.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 74</value>
@@ -1072,8 +1069,11 @@
   <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 226</value>
   </data>
-  <data name="&gt;&gt;label_area.Name" xml:space="preserve">
-    <value>label_area</value>
+  <data name="label_xExitDistance.Text" xml:space="preserve">
+    <value>X exit distance:</value>
+  </data>
+  <data name="label_destination.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>54</value>
