@@ -127,9 +127,6 @@
   <data name="label_speed.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBox_liquids.Text" xml:space="preserve">
-    <value>Liquids</value>
-  </data>
   <data name="label_energy.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -139,8 +136,8 @@
   <data name="label_screw_no.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button_speed.Parent" xml:space="preserve">
-    <value>groupBox_breakable</value>
+  <data name="&gt;&gt;button_energy.Name" xml:space="preserve">
+    <value>button_energy</value>
   </data>
   <data name="&gt;&gt;button_power_block_never.Name" xml:space="preserve">
     <value>button_power_block_never</value>
@@ -150,6 +147,9 @@
   </data>
   <data name="&gt;&gt;button_trans_door.Name" xml:space="preserve">
     <value>button_trans_door</value>
+  </data>
+  <data name="label_trans_up.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label_shot_no.Size" type="System.Drawing.Size, System.Drawing">
@@ -165,7 +165,7 @@
     <value>36, 75</value>
   </data>
   <data name="&gt;&gt;button_missile.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;groupBox_missile.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -194,8 +194,8 @@
   <data name="button_power_block_never.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
   </data>
-  <data name="&gt;&gt;button_bubbly.Parent" xml:space="preserve">
-    <value>groupBox_ground</value>
+  <data name="&gt;&gt;button_shot_TR_never.Parent" xml:space="preserve">
+    <value>groupBox_shot</value>
   </data>
   <data name="label_bubbly.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 101</value>
@@ -203,8 +203,8 @@
   <data name="&gt;&gt;label_speed_no.Name" xml:space="preserve">
     <value>label_speed_no</value>
   </data>
-  <data name="&gt;&gt;label_missile_block_no.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;groupBox_ground.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button_power_water.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -291,7 +291,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_missile_water.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label_super_hidden.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -378,7 +378,7 @@
     <value>66, 113</value>
   </data>
   <data name="&gt;&gt;label_missile_water.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label_super_block_never.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -420,10 +420,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;label_missile_hidden.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label_super_water.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label_water.Parent" xml:space="preserve">
     <value>groupBox_liquids</value>
@@ -434,8 +431,8 @@
   <data name="&gt;&gt;button_power.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_energy.Parent" xml:space="preserve">
-    <value>groupBox_energy</value>
+  <data name="button_bomb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
   </data>
   <data name="groupBox_transitions.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 97</value>
@@ -451,9 +448,6 @@
   </data>
   <data name="label_solid.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 12</value>
-  </data>
-  <data name="&gt;&gt;label_acid.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;button_acid.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -475,6 +469,9 @@
   </data>
   <data name="button_lava_strong.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 69</value>
+  </data>
+  <data name="label_bomb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;button_shot.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -557,6 +554,9 @@
   <data name="button_missile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;label_screw_no.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;label_lava_weak.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -611,9 +611,6 @@
   <data name="&gt;&gt;groupBox_shot.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_super_block_never.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label_super_water.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -632,23 +629,14 @@
   <data name="&gt;&gt;groupBox_liquids.Name" xml:space="preserve">
     <value>groupBox_liquids</value>
   </data>
-  <data name="&gt;&gt;groupBox_ground.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label_screw_no.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 126</value>
   </data>
-  <data name="button_shot_no.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label_missile_water.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 75</value>
+  <data name="&gt;&gt;label_crumble_slow.Name" xml:space="preserve">
+    <value>label_crumble_slow</value>
   </data>
   <data name="&gt;&gt;button_missile_hidden.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button_energy_water.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="label_speed.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -692,6 +680,9 @@
   <data name="button_shot_TR_never.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <data name="label_energy_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 75</value>
+  </data>
   <data name="&gt;&gt;label_2x2_no.Parent" xml:space="preserve">
     <value>groupBox_shot</value>
   </data>
@@ -707,8 +698,11 @@
   <data name="label_super_block_never.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="label_bubbly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;groupBox_power.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="button_shot_TR_no.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 95</value>
@@ -752,14 +746,8 @@
   <data name="button_super_block_never.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;button_dusty_very.Name" xml:space="preserve">
-    <value>button_dusty_very</value>
-  </data>
   <data name="&gt;&gt;button_slope27_Uneg.Name" xml:space="preserve">
     <value>button_slope27_Uneg</value>
-  </data>
-  <data name="groupBox_shot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 165</value>
   </data>
   <data name="&gt;&gt;label_wet.Name" xml:space="preserve">
     <value>label_wet</value>
@@ -781,6 +769,9 @@
   </data>
   <data name="button_energy.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
+  </data>
+  <data name="&gt;&gt;button_power_hidden.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="button_power.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
@@ -808,6 +799,9 @@
   </data>
   <data name="label_super.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
+  </data>
+  <data name="button_crumble.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
   </data>
   <data name="label_air.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 12</value>
@@ -911,6 +905,9 @@
   <data name="label_acid.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
   </data>
+  <data name="label_bomb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 23</value>
+  </data>
   <data name="&gt;&gt;label_bomb.Name" xml:space="preserve">
     <value>label_bomb</value>
   </data>
@@ -972,7 +969,7 @@
     <value>groupBox_slopes</value>
   </data>
   <data name="&gt;&gt;groupBox_breakable.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label_power_hidden.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -995,8 +992,17 @@
   <data name="&gt;&gt;button_slope45_neg.Parent" xml:space="preserve">
     <value>groupBox_slopes</value>
   </data>
+  <data name="&gt;&gt;label_energy.Parent" xml:space="preserve">
+    <value>groupBox_energy</value>
+  </data>
   <data name="label_wet.Text" xml:space="preserve">
     <value>Wet</value>
+  </data>
+  <data name="button_super.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_bubbly.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
@@ -1029,13 +1035,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox_energy.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_missile_block_never.Parent" xml:space="preserve">
+    <value>groupBox_missile</value>
   </data>
   <data name="&gt;&gt;button_missile_block_never.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_slope_slight.Parent" xml:space="preserve">
-    <value>groupBox_slopes</value>
   </data>
   <data name="&gt;&gt;groupBox_ground.Name" xml:space="preserve">
     <value>groupBox_ground</value>
@@ -1080,7 +1086,7 @@
     <value>24, 22</value>
   </data>
   <data name="&gt;&gt;label_missile_block_never.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="label_crumble_slow.Text" xml:space="preserve">
     <value>Slow crumble block</value>
@@ -1127,9 +1133,6 @@
   <data name="button_solid.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
   </data>
-  <data name="&gt;&gt;label_crumble_slow.Name" xml:space="preserve">
-    <value>label_crumble_slow</value>
-  </data>
   <data name="&gt;&gt;button_missile_water.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1139,11 +1142,8 @@
   <data name="&gt;&gt;button_super_water.Name" xml:space="preserve">
     <value>button_super_water</value>
   </data>
-  <data name="button_screw_no.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button_shot_BL_never.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox_transitions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 114</value>
   </data>
   <data name="label_energy.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1157,8 +1157,8 @@
   <data name="button_power.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 18</value>
   </data>
-  <data name="label_trans_up.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label_acid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 101</value>
   </data>
   <data name="label_energy_hidden.Text" xml:space="preserve">
     <value>Hidden</value>
@@ -1193,7 +1193,10 @@
   <data name="button_bomb.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 18</value>
   </data>
-  <data name="label_power_block_never.AutoSize" type="System.Boolean, mscorlib">
+  <data name="button_dusty_very.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="label_water.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label_lava_strong.Size" type="System.Drawing.Size, System.Drawing">
@@ -1211,11 +1214,8 @@
   <data name="button_shot_no.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
   </data>
-  <data name="label_shot_never.Text" xml:space="preserve">
-    <value>Block (never reform)</value>
-  </data>
-  <data name="&gt;&gt;button_slope45_pos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button_shot_BL_no.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 121</value>
   </data>
   <data name="&gt;&gt;button_super_hidden.Name" xml:space="preserve">
     <value>button_super_hidden</value>
@@ -1223,11 +1223,11 @@
   <data name="groupBox_basic.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 71</value>
   </data>
+  <data name="button_slope45_neg.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="button_super_block_never.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
-  </data>
-  <data name="&gt;&gt;groupBox_liquids.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;label_power_hidden.Parent" xml:space="preserve">
     <value>groupBox_power</value>
@@ -1247,6 +1247,9 @@
   <data name="button_shot_never.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
   </data>
+  <data name="label_air.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 23</value>
+  </data>
   <data name="&gt;&gt;button_screw_no.Parent" xml:space="preserve">
     <value>groupBox_breakable</value>
   </data>
@@ -1265,11 +1268,17 @@
   <data name="&gt;&gt;label_shot.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;button_missile_block_no.Name" xml:space="preserve">
+    <value>button_missile_block_no</value>
+  </data>
   <data name="button_slope27_Lneg.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
   </data>
   <data name="button_trans_down.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
+  </data>
+  <data name="button_solid.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;label_power_block_never.Name" xml:space="preserve">
     <value>label_power_block_never</value>
@@ -1291,6 +1300,9 @@
   </data>
   <data name="&gt;&gt;button_trans_door.Parent" xml:space="preserve">
     <value>groupBox_transitions</value>
+  </data>
+  <data name="&gt;&gt;label_energy_hidden.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="button_speed.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
@@ -1331,9 +1343,6 @@
   <data name="&gt;&gt;button_trans_door.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_solid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 43</value>
-  </data>
   <data name="label_2x2_never.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -1354,9 +1363,6 @@
   </data>
   <data name="label_power_hidden.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
-  </data>
-  <data name="&gt;&gt;label_bubbly.Parent" xml:space="preserve">
-    <value>groupBox_ground</value>
   </data>
   <data name="button_missile_block_no.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1391,14 +1397,14 @@
   <data name="&gt;&gt;button_slope27_Uneg.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label_2x2_never.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 164</value>
+  <data name="label_trans_down.Text" xml:space="preserve">
+    <value>Down</value>
   </data>
   <data name="&gt;&gt;label_crumble_slow.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_shot_no.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label_power_block_never.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label_dusty.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -1433,6 +1439,9 @@
   <data name="button_power_hidden.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
   </data>
+  <data name="label_power_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 75</value>
+  </data>
   <data name="&gt;&gt;groupBox_liquids.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1451,17 +1460,17 @@
   <data name="label_2x2_never.Text" xml:space="preserve">
     <value>2x2 (never reform)</value>
   </data>
-  <data name="&gt;&gt;label_power.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="&gt;&gt;label_missile_block_no.Name" xml:space="preserve">
     <value>label_missile_block_no</value>
   </data>
-  <data name="&gt;&gt;button_power_block_never.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;button_air.Name" xml:space="preserve">
+    <value>button_air</value>
   </data>
   <data name="&gt;&gt;label_shot.Parent" xml:space="preserve">
     <value>groupBox_shot</value>
+  </data>
+  <data name="&gt;&gt;button_power_block_never.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;button_slope45_neg.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -1493,6 +1502,9 @@
   <data name="label_energy.Text" xml:space="preserve">
     <value>Normal</value>
   </data>
+  <data name="label_missile_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 75</value>
+  </data>
   <data name="&gt;&gt;label_missile_block_no.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1514,20 +1526,17 @@
   <data name="label_solid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="button_slope27_Upos.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;groupBox_breakable.Name" xml:space="preserve">
     <value>groupBox_breakable</value>
   </data>
   <data name="button_slope27_Uneg.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;button_bubbly.Name" xml:space="preserve">
-    <value>button_bubbly</value>
-  </data>
   <data name="&gt;&gt;label_power.Name" xml:space="preserve">
     <value>label_power</value>
-  </data>
-  <data name="button_air.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 22</value>
   </data>
   <data name="&gt;&gt;label_missile_water.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1535,8 +1544,8 @@
   <data name="label_lava_weak.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;button_air.Name" xml:space="preserve">
-    <value>button_air</value>
+  <data name="label_super_water.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
   </data>
   <data name="label_missile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1561,6 +1570,9 @@
   </data>
   <data name="label_speed.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 75</value>
+  </data>
+  <data name="label_speed.Text" xml:space="preserve">
+    <value>Speed boost block (reform)</value>
   </data>
   <data name="button_shot.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
@@ -1594,9 +1606,6 @@
   </data>
   <data name="label_missile_block_never.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;label_missile.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="&gt;&gt;groupBox_transitions.Name" xml:space="preserve">
     <value>groupBox_transitions</value>
@@ -1699,14 +1708,17 @@
   <data name="&gt;&gt;groupBox_slopes.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="button_energy_water.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;button_air.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;label_trans_down.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_shot_TR_never.Parent" xml:space="preserve">
-    <value>groupBox_shot</value>
+  <data name="label_dusty.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;button_power_water.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1743,9 +1755,6 @@
   </data>
   <data name="&gt;&gt;button_power.Name" xml:space="preserve">
     <value>button_power</value>
-  </data>
-  <data name="label_water.Text" xml:space="preserve">
-    <value>Water</value>
   </data>
   <data name="&gt;&gt;button_power_block_never.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1816,9 +1825,6 @@
   <data name="&gt;&gt;label_lava_weak.Parent" xml:space="preserve">
     <value>groupBox_liquids</value>
   </data>
-  <data name="&gt;&gt;label_shot_no.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <data name="button_screw_no.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 121</value>
   </data>
@@ -1828,8 +1834,8 @@
   <data name="&gt;&gt;button_missile_hidden.Parent" xml:space="preserve">
     <value>groupBox_missile</value>
   </data>
-  <data name="&gt;&gt;label_air.Parent" xml:space="preserve">
-    <value>groupBox_basic</value>
+  <data name="label_acid.Text" xml:space="preserve">
+    <value>Acid</value>
   </data>
   <data name="label_missile_block_never.Text" xml:space="preserve">
     <value>Block (never reform)</value>
@@ -1844,7 +1850,7 @@
     <value>button_bomb_never</value>
   </data>
   <data name="&gt;&gt;groupBox_shot.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label_dusty_very.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 49</value>
@@ -1864,8 +1870,8 @@
   <data name="&gt;&gt;button_super_block_never.Parent" xml:space="preserve">
     <value>groupBox_super</value>
   </data>
-  <data name="&gt;&gt;button_slope27_Uneg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label_2x2_no.Text" xml:space="preserve">
+    <value>2x2 (no reform)</value>
   </data>
   <data name="&gt;&gt;label_screw_no.Name" xml:space="preserve">
     <value>label_screw_no</value>
@@ -1881,12 +1887,6 @@
   </data>
   <data name="&gt;&gt;button_air.Parent" xml:space="preserve">
     <value>groupBox_basic</value>
-  </data>
-  <data name="button_bomb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 22</value>
-  </data>
-  <data name="button_missile_water.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;button_energy_water.Name" xml:space="preserve">
     <value>button_energy_water</value>
@@ -2038,6 +2038,9 @@
   <data name="&gt;&gt;label_missile_water.Parent" xml:space="preserve">
     <value>groupBox_missile</value>
   </data>
+  <data name="&gt;&gt;label_super_block_never.Name" xml:space="preserve">
+    <value>label_super_block_never</value>
+  </data>
   <data name="&gt;&gt;label_slope_steep.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2067,9 +2070,6 @@
   </data>
   <data name="&gt;&gt;label_crumble_slow.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="button_acid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 22</value>
   </data>
   <data name="&gt;&gt;label_super_block_never.Parent" xml:space="preserve">
     <value>groupBox_super</value>
@@ -2104,17 +2104,14 @@
   <data name="&gt;&gt;label_missile_water.Name" xml:space="preserve">
     <value>label_missile_water</value>
   </data>
-  <data name="label_acid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 101</value>
-  </data>
   <data name="button_lava_strong.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="button_slope27_Uneg.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 97</value>
   </data>
-  <data name="button_dusty_very.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 22</value>
+  <data name="&gt;&gt;button_bubbly.Parent" xml:space="preserve">
+    <value>groupBox_ground</value>
   </data>
   <data name="button_energy_hidden.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2170,8 +2167,8 @@
   <data name="label_energy_hidden.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 49</value>
   </data>
-  <data name="button_energy_water.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;label_bubbly.Parent" xml:space="preserve">
+    <value>groupBox_ground</value>
   </data>
   <data name="groupBox_super.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2182,8 +2179,8 @@
   <data name="&gt;&gt;button_shot_BL_never.Parent" xml:space="preserve">
     <value>groupBox_shot</value>
   </data>
-  <data name="&gt;&gt;label_missile_block_never.Parent" xml:space="preserve">
-    <value>groupBox_missile</value>
+  <data name="&gt;&gt;button_energy_water.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button_missile_hidden.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2191,11 +2188,14 @@
   <data name="&gt;&gt;button_dusty_very.Parent" xml:space="preserve">
     <value>groupBox_ground</value>
   </data>
+  <data name="&gt;&gt;label_dusty.Name" xml:space="preserve">
+    <value>label_dusty</value>
+  </data>
   <data name="&gt;&gt;button_super_water.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_acid.Text" xml:space="preserve">
-    <value>Acid</value>
+  <data name="&gt;&gt;groupBox_liquids.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label_slope_slight.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2212,8 +2212,8 @@
   <data name="label_bomb.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 12</value>
   </data>
-  <data name="button_shot_BR_no.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 22</value>
+  <data name="label_super_hidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 49</value>
   </data>
   <data name="button_screw_no.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
@@ -2223,6 +2223,9 @@
   </data>
   <data name="&gt;&gt;label_2x2_never.Parent" xml:space="preserve">
     <value>groupBox_shot</value>
+  </data>
+  <data name="&gt;&gt;button_bomb_never.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;button_bubbly.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2242,12 +2245,6 @@
   <data name="&gt;&gt;button_shot_no.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="label_water.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 23</value>
-  </data>
-  <data name="&gt;&gt;label_acid.Name" xml:space="preserve">
-    <value>label_acid</value>
-  </data>
   <data name="&gt;&gt;label_wet.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -2260,6 +2257,9 @@
   <data name="&gt;&gt;label_bomb_never.Parent" xml:space="preserve">
     <value>groupBox_breakable</value>
   </data>
+  <data name="button_power_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 69</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Clipdata Shortcuts</value>
   </data>
@@ -2269,8 +2269,8 @@
   <data name="&gt;&gt;button_trans_down.Name" xml:space="preserve">
     <value>button_trans_down</value>
   </data>
-  <data name="&gt;&gt;button_energy.Name" xml:space="preserve">
-    <value>button_energy</value>
+  <data name="&gt;&gt;label_missile_block_no.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;button_water.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -2296,17 +2296,17 @@
   <data name="&gt;&gt;label_2x2_no.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_slope45_neg.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label_water.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 23</value>
   </data>
   <data name="&gt;&gt;button_super_hidden.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox_transitions.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;button_missile_block_no.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label_speed_no.Text" xml:space="preserve">
     <value>Speed boost block (no reform)</value>
@@ -2323,14 +2323,14 @@
   <data name="&gt;&gt;label_slope_slight.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button_solid.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;button_speed.Parent" xml:space="preserve">
+    <value>groupBox_breakable</value>
   </data>
   <data name="label_super_water.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label_energy_hidden.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="groupBox_shot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 165</value>
   </data>
   <data name="label_wet.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2389,11 +2389,11 @@
   <data name="&gt;&gt;button_slope27_Lpos.Parent" xml:space="preserve">
     <value>groupBox_slopes</value>
   </data>
-  <data name="label_bubbly.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox_liquids.Text" xml:space="preserve">
+    <value>Liquids</value>
   </data>
-  <data name="label_dusty.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label_slope_steep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
   </data>
   <data name="button_bomb_never.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 43</value>
@@ -2401,8 +2401,8 @@
   <data name="groupBox_super.Location" type="System.Drawing.Point, System.Drawing">
     <value>381, 11</value>
   </data>
-  <data name="groupBox_transitions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 114</value>
+  <data name="&gt;&gt;button_slope45_pos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label_missile_block_never.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 126</value>
@@ -2416,14 +2416,11 @@
   <data name="&gt;&gt;label_2x2_never.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button_dusty.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="button_screw_no.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="label_energy_water.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 75</value>
-  </data>
-  <data name="button_super.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;label_air.Parent" xml:space="preserve">
+    <value>groupBox_basic</value>
   </data>
   <data name="label_shot.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 12</value>
@@ -2434,17 +2431,17 @@
   <data name="button_dusty.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button_bubbly.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;button_slope27_Uneg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_dusty.Name" xml:space="preserve">
-    <value>label_dusty</value>
+  <data name="&gt;&gt;label_power.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;button_crumble.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_missile_block_no.Name" xml:space="preserve">
-    <value>button_missile_block_no</value>
+  <data name="button_shot_BR_no.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
   </data>
   <data name="&gt;&gt;button_slope27_Lpos.Name" xml:space="preserve">
     <value>button_slope27_Lpos</value>
@@ -2452,8 +2449,8 @@
   <data name="button_speed.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 69</value>
   </data>
-  <data name="button_crumble.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 22</value>
+  <data name="label_shot_never.Text" xml:space="preserve">
+    <value>Block (never reform)</value>
   </data>
   <data name="&gt;&gt;label_crumble_slow.Parent" xml:space="preserve">
     <value>groupBox_breakable</value>
@@ -2482,8 +2479,8 @@
   <data name="label_crumble_slow.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button_power_water.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 69</value>
+  <data name="&gt;&gt;label_missile.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;button_slope27_Lpos.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -2491,8 +2488,8 @@
   <data name="&gt;&gt;button_power_hidden.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_power_hidden.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label_acid.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="button_bomb.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2518,14 +2515,17 @@
   <data name="label_missile.Text" xml:space="preserve">
     <value>Normal</value>
   </data>
+  <data name="button_bomb_never.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="button_super.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 18</value>
   </data>
-  <data name="label_super_hidden.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 49</value>
+  <data name="&gt;&gt;button_dusty_very.Name" xml:space="preserve">
+    <value>button_dusty_very</value>
   </data>
-  <data name="button_slope27_Upos.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;button_shot_BL_never.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button_super_water.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 69</value>
@@ -2536,8 +2536,8 @@
   <data name="label_trans_up.Text" xml:space="preserve">
     <value>Up</value>
   </data>
-  <data name="label_bomb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 23</value>
+  <data name="&gt;&gt;label_slope_slight.Parent" xml:space="preserve">
+    <value>groupBox_slopes</value>
   </data>
   <data name="&gt;&gt;button_power_water.Name" xml:space="preserve">
     <value>button_power_water</value>
@@ -2548,20 +2548,20 @@
   <data name="button_shot_TL_never.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 147</value>
   </data>
-  <data name="label_bomb.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label_2x2_never.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 164</value>
   </data>
   <data name="&gt;&gt;label_power_water.Parent" xml:space="preserve">
     <value>groupBox_power</value>
+  </data>
+  <data name="&gt;&gt;groupBox_basic.Name" xml:space="preserve">
+    <value>groupBox_basic</value>
   </data>
   <data name="&gt;&gt;button_super.Name" xml:space="preserve">
     <value>button_super</value>
   </data>
   <data name="button_speed_no.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
-  </data>
-  <data name="label_slope_steep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 12</value>
   </data>
   <data name="&gt;&gt;button_energy.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -2581,17 +2581,17 @@
   <data name="label_super_block_no.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;groupBox_basic.Name" xml:space="preserve">
-    <value>groupBox_basic</value>
+  <data name="&gt;&gt;button_dusty.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="label_2x2_no.Text" xml:space="preserve">
-    <value>2x2 (no reform)</value>
+  <data name="&gt;&gt;label_shot_no.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;label_super_block_never.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;label_screw_no.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button_super_block_never.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label_bomb_never.Text" xml:space="preserve">
     <value>Bomb block (never reform)</value>
@@ -2600,7 +2600,7 @@
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox_liquids.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button_shot_TL_no.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 22</value>
@@ -2620,8 +2620,8 @@
   <data name="button_power_hidden.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;button_bomb_never.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;label_acid.Name" xml:space="preserve">
+    <value>label_acid</value>
   </data>
   <data name="&gt;&gt;button_slope45_pos.Parent" xml:space="preserve">
     <value>groupBox_slopes</value>
@@ -2656,20 +2656,20 @@
   <data name="button_dusty_very.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button_shot_BL_no.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 121</value>
-  </data>
   <data name="&gt;&gt;groupBox_breakable.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="button_trans_down.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;label_super_block_never.Name" xml:space="preserve">
-    <value>label_super_block_never</value>
+  <data name="button_air.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
   </data>
   <data name="&gt;&gt;groupBox_ground.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_shot_no.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label_power_hidden.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 49</value>
@@ -2686,8 +2686,8 @@
   <data name="label_screw_no.Text" xml:space="preserve">
     <value>Screw attack block (no reform)</value>
   </data>
-  <data name="label_air.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 23</value>
+  <data name="button_solid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 43</value>
   </data>
   <data name="label_solid.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2695,8 +2695,8 @@
   <data name="label_trans_down.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
   </data>
-  <data name="label_water.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="button_shot_no.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="label_lava_weak.Text" xml:space="preserve">
     <value>Weak lava</value>
@@ -2737,11 +2737,11 @@
   <data name="label_trans_up.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 12</value>
   </data>
-  <data name="button_bomb_never.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label_water.Text" xml:space="preserve">
+    <value>Water</value>
   </data>
-  <data name="label_power_water.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 75</value>
+  <data name="&gt;&gt;button_bubbly.Name" xml:space="preserve">
+    <value>button_bubbly</value>
   </data>
   <data name="groupBox_power.Text" xml:space="preserve">
     <value>Power bombs</value>
@@ -2755,8 +2755,8 @@
   <data name="groupBox_slopes.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="label_trans_down.Text" xml:space="preserve">
-    <value>Down</value>
+  <data name="button_missile_water.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label_power_water.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2782,8 +2782,8 @@
   <data name="&gt;&gt;button_energy.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_speed.Text" xml:space="preserve">
-    <value>Speed boost block (reform)</value>
+  <data name="button_acid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
   </data>
   <data name="groupBox_power.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 123</value>
@@ -2798,6 +2798,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh-Hans</value>
+    <value>zh-CN</value>
   </metadata>
 </root>

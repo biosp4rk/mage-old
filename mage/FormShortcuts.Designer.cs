@@ -544,7 +544,6 @@
             // 
             resources.ApplyResources(this.groupBox_missile, "groupBox_missile");
             this.groupBox_missile.Controls.Add(this.button_missile_block_never);
-            this.groupBox_missile.Controls.Add(this.label_missile_block_never);
             this.groupBox_missile.Controls.Add(this.button_missile_water);
             this.groupBox_missile.Controls.Add(this.label_missile_water);
             this.groupBox_missile.Controls.Add(this.button_missile_hidden);
@@ -553,6 +552,7 @@
             this.groupBox_missile.Controls.Add(this.label_missile);
             this.groupBox_missile.Controls.Add(this.button_missile_block_no);
             this.groupBox_missile.Controls.Add(this.label_missile_block_no);
+            this.groupBox_missile.Controls.Add(this.label_missile_block_never);
             this.groupBox_missile.Name = "groupBox_missile";
             this.groupBox_missile.TabStop = false;
             // 
@@ -971,12 +971,12 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox_power);
             this.Controls.Add(this.groupBox_energy);
             this.Controls.Add(this.groupBox_breakable);
             this.Controls.Add(this.groupBox_shot);
             this.Controls.Add(this.groupBox_liquids);
             this.Controls.Add(this.groupBox_transitions);
-            this.Controls.Add(this.groupBox_power);
             this.Controls.Add(this.groupBox_missile);
             this.Controls.Add(this.groupBox_super);
             this.Controls.Add(this.groupBox_slopes);

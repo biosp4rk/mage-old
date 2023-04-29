@@ -431,7 +431,7 @@
     <EmbeddedResource Include="FormMain.zh-CN.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormShortcuts.zh-Hans.resx">
+    <EmbeddedResource Include="FormShortcuts.zh-CN.resx">
       <DependentUpon>FormShortcuts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.zh-CN.resx">
@@ -541,6 +541,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormShortcuts.resx">
       <DependentUpon>FormShortcuts.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Editors\FormSprite.resx">
       <DependentUpon>FormSprite.cs</DependentUpon>
