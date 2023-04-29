@@ -297,4 +297,22 @@
   <data name="$this.Text" xml:space="preserve">
     <value>演示编辑器</value>
   </data>
+  <data name="menuItem_copy.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="menuItem_cut.Text" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="menuItem_delete.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="menuItem_insert.Text" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="menuItem_pasteInsert.Text" xml:space="preserve">
+    <value>粘贴插入</value>
+  </data>
+  <data name="menuItem_pasteWrite.Text" xml:space="preserve">
+    <value>粘贴覆盖</value>
+  </data>
 </root>

@@ -746,7 +746,7 @@
     <value>33, 13</value>
   </data>
   <data name="label_room.Text" xml:space="preserve">
-    <value>房间</value>
+    <value>房间：</value>
   </data>
   <data name="label_area.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 21</value>
@@ -755,7 +755,7 @@
     <value>33, 13</value>
   </data>
   <data name="label_area.Text" xml:space="preserve">
-    <value>区域</value>
+    <value>区域：</value>
   </data>
   <data name="comboBox_room.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 43</value>

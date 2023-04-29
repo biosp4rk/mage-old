@@ -134,7 +134,7 @@
     <value>64, 17</value>
   </data>
   <data name="radioButton_choose.Text" xml:space="preserve">
-    <value>贴图集</value>
+    <value>贴图集：</value>
   </data>
   <data name="radioButton_current.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 27</value>

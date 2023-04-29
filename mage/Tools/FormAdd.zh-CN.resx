@@ -245,7 +245,7 @@
     <value>20, 13</value>
   </data>
   <data name="label_roomWidth.Text" xml:space="preserve">
-    <value>宽</value>
+    <value>宽：</value>
   </data>
   <data name="comboBox_roomCopyRoom.Location" type="System.Drawing.Point, System.Drawing">
     <value>153, 59</value>
