@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Technical Info</title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			color: #f0f0f0;
+			background-color:#202020;
+			display:block;
+			border:0;
+			margin:16px;
+			padding:0px;
+			font-family:verdana, sans-serif;
+		}
+		.content {
+			background-color:#181818;
+			padding:10px;
+			padding-top:16px;
+			width:94%;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		a {
+			color: #A0A0F0
+		}
+		h1 {
+			font-size:36px;
+		}
+		h2 {
+			background-color:#102030;
+			border-top:3px solid #306090;
+			margin-top:40px;
+			padding:8px;
+		}
+		h3 {
+			background-color:#201030;
+			border-top:1px solid #603090;
+			margin-top:40px;
+			margin-left:0px;
+			padding:4px;
+		}
+		span.smallLink {
+			font-size:75%;
+		}
+		ul {
+			list-style:none;
+			padding-left:0;
+		}
+		li.toc1 {
+			font-size:85%;
+			list-style-type:none;
+		}
+		li.toc2 {
+			font-size:85%;
+			list-style-type:none;
+			text-indent:20px;
+		}
+		table {
+			border-collapse:collapse;
+			margin-bottom:1em;
+		}
+		table, th, td {
+			background-color: #202020;
+			border:1px solid #c0c0c0;
+			padding:0.2em;
+		}
+		td {
+			padding-right:1em;
+		}
+		th {
+			background-color:#181818;
+			padding-left:0.5em;
+			padding-right:0.5em;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="content">
+<h1>技术信息</h1>
+
+<h2>目录</h2>
+	<ul>
+	<li class="toc1"><a href="#room-data">房间数据</a></li>
+		<li class="toc2"><a href="#room-header">头</a></li>
+		<li class="toc2"><a href="#bg-properties">BG属性</a></li>
+		<li class="toc2"><a href="#rle-bg">RLE BG数据</a></li>
+		<li class="toc2"><a href="#lz77-bg">LZ77 BG数据</a></li>
+		<li class="toc2"><a href="#bg3-scrolling">BG3滚动</a></li>
+		<li class="toc2"><a href="#transparency">透明度</a></li>
+		<li class="toc2"><a href="#room-sprites">精灵数据</a></li>
+		<li class="toc2"><a href="#effects">效果</a></li>
+	<li class="toc1"><a href="#tileset-data">贴图集数据</a></li>
+		<li class="toc2"><a href="#tileset-header">头</a></li>
+		<li class="toc2"><a href="#level-graphics">RLE图形</a></li>
+		<li class="toc2"><a href="#tileset-palette">调色板</a></li>
+		<li class="toc2"><a href="#bg3-graphics">LZ77图形（BG3图形）</a></li>
+		<li class="toc2"><a href="#tile-table">贴图块表</a></li>
+		<li class="toc2"><a href="#animated-tileset">动画贴图集</a></li>
+		<li class="toc2"><a href="#animated-graphics">动画图形</a></li>
+		<li class="toc2"><a href="#animated-palette">动画调色板</a></li>
+	<li class="toc1"><a href="#graphics">图形</a></li>
+		<li class="toc2"><a href="#graphics-format">图形格式</a></li>
+		<li class="toc2"><a href="#palette-format">调色板格式</a></li>
+		<li class="toc2"><a href="#generic-bg-graphics">通用BG图形</a></li>
+		<li class="toc2"><a href="#generic-bg-palette">通用BG调色板</a></li>
+		<li class="toc2"><a href="#generic-sprite-graphics">通用精灵图形</a></li>
+		<li class="toc2"><a href="#generic-sprite-palette">通用精灵调色板</a></li>
+	<li class="toc1"><a href="#sprites">精灵</a></li>
+		<li class="toc2"><a href="#sprite-stats">精灵数据</a></li>
+		<li class="toc2"><a href="#sprite-graphics">精灵图形</a></li>
+		<li class="toc2"><a href="#sprite-ai">精灵AI</a></li>
+		<li class="toc2"><a href="#精灵集">精灵集</a></li>
+	<li class="toc1"><a href="#connections">连接</a></li>
+		<li class="toc2"><a href="#area-door-lists">区域门列表</a></li>
+		<li class="toc2"><a href="#doors-format">门格式</a></li>
+		<li class="toc2"><a href="#area-connections">区域连接</a></li>
+		<li class="toc2"><a href="#event-based-connections">基于事件的连接</a></li>
+	<li class="toc1"><a href="#scrolls">滚动</a></li>
+		<li class="toc2"><a href="#area-scroll-lists">区域滚动列表</a></li>
+		<li class="toc2"><a href="#scrolls-format">滚动格式</a></li>
+	<li class="toc1"><a href="#minimaps">地图</a></li>
+	<li class="toc1"><a href="#text">文本</a></li>
+	</ul>
+
+	
+<h2 id="room-data">房间数据</h2>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x79B8BC</li>
+		<li>[ZM] 0x75FAC4</li>
+	</ul>
+
+	<h3 id="room-header">头</h3>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>贴图集</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>BG0 属性</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>BG1 属性</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>BG2 属性</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>BG3 属性</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>4</td>
+	<td>BG0数据指针</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>4</td>
+	<td>BG1数据指针</td>
+	</tr>
+	<tr>
+	<td>0x10</td>
+	<td>4</td>
+	<td>BG2数据指针</td>
+	</tr>
+	<tr>
+	<td>0x14</td>
+	<td>4</td>
+	<td>砖块属性指针</td>
+	</tr>
+	<tr>
+	<td>0x18</td>
+	<td>4</td>
+	<td>BG3数据指针</td>
+	</tr>
+	<tr>
+	<td>0x1C</td>
+	<td>1</td>
+	<td>BG3滚动</td>
+	</tr>
+	<tr>
+	<td>0x1D</td>
+	<td>1</td>
+	<td>透明度</td>
+	</tr>
+	<tr>
+	<td>0x20</td>
+	<td>4</td>
+	<td>默认精灵数据指针</td>
+	</tr>
+	<tr>
+	<td>0x24</td>
+	<td>1</td>
+	<td>默认精灵集</td>
+	</tr>
+	<tr>
+	<td>0x25</td>
+	<td>1</td>
+	<td>第一精灵集事件</td>
+	</tr>
+	<tr>
+	<td>0x28</td>
+	<td>4</td>
+	<td>第一精灵数据指针</td>
+	</tr>
+	<tr>
+	<td>0x2C</td>
+	<td>1</td>
+	<td>第一精灵集</td>
+	</tr>
+	<tr>
+	<td>0x2D</td>
+	<td>1</td>
+	<td>第二精灵集事件</td>
+	</tr>
+	<tr>
+	<td>0x30</td>
+	<td>4</td>
+	<td>第二精灵数据指针</td>
+	</tr>
+	<tr>
+	<td>0x34</td>
+	<td>1</td>
+	<td>第二精灵集</td>
+	</tr>
+	<tr>
+	<td>0x35</td>
+	<td>1</td>
+	<td>地图X坐标</td>
+	</tr>
+	<tr>
+	<td>0x36</td>
+	<td>1</td>
+	<td>地图Y坐标</td>
+	</tr>
+	<tr>
+	<td>0x37</td>
+	<td>1</td>
+	<td>效果</td>
+	</tr>
+	<tr>
+	<td>0x38</td>
+	<td>1</td>
+	<td>效果Y轴位置</td>
+	</tr>
+	<tr>
+	<td>0x3A</td>
+	<td>2</td>
+	<td>音乐曲目编号</td>
+	</tr>
+	</table>
+	
+	<h3 id="bg-properties">BG 属性</h3>
+	
+	<p>如果属性值为0x10，则为RLE压缩，如果值为0x40，则为LZ77压缩，其他特殊值如下所示：</p>
+	
+	<h4>融合</h4>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x12</td>
+	<td>停电时黑暗</td>
+	</tr>
+	<tr>
+	<td>0x14</td>
+	<td>未知</td>
+	</tr>
+	<tr>
+	<td>0x40</td>
+	<td>普通BG3，水，雪等</td>
+	</tr>
+	<tr>
+	<td>0x41</td>
+	<td>噩梦的房间</td>
+	</tr>
+	<tr>
+	<td>0x43</td>
+	<td>始终黑暗</td>
+	</tr>
+	<tr>
+	<td>0x44</td>
+	<td>SA-X 房间</td>
+	</tr>
+	<tr>
+	<td>0x45</td>
+	<td>游戏开始时黑暗</td>
+	</tr>
+	<tr>
+	<td>0x46</td>
+	<td>放水房间</td>
+	</tr>
+	<tr>
+	<td>0x47</td>
+	<td>雾</td>
+	</tr>
+	<tr>
+	<td>0x48</td>
+	<td>熔毁</td>
+	</tr>
+	<tr>
+	<td>0x49</td>
+	<td>噩梦影子</td>
+	</tr>
+	<tr>
+	<td>0x4A</td>
+	<td>SR388（欧米伽战斗）</td>
+	</tr>
+	</table>
+	
+	<h4>零点任务</h4>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x31</td>
+	<td>移动BG2（克雷德，鸟人柱）</td>
+	</tr>
+	<tr>
+	<td>0x40</td>
+	<td>普通BG3，水，雨等</td>
+	</tr>
+	<tr>
+	<td>0x45</td>
+	<td>萨姆斯周围黑暗</td>
+	</tr>
+	<tr>
+	<td>0x46</td>
+	<td>BG从底部开始</td>
+	</tr>
+	</table>
+	
+	<h3 id="rle-bg">RLE BG 数据</h3>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>房间宽度（以块为单位）</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>房间高度（以块为单位）</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td></td>
+	<td>RLE 压缩的块数据</td>
+	</tr>
+	</table>
+	
+	<h3 id="lz77-bg">LZ77 BG 数据</h3>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>BG 大小；0 = 256x256, 1 = 512x256, 2 = 256x512</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>3</td>
+	<td>解压后的长度</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td></td>
+	<td>LZ77 压缩的贴图块表</td>
+	</tr>
+	</table>
+	
+	<h3 id="bg3-scrolling">BG3滚动</h3>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>X 滚动</th>
+	<th>Y 滚动</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>无</td>
+	<td>无</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>相对于屏幕/2</td>
+	<td>无</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>无</td>
+	<td>相对于屏幕/2</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>相对于屏幕/2</td>
+	<td>相对于屏幕/2</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>相对于屏幕</td>
+	<td>相对于屏幕/2</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>相对于屏幕/2</td>
+	<td>相对于屏幕</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>相对于屏幕</td>
+	<td>相对于屏幕</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>相对于屏幕 - 每帧8px</td>
+	<td>无</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>相对于屏幕 - 每帧8px</td>
+	<td>无</td>
+	</tr>
+	<tr>
+	<td>0x9</td>
+	<td>相对于屏幕 /4</td>
+	<td>无</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>相对于屏幕 - 每帧8px</td>
+	<td>相对于屏幕</td>
+	</tr>
+	</table>
+	
+	<h3 id="transparency">透明度</h3>
+	<h4>位置</h4>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0-0x3</td>
+	<td>覆盖BG1，在萨姆斯上方</td>
+	</tr>
+	<tr>
+	<td>0x4 + 4n</td>
+	<td>覆盖BG1，在萨姆斯上方</td>
+	</tr>
+	<tr>
+	<td>0x5 + 4n</td>
+	<td>覆盖BG2，在萨姆斯上方</td>
+	</tr>
+	<tr>
+	<td>0x6 + 4n</td>
+	<td>覆盖BG2，在萨姆斯下方</td>
+	</tr>
+	<tr>
+	<td>0x7 + 4n</td>
+	<td>覆盖BG3，在萨姆斯下方</td>
+	</tr>
+	<tr>
+	<td>0x34+</td>
+	<td>覆盖BG1，在萨姆斯上方</td>
+	</tr>
+	</table>
+	
+	
+	<h4>BLDALPHA</h4>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>EVA 系数</th>
+	<th>EVB 系数</th>
+	</tr>
+	<tr>
+	<td>0x0-0x7</td>
+	<td>16</td>
+	<td>0</td>
+	</tr>
+	<tr>
+	<td>0x8-0xB</td>
+	<td>16</td>
+	<td>7</td>
+	</tr>
+	<tr>
+	<td>0xC-0xF</td>
+	<td>16</td>
+	<td>10</td>
+	</tr>
+	<tr>
+	<td>0x10-0x13</td>
+	<td>16</td>
+	<td>13</td>
+	</tr>
+	<tr>
+	<td>0x14-0x17</td>
+	<td>16</td>
+	<td>16</td>
+	</tr>
+	<tr>
+	<td>0x18-0x1B</td>
+	<td>0</td>
+	<td>16</td>
+	</tr>
+	<tr>
+	<td>0x1C-0x1F</td>
+	<td>3</td>
+	<td>13</td>
+	</tr>
+	<tr>
+	<td>0x20-0x23</td>
+	<td>6</td>
+	<td>10</td>
+	</tr>
+	<tr>
+	<td>0x24-0x27</td>
+	<td>9</td>
+	<td>7</td>
+	</tr>
+	<tr>
+	<td>0x28-0x2B</td>
+	<td>11</td>
+	<td>5</td>
+	</tr>
+	<tr>
+	<td>0x2C-0x2F</td>
+	<td>13</td>
+	<td>3</td>
+	</tr>
+	<tr>
+	<td>0x30-0x33</td>
+	<td>16</td>
+	<td>0</td>
+	</tr>
+	<tr>
+	<td>0x34+</td>
+	<td>16</td>
+	<td>0</td>
+	</tr>
+	</table>
+	
+	<h3 id="room-sprites">精灵数据</h3>
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>Y 位置</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>X 位置</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>位0-3 = 精灵组编号+1<br>位4-7 = 属性</td>
+	</tr>
+	</table>
+	
+	<h4>属性</h4>
+	
+	<p>在融合中，精灵属性主要用于确定精灵如何与寄生体X交互。每个值的影响尚不完全理解，并且某些值对不同的精灵具有不同的行为。下面的图表适用于普通敌人，大多数非敌人的属性值为1。在零点任务中，似乎所有精灵的属性值都为1，因为游戏中没有寄生体X。</p>
+	
+	<table>
+	<tr>
+	<th>值</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>精灵ID=精灵槽位编号</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>从X生成（如果能够）</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>生成</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>生成，X立即移动</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>生成，X吸收无效</td>
+	</tr>
+	<tr>
+	<td>0x5-0x7</td>
+	<td>不会死</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>精灵ID=精灵槽位编号</td>
+	</tr>
+	<tr>
+	<td>0x9-0xA</td>
+	<td>精从X生成</td>
+	</tr>
+	<tr>
+	<td>0xB</td>
+	<td>精从X生成，X立即移动</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>精从X生成，X吸收无效</td>
+	</tr>
+	<tr>
+	<td>0xD-0xF</td>
+	<td>精从X生成，不会死</td>
+	</tr>
+	</table>
+	
+	<h3 id="effects">效果</h3>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>融合</th>
+	<th>零点任务</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>无</td>
+	<td>无</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>水</td>
+	<td>水</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>熔岩</td>
+	<td>熔岩</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>熔岩，高温伤害，BG3阴霾</td>
+	<td>弱酸</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>酸</td>
+	<td>熔岩，高温伤害，BG3阴霾</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>雪花，低温伤害+击退</td>
+	<td>酸</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>雪花，低温伤害</td>
+	<td>雪花，低温伤害+击退</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>热浪（BG3）</td>
+	<td>雪花，低温伤害</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>热浪（BG2+3）</td>
+	<td>热浪（BG3）</td>
+	</tr>
+	<tr>
+	<td>0x9</td>
+	<td>渐变（BG3）</td>
+	<td>热浪（BG2+3）</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>渐变（BG2）</td>
+	<td>渐变（BG3）</td>
+	</tr>
+	<tr>
+	<td>0xB</td>
+	<td>噩梦的房间</td>
+	<td>渐变（BG2）</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+	
+<h2 id="tileset-data">贴图集数据</h2>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3BF888</li>
+		<li>[ZM] 0x33DFDC</li>
+	</ul>
+	
+	<h3 id="tileset-header">头</h3>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>4</td>
+	<td>RLE图形指针</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>4</td>
+	<td>调色板指针</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>4</td>
+	<td>LZ77图形（BG3图形）指针</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>4</td>
+	<td>贴图块表指针</td>
+	</tr>
+	<tr>
+	<td>0x10</td>
+	<td>1</td>
+	<td>动画贴图集编号</td>
+	</tr>
+	<tr>
+	<td>0x11</td>
+	<td>1</td>
+	<td>动画调色板编号</td>
+	</tr>
+	</table>
+	
+	<h3 id="level-graphics">RLE图形</h3>
+	<p>参见<a href="#graphics-format">图形格式</a></p>
+	
+	<h3 id="tileset-palette">调色板</h3>
+	<p>参见<a href="#palette-format">调色板格式</a></p>
+	
+	<h3 id="bg3-graphics">LZ77图形（BG3图形）</h3>
+	<p>参见<a href="#graphics-format">图形格式</a></p>
+	
+	<h3 id="tile-table">贴图块表</h3>
+	<table>
+	<tr>
+	<th>位</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0-9</td>
+	<td>贴图块编号（0-1023）</td>
+	</tr>
+	<tr>
+	<td>10</td>
+	<td>水平翻转</td>
+	</tr>
+	<tr>
+	<td>11</td>
+	<td>垂直翻转</td>
+	</tr>
+	<tr>
+	<td>12-15</td>
+	<td>调色板编号（0-15）</td>
+	</tr>
+	</table>
+	
+	<h3 id="animated-tileset">动画贴图集</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3C8F90</li>
+		<li>[ZM] 0x35FA78</li>
+	</ul>
+	
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>动画图形编号</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>2</td>
+	<td>未使用；始终为0</td>
+	</tr>
+	</table>
+	
+	<h3 id="animated-graphics">动画图形</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3C8D58</li>
+		<li>[ZM] 0x35F948</li>
+	</ul>
+	
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>动画类型</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>每个状态的帧数</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>状态数</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>4</td>
+	<td>图形数据指针</td>
+	</tr>
+	</table>
+
+	<h4>动画类型</h4>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>非动画</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>正常</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>交替</td>
+	</tr>
+	</table>
+
+	<h3 id="animated-palette">动画调色板</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3E3764</li>
+		<li>[ZM] 0x35FBFC</li>
+	</ul>
+	
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>动画类型</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>每个状态的帧数</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>状态数</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>4</td>
+	<td>调色板数据指针</td>
+	</tr>
+	</table>
+
+	<h4>动画类型</h4>
+	<table>
+	<tr>
+	<th>值</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>非动画</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>正常</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>交替</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+	
+<h2 id="graphics">图形</h2>
+
+	<h3 id="graphics-format">图形格式</h3>
+	<p>每个图形数据字节表示两个像素，位0-3用于第一个像素，位4-7用于第二个像素，它们都给出了0-15的值，这被用作调色板索引（因为调色板包含16种颜色）。图形被排列成8x8的图块，因此每个图块有32个字节。图块从左到右，从上到下填充，除非它们被水平或垂直翻转。</p>
+	
+	<h3 id="palette-format">调色板格式</h3>
+	<p>调色板中有16种颜色，在游戏过程中，精灵有16个调色板，背景有16个调色板。每种颜色由两个字节表示，每种颜色分量有5位，因此每种颜色有32个可能的值，每种组合有32768个可能的组合。位0-4是红色分量，位5-9是绿色分量，位10-14是蓝色分量，位15未使用，这给出了以下二进制格式：0BBBBBGGGGGRRRRR。</p>
+	
+	<h3 id="generic-bg-graphics">通用背景图形</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3F28C8</li>
+		<li>[ZM] 0x5D940C</li>
+	</ul>
+	<p>总共0x1000字节的图形数据，始终加载。它包括舱门、可破坏砖块和占位物品包图形。</p>
+	
+	<h3 id="generic-bg-palette">通用背景调色板</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x40805C</li>
+		<li>[ZM] 0x5DFE20</li>
+	</ul>
+	<p>总共三行，每行有16种颜色，始终加载。它提供舱门、可破坏砖块和物品包的颜色。</p>
+	
+	<h3 id="generic-sprite-graphics">通用精灵图形</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3E419C</li>
+		<li>[ZM] 0x32BAC8</li>
+	</ul>
+	<p>总共0x3800字节的图形数据，始终加载。它包括HUD、光束图形、敌人掉落和各种图形效果。</p>
+	
+	<h3 id="generic-sprite-palette">通用精灵调色板</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3E40DC</li>
+		<li>[ZM] 0x32BA08</li>
+	</ul>
+	<p>总共六行，每行有16种颜色，始终加载。它提供HUD、光束图形、敌人掉落和各种图形效果的颜色。</p>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+	
+<h2 id="sprites">精灵</h2>
+	
+	<h3 id="sprite-stats">精灵数据</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x2E4D4C</li>
+		<li>[ZM] 0x2B0D68</li>
+	</ul>
+	
+	<h4>融合</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>2</td>
+	<td>生命值</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>2</td>
+	<td>伤害值</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>装甲伤害减少</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>1</td>
+	<td>弱点</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>2</td>
+	<td>能量 X 几率</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>2</td>
+	<td>导弹 X 几率</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>2</td>
+	<td>红 X 几率</td>
+	</tr>
+	</table>
+	
+	<h4>零点任务</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>2</td>
+	<td>生命值</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>2</td>
+	<td>伤害值</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>弱点</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>2</td>
+	<td>不掉落几率</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>2</td>
+	<td>小能量球几率</td>
+	</tr>
+	<tr>
+	<td>0xA</td>
+	<td>2</td>
+	<td>大能量球几率</td>
+	</tr>
+	<tr>
+	<td>0xC</td>
+	<td>2</td>
+	<td>导弹几率</td>
+	</tr>
+	<tr>
+	<td>0xE</td>
+	<td>2</td>
+	<td>超级导弹几率</td>
+	</tr>
+	<tr>
+	<td>0x10</td>
+	<td>2</td>
+	<td>重磅炸弹几率</td>
+	</tr>
+	</table>
+	
+	<h4>弱点</h4>
+	<table>
+	<tr>
+	<th>Bits</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0</td>
+	<td>蓄力光束/充能手枪</td>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>光束和炸弹</td>
+	</tr>
+	<tr>
+	<td>2</td>
+	<td>超级导弹</td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td>导弹</td>
+	</tr>
+	<tr>
+	<td>4</td>
+	<td>重磅炸弹</td>
+	</tr>
+	<tr>
+	<td>5</td>
+	<td>加速器和团身旋击</td>
+	</tr>
+	<tr>
+	<td>6</td>
+	<td>能被冰冻</td>
+	</tr>
+	<tr>
+	<td>7</td>
+	<td>未使用</td>
+	</tr>
+	</table>
+	
+	<h3 id="sprite-graphics">精灵图形</h3>
+	<ul>
+		<li><b>图形偏移量</b></li>
+		<li>[MF] 0x79A5D8</li>
+		<li>[ZM] 0x75EBF8</li>
+	</ul>
+	<ul>
+		<li><b>调色板偏移量</b></li>
+		<li>[MF] 0x79A8D4</li>
+		<li>[ZM] 0x75EEF0</li>
+	</ul>
+	<p>融合中的精灵图形未经压缩，但在零点任务中经过LZ77压缩。</p>
+	
+	<h3 id="sprite-ai">精灵AI</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x79A29C</li>
+		<li>[ZM] 0x75E8C0</li>
+	</ul>
+	
+	<h3 id="精灵集">精灵集</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x79ADD8</li>
+		<li>[ZM] 0x75F31C</li>
+	</ul>
+	
+	<p>精灵集由精灵列表组成。每个精灵有两个字节的数据，列表的结尾用两个0字节标记。</p>
+	
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>精灵 ID</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>图形行</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+	
+<h2 id="connections">连接</h2>
+
+	<h3 id="area-door-lists">区域门列表</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x79B894</li>
+		<li>[ZM] 0x75FAA8</li>
+	</ul>
+	
+	<p>每个区域都有自己的门列表，当加载一个房间时，它会搜索列表以找到属于该房间的所有门。</p>
+	
+	<h3 id="doors-format">门格式</h3>
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>门属性</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>所属房间</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>X 起始位置</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>X 终止位置</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>Y 起始位置</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>1</td>
+	<td>Y 终止位置</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>1</td>
+	<td>连接的门编号</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>1</td>
+	<td>X 偏离距离</td>
+	</tr>
+	<tr>
+	<td>0x8</td>
+	<td>1</td>
+	<td>Y 偏离距离</td>
+	</tr>
+	</table>
+	
+	<h4>门属性</h4>
+	<table>
+	<tr>
+	<th>位</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0-2</td>
+	<td>1 = 区域连接<br>2 = 无舱门<br>3 = 开放的舱门<br>4 = 舱门（可锁定）/闭合的舱门<br>5 = 移除母舰舱门[仅限ZM]<br>6 = 设置母舰舱门[仅限ZM]</td>
+	</tr>
+	<tr>
+	<td>4-5</td>
+	<td>1 = 总是加载相同的房间<br>2 = 基于事件加载房间</td>
+	</tr>
+	<tr>
+	<td>6</td>
+	<td>显示弹出窗口</td>
+	</tr>
+	</table>
+	
+	<ul>
+		<li>区域连接 - 将一个区域的门连接到另一个区域的门</li>
+		<li>无舱门 - 瞬间转换，无动画</li>
+		<li>开放的舱门 - 没有舱门覆盖的门</li>
+		<li>舱门（可锁定）/闭合的舱门 -总是关闭的舱门；在某些事件期间可以锁定</li>
+		<li>移除母舰舱门 - 切换舱门图形为普通图形</li>
+		<li>设置母舰舱门 - 切换舱门图形为母舰图形</li>
+	</ul>
+	
+	<h3 id="area-connections">区域连接</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3C8B90</li>
+		<li>[ZM] 0x360274</li>
+	</ul>
+	
+	<p>当门的类型设置为区域连接时，它会查找区域连接列表，根据区域和门的编号找到匹配项。列表的末尾用三个0xFF字节标记。</p>
+	
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>始源区域编号</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>始源门编号</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>目的区域编号</td>
+	</tr>
+	</table>
+	
+	<h3 id="event-based-connections">基于事件的连接</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x3C8C68</li>
+		<li>[ZM] 0x3601D0</li>
+	</ul>
+	
+	<p>当门可以加载基于事件的房间时，它会查找基于事件的连接列表，根据区域和门的编号找到匹配项。</p>
+	
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>始源区域编号</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>始源门编号</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>事件值</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>目标门编号</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+	
+<h2 id="scrolls">滚动</h2>
+
+	<h3 id="area-scroll-lists">区域滚动列表</h3>
+	<ul>
+		<li><b>偏移量</b></li>
+		<li>[MF] 0x79BB08</li>
+		<li>[ZM] 0x75FD28</li>
+	</ul>
+	
+	<p>每个区域都有自己的滚动列表，当加载房间时，它会搜索列表以查找房间是否在列表中。</p>
+	
+	<h3 id="scrolls-format">滚动格式</h3>
+	<h4>格式</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>房间 ID</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>滚动数量（NS）</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>4 × NS</td>
+	<td>滚动数据</td>
+	</tr>
+	</table>
+	
+	<h4>滚动数据</h4>
+	<table>
+	<tr>
+	<th>偏移量</th>
+	<th>大小</th>
+	<th>描述</th>
+	</tr>
+	<tr>
+	<td>0x0</td>
+	<td>1</td>
+	<td>X 起始位置</td>
+	</tr>
+	<tr>
+	<td>0x1</td>
+	<td>1</td>
+	<td>X 终止位置</td>
+	</tr>
+	<tr>
+	<td>0x2</td>
+	<td>1</td>
+	<td>Y 起始位置</td>
+	</tr>
+	<tr>
+	<td>0x3</td>
+	<td>1</td>
+	<td>Y 终止位置</td>
+	</tr>
+	<tr>
+	<td>0x4</td>
+	<td>1</td>
+	<td>可破坏砖块X位置（如果没有则为0xFF）</td>
+	</tr>
+	<tr>
+	<td>0x5</td>
+	<td>1</td>
+	<td>可破坏砖块Y位置（如果没有则为0xFF）</td>
+	</tr>
+	<tr>
+	<td>0x6</td>
+	<td>1</td>
+	<td>扩展边界方向<br>0 = 左<br>1 = 右<br>2 = Up<br>3 = 下<br>0xFF = 无</td>
+	</tr>
+	<tr>
+	<td>0x7</td>
+	<td>1</td>
+	<td>扩展边界新值（如果没有则为0xFF）</td>
+	</tr>
+	</table>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+	
+<h2 id="minimaps">地图</h2>
+	<ul>
+		<li><b>数据偏移量</b></li>
+		<li>[MF] 0x79BE5C</li>
+		<li>[ZM] 0x7601EC</li>
+	</ul>
+	<ul>
+		<li><b>图形偏移量</b></li>
+		<li>[MF] 0x561FA8</li>
+		<li>[ZM] 0x40E0C4</li>
+	</ul>
+	<ul>
+		<li><b>调色板偏移量</b></li>
+		<li>[MF] 0x5657A8</li>
+		<li>[ZM] 0x411360</li>
+	</ul>
+	
+	<p>地图数据实际上是以LZ77压缩的地图块表存储的，每个地图块的调色板用于确定其类型。</p>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+	
+<h2 id="text">文本</h2>
+	<ul>
+		<li><b>图形偏移量</b></li>
+		<li>[MF] 0x682FAC</li>
+		<li>[ZM] 0x415460</li>
+	</ul>
+	<ul>
+		<li><b>调色板偏移量</b></li>
+		<li>[MF] 0x565B28</li>
+		<li>[ZM] 0x3FD030</li>
+	</ul>
+	<ul>
+		<li><b>字符宽度偏移量</b></li>
+		<li>[MF] 0x576234</li>
+		<li>[ZM] 0x40D7B0</li>
+	</ul>
+	
+	<p>文本数据存储在几个不同的列表中，具体取决于其类别。字符宽度表用于确定每个字符在屏幕上绘制时的宽度。</p>
+	<span class="smallLink">(<a href="#top">返回页首</a>)</span>
+
+</div>
+</body>
+
+</html>

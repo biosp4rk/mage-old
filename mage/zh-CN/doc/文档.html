@@ -1,0 +1,865 @@
+<html>
+
+<head>
+	<title _msttexthash="11553776" _msthash="0">MAGE 文档</title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			color: #f0f0f0;
+			background-color: #202020;
+			display: block;
+			border: 0;
+			margin: 16px;
+			padding: 0px;
+			font-family: verdana, sans-serif;
+		}
+
+		.content {
+			background-color: #181818;
+			padding: 10px;
+			padding-top: 16px;
+			width: 94%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		a {
+			color: #A0A0F0
+		}
+
+		h1 {
+			font-size: 36px;
+		}
+
+		h2 {
+			background-color: #102030;
+			border-top: 3px solid #306090;
+			margin-top: 40px;
+			padding: 8px;
+		}
+
+		h3 {
+			background-color: #201030;
+			border-top: 1px solid #603090;
+			margin-top: 40px;
+			margin-left: 0px;
+			padding: 4px;
+		}
+
+		span.smallLink {
+			font-size: 75%;
+		}
+
+		ul {
+			margin-bottom: 30px;
+		}
+
+		li.toc1 {
+			font-size: 85%;
+			list-style-type: none;
+		}
+
+		li.toc2 {
+			font-size: 85%;
+			list-style-type: none;
+			text-indent: 20px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table,
+		th,
+		td {
+			background-color: #202020;
+			border: 1px solid #c0c0c0;
+			padding: 0.2em;
+		}
+
+		td {
+			padding-right: 1em;
+		}
+
+		th {
+			background-color: #181818;
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="content">
+		<h1 _msttexthash="11553776" _msthash="1">MAGE 文档</h1>
+
+		<h2 _msttexthash="5308706" _msthash="2">目录</h2>
+		<ul>
+			<li class="toc1"><a href="#introduction" _msttexthash="5211505" _msthash="3">介绍</a></li>
+			<li class="toc1"><a href="#getting-started" _msttexthash="4603768" _msthash="4">开始</a></li>
+			<li class="toc2"><a href="#general-advice" _msttexthash="12776062" _msthash="5">总体建议</a></li>
+			<li class="toc2"><a href="#program-structure" _msttexthash="12604280" _msthash="6">程序结构</a></li>
+			<li class="toc1"><a href="#main-window" _msttexthash="7598864" _msthash="7">主窗口</a></li>
+			<li class="toc2"><a href="#backgrounds" _msttexthash="5727644" _msthash="8">背景</a></li>
+			<li class="toc2"><a href="#sprites" _msttexthash="5900050" _msthash="9">精灵</a></li>
+			<li class="toc2"><a href="#doors" _msttexthash="3492216" _msthash="10">门</a></li>
+			<li class="toc2"><a href="#scrolls" _msttexthash="5763693" _msthash="11">滚动</a></li>
+			<li class="toc1"><a href="#header-editor" _msttexthash="18468359" _msthash="12">头编辑器</a></li>
+			<li class="toc1"><a href="#tileset-editor" _msttexthash="21803691" _msthash="13">贴图集编辑器</a></li>
+			<li class="toc1"><a href="#graphics-editor" _msttexthash="16313570" _msthash="14">图形编辑器</a></li>
+			<li class="toc1"><a href="#palette-editor" _msttexthash="22770423" _msthash="15">调色板编辑器</a></li>
+			<li class="toc1"><a href="#tile-table-editor" _msttexthash="23188100" _msthash="16">贴图块表编辑器</a></li>
+			<li class="toc1"><a href="#animation-editor" _msttexthash="16794232" _msthash="17">动画编辑器</a></li>
+			<li class="toc1"><a href="#sprite-editor" _msttexthash="17647578" _msthash="18">精灵编辑器</a></li>
+			<li class="toc1"><a href="#spriteset-editor" _msttexthash="23351835" _msthash="19">精灵集编辑器</a></li>
+			<li class="toc1"><a href="#connection-editor" _msttexthash="17751994" _msthash="20">连接编辑器</a></li>
+			<li class="toc2"><a href="#area-connections" _msttexthash="11903606" _msthash="21">区域连接</a></li>
+			<li class="toc2"><a href="#event-based-connections" _msttexthash="23516402" _msthash="22">基于事件的连接</a></li>
+			<li class="toc2"><a href="#location-names" _msttexthash="11815648" _msthash="23">位置名称</a></li>
+			<li class="toc2"><a href="#hatch-lock-events" _msttexthash="18806489" _msthash="24">舱门锁定事件</a></li>
+			<li class="toc1"><a href="#minimap-editor" _msttexthash="20007286" _msthash="25">地图编辑器</a></li>
+			<li class="toc1"><a href="#text-editor" _msttexthash="16859557" _msthash="26">文本编辑器</a></li>
+			<li class="toc1"><a href="#demo-editor" _msttexthash="17562740" _msthash="27">演示编辑器</a></li>
+			<li class="toc1"><a href="#physics-editor" _msttexthash="17501835" _msthash="28">物理编辑器</a></li>
+			<li class="toc1"><a href="#weapon-editor" _msttexthash="16549962" _msthash="29">武器编辑器</a></li>
+			<li class="toc1"><a href="#room-options" _msttexthash="13886964" _msthash="30">房间选项</a></li>
+			<li class="toc1"><a href="#test-room" _msttexthash="9013797" _msthash="31">测试房间</a></li>
+			<li class="toc1"><a href="#import" _msttexthash="5584657" _msthash="32">导入</a></li>
+			<li class="toc2"><a href="#import-tileset" _msttexthash="8867872" _msthash="33">贴图集</a></li>
+			<li class="toc2"><a href="#import-background" _msttexthash="5727644" _msthash="34">背景</a></li>
+			<li class="toc2"><a href="#import-room" _msttexthash="6281093" _msthash="35">房间</a></li>
+			<li class="toc2"><a href="#import-tileset-image" _msttexthash="23659415" _msthash="36">图像中的贴图集</a></li>
+			<li class="toc2"><a href="#import-lz77-bg-image" _msttexthash="15578251" _msthash="37">来自图像的 LZ77 BG</a>
+			</li>
+			<li class="toc2"><a href="#import-ending" _msttexthash="14169805" _msthash="38">结局图</a></li>
+			<li class="toc1"><a href="#export" _msttexthash="4143126" _msthash="39">导出</a></li>
+			<li class="toc2"><a href="#export-tileset" _msttexthash="8867872" _msthash="40">贴图集</a></li>
+			<li class="toc2"><a href="#export-background" _msttexthash="5727644" _msthash="41">背景</a></li>
+			<li class="toc2"><a href="#export-room" _msttexthash="6281093" _msthash="42">房间</a></li>
+			<li class="toc2"><a href="#export-image" _msttexthash="4178018" _msthash="43">图像</a></li>
+			<li class="toc1"><a href="#compression" _msttexthash="5331729" _msthash="44">压缩</a></li>
+			<li class="toc1"><a href="#minimap-tile-builder" _msttexthash="26109668" _msthash="45">地图块生成器</a></li>
+			<li class="toc1"><a href="#add" _msttexthash="1924832" _msthash="46">添加</a></li>
+			<li class="toc1"><a href="#patches" _msttexthash="5254223" _msthash="47">补丁</a></li>
+			<li class="toc2"><a href="#融合-patches" _msttexthash="12076298" _msthash="48">融合补丁</a></li>
+			<li class="toc2"><a href="#zero-mission-patches" _msttexthash="15489240" _msthash="49">零点任务补丁</a></li>
+			<li class="toc1"><a href="#credits" _msttexthash="4313010" _msthash="50">致谢</a></li>
+			<li class="toc1"><a href="#version-history" _msttexthash="10704538" _msthash="51">版本历史</a></li>
+		</ul>
+
+
+		<h2 id="introduction" _msttexthash="5211505" _msthash="52">介绍</h2>
+
+		<p _msttexthash="1582253686" _msthash="53">密特罗德高级游戏编辑器（MAGE）是由biospark创建的，用于密特罗德 融合和密特罗德 零点任务的综合性黑客工具，它是一个用 C# 编写的	.NET 3.0 应用程序，目前，它仅与每个游戏的北美（U）版本兼容。</p>
+		<p _msttexthash="898590212" _msthash="54">错误报告和问题应直接发送到 Metroid Construction 论坛上的 MAGE 主题帖子：<a 	href="http://forum.metroidconstruction.com/index.php/topic,3969.0.html"	_istranslated="1">http://forum.metroidconstruction.com/index.php/topic,3969.0.html</a>。您还可以在那里找到最新的更新和版本。
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="18018013" _msthash="55">源代码：<a			href="https://github.com/biosp4rk/mage-old" _mstmutation="1" _istranslated="1">https://github.com/biosp4rk/mage-old</a></font>
+		</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="56">返回页首</a>)</span>
+
+		<h2 id="getting-started" _msttexthash="4603768" _msthash="57">开始</h2>
+
+		<h3 id="general-advice" _msttexthash="12776062" _msthash="58">总体建议</h3>
+		<ul>
+			<li _msttexthash="120675399" _msthash="59">经常创建备份！你永远不知道什么时候会出错。</li>
+			<li _msttexthash="308374183" _msthash="60">所有数字均以十六进制表示。如果您还没有熟悉十六进制，您应该先熟悉一下。</li>
+			<li _msttexthash="900849261" _msthash="61">如果您对某些内容的含义或如何使用特定功能有疑问，很可能在本文档中得到解答。如果没有，请寻求帮助！寻求帮助的一个好地方是在 Metroid Construction 论坛。
+			</li>
+		</ul>
+
+		<h3 id="program-structure" _msttexthash="12604280" _msthash="62">程序结构</h3>
+		<p _msttexthash="428777804" _msthash="63">ROM可以通过文件菜单打开和保存。建议您经常使用“创建备份”功能，以防您犯错或出现问题。</p>
+		<p _msttexthash="930779655" _msthash="64">MAGE的用户界面由主窗口以及各种编辑器和工具组成。编辑特定房间主要通过主窗口完成，而更一般的编辑则使用菜单条或工具栏中的选项完成。</p>
+		<p _msttexthash="1391193297" _msthash="65">点击“应用”按钮使修改应用，这会将更改保存到 ROM 的内部副本。但是在从文件菜单中选择一个保存选项之前，程序不会将任何更改保存到 ROM。如果您尝试关闭带有未保存更改的 ROM 时，MAGE 会发出警告。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="66">返回页首</a>)</span>
+
+		<h2 id="main-window" _msttexthash="7598864" _msthash="67">主窗口</h2>
+
+		<p _msttexthash="1741605840" _msthash="68">
+			主窗口用于编辑房间内的背景、精灵、门和滚动。通过在定位框中选择区域并找到要编辑的房间来选择房间。对房间所做的更改会自动跟踪，因此您不必担心切换到另一个房间（但是，您仍然必须保存 ROM）。</p>
+		<p _msttexthash="1620584056" _msthash="69">
+			查看和编辑控件位于贴图集上方。有两种编辑模式：背景编辑和对象编辑，下文将进一步解释这些内容。房间和贴图集随窗口扩展，因此请利用全屏模式，房间视图还具有缩放功能（介于100%和800%之间）。</p>
+		<p _msttexthash="877175364" _msthash="70">您可以通过右键单击任意位置（在对象编辑模式下）并选择“在此处测试房间”，或者将鼠标悬停在该位置上并按“T”来使用模拟器快速测试房间。</p>
+
+		<h3 id="backgrounds" _msttexthash="5727644" _msthash="71">背景</h3>
+		<p _msttexthash="1136931146" _msthash="72">GBA游戏使用四层来显示图形。这些层由前景（BG 0）、关卡或交互层（BG 1）、后层（BG 2）和背景（BG 3）组成。为了保持一致性和简洁性，我只将它们称为“BG”。</p>
+		<p _msttexthash="11856598611" _msthash="73">您可以查看您喜欢的 BG 的任意组合，隐藏未编辑的 BG 可能很方便。BG 0 到 2 和砖块属性可以在背景编辑模式来编辑。您可以通过在房间内单击鼠标中键在模式之间快速切换。背景编辑通过使用保存 BG0、BG1、BG2	和砖块属性值的剪贴板来工作。您可以通过单击鼠标任意按钮并拖动来复制贴图集中的块。从贴图集复制时，剪贴板中的每个块对于所有三个 BG都具有相同的值（不包括砖块属性）。您可以通过右键单击并拖动从房间复制块，这将创建每个块及其四个值的精确副本。在“视图”菜单下有剪贴板查看器，它会在单独的窗口中打开，并在您复制块时更新。</p>
+		<p _msttexthash="7171690136" _msthash="74">要粘贴块，只需左键单击房间内希望贴图块应用的位置。在粘贴之前，您必须通过从“编辑”框中选择一个 BG 来选择要粘贴的 BG	值。您还可以单独粘贴砖块属性值，也可以与其他 BG 同时粘贴。如果上次选择是从贴图集进行的，则粘贴的砖块属性将是当前从下拉列表中选择的砖块属性值。如果您只想使用选定的砖块属性值，而不管之前选择的位置如何，请勾选“编辑”菜单下的“使用选定的砖块属性”选项。在背景编辑模式时精灵、门和滚动无法移动。
+		</p>
+		<p _msttexthash="11977223778" _msthash="75">
+			砖块属性确定萨姆斯如何与房间中的砖块进行交互。它完全独立于块的图形。例如，最常见的砖块类型是实体砖块和空气砖块，但还有很多其他砖块，包括导弹包、梯子、斜坡、尘土飞扬的地面、炸弹砖块等。砖块属性仍应合理匹配块的外观，以避免混淆玩家。由于砖块属性列表相当长，因此“工具”下有一个快捷方式选项，可显示各种砖块属性值的图形列表。有三种方法可以查看砖块属性。第一个概述了按类型分组的砖块属性；第二个显示可破坏砖块；第三个显示每个块的实际砖块属性值。这些可视化可用于确保正确分配砖块属性值，尤其是对于空气砖块、实体砖块和斜坡。
+		</p>
+
+		<h4 _msttexthash="2881372" _msthash="76">RLE 和 LZ77</h4>
+		<p _msttexthash="6245993104" _msthash="77">RLE 和 LZ77 用于指代整个 MAGE 的背景和图形，它们指的是不同的压缩类型，您不需要知道压缩的工作原理，它们仅用作名称。RLE	用于可在主窗口中编辑的背景，而 LZ77 用于由重复图像组成的背景（可以使用<a href="#tile-table-editor" _istranslated="1">贴图块表编辑器</a>进行编辑）。BG1 和	BG2 始终使用 RLE，BG3 始终使用 LZ77，BG0 可以同时使用两者。每个贴图集的图形分为 RLE 图形和 LZ77 图形。RLE 图形用于制作可以放置在房间中的块，而 LZ77 图形用于具有重复图像的背景。</p>
+
+		<h3 id="sprites" _msttexthash="5900050" _msthash="78">精灵</h3>
+		<p _msttexthash="3701245093" _msthash="79">
+			精灵有两个查看选项。您可以查看精灵的预览，以及标记其在房间内实际坐标的绿色边线，精灵预览可能不准确地显示游戏中的外观。如果某些精灵在生成时靠近墙壁，则可能会旋转。你可以通过以下方式移动精灵：首先确保选择了对象编辑模式，然后单击并拖动要移动的精灵的边线，同时应避免重叠精灵。
+		</p>
+		<p _msttexthash="3297903024" _msthash="80">
+			精灵可以通过在房间内右键单击其边线来编辑。在这里，您可以更改它是精灵集中的哪个精灵，以及精灵的属性。您可以通过将鼠标悬停在精灵边线上并点击左方括号键“[”或右方括号键“]”来快速切换精灵。如果要将其更改为不是选项之列的精灵，则必须编辑精灵集。有关更多信息，请参阅<a href="#spriteset-editor" _istranslated="1">精灵集编辑器</a>部分</p>
+		<p _msttexthash="8657190360" _msthash="81">精灵的属性决定了它如何与寄生体X相互作用（因此它只与融合有关）。当精灵的属性为 0xA 时，，只有在有自由漂浮的X时才会生成。具有此属性的精灵在房间视图上显示为半透明。当精灵的属性为 0 时，其精灵 ID 将成为其槽号。精灵 0-2 是 X 目标，这就是X在敌人被杀死时飞向的方向。在任何有敌人的房间里都要有一个X目标，这很重要，否则X 将立即飞离屏幕。精灵 0xE 用于确定能力 X 将在哪里生成。有关<a href="技术信息.html#room-sprites" 	_istranslated="1">属性值</a>的更多信息可以在技术文档中找到，尽管尚未完全理解。查看现有的精灵可能会有所帮助。</p>
+		<p _msttexthash="3947004035" _msthash="82">
+			精灵还可以使用右键菜单添加或删除，您可以通过将鼠标悬停在精灵边线上并点击删除来快速删除精灵。精灵可以添加到房间内的任何位置，它将默认为精灵集中的第一个精灵。游戏最多只能支持24个精灵，所以这是每个房间的限制。但是，许多精灵会生成其他精灵（投射物等），因此建议您将精灵数量保持在	24 个以下。</p>
+		<h4 _msttexthash="24889150" _msthash="83">精灵常见问题</h4>
+		<p>
+			<font _mstmutation="1" _msttexthash="963931761" _msthash="84"><b _mstmutation="1" _istranslated="1">为什么我的精灵没有在游戏中显示？</b><br _mstmutation="1" _istranslated="1">某些精灵仅在特定条件下生成。例如，某些精灵只有在放置在实体砖块旁边才会生成，确保你的精灵位于合理的位置。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="571891151" _msthash="85"><b _mstmutation="1" _istranslated="1">【融合】绿点精灵是什么？</b><br _mstmutation="1" _istranslated="1">绿点是具有特殊功能的精灵的占位符图形。例如，它们可能会触发房间晃动或持续生成 X。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="1556811659" _msthash="86"><b _mstmutation="1" _istranslated="1">【融合】为什么 SA-X 被放置在一些房间的中间？</b><br _mstmutation="1" _istranslated="1">
+				SA-X 的 AI 例程决定了它将出现在房间内的位置（例如：萨姆斯经过的最后一扇门）。SA-X 必须是房间的一部分才能出现，但它的放置位置并不重要。</font>
+		</p>
+		<font _mstmutation="1" _msttexthash="640365050" _msthash="87"><b _mstmutation="1" _istranslated="1">【零点任务】看起来像掉落的能量球的精灵是什么？</b><br _mstmutation="1" _istranslated="1">能量球是具有特殊功能的精灵的占位符图形。通常它们用于触发某些事件。</font>
+		<p></p>
+
+		<h3 id="doors" _msttexthash="3492216" _msthash="88">门</h3>
+		<p _msttexthash="6115090709" _msthash="89">
+			门用蓝色边线标识，查看、移动和编辑选项与精灵非常相似，只有在选择对象编辑模式时，才能再次通过单击和拖动来移动门。为了使门正常工作，它们下面必须有适当的砖块属性，水平门的值为20，向上垂直门的值为27，向下垂直门的值为28，序不会自动为您设置砖块属性。如果您移动门，请确保根据需要编辑原始位置和新位置的砖块属性。如果您想创建单向门，只需在目标门下不使用上述任何砖块属性值。</p>
+		<p _msttexthash="9499633572" _msthash="90">
+			您可以通过右键单击门并选择“编辑门”来编辑门。有关您正在编辑的门以及连接的门的信息显示在底部，门编号按区域计算。如果您想将门连接到另一个区域，请使用<a href="#connection-editor"
+				_istranslated="1">连接编辑器</a>。您可以编辑门的类型、宽度、高度和偏离距离。有关<a href="技术信息.html#doors-format" _istranslated="1">门类型</a>的更多信息，请参阅技术文档。偏离距离决定了萨姆斯离门有多远,将此数字除以 16 即可得到具体的图块数。通过输入相应的门号来更改连接的门，如果您更改了门所属的房间，门将从当前房间中移除并放在新房间的左上角。如果您勾选了“自动连接门”，将自动为您编辑新的连接门。</p>
+		<p _msttexthash="796270696" _msthash="91">您可以通过将鼠标悬停在门上并按“W”、“A”、“S”、“D”来快速更改门的大小。此外，将鼠标悬停在门上时按“G”将加载它连接到的房间。
+		</p>
+
+		<h3 id="scrolls" _msttexthash="5763693" _msthash="92">滚动</h3>
+		<p _msttexthash="8515822718" _msthash="93">滚动用黄色边线和编号的角标记，滚动确定镜头可以移动的边界。每个滚动必须至少是屏幕的大小（15 x 10块）。没有任何滚动的房间将遵循默认滚动方案，这意味着镜头将以萨姆斯为中心，并且不会移动超出每个房间周围两个块的边界。添加自己的滚动时，将滚动覆盖所有可访问区域非常重要。否则，玩家可能会跑到屏幕外，不知道自己在哪里。查看现有房间中的滚动会让您很好地了解它们应该如何放置，仅当您的房间形状不寻常，或者您想暂时隐藏房间的一部分时，才应使用滚动。
+		</p>
+		<p _msttexthash="2200379181" _msthash="94">
+			可以通过单击和拖动角来移动滚动和调整其大小。确保首先选择“对象编辑模式”。可以通过右键单击任何角或将鼠标悬停在角上时按删除键来删除滚动。可以通过右键单击房间中的任意位置来添加滚动，您还可以将滚动添加到没有滚动的房间。
+		</p>
+		<p _msttexthash="7720356254" _msthash="95">
+			滚动可以选择在一个方向上扩展，这是通过使用电梯或打破特定砖块来触发的。这可以通过右键单击其中一个角并选择“编辑滚动”来设置。电梯房应具有扩展范围，但不应具有可破坏的砖块。对于具有可破坏砖块的滚动，当砖块完好无损时，滚动将具有正常边界，并在砖块被销毁时具有扩展边界。通常来说，可破坏的砖块应该是永远不会恢复的砖块。但是，可以使用可恢复的砖块来创建独特的谜题或类似的东西。了解此可选功能如何工作的最佳方式是查看其他房间中的滚动。
+		</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="96">返回页首</a>)</span>
+
+		<h2 id="header-editor" _msttexthash="18468359" _msthash="97">头编辑器</h2>
+		<p _msttexthash="3306177888" _msthash="98">游戏中的每个房间都有一个头，其中包含许多用于加载房间的重要信息。此编辑器的第一部分是与背景相关的数据，这些数据会影响房间的外观。<a href="技术信息.html#transparency" _istranslated="1">透明度</a>、<a href="技术信息.html#bg3-scrolling" _istranslated="1">BG3 滚动</a>和<a href="技术信息.html#effects" _istranslated="1">效果</a>在技术文档中进行了说明。对于透明度，最简单的方法是找到具有所需透明度类型的现有房间，并简单地使用相同的值。</p>
+		<p _msttexthash="1184210807" _msthash="99">本节还包含背景和砖块属性的指针和属性值。技术文档中对<a href="技术信息.html#bg-properties" _istranslated="1">属性值</a>进行了说明。除非您使用的是十六进制编辑器，否则不建议手动编辑指针，MAGE 会自动为您重新定位背景数据。</p>
+		<p _msttexthash="4437603157" _msthash="100">第二部分是与精灵集相关的数据。指针指向定义房间中敌人/精灵的位置和属性的数据。集是指要使用的<a href="#spriteset-editor" _istranslated="1">精灵集</a>，而事件则决定何时使用第一个或第二个额外的集。例如，如果第一个额外集的事件是 0x47，则当事件变量为 0x47 或更高时，将使用该集。对于零点任务，事件值 2 用于困难模式，值 1 用于简单模式。你不需要更改指针，因为 MAGE 会自动处理。</p>
+		<p _msttexthash="470905305" _msthash="101">最后一部分用于杂项值。地图 X 和地图 Y 是房间左上角的地图坐标，音乐则是房间播放的音乐曲目。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="102">返回页首</a>)</span>
+
+		<h2 id="tileset-editor" _msttexthash="21803691" _msthash="103">贴图集编辑器</h2>
+		<p _msttexthash="7058647128" _msthash="104">每个贴图集由多个组件组成：RLE 图形、调色板、LZ77 图形、贴图块表、动画贴图集和动画调色板。此编辑器用于选择每个组件的数据，对于前四个，您可以更改指向的数据，也可以编辑当前指向的数据。对于动画贴图集和调色板，您可以选择要使用的贴图集和调色板，或使用<a	href="#animation-editor" _istranslated="1">动画编辑器</a>编辑当前贴图集和调色板。请记住，多个贴图集可能使用相同的数据，并且多个房间可能使用相同的贴图集，进行一项更改可能会影响多个位置。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="105">返回页首</a>)</span>
+
+		<h2 id="graphics-editor" _msttexthash="16313570" _msthash="106">图形编辑器</h2>
+		<p _msttexthash="2368382367" _msthash="107">
+			图形编辑器用于查看、导入和导出图形。打开时，它将自动提供图形和调色板偏移量，具体取决于打开的位置。有几个选项可用于查看图形，包括图像宽度、高度和缩放级别。还有一个压缩选项，如果提供的偏移量存在LZ77压缩的图形，则会显示LZ77压缩的图形。</p>
+		<p _msttexthash="13051508652" _msthash="108">
+			该编辑器的主要功能是导入和导出图形。有两种不同的文件格式：图片和原始格式。图片是 PNG 图片，而原始格式包含存储在 ROM 中图形的相同数据。如果您计划使用外部图形编辑器编辑图形，请使用图片格式。如果要将图形从一个 ROM 复制到另一个 ROM 或想要使用诸如 Tile Layer Pro 之类的程序，请使用原始格式。导入图形时，请确保仅选择要替换的图形，并根据需要调整偏移和高度。如果导入图片，它将每个像素与当前所选调色板中最接近的颜色匹配。如果导入原始格式，则忽略调色板，如果导入的图形比原始图形大，编辑器将自动分配新空间并修复指针，请确保将新偏移量写下来以备将来使用。
+		</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="109">返回页首</a>)</span>
+
+		<h2 id="palette-editor" _msttexthash="22770423" _msthash="110">调色板编辑器</h2>
+		<p _msttexthash="5122722618" _msthash="111">调色板编辑器用于修改单个颜色，您还可以导入或导出调色板。选择颜色后，可以通过更改三种颜色分量中的每一种来修改它。生成的颜色以 15	位值（GBA 游戏使用的格式）和 24 位值（大多数计算机使用的格式）一起显示。对调色板所做的任何更改只有在您点击“应用”时才会保留。如果更改偏移量或行数，则更改将被丢弃。您还可以使用几种不同的格式导入和导出调色板。
+		</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="112">返回页首</a>)</span>
+
+		<h2 id="tile-table-editor" _msttexthash="23188100" _msthash="113">贴图块表编辑器</h2>
+		<p _msttexthash="3084713073" _msthash="114">贴图块表编辑器用于编辑除普通图形和调色板外还需要贴图块表的图像。这种类型的图像由 8x8 图块组成。图块表包含这些图块及其属性的列表，包括图块编号、调色板行以及是水平翻转还是垂直翻转。如果您知道游戏数据的存储位置，则可以编辑贴图集、LZ77 压缩背景和游戏使用的其他图像。</p>
+		<p _msttexthash="10042767228" _msthash="115">选择图像后，您可以单击要编辑的 16x16
+			区域，该区域将出现在顶部的正方形中，此砖块周围的按钮用于更改每个图块的调色板行和翻转图块。左键单击其中一个角按钮将使用该图块的下一个调色板行，而右键单击将使用上一行，单击其他按钮将水平或垂直翻转图块。要更改用于图块的图形，请先单击左下角要使用的图块，然后单击要更改的角。如果选择了“复制调色板#”，则该图块的调色板将更改为当前选定的调色板。如果选择“保留现有数据”，则如果数据在其他地方使用，将不会覆盖它，新数据将写入其他位置。</p>
+		<p _msttexthash="595336651" _msthash="116">您还可以导入和导出贴图块表，请记住，图形和调色板与贴图块表是分开的。如果您尝试复制图像，则需要所有三条数据。</p>
+
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="117">返回页首</a>)</span>
+
+		<h2 id="animation-editor" _msttexthash="16794232" _msthash="118">动画编辑器</h2>
+		<p _msttexthash="171020109" _msthash="119">动画编辑器用于编辑动画贴图集、动画图形和动画调色板。</p>
+		<p _msttexthash="3535044604" _msthash="120">动画贴图集是动画图形的集合，具体来说，有 16 个槽位，每个槽位占用 0x80 字节的 VRAM。动画贴图集中的所有图形都可以通过 RLE 压缩背景（BG1、BG2，有时是 BG0）访问，而只有最后 4 个槽位可以访问 LZ77 压缩背景（BG3，有时是 BG0）。要编辑贴图集，只需在每个槽位中选择所需的动画图形即可。</p>
+		<p _msttexthash="1997638604" _msthash="121">
+			动画图形是构成动画贴图集的内容，您可以为每个图形更改三个不同的参数。动向决定了每个状态的播放顺序；正常从开头重复，而倒序倒着播放到开头；延迟是每个状态之间的帧数；状态是状态的总数，您还可以编辑每个状态的图形。</p>
+		<p _msttexthash="3130117458" _msthash="122">
+			动画调色板是可以更改颜色的调色板，在游戏过程中，此调色板放置在背景调色板的最后一行。动画调色板具有与动画图形类似的参数，动向决定了每个状态的播放顺序：正常从开头重复，而倒序倒着播放到开头，延迟是每个状态之间的帧数，状态是状态的总数，您还可以编辑每个状态的颜色。
+		</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="123">返回页首</a>)</span>
+
+		<h2 id="sprite-editor" _msttexthash="17647578" _msthash="124">精灵编辑器</h2>
+		<p _msttexthash="2647965125" _msthash="125">
+			精灵编辑器用于编辑精灵/敌人的各个方面。有两种类型的精灵：主和附属。主精灵是放置在房间中的精灵，附属精灵是只能由主精灵创建的精灵。这些包括具有多个部位的敌人的身体部位，以及敌人可能制造的任何投射物。附属精灵在融合中不会掉落任何东西。
+		</p>
+		<p _msttexthash="6503730454" _msthash="126">
+			在“数据”部分，你可以修改精灵的生命值和对萨姆斯造成的伤害，如果精灵不是敌人，您可以忽略此部分。“装甲减免”仅适用于融合，百分比是指萨姆斯在防护服和重力服中受到的伤害。例如，如果敌人造成10点伤害，其防护服减少为“60%和30%”，那么萨姆斯在融合服中将受到10点伤害，在防护服中受到6点伤害，在重力服中受到3点伤害。在零点任务中，防护服受到原始伤害的 80% 伤害，重力服受到 70% 伤害，两者合计 50%。</p>
+		<p _msttexthash="6160976471" _msthash="127">
+			在“掉落率”部分，您可以更改获得某些掉落的概率。在融合中，有三种不同类型的 X 掉落，而在零点任务中，有五种不同类型的掉落（或不掉落）。所有概率的总和必须为 0x400（十进制为 1024）。例如，如果您希望敌人在 25% 的时间内不掉落任何能量球，在 75% 的时间内不掉落少量能量球，则可以将“不掉落”设置为 0x100，将“小能量球”设置为 0x300，其余设置为 0，对于非敌人精灵，您可以忽略此部分。</p>
+		<p _msttexthash="4078387885" _msthash="128">
+			在“弱点”部分，您可以更改武器对精灵的作用。它应该是不言自明的，但有几件事需要指出，如果敌人受到光束和炸弹的作用，那么它也将受到蓄光束的作用（您不必选择该选项）；但是，无论您决定使用光束和炸弹，您仍然必须选择敌人是否受到重磅炸弹的作用；如果敌人受到导弹的作用，那么它也将受到超级导弹的作用。
+		</p>
+		<p _msttexthash="3498644162" _msthash="129">在“图形”部分，您可以编辑精灵的图形偏移和调色板偏移。您也可以单击其中一个“编辑”按钮将您带到<a href="#graphics-editor" _istranslated="1">图形编辑器</a>或<a href="#palette-editor" _istranslated="1">调色板编辑器</a>，它们将自动打开并带有正确的偏移量。通常情况下，您不应手动编辑任一偏移量，仅在融合中，您可以编辑精灵使用的图形行数。在零点任务中，这由图形数据的长度自动确定的。</p>
+		<p _msttexthash="269709778" _msthash="130">最后，精灵的 AI 例程偏移量在底部提供，以便您可以使用调试器查看代码。</p>
+		<p _msttexthash="303980508" _msthash="131">注意：精灵 0-F 没有任何图形。这些精灵具有特殊功能，因此最好不要修改它们。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="132">返回页首</a>)</span>
+
+		<h2 id="spriteset-editor" _msttexthash="23351835" _msthash="133">精灵集编辑器</h2>
+		<p _msttexthash="1700528453" _msthash="134">由于 GBA 游戏的 VRAM 限制，精灵图形的空间有限。因此，融合和零点任务使用精灵集，以便为房间内的每个精灵正确分配空间。每个精灵使用 0-8 个图形行。一行对应于 0x400 字节的图形数据和 16 色的调色板。</p>
+		<p _msttexthash="4528496583" _msthash="135">每个精灵集最多可以有 15 个精灵，并有 8 个图形行的空间。选择“添加槽位”将在列表末尾放置一个新槽位，选择“删除槽位”将删除当前选择的槽位。选择槽位后，您可以更改该槽位中显示的精灵或它占用的图形行，有些精灵不占用任何图形行，因为它们使用的图形在每个房间中始终可用（请参阅<a href="技术信息.html#generic-sprite-graphics" _istranslated="1">通用精灵图形</a>）。这些精灵应放置在图形第 8 行中。</p>
+		<p _msttexthash="3656065725" _msthash="136">重要的是，任何两个精灵的图形都不能重叠（除非这两个精灵实际上共用相同的图形）。否则，他们的图形将在游戏中出现问题。许多头目占据了所有 8 个图形行，这就是为什么他们是精灵集中唯一的精灵。您还应该确保没有一个精灵图形超出 8 行的底部。如果检测到这些问题中的任何一个，编辑器将向您发出警告。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="137">返回页首</a>)</span>
+
+		<h2 id="connection-editor" _msttexthash="17751994" _msthash="138">连接编辑器</h2>
+		<p _msttexthash="350461280" _msthash="139">连接编辑器有四个主要用途：编辑区域连接、基于事件的连接、位置名称和舱门锁定事件。</p>
+
+		<h3 id="area-connections" _msttexthash="11903606" _msthash="140">区域连接</h3>
+		<p _msttexthash="3755351184" _msthash="141">
+			为了将门连接到新区域，门的类型必须是“区域连接”（从“编辑门”窗口中），并且必须是区域连接列表的一部分。要添加新的区域连接，只需选择始源区域和门，以及要连接到的区域。它连接到的门可以从“编辑门”窗口中更改。区域连接具有即时过渡（而不是较慢的平移过渡），舱门不能用于区域连接。
+		</p>
+
+		<h3 id="event-based-connections" _msttexthash="23516402" _msthash="142">基于事件的连接</h3>
+		<p _msttexthash="2921636627" _msthash="143">
+			基于事件的连接意味着在给定事件发生后，门将连接到不同的房间。门必须选中“房间载入基于事件”，并且它必须是基于事件的连接列表的一部分。在事件发生之前，门将连接到“编辑门”窗口中的原始门，事件发生后，连接的门将被基于事件的连接列表中提供的新门替换。
+		</p>
+		<p _msttexthash="617216717" _msthash="144">门不能既是区域连接又是基于事件的连接，只有区域连接会生效。换句话说，基于事件的连接只在同一区域的门之间起作用。</p>
+
+		<h3 id="location-names" _msttexthash="11815648" _msthash="145">位置名称</h3>
+		<p _msttexthash="4458540372" _msthash="146">
+			位置名称确定进入某些房间时显示的文本。位置名称分配给特定的房间而不是门，但是，只有在进入选中了“显示位置名称”的门时，才会显示文本。请务必注意，显示位置名称实际上占用了精灵集中的图形行。您可以通过在融合中使用精灵0x1D和在零点任务中使用0x74来显式为显示指定图形行。如果未分配此精灵，则显示将默认使用底部图形行。</p>
+
+		<h3 id="hatch-lock-events" _msttexthash="18806489" _msthash="147">舱门锁定事件</h3>
+		<p _msttexthash="9695824632" _msthash="148">舱门可以在进入房间时根据已触发的事件锁定。对于融合，由于事件是线性的，因此您选择的舱门只会在您选择的事件上（而不是之前或之后）锁定。对于零点任务，您可以选择在触发事件之前还是之后锁定舱门。要获取特定房间的舱门编号，请在主窗口中转到该房间，选择对象编辑模式，然后将鼠标悬停在每扇门上。如果门是可以锁定的有效舱门，则编号将显示在工具提示的最后一行。对于融合，只有“舱门（能锁定）”类型的门才能工作。对于零点任务，“开放的舱门”和“闭合的舱门”都可以使用。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="149">返回页首</a>)</span>
+
+		<h2 id="minimap-editor" _msttexthash="20007286" _msthash="150">地图编辑器</h2>
+		<p _msttexthash="10484720454" _msthash="151">地图编辑器用于编辑暂停屏幕上和游戏过程中右上角显示的地图。在融合中，有两种类型的地图块：普通地图块和隐藏地图块。下载区域地图时将显示普通地图块，隐藏的地图块只有在探索完该地图块后才会显示，您可以查看下载的地图和已探索的地图以查看差异。在零点任务中，还有其他类型的地图块：初始、高温和隐藏高温。首次进入区域时，初始地图块将位于地图上，而无需下载地图数据。高温地图块和隐藏高温地图块与普通地图块和隐藏地图块相同，只是它们在地图上显示为橙色。还有一个额外的查看选项，用于查看初始地图。
+		</p>
+		<p _msttexthash="1169880036" _msthash="152">
+			在选择地图块之前，可以选择一个调色板，以便更轻松地选择地图块。选择地图块后，可以更改类型并水平或垂直翻转。您也可以通过右键单击地图上的现有地图块来选择该地图块。</p>
+		<p _msttexthash="12814561539" _msthash="153">修改地图时，需要记住一些事项。每个房间的地图坐标都可以使用<a href="#header-editor" _istranslated="1">头编辑器</a>进行更改，坐标决定了房间左上角在地图上的位置。包含物品的地图块成对出现，第一个地图块用于尚未获取物品的情况，第二个地图块用于获取物品后的情况。每当获取物品时，当前地图块的编号都会递增 1，因此第二个地图块必须紧跟在第一个地图块之后。这也意味着您不应在同一地图块中放置多个物品（除非您在前两个图块之后添加相应的附加地图块）。您可以在同一个房间中拥有多个物品，但应将它们间隔开，以便每个物品都占据自己的地图块。您可以通过在主窗口中选择“视图&gt;屏幕边线”来查看房间的地图块边界。
+		</p>
+		<p _msttexthash="2843863061" _msthash="154">如有必要，您可以添加新的地图块。为此，请打开地图编辑器，单击“编辑图形”，然后导出为原始文件。使用十六进制编辑器使文件为 16KB（0x4000 字节）。导入修改后的文件，然后应用“添加地图块”补丁，当您打开地图编辑器时，它将显示已添加的额外行。</p>
+		<p _msttexthash="778944842" _msthash="155">您可以使用键盘快捷键“G”载入光标下房间，仅当光标的坐标与房间标题（通常是房间的左上角）中的坐标匹配时才有效。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="156">返回页首</a>)</span>
+
+		<h2 id="text-editor" _msttexthash="16859557" _msthash="157">文本编辑器</h2>
+		<p _msttexthash="9820938894" _msthash="158">
+			文本编辑器用于编辑每个游戏中不同类型的文本。在融合中，有六种不同的类型：“指挥”具有所有的计算机对话；“暂停屏幕”具有您可以从暂停屏幕查看的目标；“独白”包含了萨姆斯从介绍、乘坐电梯和游戏结束的所有独白；“定位”具有进入门时可以显示的所有位置名称；“信息”包含可以在屏幕中间显示的所有信息；“文件屏幕”包含文件选择屏幕和选项屏幕中的文本。在零点任务中，还有五种不同的类型：“故事”包含介绍和游戏过程中所有与故事相关的文本；“能力说明”显示状态屏幕上显示的所有能力说明；“定位”、“消息”和“文件屏幕”与融合相同。</p>
+		<p _msttexthash="599735396" _msthash="159">有几个控制字符具有不同的用途。融合和零点任务有几个相同的控制字符，尽管每个游戏都有一些独特的字符。</p>
+		<table>
+			<tbody>
+				<tr>
+					<th _msttexthash="3991715" _msthash="160">共用</th>
+					<th _msttexthash="5395039" _msthash="161">融合</th>
+					<th _msttexthash="8163883" _msthash="162">零点任务</th>
+				</tr>
+				<tr>
+					<td _msttexthash="6748703" _msthash="163">[NEWLINE]</td>
+					<td _msttexthash="6880770" _msthash="164">[DELAY=X]</td>
+					<td _msttexthash="329550" _msthash="165">[Select_button_1]</td>
+				</tr>
+				<tr>
+					<td _msttexthash="8013473" _msthash="166">[COLOR=X]</td>
+					<td _msttexthash="6434415" _msthash="167">[MUSIC=X]</td>
+					<td _msttexthash="329836" _msthash="168">[Select_button_2]</td>
+				</tr>
+				<tr>
+					<td _msttexthash="8938644" _msthash="169">[/COLOR]</td>
+					<td _msttexthash="5984927" _msthash="170">[ARROW]</td>
+					<td _msttexthash="330122" _msthash="171">[Select_button_3]</td>
+				</tr>
+				<tr>
+					<td _msttexthash="7737574" _msthash="172">[INDENT=X]</td>
+					<td _msttexthash="9509422" _msthash="173">[NEXT]</td>
+					<td _msttexthash="330408" _msthash="174">[Select_button_4]</td>
+				</tr>
+				<tr>
+					<td _msttexthash="2739698" _msthash="175">[YES]</td>
+					<td _msttexthash="6302582" _msthash="176">[TARGET]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="2259530" _msthash="177">[NO]</td>
+					<td _msttexthash="6736535" _msthash="178">[OBJECTIVE]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="316082" _msthash="179">[Up_button_left]</td>
+					<td _msttexthash="4968210" _msthash="180">[ADAM]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="349843" _msthash="181">[Up_button_right]</td>
+					<td _msttexthash="10586472" _msthash="182">[SAMUS]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="381225" _msthash="183">[Down_button_left]</td>
+					<td _msttexthash="6997406" _msthash="184">[FEDERATION]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="417976" _msthash="185">[Down_button_right]</td>
+					<td _msttexthash="152048" _msthash="186">[SAMUS_FACE]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="379535" _msthash="187">[Left_button_left]</td>
+					<td _msttexthash="129402" _msthash="188">[SA-X_FACE]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="416286" _msthash="189">[Left_button_right]</td>
+					<td _msttexthash="160264" _msthash="190">[POPUP_OPEN]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="415051" _msthash="191">[Right_button_left]</td>
+					<td _msttexthash="177840" _msthash="192">[POPUP_CLOSE]</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="453297" _msthash="193">[Right_button_right]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="282984" _msthash="194">[A_button_left]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="315250" _msthash="195">[A_button_right]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="283088" _msthash="196">[B_button_left]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="315354" _msthash="197">[B_button_right]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="284128" _msthash="198">[L_button_left]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="316394" _msthash="199">[L_button_right]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="284752" _msthash="200">[R_button_left]</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td _msttexthash="317018" _msthash="201">[R_button_right]</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<p _msttexthash="1952129179" _msthash="202">
+			学习这些字符的最好方法是观察它们在现有文本中的使用方式。某些控制字符仅适用于某些类型的文本，特别是，大多数融合独有的字符（以及颜色）仅适用于指挥或独白文本，最好在游戏中测试这些字符以确保它们有效。</p>
+		<p _msttexthash="1625516945" _msthash="203">还有另外两种特殊的符号。若要使用十六进制值编写字符，请键入 [\xHHHH]，其中 HHHH 是十六进制数。此外，还可以使用反斜杠“\”作为转义字符。唯一需要反斜杠的字符是方括号'\['、'\]'和反斜杠本身'\\'。</p>
+		<p _msttexthash="2580490731" _msthash="204">文本编辑器支持其他语言，包括常见的欧洲语言（带有各种重音字符）和日语（平假名、片假名和大约 900	个汉字）。目前，编辑英语以外的语言是没有意义的，因为 MAGE 仅支持北美版本（仅使用英语）。但是，如果需要，您可以强制游戏使用另一种语言。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="205">返回页首</a>)</span>
+
+		<h2 id="demo-editor" _msttexthash="17562740" _msthash="206">演示编辑器</h2>
+		<p _msttexthash="480115285" _msthash="207">演示编辑器可让您编辑在标题屏幕上等待后播放的演示。演示由两种类型的数据组成：控制器输入和 RAM 值。</p>
+		<p _msttexthash="3212703390" _msthash="208">
+			演示编辑器左侧的表格显示了为演示的每一帧按下的按钮。要修改现有输入，可以选择任意数量的输入并在文本框中键入相应的字符。下表显示了每种输入对应的字符，无效字符将被忽略。您可以使用右键单击菜单或使用相应的快捷键插入或删除任意数量的输入。同样，您可以剪切、复制和粘贴输入。
+		</p>
+		<p _msttexthash="2850902951" _msthash="209">
+			控制器输入作为两个单独的列表存储在ROM中：一个包含所有独特的控制器输入，另一个包含每个输入的持续时间。这比直接存储输入更节省空间，因为它们中的大多数都保存多个帧。这两款游戏都有不超过 253	个唯一输入的自我限制，但这对于制作演示来说应该绰绰有余。</p>
+		<table>
+			<tbody>
+				<tr>
+					<th _msttexthash="5511753" _msthash="210">输入</th>
+					<th _msttexthash="5406557" _msthash="211">字符</th>
+				</tr>
+				<tr>
+					<td _msttexthash="3898128" _msthash="212">A</td>
+					<td _msttexthash="3898128" _msthash="213">A</td>
+				</tr>
+				<tr>
+					<td _msttexthash="6006" _msthash="214">B</td>
+					<td _msttexthash="6006" _msthash="215">B</td>
+				</tr>
+				<tr>
+					<td _msttexthash="5988827" _msthash="216">Select</td>
+					<td _msttexthash="10465" _msthash="217">s</td>
+				</tr>
+				<tr>
+					<td _msttexthash="4603768" _msthash="218">Start</td>
+					<td _msttexthash="7553" _msthash="219">S</td>
+				</tr>
+				<tr>
+					<td _msttexthash="1955681" _msthash="220">Right</td>
+					<td>&gt;</td>
+				</tr>
+				<tr>
+					<td _msttexthash="2187458" _msthash="221">Left</td>
+					<td>&lt;</td>
+				</tr>
+				<tr>
+					<td _msttexthash="4036123" _msthash="222">Up</td>
+					<td>^</td>
+				</tr>
+				<tr>
+					<td _msttexthash="1818089" _msthash="223">Down</td>
+					<td _msttexthash="10738" _msthash="224">v</td>
+				</tr>
+				<tr>
+					<td _msttexthash="7462" _msthash="225">R</td>
+					<td _msttexthash="7462" _msthash="226">R</td>
+				</tr>
+				<tr>
+					<td _msttexthash="6916" _msthash="227">L</td>
+					<td _msttexthash="6916" _msthash="228">L</td>
+				</tr>
+			</tbody>
+		</table>
+		<p _msttexthash="1737886683" _msthash="229">演示编辑器的右侧显示演示的 RAM 值。这些值用于在演示开始时初始化特定的 RAM 值，最重要的值确定萨姆斯的起始位置和她的装备。要确定萨姆斯开始的房间，请将“当前门”更改为您想要的房间中的一扇门。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="230">返回页首</a>)</span>
+
+		<h2 id="physics-editor" _msttexthash="17501835" _msthash="231">物理编辑器</h2>
+		<p _msttexthash="7768998887" _msthash="232">
+			物理编辑器可让您更改与萨姆斯移动相关的各种值。X和Y速度决定了萨姆斯在不同动作中的移动速度；速度上限决定了萨姆斯在涉及加速的动作（例如跑步或下落）时的最高速度；阈值确定何时可以执行特定操作；速度提升阶段决定了萨姆斯在加速之前必须跑多长时间；连跳下落决定了萨姆斯必须以多快的速度下落才能再次进行连跳；变形球反弹决定了萨姆斯在落地时必须以多快的速度下落才能反弹；加速度决定了萨姆斯的速度每帧增加/减少多少。
+		</p>
+		<p _msttexthash="1542767993" _msthash="233">融合和零点任务之间的几个类别是不同的。例如，X 和 Y 加速度在融合中组合在一起，但在零点任务中是分开的。不幸的是，您将不得不在这些限制下工作。物理编辑器无法更改移动代码的工作方式，它仅更改已存在的值。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="234">返回页首</a>)</span>
+
+		<h2 id="weapon-editor" _msttexthash="16549962" _msthash="235">武器编辑器</h2>
+		<p _msttexthash="4163398772" _msthash="236">
+			武器编辑器用于编辑每种武器的各个方面。这个编辑器有一个树状结构，从更通用的武器到更具体的武器。对于光束，您可以编辑它们的伤害、冷却时间（再次射击前的帧数）、限制（屏幕上的弹丸数量）、生成（它与萨姆斯的距离）和速度。导弹有类似的值，只是它们有多个速度值。炸弹也很相似，但它们也有计时器值。
+		</p>
+		<p _msttexthash="1212841058" _msthash="237">你可以通过点击其中一个按钮，打开每种武器的<a href="#graphics-editor" _istranslated="1">图形编辑器</a>或<a href="#palette-editor" _istranslated="1">调色板编辑器</a>。对于融合，每种武器都有自己的图形和调色板。对于零点任务，导弹和炸弹是大量图形的一部分。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="238">返回页首</a>)</span>
+
+		<h2 id="room-options" _msttexthash="13886964" _msthash="239">房间选项</h2>
+		<p _msttexthash="541736793" _msthash="240">“房间选项”窗口提供了几个简单的功能。第一个功能允许您清除背景或砖块属性，这为您选择的背景的每个块提供值 0。</p>
+		<p _msttexthash="4000254011" _msthash="241">您还可以通过更改房间的宽度或高度（以块为单位）来调整房间的大小。由于 RAM 限制，宽度乘高度必须小于 0x1800。您可以将宽度或高度设置为任何单个字节值（除了 0），但理想情况下，您应该将其设置为屏幕数为整数倍，这决定了地图上房间的大小。基于 RAM 限制，房间最大面积可能的值（以屏幕为单位）为	1x25、2x17、3x12、4x9、5x7、6x6、7x5、9x4、11x3 和 16x2。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="242">返回页首</a>)</span>
+
+		<h2 id="test-room" _msttexthash="9013797" _msthash="243">测试房间</h2>
+		<p _msttexthash="6897245368" _msthash="244">
+			MAGE 最方便的功能之一是通过直接加载到房间中来测试修改情况。当您测试房间时，MAGE 将创建一个临时 ROM，该 ROM 使用保存的模拟器打开，如果未设置模拟器路径，MAGE 将提示您选择要使用的模拟器。如果您从菜单条或工具栏使用此功能，则必须在房间内输入起始位置。但是，您可以直接从主窗口选择一个位置，方法是右键单击（在对象编辑模式下）并选择“在此测试房间”，或者将鼠标悬停在该位置上并按“T”。
+		</p>
+		<p _msttexthash="1827147088" _msthash="245">默认情况下，萨姆斯具有所有能力。在融合中，启用了调试菜单，在零点任务中，启用了能力开关。不幸的是，调试菜单已从零点任务中删除。此功能允许非常快速和方便的测试，因此请充分利用它。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="246">返回页首</a>)</span>
+
+		<h2 id="import" _msttexthash="5584657" _msthash="247">导入</h2>
+		<p _msttexthash="147067661" _msthash="248">可以在“工具&gt;导入”下找到数据和图像的各种导入选项。</p>
+		<p _msttexthash="4048709509" _msthash="249">导入数据时，您可以选择保留现有数据。这意味着，如果数据被其他地方使用，则它不会被覆盖，新数据将被写入其他地方。例如，在融合中，每个区的房间 0 共用相同的 RLE 图形。如果在未选中此选项的情况下导入贴图集，它将替换每个房间中的图形。如果选中，它只会替换所选贴图集的图形（而其他贴图集保持不变）。</p>
+		<h3 id="import-tileset" _msttexthash="8867872" _msthash="250">贴图集</h3>
+		<p _msttexthash="1519035869" _msthash="251">使用此选项可导入使用 MAGE 导出的贴图集。您可以替换原始贴图集或选择其他贴图集。如果要从其他游戏导入贴图集，则可以选择使用当前游戏的通用图块。建议这样做，否则舱门和可破坏砖块会弄乱。</p>
+		<h3 id="import-background" _msttexthash="5727644" _msthash="252">背景</h3>
+		<p _msttexthash="2339452323" _msthash="253">使用此选项可导入使用 MAGE 导出的背景。您可以导入 RLE 压缩背景和 LZ77 压缩背景。选择文件后，您可以选择要替换的背景，即使背景不存在或具有不同的压缩（仅限 BG0）。如果导入的背景与当前房间的大小不同，则会自动调整大小以适应。</p>
+		<h3 id="import-room" _msttexthash="6281093" _msthash="254">房间</h3>
+		<p _msttexthash="5498587302" _msthash="255">使用此选项可导入使用 MAGE 导出的房间。您可以选择要导入的数据，如果要从其他游戏导入房间，则不应导入精灵或门。这是因为精灵显然会有所不同，并且门可能会与区域内已经存在的门冲突。您还应该使用该选项来转换砖块属性，这会将原始游戏中的每个砖块属性值转换为当前游戏中的等效值。但是，请记住每个游戏都有独特的砖块属性值，因此其中一些没有直接等效项。
+		</p>
+		<p _msttexthash="183048554" _msthash="256">注意：导入房间有点实验性，可能有问题，请谨慎使用。</p>
+		<h3 id="import-tileset-image" _msttexthash="23659415" _msthash="257">从图片导入贴图集</h3>
+		<p _msttexthash="9683027965" _msthash="258">从图片导入贴图集的功能是一项强大的功能，但必须遵守几个要求：图片必须为每像素 32 位，这意味着它包含透明度；图片的宽度还必须为 256，高度可被 16 整除（最大高度为 1024）；图片中的每个 8x8 图块必须具有 15 种或更少的唯一颜色；图片包含的唯一调色板（每个调色板 15 种颜色）不能超过最大行数，您可以自己选择行，也可以让 MAGE 自动检测要使用的行；最后，由于 VRAM 中的空间有限，图片不能包含太多独特的 8x8 图块。如果不满足这些要求中的任何一个，编辑器将给出导致问题的错误。</p>
+		<p _msttexthash="4237467390" _msthash="259">考虑到所有这些要求，下面是创建自己的贴图集的一些提示：使用现有的贴图集图像作为基础，这将确保图像为 32bbp；此外，请确保保留在前五行（舱门和可破坏砖块）；事先确定您的调色板，确保每个 8x8 图块仅使用一个调色板；尝试重复使用尽可能多的 8x8 图块，如果水平翻转、垂直翻转或分配了不同的调色板，则可以重复使用 8x8 图块。</p>
+		<h3 id="import-lz77-bg-image" _msttexthash="15578251" _msthash="260">从图片导入LZ77背景</h3>
+		<p _msttexthash="8133152001" _msthash="261">您可以通过导入图片来创建新的 LZ77 背景（BG0 或 BG3），但必须遵守一些要求：图片的尺寸必须为 256x256、512x256 或 256x512；图像中的每个 8x8 图块必须具有 15 种或更少的唯一颜色；图像包含的唯一调色板（每个调色板 15 种颜色）不能超过最大行数，您可以自己选择行，也可以让 MAGE 自动检测要使用的行；最后，由于 VRAM 中的空间有限，图像不能包含太多独特的 8x8 图块。如果不满足这些要求中的任何一个，编辑器将给出导致问题的错误。</p>
+		<p _msttexthash="966370145" _msthash="262">选中“添加到现有图形”选项意味着将保留该贴图集现有的 LZ77 图形，并将新背景的图形添加到其中。如果房间只有一个 LZ77 背景，则可以取消选中此选项。</p>
+		<p _msttexthash="2524663115" _msthash="263">此功能不允许您导入所需的任何照片，因为即使您减少了照片中的颜色数量，也很可能有太多独特的 8x8 图块。如果可以确保重复某些 8x8 图块，那么缩小到15种颜色的256x256照片可能会起作用。但是，此功能主要用于手动创建的图片，或从其他GBA游戏获取的背景图片。</p>
+		<h3 id="import-ending" _msttexthash="14169805" _msthash="264">结局图</h3>
+		<p _msttexthash="5180766006" _msthash="265">此功能如字面所示可让您替换游戏结束时使用的图片。图片必须为 240x416。选择结局并打开图片后，必须对其进行转换，以便将其存储在游戏中。转换涉及一个称为颜色量化的过程，该过程在尝试保持质量的同时减少图像中的颜色数量。因此，具有多种颜色或渐变的图片可能会变得更糟。此过程涉及一些随机性，因此您应该重复转换以找到看起来最好的结果。
+		</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="266">返回页首</a>)</span>
+
+		<h2 id="export" _msttexthash="4143126" _msthash="267">导出</h2>
+		<p _msttexthash="134135365" _msthash="268">数据和图像的各种导出选项可以在“工具&gt;导出”下找到。</p>
+		<h3 id="export-tileset" _msttexthash="8867872" _msthash="269">贴图集</h3>
+		<p _msttexthash="2213343639" _msthash="270">此选项将导出与所选贴图集关联的所有数据，这包括 RLE 图形、调色板、LZ77 图形和贴图块表，还包括动画贴图集编号和动画调色板编号，但不包括实际数据。这将以只有 MAGE 才能使用的自定义格式导出文件，您可以稍后将贴图集导入融合或零点任务。</p>
+		<h3 id="export-background" _msttexthash="5727644" _msthash="271">背景</h3>
+		<p _msttexthash="612974778" _msthash="272">此选项将导出您选择的背景的原始数据，数据不包括任何图形信息。因此，在导入和导出背景时，应使用相同的贴图集。</p>
+		<h3 id="export-room" _msttexthash="6281093" _msthash="273">房间</h3>
+		<p _msttexthash="990909530" _msthash="274">此选项将导出与当前房间关联的所有数据，包括背景、精灵、门和滚动。这将以只有 MAGE 才能使用的自定义格式导出文件，稍后可以将房间导入融合或零点任务。</p>
+		<h3 id="export-image" _msttexthash="4178018" _msthash="275">图片</h3>
+		<p _msttexthash="2984489339" _msthash="276">您可以导出四种不同类型的图像：贴图集、BG0、BG3 和房间。选择贴图集将导出主窗口左侧的贴图集图像，图片将包含透明度；选择 BG0 或 BG3 将导出用于创建背景的图像；选择房间将导出当前房间的图像，包括您选择的任何查看选项，请事先设置这些内容以在图片中包含您想要的内容。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="277">返回页首</a>)</span>
+
+		<h2 id="compression" _msttexthash="5331729" _msthash="278">压缩</h2>
+		<p _msttexthash="1459678831" _msthash="279">在“工具&gt;压缩”下，有使用 LZ77 压缩压缩或解压缩二进制文件的选项。如果您在 MAGE 中进行所有编辑，这可能没有用，但如果您使用十六进制编辑器手动插入数据，这可能会有所帮助。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="280">返回页首</a>)</span>
+
+		<h2 id="minimap-tile-builder" _msttexthash="26109668" _msthash="281">地图块生成器</h2>
+		<p _msttexthash="3280375410" _msthash="282">
+			地图块生成器是设计新的地图块的便捷方法，这比使用图形编辑器更可取，因为地图调色板中具有重复的颜色。换句话说，地图块构建器将分配正确的颜色，确保地图块在未探索和探索时正确显示。但是，您应该检查所需的地图块是否已存在。请记住，您可以水平和垂直翻转地图块。
+		</p>
+		<p _msttexthash="1428637912" _msthash="283">
+			您可以选择在地图块的四个边上显示的内容，例如墙壁和舱门。您还可以选择出现在中间的内容，例如（未）获得的包和记录室。当您点击应用时，它将覆盖当前选定地图块的图形。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="284">返回页首</a>)</span>
+
+		<h2 id="add" _msttexthash="1924832" _msthash="285">添加</h2>
+		<p _msttexthash="2602846818" _msthash="286">
+			此工具允许您添加新数据，包括背景、房间精灵、房间、贴图集、精灵集和动画贴图集/图形/调色板。对于每种数据，您可以选择是希望数据为空白还是某些现有数据的副本。副本不会与原始样本共用指针，因此您可以安全地编辑新副本，而不必担心弄乱原始样本。
+		</p>
+		<p _msttexthash="579106866" _msthash="287">在使用此工具之前，您应该使用/修改所有现有数据。每次只能添加一个新内容，这应该会促使您仅在需要时才添加新数据。</p>
+		<p _msttexthash="3300679980" _msthash="288">
+			对于某些类型添加的数据，MAGE 需要某种方法来跟踪它们的数量（房间，贴图集等）。因此，当您添加此类数据并保存 ROM 时，MAGE 将创建一个与您的 ROM 同名的项目文件，以便跟踪添加的数据。只要它们具有相同的名称，该文件就会自动与您的 ROM 一起打开，因此您不应修改项目文件名或其内容。</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="289">返回页首</a>)</span>
+
+		<h2 id="patches" _msttexthash="5254223" _msthash="290">补丁</h2>
+		<p _msttexthash="535487719" _msthash="291">您可以在“工具”菜单下找到补丁列表，它还将显示已应用的补丁。如果您想提交补丁，请在 MAGE 主题贴中发帖。</p>
+		<h3 id="Fusion-patches" _msttexthash="12076298" _msthash="292">融合补丁</h3>
+		<p>
+			<font _mstmutation="1" _msttexthash="647755095" _msthash="293"><b _mstmutation="1" _istranslated="1">调试菜单</b> - 在暂停时用调试菜单替换状态屏幕。允许您修改萨姆斯的装备、下载的地图、解锁的门和当前事件，对测试非常有用。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="324733279" _msthash="294"><b _mstmutation="1" _istranslated="1">跳过介绍过场动画</b> - 跳过开始新游戏时的长介绍，直接进入飞船中的第一个对话。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="348677641" _msthash="295"><b _mstmutation="1" _istranslated="1">从扩充包中获取导弹</b> - 让您能够在拿起第一个导弹扩充包时使用导弹，而无需下载导弹数据。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="474842576" _msthash="296"><b _mstmutation="1" _istranslated="1">从扩充包中获取重磅炸弹</b> - 让您能够在拿起第一个重磅炸弹扩充包时使用重磅炸弹，而无需下载重磅炸弹数据。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="340017782" _msthash="297"><b _mstmutation="1" _istranslated="1">单墙跳</b> - 允许您像零点任务一样沿单面墙进行蹬墙跳。这消除了正常蹬墙跳的额外水平速度。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="576613024" _msthash="298"><b _mstmutation="1" _istranslated="1">空中炸弹跳</b> - 允许您像零点任务一样在空中进行炸弹跳。要实现无限炸弹跳，请更改<a href="#weapon-editor" _mstmutation="1" _istranslated="1">武器编辑器</a>中的炸弹计时器。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="335201256" _msthash="299"><b _mstmutation="1" _istranslated="1">添加地图块</b> - 增加可用于地图块的图形数量。请参阅<a href="#minimap-editor" _mstmutation="1"
+					_istranslated="1">地图编辑器</a>以获取更多信息。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="74710441" _msthash="300"><b _mstmutation="1" _istranslated="1">无地图</b>
+				- 将地图从屏幕右上角中删除。</font>
+		</p>
+		<h3 id="zero-mission-patches" _msttexthash="15489240" _msthash="301">零点任务补丁</h3>
+		<p>
+			<font _mstmutation="1" _msttexthash="231573225" _msthash="302"><b _mstmutation="1" _istranslated="1">能力开关</b> - 启用了一个调试功能，允许您从装备屏幕打开和关闭能力。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="348975198" _msthash="303"><b _mstmutation="1" _istranslated="1">添加电梯（保留过场动画）</b> - 允许您在保留现有电梯过场动画的同时向游戏添加新电梯。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="328857724" _msthash="304"><b _mstmutation="1" _istranslated="1">添加电梯（删除过场动画）</b> - 允许您向游戏添加新电梯并删除现有的电梯过场动画。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="335201256" _msthash="305"><b _mstmutation="1" _istranslated="1">添加地图块</b> - 增加可用于地图块的图形数量。请参阅<a href="#minimap-editor" _mstmutation="1" _istranslated="1">地图编辑器</a>以获取更多信息。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="74710441" _msthash="306"><b _mstmutation="1" _istranslated="1">无地图</b> - 将地图从屏幕右上角中删除。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="242119592" _msthash="307"><b _mstmutation="1" _istranslated="1">禁用鸟人雕像提示 </b> - 修改鸟人雕像，使其始终坐着并且不显示提示。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="169724334" _msthash="308"><b _mstmutation="1" _istranslated="1">删除萨姆斯特写</b> - 跳过介绍中的萨姆斯特写镜头。</font>
+		</p>
+
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="309">返回页首</a>)</span>
+
+		<h2 id="credits" _msttexthash="4313010" _msthash="310">感谢</h2>
+		<p>
+			<font _mstmutation="1" _msttexthash="140938655" _msthash="311"><b _mstmutation="1" _istranslated="1">P.JBoy</b> 编译了与游戏相关的大量有用信息。</font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="109832229" _msthash="312"><b _mstmutation="1" _istranslated="1">Martin	Korth</b> 为他不可或缺的调试器 no$gba：<a href="http://problemkaputt.de/gba.htm" _mstmutation="1" _istranslated="1">http://problemkaputt.de/gba.htm</a></font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="136390553" _msthash="313"><b _mstmutation="1" _istranslated="1">Maël Hörz</b> 为他非常有用的十六进制编辑器 HxD：<a href="https://mh-nexus.de/en/hxd/" _mstmutation="1" _istranslated="1">https://mh-nexus.de/en/hxd/</a></font>
+		</p>
+		<p>
+			<font _mstmutation="1" _msttexthash="83731687" _msthash="314"><b _mstmutation="1" _istranslated="1">马克·詹姆斯</b>为他的Silk图标集:<a href="http://www.famfamfam.com/lab/icons/silk/" 	_mstmutation="1" _istranslated="1">http://www.famfamfam.com/lab/icons/silk/</a></font>
+		</p>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="315">返回页首</a>)</span>
+
+		<h2 id="version-history" _msttexthash="10704538" _msthash="316">版本历史</h2>
+
+		<p><b _msttexthash="145665" _msthash="317">1.4.0 - 2023-01-22</b></p>
+		<ul>
+			<li _msttexthash="55167931" _msthash="318">为融合添加了文件屏幕文本</li>
+			<li _msttexthash="69288635" _msthash="319">修复了保存偏移的贴图块表时出现的错误</li>
+			<li _msttexthash="31346731" _msthash="320">修复了零点任务光束伤害问题</li>
+			<li _msttexthash="82498884" _msthash="321">修复了调色板导入/导出不依赖文件名的问题</li>
+			<li _msttexthash="214237257" _msthash="322">测试 ROM 使用手动设置的模拟器路径，而不是使用系统默认值</li>
+			<li _msttexthash="150569289" _msthash="323">ROM 可以直接用 MAGE 打开（通过命令行或拖放）</li>
+		</ul>
+		<p><b _msttexthash="147160" _msthash="324">1.3.2 - 2018-03-31</b></p>
+		<ul>
+			<li _msttexthash="164344232" _msthash="325">修复了查看房间的第一个或第二个精灵集时的图形问题</li>
+			<li _msttexthash="115821628" _msthash="326">修复了区域中滚动列表可能保存不正确的错误</li>
+		</ul>
+		<p><b _msttexthash="147901" _msthash="327">1.3.1 - 2018-03-16</b></p>
+		<ul>
+			<li _msttexthash="73958287" _msthash="328">修复了精灵集编辑器的图形问题</li>
+			<li _msttexthash="137340606" _msthash="329">修复了无法多次清除房间或调整房间大小的错误</li>
+			<li _msttexthash="168546586" _msthash="330">天花板斜面砖块属性的名称末尾更改为“（空气）”</li>
+		</ul>
+		<p><b _msttexthash="147823" _msthash="331">1.3.0 - 2018-01-27</b></p>
+		<ul>
+			<li _msttexthash="109963607" _msthash="332">修复了连接编辑器可能删除空白行的错误</li>
+			<li _msttexthash="69007159" _msthash="333">向连接编辑器添加了舱门锁定事件</li>
+			<li _msttexthash="115430978" _msthash="334">修复了零点任务中普通光束的调色板偏移不正确问题</li>
+			<li _msttexthash="113071868" _msthash="335">修复了项目文件版本创建时未保存的错误</li>
+			<li _msttexthash="141113258" _msthash="336">将连接编辑器更改为在添加条目之前进行验证</li>
+			<li _msttexthash="70314244" _msthash="337">在门提示中添加了舱门编号</li>
+			<li _msttexthash="370065748" _msthash="338">修复了连接编辑器错误，其中添加区域连接将显示错误的目标房间（有时会失败）</li>
+			<li _msttexthash="166819835" _msthash="339">修复了从地图编辑器加载房间未更新显示位置的问题</li>
+			<li _msttexthash="43075721" _msthash="340">添加了贴图块表的导入/导出功能</li>
+			<li _msttexthash="115578112" _msthash="341">修复了新版本提示与 HTML 文本一起出现的错误</li>
+			<li _msttexthash="39795860" _msthash="342">使用共享 VRAM 绘制精灵</li>
+			<li _msttexthash="228477613" _msthash="343">将“舱门（能锁定）”重命名为“闭合的舱门”（仅限零点任务）</li>
+			<li _msttexthash="238577365" _msthash="344">更改了图形编辑器和贴图块表编辑器，以便在重新指向数据时会显示警告</li>
+		</ul>
+		<p><b _msttexthash="148057" _msthash="345">1.2.0 - 2017-10-29</b></p>
+		<ul>
+			<li _msttexthash="30560790" _msthash="346">添加了演示编辑器</li>
+			<li _msttexthash="57052086" _msthash="347">添加了查看可破坏砖块的选项</li>
+			<li _msttexthash="74676979" _msthash="348">修复了 BG3 可能被解释为 RLE 的错误</li>
+			<li _msttexthash="63368526" _msthash="349">添加了查看砖块属性值的选项</li>
+			<li _msttexthash="205201178" _msthash="350">修复了从偏移量保存贴图块表可能会损坏 ROM 的贴图块表编辑器错误</li>
+			<li _msttexthash="153091666" _msthash="351">修复了贴图块表编辑器中贴图块表偏移量无法更新的错误</li>
+			<li _msttexthash="123298981" _msthash="352">添加了从图片导入时选择单个调色板行的选项</li>
+		</ul>
+		<p><b _msttexthash="147563" _msthash="353">1.1.1 - 2017-07-31</b></p>
+		<ul>
+			<li _msttexthash="170691768" _msthash="354">在地图块生成器中添加了“高温（隐藏）”调色板</li>
+			<li _msttexthash="135506319" _msthash="355">添加了母舰舱门的视图选项（仅限零点任务）</li>
+			<li _msttexthash="119002832" _msthash="356">修复了无法导出背景、房间、精灵集和地图的错误</li>
+			<li _msttexthash="51990094" _msthash="357">在物理编辑器中的合并了重复值</li>
+			<li _msttexthash="39315900" _msthash="358">尽可能在 BG0 下绘制精灵</li>
+		</ul>
+		<p><b _msttexthash="147719" _msthash="359">1.1.0 - 2017-07-23</b></p>
+		<ul>
+			<li _msttexthash="148050916" _msthash="360">修复了保存ROM时涉及当前房间数据的数据管理错误</li>
+			<li _msttexthash="123000384" _msthash="361">修复了贴图集副本的图块表长度不正确的错误</li>
+			<li _msttexthash="30481204" _msthash="362">添加了物理编辑器</li>
+			<li _msttexthash="40633242" _msthash="363">添加了地图块生成器</li>
+			<li _msttexthash="80658227" _msthash="364">为精灵编辑器添加了附属精灵预览</li>
+			<li _msttexthash="139818822" _msthash="365">添加了零点任务补丁：跳过介绍中的萨姆斯特写镜头</li>
+			<li _msttexthash="126186229" _msthash="366">修复了始终选中“可以冻结”的精灵编辑器错误</li>
+			<li _msttexthash="103724218" _msthash="367">更改门编辑以防止将宽度或高度设置为 0</li>
+			<li _msttexthash="112233589" _msthash="368">将调色板编辑器更改为仅覆盖修改的颜色</li>
+			<li _msttexthash="86675004" _msthash="369">修复了房间精灵数据可能损坏的错误</li>
+			<li _msttexthash="121731974" _msthash="370">在应用更改时在编辑器之间添加了更多自动更新</li>
+		</ul>
+		<p><b _msttexthash="146783" _msthash="371">1.0.0 - 2017-06-21</b></p>
+		<ul>
+			<li _msttexthash="57806489" _msthash="372">修复了 LZ77 BG0 未重绘的错误</li>
+			<li _msttexthash="111756398" _msthash="373">更改了房间选项以防止将宽度或高度调整为 0</li>
+			<li _msttexthash="178631934" _msthash="374">添加了添加新数据（房间、贴图集、精灵集等）的工具</li>
+			<li _msttexthash="102344593" _msthash="375">添加了项目文件（用于跟踪添加的数据）</li>
+			<li _msttexthash="78819104" _msthash="376">添加了拖放ROM文件以加载它们的功能</li>
+			<li _msttexthash="93004717" _msthash="377">修复了切换槽位时精灵未完全绘制的问题</li>
+			<li _msttexthash="107375541" _msthash="378">修复了滚动可能移出屏幕并消失的错误</li>
+			<li _msttexthash="204650745" _msthash="379">在地图编辑器中添加了键盘快捷键“G”，以加载光标下的房间</li>
+			<li _msttexthash="196675700" _msthash="380">修复了贴图块表编辑器在 512x256 背景上光标移动受限的错误</li>
+			<li _msttexthash="101620584" _msthash="381">修复了可以编辑下拉列表中的文本的错误</li>
+			<li _msttexthash="125498919" _msthash="382">修复了精灵集编辑器中添加槽位后不更新图形的错误</li>
+			<li _msttexthash="170848639" _msthash="383">修复了精灵集编辑器中删除最后一个槽位时的错误</li>
+			<li _msttexthash="27003873" _msthash="384">将“Level GFX”更名为“RLE GFX”</li>
+			<li _msttexthash="24655371" _msthash="385">将“BG3 GFX”更名为“LZ77 GFX”</li>
+			<li _msttexthash="45421740" _msthash="386">添加了从图片导入 BG0 的功能</li>
+			<li _msttexthash="88235121" _msthash="387">将“从图片导入 BG3”重命名为“从图片导入 LZ77 BG”</li>
+			<li _msttexthash="213494242" _msthash="388">修复了连接编辑器中某些无效的区域/事件连接未被删除的错误</li>
+			<li _msttexthash="118279200" _msthash="389">添加了导出BG0图片的选项（在“工具”下）</li>
+			<li _msttexthash="115124724" _msthash="390">修复了文本编辑器中延迟命令无法解析的错误</li>
+			<li _msttexthash="222433237" _msthash="391">添加了在贴图块表编辑器中移动图块的选项（在“偏移量”选项卡中）</li>
+			<li _msttexthash="129284779" _msthash="392">修复了损坏的房间 0 可能会阻止加载其他房间的错误</li>
+			<li _msttexthash="197480530" _msthash="393">在精灵编辑器中添加编辑精灵图形行的功能（仅限融合）</li>
+			<li _msttexthash="77409449" _msthash="394">编辑房间对象时添加了状态消息</li>
+		</ul>
+		<p><b _msttexthash="148993" _msthash="395">0.9.0 - 2017-04-09</b></p>
+		<ul>
+			<li _msttexthash="88489297" _msthash="396">重新实现ROM数据管理，使其更加强大</li>
+			<li _msttexthash="143350935" _msthash="397">修复了从图片导入时图形编辑器无法正常工作的错误</li>
+			<li _msttexthash="159876236" _msthash="398">修复了更新调色板时图形编辑器不会更新图形的错误</li>
+			<li _msttexthash="74556794" _msthash="399">添加了对新版本 MAGE 的自动检查功能</li>
+			<li _msttexthash="209380249" _msthash="400">添加了 LZ77（解）压缩二进制文件的选项（在“工具”下）</li>
+			<li _msttexthash="67958137" _msthash="401">修复了动画贴图集无法保存的问题</li>
+			<li _msttexthash="77263342" _msthash="402">导入/导出图片时添加了更多像素格式</li>
+			<li _msttexthash="100823268" _msthash="403">更改了精灵集编辑器，不允许添加精灵 0-F</li>
+			<li _msttexthash="28258243" _msthash="404">提高 LZ77 压缩速度</li>
+			<li _msttexthash="70411458" _msthash="405">向贴图块表编辑器中添加了图块编号</li>
+			<li _msttexthash="103098151" _msthash="406">为武器编辑器增加了零点任务蓄力光束伤害</li>
+			<li _msttexthash="88176088" _msthash="407">添加了背景、精灵集、地图的导入/导出功能</li>
+			<li _msttexthash="57322590" _msthash="408">向所有编辑器添加了状态消息</li>
+			<li _msttexthash="58881745" _msthash="409">添加了清除最近文件的选项</li>
+			<li _msttexthash="77059970" _msthash="410">将连接编辑器更改为删除无效连接</li>
+			<li _msttexthash="74893429" _msthash="411">修复了以图片导入贴图集时的错误</li>
+			<li _msttexthash="126575657" _msthash="412">添加了从图片导入时自动选择调色板行的选项</li>
+			<li _msttexthash="179987522" _msthash="413">在贴图块表编辑器和导入贴图集/背景时添加了数据管理选项</li>
+			<li _msttexthash="58371170" _msthash="414">修复了两个零点任务结局的描述</li>
+			<li _msttexthash="97988514" _msthash="415">修改了动画编辑器布局（动画图形）</li>
+			<li _msttexthash="38384086" _msthash="416">为所有 LZ77 BG0 添加了绘图</li>
+			<li _msttexthash="155752324" _msthash="417">重新实现贴图集/房间导入（与以前的版本不兼容）</li>
+		</ul>
+		<p><b _msttexthash="146588" _msthash="418">0.8.1 - 2016-11-03</b></p>
+		<ul>
+			<li _msttexthash="83803759" _msthash="419">修复了调色板导入/导出错误的错误</li>
+			<li _msttexthash="135193487" _msthash="420">添加了两种调色板导入/导出格式（YY-CHR 和原始）</li>
+			<li _msttexthash="164038719" _msthash="421">添加了切换房间动画调色板的选项（在“视图”下）</li>
+			<li _msttexthash="57016089" _msthash="422">添加了禁用工具提示的选项</li>
+			<li _msttexthash="155283752" _msthash="423">修复了手动切换编辑模式的行为与中键单击不同的错误</li>
+			<li _msttexthash="118387490" _msthash="424">修复了选择“在此测试房间”不起作用的错误</li>
+		</ul>
+		<p><b _msttexthash="145613" _msthash="425">0.8.0 - 2016-10-10</b></p>
+		<ul>
+			<li _msttexthash="61295364" _msthash="426">重新实现主窗口图形用户界面</li>
+			<li _msttexthash="45261476" _msthash="427">将“地图”重命名为“房间”</li>
+			<li _msttexthash="62646922" _msthash="428">将砖块属性快捷面板移至“工具”</li>
+			<li _msttexthash="65840983" _msthash="429">在“视图”中添加了剪贴板查看器</li>
+			<li _msttexthash="144390298" _msthash="430">为贴图集查看器添加了工具提示（显示块编号）</li>
+			<li _msttexthash="60221252" _msthash="431">增加了房间查看器的缩放功能</li>
+			<li _msttexthash="177785270" _msthash="432">添加了始终使用所选砖块属性的选项（在“编辑”下）</li>
+			<li _msttexthash="95397068" _msthash="433">修复了在撤消所选砖块属性更改时的错误</li>
+			<li _msttexthash="80094638" _msthash="434">修复了在撤销在空块上的粘贴时的错误</li>
+			<li _msttexthash="78187525" _msthash="435">重新实现地图编辑器并修改了布局</li>
+			<li _msttexthash="172565549" _msthash="436">在地图编辑器中添加更改图块选择器背景颜色的按钮</li>
+			<li _msttexthash="131352715" _msthash="437">为每个游戏添加了允许更多的地图块的补丁</li>
+			<li _msttexthash="208361049" _msthash="438">删除了对基于事件的连接数量的限制（与以前的版本不兼容）</li>
+			<li _msttexthash="16271281" _msthash="439">BG3 始终绘制</li>
+			<li _msttexthash="104057928" _msthash="440">重新实现导入结局图并删除“减少块效应”选项</li>
+			<li _msttexthash="145365064" _msthash="441">添加了键盘快捷键“W”、“A”、“S”、“D”用以调整门的大小</li>
+			<li _msttexthash="84391840" _msthash="442">修复了当重做移除房间对象时的错误</li>
+			<li _msttexthash="102410594" _msthash="443">添加了禁用了鸟人雕像提示的零点任务补丁</li>
+			<li _msttexthash="57784012" _msthash="444">添加了屏幕边线的视图选项</li>
+			<li _msttexthash="38249913" _msthash="445">添加了贴图块表编辑器</li>
+		</ul>
+		<p><b _msttexthash="147524" _msthash="446">0.7.0 - 2016-08-11</b></p>
+		<ul>
+			<li _msttexthash="121486742" _msthash="447">添加了键盘快捷键“G”用于载入门连接的房间</li>
+			<li _msttexthash="102838190" _msthash="448">添加了两个允许添加新电梯的零点任务补丁</li>
+			<li _msttexthash="73950942" _msthash="449">为精灵掉落概率添加了自动检查器</li>
+			<li _msttexthash="53646671" _msthash="450">为零点任务添加了更多文本类型</li>
+			<li _msttexthash="49537267" _msthash="451">重命名文本类型以减少混淆</li>
+			<li _msttexthash="58414252" _msthash="452">向连接编辑器添加了位置名称</li>
+			<li _msttexthash="196943877" _msthash="453">将文本编辑器字体更改为 Courier New（以获得更好的兼容性）</li>
+			<li _msttexthash="64033112" _msthash="454">修复了调整房间大小时的错误</li>
+		</ul>
+		<p><b _msttexthash="149617" _msthash="455">0.6.1 - 2016-06-29</b></p>
+		<ul>
+			<li _msttexthash="70199935" _msthash="456">对LZ77压缩增加了水和岩浆的查看</li>
+			<li _msttexthash="102172967" _msthash="457">修复了基于事件的连接不起作用的问题</li>
+			<li _msttexthash="60732321" _msthash="458">基于事件的最大连接数从 64 增加到 256</li>
+		</ul>
+		<p><b _msttexthash="148044" _msthash="459">0.6.0 - 2016-06-24</b></p>
+		<ul>
+			<li _msttexthash="29468621" _msthash="460">添加了动画编辑器</li>
+			<li _msttexthash="137547098" _msthash="461">修复了加载精灵集 0 时精灵集编辑器崩溃的问题</li>
+			<li _msttexthash="61303515" _msthash="462">修复了保存区域连接时的错误</li>
+			<li _msttexthash="82520217" _msthash="463">修复了保存基于事件的连接时的错误</li>
+			<li _msttexthash="152205092" _msthash="464">修复了清除砖块属性时砖块属性查看器不更新的问题</li>
+		</ul>
+		<p><b _msttexthash="147069" _msthash="465">0.5.0 - 2016-06-21</b></p>
+		<ul>
+			<li _msttexthash="11160071" _msthash="466">初始版本</li>
+		</ul>
+		<span class="smallLink">(<a href="#top" _msttexthash="15341105" _msthash="467">返回页首</a>)</span>
+
+	</div>
+
+
+</body>
+
+</html>
