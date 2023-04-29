@@ -341,7 +341,7 @@
     <value>贴图块：</value>
   </data>
   <data name="formMain_DocFileText" xml:space="preserve">
-    <value>文档.html</value>
+    <value>zh-CN\文档.html</value>
   </data>
   <data name="formMain_DocNotExistText" xml:space="preserve">
     <value>找不到文档文件。</value>
