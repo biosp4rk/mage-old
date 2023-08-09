@@ -71,6 +71,8 @@
     <Compile Include="Data\Demo.cs" />
     <Compile Include="Editor.cs" />
     <Compile Include="Data\OAM.cs" />
+    <Compile Include="Theming\ColorTheme.cs" />
+    <Compile Include="Theming\ThemeSwitcher.cs" />
     <Compile Include="Utility\Add.cs" />
     <Compile Include="ByteStream.cs" />
     <Compile Include="Data\AnimPalette.cs" />

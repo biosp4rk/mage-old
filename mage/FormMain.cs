@@ -3,6 +3,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using mage.Properties;
+using mage.Theming;
 
 namespace mage
 {
@@ -71,6 +72,14 @@ namespace mage
         public FormMain()
         {
             InitializeComponent();
+
+            ColorTheme DarkMode = new ColorTheme()
+            {
+                BackColor = Color.FromArgb(0x1e, 0x1e, 0x1e),
+                TextColor = Color.FromArgb(0xdc, 0xdc, 0xdc),
+            };
+            ThemeSwitcher.ChangeTheme(DarkMode, Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             DisplayRecentFiles();
             InitializeSettings();
