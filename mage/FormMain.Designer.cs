@@ -238,6 +238,7 @@
             this.toolStrip_tileBuilder = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_add = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_patches = new System.Windows.Forms.ToolStripButton();
+            this.comboBox_area1 = new mage.Theming.CustomControls.FlatComboBox();
             this.menuStrip.SuspendLayout();
             this.groupBox_location.SuspendLayout();
             this.groupBox_tileset.SuspendLayout();
@@ -264,7 +265,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip.Size = new System.Drawing.Size(942, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1039, 24);
             this.menuStrip.TabIndex = 0;
             // 
             // menuStrip_file
@@ -1370,7 +1371,7 @@
             this.groupBox_tileset.Location = new System.Drawing.Point(12, 160);
             this.groupBox_tileset.MinimumSize = new System.Drawing.Size(287, 310);
             this.groupBox_tileset.Name = "groupBox_tileset";
-            this.groupBox_tileset.Size = new System.Drawing.Size(287, 387);
+            this.groupBox_tileset.Size = new System.Drawing.Size(287, 326);
             this.groupBox_tileset.TabIndex = 4;
             this.groupBox_tileset.TabStop = false;
             this.groupBox_tileset.Text = "Tileset";
@@ -1402,7 +1403,7 @@
             this.panel_tileset.Location = new System.Drawing.Point(7, 48);
             this.panel_tileset.MinimumSize = new System.Drawing.Size(273, 256);
             this.panel_tileset.Name = "panel_tileset";
-            this.panel_tileset.Size = new System.Drawing.Size(273, 333);
+            this.panel_tileset.Size = new System.Drawing.Size(273, 272);
             this.panel_tileset.TabIndex = 0;
             // 
             // tileView
@@ -1428,7 +1429,7 @@
             this.groupBox_room.Location = new System.Drawing.Point(305, 52);
             this.groupBox_room.MinimumSize = new System.Drawing.Size(479, 418);
             this.groupBox_room.Name = "groupBox_room";
-            this.groupBox_room.Size = new System.Drawing.Size(625, 495);
+            this.groupBox_room.Size = new System.Drawing.Size(722, 623);
             this.groupBox_room.TabIndex = 0;
             this.groupBox_room.TabStop = false;
             this.groupBox_room.Text = "Room";
@@ -1443,7 +1444,7 @@
             this.panel_room.Location = new System.Drawing.Point(7, 19);
             this.panel_room.MinimumSize = new System.Drawing.Size(465, 393);
             this.panel_room.Name = "panel_room";
-            this.panel_room.Size = new System.Drawing.Size(611, 470);
+            this.panel_room.Size = new System.Drawing.Size(708, 598);
             this.panel_room.TabIndex = 0;
             // 
             // roomView
@@ -1635,6 +1636,7 @@
             this.groupBox_editBG.Size = new System.Drawing.Size(70, 102);
             this.groupBox_editBG.TabIndex = 3;
             this.groupBox_editBG.TabStop = false;
+            this.groupBox_editBG.Tag = "";
             this.groupBox_editBG.Text = "Edit";
             // 
             // checkBox_editCLP
@@ -1688,10 +1690,10 @@
             this.statusLabel_coor,
             this.statusLabel_sel,
             this.statusLabel_clip});
-            this.statusStrip.Location = new System.Drawing.Point(0, 550);
+            this.statusStrip.Location = new System.Drawing.Point(0, 678);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.ShowItemToolTips = true;
-            this.statusStrip.Size = new System.Drawing.Size(942, 24);
+            this.statusStrip.Size = new System.Drawing.Size(1039, 24);
             this.statusStrip.TabIndex = 0;
             // 
             // statusLabel_coor
@@ -1787,7 +1789,7 @@
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Padding = new System.Windows.Forms.Padding(3, 0, 1, 0);
             this.toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip.Size = new System.Drawing.Size(942, 25);
+            this.toolStrip.Size = new System.Drawing.Size(1039, 25);
             this.toolStrip.TabIndex = 0;
             // 
             // toolStrip_open
@@ -2111,12 +2113,21 @@
             this.toolStrip_patches.Text = "Patches";
             this.toolStrip_patches.Click += new System.EventHandler(this.menuItem_patches_Click);
             // 
+            // comboBox_area1
+            // 
+            this.comboBox_area1.FormattingEnabled = true;
+            this.comboBox_area1.Location = new System.Drawing.Point(12, 654);
+            this.comboBox_area1.Name = "comboBox_area1";
+            this.comboBox_area1.Size = new System.Drawing.Size(77, 21);
+            this.comboBox_area1.TabIndex = 9;
+            // 
             // FormMain
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 574);
+            this.ClientSize = new System.Drawing.Size(1039, 702);
+            this.Controls.Add(this.comboBox_area1);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.comboBox_spriteset);
             this.Controls.Add(this.label_spriteset);
@@ -2370,6 +2381,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuItem_defaultClipBreakable;
         private System.Windows.Forms.ToolStripMenuItem menuItem_viewClipValues;
         private System.Windows.Forms.ToolStripMenuItem menuItem_defaultClipValues;
+        private Theming.CustomControls.FlatComboBox comboBox_area1;
     }
 }
 

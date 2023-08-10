@@ -73,10 +73,19 @@ namespace mage
         {
             InitializeComponent();
 
+            ColorTheme OriginalMage = new ColorTheme()
+            {
+                BackgroundColor = Color.FromArgb(0xF0, 0xF0, 0xF0),
+                TextColor = Color.FromArgb(0x00, 0x00, 0x00),
+                SecondaryColor = Color.FromArgb(0xDC, 0xDC, 0xDC)
+            };
+
             ColorTheme DarkMode = new ColorTheme()
             {
-                BackColor = Color.FromArgb(0x1e, 0x1e, 0x1e),
+                BackgroundColor = Color.FromArgb(0x1e, 0x1e, 0x1e),
                 TextColor = Color.FromArgb(0xdc, 0xdc, 0xdc),
+                SecondaryColor = Color.FromArgb(0x3D, 0x3D, 0x3D),
+                AccentColor = Color.FromArgb(0x5E, 0x92, 0x92),
             };
             ThemeSwitcher.ChangeTheme(DarkMode, Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);

@@ -7,11 +7,11 @@ namespace mage.Theming
 {
     public class ColorTheme
     {
-		private Color backColor;
-		public Color BackColor
+		private Color backgroundColor;
+		public Color BackgroundColor
 		{
-			get => backColor;
-			set { backColor = value; }
+			get => backgroundColor;
+			set { backgroundColor = value; }
 		}
 
         private Color textColor;
@@ -19,6 +19,27 @@ namespace mage.Theming
         {
             get => textColor;
             set { textColor = value; }
+        }
+
+        private Color primaryColor;
+        public Color PrimaryColor
+        {
+            get => primaryColor;
+            set { primaryColor = value; }
+        }
+
+        private Color secondaryColor;
+        public Color SecondaryColor
+        {
+            get => secondaryColor;
+            set { secondaryColor = value; }
+        }
+
+        private Color accentColor;
+        public Color AccentColor
+        {
+            get => accentColor;
+            set { accentColor = value; }
         }
     }
 }
