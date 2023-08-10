@@ -62,6 +62,7 @@ namespace mage.Theming.CustomControls
                 }
                 var innerBorderColor = Enabled ? BackColor : SystemColors.Control;
                 var outerBorderColor = Enabled ? BorderColor : SystemColors.ControlDark;
+                var arrowColor = Enabled ? ForeColor : SystemColors.ControlDark;
                 var buttonColor = Enabled ? ButtonColor : SystemColors.Control;
                 var middle = new Point(dropDownRect.Left + dropDownRect.Width / 2,
                     dropDownRect.Top + dropDownRect.Height / 2);
@@ -98,8 +99,9 @@ namespace mage.Theming.CustomControls
                     {
                         g.FillRectangle(b, dropDownRect);
                     }
-                    using (var b = new SolidBrush(outerBorderColor))
+                    using (var b = new SolidBrush(arrowColor))
                     {
+                        Pen p = new Pen(b);
                         g.FillPolygon(b, arrow);
                     }
                     using (var p = new Pen(innerBorderColor))

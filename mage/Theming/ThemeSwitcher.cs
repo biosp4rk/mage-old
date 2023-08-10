@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming.CustomControls;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -9,7 +10,7 @@ namespace mage.Theming
     public static class ThemeSwitcher
     {
         //Project wide variables
-        static ColorTheme ProjectTheme { get; set; }
+        public static ColorTheme ProjectTheme { get; set; }
 
         public static void ChangeTheme(ColorTheme theme, Control.ControlCollection container, Control Base = null)
         {
@@ -31,6 +32,28 @@ namespace mage.Theming
                 {
                     ChangeTheme(theme, component.Controls);
                 }
+
+                //Special handeling for special controls
+                if (component is FlatComboBox)
+                {
+                    FlatComboBox box = component as FlatComboBox;
+                    box.BorderColor = theme.PrimaryOutline;
+                    box.ButtonColor = theme.BackgroundColor;
+                }
+
+                if (component is MenuStrip)
+                {
+                    MenuStrip strip = component as MenuStrip;
+                    strip.Renderer = new ToolStripProfessionalRenderer(new MenuStripColorTable(ProjectTheme));
+                    foreach (ToolStripMenuItem tsmi in strip.Items)
+                    {
+                        tsmi.DropDown.Renderer = new ToolStripProfessionalRenderer(new MenuStripColorTable(ProjectTheme));
+                        foreach (ToolStripItem item in tsmi.DropDownItems)
+                        {
+                            item.ForeColor = theme.TextColor;
+                        }
+                    } 
+                }
             }
         }
 
@@ -41,16 +64,11 @@ namespace mage.Theming
         {
             foreach (Control component in container)
             {
+                //recursively inject the overrides in every child control
                 if (component.Controls.Count > 0) InjectPaintOverrides(component.Controls);
 
+                //Special handeling for special controls
                 if (component is GroupBox) component.Paint += DrawGroupBox;
-                if (component is ComboBox)
-                {
-                    ComboBox box = component as ComboBox;
-                    box.DrawMode = DrawMode.OwnerDrawFixed;
-                    box.DrawItem += DrawComboboxItem;
-                    component.Paint += DrawComboBox;
-                }
             }
         }
 
@@ -62,7 +80,7 @@ namespace mage.Theming
             GroupBox box = sender as GroupBox;
             Graphics g = e.Graphics;
             Color textColor = box.ForeColor;
-            Color borderColor = ProjectTheme.SecondaryColor;
+            Color borderColor = ProjectTheme.SecondaryOutline;
 
             Brush textBrush = new SolidBrush(textColor);
             Brush borderBrush = new SolidBrush(borderColor);
@@ -90,30 +108,6 @@ namespace mage.Theming
             g.DrawLine(borderPen, new Point(rect.X, rect.Y), new Point(rect.X + box.Padding.Left, rect.Y));
             //Top2
             g.DrawLine(borderPen, new Point(rect.X + box.Padding.Left + (int)(strSize.Width), rect.Y), new Point(rect.X + rect.Width, rect.Y));
-        }
-
-        public static void DrawComboBox(object sender, PaintEventArgs e)
-        {
-            ComboBox box = sender as ComboBox;
-            Graphics g = e.Graphics;
-
-            g.Clear(box.BackColor);
-        }
-
-        public static void DrawComboboxItem(object sender, DrawItemEventArgs e)
-        {
-            ComboBox box = sender as ComboBox;
-
-            Graphics g = e.Graphics;
-            int index = e.Index >= 0 ? e.Index : -1;
-            Brush brush = ((e.State & DrawItemState.Selected) > 0) ? SystemBrushes.HighlightText : new SolidBrush(box.ForeColor);
-            //g.Clear(box.BackColor);
-            e.DrawBackground();
-            if (index != -1)
-            {
-                e.Graphics.DrawString(box.Items[index].ToString(), e.Font, brush, e.Bounds, StringFormat.GenericDefault);
-            }
-            e.DrawFocusRectangle();
         }
     }
 }

@@ -21,18 +21,18 @@ namespace mage.Theming
             set { textColor = value; }
         }
 
-        private Color primaryColor;
-        public Color PrimaryColor
+        private Color primaryOutline;
+        public Color PrimaryOutline
         {
-            get => primaryColor;
-            set { primaryColor = value; }
+            get => primaryOutline;
+            set { primaryOutline = value; }
         }
 
-        private Color secondaryColor;
-        public Color SecondaryColor
+        private Color secondaryOutline;
+        public Color SecondaryOutline
         {
-            get => secondaryColor;
-            set { secondaryColor = value; }
+            get => secondaryOutline;
+            set { secondaryOutline = value; }
         }
 
         private Color accentColor;

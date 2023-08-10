@@ -72,9 +72,11 @@
     <Compile Include="Editor.cs" />
     <Compile Include="Data\OAM.cs" />
     <Compile Include="Theming\ColorTheme.cs" />
+    <Compile Include="Theming\ColorOperations.cs" />
     <Compile Include="Theming\CustomControls\FlatComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Theming\MenuStripColorTable.cs" />
     <Compile Include="Theming\ThemeSwitcher.cs" />
     <Compile Include="Utility\Add.cs" />
     <Compile Include="ByteStream.cs" />
