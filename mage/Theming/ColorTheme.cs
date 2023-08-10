@@ -7,12 +7,14 @@ namespace mage.Theming
 {
     public class ColorTheme
     {
+        const int disabledAlpha = 0x50;
+
 		private Color backgroundColor;
 		public Color BackgroundColor
-		{
-			get => backgroundColor;
-			set { backgroundColor = value; }
-		}
+        {
+            get => backgroundColor;
+            set { backgroundColor = value; }
+        }
 
         private Color textColor;
         public Color TextColor
@@ -20,6 +22,7 @@ namespace mage.Theming
             get => textColor;
             set { textColor = value; }
         }
+        public Color TextColorDisabled => Color.FromArgb(disabledAlpha, TextColor);
 
         private Color primaryOutline;
         public Color PrimaryOutline

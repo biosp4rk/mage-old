@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
 
@@ -95,6 +96,16 @@ namespace mage.Theming
 
                 //Special handeling for special controls
                 if (component is GroupBox) component.Paint += DrawGroupBox;
+                if (component is CheckBox)
+                {
+                    CheckBox box = component as CheckBox;
+                    box.Paint += DrawCheckBox;
+                    //box.Appearance = Appearance.Button;
+                    //box.TextAlign = ContentAlignment.MiddleRight;
+                    //box.FlatAppearance.BorderSize = 0;
+                    //box.FlatStyle = FlatStyle.Flat;
+                    //box.AutoSize = false;
+                }
             }
         }
 
@@ -105,7 +116,7 @@ namespace mage.Theming
         {
             GroupBox box = sender as GroupBox;
             Graphics g = e.Graphics;
-            Color textColor = box.ForeColor;
+            Color textColor = box.Enabled ? ProjectTheme.TextColor : ProjectTheme.TextColorDisabled;
             Color borderColor = ProjectTheme.SecondaryOutline;
 
             Brush textBrush = new SolidBrush(textColor);
@@ -134,6 +145,37 @@ namespace mage.Theming
             g.DrawLine(borderPen, new Point(rect.X, rect.Y), new Point(rect.X + box.Padding.Left, rect.Y));
             //Top2
             g.DrawLine(borderPen, new Point(rect.X + box.Padding.Left + (int)(strSize.Width), rect.Y), new Point(rect.X + rect.Width, rect.Y));
+        }
+
+        public static void DrawCheckBox(object sender, PaintEventArgs e)
+        {
+            CheckBox box = sender as CheckBox;
+
+            Point pt = new Point(e.ClipRectangle.Left, e.ClipRectangle.Top);
+            Rectangle rect = new Rectangle(pt, new Size(13, 13));
+
+            e.Graphics.Clear(ProjectTheme.BackgroundColor);
+
+            //Drawing box
+            using (Brush b = box.Checked ? new SolidBrush(ProjectTheme.AccentColor) : new SolidBrush(ProjectTheme.BackgroundColor)) e.Graphics.FillRectangle(b, rect);
+            Pen p = box.Checked ? new Pen(ProjectTheme.AccentColor) : new Pen(ProjectTheme.PrimaryOutline) { Alignment = PenAlignment.Inset };
+            e.Graphics.DrawRectangle(p, rect);
+
+            if (box.Checked)
+            {
+                //Drawing the check
+                Rectangle r = rect;
+                r.Inflate(-3, -3);
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.DrawLines(new Pen(ProjectTheme.TextColor, 1), new Point[]{
+                new Point(r.Left, r.Bottom - r.Height /2),
+                new Point(r.Left + r.Width /3,  r.Bottom),
+                new Point(r.Right, r.Top)});
+            }
+
+            //Draw Text
+            Brush textBrush = box.Enabled ? new SolidBrush(ProjectTheme.TextColor) : new SolidBrush(ProjectTheme.TextColorDisabled);
+            e.Graphics.DrawString(box.Text, box.Font, textBrush, box.Padding.Left + 16, box.Padding.Top + 1);
         }
     }
 }
