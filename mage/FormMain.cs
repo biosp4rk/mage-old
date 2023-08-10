@@ -73,33 +73,7 @@ namespace mage
         {
             InitializeComponent();
 
-            ColorTheme OriginalMage = new ColorTheme()
-            {
-                BackgroundColor = ColorTranslator.FromHtml("#F0F0F0"),
-                TextColor = ColorTranslator.FromHtml("#000000"),
-                PrimaryOutline = ColorTranslator.FromHtml("#BCBCBC"),
-                SecondaryOutline = ColorTranslator.FromHtml("#DCDCDC"),
-                AccentColor = ColorTranslator.FromHtml("#7160e8"),
-            };
-
-            ColorTheme VSDarkMode = new ColorTheme()
-            {
-                BackgroundColor = ColorTranslator.FromHtml("#1E1E1E"),
-                TextColor = ColorTranslator.FromHtml("#DCDCDC"),
-                PrimaryOutline = ColorTranslator.FromHtml("#5F5F5F"),
-                SecondaryOutline = ColorTranslator.FromHtml("#3D3D3D"),
-                AccentColor = ColorTranslator.FromHtml("#7160e8"),
-            };
-
-            ColorTheme OriginalMageDarkMode = new ColorTheme()
-            {
-                BackgroundColor = Color.FromArgb(0x00, 0x00, 0x00),
-                TextColor = Color.FromArgb(0xF0, 0xF0, 0xF0),
-                PrimaryOutline = Color.FromArgb(0xBC, 0xBC, 0xBC),
-                SecondaryOutline = Color.FromArgb(0x34, 0x34, 0x34)
-            };
-
-            ThemeSwitcher.ChangeTheme(VSDarkMode, Controls, this);
+            ThemeSwitcher.ChangeTheme(ThemeSwitcher.Themes["VSDark"], Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);
 
             DisplayRecentFiles();

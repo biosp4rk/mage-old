@@ -77,6 +77,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theming\MenuStripColorTable.cs" />
+    <Compile Include="Theming\MenuStripCustomRenderer.cs" />
     <Compile Include="Theming\ThemeSwitcher.cs" />
     <Compile Include="Utility\Add.cs" />
     <Compile Include="ByteStream.cs" />

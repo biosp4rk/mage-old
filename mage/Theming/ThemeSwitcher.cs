@@ -9,7 +9,41 @@ namespace mage.Theming
 {
     public static class ThemeSwitcher
     {
-        //Project wide variables
+        /// <summary>
+        /// Project Wide dictionary with all Color Themes
+        /// </summary>
+        public static Dictionary<string, ColorTheme> Themes = new Dictionary<string, ColorTheme>()
+        {
+            {"MageOld", new ColorTheme()
+            {
+                BackgroundColor = ColorTranslator.FromHtml("#F0F0F0"),
+                TextColor = ColorTranslator.FromHtml("#000000"),
+                PrimaryOutline = ColorTranslator.FromHtml("#BCBCBC"),
+                SecondaryOutline = ColorTranslator.FromHtml("#DCDCDC"),
+                AccentColor = ColorTranslator.FromHtml("#0078d7"),
+            } },
+
+            {"VSDark", new ColorTheme()
+            {
+                BackgroundColor = ColorTranslator.FromHtml("#1E1E1E"),
+                TextColor = ColorTranslator.FromHtml("#DCDCDC"),
+                PrimaryOutline = ColorTranslator.FromHtml("#5F5F5F"),
+                SecondaryOutline = ColorTranslator.FromHtml("#3D3D3D"),
+                AccentColor = ColorTranslator.FromHtml("#7160e8"),
+            } },
+
+            {"MageDark", new ColorTheme()
+            {
+                BackgroundColor = Color.FromArgb(0x00, 0x00, 0x00),
+                TextColor = Color.FromArgb(0xF0, 0xF0, 0xF0),
+                PrimaryOutline = Color.FromArgb(0xBC, 0xBC, 0xBC),
+                SecondaryOutline = Color.FromArgb(0x34, 0x34, 0x34)
+            } },
+        };
+
+        /// <summary>
+        /// The currently used Color Theme
+        /// </summary>
         public static ColorTheme ProjectTheme { get; set; }
 
         public static void ChangeTheme(ColorTheme theme, Control.ControlCollection container, Control Base = null)
@@ -41,18 +75,10 @@ namespace mage.Theming
                     box.ButtonColor = theme.BackgroundColor;
                 }
 
-                if (component is MenuStrip)
+                if (component is ToolStrip)
                 {
-                    MenuStrip strip = component as MenuStrip;
-                    strip.Renderer = new ToolStripProfessionalRenderer(new MenuStripColorTable(ProjectTheme));
-                    foreach (ToolStripMenuItem tsmi in strip.Items)
-                    {
-                        tsmi.DropDown.Renderer = new ToolStripProfessionalRenderer(new MenuStripColorTable(ProjectTheme));
-                        foreach (ToolStripItem item in tsmi.DropDownItems)
-                        {
-                            item.ForeColor = theme.TextColor;
-                        }
-                    } 
+                    ToolStrip strip = component as ToolStrip;
+                    strip.Renderer = new MenuStripCustomRenderer(theme);
                 }
             }
         }
