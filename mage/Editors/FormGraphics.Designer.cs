@@ -34,13 +34,14 @@
             this.button_imageGo = new System.Windows.Forms.Button();
             this.label_height = new System.Windows.Forms.Label();
             this.label_width = new System.Windows.Forms.Label();
-            this.numericUpDown_height = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown_width = new System.Windows.Forms.NumericUpDown();
-            this.textBox_imageOffset = new System.Windows.Forms.TextBox();
+            this.numericUpDown_height = new mage.Theming.CustomControls.FlatNumericUpDown();
+            this.numericUpDown_width = new mage.Theming.CustomControls.FlatNumericUpDown();
+            this.textBox_imageOffset = new mage.Theming.CustomControls.FlatTextBox();
             this.label_imageOffset = new System.Windows.Forms.Label();
             this.groupBox_image = new System.Windows.Forms.GroupBox();
             this.panel_gfx = new System.Windows.Forms.Panel();
-            this.textBox_palOffset = new System.Windows.Forms.TextBox();
+            this.gfxView_gfx = new mage.GfxView();
+            this.textBox_palOffset = new mage.Theming.CustomControls.FlatTextBox();
             this.label_paletteOffset = new System.Windows.Forms.Label();
             this.groupBox_paletteControl = new System.Windows.Forms.GroupBox();
             this.button_editPal = new System.Windows.Forms.Button();
@@ -82,7 +83,6 @@
             this.menuItem_palExport_raw = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palExport_tlp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_palExport_yychr = new System.Windows.Forms.ToolStripMenuItem();
-            this.gfxView_gfx = new mage.GfxView();
             this.groupBox_imageControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_height)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_width)).BeginInit();
@@ -198,6 +198,7 @@
             // 
             // textBox_imageOffset
             // 
+            this.textBox_imageOffset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_imageOffset.Location = new System.Drawing.Point(50, 19);
             this.textBox_imageOffset.Name = "textBox_imageOffset";
             this.textBox_imageOffset.Size = new System.Drawing.Size(60, 20);
@@ -237,8 +238,19 @@
             this.panel_gfx.Size = new System.Drawing.Size(549, 177);
             this.panel_gfx.TabIndex = 0;
             // 
+            // gfxView_gfx
+            // 
+            this.gfxView_gfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gfxView_gfx.Location = new System.Drawing.Point(0, 0);
+            this.gfxView_gfx.Name = "gfxView_gfx";
+            this.gfxView_gfx.Size = new System.Drawing.Size(532, 160);
+            this.gfxView_gfx.TabIndex = 0;
+            this.gfxView_gfx.TabStop = false;
+            this.gfxView_gfx.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gfxView_gfx_MouseMove);
+            // 
             // textBox_palOffset
             // 
+            this.textBox_palOffset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_palOffset.Location = new System.Drawing.Point(50, 19);
             this.textBox_palOffset.Name = "textBox_palOffset";
             this.textBox_palOffset.Size = new System.Drawing.Size(60, 20);
@@ -602,16 +614,6 @@
             this.menuItem_palExport_yychr.Text = "YY-CHR...";
             this.menuItem_palExport_yychr.Click += new System.EventHandler(this.menuItem_palExport_yychr_Click);
             // 
-            // gfxView_gfx
-            // 
-            this.gfxView_gfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gfxView_gfx.Location = new System.Drawing.Point(0, 0);
-            this.gfxView_gfx.Name = "gfxView_gfx";
-            this.gfxView_gfx.Size = new System.Drawing.Size(532, 160);
-            this.gfxView_gfx.TabIndex = 0;
-            this.gfxView_gfx.TabStop = false;
-            this.gfxView_gfx.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gfxView_gfx_MouseMove);
-            // 
             // FormGraphics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -650,11 +652,11 @@
         private System.Windows.Forms.GroupBox groupBox_imageControl;
         private System.Windows.Forms.Label label_height;
         private System.Windows.Forms.Label label_width;
-        private System.Windows.Forms.NumericUpDown numericUpDown_height;
-        private System.Windows.Forms.NumericUpDown numericUpDown_width;
-        private System.Windows.Forms.TextBox textBox_palOffset;
+        private mage.Theming.CustomControls.FlatNumericUpDown numericUpDown_height;
+        private mage.Theming.CustomControls.FlatNumericUpDown numericUpDown_width;
+        private mage.Theming.CustomControls.FlatTextBox textBox_palOffset;
         private System.Windows.Forms.Label label_paletteOffset;
-        private System.Windows.Forms.TextBox textBox_imageOffset;
+        private mage.Theming.CustomControls.FlatTextBox textBox_imageOffset;
         private System.Windows.Forms.Label label_imageOffset;
         private System.Windows.Forms.GroupBox groupBox_image;
         private System.Windows.Forms.GroupBox groupBox_paletteControl;

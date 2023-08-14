@@ -76,6 +76,9 @@
     <Compile Include="Theming\CustomControls\FlatComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Theming\CustomControls\FlatNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Theming\CustomControls\FlatTextBox.cs">
       <SubType>Component</SubType>
     </Compile>

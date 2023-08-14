@@ -32,43 +32,43 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage_tileset = new System.Windows.Forms.TabPage();
             this.label_tilesetGfx = new System.Windows.Forms.Label();
-            this.comboBox_tilesetGfxNum = new System.Windows.Forms.ComboBox();
+            this.comboBox_tilesetGfxNum = new mage.Theming.CustomControls.FlatComboBox();
             this.label_tilesetSlot = new System.Windows.Forms.Label();
-            this.comboBox_tilesetSlot = new System.Windows.Forms.ComboBox();
+            this.comboBox_tilesetSlot = new mage.Theming.CustomControls.FlatComboBox();
             this.label_tilesetNum = new System.Windows.Forms.Label();
             this.pictureBox_tileset = new System.Windows.Forms.PictureBox();
-            this.comboBox_tilesetNum = new System.Windows.Forms.ComboBox();
+            this.comboBox_tilesetNum = new mage.Theming.CustomControls.FlatComboBox();
             this.button_tilesetClose = new System.Windows.Forms.Button();
             this.button_tilesetApply = new System.Windows.Forms.Button();
             this.tabPage_graphics = new System.Windows.Forms.TabPage();
             this.gfxView_gfx = new mage.GfxView();
             this.label_gfxPal = new System.Windows.Forms.Label();
-            this.textBox_gfxPalOffset = new System.Windows.Forms.TextBox();
+            this.textBox_gfxPalOffset = new mage.Theming.CustomControls.FlatTextBox();
             this.label_gfxView = new System.Windows.Forms.Label();
-            this.comboBox_gfxView = new System.Windows.Forms.ComboBox();
+            this.comboBox_gfxView = new mage.Theming.CustomControls.FlatComboBox();
             this.button_gfxEdit = new System.Windows.Forms.Button();
-            this.textBox_gfxStates = new System.Windows.Forms.TextBox();
+            this.textBox_gfxStates = new mage.Theming.CustomControls.FlatTextBox();
             this.label_gfxStates = new System.Windows.Forms.Label();
-            this.textBox_gfxDelay = new System.Windows.Forms.TextBox();
+            this.textBox_gfxDelay = new mage.Theming.CustomControls.FlatTextBox();
             this.label_gfxDelay = new System.Windows.Forms.Label();
             this.label_gfxDirection = new System.Windows.Forms.Label();
-            this.comboBox_gfxDirection = new System.Windows.Forms.ComboBox();
+            this.comboBox_gfxDirection = new mage.Theming.CustomControls.FlatComboBox();
             this.label_gfxNum = new System.Windows.Forms.Label();
-            this.comboBox_gfxNum = new System.Windows.Forms.ComboBox();
+            this.comboBox_gfxNum = new mage.Theming.CustomControls.FlatComboBox();
             this.button_gfxClose = new System.Windows.Forms.Button();
             this.button_gfxApply = new System.Windows.Forms.Button();
             this.tabPage_palette = new System.Windows.Forms.TabPage();
             this.button_palEdit = new System.Windows.Forms.Button();
-            this.textBox_palStates = new System.Windows.Forms.TextBox();
+            this.textBox_palStates = new mage.Theming.CustomControls.FlatTextBox();
             this.label_palStates = new System.Windows.Forms.Label();
-            this.textBox_palDelay = new System.Windows.Forms.TextBox();
+            this.textBox_palDelay = new mage.Theming.CustomControls.FlatTextBox();
             this.label_palDelay = new System.Windows.Forms.Label();
             this.label_palDirection = new System.Windows.Forms.Label();
-            this.comboBox_palDirection = new System.Windows.Forms.ComboBox();
+            this.comboBox_palDirection = new mage.Theming.CustomControls.FlatComboBox();
             this.label_palNum = new System.Windows.Forms.Label();
             this.button_palClose = new System.Windows.Forms.Button();
             this.button_palApply = new System.Windows.Forms.Button();
-            this.comboBox_palNum = new System.Windows.Forms.ComboBox();
+            this.comboBox_palNum = new mage.Theming.CustomControls.FlatComboBox();
             this.pictureBox_pal = new System.Windows.Forms.PictureBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
@@ -243,6 +243,7 @@
             // 
             // textBox_gfxPalOffset
             // 
+            this.textBox_gfxPalOffset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_gfxPalOffset.Location = new System.Drawing.Point(180, 33);
             this.textBox_gfxPalOffset.Name = "textBox_gfxPalOffset";
             this.textBox_gfxPalOffset.Size = new System.Drawing.Size(55, 20);
@@ -283,6 +284,7 @@
             // 
             // textBox_gfxStates
             // 
+            this.textBox_gfxStates.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_gfxStates.Location = new System.Drawing.Point(67, 134);
             this.textBox_gfxStates.Name = "textBox_gfxStates";
             this.textBox_gfxStates.Size = new System.Drawing.Size(35, 20);
@@ -300,6 +302,7 @@
             // 
             // textBox_gfxDelay
             // 
+            this.textBox_gfxDelay.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_gfxDelay.Location = new System.Drawing.Point(67, 108);
             this.textBox_gfxDelay.Name = "textBox_gfxDelay";
             this.textBox_gfxDelay.Size = new System.Drawing.Size(35, 20);
@@ -411,6 +414,7 @@
             // 
             // textBox_palStates
             // 
+            this.textBox_palStates.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_palStates.Location = new System.Drawing.Point(66, 119);
             this.textBox_palStates.Name = "textBox_palStates";
             this.textBox_palStates.Size = new System.Drawing.Size(35, 20);
@@ -428,6 +432,7 @@
             // 
             // textBox_palDelay
             // 
+            this.textBox_palDelay.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_palDelay.Location = new System.Drawing.Point(66, 93);
             this.textBox_palDelay.Name = "textBox_palDelay";
             this.textBox_palDelay.Size = new System.Drawing.Size(35, 20);
@@ -567,37 +572,37 @@
         private System.Windows.Forms.Button button_gfxClose;
         private System.Windows.Forms.Button button_gfxApply;
         private System.Windows.Forms.TabPage tabPage_palette;
-        private System.Windows.Forms.ComboBox comboBox_tilesetNum;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tilesetNum;
         private System.Windows.Forms.PictureBox pictureBox_tileset;
         private System.Windows.Forms.Label label_tilesetSlot;
-        private System.Windows.Forms.ComboBox comboBox_tilesetSlot;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tilesetSlot;
         private System.Windows.Forms.Label label_tilesetNum;
         private System.Windows.Forms.PictureBox pictureBox_pal;
-        private System.Windows.Forms.ComboBox comboBox_palNum;
-        private System.Windows.Forms.ComboBox comboBox_tilesetGfxNum;
-        private System.Windows.Forms.ComboBox comboBox_gfxNum;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_palNum;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tilesetGfxNum;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_gfxNum;
         private System.Windows.Forms.Label label_gfxNum;
-        private System.Windows.Forms.ComboBox comboBox_gfxDirection;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_gfxDirection;
         private System.Windows.Forms.Label label_gfxDirection;
         private System.Windows.Forms.Button button_palClose;
         private System.Windows.Forms.Button button_palApply;
         private System.Windows.Forms.Label label_palNum;
-        private System.Windows.Forms.TextBox textBox_gfxDelay;
+        private mage.Theming.CustomControls.FlatTextBox textBox_gfxDelay;
         private System.Windows.Forms.Label label_gfxDelay;
-        private System.Windows.Forms.TextBox textBox_gfxStates;
+        private mage.Theming.CustomControls.FlatTextBox textBox_gfxStates;
         private System.Windows.Forms.Label label_gfxStates;
-        private System.Windows.Forms.TextBox textBox_palStates;
+        private mage.Theming.CustomControls.FlatTextBox textBox_palStates;
         private System.Windows.Forms.Label label_palStates;
-        private System.Windows.Forms.TextBox textBox_palDelay;
+        private mage.Theming.CustomControls.FlatTextBox textBox_palDelay;
         private System.Windows.Forms.Label label_palDelay;
         private System.Windows.Forms.Label label_palDirection;
-        private System.Windows.Forms.ComboBox comboBox_palDirection;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_palDirection;
         private System.Windows.Forms.Label label_tilesetGfx;
         private System.Windows.Forms.Button button_gfxEdit;
         private System.Windows.Forms.Button button_palEdit;
-        private System.Windows.Forms.ComboBox comboBox_gfxView;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_gfxView;
         private System.Windows.Forms.Label label_gfxView;
-        private System.Windows.Forms.TextBox textBox_gfxPalOffset;
+        private mage.Theming.CustomControls.FlatTextBox textBox_gfxPalOffset;
         private System.Windows.Forms.Label label_gfxPal;
         private GfxView gfxView_gfx;
         private System.Windows.Forms.StatusStrip statusStrip;

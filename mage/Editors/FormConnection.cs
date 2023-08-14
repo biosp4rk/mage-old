@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -61,6 +62,9 @@ namespace mage
         public FormConnection(FormMain main, int tab)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.romStream = ROM.Stream;

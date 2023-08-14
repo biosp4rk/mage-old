@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -34,6 +35,9 @@ namespace mage
         public FormAnimation(FormMain main, int window = 0, int number = 0)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(this.Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(this.Controls);
 
             this.main = main;
             this.romStream = ROM.Stream;

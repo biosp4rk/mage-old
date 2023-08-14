@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMinimap));
             this.label_area = new System.Windows.Forms.Label();
-            this.comboBox_area = new System.Windows.Forms.ComboBox();
-            this.comboBox_view = new System.Windows.Forms.ComboBox();
+            this.comboBox_area = new mage.Theming.CustomControls.FlatComboBox();
+            this.comboBox_view = new mage.Theming.CustomControls.FlatComboBox();
             this.label_view = new System.Windows.Forms.Label();
             this.label_palette = new System.Windows.Forms.Label();
-            this.comboBox_palette = new System.Windows.Forms.ComboBox();
-            this.comboBox_type = new System.Windows.Forms.ComboBox();
+            this.comboBox_palette = new mage.Theming.CustomControls.FlatComboBox();
+            this.comboBox_type = new mage.Theming.CustomControls.FlatComboBox();
             this.label_type = new System.Windows.Forms.Label();
             this.checkBox_xflip = new System.Windows.Forms.CheckBox();
             this.checkBox_yflip = new System.Windows.Forms.CheckBox();
@@ -445,12 +445,12 @@
         #endregion
 
         private System.Windows.Forms.Label label_area;
-        private System.Windows.Forms.ComboBox comboBox_area;
-        private System.Windows.Forms.ComboBox comboBox_view;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_area;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_view;
         private System.Windows.Forms.Label label_view;
         private System.Windows.Forms.Label label_palette;
-        private System.Windows.Forms.ComboBox comboBox_palette;
-        private System.Windows.Forms.ComboBox comboBox_type;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_palette;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_type;
         private System.Windows.Forms.Label label_type;
         private System.Windows.Forms.CheckBox checkBox_xflip;
         private System.Windows.Forms.CheckBox checkBox_yflip;

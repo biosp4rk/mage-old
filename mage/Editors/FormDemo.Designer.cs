@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDemo));
-            this.comboBox_demo = new System.Windows.Forms.ComboBox();
+            this.comboBox_demo = new mage.Theming.CustomControls.FlatComboBox();
             this.listView_input = new System.Windows.Forms.ListView();
             this.columnHeader_frame = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_input = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,11 +42,11 @@
             this.menuItem_copy = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_pasteInsert = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_pasteWrite = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox_input = new System.Windows.Forms.TextBox();
+            this.textBox_input = new mage.Theming.CustomControls.FlatTextBox();
             this.button_testDemo = new System.Windows.Forms.Button();
             this.button_apply = new System.Windows.Forms.Button();
             this.treeView_ram = new System.Windows.Forms.TreeView();
-            this.textBox_ramVal = new System.Windows.Forms.TextBox();
+            this.textBox_ramVal = new mage.Theming.CustomControls.FlatTextBox();
             this.button_set = new System.Windows.Forms.Button();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
@@ -303,11 +303,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox_demo;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_demo;
         private System.Windows.Forms.ListView listView_input;
         private System.Windows.Forms.ColumnHeader columnHeader_frame;
         private System.Windows.Forms.ColumnHeader columnHeader_input;
-        private System.Windows.Forms.TextBox textBox_input;
+        private mage.Theming.CustomControls.FlatTextBox textBox_input;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem menuItem_insert;
         private System.Windows.Forms.ToolStripMenuItem menuItem_delete;
@@ -319,7 +319,7 @@
         private System.Windows.Forms.Button button_testDemo;
         private System.Windows.Forms.Button button_apply;
         private System.Windows.Forms.TreeView treeView_ram;
-        private System.Windows.Forms.TextBox textBox_ramVal;
+        private mage.Theming.CustomControls.FlatTextBox textBox_ramVal;
         private System.Windows.Forms.Button button_set;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel_changes;

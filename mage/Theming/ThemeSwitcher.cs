@@ -132,6 +132,14 @@ namespace mage.Theming
                     FlatTextBox box = component as FlatTextBox;
                     box.BorderColor = theme.PrimaryOutline;
                 }
+
+                if (component is FlatNumericUpDown)
+                {
+                    FlatNumericUpDown num = component as FlatNumericUpDown;
+                    num.BorderStyle = BorderStyle.FixedSingle;
+                    num.BorderColor = theme.PrimaryOutline;
+                    num.ButtonHighlightColor = theme.AccentColor;
+                }
             }
 
             Base?.ResumeLayout();
