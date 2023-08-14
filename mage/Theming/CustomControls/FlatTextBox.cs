@@ -35,30 +35,19 @@ namespace mage.Theming.CustomControls
         }
         protected override void WndProc(ref Message m)
         {
-            if (false)
+            base.WndProc(ref m);
+            if (m.Msg == WM_NCPAINT && BorderColor != Color.Transparent && 
+                BorderStyle == System.Windows.Forms.BorderStyle.Fixed3D)
             {
-                m.Result = (IntPtr)0;
-            }
-            else
-            {
-#if DEBUG
-                if (m.Msg == WM_MOUSEMOVE)
-                {}
-#endif
-                base.WndProc(ref m);
-                if (m.Msg == WM_NCPAINT && BorderColor != Color.Transparent && 
-                    BorderStyle == System.Windows.Forms.BorderStyle.Fixed3D)
+                var hdc = GetWindowDC(this.Handle);
+                using (var g = Graphics.FromHdcInternal(hdc))
                 {
-                    var hdc = GetWindowDC(this.Handle);
-                    using (var g = Graphics.FromHdcInternal(hdc))
-                    {
-                        using (var p = new Pen(BorderColor))
-                            g.DrawRectangle(p, new Rectangle(0, 0, Width - 1, Height - 1));
-                        using (var b = new Pen(BackColor))
-                            g.DrawRectangle(b, new Rectangle(1, 1, Width - 3, Height - 3));
-                    }
-                    ReleaseDC(this.Handle, hdc);
+                    using (var p = new Pen(BorderColor))
+                        g.DrawRectangle(p, new Rectangle(0, 0, Width - 1, Height - 1));
+                    using (var b = new Pen(BackColor))
+                        g.DrawRectangle(b, new Rectangle(1, 1, Width - 3, Height - 3));
                 }
+                ReleaseDC(this.Handle, hdc);
             }
         }
 

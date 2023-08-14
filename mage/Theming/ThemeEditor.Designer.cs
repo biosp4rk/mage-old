@@ -292,6 +292,7 @@
             this.button_apply.TabIndex = 5;
             this.button_apply.Text = "Apply";
             this.button_apply.UseVisualStyleBackColor = true;
+            this.button_apply.Click += new System.EventHandler(this.button_apply_Click);
             // 
             // flatTextBox_name
             // 

@@ -56,7 +56,6 @@ namespace mage.Theming
             get => projectThemeName;
             set
             {
-                if (value == projectThemeName) return;
                 if (!Themes.ContainsKey(value)) return;
                 projectThemeName = value;
                 ProjectTheme = Themes[value];
@@ -67,7 +66,6 @@ namespace mage.Theming
             get => projectTheme;
             set
             {
-                if (value == projectTheme) return;
                 projectTheme = value;
                 foreach (Form frm in Application.OpenForms)
                 {
@@ -98,6 +96,7 @@ namespace mage.Theming
                 //base change
                 component.BackColor = theme.BackgroundColor;
                 component.ForeColor = theme.TextColor;
+                component.Invalidate();
                 if (component.Tag?.ToString() == "accent") component.BackColor = theme.AccentColor;
 
                 if (component.Controls.Count > 0)

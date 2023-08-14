@@ -73,7 +73,7 @@ namespace mage
         {
             InitializeComponent();
 
-            ThemeSwitcher.ProjectThemeName = "Mage Old";
+            ThemeSwitcher.ProjectThemeName = "Visual Studio Dark";
             ThemeSwitcher.ChangeTheme(Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);
 
