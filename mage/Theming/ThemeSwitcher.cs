@@ -15,41 +15,72 @@ namespace mage.Theming
         /// </summary>
         public static Dictionary<string, ColorTheme> Themes = new Dictionary<string, ColorTheme>()
         {
-            {"MageOld", new ColorTheme()
+            {"Mage Old", new ColorTheme()
             {
-                BackgroundColor = ColorTranslator.FromHtml("#F0F0F0"),
-                TextColor = ColorTranslator.FromHtml("#000000"),
-                PrimaryOutline = ColorTranslator.FromHtml("#BCBCBC"),
-                SecondaryOutline = ColorTranslator.FromHtml("#DCDCDC"),
-                AccentColor = ColorTranslator.FromHtml("#0078d7"),
-            } },
+                Colors = new Dictionary<string, Color>() {
+                {"TextColor",  ColorTranslator.FromHtml("#000000")},
+                {"BackgroundColor",  ColorTranslator.FromHtml("#F0F0F0")},
+                {"PrimaryOutline",  ColorTranslator.FromHtml("#BCBCBC")},
+                {"SecondaryOutline",  ColorTranslator.FromHtml("#DCDCDC")},
+                {"AccentColor",  ColorTranslator.FromHtml("#0078D7")},
+            } } },
 
-            {"VSDark", new ColorTheme()
+            {"Visual Studio Dark", new ColorTheme()
             {
-                BackgroundColor = ColorTranslator.FromHtml("#1E1E1E"),
-                TextColor = ColorTranslator.FromHtml("#DCDCDC"),
-                PrimaryOutline = ColorTranslator.FromHtml("#5F5F5F"),
-                SecondaryOutline = ColorTranslator.FromHtml("#3D3D3D"),
-                AccentColor = ColorTranslator.FromHtml("#7160e8"),
-            } },
+                Colors = new Dictionary<string, Color>() {
+                {"TextColor",  ColorTranslator.FromHtml("#DCDCDC")},
+                {"BackgroundColor",  ColorTranslator.FromHtml("#1E1E1E")},
+                {"PrimaryOutline",  ColorTranslator.FromHtml("#5F5F5F")},
+                {"SecondaryOutline",  ColorTranslator.FromHtml("#3D3D3D")},
+                {"AccentColor",  ColorTranslator.FromHtml("#7160e8")},
+            } } },
 
-            {"MageDark", new ColorTheme()
+            {"Jet Brains Light", new ColorTheme()
             {
-                BackgroundColor = Color.FromArgb(0x00, 0x00, 0x00),
-                TextColor = Color.FromArgb(0xF0, 0xF0, 0xF0),
-                PrimaryOutline = Color.FromArgb(0xBC, 0xBC, 0xBC),
-                SecondaryOutline = Color.FromArgb(0x34, 0x34, 0x34)
-            } },
+                Colors = new Dictionary<string, Color>() {
+                {"TextColor",  ColorTranslator.FromHtml("#080808")},
+                {"BackgroundColor",  ColorTranslator.FromHtml("#FFFFFF")},
+                {"PrimaryOutline",  ColorTranslator.FromHtml("#c9ccd6")},
+                {"SecondaryOutline",  ColorTranslator.FromHtml("#ebecf0")},
+                {"AccentColor",  ColorTranslator.FromHtml("#3574f0")},
+            } } },
         };
 
         /// <summary>
         /// The currently used Color Theme
         /// </summary>
-        public static ColorTheme ProjectTheme { get; set; }
-
-        public static void ChangeTheme(ColorTheme theme, Control.ControlCollection container, Control Base = null)
+        private static ColorTheme projectTheme;
+        private static string projectThemeName;
+        public static string ProjectThemeName 
         {
-            ProjectTheme = theme;
+            get => projectThemeName;
+            set
+            {
+                if (value == projectThemeName) return;
+                if (!Themes.ContainsKey(value)) return;
+                projectThemeName = value;
+                ProjectTheme = Themes[value];
+            }
+        }
+        public static ColorTheme ProjectTheme 
+        {
+            get => projectTheme;
+            set
+            {
+                if (value == projectTheme) return;
+                projectTheme = value;
+                foreach (Form frm in Application.OpenForms)
+                {
+                    ChangeTheme(frm.Controls, frm);
+                }
+            }
+        }
+
+        public static void ChangeTheme(Control.ControlCollection container, Control Base = null)
+        {
+            Base?.SuspendLayout();
+
+            ColorTheme theme = ProjectTheme;
 
             if (Base != null)
             {
@@ -59,13 +90,19 @@ namespace mage.Theming
 
             foreach (Control component in container)
             {
+                //excludes
+                if (component is TileView ||
+                    component is RoomView)
+                    continue;
+
+                //base change
                 component.BackColor = theme.BackgroundColor;
                 component.ForeColor = theme.TextColor;
                 if (component.Tag?.ToString() == "accent") component.BackColor = theme.AccentColor;
 
                 if (component.Controls.Count > 0)
                 {
-                    ChangeTheme(theme, component.Controls);
+                    ChangeTheme(component.Controls);
                 }
 
                 //Special handeling for special controls
@@ -81,7 +118,24 @@ namespace mage.Theming
                     ToolStrip strip = component as ToolStrip;
                     strip.Renderer = new MenuStripCustomRenderer(theme);
                 }
+
+                if (component is Button)
+                {
+                    Button btn = component as Button;
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderColor = theme.PrimaryOutline;
+                    btn.FlatAppearance.MouseOverBackColor = theme.AccentColor;
+                    btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(0x7F, theme.AccentColor);
+                }
+
+                if (component is FlatTextBox)
+                {
+                    FlatTextBox box = component as FlatTextBox;
+                    box.BorderColor = theme.PrimaryOutline;
+                }
             }
+
+            Base?.ResumeLayout();
         }
 
         /// <summary>
@@ -96,16 +150,14 @@ namespace mage.Theming
 
                 //Special handeling for special controls
                 if (component is GroupBox) component.Paint += DrawGroupBox;
-                if (component is CheckBox)
+                if (component is CheckBox) component.Paint += DrawCheckBox;
+                if (component is FlatTextBox)
                 {
-                    CheckBox box = component as CheckBox;
-                    box.Paint += DrawCheckBox;
-                    //box.Appearance = Appearance.Button;
-                    //box.TextAlign = ContentAlignment.MiddleRight;
-                    //box.FlatAppearance.BorderSize = 0;
-                    //box.FlatStyle = FlatStyle.Flat;
-                    //box.AutoSize = false;
+                    FlatTextBox box = component as FlatTextBox;
+                    box.Enter += FocusTextBox;
+                    box.Leave += FocusTextBox;
                 }
+                if (component is Button) component.Paint += DrawButton;
             }
         }
 
@@ -158,7 +210,7 @@ namespace mage.Theming
 
             //Drawing box
             using (Brush b = box.Checked ? new SolidBrush(ProjectTheme.AccentColor) : new SolidBrush(ProjectTheme.BackgroundColor)) e.Graphics.FillRectangle(b, rect);
-            Pen p = box.Checked ? new Pen(ProjectTheme.AccentColor) : new Pen(ProjectTheme.PrimaryOutline) { Alignment = PenAlignment.Inset };
+            Pen p = box.Checked ? new Pen(ProjectTheme.AccentColor) : box.Enabled ? new Pen(ProjectTheme.PrimaryOutline) : new Pen(ProjectTheme.PrimaryOutlineDisabled) { Alignment = PenAlignment.Inset };
             e.Graphics.DrawRectangle(p, rect);
 
             if (box.Checked)
@@ -175,7 +227,35 @@ namespace mage.Theming
 
             //Draw Text
             Brush textBrush = box.Enabled ? new SolidBrush(ProjectTheme.TextColor) : new SolidBrush(ProjectTheme.TextColorDisabled);
-            e.Graphics.DrawString(box.Text, box.Font, textBrush, box.Padding.Left + 16, box.Padding.Top + 1);
+            e.Graphics.DrawString(box.Text, box.Font, textBrush, box.Padding.Left + 16, box.Padding.Top);
+        }
+
+        public static void DrawButton(object sender, PaintEventArgs e)
+        {
+            Button btn = sender as Button;
+
+            if (btn.Enabled) return;
+            e.Graphics.Clear(ProjectTheme.BackgroundColor);
+
+            Pen outlinePen = new Pen(ProjectTheme.PrimaryOutlineDisabled);
+            Rectangle buttonRect = new Rectangle(Point.Empty, btn.Size);
+            buttonRect.Width--; buttonRect.Height--;
+            e.Graphics.DrawRectangle(outlinePen, buttonRect);
+
+            StringFormat s = new StringFormat()
+            {
+                Alignment = StringAlignment.Center,
+                LineAlignment = StringAlignment.Center,
+            };
+
+            using (Brush b = new SolidBrush(ProjectTheme.TextColorDisabled)) 
+                e.Graphics.DrawString(btn.Text, btn.Font, b, buttonRect, s);
+        }
+
+        public static void FocusTextBox(object sender, EventArgs e)
+        {
+            FlatTextBox box = sender as FlatTextBox;
+            box.BorderColor = box.Focused ? ProjectTheme.AccentColor : ProjectTheme.PrimaryOutline;
         }
     }
 }

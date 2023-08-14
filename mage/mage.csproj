@@ -76,8 +76,17 @@
     <Compile Include="Theming\CustomControls\FlatComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Theming\CustomControls\FlatTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Theming\MenuStripColorTable.cs" />
     <Compile Include="Theming\MenuStripCustomRenderer.cs" />
+    <Compile Include="Theming\ThemeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theming\ThemeEditor.Designer.cs">
+      <DependentUpon>ThemeEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Theming\ThemeSwitcher.cs" />
     <Compile Include="Utility\Add.cs" />
     <Compile Include="ByteStream.cs" />
@@ -368,6 +377,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theming\ThemeEditor.resx">
+      <DependentUpon>ThemeEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\FormAdd.resx">
       <DependentUpon>FormAdd.cs</DependentUpon>

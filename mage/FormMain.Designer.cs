@@ -155,24 +155,21 @@
             this.menuItem_numberBase = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_hexadecimal = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_decimal = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator28 = new System.Windows.Forms.ToolStripSeparator();
+            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItem_tooltips = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_help = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_viewHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_about = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox_location = new System.Windows.Forms.GroupBox();
-            this.comboBox_room = new mage.Theming.CustomControls.FlatComboBox();
-            this.comboBox_area = new mage.Theming.CustomControls.FlatComboBox();
             this.label_room = new System.Windows.Forms.Label();
             this.label_area = new System.Windows.Forms.Label();
             this.groupBox_tileset = new System.Windows.Forms.GroupBox();
-            this.comboBox_clipdata = new mage.Theming.CustomControls.FlatComboBox();
             this.label_clipdata = new System.Windows.Forms.Label();
             this.panel_tileset = new System.Windows.Forms.Panel();
-            this.tileView = new mage.TileView();
             this.groupBox_room = new System.Windows.Forms.GroupBox();
             this.panel_room = new System.Windows.Forms.Panel();
-            this.roomView = new mage.RoomView();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextItem_addSprite = new System.Windows.Forms.ToolStripMenuItem();
             this.contextItem_editSprite = new System.Windows.Forms.ToolStripMenuItem();
@@ -238,6 +235,11 @@
             this.toolStrip_add = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_patches = new System.Windows.Forms.ToolStripButton();
             this.comboBox_spriteset = new mage.Theming.CustomControls.FlatComboBox();
+            this.roomView = new mage.RoomView();
+            this.comboBox_clipdata = new mage.Theming.CustomControls.FlatComboBox();
+            this.tileView = new mage.TileView();
+            this.comboBox_room = new mage.Theming.CustomControls.FlatComboBox();
+            this.comboBox_area = new mage.Theming.CustomControls.FlatComboBox();
             this.menuStrip.SuspendLayout();
             this.groupBox_location.SuspendLayout();
             this.groupBox_tileset.SuspendLayout();
@@ -1107,6 +1109,8 @@
             this.menuStrip_options.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItem_defaultView,
             this.menuItem_numberBase,
+            this.toolStripSeparator28,
+            this.themeToolStripMenuItem,
             this.toolStripSeparator21,
             this.menuItem_tooltips});
             this.menuStrip_options.Enabled = false;
@@ -1270,6 +1274,18 @@
             this.menuItem_decimal.Text = "Decimal";
             this.menuItem_decimal.Click += new System.EventHandler(this.menuItem_decimal_Click);
             // 
+            // toolStripSeparator28
+            // 
+            this.toolStripSeparator28.Name = "toolStripSeparator28";
+            this.toolStripSeparator28.Size = new System.Drawing.Size(153, 6);
+            // 
+            // themeToolStripMenuItem
+            // 
+            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.themeToolStripMenuItem.Text = "Theme";
+            this.themeToolStripMenuItem.Click += new System.EventHandler(this.themeToolStripMenuItem_Click);
+            // 
             // toolStripSeparator21
             // 
             this.toolStripSeparator21.Name = "toolStripSeparator21";
@@ -1319,27 +1335,6 @@
             this.groupBox_location.TabStop = false;
             this.groupBox_location.Text = "Location";
             // 
-            // comboBox_room
-            // 
-            this.comboBox_room.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_room.FormattingEnabled = true;
-            this.comboBox_room.Location = new System.Drawing.Point(49, 43);
-            this.comboBox_room.Name = "comboBox_room";
-            this.comboBox_room.Size = new System.Drawing.Size(77, 21);
-            this.comboBox_room.TabIndex = 10;
-            this.comboBox_room.SelectedIndexChanged += new System.EventHandler(this.comboBox_room_SelectedIndexChanged);
-            this.comboBox_room.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_KeyPress);
-            // 
-            // comboBox_area
-            // 
-            this.comboBox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_area.FormattingEnabled = true;
-            this.comboBox_area.Location = new System.Drawing.Point(49, 18);
-            this.comboBox_area.Name = "comboBox_area";
-            this.comboBox_area.Size = new System.Drawing.Size(77, 21);
-            this.comboBox_area.TabIndex = 9;
-            this.comboBox_area.SelectedIndexChanged += new System.EventHandler(this.comboBox_area_SelectedIndexChanged);
-            // 
             // label_room
             // 
             this.label_room.AutoSize = true;
@@ -1374,15 +1369,6 @@
             this.groupBox_tileset.TabStop = false;
             this.groupBox_tileset.Text = "Tileset";
             // 
-            // comboBox_clipdata
-            // 
-            this.comboBox_clipdata.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_clipdata.FormattingEnabled = true;
-            this.comboBox_clipdata.Location = new System.Drawing.Point(58, 19);
-            this.comboBox_clipdata.Name = "comboBox_clipdata";
-            this.comboBox_clipdata.Size = new System.Drawing.Size(222, 21);
-            this.comboBox_clipdata.TabIndex = 11;
-            // 
             // label_clipdata
             // 
             this.label_clipdata.AutoSize = true;
@@ -1403,19 +1389,6 @@
             this.panel_tileset.Name = "panel_tileset";
             this.panel_tileset.Size = new System.Drawing.Size(273, 256);
             this.panel_tileset.TabIndex = 0;
-            // 
-            // tileView
-            // 
-            this.tileView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tileView.Location = new System.Drawing.Point(0, 0);
-            this.tileView.Name = "tileView";
-            this.tileView.Size = new System.Drawing.Size(256, 256);
-            this.tileView.TabIndex = 0;
-            this.tileView.TabStop = false;
-            this.tileView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tileView_MouseDown);
-            this.tileView.MouseLeave += new System.EventHandler(this.tileView_MouseLeave);
-            this.tileView.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tileView_MouseMove);
-            this.tileView.MouseUp += new System.Windows.Forms.MouseEventHandler(this.tileView_MouseUp);
             // 
             // groupBox_room
             // 
@@ -1444,20 +1417,6 @@
             this.panel_room.Name = "panel_room";
             this.panel_room.Size = new System.Drawing.Size(465, 393);
             this.panel_room.TabIndex = 0;
-            // 
-            // roomView
-            // 
-            this.roomView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roomView.ContextMenuStrip = this.contextMenu;
-            this.roomView.Location = new System.Drawing.Point(0, 0);
-            this.roomView.Name = "roomView";
-            this.roomView.Size = new System.Drawing.Size(448, 376);
-            this.roomView.TabIndex = 0;
-            this.roomView.TabStop = false;
-            this.roomView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.roomView_MouseDown);
-            this.roomView.MouseLeave += new System.EventHandler(this.roomView_MouseLeave);
-            this.roomView.MouseMove += new System.Windows.Forms.MouseEventHandler(this.roomView_MouseMove);
-            this.roomView.MouseUp += new System.Windows.Forms.MouseEventHandler(this.roomView_MouseUp);
             // 
             // contextMenu
             // 
@@ -2110,6 +2069,63 @@
             this.comboBox_spriteset.TabIndex = 11;
             this.comboBox_spriteset.SelectedIndexChanged += new System.EventHandler(this.comboBox_spriteset_SelectedIndexChanged);
             // 
+            // roomView
+            // 
+            this.roomView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roomView.ContextMenuStrip = this.contextMenu;
+            this.roomView.Location = new System.Drawing.Point(0, 0);
+            this.roomView.Name = "roomView";
+            this.roomView.Size = new System.Drawing.Size(448, 376);
+            this.roomView.TabIndex = 0;
+            this.roomView.TabStop = false;
+            this.roomView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.roomView_MouseDown);
+            this.roomView.MouseLeave += new System.EventHandler(this.roomView_MouseLeave);
+            this.roomView.MouseMove += new System.Windows.Forms.MouseEventHandler(this.roomView_MouseMove);
+            this.roomView.MouseUp += new System.Windows.Forms.MouseEventHandler(this.roomView_MouseUp);
+            // 
+            // comboBox_clipdata
+            // 
+            this.comboBox_clipdata.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_clipdata.FormattingEnabled = true;
+            this.comboBox_clipdata.Location = new System.Drawing.Point(58, 19);
+            this.comboBox_clipdata.Name = "comboBox_clipdata";
+            this.comboBox_clipdata.Size = new System.Drawing.Size(222, 21);
+            this.comboBox_clipdata.TabIndex = 11;
+            // 
+            // tileView
+            // 
+            this.tileView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tileView.Location = new System.Drawing.Point(0, 0);
+            this.tileView.Name = "tileView";
+            this.tileView.Size = new System.Drawing.Size(256, 256);
+            this.tileView.TabIndex = 0;
+            this.tileView.TabStop = false;
+            this.tileView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tileView_MouseDown);
+            this.tileView.MouseLeave += new System.EventHandler(this.tileView_MouseLeave);
+            this.tileView.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tileView_MouseMove);
+            this.tileView.MouseUp += new System.Windows.Forms.MouseEventHandler(this.tileView_MouseUp);
+            // 
+            // comboBox_room
+            // 
+            this.comboBox_room.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_room.FormattingEnabled = true;
+            this.comboBox_room.Location = new System.Drawing.Point(49, 43);
+            this.comboBox_room.Name = "comboBox_room";
+            this.comboBox_room.Size = new System.Drawing.Size(77, 21);
+            this.comboBox_room.TabIndex = 10;
+            this.comboBox_room.SelectedIndexChanged += new System.EventHandler(this.comboBox_room_SelectedIndexChanged);
+            this.comboBox_room.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_KeyPress);
+            // 
+            // comboBox_area
+            // 
+            this.comboBox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_area.FormattingEnabled = true;
+            this.comboBox_area.Location = new System.Drawing.Point(49, 18);
+            this.comboBox_area.Name = "comboBox_area";
+            this.comboBox_area.Size = new System.Drawing.Size(77, 21);
+            this.comboBox_area.TabIndex = 9;
+            this.comboBox_area.SelectedIndexChanged += new System.EventHandler(this.comboBox_area_SelectedIndexChanged);
+            // 
             // FormMain
             // 
             this.AllowDrop = true;
@@ -2369,6 +2385,8 @@
         private Theming.CustomControls.FlatComboBox comboBox_room;
         private Theming.CustomControls.FlatComboBox comboBox_clipdata;
         private Theming.CustomControls.FlatComboBox comboBox_spriteset;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
+        private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
     }
 }
 

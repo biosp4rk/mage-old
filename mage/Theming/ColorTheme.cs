@@ -9,40 +9,18 @@ namespace mage.Theming
     {
         const int disabledAlpha = 0x50;
 
-		private Color backgroundColor;
-		public Color BackgroundColor
-        {
-            get => backgroundColor;
-            set { backgroundColor = value; }
-        }
+        public Color BackgroundColor => Colors["BackgroundColor"];
 
-        private Color textColor;
-        public Color TextColor
-        {
-            get => textColor;
-            set { textColor = value; }
-        }
+        public Color TextColor => Colors["TextColor"];
         public Color TextColorDisabled => Color.FromArgb(disabledAlpha, TextColor);
 
-        private Color primaryOutline;
-        public Color PrimaryOutline
-        {
-            get => primaryOutline;
-            set { primaryOutline = value; }
-        }
+        public Color PrimaryOutline => Colors["PrimaryOutline"];
+        public Color PrimaryOutlineDisabled => Color.FromArgb(disabledAlpha, PrimaryOutline);
 
-        private Color secondaryOutline;
-        public Color SecondaryOutline
-        {
-            get => secondaryOutline;
-            set { secondaryOutline = value; }
-        }
+        public Color SecondaryOutline => Colors["SecondaryOutline"];
 
-        private Color accentColor;
-        public Color AccentColor
-        {
-            get => accentColor;
-            set { accentColor = value; }
-        }
+        public Color AccentColor => Colors["AccentColor"];
+
+        public Dictionary<string, Color> Colors { get; set; } = new Dictionary<string, Color>();
     }
 }

@@ -364,7 +364,7 @@
             // statusStrip_spring
             // 
             this.statusStrip_spring.Name = "statusStrip_spring";
-            this.statusStrip_spring.Size = new System.Drawing.Size(324, 17);
+            this.statusStrip_spring.Size = new System.Drawing.Size(355, 17);
             this.statusStrip_spring.Spring = true;
             // 
             // statusLabel_zoomLevel

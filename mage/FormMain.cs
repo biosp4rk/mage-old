@@ -73,7 +73,8 @@ namespace mage
         {
             InitializeComponent();
 
-            ThemeSwitcher.ChangeTheme(ThemeSwitcher.Themes["VSDark"], Controls, this);
+            ThemeSwitcher.ProjectThemeName = "Mage Old";
+            ThemeSwitcher.ChangeTheme(Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);
 
             DisplayRecentFiles();
@@ -800,6 +801,8 @@ namespace mage
                 tileTimer.Tick += tileTimer_Tick;
             }
         }
+
+        private void themeToolStripMenuItem_Click(object sender, EventArgs e) => new ThemeEditor().ShowDialog();
 
         // help
         private void menuItem_viewHelp_Click(object sender, EventArgs e)
@@ -2403,8 +2406,7 @@ namespace mage
             Test.Room(this, true, roomCursor.X, roomCursor.Y);
         }
 
+
         #endregion
-
-
     }
 }
