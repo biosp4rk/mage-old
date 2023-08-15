@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using mage.Properties;
 using mage.Theming;
+using Newtonsoft.Json;
 
 namespace mage
 {
@@ -73,13 +76,12 @@ namespace mage
         {
             InitializeComponent();
 
-            ThemeSwitcher.ProjectThemeName = "Visual Studio Dark";
-            ThemeSwitcher.ChangeTheme(Controls, this);
-            ThemeSwitcher.InjectPaintOverrides(Controls);
-
             DisplayRecentFiles();
             InitializeSettings();
             ShowSplash();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
         }
 
 
@@ -157,6 +159,11 @@ namespace mage
             else if (zoom == 2) { menuItem_zoom400.Checked = true; }
             else if (zoom == 3) { menuItem_zoom800.Checked = true; }
             roomView.UpdateZoom(zoom, false);
+
+            //Loading themes
+            ThemeSwitcher.Themes = JsonConvert.DeserializeObject<Dictionary<string, ColorTheme>>(Settings.Default.themes);
+            CheckIfThemesExist();
+            ThemeSwitcher.ProjectThemeName = Settings.Default.selectedTheme;
         }
 
         private void SaveSettings()
@@ -176,7 +183,26 @@ namespace mage
             Settings.Default.hexadecimal = menuItem_hexadecimal.Checked;
             Settings.Default.tooltips = menuItem_tooltips.Checked;
             Settings.Default.zoom = zoom;
+
+            //Saving themes
+            string themeDictionary = JsonConvert.SerializeObject(ThemeSwitcher.Themes);
+            Settings.Default.themes = themeDictionary;
+            Settings.Default.selectedTheme = ThemeSwitcher.ProjectThemeName;
+
             Settings.Default.Save();
+        }
+
+        private void CheckIfThemesExist()
+        {
+            if (ThemeSwitcher.Themes == null)
+            {
+                ThemeSwitcher.Themes = new Dictionary<string, ColorTheme>();
+            }
+            if (ThemeSwitcher.Themes.Count == 0)
+            {
+                ThemeSwitcher.Themes.Add("Mage Old", ThemeSwitcher.StandardTheme);
+                ThemeSwitcher.Themes.Add("Mage Dark", ThemeSwitcher.StandardDarkTheme);
+            }
         }
 
         private void recentItem_Click(object sender, EventArgs e)
@@ -1099,6 +1125,9 @@ namespace mage
             groupBox_tileset.Enabled = val;
             groupBox_room.Enabled = val;
             statusStrip.Enabled = val;
+            menuItem_defaultView.Enabled = val;
+            menuItem_numberBase.Enabled = val;
+            menuItem_tooltips.Enabled = val;
         }
 
         private void FormMain_DragEnter(object sender, DragEventArgs e)

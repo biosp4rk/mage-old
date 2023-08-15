@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemeEditor));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.comboBox_theme = new mage.Theming.CustomControls.FlatComboBox();
+            this.button_export_import = new System.Windows.Forms.ToolStripDropDownButton();
+            this.menuItem_export = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItem_import = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox_colors = new System.Windows.Forms.GroupBox();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_accent = new System.Windows.Forms.Panel();
@@ -52,29 +54,47 @@
             this.btn_remove = new System.Windows.Forms.Button();
             this.button_apply = new System.Windows.Forms.Button();
             this.flatTextBox_name = new mage.Theming.CustomControls.FlatTextBox();
+            this.comboBox_theme = new mage.Theming.CustomControls.FlatComboBox();
+            this.statusStrip.SuspendLayout();
             this.groupBox_colors.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip
             // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.button_export_import});
             this.statusStrip.Location = new System.Drawing.Point(0, 252);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(299, 22);
             this.statusStrip.TabIndex = 0;
             this.statusStrip.Text = "statusStrip1";
             // 
-            // comboBox_theme
+            // button_export_import
             // 
-            this.comboBox_theme.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_theme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_theme.FormattingEnabled = true;
-            this.comboBox_theme.Location = new System.Drawing.Point(12, 12);
-            this.comboBox_theme.Name = "comboBox_theme";
-            this.comboBox_theme.Size = new System.Drawing.Size(143, 21);
-            this.comboBox_theme.TabIndex = 1;
-            this.comboBox_theme.SelectedIndexChanged += new System.EventHandler(this.comboBox_theme_SelectedIndexChanged);
+            this.button_export_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.button_export_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItem_export,
+            this.menuItem_import});
+            this.button_export_import.Image = ((System.Drawing.Image)(resources.GetObject("button_export_import.Image")));
+            this.button_export_import.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.button_export_import.Name = "button_export_import";
+            this.button_export_import.Size = new System.Drawing.Size(101, 20);
+            this.button_export_import.Text = "Export / Import";
+            // 
+            // menuItem_export
+            // 
+            this.menuItem_export.Name = "menuItem_export";
+            this.menuItem_export.Size = new System.Drawing.Size(149, 22);
+            this.menuItem_export.Text = "Export Theme";
+            this.menuItem_export.Click += new System.EventHandler(this.menuItem_export_Click);
+            // 
+            // menuItem_import
+            // 
+            this.menuItem_import.Name = "menuItem_import";
+            this.menuItem_import.Size = new System.Drawing.Size(149, 22);
+            this.menuItem_import.Text = "Import Theme";
+            this.menuItem_import.Click += new System.EventHandler(this.menuItem_import_Click);
             // 
             // groupBox_colors
             // 
@@ -272,6 +292,7 @@
             this.btn_add.TabIndex = 3;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_remove
             // 
@@ -282,6 +303,7 @@
             this.btn_remove.TabIndex = 4;
             this.btn_remove.Text = "Remove";
             this.btn_remove.UseVisualStyleBackColor = true;
+            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
             // 
             // button_apply
             // 
@@ -303,6 +325,19 @@
             this.flatTextBox_name.Name = "flatTextBox_name";
             this.flatTextBox_name.Size = new System.Drawing.Size(272, 20);
             this.flatTextBox_name.TabIndex = 6;
+            this.flatTextBox_name.TextChanged += new System.EventHandler(this.flatTextBox_name_TextChanged);
+            // 
+            // comboBox_theme
+            // 
+            this.comboBox_theme.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_theme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_theme.FormattingEnabled = true;
+            this.comboBox_theme.Location = new System.Drawing.Point(12, 12);
+            this.comboBox_theme.Name = "comboBox_theme";
+            this.comboBox_theme.Size = new System.Drawing.Size(143, 21);
+            this.comboBox_theme.TabIndex = 1;
+            this.comboBox_theme.SelectedIndexChanged += new System.EventHandler(this.comboBox_theme_SelectedIndexChanged);
             // 
             // ThemeEditor
             // 
@@ -319,6 +354,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThemeEditor";
             this.Text = "Themes";
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.groupBox_colors.ResumeLayout(false);
             this.panel_main.ResumeLayout(false);
             this.panel_main.PerformLayout();
@@ -352,5 +389,8 @@
         private System.Windows.Forms.Panel panel_primary;
         private System.Windows.Forms.Panel panel_background;
         private CustomControls.FlatTextBox flatTextBox_name;
+        private System.Windows.Forms.ToolStripDropDownButton button_export_import;
+        private System.Windows.Forms.ToolStripMenuItem menuItem_export;
+        private System.Windows.Forms.ToolStripMenuItem menuItem_import;
     }
 }

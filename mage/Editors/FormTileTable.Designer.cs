@@ -53,7 +53,7 @@
             this.button_palTL = new System.Windows.Forms.Button();
             this.button_palBL = new System.Windows.Forms.Button();
             this.button_palBR = new System.Windows.Forms.Button();
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabControl = new mage.Theming.CustomControls.FlatTabControl();
             this.tabPage_tileset = new System.Windows.Forms.TabPage();
             this.label_height = new System.Windows.Forms.Label();
             this.numericUpDown_height = new mage.Theming.CustomControls.FlatNumericUpDown();
@@ -823,7 +823,7 @@
         private System.Windows.Forms.Button button_palTL;
         private System.Windows.Forms.Button button_palBL;
         private System.Windows.Forms.Button button_palBR;
-        private System.Windows.Forms.TabControl tabControl;
+        private mage.Theming.CustomControls.FlatTabControl tabControl;
         private System.Windows.Forms.TabPage tabPage_background;
         private System.Windows.Forms.TabPage tabPage_tileset;
         private mage.Theming.CustomControls.FlatComboBox comboBox_size;

@@ -1,11 +1,8 @@
 Dark Mode:
-- Tab Control
 - List View
 - Picture Box (Palette Editor)
-- Radio Buttons
 - (Another new Text Box)
 - Scroll Bars
-- Enable Options->Theme before ROM load
 
 Mage 1.5:
 - Drag on Minimap Editor

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnimation));
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabControl = new mage.Theming.CustomControls.FlatTabControl();
             this.tabPage_tileset = new System.Windows.Forms.TabPage();
             this.label_tilesetGfx = new System.Windows.Forms.Label();
             this.comboBox_tilesetGfxNum = new mage.Theming.CustomControls.FlatComboBox();
@@ -564,7 +564,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl;
+        private mage.Theming.CustomControls.FlatTabControl tabControl;
         private System.Windows.Forms.TabPage tabPage_tileset;
         private System.Windows.Forms.Button button_tilesetClose;
         private System.Windows.Forms.Button button_tilesetApply;

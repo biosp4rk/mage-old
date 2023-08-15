@@ -225,5 +225,29 @@ namespace mage.Properties {
                 this["emulatorPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string themes {
+            get {
+                return ((string)(this["themes"]));
+            }
+            set {
+                this["themes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string selectedTheme {
+            get {
+                return ((string)(this["selectedTheme"]));
+            }
+            set {
+                this["selectedTheme"] = value;
+            }
+        }
     }
 }

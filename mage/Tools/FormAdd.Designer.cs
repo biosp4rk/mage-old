@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdd));
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabControl = new mage.Theming.CustomControls.FlatTabControl();
             this.tabPage_bg = new System.Windows.Forms.TabPage();
             this.groupBox_bgOptions = new System.Windows.Forms.GroupBox();
             this.radioButton_bgBlank = new System.Windows.Forms.RadioButton();
@@ -631,7 +631,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl;
+        private mage.Theming.CustomControls.FlatTabControl tabControl;
         private System.Windows.Forms.TabPage tabPage_bg;
         private System.Windows.Forms.TabPage tabPage_room;
         private mage.Theming.CustomControls.FlatComboBox comboBox_bg;

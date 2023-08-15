@@ -43,7 +43,7 @@ namespace mage
                 label.Text = screen.ToString();
                 if (screen % 1 == 0 & screen > 0)
                 {
-                    label.ForeColor = Color.Black;
+                    label.ForeColor = ThemeSwitcher.ProjectTheme.TextColor;
                 }
                 else
                 {

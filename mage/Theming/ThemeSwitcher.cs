@@ -14,37 +14,35 @@ namespace mage.Theming
         /// Project Wide dictionary with all Color Themes
         /// </summary>
         public static Dictionary<string, ColorTheme> Themes = new Dictionary<string, ColorTheme>()
-        {
-            {"Mage Old", new ColorTheme()
-            {
-                Colors = new Dictionary<string, Color>() {
-                {"TextColor",  ColorTranslator.FromHtml("#000000")},
-                {"BackgroundColor",  ColorTranslator.FromHtml("#F0F0F0")},
-                {"PrimaryOutline",  ColorTranslator.FromHtml("#BCBCBC")},
-                {"SecondaryOutline",  ColorTranslator.FromHtml("#DCDCDC")},
-                {"AccentColor",  ColorTranslator.FromHtml("#0078D7")},
-            } } },
-
-            {"Visual Studio Dark", new ColorTheme()
-            {
-                Colors = new Dictionary<string, Color>() {
-                {"TextColor",  ColorTranslator.FromHtml("#DCDCDC")},
-                {"BackgroundColor",  ColorTranslator.FromHtml("#1E1E1E")},
-                {"PrimaryOutline",  ColorTranslator.FromHtml("#5F5F5F")},
-                {"SecondaryOutline",  ColorTranslator.FromHtml("#3D3D3D")},
-                {"AccentColor",  ColorTranslator.FromHtml("#7160e8")},
-            } } },
-
-            {"Jet Brains Light", new ColorTheme()
-            {
-                Colors = new Dictionary<string, Color>() {
-                {"TextColor",  ColorTranslator.FromHtml("#080808")},
-                {"BackgroundColor",  ColorTranslator.FromHtml("#FFFFFF")},
-                {"PrimaryOutline",  ColorTranslator.FromHtml("#c9ccd6")},
-                {"SecondaryOutline",  ColorTranslator.FromHtml("#ebecf0")},
-                {"AccentColor",  ColorTranslator.FromHtml("#3574f0")},
-            } } },
+        { };
+        
+        /// <summary>
+        /// The old color scheme of MAGE
+        /// </summary>
+        public static ColorTheme StandardTheme { get; } = new ColorTheme() {
+            Colors = new Dictionary<string, Color>() {
+            {"TextColor",  ColorTranslator.FromHtml("#000000")},
+            {"BackgroundColor",  ColorTranslator.FromHtml("#F0F0F0")},
+            {"PrimaryOutline",  ColorTranslator.FromHtml("#BCBCBC")},
+            {"SecondaryOutline",  ColorTranslator.FromHtml("#DCDCDC")},
+            {"AccentColor",  ColorTranslator.FromHtml("#0078D7")},
+            }
         };
+
+        /// <summary>
+        /// A new dark color scheme for MAGE, currently based on Visual Studio 2022
+        /// </summary>
+        public static ColorTheme StandardDarkTheme { get; } = new ColorTheme()
+        {
+            Colors = new Dictionary<string, Color>() {
+            {"TextColor",  ColorTranslator.FromHtml("#DCDCDC")},
+            {"BackgroundColor",  ColorTranslator.FromHtml("#1E1E1E")},
+            {"PrimaryOutline",  ColorTranslator.FromHtml("#5F5F5F")},
+            {"SecondaryOutline",  ColorTranslator.FromHtml("#3D3D3D")},
+            {"AccentColor",  ColorTranslator.FromHtml("#7160e8")},
+            }
+        };
+
 
         /// <summary>
         /// The currently used Color Theme
@@ -56,7 +54,16 @@ namespace mage.Theming
             get => projectThemeName;
             set
             {
-                if (!Themes.ContainsKey(value)) return;
+                if (!Themes.ContainsKey(value))
+                {
+                    if (value == "Mage Old") Themes.Add("Mage Old", StandardTheme);
+                    else if (value == "Mage Dark") Themes.Add("Mage Dark", StandardDarkTheme);
+                    else 
+                    {
+                        ProjectThemeName = "Mage Old";
+                        value = "Mage Old";
+                    }
+                }
                 projectThemeName = value;
                 ProjectTheme = Themes[value];
             }
@@ -74,6 +81,11 @@ namespace mage.Theming
             }
         }
 
+
+        /// <summary>
+        /// Changes the properties of all Controls in <paramref name="container"/> to reflect the current theme
+        /// selected in the <see cref="ThemeSwitcher.ProjectTheme"/>. Changes the background color of <paramref name="Base"/> if given.
+        /// </summary>
         public static void ChangeTheme(Control.ControlCollection container, Control Base = null)
         {
             Base?.SuspendLayout();
@@ -140,6 +152,12 @@ namespace mage.Theming
                     num.BorderColor = theme.PrimaryOutline;
                     num.ButtonHighlightColor = theme.AccentColor;
                 }
+
+                if (component is FlatTabControl)
+                {
+                    FlatTabControl tab = component as FlatTabControl;
+                    tab.BorderColor = theme.SecondaryOutline;
+                }
             }
 
             Base?.ResumeLayout();
@@ -165,6 +183,8 @@ namespace mage.Theming
                     box.Leave += FocusTextBox;
                 }
                 if (component is Button) component.Paint += DrawButton;
+                if (component is Label) component.Paint += DrawLabel;
+                if (component is RadioButton) component.Paint += DrawRadioButton;
             }
         }
 
@@ -237,6 +257,33 @@ namespace mage.Theming
             e.Graphics.DrawString(box.Text, box.Font, textBrush, box.Padding.Left + 16, box.Padding.Top);
         }
 
+        public static void DrawRadioButton(object sender, PaintEventArgs e)
+        {
+            RadioButton box = sender as RadioButton;
+
+            Point pt = new Point(e.ClipRectangle.Left, e.ClipRectangle.Top);
+            Rectangle rect = new Rectangle(pt, new Size(13, 13));
+
+            e.Graphics.Clear(ProjectTheme.BackgroundColor);
+
+            //Drawing box
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            using (Brush b = box.Checked ? new SolidBrush(ProjectTheme.AccentColor) : new SolidBrush(ProjectTheme.BackgroundColor)) e.Graphics.FillEllipse(b, rect);
+            Pen p = box.Checked ? new Pen(ProjectTheme.AccentColor) : box.Enabled ? new Pen(ProjectTheme.PrimaryOutline) : new Pen(ProjectTheme.PrimaryOutlineDisabled) { Alignment = PenAlignment.Inset };
+            e.Graphics.DrawEllipse(p, rect);
+
+            if (box.Checked)
+            {
+                //Drawing the check
+                rect.Inflate(-3, -3);
+                using (Brush b = new SolidBrush(ProjectTheme.TextColor)) e.Graphics.FillEllipse(b, rect);
+            }
+
+            //Draw Text
+            Brush textBrush = box.Enabled ? new SolidBrush(ProjectTheme.TextColor) : new SolidBrush(ProjectTheme.TextColorDisabled);
+            e.Graphics.DrawString(box.Text, box.Font, textBrush, box.Padding.Left + 16, box.Padding.Top);
+        }
+
         public static void DrawButton(object sender, PaintEventArgs e)
         {
             Button btn = sender as Button;
@@ -263,6 +310,18 @@ namespace mage.Theming
         {
             FlatTextBox box = sender as FlatTextBox;
             box.BorderColor = box.Focused ? ProjectTheme.AccentColor : ProjectTheme.PrimaryOutline;
+        }
+
+        public static void DrawLabel(object sender, PaintEventArgs e)
+        {
+            Label l = sender as Label;
+
+            if (l.Enabled) return;
+
+            Rectangle r = new Rectangle(Point.Empty, l.Size);
+            e.Graphics.Clear(ProjectTheme.BackgroundColor);
+            using (Brush b = new SolidBrush(ProjectTheme.TextColorDisabled))
+                e.Graphics.DrawString(l.Text, l.Font, b, r);
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -15,7 +14,7 @@ namespace mage.Theming.CustomControls
         [DefaultValue(typeof(Color), "Gray")]
         public Color BorderColor
         {
-            get { return borderColor; }
+            get { return Focused ? ThemeSwitcher.ProjectTheme.AccentColor : borderColor; }
             set
             {
                 if (borderColor != value)
