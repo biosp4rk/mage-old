@@ -34,7 +34,7 @@
             this.radioButton_current = new System.Windows.Forms.RadioButton();
             this.button_cancel = new System.Windows.Forms.Button();
             this.button_ok = new System.Windows.Forms.Button();
-            this.comboBox_tileset = new System.Windows.Forms.ComboBox();
+            this.comboBox_tileset = new mage.Theming.CustomControls.FlatComboBox();
             this.SuspendLayout();
             // 
             // label_export
@@ -126,6 +126,6 @@
         private System.Windows.Forms.RadioButton radioButton_current;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Button button_ok;
-        private System.Windows.Forms.ComboBox comboBox_tileset;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tileset;
     }
 }

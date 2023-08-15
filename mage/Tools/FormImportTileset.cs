@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
@@ -18,6 +19,9 @@ namespace mage
         public FormImportTileset(FormMain main, string filename)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.room = main.Room;

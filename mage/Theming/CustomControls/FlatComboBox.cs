@@ -60,10 +60,10 @@ namespace mage.Theming.CustomControls
                     dropDownRect.X = clientRect.Width - dropDownRect.Right;
                     dropDownRect.Width += 1;
                 }
-                var innerBorderColor = Enabled ? BackColor : SystemColors.Control;
-                var outerBorderColor = Enabled ? BorderColor : SystemColors.ControlDark;
-                var arrowColor = Enabled ? ForeColor : SystemColors.ControlDark;
-                var buttonColor = Enabled ? ButtonColor : SystemColors.Control;
+                var innerBorderColor = BackColor;
+                var outerBorderColor = BorderColor;
+                var arrowColor = Enabled ? ForeColor : ThemeSwitcher.ProjectTheme.TextColorDisabled;
+                var buttonColor = ButtonColor;
                 var middle = new Point(dropDownRect.Left + dropDownRect.Width / 2,
                     dropDownRect.Top + dropDownRect.Height / 2);
                 var arrow = new Point[]

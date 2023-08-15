@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -9,6 +10,9 @@ namespace mage
         public FormAbout()
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
         }
 
         private void linkLabel_forum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditEnemy));
             this.button_apply = new System.Windows.Forms.Button();
             this.button_close = new System.Windows.Forms.Button();
-            this.comboBox_prop = new System.Windows.Forms.ComboBox();
+            this.comboBox_prop = new mage.Theming.CustomControls.FlatComboBox();
             this.label_prop = new System.Windows.Forms.Label();
             this.groupBox_edit = new System.Windows.Forms.GroupBox();
             this.label_IDval = new System.Windows.Forms.Label();
             this.button_editSprite = new System.Windows.Forms.Button();
             this.label_ID = new System.Windows.Forms.Label();
-            this.comboBox_slot = new System.Windows.Forms.ComboBox();
+            this.comboBox_slot = new mage.Theming.CustomControls.FlatComboBox();
             this.label_slot = new System.Windows.Forms.Label();
             this.groupBox_preview = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -260,13 +260,13 @@
 
         private System.Windows.Forms.Button button_apply;
         private System.Windows.Forms.Button button_close;
-        private System.Windows.Forms.ComboBox comboBox_prop;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_prop;
         private System.Windows.Forms.Label label_prop;
         private System.Windows.Forms.GroupBox groupBox_edit;
         private System.Windows.Forms.Label label_IDval;
         private System.Windows.Forms.Button button_editSprite;
         private System.Windows.Forms.Label label_ID;
-        private System.Windows.Forms.ComboBox comboBox_slot;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_slot;
         private System.Windows.Forms.Label label_slot;
         private System.Windows.Forms.GroupBox groupBox_preview;
         private System.Windows.Forms.PictureBox pictureBox_preview;

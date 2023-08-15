@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -23,6 +24,9 @@ namespace mage
         public FormSprite(FormMain main, byte spriteID)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.sprite1ID = spriteID;

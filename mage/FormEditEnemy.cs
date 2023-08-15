@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -22,6 +23,9 @@ namespace mage
         public FormEditEnemy(FormMain main, int enemyNum)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.ssNum = main.EnemySet;

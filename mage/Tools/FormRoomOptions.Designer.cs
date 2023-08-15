@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRoomOptions));
-            this.textBox_width = new System.Windows.Forms.TextBox();
-            this.textBox_height = new System.Windows.Forms.TextBox();
+            this.textBox_width = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_height = new mage.Theming.CustomControls.FlatTextBox();
             this.label_width = new System.Windows.Forms.Label();
             this.label_height = new System.Windows.Forms.Label();
             this.button_resize = new System.Windows.Forms.Button();
@@ -248,8 +248,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox_width;
-        private System.Windows.Forms.TextBox textBox_height;
+        private mage.Theming.CustomControls.FlatTextBox textBox_width;
+        private mage.Theming.CustomControls.FlatTextBox textBox_height;
         private System.Windows.Forms.Label label_width;
         private System.Windows.Forms.Label label_height;
         private System.Windows.Forms.Button button_resize;
