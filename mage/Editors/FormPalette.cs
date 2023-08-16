@@ -33,6 +33,7 @@ namespace mage
 
             ThemeSwitcher.ChangeTheme(Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);
+            ThemeSwitcher.ThemeChanged += ThemeSwitcherChangedTheme;
 
             this.main = main;
             Initialize();
@@ -45,6 +46,12 @@ namespace mage
             {
                 comboBox_sprite.SelectedIndex = value;
             }
+        }
+
+        private void ThemeSwitcherChangedTheme(object sender, EventArgs e)
+        {
+            if (!groupBox_color.Enabled) return;
+            DrawColorBar();
         }
 
         // constructor (offset)
@@ -303,25 +310,6 @@ namespace mage
             int* imgPtr = (int*)imgData.Scan0 + color * 4;
             int borderColor = ThemeSwitcher.ProjectTheme.TextColor.ToArgb();
             int backgroundColor = ThemeSwitcher.ProjectTheme.SecondaryOutline.ToArgb();
-
-            //for (int y = 0; y < 10; y++)
-            //{
-            //    int val = 0x000000 * (y + 6);
-            //    for (int x = 0; x < 4; x++)
-            //    {
-            //        *imgPtr++ = val;
-            //    }
-            //    imgPtr += 124;
-            //}
-            //for (int y = 0; y < 10; y++)
-            //{
-            //    int val = 0x111111 * (15 - y);
-            //    for (int x = 0; x < 4; x++)
-            //    {
-            //        *imgPtr++ = val;
-            //    }
-            //    imgPtr += 124;
-            //}
 
             for (int y = 0; y < 20; y++)
             {

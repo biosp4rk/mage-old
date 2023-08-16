@@ -22,6 +22,7 @@ namespace mage.Theming
         public override Color MenuItemSelectedGradientBegin => theme.AccentColor;           //Color for selected item
         public override Color MenuItemSelectedGradientEnd => MenuItemSelectedGradientBegin; //
         public override Color CheckBackground => Color.FromArgb(0x3F, theme.AccentColor);
+        public override Color GripLight => Color.Red;
 
         public override Color ToolStripDropDownBackground => theme.BackgroundColor;     //Dropdown Background
         public override Color MenuItemSelected => theme.AccentColor;  //Color for selected Item in Dropdown

@@ -1,6 +1,6 @@
 Dark Mode:
 - List View
-- Picture Box (Palette Editor)
+- Tree View
 - (Another new Text Box)
 - Scroll Bars
 

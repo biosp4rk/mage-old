@@ -61,7 +61,7 @@ namespace mage.Theming
 
 
             //Prevent Mage Old from getting deleted
-            if (key == "Mage Old" || key == "Mage Dark")
+            if (key == ThemeSwitcher.StandardThemeName || key == ThemeSwitcher.StandardDarkThemeName)
             {
                 btn_remove.Enabled = false;
                 flatTextBox_name.Enabled = false;

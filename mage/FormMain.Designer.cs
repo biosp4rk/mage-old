@@ -1133,7 +1133,7 @@
             this.menuItem_defaultScreens});
             this.menuItem_defaultView.Enabled = false;
             this.menuItem_defaultView.Name = "menuItem_defaultView";
-            this.menuItem_defaultView.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultView.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultView.Text = "Default View";
             // 
             // menuItem_defaultBG0
@@ -1141,7 +1141,7 @@
             this.menuItem_defaultBG0.Checked = true;
             this.menuItem_defaultBG0.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_defaultBG0.Name = "menuItem_defaultBG0";
-            this.menuItem_defaultBG0.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultBG0.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultBG0.Text = "BG 0";
             this.menuItem_defaultBG0.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
@@ -1150,7 +1150,7 @@
             this.menuItem_defaultBG1.Checked = true;
             this.menuItem_defaultBG1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_defaultBG1.Name = "menuItem_defaultBG1";
-            this.menuItem_defaultBG1.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultBG1.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultBG1.Text = "BG 1";
             this.menuItem_defaultBG1.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
@@ -1159,7 +1159,7 @@
             this.menuItem_defaultBG2.Checked = true;
             this.menuItem_defaultBG2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_defaultBG2.Name = "menuItem_defaultBG2";
-            this.menuItem_defaultBG2.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultBG2.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultBG2.Text = "BG 2";
             this.menuItem_defaultBG2.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
@@ -1168,7 +1168,7 @@
             this.menuItem_defaultBG3.Checked = true;
             this.menuItem_defaultBG3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_defaultBG3.Name = "menuItem_defaultBG3";
-            this.menuItem_defaultBG3.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultBG3.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultBG3.Text = "BG 3";
             this.menuItem_defaultBG3.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
@@ -1179,7 +1179,7 @@
             this.menuItem_defaultClipBreakable,
             this.menuItem_defaultClipValues});
             this.menuItem_defaultClipdata.Name = "menuItem_defaultClipdata";
-            this.menuItem_defaultClipdata.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultClipdata.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultClipdata.Text = "Clipdata";
             // 
             // menuItem_defaultClipCollision
@@ -1206,14 +1206,14 @@
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(153, 6);
             // 
             // menuItem_defaultSprites
             // 
             this.menuItem_defaultSprites.Checked = true;
             this.menuItem_defaultSprites.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_defaultSprites.Name = "menuItem_defaultSprites";
-            this.menuItem_defaultSprites.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultSprites.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultSprites.Text = "Sprites";
             this.menuItem_defaultSprites.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
@@ -1222,7 +1222,7 @@
             this.menuItem_defaultSpriteOutlines.Checked = true;
             this.menuItem_defaultSpriteOutlines.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_defaultSpriteOutlines.Name = "menuItem_defaultSpriteOutlines";
-            this.menuItem_defaultSpriteOutlines.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultSpriteOutlines.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultSpriteOutlines.Text = "Sprite Outlines";
             this.menuItem_defaultSpriteOutlines.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
@@ -1231,21 +1231,21 @@
             this.menuItem_defaultDoors.Checked = true;
             this.menuItem_defaultDoors.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_defaultDoors.Name = "menuItem_defaultDoors";
-            this.menuItem_defaultDoors.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultDoors.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultDoors.Text = "Doors";
             this.menuItem_defaultDoors.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
             // menuItem_defaultScrolls
             // 
             this.menuItem_defaultScrolls.Name = "menuItem_defaultScrolls";
-            this.menuItem_defaultScrolls.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultScrolls.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultScrolls.Text = "Scrolls";
             this.menuItem_defaultScrolls.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
             // menuItem_defaultScreens
             // 
             this.menuItem_defaultScreens.Name = "menuItem_defaultScreens";
-            this.menuItem_defaultScreens.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_defaultScreens.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultScreens.Text = "Screen Outlines";
             this.menuItem_defaultScreens.Click += new System.EventHandler(this.menuItem_defaultView_Click);
             // 
@@ -1256,7 +1256,7 @@
             this.menuItem_decimal});
             this.menuItem_numberBase.Enabled = false;
             this.menuItem_numberBase.Name = "menuItem_numberBase";
-            this.menuItem_numberBase.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_numberBase.Size = new System.Drawing.Size(156, 22);
             this.menuItem_numberBase.Text = "Number Base";
             // 
             // menuItem_hexadecimal
@@ -1264,39 +1264,39 @@
             this.menuItem_hexadecimal.Checked = true;
             this.menuItem_hexadecimal.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_hexadecimal.Name = "menuItem_hexadecimal";
-            this.menuItem_hexadecimal.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_hexadecimal.Size = new System.Drawing.Size(143, 22);
             this.menuItem_hexadecimal.Text = "Hexadecimal";
             this.menuItem_hexadecimal.Click += new System.EventHandler(this.menuItem_hexadecimal_Click);
             // 
             // menuItem_decimal
             // 
             this.menuItem_decimal.Name = "menuItem_decimal";
-            this.menuItem_decimal.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_decimal.Size = new System.Drawing.Size(143, 22);
             this.menuItem_decimal.Text = "Decimal";
             this.menuItem_decimal.Click += new System.EventHandler(this.menuItem_decimal_Click);
             // 
             // toolStripSeparator28
             // 
             this.toolStripSeparator28.Name = "toolStripSeparator28";
-            this.toolStripSeparator28.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator28.Size = new System.Drawing.Size(153, 6);
             // 
             // themeToolStripMenuItem
             // 
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.themeToolStripMenuItem.Text = "Theme";
             this.themeToolStripMenuItem.Click += new System.EventHandler(this.themeToolStripMenuItem_Click);
             // 
             // toolStripSeparator21
             // 
             this.toolStripSeparator21.Name = "toolStripSeparator21";
-            this.toolStripSeparator21.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator21.Size = new System.Drawing.Size(153, 6);
             // 
             // menuItem_tooltips
             // 
             this.menuItem_tooltips.Enabled = false;
             this.menuItem_tooltips.Name = "menuItem_tooltips";
-            this.menuItem_tooltips.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_tooltips.Size = new System.Drawing.Size(156, 22);
             this.menuItem_tooltips.Text = "Disable Tooltips";
             this.menuItem_tooltips.Click += new System.EventHandler(this.menuItem_tooltips_Click);
             // 
@@ -1708,6 +1708,7 @@
             this.statusLabel_clip});
             this.statusStrip.Location = new System.Drawing.Point(0, 473);
             this.statusStrip.Name = "statusStrip";
+            this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.statusStrip.ShowItemToolTips = true;
             this.statusStrip.Size = new System.Drawing.Size(796, 24);
             this.statusStrip.TabIndex = 0;

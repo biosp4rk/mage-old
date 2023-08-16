@@ -200,8 +200,8 @@ namespace mage
             }
             if (ThemeSwitcher.Themes.Count == 0)
             {
-                ThemeSwitcher.Themes.Add("Mage Old", ThemeSwitcher.StandardTheme);
-                ThemeSwitcher.Themes.Add("Mage Dark", ThemeSwitcher.StandardDarkTheme);
+                ThemeSwitcher.Themes.Add(ThemeSwitcher.StandardThemeName, ThemeSwitcher.StandardTheme);
+                ThemeSwitcher.Themes.Add(ThemeSwitcher.StandardDarkThemeName, ThemeSwitcher.StandardDarkTheme);
             }
         }
 

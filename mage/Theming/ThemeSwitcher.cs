@@ -15,7 +15,8 @@ namespace mage.Theming
         /// </summary>
         public static Dictionary<string, ColorTheme> Themes = new Dictionary<string, ColorTheme>()
         { };
-        
+
+        public const string StandardThemeName = "Mage Old";
         /// <summary>
         /// The old color scheme of MAGE
         /// </summary>
@@ -29,6 +30,7 @@ namespace mage.Theming
             }
         };
 
+        public const string StandardDarkThemeName = "Mage Dark";
         /// <summary>
         /// A new dark color scheme for MAGE, currently based on Visual Studio 2022
         /// </summary>
@@ -56,12 +58,12 @@ namespace mage.Theming
             {
                 if (!Themes.ContainsKey(value))
                 {
-                    if (value == "Mage Old") Themes.Add("Mage Old", StandardTheme);
-                    else if (value == "Mage Dark") Themes.Add("Mage Dark", StandardDarkTheme);
+                    if (value == ThemeSwitcher.StandardThemeName) Themes.Add(ThemeSwitcher.StandardThemeName, StandardTheme);
+                    else if (value == ThemeSwitcher.StandardDarkThemeName) Themes.Add(ThemeSwitcher.StandardDarkThemeName, StandardDarkTheme);
                     else 
                     {
-                        ProjectThemeName = "Mage Old";
-                        value = "Mage Old";
+                        ProjectThemeName = ThemeSwitcher.StandardThemeName;
+                        value = ThemeSwitcher.StandardThemeName;
                     }
                 }
                 projectThemeName = value;
@@ -78,9 +80,12 @@ namespace mage.Theming
                 {
                     ChangeTheme(frm.Controls, frm);
                 }
+                ThemeChanged?.Invoke(null, EventArgs.Empty);
             }
         }
 
+        public static event EventHandler<EventArgs> ThemeChanged;
+        
 
         /// <summary>
         /// Changes the properties of all Controls in <paramref name="container"/> to reflect the current theme
