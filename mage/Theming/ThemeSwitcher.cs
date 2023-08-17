@@ -260,7 +260,7 @@ namespace mage.Theming
                 Rectangle r = rect;
                 r.Inflate(-3, -3);
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                e.Graphics.DrawLines(new Pen(ProjectTheme.TextColor, 1), new Point[]{
+                e.Graphics.DrawLines(new Pen(ProjectTheme.TextColorHightlight, 2), new Point[]{
                 new Point(r.Left, r.Bottom - r.Height /2),
                 new Point(r.Left + r.Width /3,  r.Bottom),
                 new Point(r.Right, r.Top)});
@@ -290,7 +290,7 @@ namespace mage.Theming
             {
                 //Drawing the check
                 rect.Inflate(-3, -3);
-                using (Brush b = new SolidBrush(ProjectTheme.TextColor)) e.Graphics.FillEllipse(b, rect);
+                using (Brush b = new SolidBrush(ProjectTheme.TextColorHightlight)) e.Graphics.FillEllipse(b, rect);
             }
 
             //Draw Text

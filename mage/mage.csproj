@@ -37,9 +37,7 @@
     <Compile Update="Theming\CustomControls\FlatTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Theming\CustomControls\FlatTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Update="Theming\CustomControls\FlatTextBox.cs" />
     <Compile Update="GfxView.cs">
       <SubType>Component</SubType>
     </Compile>

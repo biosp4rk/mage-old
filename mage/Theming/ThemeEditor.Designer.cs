@@ -29,339 +29,387 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemeEditor));
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.button_export_import = new System.Windows.Forms.ToolStripDropDownButton();
-            this.menuItem_export = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem_import = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox_colors = new System.Windows.Forms.GroupBox();
-            this.panel_main = new System.Windows.Forms.Panel();
-            this.panel_accent = new System.Windows.Forms.Panel();
-            this.panel_secondary = new System.Windows.Forms.Panel();
-            this.panel_primary = new System.Windows.Forms.Panel();
-            this.panel_background = new System.Windows.Forms.Panel();
-            this.panel_text = new System.Windows.Forms.Panel();
-            this.flatTextBox_accent = new mage.Theming.CustomControls.FlatTextBox();
-            this.flatTextBox_secondary = new mage.Theming.CustomControls.FlatTextBox();
-            this.flatTextBox_primary = new mage.Theming.CustomControls.FlatTextBox();
-            this.flatTextBox_background = new mage.Theming.CustomControls.FlatTextBox();
-            this.flatTextBox_text = new mage.Theming.CustomControls.FlatTextBox();
-            this.label_accent = new System.Windows.Forms.Label();
-            this.label_secondary_outline = new System.Windows.Forms.Label();
-            this.label_primary_outline = new System.Windows.Forms.Label();
-            this.label_background = new System.Windows.Forms.Label();
-            this.label_text = new System.Windows.Forms.Label();
-            this.btn_add = new System.Windows.Forms.Button();
-            this.btn_remove = new System.Windows.Forms.Button();
-            this.button_apply = new System.Windows.Forms.Button();
-            this.flatTextBox_name = new mage.Theming.CustomControls.FlatTextBox();
-            this.comboBox_theme = new mage.Theming.CustomControls.FlatComboBox();
-            this.statusStrip.SuspendLayout();
-            this.groupBox_colors.SuspendLayout();
-            this.panel_main.SuspendLayout();
-            this.SuspendLayout();
+            statusStrip = new System.Windows.Forms.StatusStrip();
+            button_export_import = new System.Windows.Forms.ToolStripDropDownButton();
+            menuItem_export = new System.Windows.Forms.ToolStripMenuItem();
+            menuItem_import = new System.Windows.Forms.ToolStripMenuItem();
+            groupBox_colors = new System.Windows.Forms.GroupBox();
+            panel_main = new System.Windows.Forms.Panel();
+            panel_accent = new System.Windows.Forms.Panel();
+            panel_secondary = new System.Windows.Forms.Panel();
+            panel_primary = new System.Windows.Forms.Panel();
+            panel_background = new System.Windows.Forms.Panel();
+            panel_text = new System.Windows.Forms.Panel();
+            flatTextBox_accent = new CustomControls.FlatTextBox();
+            flatTextBox_secondary = new CustomControls.FlatTextBox();
+            flatTextBox_primary = new CustomControls.FlatTextBox();
+            flatTextBox_background = new CustomControls.FlatTextBox();
+            flatTextBox_text = new CustomControls.FlatTextBox();
+            label_accent = new System.Windows.Forms.Label();
+            label_secondary_outline = new System.Windows.Forms.Label();
+            label_primary_outline = new System.Windows.Forms.Label();
+            label_background = new System.Windows.Forms.Label();
+            label_text = new System.Windows.Forms.Label();
+            btn_add = new System.Windows.Forms.Button();
+            btn_remove = new System.Windows.Forms.Button();
+            button_apply = new System.Windows.Forms.Button();
+            flatTextBox_name = new CustomControls.FlatTextBox();
+            comboBox_theme = new CustomControls.FlatComboBox();
+            statusStrip.SuspendLayout();
+            groupBox_colors.SuspendLayout();
+            panel_main.SuspendLayout();
+            SuspendLayout();
             // 
             // statusStrip
             // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.button_export_import});
-            this.statusStrip.Location = new System.Drawing.Point(0, 252);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(299, 22);
-            this.statusStrip.TabIndex = 0;
-            this.statusStrip.Text = "statusStrip1";
+            statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { button_export_import });
+            statusStrip.Location = new System.Drawing.Point(0, 294);
+            statusStrip.Name = "statusStrip";
+            statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            statusStrip.Size = new System.Drawing.Size(362, 22);
+            statusStrip.TabIndex = 0;
+            statusStrip.Text = "statusStrip1";
             // 
             // button_export_import
             // 
-            this.button_export_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.button_export_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItem_export,
-            this.menuItem_import});
-            this.button_export_import.Image = ((System.Drawing.Image)(resources.GetObject("button_export_import.Image")));
-            this.button_export_import.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.button_export_import.Name = "button_export_import";
-            this.button_export_import.Size = new System.Drawing.Size(101, 20);
-            this.button_export_import.Text = "Export / Import";
+            button_export_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            button_export_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { menuItem_export, menuItem_import });
+            button_export_import.Image = (System.Drawing.Image)resources.GetObject("button_export_import.Image");
+            button_export_import.ImageTransparentColor = System.Drawing.Color.Magenta;
+            button_export_import.Name = "button_export_import";
+            button_export_import.Size = new System.Drawing.Size(101, 20);
+            button_export_import.Text = "Export / Import";
             // 
             // menuItem_export
             // 
-            this.menuItem_export.Name = "menuItem_export";
-            this.menuItem_export.Size = new System.Drawing.Size(149, 22);
-            this.menuItem_export.Text = "Export Theme";
-            this.menuItem_export.Click += new System.EventHandler(this.menuItem_export_Click);
+            menuItem_export.Name = "menuItem_export";
+            menuItem_export.Size = new System.Drawing.Size(149, 22);
+            menuItem_export.Text = "Export Theme";
+            menuItem_export.Click += menuItem_export_Click;
             // 
             // menuItem_import
             // 
-            this.menuItem_import.Name = "menuItem_import";
-            this.menuItem_import.Size = new System.Drawing.Size(149, 22);
-            this.menuItem_import.Text = "Import Theme";
-            this.menuItem_import.Click += new System.EventHandler(this.menuItem_import_Click);
+            menuItem_import.Name = "menuItem_import";
+            menuItem_import.Size = new System.Drawing.Size(149, 22);
+            menuItem_import.Text = "Import Theme";
+            menuItem_import.Click += menuItem_import_Click;
             // 
             // groupBox_colors
             // 
-            this.groupBox_colors.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox_colors.Controls.Add(this.panel_main);
-            this.groupBox_colors.Location = new System.Drawing.Point(12, 65);
-            this.groupBox_colors.Name = "groupBox_colors";
-            this.groupBox_colors.Size = new System.Drawing.Size(275, 150);
-            this.groupBox_colors.TabIndex = 2;
-            this.groupBox_colors.TabStop = false;
-            this.groupBox_colors.Text = "Colors";
+            groupBox_colors.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBox_colors.Controls.Add(panel_main);
+            groupBox_colors.Location = new System.Drawing.Point(14, 75);
+            groupBox_colors.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_colors.Name = "groupBox_colors";
+            groupBox_colors.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_colors.Size = new System.Drawing.Size(334, 173);
+            groupBox_colors.TabIndex = 2;
+            groupBox_colors.TabStop = false;
+            groupBox_colors.Text = "Colors";
             // 
             // panel_main
             // 
-            this.panel_main.AutoScroll = true;
-            this.panel_main.Controls.Add(this.panel_accent);
-            this.panel_main.Controls.Add(this.panel_secondary);
-            this.panel_main.Controls.Add(this.panel_primary);
-            this.panel_main.Controls.Add(this.panel_background);
-            this.panel_main.Controls.Add(this.panel_text);
-            this.panel_main.Controls.Add(this.flatTextBox_accent);
-            this.panel_main.Controls.Add(this.flatTextBox_secondary);
-            this.panel_main.Controls.Add(this.flatTextBox_primary);
-            this.panel_main.Controls.Add(this.flatTextBox_background);
-            this.panel_main.Controls.Add(this.flatTextBox_text);
-            this.panel_main.Controls.Add(this.label_accent);
-            this.panel_main.Controls.Add(this.label_secondary_outline);
-            this.panel_main.Controls.Add(this.label_primary_outline);
-            this.panel_main.Controls.Add(this.label_background);
-            this.panel_main.Controls.Add(this.label_text);
-            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(3, 16);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(269, 131);
-            this.panel_main.TabIndex = 0;
+            panel_main.AutoScroll = true;
+            panel_main.Controls.Add(panel_accent);
+            panel_main.Controls.Add(panel_secondary);
+            panel_main.Controls.Add(panel_primary);
+            panel_main.Controls.Add(panel_background);
+            panel_main.Controls.Add(panel_text);
+            panel_main.Controls.Add(flatTextBox_accent);
+            panel_main.Controls.Add(flatTextBox_secondary);
+            panel_main.Controls.Add(flatTextBox_primary);
+            panel_main.Controls.Add(flatTextBox_background);
+            panel_main.Controls.Add(flatTextBox_text);
+            panel_main.Controls.Add(label_accent);
+            panel_main.Controls.Add(label_secondary_outline);
+            panel_main.Controls.Add(label_primary_outline);
+            panel_main.Controls.Add(label_background);
+            panel_main.Controls.Add(label_text);
+            panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel_main.Location = new System.Drawing.Point(4, 19);
+            panel_main.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel_main.Name = "panel_main";
+            panel_main.Size = new System.Drawing.Size(326, 151);
+            panel_main.TabIndex = 0;
             // 
             // panel_accent
             // 
-            this.panel_accent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_accent.Location = new System.Drawing.Point(246, 107);
-            this.panel_accent.Name = "panel_accent";
-            this.panel_accent.Size = new System.Drawing.Size(20, 20);
-            this.panel_accent.TabIndex = 14;
-            this.panel_accent.Tag = "AccentColor";
+            panel_accent.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            panel_accent.Location = new System.Drawing.Point(299, 123);
+            panel_accent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel_accent.Name = "panel_accent";
+            panel_accent.Size = new System.Drawing.Size(23, 23);
+            panel_accent.TabIndex = 14;
+            panel_accent.Tag = "AccentColor";
             // 
             // panel_secondary
             // 
-            this.panel_secondary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_secondary.Location = new System.Drawing.Point(246, 81);
-            this.panel_secondary.Name = "panel_secondary";
-            this.panel_secondary.Size = new System.Drawing.Size(20, 20);
-            this.panel_secondary.TabIndex = 13;
-            this.panel_secondary.Tag = "SecondaryOutline";
+            panel_secondary.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            panel_secondary.Location = new System.Drawing.Point(299, 93);
+            panel_secondary.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel_secondary.Name = "panel_secondary";
+            panel_secondary.Size = new System.Drawing.Size(23, 23);
+            panel_secondary.TabIndex = 13;
+            panel_secondary.Tag = "SecondaryOutline";
             // 
             // panel_primary
             // 
-            this.panel_primary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_primary.Location = new System.Drawing.Point(246, 55);
-            this.panel_primary.Name = "panel_primary";
-            this.panel_primary.Size = new System.Drawing.Size(20, 20);
-            this.panel_primary.TabIndex = 12;
-            this.panel_primary.Tag = "PrimaryOutline";
+            panel_primary.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            panel_primary.Location = new System.Drawing.Point(299, 63);
+            panel_primary.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel_primary.Name = "panel_primary";
+            panel_primary.Size = new System.Drawing.Size(23, 23);
+            panel_primary.TabIndex = 12;
+            panel_primary.Tag = "PrimaryOutline";
             // 
             // panel_background
             // 
-            this.panel_background.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_background.Location = new System.Drawing.Point(246, 29);
-            this.panel_background.Name = "panel_background";
-            this.panel_background.Size = new System.Drawing.Size(20, 20);
-            this.panel_background.TabIndex = 11;
-            this.panel_background.Tag = "BackgroundColor";
+            panel_background.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            panel_background.Location = new System.Drawing.Point(299, 33);
+            panel_background.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel_background.Name = "panel_background";
+            panel_background.Size = new System.Drawing.Size(23, 23);
+            panel_background.TabIndex = 11;
+            panel_background.Tag = "BackgroundColor";
             // 
             // panel_text
             // 
-            this.panel_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_text.Location = new System.Drawing.Point(246, 3);
-            this.panel_text.Name = "panel_text";
-            this.panel_text.Size = new System.Drawing.Size(20, 20);
-            this.panel_text.TabIndex = 10;
-            this.panel_text.Tag = "TextColor";
+            panel_text.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            panel_text.Location = new System.Drawing.Point(299, 3);
+            panel_text.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel_text.Name = "panel_text";
+            panel_text.Size = new System.Drawing.Size(23, 23);
+            panel_text.TabIndex = 10;
+            panel_text.Tag = "TextColor";
             // 
             // flatTextBox_accent
             // 
-            this.flatTextBox_accent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatTextBox_accent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.flatTextBox_accent.Location = new System.Drawing.Point(106, 107);
-            this.flatTextBox_accent.Name = "flatTextBox_accent";
-            this.flatTextBox_accent.Size = new System.Drawing.Size(134, 20);
-            this.flatTextBox_accent.TabIndex = 9;
-            this.flatTextBox_accent.Tag = "panel_accent";
-            this.flatTextBox_accent.TextChanged += new System.EventHandler(this.ColorValueChanged);
+            flatTextBox_accent.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flatTextBox_accent.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            flatTextBox_accent.Location = new System.Drawing.Point(124, 123);
+            flatTextBox_accent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flatTextBox_accent.Multiline = false;
+            flatTextBox_accent.Name = "flatTextBox_accent";
+            flatTextBox_accent.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            flatTextBox_accent.ReadOnly = false;
+            flatTextBox_accent.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            flatTextBox_accent.SelectionStart = 0;
+            flatTextBox_accent.Size = new System.Drawing.Size(167, 23);
+            flatTextBox_accent.TabIndex = 9;
+            flatTextBox_accent.Tag = "panel_accent";
+            flatTextBox_accent.WordWrap = true;
+            flatTextBox_accent.TextChanged += ColorValueChanged;
             // 
             // flatTextBox_secondary
             // 
-            this.flatTextBox_secondary.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatTextBox_secondary.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.flatTextBox_secondary.Location = new System.Drawing.Point(106, 81);
-            this.flatTextBox_secondary.Name = "flatTextBox_secondary";
-            this.flatTextBox_secondary.Size = new System.Drawing.Size(134, 20);
-            this.flatTextBox_secondary.TabIndex = 8;
-            this.flatTextBox_secondary.Tag = "panel_secondary";
-            this.flatTextBox_secondary.TextChanged += new System.EventHandler(this.ColorValueChanged);
+            flatTextBox_secondary.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flatTextBox_secondary.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            flatTextBox_secondary.Location = new System.Drawing.Point(124, 93);
+            flatTextBox_secondary.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flatTextBox_secondary.Multiline = false;
+            flatTextBox_secondary.Name = "flatTextBox_secondary";
+            flatTextBox_secondary.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            flatTextBox_secondary.ReadOnly = false;
+            flatTextBox_secondary.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            flatTextBox_secondary.SelectionStart = 0;
+            flatTextBox_secondary.Size = new System.Drawing.Size(167, 23);
+            flatTextBox_secondary.TabIndex = 8;
+            flatTextBox_secondary.Tag = "panel_secondary";
+            flatTextBox_secondary.WordWrap = true;
+            flatTextBox_secondary.TextChanged += ColorValueChanged;
             // 
             // flatTextBox_primary
             // 
-            this.flatTextBox_primary.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatTextBox_primary.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.flatTextBox_primary.Location = new System.Drawing.Point(106, 55);
-            this.flatTextBox_primary.Name = "flatTextBox_primary";
-            this.flatTextBox_primary.Size = new System.Drawing.Size(134, 20);
-            this.flatTextBox_primary.TabIndex = 7;
-            this.flatTextBox_primary.Tag = "panel_primary";
-            this.flatTextBox_primary.TextChanged += new System.EventHandler(this.ColorValueChanged);
+            flatTextBox_primary.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flatTextBox_primary.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            flatTextBox_primary.Location = new System.Drawing.Point(124, 63);
+            flatTextBox_primary.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flatTextBox_primary.Multiline = false;
+            flatTextBox_primary.Name = "flatTextBox_primary";
+            flatTextBox_primary.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            flatTextBox_primary.ReadOnly = false;
+            flatTextBox_primary.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            flatTextBox_primary.SelectionStart = 0;
+            flatTextBox_primary.Size = new System.Drawing.Size(167, 23);
+            flatTextBox_primary.TabIndex = 7;
+            flatTextBox_primary.Tag = "panel_primary";
+            flatTextBox_primary.WordWrap = true;
+            flatTextBox_primary.TextChanged += ColorValueChanged;
             // 
             // flatTextBox_background
             // 
-            this.flatTextBox_background.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatTextBox_background.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.flatTextBox_background.Location = new System.Drawing.Point(106, 29);
-            this.flatTextBox_background.Name = "flatTextBox_background";
-            this.flatTextBox_background.Size = new System.Drawing.Size(134, 20);
-            this.flatTextBox_background.TabIndex = 6;
-            this.flatTextBox_background.Tag = "panel_background";
-            this.flatTextBox_background.TextChanged += new System.EventHandler(this.ColorValueChanged);
+            flatTextBox_background.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flatTextBox_background.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            flatTextBox_background.Location = new System.Drawing.Point(124, 33);
+            flatTextBox_background.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flatTextBox_background.Multiline = false;
+            flatTextBox_background.Name = "flatTextBox_background";
+            flatTextBox_background.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            flatTextBox_background.ReadOnly = false;
+            flatTextBox_background.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            flatTextBox_background.SelectionStart = 0;
+            flatTextBox_background.Size = new System.Drawing.Size(167, 23);
+            flatTextBox_background.TabIndex = 6;
+            flatTextBox_background.Tag = "panel_background";
+            flatTextBox_background.WordWrap = true;
+            flatTextBox_background.TextChanged += ColorValueChanged;
             // 
             // flatTextBox_text
             // 
-            this.flatTextBox_text.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatTextBox_text.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.flatTextBox_text.Location = new System.Drawing.Point(106, 3);
-            this.flatTextBox_text.Name = "flatTextBox_text";
-            this.flatTextBox_text.Size = new System.Drawing.Size(134, 20);
-            this.flatTextBox_text.TabIndex = 5;
-            this.flatTextBox_text.Tag = "panel_text";
-            this.flatTextBox_text.TextChanged += new System.EventHandler(this.ColorValueChanged);
+            flatTextBox_text.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flatTextBox_text.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            flatTextBox_text.Location = new System.Drawing.Point(124, 3);
+            flatTextBox_text.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flatTextBox_text.Multiline = false;
+            flatTextBox_text.Name = "flatTextBox_text";
+            flatTextBox_text.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            flatTextBox_text.ReadOnly = false;
+            flatTextBox_text.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            flatTextBox_text.SelectionStart = 0;
+            flatTextBox_text.Size = new System.Drawing.Size(167, 23);
+            flatTextBox_text.TabIndex = 5;
+            flatTextBox_text.Tag = "panel_text";
+            flatTextBox_text.WordWrap = true;
+            flatTextBox_text.TextChanged += ColorValueChanged;
             // 
             // label_accent
             // 
-            this.label_accent.AutoSize = true;
-            this.label_accent.Location = new System.Drawing.Point(3, 110);
-            this.label_accent.Name = "label_accent";
-            this.label_accent.Size = new System.Drawing.Size(44, 13);
-            this.label_accent.TabIndex = 4;
-            this.label_accent.Text = "Accent:";
+            label_accent.AutoSize = true;
+            label_accent.Location = new System.Drawing.Point(4, 127);
+            label_accent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_accent.Name = "label_accent";
+            label_accent.Size = new System.Drawing.Size(47, 15);
+            label_accent.TabIndex = 4;
+            label_accent.Text = "Accent:";
             // 
             // label_secondary_outline
             // 
-            this.label_secondary_outline.AutoSize = true;
-            this.label_secondary_outline.Location = new System.Drawing.Point(3, 84);
-            this.label_secondary_outline.Name = "label_secondary_outline";
-            this.label_secondary_outline.Size = new System.Drawing.Size(97, 13);
-            this.label_secondary_outline.TabIndex = 3;
-            this.label_secondary_outline.Text = "Secondary Outline:";
+            label_secondary_outline.AutoSize = true;
+            label_secondary_outline.Location = new System.Drawing.Point(4, 97);
+            label_secondary_outline.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_secondary_outline.Name = "label_secondary_outline";
+            label_secondary_outline.Size = new System.Drawing.Size(107, 15);
+            label_secondary_outline.TabIndex = 3;
+            label_secondary_outline.Text = "Secondary Outline:";
             // 
             // label_primary_outline
             // 
-            this.label_primary_outline.AutoSize = true;
-            this.label_primary_outline.Location = new System.Drawing.Point(3, 58);
-            this.label_primary_outline.Name = "label_primary_outline";
-            this.label_primary_outline.Size = new System.Drawing.Size(80, 13);
-            this.label_primary_outline.TabIndex = 2;
-            this.label_primary_outline.Text = "Primary Outline:";
+            label_primary_outline.AutoSize = true;
+            label_primary_outline.Location = new System.Drawing.Point(4, 67);
+            label_primary_outline.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_primary_outline.Name = "label_primary_outline";
+            label_primary_outline.Size = new System.Drawing.Size(93, 15);
+            label_primary_outline.TabIndex = 2;
+            label_primary_outline.Text = "Primary Outline:";
             // 
             // label_background
             // 
-            this.label_background.AutoSize = true;
-            this.label_background.Location = new System.Drawing.Point(3, 32);
-            this.label_background.Name = "label_background";
-            this.label_background.Size = new System.Drawing.Size(68, 13);
-            this.label_background.TabIndex = 1;
-            this.label_background.Text = "Background:";
+            label_background.AutoSize = true;
+            label_background.Location = new System.Drawing.Point(4, 37);
+            label_background.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_background.Name = "label_background";
+            label_background.Size = new System.Drawing.Size(74, 15);
+            label_background.TabIndex = 1;
+            label_background.Text = "Background:";
             // 
             // label_text
             // 
-            this.label_text.AutoSize = true;
-            this.label_text.Location = new System.Drawing.Point(3, 6);
-            this.label_text.Name = "label_text";
-            this.label_text.Size = new System.Drawing.Size(31, 13);
-            this.label_text.TabIndex = 0;
-            this.label_text.Text = "Text:";
+            label_text.AutoSize = true;
+            label_text.Location = new System.Drawing.Point(4, 7);
+            label_text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_text.Name = "label_text";
+            label_text.Size = new System.Drawing.Size(31, 15);
+            label_text.TabIndex = 0;
+            label_text.Text = "Text:";
             // 
             // btn_add
             // 
-            this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_add.Location = new System.Drawing.Point(161, 12);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(60, 21);
-            this.btn_add.TabIndex = 3;
-            this.btn_add.Text = "Add";
-            this.btn_add.UseVisualStyleBackColor = true;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            btn_add.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            btn_add.Location = new System.Drawing.Point(201, 14);
+            btn_add.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn_add.Name = "btn_add";
+            btn_add.Size = new System.Drawing.Size(70, 24);
+            btn_add.TabIndex = 3;
+            btn_add.Text = "Add";
+            btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
             // 
             // btn_remove
             // 
-            this.btn_remove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_remove.Location = new System.Drawing.Point(227, 12);
-            this.btn_remove.Name = "btn_remove";
-            this.btn_remove.Size = new System.Drawing.Size(60, 21);
-            this.btn_remove.TabIndex = 4;
-            this.btn_remove.Text = "Remove";
-            this.btn_remove.UseVisualStyleBackColor = true;
-            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
+            btn_remove.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            btn_remove.Location = new System.Drawing.Point(278, 14);
+            btn_remove.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn_remove.Name = "btn_remove";
+            btn_remove.Size = new System.Drawing.Size(70, 24);
+            btn_remove.TabIndex = 4;
+            btn_remove.Text = "Remove";
+            btn_remove.UseVisualStyleBackColor = true;
+            btn_remove.Click += btn_remove_Click;
             // 
             // button_apply
             // 
-            this.button_apply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_apply.Location = new System.Drawing.Point(212, 221);
-            this.button_apply.Name = "button_apply";
-            this.button_apply.Size = new System.Drawing.Size(75, 23);
-            this.button_apply.TabIndex = 5;
-            this.button_apply.Text = "Apply";
-            this.button_apply.UseVisualStyleBackColor = true;
-            this.button_apply.Click += new System.EventHandler(this.button_apply_Click);
+            button_apply.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            button_apply.Location = new System.Drawing.Point(260, 255);
+            button_apply.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button_apply.Name = "button_apply";
+            button_apply.Size = new System.Drawing.Size(88, 27);
+            button_apply.TabIndex = 5;
+            button_apply.Text = "Apply";
+            button_apply.UseVisualStyleBackColor = true;
+            button_apply.Click += button_apply_Click;
             // 
             // flatTextBox_name
             // 
-            this.flatTextBox_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatTextBox_name.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.flatTextBox_name.Location = new System.Drawing.Point(12, 39);
-            this.flatTextBox_name.Name = "flatTextBox_name";
-            this.flatTextBox_name.Size = new System.Drawing.Size(272, 20);
-            this.flatTextBox_name.TabIndex = 6;
-            this.flatTextBox_name.TextChanged += new System.EventHandler(this.flatTextBox_name_TextChanged);
+            flatTextBox_name.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flatTextBox_name.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            flatTextBox_name.Location = new System.Drawing.Point(14, 45);
+            flatTextBox_name.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flatTextBox_name.Multiline = false;
+            flatTextBox_name.Name = "flatTextBox_name";
+            flatTextBox_name.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            flatTextBox_name.ReadOnly = false;
+            flatTextBox_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            flatTextBox_name.SelectionStart = 0;
+            flatTextBox_name.Size = new System.Drawing.Size(334, 23);
+            flatTextBox_name.TabIndex = 6;
+            flatTextBox_name.WordWrap = true;
+            flatTextBox_name.TextChanged += flatTextBox_name_TextChanged;
             // 
             // comboBox_theme
             // 
-            this.comboBox_theme.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_theme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_theme.FormattingEnabled = true;
-            this.comboBox_theme.Location = new System.Drawing.Point(12, 12);
-            this.comboBox_theme.Name = "comboBox_theme";
-            this.comboBox_theme.Size = new System.Drawing.Size(143, 21);
-            this.comboBox_theme.TabIndex = 1;
-            this.comboBox_theme.SelectedIndexChanged += new System.EventHandler(this.comboBox_theme_SelectedIndexChanged);
+            comboBox_theme.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            comboBox_theme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_theme.FormattingEnabled = true;
+            comboBox_theme.Location = new System.Drawing.Point(14, 14);
+            comboBox_theme.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            comboBox_theme.Name = "comboBox_theme";
+            comboBox_theme.Size = new System.Drawing.Size(179, 23);
+            comboBox_theme.TabIndex = 1;
+            comboBox_theme.SelectedIndexChanged += comboBox_theme_SelectedIndexChanged;
             // 
             // ThemeEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 274);
-            this.Controls.Add(this.flatTextBox_name);
-            this.Controls.Add(this.button_apply);
-            this.Controls.Add(this.btn_remove);
-            this.Controls.Add(this.btn_add);
-            this.Controls.Add(this.groupBox_colors);
-            this.Controls.Add(this.comboBox_theme);
-            this.Controls.Add(this.statusStrip);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ThemeEditor";
-            this.Text = "Themes";
-            this.statusStrip.ResumeLayout(false);
-            this.statusStrip.PerformLayout();
-            this.groupBox_colors.ResumeLayout(false);
-            this.panel_main.ResumeLayout(false);
-            this.panel_main.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(362, 316);
+            Controls.Add(flatTextBox_name);
+            Controls.Add(button_apply);
+            Controls.Add(btn_remove);
+            Controls.Add(btn_add);
+            Controls.Add(groupBox_colors);
+            Controls.Add(comboBox_theme);
+            Controls.Add(statusStrip);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "ThemeEditor";
+            Text = "Themes";
+            statusStrip.ResumeLayout(false);
+            statusStrip.PerformLayout();
+            groupBox_colors.ResumeLayout(false);
+            panel_main.ResumeLayout(false);
+            panel_main.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
