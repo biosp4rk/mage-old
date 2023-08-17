@@ -25,7 +25,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\Icons\mage.ico</ApplicationIcon>
-    <StartupObject>mage.Program</StartupObject>
+    <StartupObject></StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="Theming\CustomControls\FlatComboBox.cs">

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.IO;
+using System.Runtime.Versioning;
 using System.Windows.Forms;
 
 namespace mage
 {
+    [SupportedOSPlatform("windows")]
     static class Program
     {
         /// <summary>
