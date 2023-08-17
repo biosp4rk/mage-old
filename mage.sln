@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mage", "mage\mage.csproj", "{3ACB7AC5-3905-45E1-ACDA-3A21A44256BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mage", "mage\mage.csproj", "{3ACB7AC5-3905-45E1-ACDA-3A21A44256BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

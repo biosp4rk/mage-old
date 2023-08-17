@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Windows.Forms;
 
 namespace mage.Theming
 {
+    [SupportedOSPlatform("windows")]
     public static class ThemeSwitcher
     {
         /// <summary>
@@ -162,6 +164,13 @@ namespace mage.Theming
                 {
                     FlatTabControl tab = component as FlatTabControl;
                     tab.BorderColor = theme.SecondaryOutline;
+                }
+
+                if (component is LinkLabel)
+                {
+                    LinkLabel lbl = component as LinkLabel;
+                    lbl.LinkColor = theme.AccentColor;
+                    lbl.VisitedLinkColor = theme.AccentColor;
                 }
             }
 

@@ -1,21 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3ACB7AC5-3905-45E1-ACDA-3A21A44256BD}</ProjectGuid>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>mage</RootNamespace>
-    <AssemblyName>mage</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
+	<PublishSingleFile>true</PublishSingleFile>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -27,507 +18,42 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\Icons\mage.ico</ApplicationIcon>
+    <StartupObject></StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net20\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Actions\Action.cs" />
-    <Compile Include="Actions\AddRemoveRoomObject.cs" />
-    <Compile Include="Actions\EditBlocks.cs" />
-    <Compile Include="CorruptDataException.cs" />
-    <Compile Include="Data\Demo.cs" />
-    <Compile Include="Editor.cs" />
-    <Compile Include="Data\OAM.cs" />
-    <Compile Include="Theming\ColorTheme.cs" />
-    <Compile Include="Theming\ColorOperations.cs" />
-    <Compile Include="Theming\CustomControls\FlatComboBox.cs">
+    <Compile Update="Theming\CustomControls\FlatComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theming\CustomControls\FlatNumericUpDown.cs">
+    <Compile Update="Theming\CustomControls\FlatNumericUpDown.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theming\CustomControls\FlatTabControl.cs">
+    <Compile Update="Theming\CustomControls\FlatTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theming\CustomControls\FlatTextBox.cs">
+    <Compile Update="Theming\CustomControls\FlatTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theming\MenuStripColorTable.cs" />
-    <Compile Include="Theming\MenuStripCustomRenderer.cs" />
-    <Compile Include="Theming\ThemeEditor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Theming\ThemeEditor.Designer.cs">
-      <DependentUpon>ThemeEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Theming\ThemeSwitcher.cs" />
-    <Compile Include="Utility\Add.cs" />
-    <Compile Include="ByteStream.cs" />
-    <Compile Include="Data\AnimPalette.cs" />
-    <Compile Include="Data\AnimGFX.cs" />
-    <Compile Include="Data\AnimTileset.cs" />
-    <Compile Include="Data\DoorData.cs" />
-    <Compile Include="Editors\FormConnection.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormConnection.Designer.cs">
-      <DependentUpon>FormConnection.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data\SpriteStats.cs" />
-    <Compile Include="Editors\FormAnimation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormAnimation.Designer.cs">
-      <DependentUpon>FormAnimation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAbout.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAbout.Designer.cs">
-      <DependentUpon>FormAbout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormPortBG.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormPortBG.Designer.cs">
-      <DependentUpon>FormPortBG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Utility\Status.cs" />
-    <Compile Include="Tools\FormAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormAdd.Designer.cs">
-      <DependentUpon>FormAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormClipboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormClipboard.Designer.cs">
-      <DependentUpon>FormClipboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormDemo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormDemo.Designer.cs">
-      <DependentUpon>FormDemo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormEditScroll.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEditScroll.Designer.cs">
-      <DependentUpon>FormEditScroll.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormTileTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormTileTable.Designer.cs">
-      <DependentUpon>FormTileTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormPhysics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormPhysics.Designer.cs">
-      <DependentUpon>FormPhysics.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GfxView.cs">
+    <Compile Update="GfxView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="GfxView.Designer.cs">
-      <DependentUpon>GfxView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TileView.cs">
+    <Compile Update="TileView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TileView.Designer.cs">
-      <DependentUpon>TileView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RoomView.cs">
+    <Compile Update="RoomView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RoomView.Designer.cs">
-      <DependentUpon>RoomView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormTileBuilder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormTileBuilder.Designer.cs">
-      <DependentUpon>FormTileBuilder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Utility\Draw.cs" />
-    <Compile Include="Actions\DropOutStack.cs" />
-    <Compile Include="Editors\FormGraphics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormGraphics.Designer.cs">
-      <DependentUpon>FormGraphics.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormWeapon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormWeapon.Designer.cs">
-      <DependentUpon>FormWeapon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormTileset.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormTileset.Designer.cs">
-      <DependentUpon>FormTileset.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormText.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormText.Designer.cs">
-      <DependentUpon>FormText.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormImportLZ77BG.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormImportLZ77BG.Designer.cs">
-      <DependentUpon>FormImportLZ77BG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormImportRLEBG.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormImportRLEBG.Designer.cs">
-      <DependentUpon>FormImportRLEBG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data\GFX.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Utility\Hex.cs" />
-    <Compile Include="Room\BG.cs" />
-    <Compile Include="Room\Backgrounds.cs" />
-    <Compile Include="Room\ClipTypes.cs" />
-    <Compile Include="Utility\Compress.cs" />
-    <Compile Include="Actions\EditRoomObject.cs" />
-    <Compile Include="Room\Enemy.cs" />
-    <Compile Include="Room\Door.cs" />
-    <Compile Include="Room\DoorList.cs" />
-    <Compile Include="Data\Ending.cs" />
-    <Compile Include="Utility\Test.cs" />
-    <Compile Include="Tools\FormImportEnding.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormImportEnding.Designer.cs">
-      <DependentUpon>FormImportEnding.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormRoomOptions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormRoomOptions.Designer.cs">
-      <DependentUpon>FormRoomOptions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormMinimap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormMinimap.Designer.cs">
-      <DependentUpon>FormMinimap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormExportTileset.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormExportTileset.Designer.cs">
-      <DependentUpon>FormExportTileset.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormImportRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormImportRoom.Designer.cs">
-      <DependentUpon>FormImportRoom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormImportTileset.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormImportTileset.Designer.cs">
-      <DependentUpon>FormImportTileset.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormEditDoor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEditDoor.Designer.cs">
-      <DependentUpon>FormEditDoor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormEditEnemy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEditEnemy.Designer.cs">
-      <DependentUpon>FormEditEnemy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormHeader.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormHeader.Designer.cs">
-      <DependentUpon>FormHeader.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormPalette.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormPalette.Designer.cs">
-      <DependentUpon>FormPalette.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormPatches.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormPatches.Designer.cs">
-      <DependentUpon>FormPatches.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormShortcuts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormShortcuts.Designer.cs">
-      <DependentUpon>FormShortcuts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormSprite.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormSprite.Designer.cs">
-      <DependentUpon>FormSprite.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Editors\FormSpriteset.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editors\FormSpriteset.Designer.cs">
-      <DependentUpon>FormSpriteset.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\FormTestRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\FormTestRoom.Designer.cs">
-      <DependentUpon>FormTestRoom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Header.cs" />
-    <Compile Include="Utility\PortImage.cs" />
-    <Compile Include="Data\Minimap.cs" />
-    <Compile Include="Data\Palette.cs" />
-    <Compile Include="Utility\Patch.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\Quantize.cs" />
-    <Compile Include="ROM.cs" />
-    <Compile Include="Room\Room.cs" />
-    <Compile Include="Actions\RoomAction.cs" />
-    <Compile Include="Room\RoomObject.cs" />
-    <Compile Include="Room\EnemyList.cs" />
-    <Compile Include="SamusPose.cs" />
-    <Compile Include="Room\Scroll.cs" />
-    <Compile Include="Room\ScrollList.cs" />
-    <Compile Include="Data\SpriteGFX.cs" />
-    <Compile Include="Data\Spriteset.cs" />
-    <Compile Include="Data\Tileset.cs" />
-    <Compile Include="Actions\UndoRedo.cs" />
-    <Compile Include="Version.cs" />
-    <Compile Include="VramBG.cs" />
-    <Compile Include="VramObj.cs" />
-    <EmbeddedResource Include="Editors\FormConnection.resx">
-      <DependentUpon>FormConnection.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormGraphics.resx">
-      <DependentUpon>FormGraphics.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormText.resx">
-      <DependentUpon>FormText.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormTileTable.resx">
-      <DependentUpon>FormTileTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormWeapon.resx">
-      <DependentUpon>FormWeapon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormTileset.resx">
-      <DependentUpon>FormTileset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormAnimation.resx">
-      <DependentUpon>FormAnimation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormAbout.resx">
-      <DependentUpon>FormAbout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Theming\ThemeEditor.resx">
-      <DependentUpon>ThemeEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormAdd.resx">
-      <DependentUpon>FormAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormClipboard.resx">
-      <DependentUpon>FormClipboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormDemo.resx">
-      <DependentUpon>FormDemo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormEditScroll.resx">
-      <DependentUpon>FormEditScroll.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormPhysics.resx">
-      <DependentUpon>FormPhysics.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormImportLZ77BG.resx">
-      <DependentUpon>FormImportLZ77BG.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormImportEnding.resx">
-      <DependentUpon>FormImportEnding.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormImportRLEBG.resx">
-      <DependentUpon>FormImportRLEBG.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormPortBG.resx">
-      <DependentUpon>FormPortBG.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormTileBuilder.resx">
-      <DependentUpon>FormTileBuilder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormRoomOptions.resx">
-      <DependentUpon>FormRoomOptions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormMinimap.resx">
-      <DependentUpon>FormMinimap.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormExportTileset.resx">
-      <DependentUpon>FormExportTileset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormImportRoom.resx">
-      <DependentUpon>FormImportRoom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormImportTileset.resx">
-      <DependentUpon>FormImportTileset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormEditDoor.resx">
-      <DependentUpon>FormEditDoor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormEditEnemy.resx">
-      <DependentUpon>FormEditEnemy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormHeader.resx">
-      <DependentUpon>FormHeader.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormPalette.resx">
-      <DependentUpon>FormPalette.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormPatches.resx">
-      <DependentUpon>FormPatches.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormShortcuts.resx">
-      <DependentUpon>FormShortcuts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormSprite.resx">
-      <DependentUpon>FormSprite.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editors\FormSpriteset.resx">
-      <DependentUpon>FormSpriteset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\FormTestRoom.resx">
-      <DependentUpon>FormTestRoom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <None Include="Resources\Misc\MF_genTileTable" />
-    <None Include="Resources\Misc\MF_U_eventConnections.ips" />
-    <None Include="Resources\Misc\MF_U_locationNames.ips" />
-    <None Include="Resources\Misc\MF_U_testDemo.ips" />
-    <None Include="Resources\Misc\ZM_genTileTable" />
-    <None Include="Resources\Misc\ZM_U_eventConnections.ips" />
-    <None Include="Resources\Misc\ZM_U_locationNames.ips" />
-    <None Include="Resources\Misc\ZM_U_testDemo.ips" />
-    <None Include="Resources\Misc\ZM_U_testRoom.ips" />
-    <None Include="Resources\Patches\MF_U_addMinimapTiles.ips" />
-    <None Include="Resources\Patches\MF_U_debugMenu.ips" />
-    <None Include="Resources\Patches\MF_U_getMissiles.ips" />
-    <None Include="Resources\Patches\MF_U_getPowerBombs.ips" />
-    <None Include="Resources\Patches\MF_U_infiniteBombJump.ips" />
-    <None Include="Resources\Patches\MF_U_noMinimap.ips" />
-    <None Include="Resources\Patches\MF_U_singleWallJump.ips" />
-    <None Include="Resources\Patches\MF_U_skipIntro.ips" />
-    <None Include="Resources\Patches\ZM_U_addElevators1.ips" />
-    <None Include="Resources\Patches\ZM_U_addElevators2.ips" />
-    <None Include="Resources\Patches\ZM_U_addMinimapTiles.ips" />
-    <None Include="Resources\Patches\ZM_U_disableChozoHints.ips" />
-    <None Include="Resources\Patches\ZM_U_itemToggle.ips" />
-    <None Include="Resources\Patches\ZM_U_noMinimap.ips" />
-    <None Include="Resources\Patches\ZM_U_removeCloseup.ips" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lists\MF\MF_clipdata.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lists\MF\MF_U_patches.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Misc\MF_U_testRoom.ips" />
-    <None Include="Resources\Lists\MF\MF_U_pSpriteOAM.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Icons\button_bg_color.png" />
-    <None Include="Resources\Icons\toolbar_add.png" />
     <Content Include="Resources\Icons\toolbar_animation.png" />
     <Content Include="Resources\Icons\toolbar_connection.png" />
-    <None Include="Resources\Icons\toolbar_demo.png" />
     <Content Include="Resources\Icons\toolbar_edit_objects.png" />
     <Content Include="Resources\Icons\toolbar_graphics.png" />
     <Content Include="Resources\Icons\toolbar_header.png" />
@@ -539,7 +65,6 @@
     <Content Include="Resources\Icons\toolbar_outline_sprites.png" />
     <Content Include="Resources\Icons\toolbar_palette.png" />
     <Content Include="Resources\Icons\toolbar_patches.png" />
-    <None Include="Resources\Icons\toolbar_physics.png" />
     <Content Include="Resources\Icons\toolbar_redo.png" />
     <Content Include="Resources\Icons\toolbar_save.png" />
     <Content Include="Resources\Icons\toolbar_sprite.png" />
@@ -553,66 +78,24 @@
     <Content Include="Resources\Icons\toolbar_weapon.png" />
     <Content Include="Resources\Icons\toolbar_zoom.png" />
     <Content Include="Resources\Lists\endings.txt" />
-    <None Include="Resources\Lists\MF\MF_U_demoRAM.txt" />
     <Content Include="Resources\Lists\MF\MF_U_physics.txt" />
     <Content Include="Resources\Lists\MF\MF_U_sSpriteOAM.txt" />
     <Content Include="Resources\Lists\ZM\ZM_spritePositions.txt" />
-    <None Include="Resources\Lists\ZM\ZM_U_demoRAM.txt" />
     <Content Include="Resources\Lists\ZM\ZM_U_physics.txt" />
-    <None Include="Resources\Lists\ZM\ZM_U_sSpriteOAM.txt" />
-    <None Include="Resources\Misc\clipNums.png" />
     <Content Include="Resources\Misc\flip_v.png" />
-    <None Include="Resources\Lists\MF\MF_constants.txt" />
     <Content Include="Resources\Lists\MF\MF_spritePositions.txt" />
     <Content Include="Resources\Misc\flip_h.png" />
     <Content Include="Resources\Misc\scrollNums.png" />
     <Content Include="Resources\Lists\textLists.txt" />
-    <None Include="Resources\Lists\ZM\ZM_constants.txt" />
     <Content Include="Resources\Lists\ZM\ZM_U_tileTables.txt" />
-    <None Include="Resources\Lists\ZM\ZM_U_weapons.txt" />
-    <None Include="Resources\Lists\MF\MF_U_weapons.txt" />
     <Content Include="Resources\Lists\MF\MF_chars.txt" />
     <Content Include="Resources\Lists\MF\MF_J_patches.txt" />
     <Content Include="Resources\Lists\MF\MF_J_pSpriteOAM.txt" />
     <Content Include="Resources\Lists\MF\MF_U_tileTables.txt" />
     <Content Include="Resources\Lists\ZM\ZM_chars.txt" />
     <Content Include="Resources\Lists\ZM\ZM_clipFromMF.txt" />
-    <None Include="Resources\Lists\ZM\ZM_U_patches.txt" />
-    <None Include="Resources\Icons\shortcut_acid.png" />
-    <None Include="Resources\Icons\shortcut_bubbly.png" />
-    <None Include="Resources\Icons\shortcut_crumble_slow.png" />
-    <None Include="Resources\Icons\shortcut_dusty.png" />
-    <None Include="Resources\Icons\shortcut_dusty_very.png" />
-    <None Include="Resources\Icons\shortcut_energy_hidden.png" />
-    <None Include="Resources\Icons\shortcut_energy_water.png" />
-    <None Include="Resources\Icons\shortcut_lava_strong.png" />
-    <None Include="Resources\Icons\shortcut_lava_weak.png" />
-    <None Include="Resources\Icons\shortcut_missile_hidden.png" />
-    <None Include="Resources\Icons\shortcut_missile_water.png" />
-    <None Include="Resources\Icons\shortcut_power_hidden.png" />
-    <None Include="Resources\Icons\shortcut_power_water.png" />
-    <None Include="Resources\Icons\shortcut_shot_BL.png" />
-    <None Include="Resources\Icons\shortcut_shot_BR.png" />
-    <None Include="Resources\Icons\shortcut_shot_TL.png" />
-    <None Include="Resources\Icons\shortcut_shot_TR.png" />
-    <None Include="Resources\Icons\shortcut_slope27_Lneg.png" />
-    <None Include="Resources\Icons\shortcut_slope27_Lpos.png" />
-    <None Include="Resources\Icons\shortcut_slope27_Uneg.png" />
-    <None Include="Resources\Icons\shortcut_slope27_Upos.png" />
-    <None Include="Resources\Icons\shortcut_slope45_neg.png" />
-    <None Include="Resources\Icons\shortcut_slope45_pos.png" />
     <Content Include="Resources\Icons\shortcut_super_block.png" />
-    <None Include="Resources\Icons\shortcut_super_hidden.png" />
-    <None Include="Resources\Icons\shortcut_super_water.png" />
-    <None Include="Resources\Icons\shortcut_trans_door.png" />
-    <None Include="Resources\Icons\shortcut_trans_down.png" />
-    <None Include="Resources\Icons\shortcut_trans_up.png" />
-    <None Include="Resources\Icons\shortcut_water.png" />
-    <None Include="Resources\Icons\shortcut_wet.png" />
     <Content Include="Resources\Lists\MF\MF_clipFromZM.txt" />
-    <None Include="Resources\Lists\ZM\ZM_clipdata.txt" />
-    <None Include="Resources\Lists\ZM\ZM_U_pSpriteOAM.txt" />
-    <None Include="Resources\Icons\mage.ico" />
     <Content Include="Resources\Icons\shortcut_air.png" />
     <Content Include="Resources\Icons\shortcut_bomb.png" />
     <Content Include="Resources\Icons\shortcut_crumble.png" />
@@ -641,13 +124,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
 </Project>
