@@ -5,9 +5,11 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Runtime.Versioning;
 
 namespace mage.Theming
 {
+    [SupportedOSPlatform("windows")]
     /// <summary>
     /// Custom <see cref="ToolStripProfessionalRenderer"/>.
     /// Includes the custom <see cref="ProfessionalColorTable"/> <see cref="MenuStripColorTable"/>.
@@ -28,12 +30,14 @@ namespace mage.Theming
         protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
         {
             e.Item.ForeColor = Theme.TextColor;
+            if (e.Item.Selected || e.Item.Pressed) e.Item.ForeColor = Theme.TextColorHighlight;
             base.OnRenderItemText(e);
         }
 
         protected override void OnRenderArrow(ToolStripArrowRenderEventArgs e)
         {
             e.ArrowColor = Theme.TextColor;
+            if (e.Item.Selected || e.Item.Pressed) e.ArrowColor = Theme.TextColorHighlight;
             base.OnRenderArrow(e);
         }
 

@@ -13,11 +13,20 @@ namespace mage.Theming
 
         public Color TextColor => Colors["TextColor"];
         public Color TextColorDisabled => Color.FromArgb(disabledAlpha, TextColor);
-        public Color TextColorHightlight { 
+        public Color TextColorHighlight { 
             get
             {
-                //choose the one with the smalle difference
-                return AccentColor.Contrast(TextColor) > AccentColor.Contrast(BackgroundColor) ? TextColor : BackgroundColor;
+                double contrast = 0;
+                string color = "AccentColor";
+                foreach(KeyValuePair<string, Color> p in Colors)
+                {
+                    if (p.Value.Contrast(AccentColor) > contrast)
+                    {
+                        contrast = p.Value.Contrast(AccentColor);
+                        color = p.Key;
+                    }
+                }
+                return Colors[color];
             } 
         }
 
