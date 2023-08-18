@@ -284,6 +284,13 @@ namespace mage
 
             mPos = new Point(x, y);
 
+            if (e.Button == MouseButtons.Left && selSquare != -1)
+            {
+                SetNewSquare();
+                Rectangle r = new Rectangle(mPos.X * 16, mPos.Y * 16, 16, 16);
+                gfxView_map.Invalidate(r);
+            }
+
             // draw red rectangle
             Rectangle rect = gfxView_map.redRect;
             gfxView_map.MoveRed(x, y);

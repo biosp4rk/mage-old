@@ -78,18 +78,21 @@ partial class FlatTextBox : UserControl
     #endregion
 
     #region events
-    public new event EventHandler TextChanged
+    public new event EventHandler TextChanged;
+
+    private void textBoxTextChanged(object sender, EventArgs e)
     {
-        add { textBox.TextChanged += value; }
-        remove { textBox.TextChanged -= value; }
+        TextChanged?.Invoke(this, e);
     }
     #endregion
 
     public FlatTextBox()
     {
         InitializeComponent();
+        textBox.TextChanged += textBoxTextChanged;
     }
 
+    #region methods
     protected override void OnPaint(PaintEventArgs e)
     {
         base.OnPaint(e);
@@ -118,4 +121,5 @@ partial class FlatTextBox : UserControl
 
     //Conversions
     public static implicit operator TextBox(FlatTextBox b) => b.textBox;
+    #endregion
 }
