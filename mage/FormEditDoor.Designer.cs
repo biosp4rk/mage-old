@@ -270,6 +270,7 @@
             checkBox_autoConnect.Size = new System.Drawing.Size(188, 19);
             checkBox_autoConnect.TabIndex = 5;
             checkBox_autoConnect.Text = "Auto connect destination door";
+            checkBox_autoConnect.CheckedChanged += checkBox_autoConnect_CheckedChanged;
             // 
             // comboBox_type
             // 

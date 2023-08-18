@@ -311,5 +311,11 @@ namespace mage
         {
             Close();
         }
+
+        private void checkBox_autoConnect_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBox_autoConnect.Checked) return;
+            ValueChanged(sender, e);
+        }
     }
 }
