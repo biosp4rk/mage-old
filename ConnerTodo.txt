@@ -1,7 +1,6 @@
 Dark Mode:
 - List View
 - Tree View
-- (Another new Text Box)
 - Scroll Bars
 
 Mage 1.5:

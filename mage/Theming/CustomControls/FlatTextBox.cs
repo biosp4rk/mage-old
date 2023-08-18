@@ -77,6 +77,14 @@ partial class FlatTextBox : UserControl
     }
     #endregion
 
+    #region events
+    public new event EventHandler TextChanged
+    {
+        add { textBox.TextChanged += value; }
+        remove { textBox.TextChanged -= value; }
+    }
+    #endregion
+
     public FlatTextBox()
     {
         InitializeComponent();
