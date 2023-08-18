@@ -21,7 +21,7 @@ namespace mage.Theming.CustomControls
             // 
             textBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox.BorderStyle = BorderStyle.None;
-            textBox.Location = new Point(3, 3);
+            textBox.Location = new Point(3, 4);
             textBox.Name = "textBox";
             textBox.Size = new Size(96, 16);
             textBox.TabIndex = 0;

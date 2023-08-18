@@ -55,7 +55,7 @@ partial class FlatTextBox : UserControl
                 textBox.Location = new Point(0, 0);
                 drawBorder = false;
             }
-            else textBox.Location = new Point(3, 3);
+            else textBox.Location = new Point(3, 4);
         }
     }
 
