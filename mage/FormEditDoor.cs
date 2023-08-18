@@ -311,7 +311,5 @@ namespace mage
         {
             Close();
         }
-
-
     }
 }
