@@ -455,7 +455,5 @@ namespace mage
                 offset += 0x3C;
             }
         }
-
-
     }
 }
