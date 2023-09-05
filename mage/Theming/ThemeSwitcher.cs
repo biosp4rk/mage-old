@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Runtime.Versioning;
 using System.Text;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace mage.Theming
@@ -336,6 +337,33 @@ namespace mage.Theming
             e.Graphics.Clear(ProjectTheme.BackgroundColor);
             using (Brush b = new SolidBrush(ProjectTheme.TextColorDisabled))
                 e.Graphics.DrawString(l.Text, l.Font, b, r);
+        }
+
+
+        //JSON CONVERSION
+        static JsonSerializerOptions jsonOptions = new JsonSerializerOptions()
+        {
+            Converters =
+            {
+                new ColorJsonConverter(),
+            }
+        };
+
+        public static string Serialize(object obj)
+        {
+            return JsonSerializer.Serialize(obj, jsonOptions);
+        }
+
+        public static Type Deserialize<Type>(string json)
+        {
+            return JsonSerializer.Deserialize<Type>(json, jsonOptions);
+        }
+
+        public static void TestSerialisation()
+        {
+            Color toJson = Color.FromArgb(0xFF, 0xF, 0x36);
+            string inJson = JsonSerializer.Serialize(toJson);
+            Color fromJson = JsonSerializer.Deserialize<Color>(inJson);
         }
     }
 }

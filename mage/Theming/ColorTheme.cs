@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace mage.Theming
 {
@@ -9,10 +10,13 @@ namespace mage.Theming
     {
         const int disabledAlpha = 0x50;
 
+        [JsonIgnore]
         public Color BackgroundColor => Colors["BackgroundColor"];
-
+        [JsonIgnore]
         public Color TextColor => Colors["TextColor"];
+        [JsonIgnore]
         public Color TextColorDisabled => Color.FromArgb(disabledAlpha, TextColor);
+        [JsonIgnore]
         public Color TextColorHighlight { 
             get
             {
@@ -29,14 +33,16 @@ namespace mage.Theming
                 return Colors[color];
             } 
         }
-
+        [JsonIgnore]
         public Color PrimaryOutline => Colors["PrimaryOutline"];
+        [JsonIgnore]
         public Color PrimaryOutlineDisabled => Color.FromArgb(disabledAlpha, PrimaryOutline);
-
+        [JsonIgnore]
         public Color SecondaryOutline => Colors["SecondaryOutline"];
-
+        [JsonIgnore]
         public Color AccentColor => Colors["AccentColor"];
 
+        [JsonInclude]
         public Dictionary<string, Color> Colors { get; set; } = new Dictionary<string, Color>();
     }
 }

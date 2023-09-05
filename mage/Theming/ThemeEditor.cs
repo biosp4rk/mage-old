@@ -1,5 +1,4 @@
 ﻿using mage.Theming.CustomControls;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -157,7 +157,7 @@ namespace mage.Theming
                 i++;
             }
             //Very inefficient way of creating a clone of the standard theme but I cant be bothered to implement a proper deep clone function now
-            ColorTheme newStandardTheme = JsonConvert.DeserializeObject<ColorTheme>(JsonConvert.SerializeObject(ThemeSwitcher.StandardTheme));
+            ColorTheme newStandardTheme = JsonSerializer.Deserialize<ColorTheme>(JsonSerializer.Serialize(ThemeSwitcher.StandardTheme));
             ThemeSwitcher.Themes.Add(name, newStandardTheme);
 
             comboBox_theme.Items.Add(name);
@@ -173,7 +173,7 @@ namespace mage.Theming
             {
                 //convert key pair to json object
                 KeyValuePair<string, ColorTheme> theme = new KeyValuePair<string, ColorTheme>(comboBox_theme.Text, selectedTheme);
-                string data = JsonConvert.SerializeObject(theme);
+                string data = ThemeSwitcher.Serialize(theme);
                 File.WriteAllText(dialog.FileName, data);
             }
         }
@@ -185,7 +185,7 @@ namespace mage.Theming
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 string data = File.ReadAllText(dialog.FileName);
-                KeyValuePair<string, ColorTheme> pair = JsonConvert.DeserializeObject<KeyValuePair<string, ColorTheme>>(data);
+                KeyValuePair<string, ColorTheme> pair = ThemeSwitcher.Deserialize<KeyValuePair<string, ColorTheme>>(data);
 
                 //Checking if name is correct
                 string name = pair.Key;
