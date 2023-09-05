@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemeEditor));
             statusStrip = new System.Windows.Forms.StatusStrip();
-            button_export_import = new System.Windows.Forms.ToolStripDropDownButton();
-            menuItem_export = new System.Windows.Forms.ToolStripMenuItem();
-            menuItem_import = new System.Windows.Forms.ToolStripMenuItem();
+            button_export = new System.Windows.Forms.ToolStripDropDownButton();
+            menuItem_export_current = new System.Windows.Forms.ToolStripMenuItem();
+            menuItem_export_all = new System.Windows.Forms.ToolStripMenuItem();
             groupBox_colors = new System.Windows.Forms.GroupBox();
             panel_main = new System.Windows.Forms.Panel();
             panel_accent = new System.Windows.Forms.Panel();
@@ -55,6 +55,9 @@
             button_apply = new System.Windows.Forms.Button();
             flatTextBox_name = new CustomControls.FlatTextBox();
             comboBox_theme = new CustomControls.FlatComboBox();
+            button_import = new System.Windows.Forms.ToolStripDropDownButton();
+            menuItem_import_theme = new System.Windows.Forms.ToolStripMenuItem();
+            menuItem_import_multiple = new System.Windows.Forms.ToolStripMenuItem();
             statusStrip.SuspendLayout();
             groupBox_colors.SuspendLayout();
             panel_main.SuspendLayout();
@@ -62,7 +65,7 @@
             // 
             // statusStrip
             // 
-            statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { button_export_import });
+            statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { button_export, button_import });
             statusStrip.Location = new System.Drawing.Point(0, 294);
             statusStrip.Name = "statusStrip";
             statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
@@ -70,29 +73,28 @@
             statusStrip.TabIndex = 0;
             statusStrip.Text = "statusStrip1";
             // 
-            // button_export_import
+            // button_export
             // 
-            button_export_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            button_export_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { menuItem_export, menuItem_import });
-            button_export_import.Image = (System.Drawing.Image)resources.GetObject("button_export_import.Image");
-            button_export_import.ImageTransparentColor = System.Drawing.Color.Magenta;
-            button_export_import.Name = "button_export_import";
-            button_export_import.Size = new System.Drawing.Size(101, 20);
-            button_export_import.Text = "Export / Import";
+            button_export.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            button_export.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { menuItem_export_current, menuItem_export_all });
+            button_export.Image = (System.Drawing.Image)resources.GetObject("button_export.Image");
+            button_export.ImageTransparentColor = System.Drawing.Color.Magenta;
+            button_export.Name = "button_export";
+            button_export.Size = new System.Drawing.Size(54, 20);
+            button_export.Text = "Export";
             // 
-            // menuItem_export
+            // menuItem_export_current
             // 
-            menuItem_export.Name = "menuItem_export";
-            menuItem_export.Size = new System.Drawing.Size(149, 22);
-            menuItem_export.Text = "Export Theme";
-            menuItem_export.Click += menuItem_export_Click;
+            menuItem_export_current.Name = "menuItem_export_current";
+            menuItem_export_current.Size = new System.Drawing.Size(190, 22);
+            menuItem_export_current.Text = "Export Current Theme";
+            menuItem_export_current.Click += menuItem_export_Click;
             // 
-            // menuItem_import
+            // menuItem_export_all
             // 
-            menuItem_import.Name = "menuItem_import";
-            menuItem_import.Size = new System.Drawing.Size(149, 22);
-            menuItem_import.Text = "Import Theme";
-            menuItem_import.Click += menuItem_import_Click;
+            menuItem_export_all.Name = "menuItem_export_all";
+            menuItem_export_all.Size = new System.Drawing.Size(190, 22);
+            menuItem_export_all.Text = "Export All Themes";
             // 
             // groupBox_colors
             // 
@@ -387,6 +389,30 @@
             comboBox_theme.TabIndex = 1;
             comboBox_theme.SelectedIndexChanged += comboBox_theme_SelectedIndexChanged;
             // 
+            // button_import
+            // 
+            button_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            button_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { menuItem_import_theme, menuItem_import_multiple });
+            button_import.Image = (System.Drawing.Image)resources.GetObject("button_import.Image");
+            button_import.ImageTransparentColor = System.Drawing.Color.Magenta;
+            button_import.Name = "button_import";
+            button_import.Size = new System.Drawing.Size(56, 20);
+            button_import.Text = "Import";
+            // 
+            // menuItem_import_theme
+            // 
+            menuItem_import_theme.Name = "menuItem_import_theme";
+            menuItem_import_theme.Size = new System.Drawing.Size(201, 22);
+            menuItem_import_theme.Text = "Import Theme";
+            menuItem_import_theme.Click += menuItem_import_Click;
+            // 
+            // menuItem_import_multiple
+            // 
+            menuItem_import_multiple.Name = "menuItem_import_multiple";
+            menuItem_import_multiple.Size = new System.Drawing.Size(201, 22);
+            menuItem_import_multiple.Text = "Import Multiple Themes";
+            menuItem_import_multiple.Click += importAll_Click;
+            // 
             // ThemeEditor
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -437,8 +463,11 @@
         private System.Windows.Forms.Panel panel_primary;
         private System.Windows.Forms.Panel panel_background;
         private CustomControls.FlatTextBox flatTextBox_name;
-        private System.Windows.Forms.ToolStripDropDownButton button_export_import;
-        private System.Windows.Forms.ToolStripMenuItem menuItem_export;
-        private System.Windows.Forms.ToolStripMenuItem menuItem_import;
+        private System.Windows.Forms.ToolStripDropDownButton button_export;
+        private System.Windows.Forms.ToolStripMenuItem menuItem_export_current;
+        private System.Windows.Forms.ToolStripMenuItem menuItem_export_all;
+        private System.Windows.Forms.ToolStripDropDownButton button_import;
+        private System.Windows.Forms.ToolStripMenuItem menuItem_import_theme;
+        private System.Windows.Forms.ToolStripMenuItem menuItem_import_multiple;
     }
 }
