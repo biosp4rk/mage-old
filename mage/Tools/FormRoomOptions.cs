@@ -1,4 +1,5 @@
 ﻿using mage.Theming;
+using mage.Theming.CustomControls;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -10,6 +11,8 @@ namespace mage
         // fields
         private FormMain main;
         private Room room;
+        private bool updatedScreenBoxes = false;
+        private bool updatedBlocksBoxes = false;
 
         // constructor
         public FormRoomOptions(FormMain main)
@@ -32,10 +35,14 @@ namespace mage
 
             textBox_width.Text = Hex.ToString(room.Width);
             textBox_height.Text = Hex.ToString(room.Height);
+
+            textbox_screenX.TextChanged += textbox_screenX_TextChanged;
+            textbox_screenY.TextChanged += textbox_screenY_TextChanged;
         }
 
-        private void UpdateText(TextBox textBox, Label label, int size)
+        private void UpdateTextScreen(FlatTextBox textBox, FlatTextBox label, int size)
         {
+            updatedScreenBoxes = true;
             try
             {
                 double screen = Hex.ToByte(textBox.Text);
@@ -47,24 +54,45 @@ namespace mage
                 }
                 else
                 {
-                    label.ForeColor = Color.DarkRed;
+                    label.ForeColor = ThemeSwitcher.ProjectTheme.AccentColor;
                 }
             }
             catch
             {
                 label.Text = "–";
-                label.ForeColor = Color.DarkRed;
+                label.ForeColor = ThemeSwitcher.ProjectTheme.AccentColor;
             }
+            updatedScreenBoxes = false;
+        }
+
+        private void UpdateTextBlocks(FlatTextBox textBox, FlatTextBox label, int size)
+        {
+            updatedBlocksBoxes = true;
+            try
+            {
+                textBox.ForeColor = ThemeSwitcher.ProjectTheme.TextColor;
+                int blocks = Hex.ToByte(textBox.Text);
+                blocks = blocks * size + 4;
+                label.Text = Hex.ToString(blocks);
+            }
+            catch
+            {
+                label.Text = "0";
+                textBox.ForeColor = ThemeSwitcher.ProjectTheme.AccentColor;
+            }
+            updatedBlocksBoxes = false;
         }
 
         private void textBox_width_TextChanged(object sender, EventArgs e)
         {
-            UpdateText(textBox_width, label_screenX, 15);
+            if (updatedBlocksBoxes) return;
+            UpdateTextScreen(textBox_width, textbox_screenX, 15);
         }
 
         private void textBox_height_TextChanged(object sender, EventArgs e)
         {
-            UpdateText(textBox_height, label_screenY, 10);
+            if (updatedBlocksBoxes) return;
+            UpdateTextScreen(textBox_height, textbox_screenY, 10);
         }
 
         private void button_clearBG_Click(object sender, EventArgs e)
@@ -105,7 +133,7 @@ namespace mage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message, 
+                MessageBox.Show("One of the values entered was not valid.\n\n" + ex.Message,
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -131,6 +159,16 @@ namespace mage
             Close();
         }
 
-        
+        private void textbox_screenX_TextChanged(object sender, EventArgs e)
+        {
+            if (updatedScreenBoxes) return;
+            UpdateTextBlocks(sender as FlatTextBox, textBox_width, 15);
+        }
+
+        private void textbox_screenY_TextChanged(object sender, EventArgs e)
+        {
+            if (updatedScreenBoxes) return;
+            UpdateTextBlocks(sender as FlatTextBox, textBox_height, 10);
+        }
     }
 }

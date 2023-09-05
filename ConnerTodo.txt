@@ -1,11 +1,7 @@
-Dark Mode:
-- List View
-- Tree View
-- Scroll Bars
-
-Mage 1.5:
-- Bulk theme export
+MAGE 1.5.0:
+- Theming support
 - Drag on Minimap Editor
 - Enable apply on "Auto connect" in Edit Door
 - Edit Sprites/Doors with double click
 - Input screens directly in Room Options
+- Screen number gets displayed as hex
