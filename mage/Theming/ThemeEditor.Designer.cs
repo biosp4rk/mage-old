@@ -33,6 +33,9 @@
             button_export = new System.Windows.Forms.ToolStripDropDownButton();
             menuItem_export_current = new System.Windows.Forms.ToolStripMenuItem();
             menuItem_export_all = new System.Windows.Forms.ToolStripMenuItem();
+            button_import = new System.Windows.Forms.ToolStripDropDownButton();
+            menuItem_import_theme = new System.Windows.Forms.ToolStripMenuItem();
+            menuItem_import_multiple = new System.Windows.Forms.ToolStripMenuItem();
             groupBox_colors = new System.Windows.Forms.GroupBox();
             panel_main = new System.Windows.Forms.Panel();
             panel_accent = new System.Windows.Forms.Panel();
@@ -55,9 +58,6 @@
             button_apply = new System.Windows.Forms.Button();
             flatTextBox_name = new CustomControls.FlatTextBox();
             comboBox_theme = new CustomControls.FlatComboBox();
-            button_import = new System.Windows.Forms.ToolStripDropDownButton();
-            menuItem_import_theme = new System.Windows.Forms.ToolStripMenuItem();
-            menuItem_import_multiple = new System.Windows.Forms.ToolStripMenuItem();
             statusStrip.SuspendLayout();
             groupBox_colors.SuspendLayout();
             panel_main.SuspendLayout();
@@ -95,6 +95,31 @@
             menuItem_export_all.Name = "menuItem_export_all";
             menuItem_export_all.Size = new System.Drawing.Size(190, 22);
             menuItem_export_all.Text = "Export All Themes";
+            menuItem_export_all.Click += exportAll_Click;
+            // 
+            // button_import
+            // 
+            button_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            button_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { menuItem_import_theme, menuItem_import_multiple });
+            button_import.Image = (System.Drawing.Image)resources.GetObject("button_import.Image");
+            button_import.ImageTransparentColor = System.Drawing.Color.Magenta;
+            button_import.Name = "button_import";
+            button_import.Size = new System.Drawing.Size(56, 20);
+            button_import.Text = "Import";
+            // 
+            // menuItem_import_theme
+            // 
+            menuItem_import_theme.Name = "menuItem_import_theme";
+            menuItem_import_theme.Size = new System.Drawing.Size(201, 22);
+            menuItem_import_theme.Text = "Import Theme";
+            menuItem_import_theme.Click += menuItem_import_Click;
+            // 
+            // menuItem_import_multiple
+            // 
+            menuItem_import_multiple.Name = "menuItem_import_multiple";
+            menuItem_import_multiple.Size = new System.Drawing.Size(201, 22);
+            menuItem_import_multiple.Text = "Import Multiple Themes";
+            menuItem_import_multiple.Click += importAll_Click;
             // 
             // groupBox_colors
             // 
@@ -388,30 +413,6 @@
             comboBox_theme.Size = new System.Drawing.Size(179, 23);
             comboBox_theme.TabIndex = 1;
             comboBox_theme.SelectedIndexChanged += comboBox_theme_SelectedIndexChanged;
-            // 
-            // button_import
-            // 
-            button_import.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            button_import.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { menuItem_import_theme, menuItem_import_multiple });
-            button_import.Image = (System.Drawing.Image)resources.GetObject("button_import.Image");
-            button_import.ImageTransparentColor = System.Drawing.Color.Magenta;
-            button_import.Name = "button_import";
-            button_import.Size = new System.Drawing.Size(56, 20);
-            button_import.Text = "Import";
-            // 
-            // menuItem_import_theme
-            // 
-            menuItem_import_theme.Name = "menuItem_import_theme";
-            menuItem_import_theme.Size = new System.Drawing.Size(201, 22);
-            menuItem_import_theme.Text = "Import Theme";
-            menuItem_import_theme.Click += menuItem_import_Click;
-            // 
-            // menuItem_import_multiple
-            // 
-            menuItem_import_multiple.Name = "menuItem_import_multiple";
-            menuItem_import_multiple.Size = new System.Drawing.Size(201, 22);
-            menuItem_import_multiple.Text = "Import Multiple Themes";
-            menuItem_import_multiple.Click += importAll_Click;
             // 
             // ThemeEditor
             // 

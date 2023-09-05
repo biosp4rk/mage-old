@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -218,6 +219,42 @@ namespace mage.Theming
                     ImportNewTheme(data);
 
                     reader.Dispose();
+                }
+            }
+        }
+
+        private void exportAll_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Zip Archive (*.zip)|*zip";
+            if (dialog.ShowDialog() != DialogResult.OK) return;
+
+            //creating a new zip
+            using (var stream = new MemoryStream())
+            {
+                using (var archive = new ZipArchive(stream, ZipArchiveMode.Create, true))
+                {
+                    foreach (KeyValuePair<string, ColorTheme> pair in ThemeSwitcher.Themes)
+                    {
+                        //Checking if standard theme
+                        if (pair.Key == ThemeSwitcher.StandardThemeName || pair.Key == ThemeSwitcher.StandardDarkThemeName) continue;
+
+                        string data = ThemeSwitcher.Serialize(pair);
+
+                        //Writing the theme to an entry in the zip
+                        var themeFile = archive.CreateEntry(pair.Key + ".mtf");
+                        using (var entryStream = themeFile.Open()) using (var writer = new StreamWriter(entryStream))
+                        {
+                            writer.Write(data);
+                        }
+                    }
+                }
+
+                //writing zip to file
+                using (var fileStream = new FileStream(dialog.FileName, FileMode.Create))
+                {
+                    stream.Seek(0, SeekOrigin.Begin);
+                    stream.CopyTo(fileStream);
                 }
             }
         }
