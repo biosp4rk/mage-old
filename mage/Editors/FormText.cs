@@ -110,7 +110,7 @@ namespace mage
             // get palette and draw
             palette = new Palette(romStream, Version.TextPaletteOffset, 1);
             pictureBox_palette.Image = palette.Draw(15, 0, 1);
-            
+
             comboBox_language.SelectedIndex = 2;
             comboBox_text.SelectedIndex = 0;
         }
@@ -156,7 +156,8 @@ namespace mage
                     int ctrl = val >> 8;
                     if (ctrl == 0x80) { display += "[INDENT=" + Hex.ToString((byte)val) + "]"; }
                     else if (ctrl == 0x81) { display += "[COLOR=" + Hex.ToString((byte)val % 0xF) + "]"; }
-                    else if (val >> 12 == 9) { display += "[MUSIC=" + Hex.ToString(val & 0xFFF) + "]"; }
+                    else if (val >> 12 == 0x9) { display += "[MUSIC=" + Hex.ToString(val & 0xFFF) + "]"; }
+                    else if (val >> 12 == 0xA) { display += "[MUSIC_STOP=" + Hex.ToString(val & 0xFFF) + "]"; }
                     else if (ctrl == 0xE1) { display += "[DELAY=" + Hex.ToString((byte)val) + "]"; }
                     else if (ctrl == 0xFD) { display += "[NEXT]\r\n"; }
                     else if (ctrl == 0xFE)
@@ -310,9 +311,10 @@ namespace mage
                             else if (strs[0] == "INDENT") { textVals.Add((ushort)(0x8000 + Hex.ToByte(strs[1]))); }
                             else if (strs[0] == "MUSIC") { textVals.Add((ushort)(0x9000 + Hex.ToUshort(strs[1]))); }
                             else if (strs[0] == "DELAY") { textVals.Add((ushort)(0xE100 + Hex.ToUshort(strs[1]))); }
+                            else if (strs[0] == "MUSIC_STOP") { textVals.Add((ushort)(0xA000 + Hex.ToUshort(strs[1]))); }
                             else
                             {
-                                MessageBox.Show("Text could not be parsed.\r\nThe contents of the brackets at character " 
+                                MessageBox.Show("Text could not be parsed.\r\nThe contents of the brackets at character "
                                     + Hex.ToString(i) + " are not valid.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return false;
                             }
@@ -324,7 +326,7 @@ namespace mage
                         if (text[++i] == '\n') { textVals.Add(0xFE00); }
                         else
                         {
-                            MessageBox.Show("Text could not be parsed.\r\nInvalid newline at character " 
+                            MessageBox.Show("Text could not be parsed.\r\nInvalid newline at character "
                                 + Hex.ToString(i) + ".", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return false;
                         }
@@ -339,19 +341,19 @@ namespace mage
             }
             catch (IndexOutOfRangeException)
             {
-                MessageBox.Show("Text could not be parsed.\r\nMake sure brackets are closed.", 
+                MessageBox.Show("Text could not be parsed.\r\nMake sure brackets are closed.",
                     "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             catch (KeyNotFoundException)
             {
-                MessageBox.Show("Text could not be parsed.\r\nCharacter " 
+                MessageBox.Show("Text could not be parsed.\r\nCharacter "
                     + Hex.ToString(i) + " was not recognized.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             catch (FormatException)
             {
-                MessageBox.Show("Text could not be parsed.\r\nThe value starting at character " 
+                MessageBox.Show("Text could not be parsed.\r\nThe value starting at character "
                     + Hex.ToString(i) + " is not valid.", "Parsing Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
@@ -444,7 +446,7 @@ namespace mage
             int language = comboBox_language.SelectedIndex;
             int number = comboBox_number.SelectedIndex;
             int pointer = romStream.ReadPtr(textLists[type].offset + language * 4) + number * 4;
-            
+
             // write new data
             romStream.Write(dataToWrite, prevLen * 2, pointer, false);
 
