@@ -17,12 +17,12 @@ namespace mage
 
         private void linkLabel_forum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(linkLabel_forum.Text);
+            Process.Start(new ProcessStartInfo(linkLabel_forum.Text) { UseShellExecute = true});
         }
 
         private void linkLabel_silk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(linkLabel_silk.Text);
+            Process.Start(new ProcessStartInfo(linkLabel_silk.Text) { UseShellExecute = true});
         }
 
     }
