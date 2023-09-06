@@ -33,15 +33,15 @@
             label_language = new System.Windows.Forms.Label();
             label_number = new System.Windows.Forms.Label();
             comboBox_number = new Theming.CustomControls.FlatComboBox();
-            pictureBox_text = new System.Windows.Forms.PictureBox();
+            pictureBox_text = new GfxView();
             checkBox_newLine = new System.Windows.Forms.CheckBox();
             checkBox_wordWrap = new System.Windows.Forms.CheckBox();
             label_text = new System.Windows.Forms.Label();
             comboBox_text = new Theming.CustomControls.FlatComboBox();
-            textBox_offsetVal = new Theming.CustomControls.FlatTextBox();
             label_offset = new System.Windows.Forms.Label();
             panel_gfx = new System.Windows.Forms.Panel();
             groupBox_options = new System.Windows.Forms.GroupBox();
+            textBox_offsetVal = new Theming.CustomControls.FlatTextBox();
             label_charPos = new System.Windows.Forms.Label();
             label_pos = new System.Windows.Forms.Label();
             button_close = new System.Windows.Forms.Button();
@@ -54,12 +54,24 @@
             textBox = new Theming.CustomControls.FlatTextBox();
             statusStrip = new System.Windows.Forms.StatusStrip();
             statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_text).BeginInit();
+            spring = new System.Windows.Forms.ToolStripStatusLabel();
+            label_zoom = new System.Windows.Forms.ToolStripStatusLabel();
+            button_zoom = new System.Windows.Forms.ToolStripDropDownButton();
+            button_zoom1600 = new System.Windows.Forms.ToolStripMenuItem();
+            button_zoom800 = new System.Windows.Forms.ToolStripMenuItem();
+            button_zoom400 = new System.Windows.Forms.ToolStripMenuItem();
+            button_zoom200 = new System.Windows.Forms.ToolStripMenuItem();
+            button_zoom100 = new System.Windows.Forms.ToolStripMenuItem();
+            splitContainer = new System.Windows.Forms.SplitContainer();
             panel_gfx.SuspendLayout();
             groupBox_options.SuspendLayout();
             groupBox_preview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_palette).BeginInit();
             statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer).BeginInit();
+            splitContainer.Panel1.SuspendLayout();
+            splitContainer.Panel2.SuspendLayout();
+            splitContainer.SuspendLayout();
             SuspendLayout();
             // 
             // comboBox_language
@@ -106,10 +118,11 @@
             // 
             // pictureBox_text
             // 
+            pictureBox_text.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             pictureBox_text.Location = new System.Drawing.Point(0, 0);
             pictureBox_text.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             pictureBox_text.Name = "pictureBox_text";
-            pictureBox_text.Size = new System.Drawing.Size(280, 92);
+            pictureBox_text.Size = new System.Drawing.Size(275, 99);
             pictureBox_text.TabIndex = 5;
             pictureBox_text.TabStop = false;
             // 
@@ -160,22 +173,6 @@
             comboBox_text.TabIndex = 0;
             comboBox_text.SelectedIndexChanged += comboBox_text_SelectedIndexChanged;
             // 
-            // textBox_offsetVal
-            // 
-            textBox_offsetVal.BorderColor = System.Drawing.Color.Black;
-            textBox_offsetVal.Location = new System.Drawing.Point(58, 119);
-            textBox_offsetVal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            textBox_offsetVal.Multiline = false;
-            textBox_offsetVal.Name = "textBox_offsetVal";
-            textBox_offsetVal.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
-            textBox_offsetVal.ReadOnly = true;
-            textBox_offsetVal.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            textBox_offsetVal.SelectionStart = 0;
-            textBox_offsetVal.Size = new System.Drawing.Size(64, 23);
-            textBox_offsetVal.TabIndex = 0;
-            textBox_offsetVal.TabStop = false;
-            textBox_offsetVal.WordWrap = true;
-            // 
             // label_offset
             // 
             label_offset.AutoSize = true;
@@ -188,23 +185,25 @@
             // 
             // panel_gfx
             // 
+            panel_gfx.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             panel_gfx.AutoScroll = true;
             panel_gfx.Controls.Add(pictureBox_text);
             panel_gfx.Location = new System.Drawing.Point(7, 47);
             panel_gfx.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel_gfx.Name = "panel_gfx";
-            panel_gfx.Size = new System.Drawing.Size(300, 92);
+            panel_gfx.Size = new System.Drawing.Size(295, 99);
             panel_gfx.TabIndex = 32;
             // 
             // groupBox_options
             // 
+            groupBox_options.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            groupBox_options.Controls.Add(textBox_offsetVal);
             groupBox_options.Controls.Add(label_charPos);
             groupBox_options.Controls.Add(label_pos);
             groupBox_options.Controls.Add(button_close);
             groupBox_options.Controls.Add(button_apply);
             groupBox_options.Controls.Add(comboBox_text);
             groupBox_options.Controls.Add(comboBox_language);
-            groupBox_options.Controls.Add(textBox_offsetVal);
             groupBox_options.Controls.Add(label_language);
             groupBox_options.Controls.Add(label_offset);
             groupBox_options.Controls.Add(comboBox_number);
@@ -212,14 +211,30 @@
             groupBox_options.Controls.Add(label_number);
             groupBox_options.Controls.Add(checkBox_newLine);
             groupBox_options.Controls.Add(checkBox_wordWrap);
-            groupBox_options.Location = new System.Drawing.Point(14, 14);
+            groupBox_options.Location = new System.Drawing.Point(13, 12);
             groupBox_options.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             groupBox_options.Name = "groupBox_options";
             groupBox_options.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBox_options.Size = new System.Drawing.Size(329, 147);
+            groupBox_options.Size = new System.Drawing.Size(335, 154);
             groupBox_options.TabIndex = 0;
             groupBox_options.TabStop = false;
             groupBox_options.Text = "Options";
+            // 
+            // textBox_offsetVal
+            // 
+            textBox_offsetVal.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_offsetVal.Location = new System.Drawing.Point(57, 115);
+            textBox_offsetVal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_offsetVal.Multiline = false;
+            textBox_offsetVal.Name = "textBox_offsetVal";
+            textBox_offsetVal.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_offsetVal.ReadOnly = true;
+            textBox_offsetVal.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_offsetVal.SelectionStart = 0;
+            textBox_offsetVal.Size = new System.Drawing.Size(64, 23);
+            textBox_offsetVal.TabIndex = 7;
+            textBox_offsetVal.TabStop = false;
+            textBox_offsetVal.WordWrap = true;
             // 
             // label_charPos
             // 
@@ -266,23 +281,25 @@
             // 
             // groupBox_preview
             // 
+            groupBox_preview.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             groupBox_preview.Controls.Add(button_editGfx);
             groupBox_preview.Controls.Add(button_update);
             groupBox_preview.Controls.Add(button_editPalette);
             groupBox_preview.Controls.Add(pictureBox_palette);
             groupBox_preview.Controls.Add(panel_gfx);
-            groupBox_preview.Location = new System.Drawing.Point(350, 14);
+            groupBox_preview.Location = new System.Drawing.Point(356, 12);
             groupBox_preview.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             groupBox_preview.Name = "groupBox_preview";
             groupBox_preview.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBox_preview.Size = new System.Drawing.Size(391, 147);
+            groupBox_preview.Size = new System.Drawing.Size(386, 154);
             groupBox_preview.TabIndex = 1;
             groupBox_preview.TabStop = false;
             groupBox_preview.Text = "Preview";
             // 
             // button_editGfx
             // 
-            button_editGfx.Location = new System.Drawing.Point(314, 115);
+            button_editGfx.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            button_editGfx.Location = new System.Drawing.Point(309, 115);
             button_editGfx.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_editGfx.Name = "button_editGfx";
             button_editGfx.Size = new System.Drawing.Size(70, 24);
@@ -293,7 +310,8 @@
             // 
             // button_update
             // 
-            button_update.Location = new System.Drawing.Point(314, 47);
+            button_update.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            button_update.Location = new System.Drawing.Point(309, 47);
             button_update.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_update.Name = "button_update";
             button_update.Size = new System.Drawing.Size(70, 63);
@@ -304,7 +322,8 @@
             // 
             // button_editPalette
             // 
-            button_editPalette.Location = new System.Drawing.Point(314, 18);
+            button_editPalette.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            button_editPalette.Location = new System.Drawing.Point(309, 18);
             button_editPalette.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_editPalette.Name = "button_editPalette";
             button_editPalette.Size = new System.Drawing.Size(70, 24);
@@ -315,10 +334,11 @@
             // 
             // pictureBox_palette
             // 
+            pictureBox_palette.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             pictureBox_palette.Location = new System.Drawing.Point(7, 21);
             pictureBox_palette.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             pictureBox_palette.Name = "pictureBox_palette";
-            pictureBox_palette.Size = new System.Drawing.Size(300, 20);
+            pictureBox_palette.Size = new System.Drawing.Size(295, 20);
             pictureBox_palette.TabIndex = 35;
             pictureBox_palette.TabStop = false;
             // 
@@ -327,7 +347,7 @@
             textBox.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             textBox.BorderColor = System.Drawing.Color.Black;
             textBox.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            textBox.Location = new System.Drawing.Point(14, 167);
+            textBox.Location = new System.Drawing.Point(13, 3);
             textBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox.Multiline = true;
             textBox.Name = "textBox";
@@ -335,7 +355,7 @@
             textBox.ReadOnly = false;
             textBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             textBox.SelectionStart = 0;
-            textBox.Size = new System.Drawing.Size(727, 221);
+            textBox.Size = new System.Drawing.Size(729, 284);
             textBox.TabIndex = 0;
             textBox.TabStop = false;
             textBox.WordWrap = true;
@@ -345,8 +365,8 @@
             // 
             // statusStrip
             // 
-            statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { statusLabel_changes });
-            statusStrip.Location = new System.Drawing.Point(0, 391);
+            statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { statusLabel_changes, spring, label_zoom, button_zoom });
+            statusStrip.Location = new System.Drawing.Point(0, 471);
             statusStrip.Name = "statusStrip";
             statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
             statusStrip.Size = new System.Drawing.Size(755, 22);
@@ -359,21 +379,96 @@
             statusLabel_changes.Size = new System.Drawing.Size(12, 17);
             statusLabel_changes.Text = "-";
             // 
+            // spring
+            // 
+            spring.Name = "spring";
+            spring.Size = new System.Drawing.Size(662, 17);
+            spring.Spring = true;
+            // 
+            // label_zoom
+            // 
+            label_zoom.Name = "label_zoom";
+            label_zoom.Size = new System.Drawing.Size(35, 17);
+            label_zoom.Text = "100%";
+            // 
+            // button_zoom
+            // 
+            button_zoom.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            button_zoom.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            button_zoom.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { button_zoom1600, button_zoom800, button_zoom400, button_zoom200, button_zoom100 });
+            button_zoom.Image = Properties.Resources.toolbar_zoom;
+            button_zoom.ImageTransparentColor = System.Drawing.Color.Magenta;
+            button_zoom.Name = "button_zoom";
+            button_zoom.Size = new System.Drawing.Size(29, 20);
+            button_zoom.Text = "Zoom";
+            // 
+            // button_zoom1600
+            // 
+            button_zoom1600.Name = "button_zoom1600";
+            button_zoom1600.Size = new System.Drawing.Size(108, 22);
+            button_zoom1600.Text = "1600%";
+            button_zoom1600.Click += button_zoom1600_Click;
+            // 
+            // button_zoom800
+            // 
+            button_zoom800.Name = "button_zoom800";
+            button_zoom800.Size = new System.Drawing.Size(108, 22);
+            button_zoom800.Text = "800%";
+            button_zoom800.Click += button_zoom800_Click;
+            // 
+            // button_zoom400
+            // 
+            button_zoom400.Name = "button_zoom400";
+            button_zoom400.Size = new System.Drawing.Size(108, 22);
+            button_zoom400.Text = "400%";
+            button_zoom400.Click += button_zoom400_Click;
+            // 
+            // button_zoom200
+            // 
+            button_zoom200.Name = "button_zoom200";
+            button_zoom200.Size = new System.Drawing.Size(108, 22);
+            button_zoom200.Text = "200%";
+            button_zoom200.Click += button_zoom200_Click;
+            // 
+            // button_zoom100
+            // 
+            button_zoom100.Name = "button_zoom100";
+            button_zoom100.Size = new System.Drawing.Size(108, 22);
+            button_zoom100.Text = "100%";
+            button_zoom100.Click += button_zoom100_Click;
+            // 
+            // splitContainer
+            // 
+            splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer.Location = new System.Drawing.Point(0, 0);
+            splitContainer.Margin = new System.Windows.Forms.Padding(6);
+            splitContainer.Name = "splitContainer";
+            splitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer.Panel1
+            // 
+            splitContainer.Panel1.Controls.Add(groupBox_options);
+            splitContainer.Panel1.Controls.Add(groupBox_preview);
+            // 
+            // splitContainer.Panel2
+            // 
+            splitContainer.Panel2.Controls.Add(textBox);
+            splitContainer.Size = new System.Drawing.Size(755, 471);
+            splitContainer.SplitterDistance = 177;
+            splitContainer.TabIndex = 3;
+            // 
             // FormText
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(755, 413);
+            ClientSize = new System.Drawing.Size(755, 493);
+            Controls.Add(splitContainer);
             Controls.Add(statusStrip);
-            Controls.Add(groupBox_preview);
-            Controls.Add(groupBox_options);
-            Controls.Add(textBox);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MinimumSize = new System.Drawing.Size(771, 452);
             Name = "FormText";
             Text = "Text Editor";
-            ((System.ComponentModel.ISupportInitialize)pictureBox_text).EndInit();
             panel_gfx.ResumeLayout(false);
             groupBox_options.ResumeLayout(false);
             groupBox_options.PerformLayout();
@@ -381,6 +476,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_palette).EndInit();
             statusStrip.ResumeLayout(false);
             statusStrip.PerformLayout();
+            splitContainer.Panel1.ResumeLayout(false);
+            splitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer).EndInit();
+            splitContainer.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -391,12 +490,11 @@
         private System.Windows.Forms.Label label_language;
         private System.Windows.Forms.Label label_number;
         private mage.Theming.CustomControls.FlatComboBox comboBox_number;
-        private System.Windows.Forms.PictureBox pictureBox_text;
+        private mage.GfxView pictureBox_text;
         private System.Windows.Forms.CheckBox checkBox_newLine;
         private System.Windows.Forms.CheckBox checkBox_wordWrap;
         private System.Windows.Forms.Label label_text;
         private mage.Theming.CustomControls.FlatComboBox comboBox_text;
-        private mage.Theming.CustomControls.FlatTextBox textBox_offsetVal;
         private System.Windows.Forms.Label label_offset;
         private System.Windows.Forms.Panel panel_gfx;
         private System.Windows.Forms.GroupBox groupBox_options;
@@ -412,5 +510,15 @@
         private System.Windows.Forms.Button button_editGfx;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel_changes;
+        private System.Windows.Forms.ToolStripStatusLabel spring;
+        private System.Windows.Forms.ToolStripDropDownButton button_zoom;
+        private System.Windows.Forms.ToolStripStatusLabel label_zoom;
+        private System.Windows.Forms.ToolStripMenuItem button_zoom1600;
+        private System.Windows.Forms.ToolStripMenuItem button_zoom800;
+        private System.Windows.Forms.ToolStripMenuItem button_zoom400;
+        private System.Windows.Forms.ToolStripMenuItem button_zoom200;
+        private System.Windows.Forms.ToolStripMenuItem button_zoom100;
+        private System.Windows.Forms.SplitContainer splitContainer;
+        private Theming.CustomControls.FlatTextBox textBox_offsetVal;
     }
 }

@@ -5,3 +5,5 @@ MAGE 1.5.0:
 - Edit Sprites/Doors with double click
 - Input screens directly in Room Options
 - Screen number gets displayed as hex
+- Added [MUSIC_STOP] Label for Fusion -> [\xBXXX]
+- Added Zoom to Text Editor

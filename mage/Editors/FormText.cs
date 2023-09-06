@@ -33,6 +33,8 @@ namespace mage
         private Status status;
         private bool loading;
 
+        private int zoom = 0;
+
         // constructor
         public FormText(FormMain main)
         {
@@ -265,8 +267,8 @@ namespace mage
             textImg.UnlockBits(imgData);
 
             pictureBox_text.BackColor = palette.GetOpaqueColor(0, 0);
-            pictureBox_text.Image = textImg;
-            pictureBox_text.Size = textImg.Size;
+            pictureBox_text.BackgroundImage = textImg;
+            pictureBox_text.Size = new Size(textImg.Size.Width << zoom, textImg.Size.Height << zoom);
         }
 
         private bool ParseText()
@@ -462,6 +464,44 @@ namespace mage
             Close();
         }
 
+        private void UpdateZoom()
+        {
+            pictureBox_text.Size = new Size(pictureBox_text.BackgroundImage.Width << zoom, pictureBox_text.BackgroundImage.Height << zoom);
+        }
 
+        private void button_zoom100_Click(object sender, EventArgs e)
+        {
+            zoom = 0;
+            label_zoom.Text = "100%";
+            UpdateZoom();
+        }
+
+        private void button_zoom200_Click(object sender, EventArgs e)
+        {
+            zoom = 1;
+            label_zoom.Text = "200%";
+            UpdateZoom();
+        }
+
+        private void button_zoom400_Click(object sender, EventArgs e)
+        {
+            zoom = 2;
+            label_zoom.Text = "400%";
+            UpdateZoom();
+        }
+
+        private void button_zoom800_Click(object sender, EventArgs e)
+        {
+            zoom = 3;
+            label_zoom.Text = "800%";
+            UpdateZoom();
+        }
+
+        private void button_zoom1600_Click(object sender, EventArgs e)
+        {
+            zoom = 4;
+            label_zoom.Text = "1600%";
+            UpdateZoom();
+        }
     }
 }

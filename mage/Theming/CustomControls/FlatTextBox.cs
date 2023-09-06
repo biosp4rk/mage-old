@@ -46,20 +46,24 @@ partial class FlatTextBox : UserControl
 
     public new BorderStyle BorderStyle
     {
-        get => textBox.BorderStyle;
+        get => (BorderStyle)base.BorderStyle;
         set
         {
-            drawBorder = true;
             if (value == BorderStyle.None)
             {
                 textBox.Location = new Point(0, 0);
                 drawBorder = false;
             }
-            else textBox.Location = new Point(3, 3);
+            else
+            {
+                textBox.Location = new Point(3, 3);
+                drawBorder = true;
+            }
+            base.BorderStyle = BorderStyle.None;
         }
     }
 
-    public override string Text { get => textBox.Text; set => textBox.Text = value; }
+    public new string Text { get => textBox.Text; set => textBox.Text = value; }
 
     public bool WordWrap { get => textBox.WordWrap; set => textBox.WordWrap = value; }
 

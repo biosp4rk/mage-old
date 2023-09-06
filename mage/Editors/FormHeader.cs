@@ -184,7 +184,7 @@ namespace mage
                 byte effect = Hex.ToByte(textBox_effect.Text);
                 byte effectY = Hex.ToByte(textBox_effectYpos.Text);
                 ushort music = Hex.ToUshort(textBox_music.Text);
-     
+
                 int offset = romStream.ReadPtr(Version.AreaHeaderOffset + a * 4) + (r * 0x3C);
 
                 // write all values
