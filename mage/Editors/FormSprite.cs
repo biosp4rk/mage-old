@@ -1,4 +1,5 @@
 ﻿using mage.Theming;
+using mage.Theming.CustomControls;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -272,7 +273,7 @@ namespace mage
             {
                 foreach (Control ctrl in controls)
                 {
-                    if (ctrl is TextBox && ctrl.Enabled)
+                    if (ctrl is FlatTextBox && ctrl.Enabled)
                     {
                         total += Hex.ToUshort(ctrl.Text);
                     }
@@ -281,18 +282,18 @@ namespace mage
             catch
             {
                 label_totalProb.Text = "–";
-                label_totalProb.ForeColor = Color.DarkRed;
+                label_totalProb.ForeColor = ThemeSwitcher.ProjectTheme.AccentColor;
                 return;
             }
 
             label_totalProb.Text = Hex.ToString(total);
             if (total == 0x400 || total == 0)
             {
-                label_totalProb.ForeColor = Color.Black;
+                label_totalProb.ForeColor = ThemeSwitcher.ProjectTheme.TextColor;
             }
             else
             {
-                label_totalProb.ForeColor = Color.DarkRed;
+                label_totalProb.ForeColor = ThemeSwitcher.ProjectTheme.AccentColor;
                 if (total < 0x400)
                 {
                     label_totalProb.Text += " (too low)";
