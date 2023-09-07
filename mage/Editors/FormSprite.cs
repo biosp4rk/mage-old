@@ -1,4 +1,5 @@
 ﻿using mage.Theming;
+using mage.Theming.CustomControls;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -272,7 +273,7 @@ namespace mage
             {
                 foreach (Control ctrl in controls)
                 {
-                    if (ctrl is TextBox && ctrl.Enabled)
+                    if (ctrl is FlatTextBox && ctrl.Enabled)
                     {
                         total += Hex.ToUshort(ctrl.Text);
                     }

@@ -63,7 +63,7 @@ partial class FlatTextBox : UserControl
         }
     }
 
-    public new string Text { get => textBox.Text; set => textBox.Text = value; }
+    public override string Text { get => textBox.Text; set => textBox.Text = value; }
 
     public bool WordWrap { get => textBox.WordWrap; set => textBox.WordWrap = value; }
 
