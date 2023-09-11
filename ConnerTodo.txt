@@ -9,3 +9,4 @@ MAGE 1.5.0:
 - Added Zoom to Text Editor
 - Input hex color in palette editor
 - Door Exit Distance Presets
+- Added clipdata shortcuts button to main view

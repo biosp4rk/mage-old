@@ -168,6 +168,7 @@
             label_room = new System.Windows.Forms.Label();
             label_area = new System.Windows.Forms.Label();
             groupBox_tileset = new System.Windows.Forms.GroupBox();
+            button_clipdata_shortcuts = new System.Windows.Forms.Button();
             comboBox_clipdata = new Theming.CustomControls.FlatComboBox();
             label_clipdata = new System.Windows.Forms.Label();
             panel_tileset = new System.Windows.Forms.Panel();
@@ -240,6 +241,7 @@
             toolStrip_add = new System.Windows.Forms.ToolStripButton();
             toolStrip_patches = new System.Windows.Forms.ToolStripButton();
             comboBox_spriteset = new Theming.CustomControls.FlatComboBox();
+            ToolTip = new System.Windows.Forms.ToolTip(components);
             menuStrip.SuspendLayout();
             groupBox_location.SuspendLayout();
             groupBox_tileset.SuspendLayout();
@@ -1255,6 +1257,7 @@
             // groupBox_tileset
             // 
             groupBox_tileset.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            groupBox_tileset.Controls.Add(button_clipdata_shortcuts);
             groupBox_tileset.Controls.Add(comboBox_clipdata);
             groupBox_tileset.Controls.Add(label_clipdata);
             groupBox_tileset.Controls.Add(panel_tileset);
@@ -1269,14 +1272,26 @@
             groupBox_tileset.TabStop = false;
             groupBox_tileset.Text = "Tileset";
             // 
+            // button_clipdata_shortcuts
+            // 
+            button_clipdata_shortcuts.Image = Properties.Resources.shortcut_shot;
+            button_clipdata_shortcuts.Location = new System.Drawing.Point(303, 22);
+            button_clipdata_shortcuts.Name = "button_clipdata_shortcuts";
+            button_clipdata_shortcuts.Size = new System.Drawing.Size(24, 24);
+            button_clipdata_shortcuts.TabIndex = 12;
+            ToolTip.SetToolTip(button_clipdata_shortcuts, "Clipdata Shortcuts");
+            button_clipdata_shortcuts.UseVisualStyleBackColor = true;
+            button_clipdata_shortcuts.Click += menuItem_clipShortcuts_Click;
+            // 
             // comboBox_clipdata
             // 
             comboBox_clipdata.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_clipdata.DropDownWidth = 228;
             comboBox_clipdata.FormattingEnabled = true;
             comboBox_clipdata.Location = new System.Drawing.Point(68, 22);
             comboBox_clipdata.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             comboBox_clipdata.Name = "comboBox_clipdata";
-            comboBox_clipdata.Size = new System.Drawing.Size(258, 23);
+            comboBox_clipdata.Size = new System.Drawing.Size(228, 23);
             comboBox_clipdata.TabIndex = 11;
             // 
             // label_clipdata
@@ -2236,6 +2251,8 @@
         private Theming.CustomControls.FlatComboBox comboBox_spriteset;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
+        private System.Windows.Forms.Button button_clipdata_shortcuts;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }
 
