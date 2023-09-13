@@ -6,7 +6,8 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using mage.Properties;
 using mage.Theming;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace mage
 {
@@ -82,6 +83,8 @@ namespace mage
 
             ThemeSwitcher.ChangeTheme(Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);
+
+            ThemeSwitcher.TestSerialisation();
         }
 
 
@@ -161,7 +164,14 @@ namespace mage
             roomView.UpdateZoom(zoom, false);
 
             //Loading themes
-            ThemeSwitcher.Themes = JsonConvert.DeserializeObject<Dictionary<string, ColorTheme>>(Settings.Default.themes);
+            try
+            {
+                ThemeSwitcher.Themes = ThemeSwitcher.Deserialize<Dictionary<string, ColorTheme>>(Settings.Default.themes);
+            }
+            catch
+            {
+                ThemeSwitcher.Themes = null;
+            }
             CheckIfThemesExist();
             ThemeSwitcher.ProjectThemeName = Settings.Default.selectedTheme;
         }
@@ -185,7 +195,7 @@ namespace mage
             Settings.Default.zoom = zoom;
 
             //Saving themes
-            string themeDictionary = JsonConvert.SerializeObject(ThemeSwitcher.Themes);
+            string themeDictionary = ThemeSwitcher.Serialize(ThemeSwitcher.Themes);
             Settings.Default.themes = themeDictionary;
             Settings.Default.selectedTheme = ThemeSwitcher.ProjectThemeName;
 

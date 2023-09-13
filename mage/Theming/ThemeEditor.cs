@@ -1,12 +1,15 @@
 ﻿using mage.Theming.CustomControls;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.IO.Compression;
+using System.Security.Cryptography.Xml;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -108,6 +111,13 @@ namespace mage.Theming
             string currentName = comboBox_theme.Text;
             string newName = flatTextBox_name.Text;
 
+            //Check if name is empty or contains only spaces
+            if (newName.Trim().Length == 0 || newName.Length == 0)
+            {
+                MessageBox.Show($"Name cannot be empty!", "Invalid name", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             //Check if new name already exists
             if (ThemeSwitcher.Themes.ContainsKey(newName) && newName != currentName)
             {
@@ -157,7 +167,7 @@ namespace mage.Theming
                 i++;
             }
             //Very inefficient way of creating a clone of the standard theme but I cant be bothered to implement a proper deep clone function now
-            ColorTheme newStandardTheme = JsonConvert.DeserializeObject<ColorTheme>(JsonConvert.SerializeObject(ThemeSwitcher.StandardTheme));
+            ColorTheme newStandardTheme = ThemeSwitcher.Deserialize<ColorTheme>(ThemeSwitcher.Serialize(ThemeSwitcher.StandardTheme));
             ThemeSwitcher.Themes.Add(name, newStandardTheme);
 
             comboBox_theme.Items.Add(name);
@@ -173,7 +183,7 @@ namespace mage.Theming
             {
                 //convert key pair to json object
                 KeyValuePair<string, ColorTheme> theme = new KeyValuePair<string, ColorTheme>(comboBox_theme.Text, selectedTheme);
-                string data = JsonConvert.SerializeObject(theme);
+                string data = ThemeSwitcher.Serialize(theme);
                 File.WriteAllText(dialog.FileName, data);
             }
         }
@@ -185,30 +195,99 @@ namespace mage.Theming
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 string data = File.ReadAllText(dialog.FileName);
-                KeyValuePair<string, ColorTheme> pair = JsonConvert.DeserializeObject<KeyValuePair<string, ColorTheme>>(data);
+                ImportNewTheme(data);
+            }
+        }
 
-                //Checking if name is correct
-                string name = pair.Key;
-                if (ThemeSwitcher.Themes.ContainsKey(name))
+        private void importAll_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Zip Archive (*.zip)|*zip";
+            if (dialog.ShowDialog() != DialogResult.OK) return;
+
+            //opening the zip archive
+            using (ZipArchive zip = ZipFile.Open(dialog.FileName, ZipArchiveMode.Read))
+            {
+                //looping through every entry
+                foreach (ZipArchiveEntry entry in zip.Entries)
                 {
-                    if (MessageBox.Show($"The name \"{name}\" is already used!\n\nDo still want to import the theme?\nThe name will be changed.", "Invalid name", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
-                        != DialogResult.Yes) return;
+                    if (Path.GetExtension(entry.Name) != ".mtf") continue;
 
-                    //Change name
-                    name = "New Theme";
-                    int i = 1;
-                    while (comboBox_theme.Items.Contains(name))
+                    var reader = new StreamReader(entry.Open());
+                    string data = reader.ReadToEnd();
+
+                    ImportNewTheme(data);
+
+                    reader.Dispose();
+                }
+            }
+        }
+
+        private void exportAll_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Zip Archive (*.zip)|*zip";
+            if (dialog.ShowDialog() != DialogResult.OK) return;
+
+            //creating a new zip
+            using (var stream = new MemoryStream())
+            {
+                using (var archive = new ZipArchive(stream, ZipArchiveMode.Create, true))
+                {
+                    foreach (KeyValuePair<string, ColorTheme> pair in ThemeSwitcher.Themes)
                     {
-                        name = $"New Theme {i}";
-                        i++;
+                        //Checking if standard theme
+                        if (pair.Key == ThemeSwitcher.StandardThemeName || pair.Key == ThemeSwitcher.StandardDarkThemeName) continue;
+
+                        string data = ThemeSwitcher.Serialize(pair);
+
+                        //Writing the theme to an entry in the zip
+                        var themeFile = archive.CreateEntry(pair.Key + ".mtf");
+                        using (var entryStream = themeFile.Open()) using (var writer = new StreamWriter(entryStream))
+                        {
+                            writer.Write(data);
+                        }
                     }
                 }
 
-                //Adding theme to dictionary
-                ThemeSwitcher.Themes.Add(name, pair.Value);
-                comboBox_theme.Items.Add(name);
-                comboBox_theme.SelectedIndex = comboBox_theme.Items.IndexOf(name);
+                //writing zip to file
+                using (var fileStream = new FileStream(dialog.FileName, FileMode.Create))
+                {
+                    stream.Seek(0, SeekOrigin.Begin);
+                    stream.CopyTo(fileStream);
+                }
             }
+        }
+
+        /// <summary>
+        /// Imports a theme from a file string
+        /// </summary>
+        /// <param name="data"></param>
+        private void ImportNewTheme(string data)
+        {
+            KeyValuePair<string, ColorTheme> pair = ThemeSwitcher.Deserialize<KeyValuePair<string, ColorTheme>>(data);
+
+            //Checking if name is correct
+            string name = pair.Key;
+            if (ThemeSwitcher.Themes.ContainsKey(name))
+            {
+                if (MessageBox.Show($"The name \"{name}\" is already used!\n\nDo still want to import the theme?\nThe name will be changed.", "Invalid name", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+                    != DialogResult.Yes) return;
+
+                //Change name
+                name = "New Theme";
+                int i = 1;
+                while (comboBox_theme.Items.Contains(name))
+                {
+                    name = $"New Theme {i}";
+                    i++;
+                }
+            }
+
+            //Adding theme to dictionary
+            ThemeSwitcher.Themes.Add(name, pair.Value);
+            comboBox_theme.Items.Add(name);
+            comboBox_theme.SelectedIndex = comboBox_theme.Items.IndexOf(name);
         }
 
         private void flatTextBox_name_TextChanged(object sender, EventArgs e)
