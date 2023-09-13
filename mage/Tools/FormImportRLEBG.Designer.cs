@@ -39,7 +39,7 @@
             this.checkBox_preserveData = new System.Windows.Forms.CheckBox();
             this.groupBox_palette = new System.Windows.Forms.GroupBox();
             this.groupBox_select = new System.Windows.Forms.GroupBox();
-            this.comboBox_tileset = new System.Windows.Forms.ComboBox();
+            this.comboBox_tileset = new mage.Theming.CustomControls.FlatComboBox();
             this.listBox_rows = new System.Windows.Forms.ListBox();
             this.groupBox_palette.SuspendLayout();
             this.groupBox_select.SuspendLayout();
@@ -226,7 +226,7 @@
         private System.Windows.Forms.CheckBox checkBox_preserveData;
         private System.Windows.Forms.GroupBox groupBox_palette;
         private System.Windows.Forms.GroupBox groupBox_select;
-        private System.Windows.Forms.ComboBox comboBox_tileset;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tileset;
         private System.Windows.Forms.ListBox listBox_rows;
     }
 }

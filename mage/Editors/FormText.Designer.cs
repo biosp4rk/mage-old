@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormText));
-            this.comboBox_language = new System.Windows.Forms.ComboBox();
+            this.comboBox_language = new mage.Theming.CustomControls.FlatComboBox();
             this.label_language = new System.Windows.Forms.Label();
             this.label_number = new System.Windows.Forms.Label();
-            this.comboBox_number = new System.Windows.Forms.ComboBox();
+            this.comboBox_number = new mage.Theming.CustomControls.FlatComboBox();
             this.pictureBox_text = new System.Windows.Forms.PictureBox();
             this.checkBox_newLine = new System.Windows.Forms.CheckBox();
             this.checkBox_wordWrap = new System.Windows.Forms.CheckBox();
             this.label_text = new System.Windows.Forms.Label();
-            this.comboBox_text = new System.Windows.Forms.ComboBox();
-            this.textBox_offsetVal = new System.Windows.Forms.TextBox();
+            this.comboBox_text = new mage.Theming.CustomControls.FlatComboBox();
+            this.textBox_offsetVal = new mage.Theming.CustomControls.FlatTextBox();
             this.label_offset = new System.Windows.Forms.Label();
             this.panel_gfx = new System.Windows.Forms.Panel();
             this.groupBox_options = new System.Windows.Forms.GroupBox();
@@ -51,7 +51,7 @@
             this.button_update = new System.Windows.Forms.Button();
             this.button_editPalette = new System.Windows.Forms.Button();
             this.pictureBox_palette = new System.Windows.Forms.PictureBox();
-            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBox = new mage.Theming.CustomControls.FlatTextBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_text)).BeginInit();
@@ -355,16 +355,16 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox_language;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_language;
         private System.Windows.Forms.Label label_language;
         private System.Windows.Forms.Label label_number;
-        private System.Windows.Forms.ComboBox comboBox_number;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_number;
         private System.Windows.Forms.PictureBox pictureBox_text;
         private System.Windows.Forms.CheckBox checkBox_newLine;
         private System.Windows.Forms.CheckBox checkBox_wordWrap;
         private System.Windows.Forms.Label label_text;
-        private System.Windows.Forms.ComboBox comboBox_text;
-        private System.Windows.Forms.TextBox textBox_offsetVal;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_text;
+        private mage.Theming.CustomControls.FlatTextBox textBox_offsetVal;
         private System.Windows.Forms.Label label_offset;
         private System.Windows.Forms.Panel panel_gfx;
         private System.Windows.Forms.GroupBox groupBox_options;
@@ -372,7 +372,7 @@
         private System.Windows.Forms.Button button_apply;
         private System.Windows.Forms.GroupBox groupBox_preview;
         private System.Windows.Forms.Button button_update;
-        private System.Windows.Forms.TextBox textBox;
+        private mage.Theming.CustomControls.FlatTextBox textBox;
         private System.Windows.Forms.Label label_pos;
         private System.Windows.Forms.Label label_charPos;
         private System.Windows.Forms.Button button_editPalette;

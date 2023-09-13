@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -30,6 +31,10 @@ namespace mage
         {
             InitializeComponent();
 
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
+            ThemeSwitcher.ThemeChanged += ThemeSwitcherChangedTheme;
+
             this.main = main;
             Initialize();
 
@@ -43,10 +48,19 @@ namespace mage
             }
         }
 
+        private void ThemeSwitcherChangedTheme(object sender, EventArgs e)
+        {
+            if (!groupBox_color.Enabled) return;
+            DrawColorBar();
+        }
+
         // constructor (offset)
         public FormPalette(FormMain main, int offset, int rows)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
 
@@ -294,21 +308,24 @@ namespace mage
         private unsafe void DrawLine(BitmapData imgData, int color)
         {
             int* imgPtr = (int*)imgData.Scan0 + color * 4;
+            int borderColor = ThemeSwitcher.ProjectTheme.TextColor.ToArgb();
+            int backgroundColor = ThemeSwitcher.ProjectTheme.SecondaryOutline.ToArgb();
 
-            for (int y = 0; y < 10; y++)
+            for (int y = 0; y < 20; y++)
             {
-                int val = 0x111111 * (y + 6);
+                int val;
+            
                 for (int x = 0; x < 4; x++)
                 {
-                    *imgPtr++ = val;
-                }
-                imgPtr += 124;
-            }
-            for (int y = 0; y < 10; y++)
-            {
-                int val = 0x111111 * (15 - y);
-                for (int x = 0; x < 4; x++)
-                {
+                    if (y == 0 || y == 19)
+                    {
+                        val = borderColor;
+                    }
+                    else
+                    {
+                        val = backgroundColor;
+                        if (x == 0 || x == 3) val = borderColor;
+                    }
                     *imgPtr++ = val;
                 }
                 imgPtr += 124;

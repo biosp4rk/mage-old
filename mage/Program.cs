@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
+using System.Runtime.Versioning;
 using System.Windows.Forms;
 
 namespace mage
 {
+    [SupportedOSPlatform("windows")]
     static class Program
     {
         /// <summary>
@@ -14,6 +17,7 @@ namespace mage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8f));
 
             // check for opening rom directly
             string[] args = Environment.GetCommandLineArgs();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -14,6 +15,9 @@ namespace mage
         public FormRoomOptions(FormMain main)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.room = main.Room;
@@ -39,7 +43,7 @@ namespace mage
                 label.Text = screen.ToString();
                 if (screen % 1 == 0 & screen > 0)
                 {
-                    label.ForeColor = Color.Black;
+                    label.ForeColor = ThemeSwitcher.ProjectTheme.TextColor;
                 }
                 else
                 {

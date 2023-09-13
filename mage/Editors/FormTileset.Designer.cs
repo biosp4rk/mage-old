@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTileset));
-            this.textBox_offsetVal = new System.Windows.Forms.TextBox();
+            this.textBox_offsetVal = new mage.Theming.CustomControls.FlatTextBox();
             this.label_offset = new System.Windows.Forms.Label();
             this.button_close = new System.Windows.Forms.Button();
             this.button_apply = new System.Windows.Forms.Button();
-            this.textBox_rleGfx = new System.Windows.Forms.TextBox();
-            this.textBox_palette = new System.Windows.Forms.TextBox();
-            this.textBox_lz77gfx = new System.Windows.Forms.TextBox();
-            this.textBox_tileTable = new System.Windows.Forms.TextBox();
+            this.textBox_rleGfx = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_palette = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_lz77gfx = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_tileTable = new mage.Theming.CustomControls.FlatTextBox();
             this.label_rleGfx = new System.Windows.Forms.Label();
             this.label_palette = new System.Windows.Forms.Label();
             this.label_lz77gfx = new System.Windows.Forms.Label();
             this.label_tileTable = new System.Windows.Forms.Label();
-            this.textBox_animTileset = new System.Windows.Forms.TextBox();
-            this.textBox_animPalette = new System.Windows.Forms.TextBox();
+            this.textBox_animTileset = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_animPalette = new mage.Theming.CustomControls.FlatTextBox();
             this.label_animTileset = new System.Windows.Forms.Label();
             this.label_animPalette = new System.Windows.Forms.Label();
             this.label_tileset = new System.Windows.Forms.Label();
-            this.comboBox_tileset = new System.Windows.Forms.ComboBox();
+            this.comboBox_tileset = new mage.Theming.CustomControls.FlatComboBox();
             this.groupBox_data = new System.Windows.Forms.GroupBox();
             this.button_editTileTable = new System.Windows.Forms.Button();
             this.button_editAnimTileset = new System.Windows.Forms.Button();
@@ -352,24 +352,24 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox_offsetVal;
+        private mage.Theming.CustomControls.FlatTextBox textBox_offsetVal;
         private System.Windows.Forms.Label label_offset;
         private System.Windows.Forms.Button button_close;
         private System.Windows.Forms.Button button_apply;
-        private System.Windows.Forms.TextBox textBox_rleGfx;
-        private System.Windows.Forms.TextBox textBox_palette;
-        private System.Windows.Forms.TextBox textBox_lz77gfx;
-        private System.Windows.Forms.TextBox textBox_tileTable;
+        private mage.Theming.CustomControls.FlatTextBox textBox_rleGfx;
+        private mage.Theming.CustomControls.FlatTextBox textBox_palette;
+        private mage.Theming.CustomControls.FlatTextBox textBox_lz77gfx;
+        private mage.Theming.CustomControls.FlatTextBox textBox_tileTable;
         private System.Windows.Forms.Label label_rleGfx;
         private System.Windows.Forms.Label label_palette;
         private System.Windows.Forms.Label label_lz77gfx;
         private System.Windows.Forms.Label label_tileTable;
-        private System.Windows.Forms.TextBox textBox_animTileset;
-        private System.Windows.Forms.TextBox textBox_animPalette;
+        private mage.Theming.CustomControls.FlatTextBox textBox_animTileset;
+        private mage.Theming.CustomControls.FlatTextBox textBox_animPalette;
         private System.Windows.Forms.Label label_animTileset;
         private System.Windows.Forms.Label label_animPalette;
         private System.Windows.Forms.Label label_tileset;
-        private System.Windows.Forms.ComboBox comboBox_tileset;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tileset;
         private System.Windows.Forms.GroupBox groupBox_data;
         private System.Windows.Forms.Button button_editPalette;
         private System.Windows.Forms.Button button_editAnimPalette;

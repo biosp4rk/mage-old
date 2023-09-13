@@ -36,9 +36,9 @@
             this.button_areaRemove = new System.Windows.Forms.Button();
             this.label_areaSource = new System.Windows.Forms.Label();
             this.label_areaDestination = new System.Windows.Forms.Label();
-            this.comboBox_areaDstArea = new System.Windows.Forms.ComboBox();
-            this.comboBox_areaSrcArea = new System.Windows.Forms.ComboBox();
-            this.textBox_areaSrcDoor = new System.Windows.Forms.TextBox();
+            this.comboBox_areaDstArea = new mage.Theming.CustomControls.FlatComboBox();
+            this.comboBox_areaSrcArea = new mage.Theming.CustomControls.FlatComboBox();
+            this.textBox_areaSrcDoor = new mage.Theming.CustomControls.FlatTextBox();
             this.label_areaDstRoom = new System.Windows.Forms.Label();
             this.label_areaSrcRoom = new System.Windows.Forms.Label();
             this.label_areaDstDoor = new System.Windows.Forms.Label();
@@ -47,12 +47,12 @@
             this.label_areaArea = new System.Windows.Forms.Label();
             this.label_areaRoom = new System.Windows.Forms.Label();
             this.label_areaDoor = new System.Windows.Forms.Label();
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabControl = new mage.Theming.CustomControls.FlatTabControl();
             this.tabPage_area = new System.Windows.Forms.TabPage();
             this.tabPage_event = new System.Windows.Forms.TabPage();
-            this.textBox_event = new System.Windows.Forms.TextBox();
+            this.textBox_event = new mage.Theming.CustomControls.FlatTextBox();
             this.label_event = new System.Windows.Forms.Label();
-            this.textBox_eventDstDoor = new System.Windows.Forms.TextBox();
+            this.textBox_eventDstDoor = new mage.Theming.CustomControls.FlatTextBox();
             this.label_eventDstArea = new System.Windows.Forms.Label();
             this.listView_doorEvents = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -67,14 +67,14 @@
             this.button_eventClose = new System.Windows.Forms.Button();
             this.label_eventDestination = new System.Windows.Forms.Label();
             this.button_eventApply = new System.Windows.Forms.Button();
-            this.comboBox_eventSrcArea = new System.Windows.Forms.ComboBox();
+            this.comboBox_eventSrcArea = new mage.Theming.CustomControls.FlatComboBox();
             this.label_eventSrcRoom = new System.Windows.Forms.Label();
-            this.textBox_eventSrcDoor = new System.Windows.Forms.TextBox();
+            this.textBox_eventSrcDoor = new mage.Theming.CustomControls.FlatTextBox();
             this.label_eventDstRoom = new System.Windows.Forms.Label();
             this.tabPage_locNames = new System.Windows.Forms.TabPage();
-            this.comboBox_locLanguage = new System.Windows.Forms.ComboBox();
+            this.comboBox_locLanguage = new mage.Theming.CustomControls.FlatComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox_locDstRoom = new System.Windows.Forms.TextBox();
+            this.textBox_locDstRoom = new mage.Theming.CustomControls.FlatTextBox();
             this.listView_locNames = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -87,16 +87,16 @@
             this.button_locClose = new System.Windows.Forms.Button();
             this.label_locText = new System.Windows.Forms.Label();
             this.button_locApply = new System.Windows.Forms.Button();
-            this.comboBox_locDstArea = new System.Windows.Forms.ComboBox();
-            this.textBox_locText = new System.Windows.Forms.TextBox();
+            this.comboBox_locDstArea = new mage.Theming.CustomControls.FlatComboBox();
+            this.textBox_locText = new mage.Theming.CustomControls.FlatTextBox();
             this.label_locName = new System.Windows.Forms.Label();
             this.tabPage_hatchLock = new System.Windows.Forms.TabPage();
             this.radioButton_lockAfter = new System.Windows.Forms.RadioButton();
             this.radioButton_lockBefore = new System.Windows.Forms.RadioButton();
             this.listBox_lockHatches = new System.Windows.Forms.ListBox();
-            this.textBox_lockEvent = new System.Windows.Forms.TextBox();
+            this.textBox_lockEvent = new mage.Theming.CustomControls.FlatTextBox();
             this.label_lockEvent = new System.Windows.Forms.Label();
-            this.textBox_lockRoom = new System.Windows.Forms.TextBox();
+            this.textBox_lockRoom = new mage.Theming.CustomControls.FlatTextBox();
             this.label_lockRoom = new System.Windows.Forms.Label();
             this.listView_lockHatches = new System.Windows.Forms.ListView();
             this.columnHeader_lockDst = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -108,7 +108,7 @@
             this.label_lockArea = new System.Windows.Forms.Label();
             this.button_lockClose = new System.Windows.Forms.Button();
             this.button_lockApply = new System.Windows.Forms.Button();
-            this.comboBox_lockArea = new System.Windows.Forms.ComboBox();
+            this.comboBox_lockArea = new mage.Theming.CustomControls.FlatComboBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl.SuspendLayout();
@@ -126,10 +126,11 @@
             this.columnHeader_dst});
             this.listView_areaConnections.FullRowSelect = true;
             this.listView_areaConnections.GridLines = true;
+            this.listView_areaConnections.HideSelection = false;
             this.listView_areaConnections.Location = new System.Drawing.Point(6, 6);
             this.listView_areaConnections.MultiSelect = false;
             this.listView_areaConnections.Name = "listView_areaConnections";
-            this.listView_areaConnections.Size = new System.Drawing.Size(421, 163);
+            this.listView_areaConnections.Size = new System.Drawing.Size(539, 163);
             this.listView_areaConnections.TabIndex = 0;
             this.listView_areaConnections.UseCompatibleStateImageBehavior = false;
             this.listView_areaConnections.View = System.Windows.Forms.View.Details;
@@ -207,6 +208,7 @@
             // 
             // textBox_areaSrcDoor
             // 
+            this.textBox_areaSrcDoor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_areaSrcDoor.Location = new System.Drawing.Point(293, 191);
             this.textBox_areaSrcDoor.Name = "textBox_areaSrcDoor";
             this.textBox_areaSrcDoor.Size = new System.Drawing.Size(30, 20);
@@ -293,6 +295,7 @@
             // 
             // tabControl
             // 
+            this.tabControl.BorderColor = System.Drawing.Color.Silver;
             this.tabControl.Controls.Add(this.tabPage_area);
             this.tabControl.Controls.Add(this.tabPage_event);
             this.tabControl.Controls.Add(this.tabPage_locNames);
@@ -300,7 +303,7 @@
             this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(441, 297);
+            this.tabControl.Size = new System.Drawing.Size(559, 297);
             this.tabControl.TabIndex = 0;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
@@ -322,10 +325,10 @@
             this.tabPage_area.Controls.Add(this.label_areaSrcRoom);
             this.tabPage_area.Controls.Add(this.textBox_areaSrcDoor);
             this.tabPage_area.Controls.Add(this.label_areaDstRoom);
-            this.tabPage_area.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_area.Location = new System.Drawing.Point(4, 25);
             this.tabPage_area.Name = "tabPage_area";
             this.tabPage_area.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_area.Size = new System.Drawing.Size(433, 271);
+            this.tabPage_area.Size = new System.Drawing.Size(551, 268);
             this.tabPage_area.TabIndex = 0;
             this.tabPage_area.Text = "Area Connections";
             // 
@@ -349,15 +352,16 @@
             this.tabPage_event.Controls.Add(this.label_eventSrcRoom);
             this.tabPage_event.Controls.Add(this.textBox_eventSrcDoor);
             this.tabPage_event.Controls.Add(this.label_eventDstRoom);
-            this.tabPage_event.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_event.Location = new System.Drawing.Point(4, 25);
             this.tabPage_event.Name = "tabPage_event";
             this.tabPage_event.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_event.Size = new System.Drawing.Size(433, 271);
+            this.tabPage_event.Size = new System.Drawing.Size(551, 268);
             this.tabPage_event.TabIndex = 1;
             this.tabPage_event.Text = "Event Based Connections";
             // 
             // textBox_event
             // 
+            this.textBox_event.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_event.Location = new System.Drawing.Point(160, 245);
             this.textBox_event.Name = "textBox_event";
             this.textBox_event.Size = new System.Drawing.Size(30, 20);
@@ -375,6 +379,7 @@
             // 
             // textBox_eventDstDoor
             // 
+            this.textBox_eventDstDoor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_eventDstDoor.Location = new System.Drawing.Point(293, 218);
             this.textBox_eventDstDoor.Name = "textBox_eventDstDoor";
             this.textBox_eventDstDoor.Size = new System.Drawing.Size(30, 20);
@@ -398,10 +403,11 @@
             this.columnHeader3});
             this.listView_doorEvents.FullRowSelect = true;
             this.listView_doorEvents.GridLines = true;
+            this.listView_doorEvents.HideSelection = false;
             this.listView_doorEvents.Location = new System.Drawing.Point(6, 6);
             this.listView_doorEvents.MultiSelect = false;
             this.listView_doorEvents.Name = "listView_doorEvents";
-            this.listView_doorEvents.Size = new System.Drawing.Size(421, 163);
+            this.listView_doorEvents.Size = new System.Drawing.Size(539, 163);
             this.listView_doorEvents.TabIndex = 0;
             this.listView_doorEvents.UseCompatibleStateImageBehavior = false;
             this.listView_doorEvents.View = System.Windows.Forms.View.Details;
@@ -532,6 +538,7 @@
             // 
             // textBox_eventSrcDoor
             // 
+            this.textBox_eventSrcDoor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_eventSrcDoor.Location = new System.Drawing.Point(293, 191);
             this.textBox_eventSrcDoor.Name = "textBox_eventSrcDoor";
             this.textBox_eventSrcDoor.Size = new System.Drawing.Size(30, 20);
@@ -564,9 +571,9 @@
             this.tabPage_locNames.Controls.Add(this.comboBox_locDstArea);
             this.tabPage_locNames.Controls.Add(this.textBox_locText);
             this.tabPage_locNames.Controls.Add(this.label_locName);
-            this.tabPage_locNames.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_locNames.Location = new System.Drawing.Point(4, 25);
             this.tabPage_locNames.Name = "tabPage_locNames";
-            this.tabPage_locNames.Size = new System.Drawing.Size(433, 271);
+            this.tabPage_locNames.Size = new System.Drawing.Size(551, 268);
             this.tabPage_locNames.TabIndex = 2;
             this.tabPage_locNames.Text = "Location Names";
             // 
@@ -591,6 +598,7 @@
             // 
             // textBox_locDstRoom
             // 
+            this.textBox_locDstRoom.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_locDstRoom.Location = new System.Drawing.Point(252, 191);
             this.textBox_locDstRoom.Name = "textBox_locDstRoom";
             this.textBox_locDstRoom.Size = new System.Drawing.Size(30, 20);
@@ -605,10 +613,11 @@
             this.columnHeader6});
             this.listView_locNames.FullRowSelect = true;
             this.listView_locNames.GridLines = true;
+            this.listView_locNames.HideSelection = false;
             this.listView_locNames.Location = new System.Drawing.Point(6, 6);
             this.listView_locNames.MultiSelect = false;
             this.listView_locNames.Name = "listView_locNames";
-            this.listView_locNames.Size = new System.Drawing.Size(421, 163);
+            this.listView_locNames.Size = new System.Drawing.Size(539, 163);
             this.listView_locNames.TabIndex = 8;
             this.listView_locNames.UseCompatibleStateImageBehavior = false;
             this.listView_locNames.View = System.Windows.Forms.View.Details;
@@ -722,6 +731,7 @@
             // 
             // textBox_locText
             // 
+            this.textBox_locText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_locText.Location = new System.Drawing.Point(160, 218);
             this.textBox_locText.Name = "textBox_locText";
             this.textBox_locText.Size = new System.Drawing.Size(30, 20);
@@ -754,9 +764,9 @@
             this.tabPage_hatchLock.Controls.Add(this.button_lockClose);
             this.tabPage_hatchLock.Controls.Add(this.button_lockApply);
             this.tabPage_hatchLock.Controls.Add(this.comboBox_lockArea);
-            this.tabPage_hatchLock.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_hatchLock.Location = new System.Drawing.Point(4, 25);
             this.tabPage_hatchLock.Name = "tabPage_hatchLock";
-            this.tabPage_hatchLock.Size = new System.Drawing.Size(433, 271);
+            this.tabPage_hatchLock.Size = new System.Drawing.Size(551, 268);
             this.tabPage_hatchLock.TabIndex = 3;
             this.tabPage_hatchLock.Text = "Hatch Lock Events";
             // 
@@ -803,6 +813,7 @@
             // 
             // textBox_lockEvent
             // 
+            this.textBox_lockEvent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_lockEvent.Location = new System.Drawing.Point(135, 235);
             this.textBox_lockEvent.Name = "textBox_lockEvent";
             this.textBox_lockEvent.Size = new System.Drawing.Size(30, 20);
@@ -820,6 +831,7 @@
             // 
             // textBox_lockRoom
             // 
+            this.textBox_lockRoom.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_lockRoom.Location = new System.Drawing.Point(135, 208);
             this.textBox_lockRoom.Name = "textBox_lockRoom";
             this.textBox_lockRoom.Size = new System.Drawing.Size(30, 20);
@@ -844,10 +856,11 @@
             this.columnHeader_lockHatches});
             this.listView_lockHatches.FullRowSelect = true;
             this.listView_lockHatches.GridLines = true;
+            this.listView_lockHatches.HideSelection = false;
             this.listView_lockHatches.Location = new System.Drawing.Point(6, 6);
             this.listView_lockHatches.MultiSelect = false;
             this.listView_lockHatches.Name = "listView_lockHatches";
-            this.listView_lockHatches.Size = new System.Drawing.Size(421, 163);
+            this.listView_lockHatches.Size = new System.Drawing.Size(539, 163);
             this.listView_lockHatches.TabIndex = 0;
             this.listView_lockHatches.UseCompatibleStateImageBehavior = false;
             this.listView_lockHatches.View = System.Windows.Forms.View.Details;
@@ -939,7 +952,7 @@
             this.statusLabel_changes});
             this.statusStrip.Location = new System.Drawing.Point(0, 312);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(465, 22);
+            this.statusStrip.Size = new System.Drawing.Size(577, 22);
             this.statusStrip.TabIndex = 1;
             // 
             // statusLabel_changes
@@ -952,7 +965,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 334);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(577, 334);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -984,9 +998,9 @@
         private System.Windows.Forms.Button button_areaRemove;
         private System.Windows.Forms.Label label_areaSource;
         private System.Windows.Forms.Label label_areaDestination;
-        private System.Windows.Forms.ComboBox comboBox_areaDstArea;
-        private System.Windows.Forms.ComboBox comboBox_areaSrcArea;
-        private System.Windows.Forms.TextBox textBox_areaSrcDoor;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_areaDstArea;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_areaSrcArea;
+        private mage.Theming.CustomControls.FlatTextBox textBox_areaSrcDoor;
         private System.Windows.Forms.Label label_areaDstRoom;
         private System.Windows.Forms.Label label_areaSrcRoom;
         private System.Windows.Forms.Label label_areaDstDoor;
@@ -995,7 +1009,7 @@
         private System.Windows.Forms.Label label_areaArea;
         private System.Windows.Forms.Label label_areaRoom;
         private System.Windows.Forms.Label label_areaDoor;
-        private System.Windows.Forms.TabControl tabControl;
+        private mage.Theming.CustomControls.FlatTabControl tabControl;
         private System.Windows.Forms.TabPage tabPage_area;
         private System.Windows.Forms.TabPage tabPage_event;
         private System.Windows.Forms.ListView listView_doorEvents;
@@ -1010,14 +1024,14 @@
         private System.Windows.Forms.Button button_eventClose;
         private System.Windows.Forms.Label label_eventDestination;
         private System.Windows.Forms.Button button_eventApply;
-        private System.Windows.Forms.ComboBox comboBox_eventSrcArea;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_eventSrcArea;
         private System.Windows.Forms.Label label_eventSrcRoom;
-        private System.Windows.Forms.TextBox textBox_eventSrcDoor;
+        private mage.Theming.CustomControls.FlatTextBox textBox_eventSrcDoor;
         private System.Windows.Forms.Label label_eventDstRoom;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.TextBox textBox_event;
+        private mage.Theming.CustomControls.FlatTextBox textBox_event;
         private System.Windows.Forms.Label label_event;
-        private System.Windows.Forms.TextBox textBox_eventDstDoor;
+        private mage.Theming.CustomControls.FlatTextBox textBox_eventDstDoor;
         private System.Windows.Forms.Label label_eventDstArea;
         private System.Windows.Forms.TabPage tabPage_locNames;
         private System.Windows.Forms.ListView listView_locNames;
@@ -1032,16 +1046,16 @@
         private System.Windows.Forms.Button button_locClose;
         private System.Windows.Forms.Label label_locText;
         private System.Windows.Forms.Button button_locApply;
-        private System.Windows.Forms.ComboBox comboBox_locDstArea;
-        private System.Windows.Forms.TextBox textBox_locText;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_locDstArea;
+        private mage.Theming.CustomControls.FlatTextBox textBox_locText;
         private System.Windows.Forms.Label label_locName;
-        private System.Windows.Forms.TextBox textBox_locDstRoom;
-        private System.Windows.Forms.ComboBox comboBox_locLanguage;
+        private mage.Theming.CustomControls.FlatTextBox textBox_locDstRoom;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_locLanguage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel_changes;
         private System.Windows.Forms.TabPage tabPage_hatchLock;
-        private System.Windows.Forms.TextBox textBox_lockRoom;
+        private mage.Theming.CustomControls.FlatTextBox textBox_lockRoom;
         private System.Windows.Forms.Label label_lockRoom;
         private System.Windows.Forms.ListView listView_lockHatches;
         private System.Windows.Forms.ColumnHeader columnHeader_lockDst;
@@ -1052,9 +1066,9 @@
         private System.Windows.Forms.Label label_lockArea;
         private System.Windows.Forms.Button button_lockClose;
         private System.Windows.Forms.Button button_lockApply;
-        private System.Windows.Forms.ComboBox comboBox_lockArea;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_lockArea;
         private System.Windows.Forms.ListBox listBox_lockHatches;
-        private System.Windows.Forms.TextBox textBox_lockEvent;
+        private mage.Theming.CustomControls.FlatTextBox textBox_lockEvent;
         private System.Windows.Forms.Label label_lockEvent;
         private System.Windows.Forms.RadioButton radioButton_lockAfter;
         private System.Windows.Forms.RadioButton radioButton_lockBefore;

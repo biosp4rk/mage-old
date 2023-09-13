@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Windows.Forms;
 
 namespace mage
@@ -11,6 +12,9 @@ namespace mage
         public FormExportTileset(FormMain main)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
 

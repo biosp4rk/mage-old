@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPortBG));
             this.label_bg = new System.Windows.Forms.Label();
-            this.comboBox_bg = new System.Windows.Forms.ComboBox();
+            this.comboBox_bg = new mage.Theming.CustomControls.FlatComboBox();
             this.button_ok = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.checkBox_preserveData = new System.Windows.Forms.CheckBox();
@@ -108,7 +108,7 @@
         #endregion
 
         private System.Windows.Forms.Label label_bg;
-        private System.Windows.Forms.ComboBox comboBox_bg;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_bg;
         private System.Windows.Forms.Button button_ok;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.CheckBox checkBox_preserveData;

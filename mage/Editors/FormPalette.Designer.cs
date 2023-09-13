@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPalette));
             this.pictureBox_palette = new System.Windows.Forms.PictureBox();
             this.pictureBox_chosenColor = new System.Windows.Forms.PictureBox();
-            this.comboBox_tileset = new System.Windows.Forms.ComboBox();
+            this.comboBox_tileset = new mage.Theming.CustomControls.FlatComboBox();
             this.groupBox_offset = new System.Windows.Forms.GroupBox();
             this.button_minus = new System.Windows.Forms.Button();
             this.button_plus = new System.Windows.Forms.Button();
             this.button_go = new System.Windows.Forms.Button();
-            this.numericUpDown_rows = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_rows = new mage.Theming.CustomControls.FlatNumericUpDown();
             this.label_numOfRows = new System.Windows.Forms.Label();
-            this.textBox_offset = new System.Windows.Forms.TextBox();
-            this.comboBox_sprite = new System.Windows.Forms.ComboBox();
+            this.textBox_offset = new mage.Theming.CustomControls.FlatTextBox();
+            this.comboBox_sprite = new mage.Theming.CustomControls.FlatComboBox();
             this.label_red = new System.Windows.Forms.Label();
             this.label_green = new System.Windows.Forms.Label();
             this.label_blue = new System.Windows.Forms.Label();
-            this.numericUpDown_red = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown_green = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown_blue = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_red = new mage.Theming.CustomControls.FlatNumericUpDown();
+            this.numericUpDown_green = new mage.Theming.CustomControls.FlatNumericUpDown();
+            this.numericUpDown_blue = new mage.Theming.CustomControls.FlatNumericUpDown();
             this.button_apply = new System.Windows.Forms.Button();
             this.button_close = new System.Windows.Forms.Button();
             this.label_15bit = new System.Windows.Forms.Label();
@@ -98,7 +98,6 @@
             // 
             // pictureBox_chosenColor
             // 
-            this.pictureBox_chosenColor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox_chosenColor.Location = new System.Drawing.Point(6, 18);
             this.pictureBox_chosenColor.Name = "pictureBox_chosenColor";
             this.pictureBox_chosenColor.Size = new System.Drawing.Size(30, 30);
@@ -196,6 +195,7 @@
             // 
             // textBox_offset
             // 
+            this.textBox_offset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_offset.Location = new System.Drawing.Point(6, 19);
             this.textBox_offset.Name = "textBox_offset";
             this.textBox_offset.Size = new System.Drawing.Size(80, 20);
@@ -453,7 +453,7 @@
             // statusStrip_spring
             // 
             this.statusStrip_spring.Name = "statusStrip_spring";
-            this.statusStrip_spring.Size = new System.Drawing.Size(434, 17);
+            this.statusStrip_spring.Size = new System.Drawing.Size(433, 17);
             this.statusStrip_spring.Spring = true;
             // 
             // statusStrip_import
@@ -470,21 +470,21 @@
             // statusStrip_importRaw
             // 
             this.statusStrip_importRaw.Name = "statusStrip_importRaw";
-            this.statusStrip_importRaw.Size = new System.Drawing.Size(154, 22);
+            this.statusStrip_importRaw.Size = new System.Drawing.Size(153, 22);
             this.statusStrip_importRaw.Text = "Raw...";
             this.statusStrip_importRaw.Click += new System.EventHandler(this.statusStrip_importRaw_Click);
             // 
             // statusStrip_importTLP
             // 
             this.statusStrip_importTLP.Name = "statusStrip_importTLP";
-            this.statusStrip_importTLP.Size = new System.Drawing.Size(154, 22);
+            this.statusStrip_importTLP.Size = new System.Drawing.Size(153, 22);
             this.statusStrip_importTLP.Text = "Tile Layer Pro...";
             this.statusStrip_importTLP.Click += new System.EventHandler(this.statusStrip_importTLP_Click);
             // 
             // statusStrip_importYY
             // 
             this.statusStrip_importYY.Name = "statusStrip_importYY";
-            this.statusStrip_importYY.Size = new System.Drawing.Size(154, 22);
+            this.statusStrip_importYY.Size = new System.Drawing.Size(153, 22);
             this.statusStrip_importYY.Text = "YY-CHR...";
             this.statusStrip_importYY.Click += new System.EventHandler(this.statusStrip_importYY_Click);
             // 
@@ -496,27 +496,27 @@
             this.statusStrip_exportTLP,
             this.statusStrip_exportYY});
             this.statusStrip_export.Name = "statusStrip_export";
-            this.statusStrip_export.Size = new System.Drawing.Size(53, 20);
+            this.statusStrip_export.Size = new System.Drawing.Size(54, 20);
             this.statusStrip_export.Text = "Export";
             // 
             // statusStrip_exportRaw
             // 
             this.statusStrip_exportRaw.Name = "statusStrip_exportRaw";
-            this.statusStrip_exportRaw.Size = new System.Drawing.Size(154, 22);
+            this.statusStrip_exportRaw.Size = new System.Drawing.Size(153, 22);
             this.statusStrip_exportRaw.Text = "Raw...";
             this.statusStrip_exportRaw.Click += new System.EventHandler(this.statusStrip_exportRaw_Click);
             // 
             // statusStrip_exportTLP
             // 
             this.statusStrip_exportTLP.Name = "statusStrip_exportTLP";
-            this.statusStrip_exportTLP.Size = new System.Drawing.Size(154, 22);
+            this.statusStrip_exportTLP.Size = new System.Drawing.Size(153, 22);
             this.statusStrip_exportTLP.Text = "Tile Layer Pro...";
             this.statusStrip_exportTLP.Click += new System.EventHandler(this.statusStrip_exportTLP_Click);
             // 
             // statusStrip_exportYY
             // 
             this.statusStrip_exportYY.Name = "statusStrip_exportYY";
-            this.statusStrip_exportYY.Size = new System.Drawing.Size(154, 22);
+            this.statusStrip_exportYY.Size = new System.Drawing.Size(153, 22);
             this.statusStrip_exportYY.Text = "YY-CHR...";
             this.statusStrip_exportYY.Click += new System.EventHandler(this.statusStrip_exportYY_Click);
             // 
@@ -565,19 +565,19 @@
 
         private System.Windows.Forms.PictureBox pictureBox_palette;
         private System.Windows.Forms.PictureBox pictureBox_chosenColor;
-        private System.Windows.Forms.ComboBox comboBox_tileset;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tileset;
         private System.Windows.Forms.GroupBox groupBox_offset;
         private System.Windows.Forms.Button button_go;
-        private System.Windows.Forms.NumericUpDown numericUpDown_rows;
+        private mage.Theming.CustomControls.FlatNumericUpDown numericUpDown_rows;
         private System.Windows.Forms.Label label_numOfRows;
-        private System.Windows.Forms.TextBox textBox_offset;
-        private System.Windows.Forms.ComboBox comboBox_sprite;
+        private mage.Theming.CustomControls.FlatTextBox textBox_offset;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_sprite;
         private System.Windows.Forms.Label label_red;
         private System.Windows.Forms.Label label_green;
         private System.Windows.Forms.Label label_blue;
-        private System.Windows.Forms.NumericUpDown numericUpDown_red;
-        private System.Windows.Forms.NumericUpDown numericUpDown_green;
-        private System.Windows.Forms.NumericUpDown numericUpDown_blue;
+        private mage.Theming.CustomControls.FlatNumericUpDown numericUpDown_red;
+        private mage.Theming.CustomControls.FlatNumericUpDown numericUpDown_green;
+        private mage.Theming.CustomControls.FlatNumericUpDown numericUpDown_blue;
         private System.Windows.Forms.Button button_apply;
         private System.Windows.Forms.Button button_close;
         private System.Windows.Forms.Label label_15bit;

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormImportEnding));
             this.pictureBox_ending = new System.Windows.Forms.PictureBox();
             this.groupBox_image = new System.Windows.Forms.GroupBox();
-            this.comboBox_number = new System.Windows.Forms.ComboBox();
+            this.comboBox_number = new mage.Theming.CustomControls.FlatComboBox();
             this.label_ending = new System.Windows.Forms.Label();
             this.label_requirements = new System.Windows.Forms.Label();
             this.label_stats = new System.Windows.Forms.Label();
@@ -241,7 +241,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox_ending;
         private System.Windows.Forms.GroupBox groupBox_image;
-        private System.Windows.Forms.ComboBox comboBox_number;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_number;
         private System.Windows.Forms.Label label_ending;
         private System.Windows.Forms.Label label_requirements;
         private System.Windows.Forms.Label label_stats;

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditScroll));
             this.label_direction = new System.Windows.Forms.Label();
-            this.comboBox_direction = new System.Windows.Forms.ComboBox();
+            this.comboBox_direction = new mage.Theming.CustomControls.FlatComboBox();
             this.button_close = new System.Windows.Forms.Button();
             this.button_apply = new System.Windows.Forms.Button();
             this.checkBox_breakable = new System.Windows.Forms.CheckBox();
@@ -138,7 +138,7 @@
         #endregion
 
         private System.Windows.Forms.Label label_direction;
-        private System.Windows.Forms.ComboBox comboBox_direction;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_direction;
         private System.Windows.Forms.Button button_close;
         private System.Windows.Forms.Button button_apply;
         private System.Windows.Forms.CheckBox checkBox_breakable;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Windows.Forms;
 
 namespace mage
@@ -15,6 +16,9 @@ namespace mage
         public FormEditScroll(FormMain main, int scrollNum)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.scrollNum = scrollNum;

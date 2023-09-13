@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Windows.Forms;
 
 namespace mage
@@ -18,6 +19,10 @@ namespace mage
         public FormHeader(FormMain main)
         {
             InitializeComponent();
+
+            //Theming
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.romStream = ROM.Stream;
@@ -232,7 +237,5 @@ namespace mage
         {
             Close();
         }
-
-
     }
 }

@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using mage.Properties;
+using mage.Theming;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace mage
 {
@@ -75,6 +80,11 @@ namespace mage
             DisplayRecentFiles();
             InitializeSettings();
             ShowSplash();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
+
+            ThemeSwitcher.TestSerialisation();
         }
 
 
@@ -152,6 +162,18 @@ namespace mage
             else if (zoom == 2) { menuItem_zoom400.Checked = true; }
             else if (zoom == 3) { menuItem_zoom800.Checked = true; }
             roomView.UpdateZoom(zoom, false);
+
+            //Loading themes
+            try
+            {
+                ThemeSwitcher.Themes = ThemeSwitcher.Deserialize<Dictionary<string, ColorTheme>>(Settings.Default.themes);
+            }
+            catch
+            {
+                ThemeSwitcher.Themes = null;
+            }
+            CheckIfThemesExist();
+            ThemeSwitcher.ProjectThemeName = Settings.Default.selectedTheme;
         }
 
         private void SaveSettings()
@@ -171,7 +193,26 @@ namespace mage
             Settings.Default.hexadecimal = menuItem_hexadecimal.Checked;
             Settings.Default.tooltips = menuItem_tooltips.Checked;
             Settings.Default.zoom = zoom;
+
+            //Saving themes
+            string themeDictionary = ThemeSwitcher.Serialize(ThemeSwitcher.Themes);
+            Settings.Default.themes = themeDictionary;
+            Settings.Default.selectedTheme = ThemeSwitcher.ProjectThemeName;
+
             Settings.Default.Save();
+        }
+
+        private void CheckIfThemesExist()
+        {
+            if (ThemeSwitcher.Themes == null)
+            {
+                ThemeSwitcher.Themes = new Dictionary<string, ColorTheme>();
+            }
+            if (ThemeSwitcher.Themes.Count == 0)
+            {
+                ThemeSwitcher.Themes.Add(ThemeSwitcher.StandardThemeName, ThemeSwitcher.StandardTheme);
+                ThemeSwitcher.Themes.Add(ThemeSwitcher.StandardDarkThemeName, ThemeSwitcher.StandardDarkTheme);
+            }
         }
 
         private void recentItem_Click(object sender, EventArgs e)
@@ -797,6 +838,8 @@ namespace mage
             }
         }
 
+        private void themeToolStripMenuItem_Click(object sender, EventArgs e) => new ThemeEditor().ShowDialog();
+
         // help
         private void menuItem_viewHelp_Click(object sender, EventArgs e)
         {
@@ -1092,6 +1135,9 @@ namespace mage
             groupBox_tileset.Enabled = val;
             groupBox_room.Enabled = val;
             statusStrip.Enabled = val;
+            menuItem_defaultView.Enabled = val;
+            menuItem_numberBase.Enabled = val;
+            menuItem_tooltips.Enabled = val;
         }
 
         private void FormMain_DragEnter(object sender, DragEventArgs e)
@@ -2399,8 +2445,7 @@ namespace mage
             Test.Room(this, true, roomCursor.X, roomCursor.Y);
         }
 
+
         #endregion
-
-
     }
 }

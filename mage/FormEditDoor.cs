@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -20,6 +21,9 @@ namespace mage
         public FormEditDoor(FormMain main, int doorNum)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.romStream = ROM.Stream;
@@ -307,7 +311,5 @@ namespace mage
         {
             Close();
         }
-
-
     }
 }

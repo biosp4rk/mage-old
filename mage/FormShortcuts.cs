@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Windows.Forms;
 
 namespace mage
@@ -13,6 +14,9 @@ namespace mage
         public FormShortcuts(FormMain main)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(this.Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(this.Controls);
 
             this.main = main;
             Initialize();

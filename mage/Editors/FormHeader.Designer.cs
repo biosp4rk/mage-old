@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHeader));
-            this.textBox_tileset = new System.Windows.Forms.TextBox();
+            this.textBox_tileset = new mage.Theming.CustomControls.FlatTextBox();
             this.label_tileset = new System.Windows.Forms.Label();
-            this.textBox_BG0pointer = new System.Windows.Forms.TextBox();
-            this.textBox_BG1pointer = new System.Windows.Forms.TextBox();
-            this.textBox_BG2pointer = new System.Windows.Forms.TextBox();
-            this.textBox_BG3pointer = new System.Windows.Forms.TextBox();
-            this.textBox_CLPpointer = new System.Windows.Forms.TextBox();
-            this.textBox_BG0prop = new System.Windows.Forms.TextBox();
-            this.textBox_BG1prop = new System.Windows.Forms.TextBox();
-            this.textBox_BG2prop = new System.Windows.Forms.TextBox();
-            this.textBox_BG3prop = new System.Windows.Forms.TextBox();
+            this.textBox_BG0pointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_BG1pointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_BG2pointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_BG3pointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_CLPpointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_BG0prop = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_BG1prop = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_BG2prop = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_BG3prop = new mage.Theming.CustomControls.FlatTextBox();
             this.label_BG0 = new System.Windows.Forms.Label();
             this.label_BG1 = new System.Windows.Forms.Label();
             this.label_BG2 = new System.Windows.Forms.Label();
@@ -47,15 +47,15 @@
             this.label_CLP = new System.Windows.Forms.Label();
             this.label_BGpointer = new System.Windows.Forms.Label();
             this.label_prop = new System.Windows.Forms.Label();
-            this.textBox_BG3scroll = new System.Windows.Forms.TextBox();
-            this.textBox_transparency = new System.Windows.Forms.TextBox();
+            this.textBox_BG3scroll = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_transparency = new mage.Theming.CustomControls.FlatTextBox();
             this.label_BG3scroll = new System.Windows.Forms.Label();
             this.label_transparency = new System.Windows.Forms.Label();
             this.groupBox_BGdata = new System.Windows.Forms.GroupBox();
-            this.textBox_effectYpos = new System.Windows.Forms.TextBox();
+            this.textBox_effectYpos = new mage.Theming.CustomControls.FlatTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label_effect = new System.Windows.Forms.Label();
-            this.textBox_effect = new System.Windows.Forms.TextBox();
+            this.textBox_effect = new mage.Theming.CustomControls.FlatTextBox();
             this.groupBox_spritesetData = new System.Windows.Forms.GroupBox();
             this.label_second = new System.Windows.Forms.Label();
             this.label_first = new System.Windows.Forms.Label();
@@ -63,29 +63,29 @@
             this.label_event = new System.Windows.Forms.Label();
             this.label_spriteset = new System.Windows.Forms.Label();
             this.label_spritesetPointer = new System.Windows.Forms.Label();
-            this.textBox_defaultPointer = new System.Windows.Forms.TextBox();
-            this.textBox_defaultSpriteset = new System.Windows.Forms.TextBox();
-            this.textBox_secondEvent = new System.Windows.Forms.TextBox();
-            this.textBox_secondPointer = new System.Windows.Forms.TextBox();
-            this.textBox_secondSpriteset = new System.Windows.Forms.TextBox();
-            this.textBox_firstEvent = new System.Windows.Forms.TextBox();
-            this.textBox_firstPointer = new System.Windows.Forms.TextBox();
-            this.textBox_firstSpriteset = new System.Windows.Forms.TextBox();
+            this.textBox_defaultPointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_defaultSpriteset = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_secondEvent = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_secondPointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_secondSpriteset = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_firstEvent = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_firstPointer = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_firstSpriteset = new mage.Theming.CustomControls.FlatTextBox();
             this.groupBox_misc = new System.Windows.Forms.GroupBox();
             this.label_music = new System.Windows.Forms.Label();
-            this.textBox_music = new System.Windows.Forms.TextBox();
+            this.textBox_music = new mage.Theming.CustomControls.FlatTextBox();
             this.label_mapY = new System.Windows.Forms.Label();
             this.label_mapX = new System.Windows.Forms.Label();
-            this.textBox_mapX = new System.Windows.Forms.TextBox();
-            this.textBox_mapY = new System.Windows.Forms.TextBox();
+            this.textBox_mapX = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_mapY = new mage.Theming.CustomControls.FlatTextBox();
             this.button_apply = new System.Windows.Forms.Button();
             this.button_close = new System.Windows.Forms.Button();
             this.label_offset = new System.Windows.Forms.Label();
-            this.textBox_offsetVal = new System.Windows.Forms.TextBox();
+            this.textBox_offsetVal = new mage.Theming.CustomControls.FlatTextBox();
             this.label_room = new System.Windows.Forms.Label();
             this.label_area = new System.Windows.Forms.Label();
-            this.comboBox_room = new System.Windows.Forms.ComboBox();
-            this.comboBox_area = new System.Windows.Forms.ComboBox();
+            this.comboBox_room = new mage.Theming.CustomControls.FlatComboBox();
+            this.comboBox_area = new mage.Theming.CustomControls.FlatComboBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox_BGdata.SuspendLayout();
@@ -96,6 +96,7 @@
             // 
             // textBox_tileset
             // 
+            this.textBox_tileset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_tileset.Location = new System.Drawing.Point(87, 35);
             this.textBox_tileset.Name = "textBox_tileset";
             this.textBox_tileset.Size = new System.Drawing.Size(30, 20);
@@ -113,6 +114,7 @@
             // 
             // textBox_BG0pointer
             // 
+            this.textBox_BG0pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG0pointer.Location = new System.Drawing.Point(193, 35);
             this.textBox_BG0pointer.Name = "textBox_BG0pointer";
             this.textBox_BG0pointer.Size = new System.Drawing.Size(65, 20);
@@ -121,6 +123,7 @@
             // 
             // textBox_BG1pointer
             // 
+            this.textBox_BG1pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG1pointer.Location = new System.Drawing.Point(193, 61);
             this.textBox_BG1pointer.Name = "textBox_BG1pointer";
             this.textBox_BG1pointer.Size = new System.Drawing.Size(65, 20);
@@ -129,6 +132,7 @@
             // 
             // textBox_BG2pointer
             // 
+            this.textBox_BG2pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG2pointer.Location = new System.Drawing.Point(193, 87);
             this.textBox_BG2pointer.Name = "textBox_BG2pointer";
             this.textBox_BG2pointer.Size = new System.Drawing.Size(65, 20);
@@ -137,6 +141,7 @@
             // 
             // textBox_BG3pointer
             // 
+            this.textBox_BG3pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG3pointer.Location = new System.Drawing.Point(193, 113);
             this.textBox_BG3pointer.Name = "textBox_BG3pointer";
             this.textBox_BG3pointer.Size = new System.Drawing.Size(65, 20);
@@ -145,6 +150,7 @@
             // 
             // textBox_CLPpointer
             // 
+            this.textBox_CLPpointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_CLPpointer.Location = new System.Drawing.Point(193, 139);
             this.textBox_CLPpointer.Name = "textBox_CLPpointer";
             this.textBox_CLPpointer.Size = new System.Drawing.Size(65, 20);
@@ -153,6 +159,7 @@
             // 
             // textBox_BG0prop
             // 
+            this.textBox_BG0prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG0prop.Location = new System.Drawing.Point(264, 35);
             this.textBox_BG0prop.Name = "textBox_BG0prop";
             this.textBox_BG0prop.Size = new System.Drawing.Size(30, 20);
@@ -161,6 +168,7 @@
             // 
             // textBox_BG1prop
             // 
+            this.textBox_BG1prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG1prop.Location = new System.Drawing.Point(264, 61);
             this.textBox_BG1prop.Name = "textBox_BG1prop";
             this.textBox_BG1prop.Size = new System.Drawing.Size(30, 20);
@@ -169,6 +177,7 @@
             // 
             // textBox_BG2prop
             // 
+            this.textBox_BG2prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG2prop.Location = new System.Drawing.Point(264, 87);
             this.textBox_BG2prop.Name = "textBox_BG2prop";
             this.textBox_BG2prop.Size = new System.Drawing.Size(30, 20);
@@ -177,6 +186,7 @@
             // 
             // textBox_BG3prop
             // 
+            this.textBox_BG3prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG3prop.Location = new System.Drawing.Point(264, 113);
             this.textBox_BG3prop.Name = "textBox_BG3prop";
             this.textBox_BG3prop.Size = new System.Drawing.Size(30, 20);
@@ -250,6 +260,7 @@
             // 
             // textBox_BG3scroll
             // 
+            this.textBox_BG3scroll.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_BG3scroll.Location = new System.Drawing.Point(87, 87);
             this.textBox_BG3scroll.Name = "textBox_BG3scroll";
             this.textBox_BG3scroll.Size = new System.Drawing.Size(30, 20);
@@ -258,6 +269,7 @@
             // 
             // textBox_transparency
             // 
+            this.textBox_transparency.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_transparency.Location = new System.Drawing.Point(87, 61);
             this.textBox_transparency.Name = "textBox_transparency";
             this.textBox_transparency.Size = new System.Drawing.Size(30, 20);
@@ -319,6 +331,7 @@
             // 
             // textBox_effectYpos
             // 
+            this.textBox_effectYpos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_effectYpos.Location = new System.Drawing.Point(87, 139);
             this.textBox_effectYpos.Name = "textBox_effectYpos";
             this.textBox_effectYpos.Size = new System.Drawing.Size(30, 20);
@@ -345,6 +358,7 @@
             // 
             // textBox_effect
             // 
+            this.textBox_effect.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_effect.Location = new System.Drawing.Point(87, 113);
             this.textBox_effect.Name = "textBox_effect";
             this.textBox_effect.Size = new System.Drawing.Size(30, 20);
@@ -433,6 +447,7 @@
             // 
             // textBox_defaultPointer
             // 
+            this.textBox_defaultPointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_defaultPointer.Location = new System.Drawing.Point(59, 35);
             this.textBox_defaultPointer.Name = "textBox_defaultPointer";
             this.textBox_defaultPointer.Size = new System.Drawing.Size(65, 20);
@@ -441,6 +456,7 @@
             // 
             // textBox_defaultSpriteset
             // 
+            this.textBox_defaultSpriteset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_defaultSpriteset.Location = new System.Drawing.Point(130, 35);
             this.textBox_defaultSpriteset.Name = "textBox_defaultSpriteset";
             this.textBox_defaultSpriteset.Size = new System.Drawing.Size(30, 20);
@@ -449,6 +465,7 @@
             // 
             // textBox_secondEvent
             // 
+            this.textBox_secondEvent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_secondEvent.Location = new System.Drawing.Point(166, 87);
             this.textBox_secondEvent.Name = "textBox_secondEvent";
             this.textBox_secondEvent.Size = new System.Drawing.Size(30, 20);
@@ -457,6 +474,7 @@
             // 
             // textBox_secondPointer
             // 
+            this.textBox_secondPointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_secondPointer.Location = new System.Drawing.Point(59, 87);
             this.textBox_secondPointer.Name = "textBox_secondPointer";
             this.textBox_secondPointer.Size = new System.Drawing.Size(65, 20);
@@ -465,6 +483,7 @@
             // 
             // textBox_secondSpriteset
             // 
+            this.textBox_secondSpriteset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_secondSpriteset.Location = new System.Drawing.Point(130, 87);
             this.textBox_secondSpriteset.Name = "textBox_secondSpriteset";
             this.textBox_secondSpriteset.Size = new System.Drawing.Size(30, 20);
@@ -473,6 +492,7 @@
             // 
             // textBox_firstEvent
             // 
+            this.textBox_firstEvent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_firstEvent.Location = new System.Drawing.Point(166, 61);
             this.textBox_firstEvent.Name = "textBox_firstEvent";
             this.textBox_firstEvent.Size = new System.Drawing.Size(30, 20);
@@ -481,6 +501,7 @@
             // 
             // textBox_firstPointer
             // 
+            this.textBox_firstPointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_firstPointer.Location = new System.Drawing.Point(59, 61);
             this.textBox_firstPointer.Name = "textBox_firstPointer";
             this.textBox_firstPointer.Size = new System.Drawing.Size(65, 20);
@@ -489,6 +510,7 @@
             // 
             // textBox_firstSpriteset
             // 
+            this.textBox_firstSpriteset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_firstSpriteset.Location = new System.Drawing.Point(130, 61);
             this.textBox_firstSpriteset.Name = "textBox_firstSpriteset";
             this.textBox_firstSpriteset.Size = new System.Drawing.Size(30, 20);
@@ -521,6 +543,7 @@
             // 
             // textBox_music
             // 
+            this.textBox_music.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_music.Location = new System.Drawing.Point(53, 87);
             this.textBox_music.Name = "textBox_music";
             this.textBox_music.Size = new System.Drawing.Size(30, 20);
@@ -547,6 +570,7 @@
             // 
             // textBox_mapX
             // 
+            this.textBox_mapX.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_mapX.Location = new System.Drawing.Point(53, 23);
             this.textBox_mapX.Name = "textBox_mapX";
             this.textBox_mapX.Size = new System.Drawing.Size(30, 20);
@@ -555,6 +579,7 @@
             // 
             // textBox_mapY
             // 
+            this.textBox_mapY.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_mapY.Location = new System.Drawing.Point(53, 55);
             this.textBox_mapY.Name = "textBox_mapY";
             this.textBox_mapY.Size = new System.Drawing.Size(30, 20);
@@ -593,6 +618,7 @@
             // 
             // textBox_offsetVal
             // 
+            this.textBox_offsetVal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox_offsetVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_offsetVal.Location = new System.Drawing.Point(199, 339);
             this.textBox_offsetVal.Name = "textBox_offsetVal";
@@ -691,17 +717,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox_tileset;
+        private mage.Theming.CustomControls.FlatTextBox textBox_tileset;
         private System.Windows.Forms.Label label_tileset;
-        private System.Windows.Forms.TextBox textBox_BG0pointer;
-        private System.Windows.Forms.TextBox textBox_BG1pointer;
-        private System.Windows.Forms.TextBox textBox_BG2pointer;
-        private System.Windows.Forms.TextBox textBox_BG3pointer;
-        private System.Windows.Forms.TextBox textBox_CLPpointer;
-        private System.Windows.Forms.TextBox textBox_BG0prop;
-        private System.Windows.Forms.TextBox textBox_BG1prop;
-        private System.Windows.Forms.TextBox textBox_BG2prop;
-        private System.Windows.Forms.TextBox textBox_BG3prop;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG0pointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG1pointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG2pointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG3pointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_CLPpointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG0prop;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG1prop;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG2prop;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG3prop;
         private System.Windows.Forms.Label label_BG0;
         private System.Windows.Forms.Label label_BG1;
         private System.Windows.Forms.Label label_BG2;
@@ -709,25 +735,25 @@
         private System.Windows.Forms.Label label_CLP;
         private System.Windows.Forms.Label label_BGpointer;
         private System.Windows.Forms.Label label_prop;
-        private System.Windows.Forms.TextBox textBox_BG3scroll;
-        private System.Windows.Forms.TextBox textBox_transparency;
+        private mage.Theming.CustomControls.FlatTextBox textBox_BG3scroll;
+        private mage.Theming.CustomControls.FlatTextBox textBox_transparency;
         private System.Windows.Forms.Label label_BG3scroll;
         private System.Windows.Forms.Label label_transparency;
         private System.Windows.Forms.GroupBox groupBox_BGdata;
         private System.Windows.Forms.GroupBox groupBox_spritesetData;
         private System.Windows.Forms.Label label_spritesetPointer;
-        private System.Windows.Forms.TextBox textBox_defaultPointer;
-        private System.Windows.Forms.TextBox textBox_defaultSpriteset;
-        private System.Windows.Forms.TextBox textBox_secondEvent;
-        private System.Windows.Forms.TextBox textBox_secondPointer;
-        private System.Windows.Forms.TextBox textBox_secondSpriteset;
-        private System.Windows.Forms.TextBox textBox_firstEvent;
-        private System.Windows.Forms.TextBox textBox_firstPointer;
-        private System.Windows.Forms.TextBox textBox_firstSpriteset;
-        private System.Windows.Forms.TextBox textBox_effectYpos;
+        private mage.Theming.CustomControls.FlatTextBox textBox_defaultPointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_defaultSpriteset;
+        private mage.Theming.CustomControls.FlatTextBox textBox_secondEvent;
+        private mage.Theming.CustomControls.FlatTextBox textBox_secondPointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_secondSpriteset;
+        private mage.Theming.CustomControls.FlatTextBox textBox_firstEvent;
+        private mage.Theming.CustomControls.FlatTextBox textBox_firstPointer;
+        private mage.Theming.CustomControls.FlatTextBox textBox_firstSpriteset;
+        private mage.Theming.CustomControls.FlatTextBox textBox_effectYpos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_effect;
-        private System.Windows.Forms.TextBox textBox_effect;
+        private mage.Theming.CustomControls.FlatTextBox textBox_effect;
         private System.Windows.Forms.Label label_second;
         private System.Windows.Forms.Label label_first;
         private System.Windows.Forms.Label label_default;
@@ -735,19 +761,19 @@
         private System.Windows.Forms.Label label_spriteset;
         private System.Windows.Forms.GroupBox groupBox_misc;
         private System.Windows.Forms.Label label_music;
-        private System.Windows.Forms.TextBox textBox_music;
+        private mage.Theming.CustomControls.FlatTextBox textBox_music;
         private System.Windows.Forms.Label label_mapY;
         private System.Windows.Forms.Label label_mapX;
-        private System.Windows.Forms.TextBox textBox_mapX;
-        private System.Windows.Forms.TextBox textBox_mapY;
+        private mage.Theming.CustomControls.FlatTextBox textBox_mapX;
+        private mage.Theming.CustomControls.FlatTextBox textBox_mapY;
         private System.Windows.Forms.Button button_apply;
         private System.Windows.Forms.Button button_close;
         private System.Windows.Forms.Label label_offset;
-        private System.Windows.Forms.TextBox textBox_offsetVal;
+        private mage.Theming.CustomControls.FlatTextBox textBox_offsetVal;
         private System.Windows.Forms.Label label_room;
         private System.Windows.Forms.Label label_area;
-        private System.Windows.Forms.ComboBox comboBox_room;
-        private System.Windows.Forms.ComboBox comboBox_area;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_room;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_area;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel_changes;
     }

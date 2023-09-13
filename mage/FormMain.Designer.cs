@@ -155,18 +155,20 @@
             this.menuItem_numberBase = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_hexadecimal = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_decimal = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator28 = new System.Windows.Forms.ToolStripSeparator();
+            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItem_tooltips = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_help = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_viewHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_about = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox_location = new System.Windows.Forms.GroupBox();
+            this.comboBox_room = new mage.Theming.CustomControls.FlatComboBox();
+            this.comboBox_area = new mage.Theming.CustomControls.FlatComboBox();
             this.label_room = new System.Windows.Forms.Label();
             this.label_area = new System.Windows.Forms.Label();
-            this.comboBox_room = new System.Windows.Forms.ComboBox();
-            this.comboBox_area = new System.Windows.Forms.ComboBox();
             this.groupBox_tileset = new System.Windows.Forms.GroupBox();
-            this.comboBox_clipdata = new System.Windows.Forms.ComboBox();
+            this.comboBox_clipdata = new mage.Theming.CustomControls.FlatComboBox();
             this.label_clipdata = new System.Windows.Forms.Label();
             this.panel_tileset = new System.Windows.Forms.Panel();
             this.tileView = new mage.TileView();
@@ -202,7 +204,6 @@
             this.statusLabel_sel = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusLabel_clip = new System.Windows.Forms.ToolStripStatusLabel();
             this.label_spriteset = new System.Windows.Forms.Label();
-            this.comboBox_spriteset = new System.Windows.Forms.ComboBox();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStrip_open = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_save = new System.Windows.Forms.ToolStripButton();
@@ -238,6 +239,7 @@
             this.toolStrip_tileBuilder = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_add = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_patches = new System.Windows.Forms.ToolStripButton();
+            this.comboBox_spriteset = new mage.Theming.CustomControls.FlatComboBox();
             this.menuStrip.SuspendLayout();
             this.groupBox_location.SuspendLayout();
             this.groupBox_tileset.SuspendLayout();
@@ -838,34 +840,34 @@
             this.menuItem_patches});
             this.menuStrip_tools.Enabled = false;
             this.menuStrip_tools.Name = "menuStrip_tools";
-            this.menuStrip_tools.Size = new System.Drawing.Size(48, 20);
+            this.menuStrip_tools.Size = new System.Drawing.Size(46, 20);
             this.menuStrip_tools.Text = "Tools";
             // 
             // menuItem_roomOptions
             // 
             this.menuItem_roomOptions.Name = "menuItem_roomOptions";
-            this.menuItem_roomOptions.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_roomOptions.Size = new System.Drawing.Size(183, 22);
             this.menuItem_roomOptions.Text = "Room Options...";
             this.menuItem_roomOptions.Click += new System.EventHandler(this.menuItem_roomOptions_Click);
             // 
             // menuItem_testRoom
             // 
             this.menuItem_testRoom.Name = "menuItem_testRoom";
-            this.menuItem_testRoom.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_testRoom.Size = new System.Drawing.Size(183, 22);
             this.menuItem_testRoom.Text = "Test Room...";
             this.menuItem_testRoom.Click += new System.EventHandler(this.menuItem_testRoom_Click);
             // 
             // menuItem_clipShortcuts
             // 
             this.menuItem_clipShortcuts.Name = "menuItem_clipShortcuts";
-            this.menuItem_clipShortcuts.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_clipShortcuts.Size = new System.Drawing.Size(183, 22);
             this.menuItem_clipShortcuts.Text = "Clipdata Shortcuts";
             this.menuItem_clipShortcuts.Click += new System.EventHandler(this.menuItem_clipShortcuts_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(180, 6);
             // 
             // menuItem_import
             // 
@@ -879,7 +881,7 @@
             this.menuItem_importLZ77BGimage,
             this.menuItem_importEnding});
             this.menuItem_import.Name = "menuItem_import";
-            this.menuItem_import.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_import.Size = new System.Drawing.Size(183, 22);
             this.menuItem_import.Text = "Import";
             // 
             // menuItem_importTileset
@@ -948,60 +950,60 @@
             this.menuItem_exportBG3image,
             this.menuItem_exportRoomImage});
             this.menuItem_export.Name = "menuItem_export";
-            this.menuItem_export.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_export.Size = new System.Drawing.Size(183, 22);
             this.menuItem_export.Text = "Export";
             // 
             // menuItem_exportTileset
             // 
             this.menuItem_exportTileset.Name = "menuItem_exportTileset";
-            this.menuItem_exportTileset.Size = new System.Drawing.Size(153, 22);
+            this.menuItem_exportTileset.Size = new System.Drawing.Size(152, 22);
             this.menuItem_exportTileset.Text = "Tileset...";
             this.menuItem_exportTileset.Click += new System.EventHandler(this.menuItem_exportTileset_Click);
             // 
             // menuItem_exportBG
             // 
             this.menuItem_exportBG.Name = "menuItem_exportBG";
-            this.menuItem_exportBG.Size = new System.Drawing.Size(153, 22);
+            this.menuItem_exportBG.Size = new System.Drawing.Size(152, 22);
             this.menuItem_exportBG.Text = "Background...";
             this.menuItem_exportBG.Click += new System.EventHandler(this.menuItem_exportBG_Click);
             // 
             // menuItem_exportRoom
             // 
             this.menuItem_exportRoom.Name = "menuItem_exportRoom";
-            this.menuItem_exportRoom.Size = new System.Drawing.Size(153, 22);
+            this.menuItem_exportRoom.Size = new System.Drawing.Size(152, 22);
             this.menuItem_exportRoom.Text = "Room...";
             this.menuItem_exportRoom.Click += new System.EventHandler(this.menuItem_exportRoom_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(149, 6);
             // 
             // menuItem_exportTilesetImage
             // 
             this.menuItem_exportTilesetImage.Name = "menuItem_exportTilesetImage";
-            this.menuItem_exportTilesetImage.Size = new System.Drawing.Size(153, 22);
+            this.menuItem_exportTilesetImage.Size = new System.Drawing.Size(152, 22);
             this.menuItem_exportTilesetImage.Text = "Tileset Image...";
             this.menuItem_exportTilesetImage.Click += new System.EventHandler(this.menuItem_exportTilesetImage_Click);
             // 
             // menuItem_exportBG0image
             // 
             this.menuItem_exportBG0image.Name = "menuItem_exportBG0image";
-            this.menuItem_exportBG0image.Size = new System.Drawing.Size(153, 22);
+            this.menuItem_exportBG0image.Size = new System.Drawing.Size(152, 22);
             this.menuItem_exportBG0image.Text = "BG0 Image...";
             this.menuItem_exportBG0image.Click += new System.EventHandler(this.menuItem_exportBG0image_Click);
             // 
             // menuItem_exportBG3image
             // 
             this.menuItem_exportBG3image.Name = "menuItem_exportBG3image";
-            this.menuItem_exportBG3image.Size = new System.Drawing.Size(153, 22);
+            this.menuItem_exportBG3image.Size = new System.Drawing.Size(152, 22);
             this.menuItem_exportBG3image.Text = "BG3 Image...";
             this.menuItem_exportBG3image.Click += new System.EventHandler(this.menuItem_exportBG3image_Click);
             // 
             // menuItem_exportRoomImage
             // 
             this.menuItem_exportRoomImage.Name = "menuItem_exportRoomImage";
-            this.menuItem_exportRoomImage.Size = new System.Drawing.Size(153, 22);
+            this.menuItem_exportRoomImage.Size = new System.Drawing.Size(152, 22);
             this.menuItem_exportRoomImage.Text = "Room Image...";
             this.menuItem_exportRoomImage.Click += new System.EventHandler(this.menuItem_exportRoomImage_Click);
             // 
@@ -1011,7 +1013,7 @@
             this.menuItem_LZ77comp,
             this.menuItem_LZ77decomp});
             this.menuItem_compression.Name = "menuItem_compression";
-            this.menuItem_compression.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_compression.Size = new System.Drawing.Size(183, 22);
             this.menuItem_compression.Text = "Compression";
             // 
             // menuItem_LZ77comp
@@ -1031,12 +1033,12 @@
             // toolStripSeparator23
             // 
             this.toolStripSeparator23.Name = "toolStripSeparator23";
-            this.toolStripSeparator23.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator23.Size = new System.Drawing.Size(180, 6);
             // 
             // menuItem_tileBuilder
             // 
             this.menuItem_tileBuilder.Name = "menuItem_tileBuilder";
-            this.menuItem_tileBuilder.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_tileBuilder.Size = new System.Drawing.Size(183, 22);
             this.menuItem_tileBuilder.Text = "Minimap Tile Builder";
             this.menuItem_tileBuilder.Click += new System.EventHandler(this.menuItem_tileBuilder_Click);
             // 
@@ -1050,7 +1052,7 @@
             this.menuItem_addSpriteset,
             this.menuItem_addAnim});
             this.menuItem_add.Name = "menuItem_add";
-            this.menuItem_add.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_add.Size = new System.Drawing.Size(183, 22);
             this.menuItem_add.Text = "Add";
             // 
             // menuItem_addBG
@@ -1098,7 +1100,7 @@
             // menuItem_patches
             // 
             this.menuItem_patches.Name = "menuItem_patches";
-            this.menuItem_patches.Size = new System.Drawing.Size(184, 22);
+            this.menuItem_patches.Size = new System.Drawing.Size(183, 22);
             this.menuItem_patches.Text = "Patches";
             this.menuItem_patches.Click += new System.EventHandler(this.menuItem_patches_Click);
             // 
@@ -1107,9 +1109,10 @@
             this.menuStrip_options.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItem_defaultView,
             this.menuItem_numberBase,
+            this.toolStripSeparator28,
+            this.themeToolStripMenuItem,
             this.toolStripSeparator21,
             this.menuItem_tooltips});
-            this.menuStrip_options.Enabled = false;
             this.menuStrip_options.Name = "menuStrip_options";
             this.menuStrip_options.Size = new System.Drawing.Size(61, 20);
             this.menuStrip_options.Text = "Options";
@@ -1128,8 +1131,9 @@
             this.menuItem_defaultDoors,
             this.menuItem_defaultScrolls,
             this.menuItem_defaultScreens});
+            this.menuItem_defaultView.Enabled = false;
             this.menuItem_defaultView.Name = "menuItem_defaultView";
-            this.menuItem_defaultView.Size = new System.Drawing.Size(158, 22);
+            this.menuItem_defaultView.Size = new System.Drawing.Size(156, 22);
             this.menuItem_defaultView.Text = "Default View";
             // 
             // menuItem_defaultBG0
@@ -1250,8 +1254,9 @@
             this.menuItem_numberBase.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItem_hexadecimal,
             this.menuItem_decimal});
+            this.menuItem_numberBase.Enabled = false;
             this.menuItem_numberBase.Name = "menuItem_numberBase";
-            this.menuItem_numberBase.Size = new System.Drawing.Size(158, 22);
+            this.menuItem_numberBase.Size = new System.Drawing.Size(156, 22);
             this.menuItem_numberBase.Text = "Number Base";
             // 
             // menuItem_hexadecimal
@@ -1259,26 +1264,39 @@
             this.menuItem_hexadecimal.Checked = true;
             this.menuItem_hexadecimal.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_hexadecimal.Name = "menuItem_hexadecimal";
-            this.menuItem_hexadecimal.Size = new System.Drawing.Size(142, 22);
+            this.menuItem_hexadecimal.Size = new System.Drawing.Size(143, 22);
             this.menuItem_hexadecimal.Text = "Hexadecimal";
             this.menuItem_hexadecimal.Click += new System.EventHandler(this.menuItem_hexadecimal_Click);
             // 
             // menuItem_decimal
             // 
             this.menuItem_decimal.Name = "menuItem_decimal";
-            this.menuItem_decimal.Size = new System.Drawing.Size(142, 22);
+            this.menuItem_decimal.Size = new System.Drawing.Size(143, 22);
             this.menuItem_decimal.Text = "Decimal";
             this.menuItem_decimal.Click += new System.EventHandler(this.menuItem_decimal_Click);
+            // 
+            // toolStripSeparator28
+            // 
+            this.toolStripSeparator28.Name = "toolStripSeparator28";
+            this.toolStripSeparator28.Size = new System.Drawing.Size(153, 6);
+            // 
+            // themeToolStripMenuItem
+            // 
+            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.themeToolStripMenuItem.Text = "Theme";
+            this.themeToolStripMenuItem.Click += new System.EventHandler(this.themeToolStripMenuItem_Click);
             // 
             // toolStripSeparator21
             // 
             this.toolStripSeparator21.Name = "toolStripSeparator21";
-            this.toolStripSeparator21.Size = new System.Drawing.Size(155, 6);
+            this.toolStripSeparator21.Size = new System.Drawing.Size(153, 6);
             // 
             // menuItem_tooltips
             // 
+            this.menuItem_tooltips.Enabled = false;
             this.menuItem_tooltips.Name = "menuItem_tooltips";
-            this.menuItem_tooltips.Size = new System.Drawing.Size(158, 22);
+            this.menuItem_tooltips.Size = new System.Drawing.Size(156, 22);
             this.menuItem_tooltips.Text = "Disable Tooltips";
             this.menuItem_tooltips.Click += new System.EventHandler(this.menuItem_tooltips_Click);
             // 
@@ -1307,10 +1325,10 @@
             // 
             // groupBox_location
             // 
-            this.groupBox_location.Controls.Add(this.label_room);
-            this.groupBox_location.Controls.Add(this.label_area);
             this.groupBox_location.Controls.Add(this.comboBox_room);
             this.groupBox_location.Controls.Add(this.comboBox_area);
+            this.groupBox_location.Controls.Add(this.label_room);
+            this.groupBox_location.Controls.Add(this.label_area);
             this.groupBox_location.Enabled = false;
             this.groupBox_location.Location = new System.Drawing.Point(12, 52);
             this.groupBox_location.Name = "groupBox_location";
@@ -1318,6 +1336,27 @@
             this.groupBox_location.TabIndex = 0;
             this.groupBox_location.TabStop = false;
             this.groupBox_location.Text = "Location";
+            // 
+            // comboBox_room
+            // 
+            this.comboBox_room.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_room.FormattingEnabled = true;
+            this.comboBox_room.Location = new System.Drawing.Point(49, 43);
+            this.comboBox_room.Name = "comboBox_room";
+            this.comboBox_room.Size = new System.Drawing.Size(77, 21);
+            this.comboBox_room.TabIndex = 10;
+            this.comboBox_room.SelectedIndexChanged += new System.EventHandler(this.comboBox_room_SelectedIndexChanged);
+            this.comboBox_room.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_KeyPress);
+            // 
+            // comboBox_area
+            // 
+            this.comboBox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_area.FormattingEnabled = true;
+            this.comboBox_area.Location = new System.Drawing.Point(49, 18);
+            this.comboBox_area.Name = "comboBox_area";
+            this.comboBox_area.Size = new System.Drawing.Size(77, 21);
+            this.comboBox_area.TabIndex = 9;
+            this.comboBox_area.SelectedIndexChanged += new System.EventHandler(this.comboBox_area_SelectedIndexChanged);
             // 
             // label_room
             // 
@@ -1336,28 +1375,6 @@
             this.label_area.Size = new System.Drawing.Size(32, 13);
             this.label_area.TabIndex = 0;
             this.label_area.Text = "Area:";
-            // 
-            // comboBox_room
-            // 
-            this.comboBox_room.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_room.FormattingEnabled = true;
-            this.comboBox_room.Location = new System.Drawing.Point(49, 43);
-            this.comboBox_room.Name = "comboBox_room";
-            this.comboBox_room.Size = new System.Drawing.Size(77, 21);
-            this.comboBox_room.TabIndex = 1;
-            this.comboBox_room.SelectedIndexChanged += new System.EventHandler(this.comboBox_room_SelectedIndexChanged);
-            this.comboBox_room.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_KeyPress);
-            // 
-            // comboBox_area
-            // 
-            this.comboBox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_area.FormattingEnabled = true;
-            this.comboBox_area.Location = new System.Drawing.Point(49, 18);
-            this.comboBox_area.Name = "comboBox_area";
-            this.comboBox_area.Size = new System.Drawing.Size(77, 21);
-            this.comboBox_area.TabIndex = 0;
-            this.comboBox_area.SelectedIndexChanged += new System.EventHandler(this.comboBox_area_SelectedIndexChanged);
-            this.comboBox_area.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_KeyPress);
             // 
             // groupBox_tileset
             // 
@@ -1379,10 +1396,10 @@
             // 
             this.comboBox_clipdata.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_clipdata.FormattingEnabled = true;
-            this.comboBox_clipdata.Location = new System.Drawing.Point(60, 19);
+            this.comboBox_clipdata.Location = new System.Drawing.Point(58, 19);
             this.comboBox_clipdata.Name = "comboBox_clipdata";
-            this.comboBox_clipdata.Size = new System.Drawing.Size(220, 21);
-            this.comboBox_clipdata.TabIndex = 0;
+            this.comboBox_clipdata.Size = new System.Drawing.Size(222, 21);
+            this.comboBox_clipdata.TabIndex = 11;
             // 
             // label_clipdata
             // 
@@ -1477,91 +1494,91 @@
             this.toolStripSeparator14,
             this.contextItem_testRoom});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(160, 242);
+            this.contextMenu.Size = new System.Drawing.Size(158, 242);
             this.contextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // contextItem_addSprite
             // 
             this.contextItem_addSprite.Name = "contextItem_addSprite";
-            this.contextItem_addSprite.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_addSprite.Size = new System.Drawing.Size(157, 22);
             this.contextItem_addSprite.Text = "Add Sprite";
             this.contextItem_addSprite.Click += new System.EventHandler(this.contextItem_addSprite_Click);
             // 
             // contextItem_editSprite
             // 
             this.contextItem_editSprite.Name = "contextItem_editSprite";
-            this.contextItem_editSprite.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_editSprite.Size = new System.Drawing.Size(157, 22);
             this.contextItem_editSprite.Text = "Edit Sprite";
             this.contextItem_editSprite.Click += new System.EventHandler(this.contextItem_editSprite_Click);
             // 
             // contextItem_removeSprite
             // 
             this.contextItem_removeSprite.Name = "contextItem_removeSprite";
-            this.contextItem_removeSprite.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_removeSprite.Size = new System.Drawing.Size(157, 22);
             this.contextItem_removeSprite.Text = "Remove Sprite";
             this.contextItem_removeSprite.Click += new System.EventHandler(this.contextItem_removeSprite_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(156, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(154, 6);
             // 
             // contextItem_addDoor
             // 
             this.contextItem_addDoor.Name = "contextItem_addDoor";
-            this.contextItem_addDoor.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_addDoor.Size = new System.Drawing.Size(157, 22);
             this.contextItem_addDoor.Text = "Add Door";
             this.contextItem_addDoor.Click += new System.EventHandler(this.contextItem_addDoor_Click);
             // 
             // contextItem_editDoor
             // 
             this.contextItem_editDoor.Name = "contextItem_editDoor";
-            this.contextItem_editDoor.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_editDoor.Size = new System.Drawing.Size(157, 22);
             this.contextItem_editDoor.Text = "Edit Door";
             this.contextItem_editDoor.Click += new System.EventHandler(this.contextItem_editDoor_Click);
             // 
             // contextItem_removeDoor
             // 
             this.contextItem_removeDoor.Name = "contextItem_removeDoor";
-            this.contextItem_removeDoor.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_removeDoor.Size = new System.Drawing.Size(157, 22);
             this.contextItem_removeDoor.Text = "Remove Door";
             this.contextItem_removeDoor.Click += new System.EventHandler(this.contextItem_removeDoor_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(156, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(154, 6);
             // 
             // contextItem_addScroll
             // 
             this.contextItem_addScroll.Name = "contextItem_addScroll";
-            this.contextItem_addScroll.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_addScroll.Size = new System.Drawing.Size(157, 22);
             this.contextItem_addScroll.Text = "Add Scroll";
             this.contextItem_addScroll.Click += new System.EventHandler(this.contextItem_addScroll_Click);
             // 
             // contextItem_editScroll
             // 
             this.contextItem_editScroll.Name = "contextItem_editScroll";
-            this.contextItem_editScroll.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_editScroll.Size = new System.Drawing.Size(157, 22);
             this.contextItem_editScroll.Text = "Edit Scroll";
             this.contextItem_editScroll.Click += new System.EventHandler(this.contextItem_editScroll_Click);
             // 
             // contextItem_removeScroll
             // 
             this.contextItem_removeScroll.Name = "contextItem_removeScroll";
-            this.contextItem_removeScroll.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_removeScroll.Size = new System.Drawing.Size(157, 22);
             this.contextItem_removeScroll.Text = "Remove Scroll";
             this.contextItem_removeScroll.Click += new System.EventHandler(this.contextItem_removeScroll_Click);
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(156, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(154, 6);
             // 
             // contextItem_testRoom
             // 
             this.contextItem_testRoom.Name = "contextItem_testRoom";
-            this.contextItem_testRoom.Size = new System.Drawing.Size(159, 22);
+            this.contextItem_testRoom.Size = new System.Drawing.Size(157, 22);
             this.contextItem_testRoom.Text = "Test Room Here";
             this.contextItem_testRoom.Click += new System.EventHandler(this.contextItem_testRoom_Click);
             // 
@@ -1635,6 +1652,7 @@
             this.groupBox_editBG.Size = new System.Drawing.Size(70, 102);
             this.groupBox_editBG.TabIndex = 3;
             this.groupBox_editBG.TabStop = false;
+            this.groupBox_editBG.Tag = "";
             this.groupBox_editBG.Text = "Edit";
             // 
             // checkBox_editCLP
@@ -1690,6 +1708,7 @@
             this.statusLabel_clip});
             this.statusStrip.Location = new System.Drawing.Point(0, 473);
             this.statusStrip.Name = "statusStrip";
+            this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.statusStrip.ShowItemToolTips = true;
             this.statusStrip.Size = new System.Drawing.Size(796, 24);
             this.statusStrip.TabIndex = 0;
@@ -1733,17 +1752,6 @@
             this.label_spriteset.Size = new System.Drawing.Size(51, 13);
             this.label_spriteset.TabIndex = 8;
             this.label_spriteset.Text = "Spriteset:";
-            // 
-            // comboBox_spriteset
-            // 
-            this.comboBox_spriteset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_spriteset.Enabled = false;
-            this.comboBox_spriteset.FormattingEnabled = true;
-            this.comboBox_spriteset.Location = new System.Drawing.Point(69, 133);
-            this.comboBox_spriteset.Name = "comboBox_spriteset";
-            this.comboBox_spriteset.Size = new System.Drawing.Size(68, 21);
-            this.comboBox_spriteset.TabIndex = 1;
-            this.comboBox_spriteset.SelectedIndexChanged += new System.EventHandler(this.comboBox_spriteset_SelectedIndexChanged);
             // 
             // toolStrip
             // 
@@ -2111,14 +2119,24 @@
             this.toolStrip_patches.Text = "Patches";
             this.toolStrip_patches.Click += new System.EventHandler(this.menuItem_patches_Click);
             // 
+            // comboBox_spriteset
+            // 
+            this.comboBox_spriteset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_spriteset.FormattingEnabled = true;
+            this.comboBox_spriteset.Location = new System.Drawing.Point(70, 132);
+            this.comboBox_spriteset.Name = "comboBox_spriteset";
+            this.comboBox_spriteset.Size = new System.Drawing.Size(68, 21);
+            this.comboBox_spriteset.TabIndex = 11;
+            this.comboBox_spriteset.SelectedIndexChanged += new System.EventHandler(this.comboBox_spriteset_SelectedIndexChanged);
+            // 
             // FormMain
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 497);
-            this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.comboBox_spriteset);
+            this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.label_spriteset);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox_editBG);
@@ -2168,8 +2186,6 @@
         private System.Windows.Forms.GroupBox groupBox_location;
         private System.Windows.Forms.Label label_room;
         private System.Windows.Forms.Label label_area;
-        private System.Windows.Forms.ComboBox comboBox_room;
-        private System.Windows.Forms.ComboBox comboBox_area;
         private System.Windows.Forms.GroupBox groupBox_tileset;
         private System.Windows.Forms.GroupBox groupBox_room;
         private System.Windows.Forms.GroupBox groupBox_viewBG;
@@ -2183,7 +2199,6 @@
         private System.Windows.Forms.CheckBox checkBox_editBG1;
         private System.Windows.Forms.CheckBox checkBox_editBG0;
         private System.Windows.Forms.Panel panel_tileset;
-        private System.Windows.Forms.ComboBox comboBox_clipdata;
         private System.Windows.Forms.Label label_clipdata;
         private System.Windows.Forms.Panel panel_room;
         private System.Windows.Forms.StatusStrip statusStrip;
@@ -2199,7 +2214,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItem_spriteEditor;
         private System.Windows.Forms.ToolStripMenuItem menuItem_spritesetEditor;
         private System.Windows.Forms.Label label_spriteset;
-        private System.Windows.Forms.ComboBox comboBox_spriteset;
         private System.Windows.Forms.ToolStripMenuItem menuItem_weaponEditor;
         private System.Windows.Forms.ToolStripMenuItem menuItem_export;
         private System.Windows.Forms.ToolStripMenuItem menuItem_exportTilesetImage;
@@ -2370,6 +2384,12 @@
         private System.Windows.Forms.ToolStripMenuItem menuItem_defaultClipBreakable;
         private System.Windows.Forms.ToolStripMenuItem menuItem_viewClipValues;
         private System.Windows.Forms.ToolStripMenuItem menuItem_defaultClipValues;
+        private Theming.CustomControls.FlatComboBox comboBox_area;
+        private Theming.CustomControls.FlatComboBox comboBox_room;
+        private Theming.CustomControls.FlatComboBox comboBox_clipdata;
+        private Theming.CustomControls.FlatComboBox comboBox_spriteset;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
+        private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
     }
 }
 

@@ -37,7 +37,7 @@
             this.button_close = new System.Windows.Forms.Button();
             this.button_apply = new System.Windows.Forms.Button();
             this.label_value = new System.Windows.Forms.Label();
-            this.textBox_value = new System.Windows.Forms.TextBox();
+            this.textBox_value = new mage.Theming.CustomControls.FlatTextBox();
             this.SuspendLayout();
             // 
             // listView_physics
@@ -145,7 +145,7 @@
         private System.Windows.Forms.Button button_close;
         private System.Windows.Forms.Button button_apply;
         private System.Windows.Forms.Label label_value;
-        private System.Windows.Forms.TextBox textBox_value;
+        private mage.Theming.CustomControls.FlatTextBox textBox_value;
 
     }
 }

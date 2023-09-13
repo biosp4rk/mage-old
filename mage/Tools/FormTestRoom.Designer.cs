@@ -34,8 +34,8 @@
             this.checkBox_debug = new System.Windows.Forms.CheckBox();
             this.label_xPos = new System.Windows.Forms.Label();
             this.label_yPos = new System.Windows.Forms.Label();
-            this.textBox_xPos = new System.Windows.Forms.TextBox();
-            this.textBox_yPos = new System.Windows.Forms.TextBox();
+            this.textBox_xPos = new mage.Theming.CustomControls.FlatTextBox();
+            this.textBox_yPos = new mage.Theming.CustomControls.FlatTextBox();
             this.SuspendLayout();
             // 
             // button_go
@@ -134,7 +134,7 @@
         private System.Windows.Forms.CheckBox checkBox_debug;
         private System.Windows.Forms.Label label_xPos;
         private System.Windows.Forms.Label label_yPos;
-        private System.Windows.Forms.TextBox textBox_xPos;
-        private System.Windows.Forms.TextBox textBox_yPos;
+        private mage.Theming.CustomControls.FlatTextBox textBox_xPos;
+        private mage.Theming.CustomControls.FlatTextBox textBox_yPos;
     }
 }

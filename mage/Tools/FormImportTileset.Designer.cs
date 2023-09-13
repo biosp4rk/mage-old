@@ -35,7 +35,7 @@
             this.radioButton_current = new System.Windows.Forms.RadioButton();
             this.radioButton_choose = new System.Windows.Forms.RadioButton();
             this.checkBox_genericTiles = new System.Windows.Forms.CheckBox();
-            this.comboBox_tileset = new System.Windows.Forms.ComboBox();
+            this.comboBox_tileset = new mage.Theming.CustomControls.FlatComboBox();
             this.checkBox_preserveData = new System.Windows.Forms.CheckBox();
             this.groupBox_select = new System.Windows.Forms.GroupBox();
             this.groupBox_select.SuspendLayout();
@@ -164,7 +164,7 @@
         private System.Windows.Forms.RadioButton radioButton_current;
         private System.Windows.Forms.RadioButton radioButton_choose;
         private System.Windows.Forms.CheckBox checkBox_genericTiles;
-        private System.Windows.Forms.ComboBox comboBox_tileset;
+        private mage.Theming.CustomControls.FlatComboBox comboBox_tileset;
         private System.Windows.Forms.CheckBox checkBox_preserveData;
         private System.Windows.Forms.GroupBox groupBox_select;
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using mage.Properties;
+using mage.Theming;
 
 namespace mage
 {
@@ -19,6 +20,9 @@ namespace mage
         public FormTileBuilder(FormMain main, int number = 0)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             this.romStream = ROM.Stream;

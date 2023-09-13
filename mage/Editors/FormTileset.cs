@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mage.Theming;
+using System;
 using System.Windows.Forms;
 
 namespace mage
@@ -15,6 +16,9 @@ namespace mage
         public FormTileset(FormMain main, byte tsNum)
         {
             InitializeComponent();
+
+            ThemeSwitcher.ChangeTheme(Controls, this);
+            ThemeSwitcher.InjectPaintOverrides(Controls);
 
             this.main = main;
             romStream = ROM.Stream;
