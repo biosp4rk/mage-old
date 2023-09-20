@@ -82,11 +82,16 @@ partial class FlatTextBox : UserControl
     #endregion
 
     #region events
-    public new event EventHandler TextChanged;
+    public new event EventHandler TextChanged
+    {
+        add => OnTextChanged += value;
+        remove => OnTextChanged -= value;
+    }
+    public EventHandler OnTextChanged { get; set; }
 
     private void textBoxTextChanged(object sender, EventArgs e)
     {
-        TextChanged?.Invoke(this, e);
+        OnTextChanged?.Invoke(this, e);
     }
     #endregion
 

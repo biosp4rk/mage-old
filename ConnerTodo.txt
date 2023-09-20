@@ -12,3 +12,4 @@ MAGE 1.5.0:
 - Added clipdata shortcuts button to main view
 - Zoom with Ctrl + Mouse Wheel in main view
 - Clear Sprites, Scrolls and Doors in Room Options
+- Drop Probability can be input as Percentage
