@@ -118,8 +118,27 @@ namespace mage
                 checkBox_clip.Checked = false;
             }
 
+            if (checkBox_sprites.Checked)
+            {
+                foreach (EnemyList l in room.enemyLists) l?.Clear();
+                checkBox_sprites.Checked = false;
+            }
+
+            if (checkBox_doors.Checked)
+            {
+                room.doorList.Clear();
+                checkBox_doors.Checked = false;
+            }
+
+            if (checkBox_scrolls.Checked)
+            {
+                room.scrollList.Clear();
+                checkBox_scrolls.Checked = false;
+            }
+
             main.ReloadRoom(true);
             room = main.Room;
+            main.UpdateUiAfterClear();
         }
 
         private void button_resize_Click(object sender, EventArgs e)

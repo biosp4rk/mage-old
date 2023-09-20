@@ -133,6 +133,17 @@ namespace mage
             doors.RemoveAt(num);
         }
 
+        public void Clear()
+        {
+            Edited = true;
+            foreach(Door d in doors)
+            {
+                d.Edited = true;
+                d.srcRoom = 0xFF;
+            }
+            doors.Clear();
+        }
+
         public void Export(ByteStream dst)
         {
             dst.Write8((byte)NumOfDoors);

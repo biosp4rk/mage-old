@@ -46,6 +46,9 @@
             label_screens = new System.Windows.Forms.Label();
             groupBox_clear = new System.Windows.Forms.GroupBox();
             button_close = new System.Windows.Forms.Button();
+            checkBox_sprites = new System.Windows.Forms.CheckBox();
+            checkBox_doors = new System.Windows.Forms.CheckBox();
+            checkBox_scrolls = new System.Windows.Forms.CheckBox();
             groupBox_resize.SuspendLayout();
             groupBox_clear.SuspendLayout();
             SuspendLayout();
@@ -179,7 +182,7 @@
             groupBox_resize.Controls.Add(textBox_height);
             groupBox_resize.Controls.Add(label_height);
             groupBox_resize.Controls.Add(button_resize);
-            groupBox_resize.Location = new System.Drawing.Point(122, 14);
+            groupBox_resize.Location = new System.Drawing.Point(182, 14);
             groupBox_resize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             groupBox_resize.Name = "groupBox_resize";
             groupBox_resize.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -242,6 +245,9 @@
             // 
             // groupBox_clear
             // 
+            groupBox_clear.Controls.Add(checkBox_scrolls);
+            groupBox_clear.Controls.Add(checkBox_doors);
+            groupBox_clear.Controls.Add(checkBox_sprites);
             groupBox_clear.Controls.Add(checkBox_bg0);
             groupBox_clear.Controls.Add(checkBox_bg1);
             groupBox_clear.Controls.Add(button_clearBG);
@@ -251,14 +257,14 @@
             groupBox_clear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             groupBox_clear.Name = "groupBox_clear";
             groupBox_clear.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBox_clear.Size = new System.Drawing.Size(102, 162);
+            groupBox_clear.Size = new System.Drawing.Size(160, 162);
             groupBox_clear.TabIndex = 0;
             groupBox_clear.TabStop = false;
-            groupBox_clear.Text = "Clear BG";
+            groupBox_clear.Text = "Clear Data";
             // 
             // button_close
             // 
-            button_close.Location = new System.Drawing.Point(206, 151);
+            button_close.Location = new System.Drawing.Point(266, 151);
             button_close.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_close.Name = "button_close";
             button_close.Size = new System.Drawing.Size(88, 27);
@@ -267,11 +273,44 @@
             button_close.UseVisualStyleBackColor = true;
             button_close.Click += button_close_Click;
             // 
+            // checkBox_sprites
+            // 
+            checkBox_sprites.AutoSize = true;
+            checkBox_sprites.Location = new System.Drawing.Point(90, 22);
+            checkBox_sprites.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBox_sprites.Name = "checkBox_sprites";
+            checkBox_sprites.Size = new System.Drawing.Size(61, 19);
+            checkBox_sprites.TabIndex = 5;
+            checkBox_sprites.Text = "Sprites";
+            checkBox_sprites.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_doors
+            // 
+            checkBox_doors.AutoSize = true;
+            checkBox_doors.Location = new System.Drawing.Point(90, 48);
+            checkBox_doors.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBox_doors.Name = "checkBox_doors";
+            checkBox_doors.Size = new System.Drawing.Size(57, 19);
+            checkBox_doors.TabIndex = 6;
+            checkBox_doors.Text = "Doors";
+            checkBox_doors.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_scrolls
+            // 
+            checkBox_scrolls.AutoSize = true;
+            checkBox_scrolls.Location = new System.Drawing.Point(90, 75);
+            checkBox_scrolls.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBox_scrolls.Name = "checkBox_scrolls";
+            checkBox_scrolls.Size = new System.Drawing.Size(60, 19);
+            checkBox_scrolls.TabIndex = 7;
+            checkBox_scrolls.Text = "Scrolls";
+            checkBox_scrolls.UseVisualStyleBackColor = true;
+            // 
             // FormRoomOptions
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(308, 192);
+            ClientSize = new System.Drawing.Size(367, 192);
             Controls.Add(button_close);
             Controls.Add(groupBox_clear);
             Controls.Add(groupBox_resize);
@@ -308,5 +347,8 @@
         private System.Windows.Forms.Label label_screens;
         private Theming.CustomControls.FlatTextBox textbox_screenY;
         private Theming.CustomControls.FlatTextBox textbox_screenX;
+        private System.Windows.Forms.CheckBox checkBox_scrolls;
+        private System.Windows.Forms.CheckBox checkBox_doors;
+        private System.Windows.Forms.CheckBox checkBox_sprites;
     }
 }

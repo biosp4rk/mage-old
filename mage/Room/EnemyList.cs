@@ -220,6 +220,10 @@ namespace mage
             }
         }
 
-
+        public void Clear()
+        {
+            Edited = true;
+            enemies.Clear();
+        }
     }
 }

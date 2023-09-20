@@ -1653,6 +1653,20 @@ namespace mage
             roomView.RedrawAll();
         }
 
+        public void UpdateUiAfterClear()
+        {
+            menuItem_outlineSprites.Enabled = menuItem_viewSprites.Enabled =
+                        toolStrip_outlineSprites.Enabled = toolStrip_viewSprites.Enabled = room.enemyList.Count > 0;
+            menuItem_viewSprites.Checked = toolStrip_viewSprites.Checked = toolStrip_viewSprites.Enabled;
+            menuItem_outlineSprites.Checked = toolStrip_outlineSprites.Checked = toolStrip_outlineSprites.Enabled;
+
+            menuItem_outlineDoors.Enabled = toolStrip_outlineDoors.Enabled = room.doorList.Count > 0;
+            menuItem_outlineDoors.Checked = toolStrip_outlineDoors.Checked = toolStrip_outlineDoors.Enabled;
+
+            menuItem_outlineScrolls.Enabled = toolStrip_outlineScrolls.Enabled = room.scrollList.Count > 0;
+            menuItem_outlineScrolls.Checked = toolStrip_outlineScrolls.Checked = toolStrip_outlineScrolls.Enabled;
+        }
+
         private void UpdateUndoRedo()
         {
             menuItem_undo.Enabled = toolStrip_undo.Enabled = undoRedo.CanUndo;
