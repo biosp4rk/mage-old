@@ -81,12 +81,13 @@ namespace mage
             InitializeSettings();
             ShowSplash();
 
+            roomView.Scrolled += roomView_Scrolled;
+
             ThemeSwitcher.ChangeTheme(Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);
 
             ThemeSwitcher.TestSerialisation();
         }
-
 
         #region opening/closing
 
@@ -2338,6 +2339,15 @@ namespace mage
         private void roomView_MouseLeave(object sender, EventArgs e)
         {
             ResetRoomTip(false);
+        }
+
+        private void roomView_Scrolled(object sender, MouseEventArgs e)
+        {
+            if ((ModifierKeys & Keys.Control) == Keys.Control)
+            {
+                if (e.Delta > 0) UpdateZoom(zoom + 1);
+                if (e.Delta < 0) UpdateZoom(zoom - 1);
+            }
         }
 
         #endregion
