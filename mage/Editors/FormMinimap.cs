@@ -159,6 +159,8 @@ namespace mage
 
         private void LoadMinimap()
         {
+            button_generate.Enabled = comboBox_area.SelectedIndex <= 6;
+
             byte areaID = (byte)comboBox_area.SelectedIndex;
             try
             {
@@ -465,6 +467,8 @@ namespace mage
 
         private void button_generate_Click(object sender, EventArgs e)
         {
+            comboBox_type.SelectedIndex = 1;
+
             //clearing old map
             for (int i = 0; i < 32; i++)
             {
