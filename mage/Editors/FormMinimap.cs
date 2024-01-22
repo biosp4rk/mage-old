@@ -462,5 +462,47 @@ namespace mage
                 offset += 0x3C;
             }
         }
+
+        private void button_generate_Click(object sender, EventArgs e)
+        {
+            //clearing old map
+            for (int i = 0; i < 32; i++)
+            {
+                for (int j = 0; j < 32; j++)
+                {
+                    selSquare = 0x140;
+                    mPos = new Point(i, j);
+                    SetNewSquare();
+                }
+            }
+
+            selSquare = 0x87;
+
+            //Loop through each room and room header in the current selected area
+            byte area = (byte)comboBox_area.SelectedIndex;
+            for (int i = 0; i < Version.RoomsPerArea[(byte)comboBox_area.SelectedIndex]; i++)
+            {
+                //Create Room Object, read map coordinates
+                Room rm = new Room(area, i);
+                int width = rm.Width / 0xF;
+                int height = rm.Height / 0xA;
+
+                int offset = romStream.ReadPtr(Version.AreaHeaderOffset + area * 4) + (i * 0x3C);
+                byte mapX = romStream.Read8(offset + 0x35);
+                byte mapY = romStream.Read8(offset + 0x36);
+
+                //place map tile
+                for (int j = 0; j < width; j++)
+                {
+                    for (int k = 0; k < height; k++)
+                    {
+                        mPos = new Point(mapX + j, mapY + k);
+                        SetNewSquare();
+                    }
+                }
+            }
+
+            gfxView_map.Invalidate();
+        }
     }
 }

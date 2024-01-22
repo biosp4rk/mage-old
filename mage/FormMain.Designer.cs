@@ -1983,7 +1983,7 @@
             // 
             comboBox_spriteset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBox_spriteset.FormattingEnabled = true;
-            comboBox_spriteset.Location = new System.Drawing.Point(82, 152);
+            comboBox_spriteset.Location = new System.Drawing.Point(81, 153);
             comboBox_spriteset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             comboBox_spriteset.Name = "comboBox_spriteset";
             comboBox_spriteset.Size = new System.Drawing.Size(79, 23);
