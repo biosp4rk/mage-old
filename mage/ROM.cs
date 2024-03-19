@@ -34,7 +34,28 @@ namespace mage
             {
                 int offset = Version.GenericBgGfxOffset;
                 if (useMotherShipHatches) { offset += 0x1000; }
-                return new GFX(stream, offset, 32, 4);
+                var gfx = new GFX(stream, offset, 32, 4);
+
+                // copy actual tank graphics
+                int numTanks;
+                int dstIdx;
+                if (Version.IsMF)
+                {
+                    numTanks = 3;
+                    dstIdx = 0x200;
+                }
+                else
+                {
+                    numTanks = 4;
+                    dstIdx = 0x20;
+                }
+                for (int i = 0; i < numTanks; i++)
+                {
+                    var animTank = new AnimGFX(Stream, i);
+                    Array.Copy(animTank.gfx.data, 0, gfx.data, dstIdx + i * 0x80, 0x80);
+                }
+
+                return gfx;
             }
         }
         public static Palette GenericSpritePalette
