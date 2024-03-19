@@ -46,16 +46,20 @@ partial class FlatTextBox : UserControl
 
     public new BorderStyle BorderStyle
     {
-        get => textBox.BorderStyle;
+        get => (BorderStyle)base.BorderStyle;
         set
         {
-            drawBorder = true;
             if (value == BorderStyle.None)
             {
                 textBox.Location = new Point(0, 0);
                 drawBorder = false;
             }
-            else textBox.Location = new Point(3, 4);
+            else
+            {
+                textBox.Location = new Point(3, 3);
+                drawBorder = true;
+            }
+            base.BorderStyle = BorderStyle.None;
         }
     }
 
@@ -78,11 +82,16 @@ partial class FlatTextBox : UserControl
     #endregion
 
     #region events
-    public new event EventHandler TextChanged;
+    public new event EventHandler TextChanged
+    {
+        add => OnTextChanged += value;
+        remove => OnTextChanged -= value;
+    }
+    public EventHandler OnTextChanged { get; set; }
 
     private void textBoxTextChanged(object sender, EventArgs e)
     {
-        TextChanged?.Invoke(this, e);
+        OnTextChanged?.Invoke(this, e);
     }
     #endregion
 

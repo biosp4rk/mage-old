@@ -13,7 +13,7 @@ namespace mage
 {
     public partial class FormMain : Form, Editor
     {
-        
+
         #region properties
 
         public Room Room
@@ -37,7 +37,7 @@ namespace mage
                     || checkBox_editBG2.Checked || checkBox_editCLP.Checked);
             }
         }
-        
+
         public bool ViewSprites { get { return toolStrip_viewSprites.Checked; } }
         public bool OutlineSprites { get { return toolStrip_outlineSprites.Checked; } }
         public bool OutlineDoors { get { return toolStrip_outlineDoors.Checked; } }
@@ -53,7 +53,7 @@ namespace mage
         }
 
         #endregion
-        
+
         #region fields
 
         private PictureBox splash;
@@ -81,12 +81,13 @@ namespace mage
             InitializeSettings();
             ShowSplash();
 
+            roomView.Scrolled += roomView_Scrolled;
+
             ThemeSwitcher.ChangeTheme(Controls, this);
             ThemeSwitcher.InjectPaintOverrides(Controls);
 
             ThemeSwitcher.TestSerialisation();
         }
-
 
         #region opening/closing
 
@@ -125,7 +126,7 @@ namespace mage
             int index = recent.IndexOf(filename);
             if (index != -1)
             {
-                recent.RemoveAt(index);   
+                recent.RemoveAt(index);
             }
             else
             {
@@ -258,7 +259,7 @@ namespace mage
         }
 
         #endregion
-        
+
 
         #region menu strip
 
@@ -1284,9 +1285,9 @@ namespace mage
             // BG viewing
             menuItem_viewBG0.Enabled = checkBox_viewBG0.Enabled = exists[0];
             menuItem_editBG0.Enabled = checkBox_editBG0.Enabled = room.BG0.IsRLE;
-            menuItem_viewBG1.Enabled = menuItem_editBG1.Enabled = 
+            menuItem_viewBG1.Enabled = menuItem_editBG1.Enabled =
                 checkBox_viewBG1.Enabled = checkBox_editBG1.Enabled = exists[1];
-            menuItem_viewBG2.Enabled = menuItem_editBG2.Enabled = 
+            menuItem_viewBG2.Enabled = menuItem_editBG2.Enabled =
                 checkBox_viewBG2.Enabled = checkBox_editBG2.Enabled = exists[2];
             menuItem_viewBG3.Enabled = checkBox_viewBG3.Enabled = exists[3];
 
@@ -1507,7 +1508,7 @@ namespace mage
 
         private void UpdateBGs()
         {
-            bool[] view = new bool[] { checkBox_viewBG0.Checked, checkBox_viewBG1.Checked, 
+            bool[] view = new bool[] { checkBox_viewBG0.Checked, checkBox_viewBG1.Checked,
                 checkBox_viewBG2.Checked, checkBox_viewBG3.Checked };
             room.backgrounds.View = view;
             roomView.RedrawAll();
@@ -1591,7 +1592,7 @@ namespace mage
             room.vramObj = new VramObj(room.spritesets[enemySet]);
             roomView.RedrawAll();
         }
-        
+
         private void UpdateRoomNumbers()
         {
             for (int i = 0; i < comboBox_room.Items.Count; i++)
@@ -1632,7 +1633,7 @@ namespace mage
             {
                 if (a.ActionText.Contains("sprite"))
                 {
-                    menuItem_outlineSprites.Enabled = menuItem_viewSprites.Enabled = 
+                    menuItem_outlineSprites.Enabled = menuItem_viewSprites.Enabled =
                         toolStrip_outlineSprites.Enabled = toolStrip_viewSprites.Enabled = room.enemyList.Count > 0;
                     menuItem_viewSprites.Checked = toolStrip_viewSprites.Checked = toolStrip_viewSprites.Enabled;
                     menuItem_outlineSprites.Checked = toolStrip_outlineSprites.Checked = toolStrip_outlineSprites.Enabled;
@@ -1650,6 +1651,20 @@ namespace mage
             }
 
             roomView.RedrawAll();
+        }
+
+        public void UpdateUiAfterClear()
+        {
+            menuItem_outlineSprites.Enabled = menuItem_viewSprites.Enabled =
+                        toolStrip_outlineSprites.Enabled = toolStrip_viewSprites.Enabled = room.enemyList.Count > 0;
+            menuItem_viewSprites.Checked = toolStrip_viewSprites.Checked = toolStrip_viewSprites.Enabled;
+            menuItem_outlineSprites.Checked = toolStrip_outlineSprites.Checked = toolStrip_outlineSprites.Enabled;
+
+            menuItem_outlineDoors.Enabled = toolStrip_outlineDoors.Enabled = room.doorList.Count > 0;
+            menuItem_outlineDoors.Checked = toolStrip_outlineDoors.Checked = toolStrip_outlineDoors.Enabled;
+
+            menuItem_outlineScrolls.Enabled = toolStrip_outlineScrolls.Enabled = room.scrollList.Count > 0;
+            menuItem_outlineScrolls.Checked = toolStrip_outlineScrolls.Checked = toolStrip_outlineScrolls.Enabled;
         }
 
         private void UpdateUndoRedo()
@@ -2254,7 +2269,7 @@ namespace mage
                     else if (selScroll != -1)
                     {
                         obj = room.scrollList[selScroll / 6];
-                        selObject = selScroll;                  
+                        selObject = selScroll;
                     }
 
                     if (selObject != -1)
@@ -2326,9 +2341,27 @@ namespace mage
             }
         }
 
+        private void roomView_DoubleClick(object sender, EventArgs e)
+        {
+            if (EditBGs) return;
+            SelectObjects();
+            if (selEnemy != -1) contextItem_editSprite_Click(new object(), new EventArgs());
+            else if (selDoor != -1) contextItem_editDoor_Click(new object(), new EventArgs());
+            else if (selScroll != -1) contextItem_editScroll_Click(new object(), new EventArgs());
+        }
+
         private void roomView_MouseLeave(object sender, EventArgs e)
         {
             ResetRoomTip(false);
+        }
+
+        private void roomView_Scrolled(object sender, MouseEventArgs e)
+        {
+            if ((ModifierKeys & Keys.Control) == Keys.Control)
+            {
+                if (e.Delta > 0) UpdateZoom(zoom + 1);
+                if (e.Delta < 0) UpdateZoom(zoom - 1);
+            }
         }
 
         #endregion

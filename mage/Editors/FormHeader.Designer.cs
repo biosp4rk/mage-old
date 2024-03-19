@@ -29,690 +29,903 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHeader));
-            this.textBox_tileset = new mage.Theming.CustomControls.FlatTextBox();
-            this.label_tileset = new System.Windows.Forms.Label();
-            this.textBox_BG0pointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_BG1pointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_BG2pointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_BG3pointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_CLPpointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_BG0prop = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_BG1prop = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_BG2prop = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_BG3prop = new mage.Theming.CustomControls.FlatTextBox();
-            this.label_BG0 = new System.Windows.Forms.Label();
-            this.label_BG1 = new System.Windows.Forms.Label();
-            this.label_BG2 = new System.Windows.Forms.Label();
-            this.label_BG3 = new System.Windows.Forms.Label();
-            this.label_CLP = new System.Windows.Forms.Label();
-            this.label_BGpointer = new System.Windows.Forms.Label();
-            this.label_prop = new System.Windows.Forms.Label();
-            this.textBox_BG3scroll = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_transparency = new mage.Theming.CustomControls.FlatTextBox();
-            this.label_BG3scroll = new System.Windows.Forms.Label();
-            this.label_transparency = new System.Windows.Forms.Label();
-            this.groupBox_BGdata = new System.Windows.Forms.GroupBox();
-            this.textBox_effectYpos = new mage.Theming.CustomControls.FlatTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label_effect = new System.Windows.Forms.Label();
-            this.textBox_effect = new mage.Theming.CustomControls.FlatTextBox();
-            this.groupBox_spritesetData = new System.Windows.Forms.GroupBox();
-            this.label_second = new System.Windows.Forms.Label();
-            this.label_first = new System.Windows.Forms.Label();
-            this.label_default = new System.Windows.Forms.Label();
-            this.label_event = new System.Windows.Forms.Label();
-            this.label_spriteset = new System.Windows.Forms.Label();
-            this.label_spritesetPointer = new System.Windows.Forms.Label();
-            this.textBox_defaultPointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_defaultSpriteset = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_secondEvent = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_secondPointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_secondSpriteset = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_firstEvent = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_firstPointer = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_firstSpriteset = new mage.Theming.CustomControls.FlatTextBox();
-            this.groupBox_misc = new System.Windows.Forms.GroupBox();
-            this.label_music = new System.Windows.Forms.Label();
-            this.textBox_music = new mage.Theming.CustomControls.FlatTextBox();
-            this.label_mapY = new System.Windows.Forms.Label();
-            this.label_mapX = new System.Windows.Forms.Label();
-            this.textBox_mapX = new mage.Theming.CustomControls.FlatTextBox();
-            this.textBox_mapY = new mage.Theming.CustomControls.FlatTextBox();
-            this.button_apply = new System.Windows.Forms.Button();
-            this.button_close = new System.Windows.Forms.Button();
-            this.label_offset = new System.Windows.Forms.Label();
-            this.textBox_offsetVal = new mage.Theming.CustomControls.FlatTextBox();
-            this.label_room = new System.Windows.Forms.Label();
-            this.label_area = new System.Windows.Forms.Label();
-            this.comboBox_room = new mage.Theming.CustomControls.FlatComboBox();
-            this.comboBox_area = new mage.Theming.CustomControls.FlatComboBox();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBox_BGdata.SuspendLayout();
-            this.groupBox_spritesetData.SuspendLayout();
-            this.groupBox_misc.SuspendLayout();
-            this.statusStrip.SuspendLayout();
-            this.SuspendLayout();
+            textBox_tileset = new Theming.CustomControls.FlatTextBox();
+            label_tileset = new System.Windows.Forms.Label();
+            textBox_BG0pointer = new Theming.CustomControls.FlatTextBox();
+            textBox_BG1pointer = new Theming.CustomControls.FlatTextBox();
+            textBox_BG2pointer = new Theming.CustomControls.FlatTextBox();
+            textBox_BG3pointer = new Theming.CustomControls.FlatTextBox();
+            textBox_CLPpointer = new Theming.CustomControls.FlatTextBox();
+            textBox_BG0prop = new Theming.CustomControls.FlatTextBox();
+            textBox_BG1prop = new Theming.CustomControls.FlatTextBox();
+            textBox_BG2prop = new Theming.CustomControls.FlatTextBox();
+            textBox_BG3prop = new Theming.CustomControls.FlatTextBox();
+            label_BG0 = new System.Windows.Forms.Label();
+            label_BG1 = new System.Windows.Forms.Label();
+            label_BG2 = new System.Windows.Forms.Label();
+            label_BG3 = new System.Windows.Forms.Label();
+            label_CLP = new System.Windows.Forms.Label();
+            label_BGpointer = new System.Windows.Forms.Label();
+            label_prop = new System.Windows.Forms.Label();
+            textBox_BG3scroll = new Theming.CustomControls.FlatTextBox();
+            textBox_transparency = new Theming.CustomControls.FlatTextBox();
+            label_BG3scroll = new System.Windows.Forms.Label();
+            label_transparency = new System.Windows.Forms.Label();
+            groupBox_BGdata = new System.Windows.Forms.GroupBox();
+            textBox_effectYpos = new Theming.CustomControls.FlatTextBox();
+            label1 = new System.Windows.Forms.Label();
+            label_effect = new System.Windows.Forms.Label();
+            textBox_effect = new Theming.CustomControls.FlatTextBox();
+            groupBox_spritesetData = new System.Windows.Forms.GroupBox();
+            label_second = new System.Windows.Forms.Label();
+            label_first = new System.Windows.Forms.Label();
+            label_default = new System.Windows.Forms.Label();
+            label_event = new System.Windows.Forms.Label();
+            label_spriteset = new System.Windows.Forms.Label();
+            label_spritesetPointer = new System.Windows.Forms.Label();
+            textBox_defaultPointer = new Theming.CustomControls.FlatTextBox();
+            textBox_defaultSpriteset = new Theming.CustomControls.FlatTextBox();
+            textBox_secondEvent = new Theming.CustomControls.FlatTextBox();
+            textBox_secondPointer = new Theming.CustomControls.FlatTextBox();
+            textBox_secondSpriteset = new Theming.CustomControls.FlatTextBox();
+            textBox_firstEvent = new Theming.CustomControls.FlatTextBox();
+            textBox_firstPointer = new Theming.CustomControls.FlatTextBox();
+            textBox_firstSpriteset = new Theming.CustomControls.FlatTextBox();
+            groupBox_misc = new System.Windows.Forms.GroupBox();
+            label_music = new System.Windows.Forms.Label();
+            textBox_music = new Theming.CustomControls.FlatTextBox();
+            label_mapY = new System.Windows.Forms.Label();
+            label_mapX = new System.Windows.Forms.Label();
+            textBox_mapX = new Theming.CustomControls.FlatTextBox();
+            textBox_mapY = new Theming.CustomControls.FlatTextBox();
+            button_apply = new System.Windows.Forms.Button();
+            button_close = new System.Windows.Forms.Button();
+            label_offset = new System.Windows.Forms.Label();
+            textBox_offsetVal = new Theming.CustomControls.FlatTextBox();
+            label_room = new System.Windows.Forms.Label();
+            label_area = new System.Windows.Forms.Label();
+            comboBox_room = new Theming.CustomControls.FlatComboBox();
+            comboBox_area = new Theming.CustomControls.FlatComboBox();
+            statusStrip = new System.Windows.Forms.StatusStrip();
+            statusLabel_changes = new System.Windows.Forms.ToolStripStatusLabel();
+            groupBox_BGdata.SuspendLayout();
+            groupBox_spritesetData.SuspendLayout();
+            groupBox_misc.SuspendLayout();
+            statusStrip.SuspendLayout();
+            SuspendLayout();
             // 
             // textBox_tileset
             // 
-            this.textBox_tileset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_tileset.Location = new System.Drawing.Point(87, 35);
-            this.textBox_tileset.Name = "textBox_tileset";
-            this.textBox_tileset.Size = new System.Drawing.Size(30, 20);
-            this.textBox_tileset.TabIndex = 0;
-            this.textBox_tileset.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_tileset.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_tileset.Location = new System.Drawing.Point(102, 40);
+            textBox_tileset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_tileset.Multiline = false;
+            textBox_tileset.Name = "textBox_tileset";
+            textBox_tileset.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_tileset.ReadOnly = false;
+            textBox_tileset.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_tileset.SelectionStart = 0;
+            textBox_tileset.Size = new System.Drawing.Size(35, 23);
+            textBox_tileset.TabIndex = 0;
+            textBox_tileset.WordWrap = true;
+            textBox_tileset.TextChanged += textBox_TextChanged;
             // 
             // label_tileset
             // 
-            this.label_tileset.AutoSize = true;
-            this.label_tileset.Location = new System.Drawing.Point(6, 38);
-            this.label_tileset.Name = "label_tileset";
-            this.label_tileset.Size = new System.Drawing.Size(41, 13);
-            this.label_tileset.TabIndex = 0;
-            this.label_tileset.Text = "Tileset:";
+            label_tileset.AutoSize = true;
+            label_tileset.Location = new System.Drawing.Point(7, 44);
+            label_tileset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_tileset.Name = "label_tileset";
+            label_tileset.Size = new System.Drawing.Size(43, 15);
+            label_tileset.TabIndex = 0;
+            label_tileset.Text = "Tileset:";
             // 
             // textBox_BG0pointer
             // 
-            this.textBox_BG0pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG0pointer.Location = new System.Drawing.Point(193, 35);
-            this.textBox_BG0pointer.Name = "textBox_BG0pointer";
-            this.textBox_BG0pointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_BG0pointer.TabIndex = 5;
-            this.textBox_BG0pointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG0pointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG0pointer.Location = new System.Drawing.Point(225, 40);
+            textBox_BG0pointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG0pointer.Multiline = false;
+            textBox_BG0pointer.Name = "textBox_BG0pointer";
+            textBox_BG0pointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG0pointer.ReadOnly = false;
+            textBox_BG0pointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG0pointer.SelectionStart = 0;
+            textBox_BG0pointer.Size = new System.Drawing.Size(76, 23);
+            textBox_BG0pointer.TabIndex = 5;
+            textBox_BG0pointer.WordWrap = true;
+            textBox_BG0pointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_BG1pointer
             // 
-            this.textBox_BG1pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG1pointer.Location = new System.Drawing.Point(193, 61);
-            this.textBox_BG1pointer.Name = "textBox_BG1pointer";
-            this.textBox_BG1pointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_BG1pointer.TabIndex = 7;
-            this.textBox_BG1pointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG1pointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG1pointer.Location = new System.Drawing.Point(225, 70);
+            textBox_BG1pointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG1pointer.Multiline = false;
+            textBox_BG1pointer.Name = "textBox_BG1pointer";
+            textBox_BG1pointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG1pointer.ReadOnly = false;
+            textBox_BG1pointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG1pointer.SelectionStart = 0;
+            textBox_BG1pointer.Size = new System.Drawing.Size(76, 23);
+            textBox_BG1pointer.TabIndex = 7;
+            textBox_BG1pointer.WordWrap = true;
+            textBox_BG1pointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_BG2pointer
             // 
-            this.textBox_BG2pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG2pointer.Location = new System.Drawing.Point(193, 87);
-            this.textBox_BG2pointer.Name = "textBox_BG2pointer";
-            this.textBox_BG2pointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_BG2pointer.TabIndex = 9;
-            this.textBox_BG2pointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG2pointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG2pointer.Location = new System.Drawing.Point(225, 100);
+            textBox_BG2pointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG2pointer.Multiline = false;
+            textBox_BG2pointer.Name = "textBox_BG2pointer";
+            textBox_BG2pointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG2pointer.ReadOnly = false;
+            textBox_BG2pointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG2pointer.SelectionStart = 0;
+            textBox_BG2pointer.Size = new System.Drawing.Size(76, 23);
+            textBox_BG2pointer.TabIndex = 9;
+            textBox_BG2pointer.WordWrap = true;
+            textBox_BG2pointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_BG3pointer
             // 
-            this.textBox_BG3pointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG3pointer.Location = new System.Drawing.Point(193, 113);
-            this.textBox_BG3pointer.Name = "textBox_BG3pointer";
-            this.textBox_BG3pointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_BG3pointer.TabIndex = 11;
-            this.textBox_BG3pointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG3pointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG3pointer.Location = new System.Drawing.Point(225, 130);
+            textBox_BG3pointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG3pointer.Multiline = false;
+            textBox_BG3pointer.Name = "textBox_BG3pointer";
+            textBox_BG3pointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG3pointer.ReadOnly = false;
+            textBox_BG3pointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG3pointer.SelectionStart = 0;
+            textBox_BG3pointer.Size = new System.Drawing.Size(76, 23);
+            textBox_BG3pointer.TabIndex = 11;
+            textBox_BG3pointer.WordWrap = true;
+            textBox_BG3pointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_CLPpointer
             // 
-            this.textBox_CLPpointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_CLPpointer.Location = new System.Drawing.Point(193, 139);
-            this.textBox_CLPpointer.Name = "textBox_CLPpointer";
-            this.textBox_CLPpointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_CLPpointer.TabIndex = 13;
-            this.textBox_CLPpointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_CLPpointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_CLPpointer.Location = new System.Drawing.Point(225, 160);
+            textBox_CLPpointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_CLPpointer.Multiline = false;
+            textBox_CLPpointer.Name = "textBox_CLPpointer";
+            textBox_CLPpointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_CLPpointer.ReadOnly = false;
+            textBox_CLPpointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_CLPpointer.SelectionStart = 0;
+            textBox_CLPpointer.Size = new System.Drawing.Size(76, 23);
+            textBox_CLPpointer.TabIndex = 13;
+            textBox_CLPpointer.WordWrap = true;
+            textBox_CLPpointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_BG0prop
             // 
-            this.textBox_BG0prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG0prop.Location = new System.Drawing.Point(264, 35);
-            this.textBox_BG0prop.Name = "textBox_BG0prop";
-            this.textBox_BG0prop.Size = new System.Drawing.Size(30, 20);
-            this.textBox_BG0prop.TabIndex = 6;
-            this.textBox_BG0prop.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG0prop.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG0prop.Location = new System.Drawing.Point(308, 40);
+            textBox_BG0prop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG0prop.Multiline = false;
+            textBox_BG0prop.Name = "textBox_BG0prop";
+            textBox_BG0prop.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG0prop.ReadOnly = false;
+            textBox_BG0prop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG0prop.SelectionStart = 0;
+            textBox_BG0prop.Size = new System.Drawing.Size(35, 23);
+            textBox_BG0prop.TabIndex = 6;
+            textBox_BG0prop.WordWrap = true;
+            textBox_BG0prop.TextChanged += textBox_TextChanged;
             // 
             // textBox_BG1prop
             // 
-            this.textBox_BG1prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG1prop.Location = new System.Drawing.Point(264, 61);
-            this.textBox_BG1prop.Name = "textBox_BG1prop";
-            this.textBox_BG1prop.Size = new System.Drawing.Size(30, 20);
-            this.textBox_BG1prop.TabIndex = 8;
-            this.textBox_BG1prop.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG1prop.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG1prop.Location = new System.Drawing.Point(308, 70);
+            textBox_BG1prop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG1prop.Multiline = false;
+            textBox_BG1prop.Name = "textBox_BG1prop";
+            textBox_BG1prop.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG1prop.ReadOnly = false;
+            textBox_BG1prop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG1prop.SelectionStart = 0;
+            textBox_BG1prop.Size = new System.Drawing.Size(35, 23);
+            textBox_BG1prop.TabIndex = 8;
+            textBox_BG1prop.WordWrap = true;
+            textBox_BG1prop.TextChanged += textBox_TextChanged;
             // 
             // textBox_BG2prop
             // 
-            this.textBox_BG2prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG2prop.Location = new System.Drawing.Point(264, 87);
-            this.textBox_BG2prop.Name = "textBox_BG2prop";
-            this.textBox_BG2prop.Size = new System.Drawing.Size(30, 20);
-            this.textBox_BG2prop.TabIndex = 10;
-            this.textBox_BG2prop.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG2prop.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG2prop.Location = new System.Drawing.Point(308, 100);
+            textBox_BG2prop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG2prop.Multiline = false;
+            textBox_BG2prop.Name = "textBox_BG2prop";
+            textBox_BG2prop.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG2prop.ReadOnly = false;
+            textBox_BG2prop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG2prop.SelectionStart = 0;
+            textBox_BG2prop.Size = new System.Drawing.Size(35, 23);
+            textBox_BG2prop.TabIndex = 10;
+            textBox_BG2prop.WordWrap = true;
+            textBox_BG2prop.TextChanged += textBox_TextChanged;
             // 
             // textBox_BG3prop
             // 
-            this.textBox_BG3prop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG3prop.Location = new System.Drawing.Point(264, 113);
-            this.textBox_BG3prop.Name = "textBox_BG3prop";
-            this.textBox_BG3prop.Size = new System.Drawing.Size(30, 20);
-            this.textBox_BG3prop.TabIndex = 12;
-            this.textBox_BG3prop.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG3prop.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG3prop.Location = new System.Drawing.Point(308, 130);
+            textBox_BG3prop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG3prop.Multiline = false;
+            textBox_BG3prop.Name = "textBox_BG3prop";
+            textBox_BG3prop.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG3prop.ReadOnly = false;
+            textBox_BG3prop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG3prop.SelectionStart = 0;
+            textBox_BG3prop.Size = new System.Drawing.Size(35, 23);
+            textBox_BG3prop.TabIndex = 12;
+            textBox_BG3prop.WordWrap = true;
+            textBox_BG3prop.TextChanged += textBox_TextChanged;
             // 
             // label_BG0
             // 
-            this.label_BG0.AutoSize = true;
-            this.label_BG0.Location = new System.Drawing.Point(153, 38);
-            this.label_BG0.Name = "label_BG0";
-            this.label_BG0.Size = new System.Drawing.Size(34, 13);
-            this.label_BG0.TabIndex = 0;
-            this.label_BG0.Text = "BG 0:";
+            label_BG0.AutoSize = true;
+            label_BG0.Location = new System.Drawing.Point(178, 44);
+            label_BG0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_BG0.Name = "label_BG0";
+            label_BG0.Size = new System.Drawing.Size(34, 15);
+            label_BG0.TabIndex = 0;
+            label_BG0.Text = "BG 0:";
             // 
             // label_BG1
             // 
-            this.label_BG1.AutoSize = true;
-            this.label_BG1.Location = new System.Drawing.Point(153, 64);
-            this.label_BG1.Name = "label_BG1";
-            this.label_BG1.Size = new System.Drawing.Size(34, 13);
-            this.label_BG1.TabIndex = 0;
-            this.label_BG1.Text = "BG 1:";
+            label_BG1.AutoSize = true;
+            label_BG1.Location = new System.Drawing.Point(178, 74);
+            label_BG1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_BG1.Name = "label_BG1";
+            label_BG1.Size = new System.Drawing.Size(34, 15);
+            label_BG1.TabIndex = 0;
+            label_BG1.Text = "BG 1:";
             // 
             // label_BG2
             // 
-            this.label_BG2.AutoSize = true;
-            this.label_BG2.Location = new System.Drawing.Point(153, 90);
-            this.label_BG2.Name = "label_BG2";
-            this.label_BG2.Size = new System.Drawing.Size(34, 13);
-            this.label_BG2.TabIndex = 0;
-            this.label_BG2.Text = "BG 2:";
+            label_BG2.AutoSize = true;
+            label_BG2.Location = new System.Drawing.Point(178, 104);
+            label_BG2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_BG2.Name = "label_BG2";
+            label_BG2.Size = new System.Drawing.Size(34, 15);
+            label_BG2.TabIndex = 0;
+            label_BG2.Text = "BG 2:";
             // 
             // label_BG3
             // 
-            this.label_BG3.AutoSize = true;
-            this.label_BG3.Location = new System.Drawing.Point(153, 116);
-            this.label_BG3.Name = "label_BG3";
-            this.label_BG3.Size = new System.Drawing.Size(34, 13);
-            this.label_BG3.TabIndex = 0;
-            this.label_BG3.Text = "BG 3:";
+            label_BG3.AutoSize = true;
+            label_BG3.Location = new System.Drawing.Point(178, 134);
+            label_BG3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_BG3.Name = "label_BG3";
+            label_BG3.Size = new System.Drawing.Size(34, 15);
+            label_BG3.TabIndex = 0;
+            label_BG3.Text = "BG 3:";
             // 
             // label_CLP
             // 
-            this.label_CLP.AutoSize = true;
-            this.label_CLP.Location = new System.Drawing.Point(153, 142);
-            this.label_CLP.Name = "label_CLP";
-            this.label_CLP.Size = new System.Drawing.Size(27, 13);
-            this.label_CLP.TabIndex = 0;
-            this.label_CLP.Text = "Clip:";
+            label_CLP.AutoSize = true;
+            label_CLP.Location = new System.Drawing.Point(178, 164);
+            label_CLP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_CLP.Name = "label_CLP";
+            label_CLP.Size = new System.Drawing.Size(31, 15);
+            label_CLP.TabIndex = 0;
+            label_CLP.Text = "Clip:";
             // 
             // label_BGpointer
             // 
-            this.label_BGpointer.AutoSize = true;
-            this.label_BGpointer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BGpointer.Location = new System.Drawing.Point(193, 16);
-            this.label_BGpointer.Name = "label_BGpointer";
-            this.label_BGpointer.Size = new System.Drawing.Size(40, 13);
-            this.label_BGpointer.TabIndex = 0;
-            this.label_BGpointer.Text = "Pointer";
+            label_BGpointer.AutoSize = true;
+            label_BGpointer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            label_BGpointer.Location = new System.Drawing.Point(225, 18);
+            label_BGpointer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_BGpointer.Name = "label_BGpointer";
+            label_BGpointer.Size = new System.Drawing.Size(40, 13);
+            label_BGpointer.TabIndex = 0;
+            label_BGpointer.Text = "Pointer";
             // 
             // label_prop
             // 
-            this.label_prop.AutoSize = true;
-            this.label_prop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_prop.Location = new System.Drawing.Point(263, 16);
-            this.label_prop.Name = "label_prop";
-            this.label_prop.Size = new System.Drawing.Size(29, 13);
-            this.label_prop.TabIndex = 0;
-            this.label_prop.Text = "Prop";
+            label_prop.AutoSize = true;
+            label_prop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            label_prop.Location = new System.Drawing.Point(307, 18);
+            label_prop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_prop.Name = "label_prop";
+            label_prop.Size = new System.Drawing.Size(29, 13);
+            label_prop.TabIndex = 0;
+            label_prop.Text = "Prop";
             // 
             // textBox_BG3scroll
             // 
-            this.textBox_BG3scroll.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_BG3scroll.Location = new System.Drawing.Point(87, 87);
-            this.textBox_BG3scroll.Name = "textBox_BG3scroll";
-            this.textBox_BG3scroll.Size = new System.Drawing.Size(30, 20);
-            this.textBox_BG3scroll.TabIndex = 2;
-            this.textBox_BG3scroll.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_BG3scroll.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_BG3scroll.Location = new System.Drawing.Point(102, 100);
+            textBox_BG3scroll.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_BG3scroll.Multiline = false;
+            textBox_BG3scroll.Name = "textBox_BG3scroll";
+            textBox_BG3scroll.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_BG3scroll.ReadOnly = false;
+            textBox_BG3scroll.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_BG3scroll.SelectionStart = 0;
+            textBox_BG3scroll.Size = new System.Drawing.Size(35, 23);
+            textBox_BG3scroll.TabIndex = 2;
+            textBox_BG3scroll.WordWrap = true;
+            textBox_BG3scroll.TextChanged += textBox_TextChanged;
             // 
             // textBox_transparency
             // 
-            this.textBox_transparency.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_transparency.Location = new System.Drawing.Point(87, 61);
-            this.textBox_transparency.Name = "textBox_transparency";
-            this.textBox_transparency.Size = new System.Drawing.Size(30, 20);
-            this.textBox_transparency.TabIndex = 1;
-            this.textBox_transparency.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_transparency.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_transparency.Location = new System.Drawing.Point(102, 70);
+            textBox_transparency.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_transparency.Multiline = false;
+            textBox_transparency.Name = "textBox_transparency";
+            textBox_transparency.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_transparency.ReadOnly = false;
+            textBox_transparency.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_transparency.SelectionStart = 0;
+            textBox_transparency.Size = new System.Drawing.Size(35, 23);
+            textBox_transparency.TabIndex = 1;
+            textBox_transparency.WordWrap = true;
+            textBox_transparency.TextChanged += textBox_TextChanged;
             // 
             // label_BG3scroll
             // 
-            this.label_BG3scroll.AutoSize = true;
-            this.label_BG3scroll.Location = new System.Drawing.Point(6, 90);
-            this.label_BG3scroll.Name = "label_BG3scroll";
-            this.label_BG3scroll.Size = new System.Drawing.Size(58, 13);
-            this.label_BG3scroll.TabIndex = 0;
-            this.label_BG3scroll.Text = "BG3 scroll:";
+            label_BG3scroll.AutoSize = true;
+            label_BG3scroll.Location = new System.Drawing.Point(7, 104);
+            label_BG3scroll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_BG3scroll.Name = "label_BG3scroll";
+            label_BG3scroll.Size = new System.Drawing.Size(62, 15);
+            label_BG3scroll.TabIndex = 0;
+            label_BG3scroll.Text = "BG3 scroll:";
             // 
             // label_transparency
             // 
-            this.label_transparency.AutoSize = true;
-            this.label_transparency.Location = new System.Drawing.Point(6, 64);
-            this.label_transparency.Name = "label_transparency";
-            this.label_transparency.Size = new System.Drawing.Size(75, 13);
-            this.label_transparency.TabIndex = 0;
-            this.label_transparency.Text = "Transparency:";
+            label_transparency.AutoSize = true;
+            label_transparency.Location = new System.Drawing.Point(7, 74);
+            label_transparency.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_transparency.Name = "label_transparency";
+            label_transparency.Size = new System.Drawing.Size(79, 15);
+            label_transparency.TabIndex = 0;
+            label_transparency.Text = "Transparency:";
             // 
             // groupBox_BGdata
             // 
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG0pointer);
-            this.groupBox_BGdata.Controls.Add(this.label_transparency);
-            this.groupBox_BGdata.Controls.Add(this.textBox_effectYpos);
-            this.groupBox_BGdata.Controls.Add(this.label1);
-            this.groupBox_BGdata.Controls.Add(this.label_BG3scroll);
-            this.groupBox_BGdata.Controls.Add(this.label_effect);
-            this.groupBox_BGdata.Controls.Add(this.textBox_effect);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG1pointer);
-            this.groupBox_BGdata.Controls.Add(this.textBox_transparency);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG3prop);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG3scroll);
-            this.groupBox_BGdata.Controls.Add(this.label_BG3);
-            this.groupBox_BGdata.Controls.Add(this.label_tileset);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG2pointer);
-            this.groupBox_BGdata.Controls.Add(this.textBox_tileset);
-            this.groupBox_BGdata.Controls.Add(this.label_BG2);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG2prop);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG3pointer);
-            this.groupBox_BGdata.Controls.Add(this.label_BG0);
-            this.groupBox_BGdata.Controls.Add(this.label_CLP);
-            this.groupBox_BGdata.Controls.Add(this.textBox_CLPpointer);
-            this.groupBox_BGdata.Controls.Add(this.label_BG1);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG1prop);
-            this.groupBox_BGdata.Controls.Add(this.label_prop);
-            this.groupBox_BGdata.Controls.Add(this.label_BGpointer);
-            this.groupBox_BGdata.Controls.Add(this.textBox_BG0prop);
-            this.groupBox_BGdata.Location = new System.Drawing.Point(12, 12);
-            this.groupBox_BGdata.Name = "groupBox_BGdata";
-            this.groupBox_BGdata.Size = new System.Drawing.Size(303, 168);
-            this.groupBox_BGdata.TabIndex = 0;
-            this.groupBox_BGdata.TabStop = false;
-            this.groupBox_BGdata.Text = "Background Data";
+            groupBox_BGdata.Controls.Add(textBox_BG0pointer);
+            groupBox_BGdata.Controls.Add(label_transparency);
+            groupBox_BGdata.Controls.Add(textBox_effectYpos);
+            groupBox_BGdata.Controls.Add(label1);
+            groupBox_BGdata.Controls.Add(label_BG3scroll);
+            groupBox_BGdata.Controls.Add(label_effect);
+            groupBox_BGdata.Controls.Add(textBox_effect);
+            groupBox_BGdata.Controls.Add(textBox_BG1pointer);
+            groupBox_BGdata.Controls.Add(textBox_transparency);
+            groupBox_BGdata.Controls.Add(textBox_BG3prop);
+            groupBox_BGdata.Controls.Add(textBox_BG3scroll);
+            groupBox_BGdata.Controls.Add(label_BG3);
+            groupBox_BGdata.Controls.Add(label_tileset);
+            groupBox_BGdata.Controls.Add(textBox_BG2pointer);
+            groupBox_BGdata.Controls.Add(textBox_tileset);
+            groupBox_BGdata.Controls.Add(label_BG2);
+            groupBox_BGdata.Controls.Add(textBox_BG2prop);
+            groupBox_BGdata.Controls.Add(textBox_BG3pointer);
+            groupBox_BGdata.Controls.Add(label_BG0);
+            groupBox_BGdata.Controls.Add(label_CLP);
+            groupBox_BGdata.Controls.Add(textBox_CLPpointer);
+            groupBox_BGdata.Controls.Add(label_BG1);
+            groupBox_BGdata.Controls.Add(textBox_BG1prop);
+            groupBox_BGdata.Controls.Add(label_prop);
+            groupBox_BGdata.Controls.Add(label_BGpointer);
+            groupBox_BGdata.Controls.Add(textBox_BG0prop);
+            groupBox_BGdata.Location = new System.Drawing.Point(14, 14);
+            groupBox_BGdata.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_BGdata.Name = "groupBox_BGdata";
+            groupBox_BGdata.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_BGdata.Size = new System.Drawing.Size(354, 194);
+            groupBox_BGdata.TabIndex = 0;
+            groupBox_BGdata.TabStop = false;
+            groupBox_BGdata.Text = "Background Data";
             // 
             // textBox_effectYpos
             // 
-            this.textBox_effectYpos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_effectYpos.Location = new System.Drawing.Point(87, 139);
-            this.textBox_effectYpos.Name = "textBox_effectYpos";
-            this.textBox_effectYpos.Size = new System.Drawing.Size(30, 20);
-            this.textBox_effectYpos.TabIndex = 4;
-            this.textBox_effectYpos.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_effectYpos.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_effectYpos.Location = new System.Drawing.Point(102, 160);
+            textBox_effectYpos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_effectYpos.Multiline = false;
+            textBox_effectYpos.Name = "textBox_effectYpos";
+            textBox_effectYpos.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_effectYpos.ReadOnly = false;
+            textBox_effectYpos.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_effectYpos.SelectionStart = 0;
+            textBox_effectYpos.Size = new System.Drawing.Size(35, 23);
+            textBox_effectYpos.TabIndex = 4;
+            textBox_effectYpos.WordWrap = true;
+            textBox_effectYpos.TextChanged += textBox_TextChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Effect Y pos:";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(7, 164);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(72, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Effect Y pos:";
             // 
             // label_effect
             // 
-            this.label_effect.AutoSize = true;
-            this.label_effect.Location = new System.Drawing.Point(6, 116);
-            this.label_effect.Name = "label_effect";
-            this.label_effect.Size = new System.Drawing.Size(38, 13);
-            this.label_effect.TabIndex = 0;
-            this.label_effect.Text = "Effect:";
+            label_effect.AutoSize = true;
+            label_effect.Location = new System.Drawing.Point(7, 134);
+            label_effect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_effect.Name = "label_effect";
+            label_effect.Size = new System.Drawing.Size(40, 15);
+            label_effect.TabIndex = 0;
+            label_effect.Text = "Effect:";
             // 
             // textBox_effect
             // 
-            this.textBox_effect.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_effect.Location = new System.Drawing.Point(87, 113);
-            this.textBox_effect.Name = "textBox_effect";
-            this.textBox_effect.Size = new System.Drawing.Size(30, 20);
-            this.textBox_effect.TabIndex = 3;
-            this.textBox_effect.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_effect.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_effect.Location = new System.Drawing.Point(102, 130);
+            textBox_effect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_effect.Multiline = false;
+            textBox_effect.Name = "textBox_effect";
+            textBox_effect.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_effect.ReadOnly = false;
+            textBox_effect.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_effect.SelectionStart = 0;
+            textBox_effect.Size = new System.Drawing.Size(35, 23);
+            textBox_effect.TabIndex = 3;
+            textBox_effect.WordWrap = true;
+            textBox_effect.TextChanged += textBox_TextChanged;
             // 
             // groupBox_spritesetData
             // 
-            this.groupBox_spritesetData.Controls.Add(this.label_second);
-            this.groupBox_spritesetData.Controls.Add(this.label_first);
-            this.groupBox_spritesetData.Controls.Add(this.label_default);
-            this.groupBox_spritesetData.Controls.Add(this.label_event);
-            this.groupBox_spritesetData.Controls.Add(this.label_spriteset);
-            this.groupBox_spritesetData.Controls.Add(this.label_spritesetPointer);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_defaultPointer);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_defaultSpriteset);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_secondEvent);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_secondPointer);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_secondSpriteset);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_firstEvent);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_firstPointer);
-            this.groupBox_spritesetData.Controls.Add(this.textBox_firstSpriteset);
-            this.groupBox_spritesetData.Location = new System.Drawing.Point(12, 186);
-            this.groupBox_spritesetData.Name = "groupBox_spritesetData";
-            this.groupBox_spritesetData.Size = new System.Drawing.Size(205, 118);
-            this.groupBox_spritesetData.TabIndex = 1;
-            this.groupBox_spritesetData.TabStop = false;
-            this.groupBox_spritesetData.Text = "Spriteset Data";
+            groupBox_spritesetData.Controls.Add(label_second);
+            groupBox_spritesetData.Controls.Add(label_first);
+            groupBox_spritesetData.Controls.Add(label_default);
+            groupBox_spritesetData.Controls.Add(label_event);
+            groupBox_spritesetData.Controls.Add(label_spriteset);
+            groupBox_spritesetData.Controls.Add(label_spritesetPointer);
+            groupBox_spritesetData.Controls.Add(textBox_defaultPointer);
+            groupBox_spritesetData.Controls.Add(textBox_defaultSpriteset);
+            groupBox_spritesetData.Controls.Add(textBox_secondEvent);
+            groupBox_spritesetData.Controls.Add(textBox_secondPointer);
+            groupBox_spritesetData.Controls.Add(textBox_secondSpriteset);
+            groupBox_spritesetData.Controls.Add(textBox_firstEvent);
+            groupBox_spritesetData.Controls.Add(textBox_firstPointer);
+            groupBox_spritesetData.Controls.Add(textBox_firstSpriteset);
+            groupBox_spritesetData.Location = new System.Drawing.Point(14, 215);
+            groupBox_spritesetData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_spritesetData.Name = "groupBox_spritesetData";
+            groupBox_spritesetData.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_spritesetData.Size = new System.Drawing.Size(239, 136);
+            groupBox_spritesetData.TabIndex = 1;
+            groupBox_spritesetData.TabStop = false;
+            groupBox_spritesetData.Text = "Spriteset Data";
             // 
             // label_second
             // 
-            this.label_second.AutoSize = true;
-            this.label_second.Location = new System.Drawing.Point(6, 90);
-            this.label_second.Name = "label_second";
-            this.label_second.Size = new System.Drawing.Size(47, 13);
-            this.label_second.TabIndex = 0;
-            this.label_second.Text = "Second:";
+            label_second.AutoSize = true;
+            label_second.Location = new System.Drawing.Point(7, 104);
+            label_second.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_second.Name = "label_second";
+            label_second.Size = new System.Drawing.Size(49, 15);
+            label_second.TabIndex = 0;
+            label_second.Text = "Second:";
             // 
             // label_first
             // 
-            this.label_first.AutoSize = true;
-            this.label_first.Location = new System.Drawing.Point(6, 64);
-            this.label_first.Name = "label_first";
-            this.label_first.Size = new System.Drawing.Size(29, 13);
-            this.label_first.TabIndex = 0;
-            this.label_first.Text = "First:";
+            label_first.AutoSize = true;
+            label_first.Location = new System.Drawing.Point(7, 74);
+            label_first.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_first.Name = "label_first";
+            label_first.Size = new System.Drawing.Size(32, 15);
+            label_first.TabIndex = 0;
+            label_first.Text = "First:";
             // 
             // label_default
             // 
-            this.label_default.AutoSize = true;
-            this.label_default.Location = new System.Drawing.Point(6, 38);
-            this.label_default.Name = "label_default";
-            this.label_default.Size = new System.Drawing.Size(44, 13);
-            this.label_default.TabIndex = 0;
-            this.label_default.Text = "Default:";
+            label_default.AutoSize = true;
+            label_default.Location = new System.Drawing.Point(7, 44);
+            label_default.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_default.Name = "label_default";
+            label_default.Size = new System.Drawing.Size(48, 15);
+            label_default.TabIndex = 0;
+            label_default.Text = "Default:";
             // 
             // label_event
             // 
-            this.label_event.AutoSize = true;
-            this.label_event.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_event.Location = new System.Drawing.Point(165, 16);
-            this.label_event.Name = "label_event";
-            this.label_event.Size = new System.Drawing.Size(35, 13);
-            this.label_event.TabIndex = 0;
-            this.label_event.Text = "Event";
+            label_event.AutoSize = true;
+            label_event.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            label_event.Location = new System.Drawing.Point(192, 18);
+            label_event.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_event.Name = "label_event";
+            label_event.Size = new System.Drawing.Size(35, 13);
+            label_event.TabIndex = 0;
+            label_event.Text = "Event";
             // 
             // label_spriteset
             // 
-            this.label_spriteset.AutoSize = true;
-            this.label_spriteset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_spriteset.Location = new System.Drawing.Point(130, 16);
-            this.label_spriteset.Name = "label_spriteset";
-            this.label_spriteset.Size = new System.Drawing.Size(23, 13);
-            this.label_spriteset.TabIndex = 0;
-            this.label_spriteset.Text = "Set";
+            label_spriteset.AutoSize = true;
+            label_spriteset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            label_spriteset.Location = new System.Drawing.Point(152, 18);
+            label_spriteset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_spriteset.Name = "label_spriteset";
+            label_spriteset.Size = new System.Drawing.Size(23, 13);
+            label_spriteset.TabIndex = 0;
+            label_spriteset.Text = "Set";
             // 
             // label_spritesetPointer
             // 
-            this.label_spritesetPointer.AutoSize = true;
-            this.label_spritesetPointer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_spritesetPointer.Location = new System.Drawing.Point(59, 16);
-            this.label_spritesetPointer.Name = "label_spritesetPointer";
-            this.label_spritesetPointer.Size = new System.Drawing.Size(40, 13);
-            this.label_spritesetPointer.TabIndex = 0;
-            this.label_spritesetPointer.Text = "Pointer";
+            label_spritesetPointer.AutoSize = true;
+            label_spritesetPointer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            label_spritesetPointer.Location = new System.Drawing.Point(69, 18);
+            label_spritesetPointer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_spritesetPointer.Name = "label_spritesetPointer";
+            label_spritesetPointer.Size = new System.Drawing.Size(40, 13);
+            label_spritesetPointer.TabIndex = 0;
+            label_spritesetPointer.Text = "Pointer";
             // 
             // textBox_defaultPointer
             // 
-            this.textBox_defaultPointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_defaultPointer.Location = new System.Drawing.Point(59, 35);
-            this.textBox_defaultPointer.Name = "textBox_defaultPointer";
-            this.textBox_defaultPointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_defaultPointer.TabIndex = 0;
-            this.textBox_defaultPointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_defaultPointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_defaultPointer.Location = new System.Drawing.Point(69, 40);
+            textBox_defaultPointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_defaultPointer.Multiline = false;
+            textBox_defaultPointer.Name = "textBox_defaultPointer";
+            textBox_defaultPointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_defaultPointer.ReadOnly = false;
+            textBox_defaultPointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_defaultPointer.SelectionStart = 0;
+            textBox_defaultPointer.Size = new System.Drawing.Size(76, 23);
+            textBox_defaultPointer.TabIndex = 0;
+            textBox_defaultPointer.WordWrap = true;
+            textBox_defaultPointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_defaultSpriteset
             // 
-            this.textBox_defaultSpriteset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_defaultSpriteset.Location = new System.Drawing.Point(130, 35);
-            this.textBox_defaultSpriteset.Name = "textBox_defaultSpriteset";
-            this.textBox_defaultSpriteset.Size = new System.Drawing.Size(30, 20);
-            this.textBox_defaultSpriteset.TabIndex = 1;
-            this.textBox_defaultSpriteset.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_defaultSpriteset.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_defaultSpriteset.Location = new System.Drawing.Point(152, 40);
+            textBox_defaultSpriteset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_defaultSpriteset.Multiline = false;
+            textBox_defaultSpriteset.Name = "textBox_defaultSpriteset";
+            textBox_defaultSpriteset.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_defaultSpriteset.ReadOnly = false;
+            textBox_defaultSpriteset.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_defaultSpriteset.SelectionStart = 0;
+            textBox_defaultSpriteset.Size = new System.Drawing.Size(35, 23);
+            textBox_defaultSpriteset.TabIndex = 1;
+            textBox_defaultSpriteset.WordWrap = true;
+            textBox_defaultSpriteset.TextChanged += textBox_TextChanged;
             // 
             // textBox_secondEvent
             // 
-            this.textBox_secondEvent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_secondEvent.Location = new System.Drawing.Point(166, 87);
-            this.textBox_secondEvent.Name = "textBox_secondEvent";
-            this.textBox_secondEvent.Size = new System.Drawing.Size(30, 20);
-            this.textBox_secondEvent.TabIndex = 7;
-            this.textBox_secondEvent.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_secondEvent.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_secondEvent.Location = new System.Drawing.Point(194, 100);
+            textBox_secondEvent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_secondEvent.Multiline = false;
+            textBox_secondEvent.Name = "textBox_secondEvent";
+            textBox_secondEvent.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_secondEvent.ReadOnly = false;
+            textBox_secondEvent.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_secondEvent.SelectionStart = 0;
+            textBox_secondEvent.Size = new System.Drawing.Size(35, 23);
+            textBox_secondEvent.TabIndex = 7;
+            textBox_secondEvent.WordWrap = true;
+            textBox_secondEvent.TextChanged += textBox_TextChanged;
             // 
             // textBox_secondPointer
             // 
-            this.textBox_secondPointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_secondPointer.Location = new System.Drawing.Point(59, 87);
-            this.textBox_secondPointer.Name = "textBox_secondPointer";
-            this.textBox_secondPointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_secondPointer.TabIndex = 5;
-            this.textBox_secondPointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_secondPointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_secondPointer.Location = new System.Drawing.Point(69, 100);
+            textBox_secondPointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_secondPointer.Multiline = false;
+            textBox_secondPointer.Name = "textBox_secondPointer";
+            textBox_secondPointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_secondPointer.ReadOnly = false;
+            textBox_secondPointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_secondPointer.SelectionStart = 0;
+            textBox_secondPointer.Size = new System.Drawing.Size(76, 23);
+            textBox_secondPointer.TabIndex = 5;
+            textBox_secondPointer.WordWrap = true;
+            textBox_secondPointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_secondSpriteset
             // 
-            this.textBox_secondSpriteset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_secondSpriteset.Location = new System.Drawing.Point(130, 87);
-            this.textBox_secondSpriteset.Name = "textBox_secondSpriteset";
-            this.textBox_secondSpriteset.Size = new System.Drawing.Size(30, 20);
-            this.textBox_secondSpriteset.TabIndex = 6;
-            this.textBox_secondSpriteset.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_secondSpriteset.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_secondSpriteset.Location = new System.Drawing.Point(152, 100);
+            textBox_secondSpriteset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_secondSpriteset.Multiline = false;
+            textBox_secondSpriteset.Name = "textBox_secondSpriteset";
+            textBox_secondSpriteset.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_secondSpriteset.ReadOnly = false;
+            textBox_secondSpriteset.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_secondSpriteset.SelectionStart = 0;
+            textBox_secondSpriteset.Size = new System.Drawing.Size(35, 23);
+            textBox_secondSpriteset.TabIndex = 6;
+            textBox_secondSpriteset.WordWrap = true;
+            textBox_secondSpriteset.TextChanged += textBox_TextChanged;
             // 
             // textBox_firstEvent
             // 
-            this.textBox_firstEvent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_firstEvent.Location = new System.Drawing.Point(166, 61);
-            this.textBox_firstEvent.Name = "textBox_firstEvent";
-            this.textBox_firstEvent.Size = new System.Drawing.Size(30, 20);
-            this.textBox_firstEvent.TabIndex = 4;
-            this.textBox_firstEvent.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_firstEvent.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_firstEvent.Location = new System.Drawing.Point(194, 70);
+            textBox_firstEvent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_firstEvent.Multiline = false;
+            textBox_firstEvent.Name = "textBox_firstEvent";
+            textBox_firstEvent.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_firstEvent.ReadOnly = false;
+            textBox_firstEvent.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_firstEvent.SelectionStart = 0;
+            textBox_firstEvent.Size = new System.Drawing.Size(35, 23);
+            textBox_firstEvent.TabIndex = 4;
+            textBox_firstEvent.WordWrap = true;
+            textBox_firstEvent.TextChanged += textBox_TextChanged;
             // 
             // textBox_firstPointer
             // 
-            this.textBox_firstPointer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_firstPointer.Location = new System.Drawing.Point(59, 61);
-            this.textBox_firstPointer.Name = "textBox_firstPointer";
-            this.textBox_firstPointer.Size = new System.Drawing.Size(65, 20);
-            this.textBox_firstPointer.TabIndex = 2;
-            this.textBox_firstPointer.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_firstPointer.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_firstPointer.Location = new System.Drawing.Point(69, 70);
+            textBox_firstPointer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_firstPointer.Multiline = false;
+            textBox_firstPointer.Name = "textBox_firstPointer";
+            textBox_firstPointer.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_firstPointer.ReadOnly = false;
+            textBox_firstPointer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_firstPointer.SelectionStart = 0;
+            textBox_firstPointer.Size = new System.Drawing.Size(76, 23);
+            textBox_firstPointer.TabIndex = 2;
+            textBox_firstPointer.WordWrap = true;
+            textBox_firstPointer.TextChanged += textBox_TextChanged;
             // 
             // textBox_firstSpriteset
             // 
-            this.textBox_firstSpriteset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_firstSpriteset.Location = new System.Drawing.Point(130, 61);
-            this.textBox_firstSpriteset.Name = "textBox_firstSpriteset";
-            this.textBox_firstSpriteset.Size = new System.Drawing.Size(30, 20);
-            this.textBox_firstSpriteset.TabIndex = 3;
-            this.textBox_firstSpriteset.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_firstSpriteset.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_firstSpriteset.Location = new System.Drawing.Point(152, 70);
+            textBox_firstSpriteset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_firstSpriteset.Multiline = false;
+            textBox_firstSpriteset.Name = "textBox_firstSpriteset";
+            textBox_firstSpriteset.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_firstSpriteset.ReadOnly = false;
+            textBox_firstSpriteset.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_firstSpriteset.SelectionStart = 0;
+            textBox_firstSpriteset.Size = new System.Drawing.Size(35, 23);
+            textBox_firstSpriteset.TabIndex = 3;
+            textBox_firstSpriteset.WordWrap = true;
+            textBox_firstSpriteset.TextChanged += textBox_TextChanged;
             // 
             // groupBox_misc
             // 
-            this.groupBox_misc.Controls.Add(this.label_music);
-            this.groupBox_misc.Controls.Add(this.textBox_music);
-            this.groupBox_misc.Controls.Add(this.label_mapY);
-            this.groupBox_misc.Controls.Add(this.label_mapX);
-            this.groupBox_misc.Controls.Add(this.textBox_mapX);
-            this.groupBox_misc.Controls.Add(this.textBox_mapY);
-            this.groupBox_misc.Location = new System.Drawing.Point(223, 186);
-            this.groupBox_misc.Name = "groupBox_misc";
-            this.groupBox_misc.Size = new System.Drawing.Size(92, 118);
-            this.groupBox_misc.TabIndex = 2;
-            this.groupBox_misc.TabStop = false;
-            this.groupBox_misc.Text = "Miscellaneous";
+            groupBox_misc.Controls.Add(label_music);
+            groupBox_misc.Controls.Add(textBox_music);
+            groupBox_misc.Controls.Add(label_mapY);
+            groupBox_misc.Controls.Add(label_mapX);
+            groupBox_misc.Controls.Add(textBox_mapX);
+            groupBox_misc.Controls.Add(textBox_mapY);
+            groupBox_misc.Location = new System.Drawing.Point(260, 215);
+            groupBox_misc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_misc.Name = "groupBox_misc";
+            groupBox_misc.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox_misc.Size = new System.Drawing.Size(107, 136);
+            groupBox_misc.TabIndex = 2;
+            groupBox_misc.TabStop = false;
+            groupBox_misc.Text = "Miscellaneous";
             // 
             // label_music
             // 
-            this.label_music.AutoSize = true;
-            this.label_music.Location = new System.Drawing.Point(6, 90);
-            this.label_music.Name = "label_music";
-            this.label_music.Size = new System.Drawing.Size(38, 13);
-            this.label_music.TabIndex = 0;
-            this.label_music.Text = "Music:";
+            label_music.AutoSize = true;
+            label_music.Location = new System.Drawing.Point(7, 104);
+            label_music.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_music.Name = "label_music";
+            label_music.Size = new System.Drawing.Size(42, 15);
+            label_music.TabIndex = 0;
+            label_music.Text = "Music:";
             // 
             // textBox_music
             // 
-            this.textBox_music.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_music.Location = new System.Drawing.Point(53, 87);
-            this.textBox_music.Name = "textBox_music";
-            this.textBox_music.Size = new System.Drawing.Size(30, 20);
-            this.textBox_music.TabIndex = 2;
-            this.textBox_music.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_music.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_music.Location = new System.Drawing.Point(62, 100);
+            textBox_music.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_music.Multiline = false;
+            textBox_music.Name = "textBox_music";
+            textBox_music.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_music.ReadOnly = false;
+            textBox_music.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_music.SelectionStart = 0;
+            textBox_music.Size = new System.Drawing.Size(35, 23);
+            textBox_music.TabIndex = 2;
+            textBox_music.WordWrap = true;
+            textBox_music.TextChanged += textBox_TextChanged;
             // 
             // label_mapY
             // 
-            this.label_mapY.AutoSize = true;
-            this.label_mapY.Location = new System.Drawing.Point(6, 58);
-            this.label_mapY.Name = "label_mapY";
-            this.label_mapY.Size = new System.Drawing.Size(41, 13);
-            this.label_mapY.TabIndex = 0;
-            this.label_mapY.Text = "Map Y:";
+            label_mapY.AutoSize = true;
+            label_mapY.Location = new System.Drawing.Point(7, 67);
+            label_mapY.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_mapY.Name = "label_mapY";
+            label_mapY.Size = new System.Drawing.Size(44, 15);
+            label_mapY.TabIndex = 0;
+            label_mapY.Text = "Map Y:";
             // 
             // label_mapX
             // 
-            this.label_mapX.AutoSize = true;
-            this.label_mapX.Location = new System.Drawing.Point(6, 26);
-            this.label_mapX.Name = "label_mapX";
-            this.label_mapX.Size = new System.Drawing.Size(41, 13);
-            this.label_mapX.TabIndex = 0;
-            this.label_mapX.Text = "Map X:";
+            label_mapX.AutoSize = true;
+            label_mapX.Location = new System.Drawing.Point(7, 30);
+            label_mapX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_mapX.Name = "label_mapX";
+            label_mapX.Size = new System.Drawing.Size(44, 15);
+            label_mapX.TabIndex = 0;
+            label_mapX.Text = "Map X:";
             // 
             // textBox_mapX
             // 
-            this.textBox_mapX.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_mapX.Location = new System.Drawing.Point(53, 23);
-            this.textBox_mapX.Name = "textBox_mapX";
-            this.textBox_mapX.Size = new System.Drawing.Size(30, 20);
-            this.textBox_mapX.TabIndex = 0;
-            this.textBox_mapX.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_mapX.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_mapX.Location = new System.Drawing.Point(62, 27);
+            textBox_mapX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_mapX.Multiline = false;
+            textBox_mapX.Name = "textBox_mapX";
+            textBox_mapX.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_mapX.ReadOnly = false;
+            textBox_mapX.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_mapX.SelectionStart = 0;
+            textBox_mapX.Size = new System.Drawing.Size(35, 23);
+            textBox_mapX.TabIndex = 0;
+            textBox_mapX.WordWrap = true;
+            textBox_mapX.TextChanged += textBox_TextChanged;
             // 
             // textBox_mapY
             // 
-            this.textBox_mapY.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_mapY.Location = new System.Drawing.Point(53, 55);
-            this.textBox_mapY.Name = "textBox_mapY";
-            this.textBox_mapY.Size = new System.Drawing.Size(30, 20);
-            this.textBox_mapY.TabIndex = 1;
-            this.textBox_mapY.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            textBox_mapY.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_mapY.Location = new System.Drawing.Point(62, 63);
+            textBox_mapY.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_mapY.Multiline = false;
+            textBox_mapY.Name = "textBox_mapY";
+            textBox_mapY.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_mapY.ReadOnly = false;
+            textBox_mapY.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_mapY.SelectionStart = 0;
+            textBox_mapY.Size = new System.Drawing.Size(35, 23);
+            textBox_mapY.TabIndex = 1;
+            textBox_mapY.WordWrap = true;
+            textBox_mapY.TextChanged += textBox_TextChanged;
             // 
             // button_apply
             // 
-            this.button_apply.Enabled = false;
-            this.button_apply.Location = new System.Drawing.Point(159, 310);
-            this.button_apply.Name = "button_apply";
-            this.button_apply.Size = new System.Drawing.Size(75, 23);
-            this.button_apply.TabIndex = 5;
-            this.button_apply.Text = "Apply";
-            this.button_apply.UseVisualStyleBackColor = true;
-            this.button_apply.Click += new System.EventHandler(this.button_apply_Click);
+            button_apply.Enabled = false;
+            button_apply.Location = new System.Drawing.Point(186, 358);
+            button_apply.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button_apply.Name = "button_apply";
+            button_apply.Size = new System.Drawing.Size(88, 27);
+            button_apply.TabIndex = 5;
+            button_apply.Text = "Apply";
+            button_apply.UseVisualStyleBackColor = true;
+            button_apply.Click += button_apply_Click;
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(240, 310);
-            this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(75, 23);
-            this.button_close.TabIndex = 6;
-            this.button_close.Text = "Close";
-            this.button_close.UseVisualStyleBackColor = true;
-            this.button_close.Click += new System.EventHandler(this.button_close_Click);
+            button_close.Location = new System.Drawing.Point(280, 358);
+            button_close.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button_close.Name = "button_close";
+            button_close.Size = new System.Drawing.Size(88, 27);
+            button_close.TabIndex = 6;
+            button_close.Text = "Close";
+            button_close.UseVisualStyleBackColor = true;
+            button_close.Click += button_close_Click;
             // 
             // label_offset
             // 
-            this.label_offset.AutoSize = true;
-            this.label_offset.Location = new System.Drawing.Point(157, 339);
-            this.label_offset.Name = "label_offset";
-            this.label_offset.Size = new System.Drawing.Size(38, 13);
-            this.label_offset.TabIndex = 0;
-            this.label_offset.Text = "Offset:";
+            label_offset.AutoSize = true;
+            label_offset.Location = new System.Drawing.Point(183, 391);
+            label_offset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_offset.Name = "label_offset";
+            label_offset.Size = new System.Drawing.Size(42, 15);
+            label_offset.TabIndex = 0;
+            label_offset.Text = "Offset:";
             // 
             // textBox_offsetVal
             // 
-            this.textBox_offsetVal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.textBox_offsetVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_offsetVal.Location = new System.Drawing.Point(199, 339);
-            this.textBox_offsetVal.Name = "textBox_offsetVal";
-            this.textBox_offsetVal.ReadOnly = true;
-            this.textBox_offsetVal.Size = new System.Drawing.Size(55, 13);
-            this.textBox_offsetVal.TabIndex = 0;
-            this.textBox_offsetVal.TabStop = false;
-            this.textBox_offsetVal.Text = "000000";
+            textBox_offsetVal.BorderColor = System.Drawing.Color.FromArgb(188, 188, 188);
+            textBox_offsetVal.Location = new System.Drawing.Point(233, 388);
+            textBox_offsetVal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_offsetVal.Multiline = false;
+            textBox_offsetVal.Name = "textBox_offsetVal";
+            textBox_offsetVal.Padding = new System.Windows.Forms.Padding(4, 3, 1, 2);
+            textBox_offsetVal.ReadOnly = true;
+            textBox_offsetVal.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            textBox_offsetVal.SelectionStart = 0;
+            textBox_offsetVal.Size = new System.Drawing.Size(64, 23);
+            textBox_offsetVal.TabIndex = 0;
+            textBox_offsetVal.TabStop = false;
+            textBox_offsetVal.WordWrap = true;
             // 
             // label_room
             // 
-            this.label_room.AutoSize = true;
-            this.label_room.Location = new System.Drawing.Point(12, 339);
-            this.label_room.Name = "label_room";
-            this.label_room.Size = new System.Drawing.Size(38, 13);
-            this.label_room.TabIndex = 0;
-            this.label_room.Text = "Room:";
+            label_room.AutoSize = true;
+            label_room.Location = new System.Drawing.Point(14, 391);
+            label_room.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_room.Name = "label_room";
+            label_room.Size = new System.Drawing.Size(42, 15);
+            label_room.TabIndex = 0;
+            label_room.Text = "Room:";
             // 
             // label_area
             // 
-            this.label_area.AutoSize = true;
-            this.label_area.Location = new System.Drawing.Point(12, 314);
-            this.label_area.Name = "label_area";
-            this.label_area.Size = new System.Drawing.Size(32, 13);
-            this.label_area.TabIndex = 0;
-            this.label_area.Text = "Area:";
+            label_area.AutoSize = true;
+            label_area.Location = new System.Drawing.Point(14, 362);
+            label_area.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_area.Name = "label_area";
+            label_area.Size = new System.Drawing.Size(34, 15);
+            label_area.TabIndex = 0;
+            label_area.Text = "Area:";
             // 
             // comboBox_room
             // 
-            this.comboBox_room.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_room.FormattingEnabled = true;
-            this.comboBox_room.Location = new System.Drawing.Point(55, 336);
-            this.comboBox_room.Name = "comboBox_room";
-            this.comboBox_room.Size = new System.Drawing.Size(77, 21);
-            this.comboBox_room.TabIndex = 4;
-            this.comboBox_room.SelectedIndexChanged += new System.EventHandler(this.comboBox_room_SelectedIndexChanged);
+            comboBox_room.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_room.FormattingEnabled = true;
+            comboBox_room.Location = new System.Drawing.Point(64, 388);
+            comboBox_room.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            comboBox_room.Name = "comboBox_room";
+            comboBox_room.Size = new System.Drawing.Size(89, 23);
+            comboBox_room.TabIndex = 4;
+            comboBox_room.SelectedIndexChanged += comboBox_room_SelectedIndexChanged;
             // 
             // comboBox_area
             // 
-            this.comboBox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_area.FormattingEnabled = true;
-            this.comboBox_area.Location = new System.Drawing.Point(55, 311);
-            this.comboBox_area.Name = "comboBox_area";
-            this.comboBox_area.Size = new System.Drawing.Size(77, 21);
-            this.comboBox_area.TabIndex = 3;
-            this.comboBox_area.SelectedIndexChanged += new System.EventHandler(this.comboBox_area_SelectedIndexChanged);
+            comboBox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_area.FormattingEnabled = true;
+            comboBox_area.Location = new System.Drawing.Point(64, 359);
+            comboBox_area.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            comboBox_area.Name = "comboBox_area";
+            comboBox_area.Size = new System.Drawing.Size(89, 23);
+            comboBox_area.TabIndex = 3;
+            comboBox_area.SelectedIndexChanged += comboBox_area_SelectedIndexChanged;
             // 
             // statusStrip
             // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statusLabel_changes});
-            this.statusStrip.Location = new System.Drawing.Point(0, 362);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(327, 22);
-            this.statusStrip.TabIndex = 7;
+            statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { statusLabel_changes });
+            statusStrip.Location = new System.Drawing.Point(0, 421);
+            statusStrip.Name = "statusStrip";
+            statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            statusStrip.Size = new System.Drawing.Size(382, 22);
+            statusStrip.TabIndex = 7;
             // 
             // statusLabel_changes
             // 
-            this.statusLabel_changes.Name = "statusLabel_changes";
-            this.statusLabel_changes.Size = new System.Drawing.Size(12, 17);
-            this.statusLabel_changes.Text = "-";
+            statusLabel_changes.Name = "statusLabel_changes";
+            statusLabel_changes.Size = new System.Drawing.Size(12, 17);
+            statusLabel_changes.Text = "-";
             // 
             // FormHeader
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 384);
-            this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.label_room);
-            this.Controls.Add(this.label_area);
-            this.Controls.Add(this.comboBox_room);
-            this.Controls.Add(this.comboBox_area);
-            this.Controls.Add(this.textBox_offsetVal);
-            this.Controls.Add(this.label_offset);
-            this.Controls.Add(this.button_close);
-            this.Controls.Add(this.button_apply);
-            this.Controls.Add(this.groupBox_misc);
-            this.Controls.Add(this.groupBox_spritesetData);
-            this.Controls.Add(this.groupBox_BGdata);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormHeader";
-            this.Text = "Header Editor";
-            this.groupBox_BGdata.ResumeLayout(false);
-            this.groupBox_BGdata.PerformLayout();
-            this.groupBox_spritesetData.ResumeLayout(false);
-            this.groupBox_spritesetData.PerformLayout();
-            this.groupBox_misc.ResumeLayout(false);
-            this.groupBox_misc.PerformLayout();
-            this.statusStrip.ResumeLayout(false);
-            this.statusStrip.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(382, 443);
+            Controls.Add(statusStrip);
+            Controls.Add(label_room);
+            Controls.Add(label_area);
+            Controls.Add(comboBox_room);
+            Controls.Add(comboBox_area);
+            Controls.Add(textBox_offsetVal);
+            Controls.Add(label_offset);
+            Controls.Add(button_close);
+            Controls.Add(button_apply);
+            Controls.Add(groupBox_misc);
+            Controls.Add(groupBox_spritesetData);
+            Controls.Add(groupBox_BGdata);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "FormHeader";
+            Text = "Header Editor";
+            groupBox_BGdata.ResumeLayout(false);
+            groupBox_BGdata.PerformLayout();
+            groupBox_spritesetData.ResumeLayout(false);
+            groupBox_spritesetData.PerformLayout();
+            groupBox_misc.ResumeLayout(false);
+            groupBox_misc.PerformLayout();
+            statusStrip.ResumeLayout(false);
+            statusStrip.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
