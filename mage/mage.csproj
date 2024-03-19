@@ -44,9 +44,7 @@
     <Compile Update="TileView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="RoomView.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Update="RoomView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Icons\button_bg_color.png" />

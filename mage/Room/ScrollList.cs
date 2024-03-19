@@ -246,6 +246,12 @@ namespace mage
             scrolls.RemoveAt(num / 6);
         }
 
+        public void Clear()
+        {
+            Edited = true;
+            scrolls.Clear();
+        }
+
         public void Export(ByteStream dst)
         {
             dst.Write8((byte)scrolls.Count);

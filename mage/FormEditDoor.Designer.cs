@@ -59,6 +59,8 @@
             label_area = new System.Windows.Forms.Label();
             groupBox_info = new System.Windows.Forms.GroupBox();
             groupBox_edit = new System.Windows.Forms.GroupBox();
+            button_preset_x = new System.Windows.Forms.Button();
+            button_preset_y = new System.Windows.Forms.Button();
             textBox_yExitDistance = new Theming.CustomControls.FlatTextBox();
             label_yExitDistance = new System.Windows.Forms.Label();
             statusStrip = new System.Windows.Forms.StatusStrip();
@@ -70,10 +72,10 @@
             // 
             // button_close
             // 
-            button_close.Location = new System.Drawing.Point(274, 255);
+            button_close.Location = new System.Drawing.Point(292, 253);
             button_close.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_close.Name = "button_close";
-            button_close.Size = new System.Drawing.Size(88, 27);
+            button_close.Size = new System.Drawing.Size(86, 27);
             button_close.TabIndex = 1;
             button_close.Text = "Close";
             button_close.UseVisualStyleBackColor = true;
@@ -82,10 +84,10 @@
             // button_apply
             // 
             button_apply.Enabled = false;
-            button_apply.Location = new System.Drawing.Point(274, 222);
+            button_apply.Location = new System.Drawing.Point(292, 220);
             button_apply.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_apply.Name = "button_apply";
-            button_apply.Size = new System.Drawing.Size(88, 27);
+            button_apply.Size = new System.Drawing.Size(86, 27);
             button_apply.TabIndex = 0;
             button_apply.Text = "Apply";
             button_apply.UseVisualStyleBackColor = true;
@@ -186,7 +188,7 @@
             // textBox_connectedDoor
             // 
             textBox_connectedDoor.BorderColor = System.Drawing.Color.Black;
-            textBox_connectedDoor.Location = new System.Drawing.Point(298, 52);
+            textBox_connectedDoor.Location = new System.Drawing.Point(312, 52);
             textBox_connectedDoor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox_connectedDoor.Multiline = false;
             textBox_connectedDoor.Name = "textBox_connectedDoor";
@@ -202,7 +204,7 @@
             // textBox_xExitDistance
             // 
             textBox_xExitDistance.BorderColor = System.Drawing.Color.Black;
-            textBox_xExitDistance.Location = new System.Drawing.Point(298, 82);
+            textBox_xExitDistance.Location = new System.Drawing.Point(312, 82);
             textBox_xExitDistance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox_xExitDistance.Multiline = false;
             textBox_xExitDistance.Name = "textBox_xExitDistance";
@@ -238,7 +240,7 @@
             // textBox_ownerRoom
             // 
             textBox_ownerRoom.BorderColor = System.Drawing.Color.Black;
-            textBox_ownerRoom.Location = new System.Drawing.Point(298, 22);
+            textBox_ownerRoom.Location = new System.Drawing.Point(312, 22);
             textBox_ownerRoom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox_ownerRoom.Multiline = false;
             textBox_ownerRoom.Name = "textBox_ownerRoom";
@@ -264,12 +266,13 @@
             // checkBox_autoConnect
             // 
             checkBox_autoConnect.AutoSize = true;
-            checkBox_autoConnect.Location = new System.Drawing.Point(145, 142);
+            checkBox_autoConnect.Location = new System.Drawing.Point(165, 140);
             checkBox_autoConnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             checkBox_autoConnect.Name = "checkBox_autoConnect";
             checkBox_autoConnect.Size = new System.Drawing.Size(188, 19);
             checkBox_autoConnect.TabIndex = 5;
             checkBox_autoConnect.Text = "Auto connect destination door";
+            checkBox_autoConnect.CheckedChanged += checkBox_autoConnect_CheckedChanged;
             // 
             // comboBox_type
             // 
@@ -413,6 +416,8 @@
             // 
             // groupBox_edit
             // 
+            groupBox_edit.Controls.Add(button_preset_x);
+            groupBox_edit.Controls.Add(button_preset_y);
             groupBox_edit.Controls.Add(textBox_yExitDistance);
             groupBox_edit.Controls.Add(label_yExitDistance);
             groupBox_edit.Controls.Add(comboBox_type);
@@ -434,15 +439,35 @@
             groupBox_edit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             groupBox_edit.Name = "groupBox_edit";
             groupBox_edit.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBox_edit.Size = new System.Drawing.Size(348, 168);
+            groupBox_edit.Size = new System.Drawing.Size(364, 168);
             groupBox_edit.TabIndex = 0;
             groupBox_edit.TabStop = false;
             groupBox_edit.Text = "Edit";
             // 
+            // button_preset_x
+            // 
+            button_preset_x.Image = Properties.Resources.toolbar_connection;
+            button_preset_x.Location = new System.Drawing.Point(282, 82);
+            button_preset_x.Name = "button_preset_x";
+            button_preset_x.Size = new System.Drawing.Size(23, 23);
+            button_preset_x.TabIndex = 18;
+            button_preset_x.UseVisualStyleBackColor = true;
+            button_preset_x.Click += button_preset_x_Click;
+            // 
+            // button_preset_y
+            // 
+            button_preset_y.Image = Properties.Resources.toolbar_connection;
+            button_preset_y.Location = new System.Drawing.Point(282, 112);
+            button_preset_y.Name = "button_preset_y";
+            button_preset_y.Size = new System.Drawing.Size(23, 23);
+            button_preset_y.TabIndex = 17;
+            button_preset_y.UseVisualStyleBackColor = true;
+            button_preset_y.Click += button_preset_y_Click;
+            // 
             // textBox_yExitDistance
             // 
             textBox_yExitDistance.BorderColor = System.Drawing.Color.Black;
-            textBox_yExitDistance.Location = new System.Drawing.Point(298, 112);
+            textBox_yExitDistance.Location = new System.Drawing.Point(312, 112);
             textBox_yExitDistance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox_yExitDistance.Multiline = false;
             textBox_yExitDistance.Name = "textBox_yExitDistance";
@@ -471,7 +496,7 @@
             statusStrip.Location = new System.Drawing.Point(0, 288);
             statusStrip.Name = "statusStrip";
             statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            statusStrip.Size = new System.Drawing.Size(376, 22);
+            statusStrip.Size = new System.Drawing.Size(393, 22);
             statusStrip.TabIndex = 3;
             statusStrip.Text = "statusStrip1";
             // 
@@ -485,7 +510,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(376, 310);
+            ClientSize = new System.Drawing.Size(393, 310);
             Controls.Add(statusStrip);
             Controls.Add(groupBox_edit);
             Controls.Add(groupBox_info);
@@ -544,5 +569,7 @@
         private System.Windows.Forms.Label label_yExitDistance;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel_changes;
+        private System.Windows.Forms.Button button_preset_y;
+        private System.Windows.Forms.Button button_preset_x;
     }
 }

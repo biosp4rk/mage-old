@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace mage
 {
-    public partial class RoomView : Control
+    public partial class RoomView : ScrollableControl
     {
         // properties
         public bool HasSelection
@@ -222,6 +222,12 @@ namespace mage
             base.OnPaintBackground(pevent);
         }
 
+        public event EventHandler<MouseEventArgs> Scrolled;
 
+        protected override void OnMouseWheel(MouseEventArgs e)
+        {
+            Scrolled.Invoke(this, e);
+            base.OnMouseWheel(e);
+        }
     }
 }

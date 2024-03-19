@@ -311,5 +311,27 @@ namespace mage
         {
             Close();
         }
+
+        private void checkBox_autoConnect_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBox_autoConnect.Checked) return;
+            ValueChanged(sender, e);
+        }
+
+        private void button_preset_x_Click(object sender, EventArgs e)
+        {
+            var Dialog = new FormEditDoorPresets(true);
+            Dialog.ShowDialog();
+            if (Dialog.DialogResult != DialogResult.OK) return;
+            textBox_xExitDistance.Text = Hex.ToString(Dialog.Result);
+        }
+
+        private void button_preset_y_Click(object sender, EventArgs e)
+        {
+            var Dialog = new FormEditDoorPresets(false);
+            Dialog.ShowDialog();
+            if (Dialog.DialogResult != DialogResult.OK) return;
+            textBox_yExitDistance.Text = Hex.ToString(Dialog.Result);
+        }
     }
 }

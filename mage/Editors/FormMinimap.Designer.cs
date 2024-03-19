@@ -64,6 +64,7 @@
             statusStrip_exportRaw = new System.Windows.Forms.ToolStripMenuItem();
             statusStrip_exportImage = new System.Windows.Forms.ToolStripMenuItem();
             gfxView_map = new GfxView();
+            button_generate = new System.Windows.Forms.Button();
             groupBox_map.SuspendLayout();
             groupBox_selection.SuspendLayout();
             panel_black.SuspendLayout();
@@ -188,7 +189,7 @@
             button_apply.Location = new System.Drawing.Point(882, 121);
             button_apply.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_apply.Name = "button_apply";
-            button_apply.Size = new System.Drawing.Size(88, 27);
+            button_apply.Size = new System.Drawing.Size(86, 27);
             button_apply.TabIndex = 4;
             button_apply.Text = "Apply";
             button_apply.UseVisualStyleBackColor = true;
@@ -196,7 +197,7 @@
             // 
             // button_close
             // 
-            button_close.Location = new System.Drawing.Point(882, 155);
+            button_close.Location = new System.Drawing.Point(786, 121);
             button_close.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_close.Name = "button_close";
             button_close.Size = new System.Drawing.Size(88, 27);
@@ -270,7 +271,7 @@
             // 
             // button_editGFX
             // 
-            button_editGFX.Location = new System.Drawing.Point(127, 21);
+            button_editGFX.Location = new System.Drawing.Point(217, 19);
             button_editGFX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_editGFX.Name = "button_editGFX";
             button_editGFX.Size = new System.Drawing.Size(82, 27);
@@ -284,7 +285,7 @@
             panel_squares.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             panel_squares.AutoScroll = true;
             panel_squares.Controls.Add(gfxView_squares);
-            panel_squares.Location = new System.Drawing.Point(619, 188);
+            panel_squares.Location = new System.Drawing.Point(619, 219);
             panel_squares.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel_squares.Name = "panel_squares";
             panel_squares.Size = new System.Drawing.Size(351, 347);
@@ -308,11 +309,11 @@
             groupBox_tiles.Controls.Add(button_editGFX);
             groupBox_tiles.Controls.Add(comboBox_palette);
             groupBox_tiles.Controls.Add(label_palette);
-            groupBox_tiles.Location = new System.Drawing.Point(619, 121);
+            groupBox_tiles.Location = new System.Drawing.Point(619, 154);
             groupBox_tiles.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             groupBox_tiles.Name = "groupBox_tiles";
             groupBox_tiles.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBox_tiles.Size = new System.Drawing.Size(250, 59);
+            groupBox_tiles.Size = new System.Drawing.Size(349, 59);
             groupBox_tiles.TabIndex = 9;
             groupBox_tiles.TabStop = false;
             groupBox_tiles.Text = "Tiles";
@@ -320,7 +321,7 @@
             // button_bgColor
             // 
             button_bgColor.Image = Properties.Resources.button_bg_color;
-            button_bgColor.Location = new System.Drawing.Point(216, 21);
+            button_bgColor.Location = new System.Drawing.Point(313, 19);
             button_bgColor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button_bgColor.Name = "button_bgColor";
             button_bgColor.Size = new System.Drawing.Size(27, 27);
@@ -420,11 +421,23 @@
             gfxView_map.MouseDown += gfxView_map_MouseDown;
             gfxView_map.MouseMove += gfxView_map_MouseMove;
             // 
+            // button_generate
+            // 
+            button_generate.Location = new System.Drawing.Point(619, 121);
+            button_generate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button_generate.Name = "button_generate";
+            button_generate.Size = new System.Drawing.Size(159, 27);
+            button_generate.TabIndex = 12;
+            button_generate.Text = "Generate";
+            button_generate.UseVisualStyleBackColor = true;
+            button_generate.Click += button_generate_Click;
+            // 
             // FormMinimap
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(983, 643);
+            Controls.Add(button_generate);
             Controls.Add(statusStrip);
             Controls.Add(groupBox_tiles);
             Controls.Add(panel_squares);
@@ -490,5 +503,6 @@
         private System.Windows.Forms.ToolStripMenuItem statusStrip_importRaw;
         private System.Windows.Forms.ToolStripMenuItem statusStrip_exportRaw;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel_changes;
+        private System.Windows.Forms.Button button_generate;
     }
 }
