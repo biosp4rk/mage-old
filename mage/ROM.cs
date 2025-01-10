@@ -82,7 +82,7 @@ namespace mage
 
         public static BG LoadBG(byte areaID, byte roomID, Layer layer)
         {
-            int key = areaID * 0x500 + roomID * 5 + (int)layer;
+            int key = GetBGKey(areaID, roomID, layer);
             if (editedBGs.ContainsKey(key))
             {
                 return editedBGs[key];
@@ -92,8 +92,17 @@ namespace mage
         public static void SaveBG(BG bg)
         {
             bg.Edited = false;
-            int key = bg.AreaID * 0x500 + bg.RoomID * 5 + (int)bg.layer;
+            int key = GetBGKey(bg.AreaID, bg.RoomID, bg.layer);
             editedBGs[key] = bg;
+        }
+        public static void RemoveBG(byte areaID, byte roomID, Layer layer)
+        {
+            int key = GetBGKey(areaID, roomID, layer);
+            editedBGs.Remove(key);
+        }
+        private static int GetBGKey(byte areaID, byte roomID, Layer layer)
+        {
+            return (areaID * 0x500) + (roomID * 5) + (int)layer;
         }
 
         public static Spriteset LoadSpriteset(byte ss)
